@@ -1,0 +1,26 @@
+{
+    "automappingRulesFile": "",
+    "commands": [
+    ],
+    "compatibilityVersion": 1100,
+    "extensionsPath": "extensions",
+    "folders": [
+        "."
+    ],
+    "properties": [
+        {
+            "name": "scriptPath",
+            "propertytype": "",
+            "type": "string",
+            "value": "/"
+        },
+        {
+            "name": "wiki",
+            "propertytype": "",
+            "type": "string",
+            "value": "undertaleyellow.wiki.gg"
+        }
+    ],
+    "propertyTypes": [
+    ]
+}
