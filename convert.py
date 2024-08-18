@@ -132,7 +132,7 @@ def convert_tiled_to_datamap(map: tiled.TiledMap) -> DataMap:
     datamap.include = get_list_property(map.properties, 'include')
 
     converted_layers: Set[Optional[int]] = set()
-    for layer in map.layers:
+    for layer in reversed(map.layers):
         convert_layer(layer, datamap, converted_layers)
     return datamap
 
