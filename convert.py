@@ -82,7 +82,7 @@ def convert_layer(
             coords = add_points(obj.coordinates, offset)
             if isinstance(obj, objects.Point):
                 markers.append(Marker(coords.x, coords.y,
-                    name=obj.name,
+                    name=None if len(obj.name) == 0 else obj.name,
                     description=get_property(obj.properties, 'description', str),
                     isWikitext=not obj.properties.get('plain', False),
                     article=get_property(obj.properties, 'page', str)))
