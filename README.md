@@ -6,12 +6,29 @@ best of its ability. Currently still in WIP, but suitable for use on the
 [Undertale Yellow Wiki](https://undertaleyellow.wiki.gg/).
 
 ## Setup
+### Prerequisites
+
+- [Git](https://git-scm.com/)
+- [Git LFS](https://git-lfs.com/)
+- [Python](https://www.python.org/)
+- [Tiled](https://www.mapeditor.org/)
+
+On the wiki that you are editing, you need to have the
+[DataMaps](https://www.mediawiki.org/wiki/Extension:DataMaps) extension
+installed.
+
+### Set up repository
+
 ```bash
+git clone https://github.com/KockaAdmiralac/tiled-datamaps.git
+git lfs pull
+cd tiled-datamaps
 python -m venv .venv
-source .venv/bin/activate # Or the Windows equivalent
+source .venv/bin/activate
+# Or the Windows equivalent:
+# .venv\Scripts\activate.bat
 pip install -r requirements.txt
 ```
-Make sure you have the DataMaps extension on the wiki you're editing.
 
 ## Usage
 ### Map editor
