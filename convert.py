@@ -166,7 +166,16 @@ def get_script_dir() -> Path:
     return Path(os.path.dirname(os.path.realpath(__file__)))
 
 
-def get_project(project: Optional[str]) -> Tuple[str, Path]:
+def get_project(
+    project: Optional[str],
+    mappath: Optional[str]
+) -> Tuple[str, Path]:
+    if mappath is not None:
+        project_path = Path(mappath).parent
+        project = project_path.name
+        if not project_path.is_dir():
+            raise ValueError(f'Project at {project_path} is not a directory.')
+        return project, project_path
     script_dir = get_script_dir()
     maps_dir = script_dir / 'maps'
     projects = os.listdir(maps_dir)
@@ -186,12 +195,20 @@ def get_project(project: Optional[str]) -> Tuple[str, Path]:
     return project, project_path
 
 
-def get_maps_to_convert(project_path: Path, map: Optional[str]) -> List[tiled.TiledMap]:
-    if map is not None:
+def get_maps_to_convert(
+    project_path: Path,
+    map: Optional[str],
+    mappath: Optional[str]
+) -> List[tiled.TiledMap]:
+    map_file = None
+    if mappath is not None:
+        map_file = Path(mappath)
+    elif map is not None:
         map_file = project_path / f'{map}.tmx'
+    if map_file is not None:
         if not map_file.is_file():
             raise ValueError(f'Map file {map_file} does not exist or is not a file.')
-        return [tiled.parse_map(project_path / f'{map}.tmx')]
+        return [tiled.parse_map(map_file)]
     return [tiled.parse_map(project_path / map_file)
         for map_file in os.listdir(project_path)
         if map_file.endswith('.tmx')]
@@ -209,13 +226,14 @@ if __name__ == '__main__':
     parser = ArgumentParser()
     parser.add_argument('--project', type=str, help='project whose maps should be converted', required=False)
     parser.add_argument('--map', type=str, help='map to convert, if not specified all maps are converted', required=False)
+    parser.add_argument('--mappath', type=str, help='full path to the map file to convert, can be used instead of both --project and --map, for Tiled integration', required=False)
     parser.add_argument('--log_level', type=str, help='log level', default='INFO')
     args = parser.parse_args()
     logging.basicConfig(level=logging.getLevelNamesMapping()[args.log_level.upper()])
 
-    project_name, project_path = get_project(args.project)
+    project_name, project_path = get_project(args.project, args.mappath)
     wiki = log_in_to_wiki(project_name)
-    maps = get_maps_to_convert(project_path, args.map)
+    maps = get_maps_to_convert(project_path, args.map, args.mappath)
     for map in maps:
         datamap = convert_tiled_to_datamap(map)
         publish_datamap_to_wiki(datamap, wiki)

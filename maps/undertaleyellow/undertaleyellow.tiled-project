@@ -1,6 +1,16 @@
 {
     "automappingRulesFile": "",
     "commands": [
+        {
+            "arguments": "convert.py --mappath %mapfile",
+            "command": ".venv/bin/python",
+            "enabled": true,
+            "name": "Publish current map",
+            "saveBeforeExecute": true,
+            "shortcut": "Ctrl+Shift+P",
+            "showOutput": true,
+            "workingDirectory": "%projectpath/../.."
+        }
     ],
     "compatibilityVersion": 1100,
     "extensionsPath": "extensions",
