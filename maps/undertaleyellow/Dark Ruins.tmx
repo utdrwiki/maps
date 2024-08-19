@@ -1,85 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="573" height="574" tilewidth="20" tileheight="20" infinite="0" nextlayerid="11" nextobjectid="74">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="287" height="287" tilewidth="20" tileheight="20" infinite="0" nextlayerid="11" nextobjectid="74">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
+ <imagelayer id="2" name="Dark Ruins map">
+  <image source="images/Dark Ruins.png" width="5730" height="5732"/>
+ </imagelayer>
  <objectgroup id="9" name="plot">
-  <object id="1" name="Starting Point" x="1041.06" y="11078.5">
+  <object id="1" name="Starting Point" x="520.53" y="5539.25">
    <properties>
     <property name="description" value="This point marks the start of [[Dark Ruins]], where [[Clover]] falls down from the [[Ruins]]. If Clover waits here long enough, [[Toriel]] throws down a rope."/>
    </properties>
    <point/>
   </object>
-  <object id="4" name="Meeting Flowey" x="1042.23" y="8696.92">
+  <object id="4" name="Meeting Flowey" x="521.115" y="4348.46">
    <properties>
     <property name="description" value="[[Flowey]] introduces [[Clover]] to battles and [[SAVE]]s in ''[[Undertale Yellow]]'' here."/>
    </properties>
    <point/>
   </object>
-  <object id="30" name="Meeting Dalv 1" x="3613.29" y="6583.23">
+  <object id="30" name="Meeting Dalv 1" x="1806.64" y="3291.61">
    <properties>
     <property name="description" value="[[Clover]] meets [[Dalv]] for the first time, while he monologues about meeting a friend."/>
    </properties>
    <point/>
   </object>
-  <object id="31" name="Meeting Dalv 2" x="6591.41" y="5094.16">
+  <object id="31" name="Meeting Dalv 2" x="3295.7" y="2547.08">
    <properties>
     <property name="description" value="[[Clover]] sees [[Dalv]] across a large chasm. He's again monologuing about his past."/>
    </properties>
    <point/>
   </object>
-  <object id="32" name="Fun Value Pillars" x="6458.07" y="5595.98">
+  <object id="32" name="Fun Value Pillars" x="3229.03" y="2797.99">
    <properties>
     <property name="description" value="These four pillars can tell the story of [[Axis]] killing [[Integrity]]. Each of these pillars displays its drawing on a certain Fun Value range."/>
     <property name="page" value="Fun Value#Pillar Room"/>
    </properties>
    <point/>
   </object>
-  <object id="33" name="Meeting Dalv 3" x="8618.55" y="4925.72">
+  <object id="33" name="Meeting Dalv 3" x="4309.27" y="2462.86">
    <properties>
     <property name="description" value="[[Clover]] meets [[Dalv]] for the third time, he turns around and tells them to go away."/>
    </properties>
    <point/>
   </object>
-  <object id="34" name="Dalv's House" x="8465.32" y="3003.86">
+  <object id="34" name="Dalv's House" x="4232.66" y="1501.93">
    <properties>
     <property name="description" value="[[Dalv]] shows [[Clover]] around his house."/>
     <property name="page" value="Dark Ruins#Dalv's House"/>
    </properties>
    <point/>
   </object>
-  <object id="35" name="Dalv's Diary" x="9103.99" y="2360.51">
+  <object id="35" name="Dalv's Diary" x="4551.99" y="1180.26">
    <properties>
     <property name="description" value="[[Dalv]]'s diary, only readable on a [[Neutral Route]] after killing him. It talks about a friend who helped Dalv cope with the past."/>
    </properties>
    <point/>
   </object>
-  <object id="36" name="Exit to Snowdin" x="8574.1" y="232.776">
+  <object id="36" name="Exit to Snowdin" x="4287.05" y="116.388">
    <properties>
     <property name="description" value="Exit to Snowdin."/>
     <property name="page" value="Snowdin"/>
    </properties>
    <point/>
   </object>
-  <object id="67" name="Planks" x="8581.3" y="1240.7">
+  <object id="67" name="Planks" x="4290.65" y="620.35">
    <properties>
     <property name="description" value="If [[Dalv]] is present, he breaks the planks of this door to let [[Clover]] pass. Otherwise, [[Flowey]] breaks them."/>
    </properties>
    <point/>
   </object>
-  <object id="68" name="Dalv's Books" x="8606.85" y="3039.94">
+  <object id="68" name="Dalv's Books" x="4303.43" y="1519.97">
    <properties>
     <property name="description" value="[[Dalv]]'s various projects. He wants to be a book writer for kids, but he kind of forgot what colors are things outside of [[Dark Ruins]]."/>
    </properties>
    <point/>
   </object>
-  <object id="69" name="Corn Painting" x="8934.32" y="2712.47">
+  <object id="69" name="Corn Painting" x="4467.16" y="1356.23">
    <properties>
     <property name="description" value="A big corn painting that [[Penilla]] drew for [[Dalv]]."/>
    </properties>
    <point/>
   </object>
-  <object id="70" name="Organ Demo" x="8960.82" y="2479.65">
+  <object id="70" name="Organ Demo" x="4480.41" y="1239.83">
    <properties>
     <property name="description" value="[[Dalv]]'s gramophone. ''Organ Demo'' can be played here."/>
     <property name="page" value="Organ Demo"/>
@@ -88,63 +91,63 @@
   </object>
  </objectgroup>
  <objectgroup id="4" name="npcs">
-  <object id="58" name="Crispy Scroll" x="7545.16" y="8780.55">
+  <object id="58" name="Crispy Scroll" x="3772.58" y="4390.27">
    <properties>
     <property name="description" value="Crispy Scroll as an NPC on the [[Pacifist Route]]. He talks about visiting the [[Garbage Dump]] and recommends anime to [[Clover]]."/>
     <property name="page" value="Crispy Scroll#Pacifist Route"/>
    </properties>
    <point/>
   </object>
-  <object id="59" name="Rorrim" x="9062.17" y="9094.05">
+  <object id="59" name="Rorrim" x="4531.09" y="4547.02">
    <properties>
     <property name="description" value="Rorrim as an NPC on the [[Pacifist Route]]. He's happy that he no longer needs to hide, and hopes to journey throughout the [[ut:Underground|Underground]]."/>
     <property name="page" value="Rorrim#Pacifist Route"/>
    </properties>
    <point/>
   </object>
-  <object id="60" name="Dust Bunny" x="11222.1" y="7372.48">
+  <object id="60" name="Dust Bunny" x="5611.05" y="3686.24">
    <properties>
     <property name="description" value="Dust Bunny is hiding here from [[Dalv]], and challenges [[Clover]] to a dust counting duel. They lose!"/>
     <property name="page" value="Dust Bunny"/>
    </properties>
    <point/>
   </object>
-  <object id="61" name="Flier" x="8201.38" y="7513.28">
+  <object id="61" name="Flier" x="4100.69" y="3756.64">
    <properties>
     <property name="description" value="Flier as an NPC on the [[Pacifist Route]]. He's checking out a beach house outside of [[Dark Ruins]]."/>
     <property name="page" value="Flier#Pacifist Route"/>
    </properties>
    <point/>
   </object>
-  <object id="62" name="Decibat" x="8010.1" y="7468.12">
+  <object id="62" name="Decibat" x="4005.05" y="3734.06">
    <properties>
     <property name="description" value="If spared through silence, Decibat can be found here sleeping. Do not disturb him! Zzz..."/>
     <property name="page" value="Decibat#Main Story"/>
    </properties>
    <point/>
   </object>
-  <object id="63" name="Penilla" x="8538.79" y="6012.22">
+  <object id="63" name="Penilla" x="4269.4" y="3006.11">
    <properties>
     <property name="description" value="Penilla as an NPC on the [[Pacifist Route]] after sparing [[Dalv]]. She's happy about no longer having to hide."/>
     <property name="page" value="Penilla#Pacifist Route"/>
    </properties>
    <point/>
   </object>
-  <object id="64" name="Sweet Corn" x="7380.45" y="5047.82">
+  <object id="64" name="Sweet Corn" x="3690.22" y="2523.91">
    <properties>
     <property name="description" value="Sweet Corn as an NPC on the [[Pacifist Route]] after sparing [[Dalv]]. She's considering opening a free hugs booth after leaving the [[Dark Ruins]]."/>
     <property name="page" value="Sweet Corn#Pacifist Route"/>
    </properties>
    <point/>
   </object>
-  <object id="65" name="Pops" x="8350.16" y="2704.57">
+  <object id="65" name="Pops" x="4175.08" y="1352.29">
    <properties>
     <property name="description" value="[[Dalv]]'s balloon, Pops, likes the darkness of a wardrobe. Please give him some personal space!"/>
     <property name="page" value="Pops"/>
    </properties>
    <point/>
   </object>
-  <object id="66" name="Broom" x="9354.41" y="2770.99">
+  <object id="66" name="Broom" x="4677.2" y="1385.49">
    <properties>
     <property name="description" value="Broom used to be like [[Dalv]]'s best friend, before he got [[Clover]] as an actual friend. Implied to have a partner in the [[Steamworks]]."/>
     <property name="page" value="Broom"/>
@@ -153,35 +156,35 @@
   </object>
  </objectgroup>
  <objectgroup id="5" name="cracks">
-  <object id="5" name="Crack 5" x="1222.37" y="7169.26">
+  <object id="5" name="Crack 5" x="611.185" y="3584.63">
    <properties>
     <property name="description" value="Crack in the shape of &quot;5&quot; here, required for entering the [[Dark Ruins#Secret Room|secret room]] and battling [[Micro Froggit]]. This crack should be interacted with last!"/>
     <property name="page" value="Dark Ruins#Secret Room"/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="Crack 4" x="3745.47" y="6363.32">
+  <object id="19" name="Crack 4" x="1872.73" y="3181.66">
    <properties>
     <property name="description" value="Crack in the shape of &quot;4&quot; here, required for entering the [[Dark Ruins#Secret Room|secret room]] and battling [[Micro Froggit]]."/>
     <property name="page" value="Dark Ruins#Secret Room"/>
    </properties>
    <point/>
   </object>
-  <object id="20" name="Crack 3" x="6847.58" y="5635.75">
+  <object id="20" name="Crack 3" x="3423.79" y="2817.88">
    <properties>
     <property name="description" value="Crack in the shape of &quot;3&quot; here, required for entering the [[Dark Ruins#Secret Room|secret room]] and battling [[Micro Froggit]]."/>
     <property name="page" value="Dark Ruins#Secret Room"/>
    </properties>
    <point/>
   </object>
-  <object id="21" name="Crack 2" x="9162.48" y="7542.4">
+  <object id="21" name="Crack 2" x="4581.24" y="3771.2">
    <properties>
     <property name="description" value="Crack in the shape of &quot;2&quot; here, required for entering the [[Dark Ruins#Secret Room|secret room]] and battling [[Micro Froggit]]."/>
     <property name="page" value="Dark Ruins#Secret Room"/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="Crack 1" x="8599.84" y="5636.92">
+  <object id="22" name="Crack 1" x="4299.92" y="2818.46">
    <properties>
     <property name="description" value="Crack in the shape of &quot;1&quot; here, required for entering the [[Dark Ruins#Secret Room|secret room]] and battling [[Micro Froggit]]. This crack should be interacted with first!"/>
     <property name="page" value="Dark Ruins#Secret Room"/>
@@ -190,129 +193,129 @@
   </object>
  </objectgroup>
  <objectgroup id="6" name="puzzles">
-  <object id="6" name="Switch Puzzle" x="1024.68" y="6379.69">
+  <object id="6" name="Switch Puzzle" x="512.34" y="3189.84">
    <properties>
     <property name="description" value="First puzzle in the game. Switches should be used in order: right, left, middle."/>
     <property name="page" value="Dark Ruins#Entrance to Atrium"/>
    </properties>
    <point/>
   </object>
-  <object id="47" name="Glowing Boxes Puzzle 1" x="1698.9" y="6399.63">
+  <object id="47" name="Glowing Boxes Puzzle 1" x="849.45" y="3199.82">
    <properties>
     <property name="description" value="First glowing boxes puzzle. Flipping the middle box, then the one to the left of it, is the optimal solution."/>
     <property name="page" value="Dark Ruins#Entrance to Atrium"/>
    </properties>
    <point/>
   </object>
-  <object id="48" name="Corn Maze" x="5043.74" y="5345.3">
+  <object id="48" name="Corn Maze" x="2521.87" y="2672.65">
    <properties>
     <property name="description" value="This corn maze is full of dead ends! The optimal path through it is marked on the map."/>
     <property name="page" value="Dark Ruins#Corn Field"/>
    </properties>
    <point/>
   </object>
-  <object id="49" name="Spikes" x="6022.1" y="5195.67">
+  <object id="49" name="Spikes" x="3011.05" y="2597.84">
    <properties>
     <property name="description" value="These spikes retract after hitting the switch to the east."/>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Spikes" x="4875.69" y="5729.74">
+  <object id="50" name="Spikes" x="2437.84" y="2864.87">
    <properties>
     <property name="description" value="These spikes retract after hitting the switch at the maze's exit, making way to the room with [[Pebble Ammo]]."/>
    </properties>
    <point/>
   </object>
-  <object id="51" name="Glowing Boxes Puzzle 2" x="8160.68" y="8874.31">
+  <object id="51" name="Glowing Boxes Puzzle 2" x="4080.34" y="4437.15">
    <properties>
     <property name="description" value="Glowing Boxes Puzzle the Second. Optimal solution is to flip the second box in the bottom row, then third box in the bottom row, and finally fourth box in the top row."/>
     <property name="page" value="Dark Ruins#Decibat to Dark Cave"/>
    </properties>
    <point/>
   </object>
-  <object id="52" name="Rocks" x="9472.84" y="7338.86">
+  <object id="52" name="Rocks" x="4736.42" y="3669.43">
    <properties>
     <property name="description" value="These rocks block the way to [[Micro Froggit]] and the [[Golden Pear]]. To pass through, hit the cracks in the shape of numbers in ascending order. Filter this map by &quot;Cracks&quot; to see their locations!"/>
     <property name="page" value="Dark Ruins#Secret Room"/>
    </properties>
    <point/>
   </object>
-  <object id="53" name="Corn Maze path" x="5046.04" y="5775.78">
+  <object id="53" name="Corn Maze path" x="2523.02" y="2887.89">
    <properties>
     <property name="color" type="color" value="#ff0000ff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -2.30203,-172.652 -490.331,-174.954 -492.634,-531.768 -398.25,-531.768 -398.25,-575.506 -313.076,-575.506 -315.378,-612.339 -119.705,-610.037 -119.705,-494.936 193.37,-492.634 193.37,-612.339 428.177,-610.037 432.781,-729.742 563.996,-729.742"/>
+   <polyline points="0,0 -1.15101,-86.326 -245.166,-87.477 -246.317,-265.884 -199.125,-265.884 -199.125,-287.753 -156.538,-287.753 -157.689,-306.17 -59.8525,-305.019 -59.8525,-247.468 96.685,-246.317 96.685,-306.17 214.089,-305.019 216.391,-364.871 281.998,-364.871"/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="signs">
-  <object id="2" name="Sign" x="838.695" y="10832.8">
+  <object id="2" name="Sign" x="419.348" y="5416.4">
    <properties>
     <property name="description" value="Tells [[Clover]] to use X to run, or, if auto-sprint is turned on in [[Game Config]], to use X to walk."/>
    </properties>
    <point/>
   </object>
-  <object id="8" name="Sign" x="860.919" y="6392.56">
+  <object id="8" name="Sign" x="430.459" y="3196.28">
    <properties>
     <property name="description" value="Says &quot;EXPOSITION&quot; in large, friendly letters."/>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Sign" x="1457.48" y="6369.17">
+  <object id="9" name="Sign" x="728.74" y="3184.59">
    <properties>
     <property name="description" value="Hints how to reset the puzzle."/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Sign" x="1920.69" y="6352.79">
+  <object id="10" name="Sign" x="960.345" y="3176.39">
    <properties>
     <property name="description" value="Hints how to solve the glowing boxes puzzle."/>
    </properties>
    <point/>
   </object>
-  <object id="11" name="Sign" x="2879.87" y="6350.45">
+  <object id="11" name="Sign" x="1439.93" y="3175.22">
    <properties>
     <property name="description" value="&quot;Private property. No trespassing.&quot;"/>
    </properties>
    <point/>
   </object>
-  <object id="12" name="Sign" x="5618.2" y="4977.19">
+  <object id="12" name="Sign" x="2809.1" y="2488.59">
    <properties>
     <property name="description" value="Friend: I planted these for you. It isn't much but I hope it brightens your day. It always brightened mine."/>
    </properties>
    <point/>
   </object>
-  <object id="13" name="Sign" x="5978.48" y="4914.03">
+  <object id="13" name="Sign" x="2989.24" y="2457.01">
    <properties>
     <property name="description" value="&quot;Friend: Do not fear the unknown. Sometimes they're nice.&quot;"/>
    </properties>
    <point/>
   </object>
-  <object id="14" name="Sign" x="9261.9" y="8572.93">
+  <object id="14" name="Sign" x="4630.95" y="4286.47">
    <properties>
     <property name="description" value="I seem to recall what I once saw so often..."/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="Sign" x="9018.6" y="8575.27">
+  <object id="15" name="Sign" x="4509.3" y="4287.64">
    <properties>
     <property name="description" value="&quot;What I remembered... It seems is now forgotten...&quot;"/>
    </properties>
    <point/>
   </object>
-  <object id="16" name="Sign" x="8777.63" y="8577.61">
+  <object id="16" name="Sign" x="4388.81" y="4288.81">
    <properties>
     <property name="description" value="&quot;So then nevermind I guess.&quot;"/>
    </properties>
    <point/>
   </object>
-  <object id="17" name="Sign" x="7538.89" y="4993.57">
+  <object id="17" name="Sign" x="3769.45" y="2496.78">
    <properties>
     <property name="description" value="&quot;Don't step on the flowers.&quot;"/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="Sign" x="8579.95" y="4433.27">
+  <object id="18" name="Sign" x="4289.98" y="2216.64">
    <properties>
     <property name="description" value="&quot;Property of Dalv (That monster in the cloak.) NO TRESPASSING!&quot;"/>
    </properties>
@@ -320,35 +323,35 @@
   </object>
  </objectgroup>
  <objectgroup id="3" name="saves">
-  <object id="3" name="Dark Ruins - Entrance" x="1039.89" y="8560.07">
+  <object id="3" name="Dark Ruins - Entrance" x="519.945" y="4280.03">
    <properties>
     <property name="description" value="SAVE point &quot;Dark Ruins - Entrance&quot;."/>
     <property name="page" value="SAVE"/>
    </properties>
    <point/>
   </object>
-  <object id="54" name="Dark Ruins - Atrium" x="5159.4" y="6365.57">
+  <object id="54" name="Dark Ruins - Atrium" x="2579.7" y="3182.78">
    <properties>
     <property name="description" value="SAVE point &quot;Dark Ruins - Atrium&quot;."/>
     <property name="page" value="SAVE"/>
    </properties>
    <point/>
   </object>
-  <object id="55" name="Dark Ruins - Cliff" x="6702.98" y="5863.44">
+  <object id="55" name="Dark Ruins - Cliff" x="3351.49" y="2931.72">
    <properties>
     <property name="description" value="SAVE point &quot;Dark Ruins - Cliff&quot;."/>
     <property name="page" value="SAVE"/>
    </properties>
    <point/>
   </object>
-  <object id="56" name="Dark Ruins - Puzzle" x="7021.79" y="8738.04">
+  <object id="56" name="Dark Ruins - Puzzle" x="3510.89" y="4369.02">
    <properties>
     <property name="description" value="SAVE point &quot;Dark Ruins - Puzzle&quot;."/>
     <property name="page" value="SAVE"/>
    </properties>
    <point/>
   </object>
-  <object id="57" name="Dark Ruins - Hall" x="8182.78" y="4543.04">
+  <object id="57" name="Dark Ruins - Hall" x="4091.39" y="2271.52">
    <properties>
     <property name="description" value="SAVE point &quot;Dark Ruins - Hall&quot;."/>
     <property name="page" value="SAVE"/>
@@ -357,128 +360,128 @@
   </object>
  </objectgroup>
  <objectgroup id="8" name="items">
-  <object id="37" name="Missing Poster" x="1275.32" y="10948.4">
+  <object id="37" name="Missing Poster" x="637.66" y="5474.2">
    <properties>
     <property name="description" value="Missing Poster can be seen falling down the chasm here."/>
     <property name="page" value="Missing Poster"/>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Lemonade" x="5517.96" y="6369.71">
+  <object id="38" name="Lemonade" x="2758.98" y="3184.86">
    <properties>
     <property name="description" value="Lemonade can be found here, with or without leaving a tip."/>
     <property name="page" value="Lemonade"/>
    </properties>
    <point/>
   </object>
-  <object id="39" name="Pebble Ammo" x="4539.59" y="4613.26">
+  <object id="39" name="Pebble Ammo" x="2269.8" y="2306.63">
    <properties>
     <property name="description" value="Pebble Ammo is found here."/>
     <property name="page" value="Pebble Ammo"/>
    </properties>
    <point/>
   </object>
-  <object id="40" name="Candy Corn" x="5481.12" y="5527.16">
+  <object id="40" name="Candy Corn" x="2740.56" y="2763.58">
    <properties>
     <property name="description" value="Candy Corn, a rejected piece of corn, can be found here."/>
     <property name="page" value="Candy Corn"/>
    </properties>
    <point/>
   </object>
-  <object id="41" name="Stray Feather" x="9334.71" y="7992.63">
+  <object id="41" name="Stray Feather" x="4667.35" y="3996.32">
    <properties>
     <property name="description" value="A Stray Feather can be found here."/>
     <property name="page" value="Feather"/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="Golden Pear" x="11077.3" y="7260.59">
+  <object id="42" name="Golden Pear" x="5538.65" y="3630.3">
    <properties>
     <property name="description" value="First of the golden items, the Golden Pear, is found here."/>
     <property name="page" value="Golden Pear"/>
    </properties>
    <point/>
   </object>
-  <object id="43" name="Corn Dog" x="7702.58" y="5193.37">
+  <object id="43" name="Corn Dog" x="3851.29" y="2596.68">
    <properties>
     <property name="description" value="The Corn Dog lies in a box of special corn."/>
     <property name="page" value="Corn Dog"/>
    </properties>
    <point/>
   </object>
-  <object id="44" name="Sponge Cake" x="8259.67" y="2813.08">
+  <object id="44" name="Sponge Cake" x="4129.84" y="1406.54">
    <properties>
     <property name="description" value="If [[Dalv]] is present, he gives [[Clover]] some leftovers from his birthday Sponge Cake."/>
     <property name="page" value="Sponge Cake"/>
    </properties>
    <point/>
   </object>
-  <object id="72" name="Path behind locked door" x="8494.84" y="8524.81">
+  <object id="72" name="Path behind locked door" x="4247.42" y="4262.4">
    <properties>
     <property name="color" type="color" value="#ffffff00"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 0,-719.281 -1295.37,-725.941 -1292.04,-2137.86 -23.31,-2121.21 -26.64,-2277.72"/>
+   <polyline points="0,0 0,-359.64 -647.685,-362.971 -646.02,-1068.93 -11.655,-1060.61 -13.32,-1138.86"/>
   </object>
-  <object id="73" name="Path over the bridge to Dalv" x="7425.91" y="7622.38">
+  <object id="73" name="Path over the bridge to Dalv" x="3712.95" y="3811.19">
    <properties>
     <property name="color" type="color" value="#ffff0000"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -153.18,0 -146.52,-1038.96 1974.69,-1022.31 1974.69,-2530.8 1798.2,-2527.47"/>
+   <polyline points="0,0 -76.59,0 -73.26,-519.48 987.345,-511.155 987.345,-1265.4 899.1,-1263.73"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="encounters">
-  <object id="23" name="Flier" x="1038.72" y="6656.92">
+  <object id="23" name="Flier" x="519.36" y="3328.46">
    <properties>
     <property name="description" value="Scripted encounter with Flier."/>
     <property name="page" value="Flier"/>
    </properties>
    <point/>
   </object>
-  <object id="24" name="Penilla" x="4740.91" y="6537.61">
+  <object id="24" name="Penilla" x="2370.45" y="3268.8">
    <properties>
     <property name="description" value="Scripted encounter with Penilla."/>
     <property name="page" value="Penilla"/>
    </properties>
    <point/>
   </object>
-  <object id="25" name="Sweet Corn" x="5039.19" y="5701.25">
+  <object id="25" name="Sweet Corn" x="2519.59" y="2850.63">
    <properties>
     <property name="description" value="Scripted encounter with Sweet Corn."/>
     <property name="page" value="Sweet Corn"/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="Rorrim" x="6465.08" y="5786.64">
+  <object id="26" name="Rorrim" x="3232.54" y="2893.32">
    <properties>
     <property name="description" value="Scripted encounter with Rorrim."/>
     <property name="page" value="Rorrim"/>
    </properties>
    <point/>
   </object>
-  <object id="27" name="Decibat" x="6782.08" y="7352.91">
+  <object id="27" name="Decibat" x="3391.04" y="3676.45">
    <properties>
     <property name="description" value="Miniboss battle against Decibat."/>
     <property name="page" value="Decibat"/>
    </properties>
    <point/>
   </object>
-  <object id="28" name="Crispy Scroll" x="7680.43" y="8827.93">
+  <object id="28" name="Crispy Scroll" x="3840.22" y="4413.97">
    <properties>
     <property name="description" value="Scripted encounter against Crispy Scroll."/>
     <property name="page" value="Crispy Scroll"/>
    </properties>
    <point/>
   </object>
-  <object id="29" name="Dalv" x="8460.64" y="3586.38">
+  <object id="29" name="Dalv" x="4230.32" y="1793.19">
    <properties>
     <property name="description" value="Boss battle against Dalv."/>
     <property name="page" value="Dalv"/>
    </properties>
    <point/>
   </object>
-  <object id="45" name="Micro Froggit" x="10227.9" y="7391.8">
+  <object id="45" name="Micro Froggit" x="5113.95" y="3695.9">
    <properties>
     <property name="description" value="The secret enemy, Micro Froggit, is fought here."/>
     <property name="page" value="Micro Froggit"/>
@@ -486,7 +489,4 @@
    <point/>
   </object>
  </objectgroup>
- <imagelayer id="2" name="Dark Ruins map">
-  <image source="images/Dark Ruins.png" width="11459" height="11463"/>
- </imagelayer>
 </map>
