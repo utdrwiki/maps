@@ -11,6 +11,7 @@ import pytiled_parser as tiled
 import pytiled_parser.tiled_object as objects
 
 from datamaps import CoordinateSystem, DataMap, ImageBackground, Order, Marker
+from datamaps.background import TiledBackground
 from datamaps.basic import Color, Point
 from datamaps.markers import Marker
 from datamaps.overlays import BoxOverlay, Overlay, PolylineOverlay
@@ -74,8 +75,12 @@ def convert_layer(
     logging.debug('Converting layer %s (ID %d)', layer.name, layer.id)
     overlays: List[Overlay] = []
     if isinstance(layer, tiled.ImageLayer):
-        datamap.backgrounds.append(ImageBackground(f'{layer.name}.png',
-            name=layer.name))
+        bg = ImageBackground(f'{layer.name}.png', name=layer.name)
+        if datamap.backgrounds[0].name == '<default>':
+            bg.overlays = datamap.backgrounds[0].overlays
+            datamap.backgrounds[0] = bg
+        else:
+            datamap.backgrounds.append(bg)
     elif isinstance(layer, tiled.ObjectLayer):
         markers: List[Marker] = []
         for obj in layer.tiled_objects:
@@ -130,6 +135,10 @@ def convert_tiled_to_datamap(map: tiled.TiledMap) -> DataMap:
     datamap.custom.map_name = map.map_file.name.replace('.tmx', '')
     datamap.disclaimer = get_property(map.properties, 'disclaimer', str)
     datamap.include = get_list_property(map.properties, 'include')
+    # We need a background to insert the overlays into.
+    datamap.backgrounds.append(TiledBackground(tileSize=map.tile_size,
+        tiles=[],
+        name="<default>"))
 
     converted_layers: Set[Optional[int]] = set()
     for layer in reversed(map.layers):

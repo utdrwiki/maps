@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from dataclasses_json import dataclass_json
-from typing import List, Optional, Union
+from typing import List, Optional, Tuple, Union
 
 from datamaps.basic import NamedPoint, Rectangle
 from datamaps.overlays import Overlay
@@ -25,7 +25,7 @@ class Tile:
 @dataclass_json
 @dataclass
 class TiledBackground(BaseBackground):
-    tileSize: Union[float, List, NamedPoint]
+    tileSize: Union[float, Tuple[float, float], NamedPoint]
     tiles: List[Tile]
     at: Optional[Union[List, NamedPoint]] = field(default_factory=lambda: [0, 0])
 
