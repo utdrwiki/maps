@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="109" height="72" tilewidth="20" tileheight="20" infinite="0" nextlayerid="14" nextobjectid="1">
+ <imagelayer id="7" name="Wild East map after Starlo battle" visible="0">
+  <image source="images/Wild East 6.png" width="2180" height="1422"/>
+ </imagelayer>
+ <imagelayer id="6" name="Wild East map before Starlo battle" visible="0">
+  <image source="images/Wild East 5.png" width="2180" height="1422"/>
+ </imagelayer>
+ <imagelayer id="5" name="Wild East map before Feisty Four battle" visible="0">
+  <image source="images/Wild East 4.png" width="2180" height="1422"/>
+ </imagelayer>
+ <imagelayer id="4" name="Wild East map before mission 3" visible="0">
+  <image source="images/Wild East 3.png" width="2180" height="1422"/>
+ </imagelayer>
+ <imagelayer id="3" name="Wild East map before mission 2" visible="0">
+  <image source="images/Wild East 2.png" width="2180" height="1422"/>
+ </imagelayer>
+ <imagelayer id="2" name="Wild East map before mission 1">
+  <image source="images/Wild East 1.png" width="2180" height="1422"/>
+ </imagelayer>
+ <objectgroup id="8" name="items"/>
+ <objectgroup id="9" name="saves"/>
+ <objectgroup id="10" name="signs"/>
+ <objectgroup id="11" name="npcs"/>
+ <objectgroup id="12" name="plot"/>
+ <objectgroup id="13" name="annotations"/>
+</map>
