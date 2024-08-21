@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="109" height="127" tilewidth="20" tileheight="20" infinite="0" nextlayerid="7" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Ketsukane Estate map">
+  <image source="images/Ketsukane Estate.png" width="2176" height="2541"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="signs"/>
+ <objectgroup id="5" name="saves"/>
+ <objectgroup id="6" name="items"/>
+</map>
