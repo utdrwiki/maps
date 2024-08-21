@@ -168,7 +168,7 @@ def log_in_to_wiki(project_name: str) -> WikiClient:
     credentials = AuthCredentials(user_file='tiled-datamaps')
     if wiki is None:
         raise ValueError('Could not find wiki information in project file')
-    return WikiClient(*wiki, credentials)
+    return WikiClient(*wiki, credentials, max_retries=0)
 
 
 def get_script_dir() -> Path:
