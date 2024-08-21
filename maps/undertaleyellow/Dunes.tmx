@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="916" height="261" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Dunes map">
+  <image source="images/Dunes.png" width="18306" height="5220"/>
+ </imagelayer>
+ <objectgroup id="10" name="plot"/>
+ <objectgroup id="9" name="npcs"/>
+ <objectgroup id="8" name="ugps"/>
+ <objectgroup id="7" name="puzzles"/>
+ <objectgroup id="6" name="signs"/>
+ <objectgroup id="5" name="saves"/>
+ <objectgroup id="4" name="items"/>
+ <objectgroup id="3" name="encounters"/>
+ <objectgroup id="11" name="annotations"/>
+</map>
