@@ -113,7 +113,8 @@ def convert_layer(
                     thickness=get_property(obj.properties, 'thickness', float)
                 ))
         layer_association_id = ' '.join([layer.name] + parent_layers)
-        datamap.markers[layer_association_id] = markers
+        if len(markers) > 0:
+            datamap.markers[layer_association_id] = markers
     elif isinstance(layer, tiled.LayerGroup):
         for child_layer in layer.layers or []:
             convert_layer(child_layer, datamap, converted_layers,
