@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="287" height="287" tilewidth="20" tileheight="20" infinite="0" nextlayerid="11" nextobjectid="74">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="287" height="287" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="74">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -240,13 +240,6 @@
    </properties>
    <point/>
   </object>
-  <object id="53" name="Corn Maze path" x="2523.02" y="2887.89">
-   <properties>
-    <property name="color" type="color" value="#ff0000ff"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -1.15101,-86.326 -245.166,-87.477 -246.317,-265.884 -199.125,-265.884 -199.125,-287.753 -156.538,-287.753 -157.689,-306.17 -59.8525,-305.019 -59.8525,-247.468 96.685,-246.317 96.685,-306.17 214.089,-305.019 216.391,-364.871 281.998,-364.871"/>
-  </object>
  </objectgroup>
  <objectgroup id="7" name="signs">
   <object id="2" name="Sign" x="419.348" y="5416.4">
@@ -416,20 +409,6 @@
    </properties>
    <point/>
   </object>
-  <object id="72" name="Path behind locked door" x="4247.42" y="4262.4">
-   <properties>
-    <property name="color" type="color" value="#ffffff00"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 0,-359.64 -647.685,-362.971 -646.02,-1068.93 -11.655,-1060.61 -13.32,-1138.86"/>
-  </object>
-  <object id="73" name="Path over the bridge to Dalv" x="3712.95" y="3811.19">
-   <properties>
-    <property name="color" type="color" value="#ffff0000"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -76.59,0 -73.26,-519.48 987.345,-511.155 987.345,-1265.4 899.1,-1263.73"/>
-  </object>
  </objectgroup>
  <objectgroup id="10" name="encounters">
   <object id="23" name="Flier" x="519.36" y="3328.46">
@@ -487,6 +466,29 @@
     <property name="page" value="Micro Froggit"/>
    </properties>
    <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="annotations">
+  <object id="53" name="Corn Maze path" x="2523.02" y="2887.89">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -1.15101,-86.326 -245.166,-87.477 -246.317,-265.884 -199.125,-265.884 -199.125,-287.753 -156.538,-287.753 -157.689,-306.17 -59.8525,-305.019 -59.8525,-247.468 96.685,-246.317 96.685,-306.17 214.089,-305.019 216.391,-364.871 281.998,-364.871"/>
+  </object>
+  <object id="72" name="Path behind locked door" x="4247.42" y="4262.4">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-359.64 -647.685,-362.971 -646.02,-1068.93 -11.655,-1060.61 -13.32,-1138.86"/>
+  </object>
+  <object id="73" name="Path over the bridge to Dalv" x="3712.95" y="3811.19">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -76.59,0 -73.26,-519.48 987.345,-511.155 987.345,-1265.4 899.1,-1263.73"/>
   </object>
  </objectgroup>
 </map>

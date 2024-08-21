@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="92" height="59" tilewidth="20" tileheight="20" infinite="0" nextlayerid="7" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
  <imagelayer id="2" name="Oasis Valley map">
   <image source="images/Oasis Valley.png" width="1840" height="1180"/>
  </imagelayer>
