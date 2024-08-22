@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Steamworks map">
+  <image source="images/Steamworks.png" width="27924" height="5186"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="npcs"/>
+ <objectgroup id="6" name="ugps"/>
+ <objectgroup id="5" name="puzzles"/>
+ <objectgroup id="7" name="signs"/>
+ <objectgroup id="8" name="saves"/>
+ <objectgroup id="9" name="items"/>
+ <objectgroup id="10" name="encounters"/>
+ <objectgroup id="11" name="annotations"/>
+</map>
