@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="138" height="83" tilewidth="20" tileheight="20" infinite="0" nextlayerid="11" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Hotland map">
+  <image source="images/Hotland.png" width="2746" height="1641"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="npcs"/>
+ <objectgroup id="5" name="ugps"/>
+ <objectgroup id="6" name="signs"/>
+ <objectgroup id="7" name="saves"/>
+ <objectgroup id="8" name="items"/>
+ <objectgroup id="9" name="encounters"/>
+ <objectgroup id="10" name="annotations"/>
+</map>

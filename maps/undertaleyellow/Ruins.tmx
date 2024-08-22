@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="60" height="82" tilewidth="20" tileheight="20" infinite="0" nextlayerid="8" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Ruins map">
+  <image source="images/Ruins.png" width="1196" height="1624"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="puzzles"/>
+ <objectgroup id="5" name="signs"/>
+ <objectgroup id="6" name="encounters"/>
+</map>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="263" height="128" tilewidth="20" tileheight="20" infinite="0" nextlayerid="10" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="New Home map">
+  <image source="images/New Home.png" width="5254" height="2560"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="npcs"/>
+ <objectgroup id="5" name="signs"/>
+ <objectgroup id="6" name="saves"/>
+ <objectgroup id="7" name="items"/>
+ <objectgroup id="8" name="encounters"/>
+ <objectgroup id="9" name="annotations"/>
+</map>
