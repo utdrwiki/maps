@@ -1,16 +1,631 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="378" height="418" tilewidth="20" tileheight="20" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="378" height="418" tilewidth="20" tileheight="20" infinite="0" nextlayerid="14" nextobjectid="91">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Snowdin map">
   <image source="images/Snowdin.png" width="7560" height="8360"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="6" name="signs"/>
- <objectgroup id="7" name="saves"/>
- <objectgroup id="8" name="items"/>
- <objectgroup id="9" name="encounters"/>
+ <objectgroup id="10" name="boxes">
+  <object id="6" name="Dimensional Box 1" x="1829.89" y="7062.89">
+   <properties>
+    <property name="description" value="First instance of a Dimensional Box!"/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Dimensional Box 2" x="4275.58" y="3204.27">
+   <properties>
+    <property name="description" value="Second instance of a Dimensional Box, here to help you with shopping for items in the [[Honeydew Resort]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Dimensional Box 3" x="7325.68" y="2048.88">
+   <properties>
+    <property name="description" value="Third instance of a Dimensional Box, here to help you regroup before Martlet's boss battle."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="76" name="Exit from Dark Ruins" x="48.7415" y="8181.65">
+   <properties>
+    <property name="description" value="This is where [[Clover]] exits from the [[Dark Ruins]]. Once they do, there is no longer a way to go back."/>
+    <property name="page" value="Dark Ruins"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Flowey cutscene" x="1100.01" y="7337.84">
+   <properties>
+    <property name="description" value="There is where [[Flowey]] asks [[Clover]] if they are called Gun-Hat. On a [[Genocide Route]], he tells them that nobody will remember their deeds from that point."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Large rock" x="1109.5" y="6469.84">
+   <properties>
+    <property name="description" value="This large rock blocks the entrance to a cave entrance. [[Red Miner]] gets sent to clear it out, but they procrastinate on the job."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Meeting Martlet 1" x="3051.8" y="7210.63">
+   <properties>
+    <property name="description" value="At this point, [[Clover]] sees [[Martlet]] for the first time while she calibrates a puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Fun Value room" x="4197.3" y="6490.85">
+   <properties>
+    <property name="description" value="After exiting the room from the right of this point into the room to the left of this point, and the [[Fun Value]] is between 30 and 39 (12.35% chance), [[Clover]] gets transported to a different room with one of two NPCs."/>
+    <property name="page" value="Jane Doe and Wanda"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Honeydew Resort" x="4413.27" y="3040.41">
+   <properties>
+    <property name="description" value="The Honeydew Resort is a place where [[Clover]] can rest, buy items from the [[Honeydew Shopkeeper]], find the [[Golden Coffee]] and [[Band Merch Pin]] items and advance the [[Slurpy]] quest. The arrows on top of its roof are pointing towards the secret room entrance!"/>
+    <property name="page" value="Honeydew Resort"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Meeting Martlet 2" x="5191.2" y="3085.74">
+   <properties>
+    <property name="description" value="Here is the second point that [[Clover]] sees [[Martlet]], while she's fixing the sign to the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Ava Ride to Dunes" x="7249.89" y="943.604">
+   <properties>
+    <property name="description" value="Here, [[Martlet]] and [[Clover]] take the UG Aviator ride to [[Hotland]]. However, their ride goes awry, Clover ends up at the [[Dunes]] instead, together with Ava's pieces."/>
+    <property name="page" value="Dunes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Martlet's Journal" x="6906.92" y="353.049">
+   <properties>
+    <property name="description" value="[[Martlet]]'s journal lies in front of her house, where she talks about how she found a job, a hobby, and her mentor, [[Chujin]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Genocide battle cutscene" x="7084.82" y="106.373">
+   <properties>
+    <property name="description" value="During [[Martlet]]'s [[Genocide Route]] [[Martlet/In Battle|battle]], a cutscene plays between her two phases where [[Chujin]] and her talk about her new job at the Royal Guard."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Bridge to Martlet's house" x="6959.19" y="857.405">
+   <properties>
+    <property name="description" value="After initially visiting Snowdin, this bridge is broken, and Martlet's house cannot be reached. After getting the ability to [[Fast Travel]], [[Clover]] can go back to [[Snowdin]] and revisit this place, when the bridge is fixed and they can access Martlet's house."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Honeydew Resort" x="3849.98" y="1980.08" width="1157.19" height="1518.92">
+   <properties>
+    <property name="border" type="color" value="#ffffaa00"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="40" name="Sweet Corn" x="143.182" y="8175.18">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], a [[Sweet Corn]] waits here for her siblings to get out of the [[Dark Ruins]]."/>
+    <property name="page" value="Sweet Corn#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Adventurers" x="1017.08" y="6641.65">
+   <properties>
+    <property name="description">A pair of NPCs lost in Snowdin on a honeymoon. You can exchange a [[Snowdin Map]] for [[Matches]] with them.
+
+Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew Resort]]!</property>
+    <property name="page" value="Adventurers"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Red Miner" x="1234.32" y="6581.42">
+   <properties>
+    <property name="description" value="This miner from the [[East Mines]] comes here to mine this big rock after [[Clover]] gets the ability to [[Fast Travel]]. However, they are procrastinating on the job."/>
+    <property name="page" value="Red Miner"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Penilla" x="1719.17" y="7219.31">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], Penilla can be found here admiring the frozen lake view."/>
+    <property name="page" value="Penilla#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Slurpy" x="3185.54" y="6408.61">
+   <properties>
+    <property name="description" value="After three dogs dared him to lick this pole, Slurpy got stuck. To help him, your next stop is retrieving the [[Honeydew Coffee]] from the [[Honeydew Shopkeeper]] and giving it to the [[Martha]] NPC to the east of the [[Honeydew Resort]]."/>
+    <property name="page" value="Slurpy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Frostermit" x="2119.09" y="7192.65">
+   <properties>
+    <property name="description" value="After the battle with [[Martlet]], Frostermit appears here as an NPC, talking about how it wants to move to the [[Wild East]]."/>
+    <property name="page" value="Frostermit#Main Story"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Flier" x="3715.81" y="6286.17">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], Flier appears here after helping [[Dalv]] move. His house business, unfortunately, isn't going very well."/>
+    <property name="page" value="Flier#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Dalv" x="3852.08" y="6292.09">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], Dalv appears here with [[Pops]], intending to move from [[Dark Ruins]] to this dilapidated shack."/>
+    <property name="page" value="Dalv#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Know Cone" x="4114.74" y="6433.3">
+   <properties>
+    <property name="description" value="After the battle with [[Martlet]], Know Cone appears here, planning to climb a big hill to see [[Hotland]]."/>
+    <property name="page" value="Know Cone#Main Story"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Awkward Guy" x="4371.48" y="6418.49">
+   <properties>
+    <property name="description" value="This NPC quotes some books they read on pressing X to slow down, eating to stay healthy, and running out of book quotes."/>
+    <property name="page" value="Awkward Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Trihecta" x="4307.3" y="5340.18">
+   <properties>
+    <property name="description" value="After the battle with [[Martlet]], this trio appears as NPCs, each with their own concerns."/>
+    <property name="page" value="Trihecta#Main Story"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Ice Wolf" x="4778.32" y="5374.74">
+   <properties>
+    <property name="description" value="A cameo of Ice Wolf from ''[[ut:Undertale|Undertale]]'', they appear to be doing the same job in ''[[Undertale Yellow]]'', which is throwing ice cubes into a river."/>
+    <property name="page" value="Ice Wolf"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Sleeping Bear" x="4567" y="3256.64">
+   <properties>
+    <property name="description" value="This bear has fallen asleep in front of the [[Honeydew Resort]] while delivering a shipment."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Blankie" x="4168.07" y="3190.48">
+   <properties>
+    <property name="description" value="This fluffy monster is here just to avoid their job responsibilities!"/>
+    <property name="page" value="Blankie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Flame Guy" x="4123.63" y="3234.92">
+   <properties>
+    <property name="description" value="They never heard of [[The Shufflers]], and plan to listen to [[Rodney's Band]] but never do."/>
+    <property name="page" value="Flame Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="The Log" x="4200.52" y="3213.59">
+   <properties>
+    <property name="description" value="On a [[Genocide Route]], this log sees everything."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Rorrim" x="4338.99" y="3234.49">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], this mirror monster is back from the [[Dark Ruins]]! He's dreaming of becoming [[Asgore]]'s tailor."/>
+    <property name="page" value="Rorrim#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Micro Froggits" x="4327.24" y="2635.53">
+   <properties>
+    <property name="description" value="Several Micro Froggits enjoying their time in their micro hot spring."/>
+    <property name="page" value="Micro Froggit#Main Story"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Donald Glover" x="3960.16" y="2789.03">
+   <properties>
+    <property name="description" value="This ant-like NPC has lost his [[Soggy Mitten|mitten]]. [[Clover]] can retrieve his mitten from [[Maury]], after giving them a [[Honeydew Coffee]]. Donald gives Clover a [[Snowdin Map]] in return, which Clover can give to the [[Adventurers]] to continue the quest to free [[Slurpy]]!"/>
+    <property name="page" value="Donald Glover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Theorist" x="4220.12" y="2271.06">
+   <properties>
+    <property name="description" value="This crazy conspiracy theorist is upset about the hot spring's asymmetrical placement."/>
+    <property name="page" value="Theorist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Torch" x="4259.96" y="2155.45">
+   <properties>
+    <property name="description" value="This flame monster is very happy to have a job as a torch!"/>
+    <property name="page" value="Torch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Blob" x="4185.5" y="2205.75">
+   <properties>
+    <property name="description" value="This spherical monster is swimming for their own fitness, remarking that they've dropped a whole goggle size."/>
+    <property name="page" value="Blob"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Lounger" x="4148.27" y="2160.03">
+   <properties>
+    <property name="description" value="They have long awaited their visit to the hot springs, and are now enjoying their relaxation."/>
+    <property name="page" value="Lounger"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Couch Bear" x="4727.63" y="2662.97">
+   <properties>
+    <property name="description" value="They were told to visit the [[Honeydew Resort]] to relieve stress, but they can't shake off the feeling that they are causing the downfall of the Underground."/>
+    <property name="page" value="Couch Bear"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Rodney's Band" x="4790.99" y="2442.19">
+   <properties>
+    <property name="description" value="This band of monsters represents the three main composers of ''[[Undertale Yellow]]'': [[Master Sword]]/Rodney (center), [[MyNewSoundtrack]] (left) and [[NoteBlock]] (right). They play ''[[Honeydew Cabin]]'', but can be asked to switch their music to ''[[Honeydew Ruins]]'', ''[[Honeydew Snow]]'', ''[[Honeydew Hideaway]]'' or ''[[Honeydew Bark]]''. While playing ''Honeydew Bark'', the [[Superfan]] NPC can give [[Clover]] a [[Band Merch Pin]]."/>
+    <property name="page" value="Rodney's Band"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Superfan" x="4704.77" y="2530.37">
+   <properties>
+    <property name="description" value="This NPC is a great fan of [[Rodney's Band]], and used to follow them around the Underground. If [[Clover]] asks Rodney to change the music to ''[[Honeydew Bark]]'', this NPC gives them a [[Band Merch Pin]]."/>
+    <property name="page" value="Superfan"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Dunes Rabbit" x="4937.3" y="2530.37">
+   <properties>
+    <property name="description" value="This rabbit-like NPC came from the [[Dunes]] to try the [[Honeydew Pancake]]s."/>
+    <property name="page" value="Dunes Rabbit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Maury" x="5061.4" y="3015.68">
+   <properties>
+    <property name="description" value="This NPC is too lazy to move, they eventually freeze. [[Clover]] can exchange a [[Honeydew Coffee]] with them for a [[Soggy Mitten]], and later [[Matches]] for a [[Lukewarm Coffee]], that they can use to free [[Slurpy]]."/>
+    <property name="page" value="Maury"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Cranky" x="5391.25" y="3117.57">
+   <properties>
+    <property name="description" value="This old lady does not like the Royal Guard messing with the bridge."/>
+    <property name="page" value="Cranky"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Snowflake" x="5397.13" y="3264.53">
+   <properties>
+    <property name="description" value="This completely stationary snowflake has trouble melting."/>
+    <property name="page" value="Snowflake"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Insomnitot" x="6582.63" y="3055.52">
+   <properties>
+    <property name="description" value="After [[Martlet]]'s battle, Insomnitot appears here in an endless cycle of attempting to sleep."/>
+    <property name="page" value="Insomnitot#Main Story"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Crispy Scroll" x="7113.65" y="917.048">
+   <properties>
+    <property name="description" value="After getting the ability to [[Fast Travel]], Crispy Scroll can be found by the docks. He is disappointed by the lack of anime to be found at the [[Garbage Dump]]."/>
+    <property name="page" value="Crispy Scroll#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Jane Doe and Wanda" x="4204.99" y="6679.77">
+   <properties>
+    <property name="description" value="Depending on the [[Fun Value]], one of two NPCs appear here. Jane Doe, a deer-like monster, is searching for a resident who went missing. Wanda, a unicorn-like monster, appears to have wandered here due to her boyfriend not paying attention to her."/>
+    <property name="page" value="Jane Doe and Wanda"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="37" name="Molten Rock Puzzle 1" x="3130.25" y="6833.22">
+   <properties>
+    <property name="description" value="[[Martlet]]'s first molten rock puzzle. To solve this one, control the wheels using left and right arrow keys, and don't let the ball hit the planks!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Bridge Puzzle" x="5581.12" y="3094.7">
+   <properties>
+    <property name="description" value="In this puzzle, you must cross over the bridge holes while the swings are in place. Otherwise, you fall down to the pillow below."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Molten Rock Puzzle 2" x="7430.63" y="2457.79">
+   <properties>
+    <property name="description" value="Similarly to the first molten rock puzzle, you move the platforms up and down to navigate the ball towards the ice cube at the bottom."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="ugps">
+  <object id="36" name="Snowdin - Forest" x="4154.24" y="4607.48">
+   <properties>
+    <property name="description" value="First station of the Underground Postal Service! [[Mail Whale]] arrives here to give [[Clover]] the [[Mail#Intro Letter|Intro Letter]]."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="21" name="Sign" x="116.009" y="8179.5">
+   <properties>
+    <property name="description" value="&quot;(The original text of this sign was crossed out.) (Now it reads &quot;&lt;span data-color=&quot;blue&quot;&gt;Entry Forbidden&lt;/span&gt;&quot; in blue crayon.)&quot;\"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Delta Rock" x="1052.57" y="7207.29">
+   <properties>
+    <property name="description" value="&quot;(There appears to be something interesting on this rock.) (Touch it?)&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Sign" x="1857.41" y="7072.18">
+   <properties>
+    <property name="description" value="&quot;This is a box. It is a stupid box. You can put items in it and they'll stay there. Until you take it out that is, then it's not there. And then there are more of these boxes later. You can use them to retrieve the stuff you put it this box. It's super dumb. Sincerely, a box hater.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Sign" x="3163.82" y="6997.14">
+   <properties>
+    <property name="description" value="To whom it may concern: In accordance with Royal Guard guide book section four, paragraph two, This puzzle is intended to impede the progress of an intruder (probably you), Entertain the residents of the surrounding area (Snowdin), And appear intimidating to would-be intruders or wrong-doers, (I'm unclear on what they mean by that, just go with it.) To pass by this challenge, you must melt the icecube. Make sure the ball-thing gets to the bottom without breaking though. Signed: Martlet of the Underground Royal Guard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Martlet's note" x="3850.1" y="6504.39">
+   <properties>
+    <property name="description" value="&quot;Dear owners of dilapidated cabin: First, I am very sorry that your cabin is so dilapidated. Like, I don't know what happened to it, but I'm sure it was unfortunate. Second, I am sorry that some of your wood has gone missing. According to the Royal Guard guide book section forty-two, paragraph one, So long as notice is given to the original owner at least two business days prior, Any and all eyesores can be repurposed for puzzles or other diversions. Well, I didn't know how to contact you, but consider this notice! ...Unfortunately not of the prior variety, but you know... notice.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Sign" x="4379.38" y="3364.27">
+   <properties>
+    <property name="description">&quot;Welcome to the Honeydew Resort!
+* North: The Honeydew Lodge
+* Northwest: The Honeydew Hotspring
+* East: Exit to Snowdin&quot;</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Sign" x="4097.96" y="2979.16">
+   <properties>
+    <property name="description" value="&quot;This way to the hot spring!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Space heater" x="4792.14" y="2648.37">
+   <properties>
+    <property name="description" value="&quot;(Nice and cozy!) (You notice a sticker on the heater.) Crafted with love by Chujin &amp; Martlet!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Sign" x="4938.28" y="3040.39">
+   <properties>
+    <property name="description">&quot;Honeydew Resort: Family owned and operated
+All travelers are welcome!&quot;</property>
+    <property name="plain" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Sign" x="5346.1" y="3054.21">
+   <properties>
+    <property name="description" value="&quot;Bridge slippery during snowfall - NO RUNNING.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Sign" x="6069.91" y="3036.44">
+   <properties>
+    <property name="description" value="&quot;10 steps to the East - 2nd Sign&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Sign" x="6418.49" y="3032.49">
+   <properties>
+    <property name="description">&quot;10 steps to the East - 3rd Sign
+10 steps to the West - 1st Sign&quot;</property>
+    <property name="plain" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Sign" x="6747.31" y="3032.49">
+   <properties>
+    <property name="description" value="&quot;10 steps to the West - 2nd Sign&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Sign" x="7462.23" y="2592.08">
+   <properties>
+    <property name="description">&quot;To whom it may concern:
+After building the first ball puzzle, I realized a fatal flaw in its design.
+How was an intruder supposed to like, see it?
+The puzzle was on a higher plain, out of your average monster's eyesight.
+If someone solved that puzzle, they must be very good at guessing.
+In any case, I have created an improved version!
+With a new vertical design, you can see what you're controlling!
+The parts may still get stuck though.
+Please refer to my instructions back at the first puzzle if that happens.
+Signed: Martlet of the Underground Royal Guard&quot;</property>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="saves">
+  <object id="16" name="Snowdin - Delta Rock" x="1099.42" y="7252.91">
+   <properties>
+    <property name="description" value="SAVE point &quot;Snowdin - Delta Rock&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Snowdin - Pathway" x="4260.52" y="4334.83">
+   <properties>
+    <property name="description" value="SAVE point &quot;Snowdin - Pathway&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Snowdin - Ruined Shack" x="3809.31" y="6452.1">
+   <properties>
+    <property name="description" value="SAVE point &quot;Snowdin - Ruined Shack&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Snowdin - Resort" x="4239.93" y="3283.8">
+   <properties>
+    <property name="description" value="SAVE point &quot;Snowdin - Resort&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Snowdin - Corridor" x="7280.21" y="2024.17">
+   <properties>
+    <property name="description" value="SAVE point &quot;Snowdin - Corridor&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="vendors">
+  <object id="14" name="Mo" x="3923.42" y="5818.45">
+   <properties>
+    <property name="description">Here you have the pleasure of meeting our dearest salesman, Mo! He is selling hot chocolate, frozen, then reheated:
+* [[Hot Pop]]
+* [[Lukewarm Pop]]
+* [[Cold Pop]]
+Each item costs 15G.</property>
+    <property name="page" value="Mo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Honeydew Shopkeeper" x="4918.51" y="2623.41">
+   <properties>
+    <property name="description">An anxious pink bear monster, working as a vendor at their family's business, the [[Honeydew Resort]]. They are selling:
+* [[Honeydew Coffee]] (16G)
+* [[Honeydew Pancake]] (18G)
+* [[G.B. Bear]] (22G)
+* [[Honeydew Pin]] (30G)</property>
+    <property name="page" value="Honeydew Shopkeeper"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="9" name="Ice Pellets" x="4491.66" y="6484.61">
+   <properties>
+    <property name="description" value="After interacting with this crystal, ice shards fall from the tree and allow Clover to pick Ice Pellets from the floor."/>
+    <property name="page" value="Ice Pellets"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Golden Coffee" x="4328.95" y="2584.72">
+   <properties>
+    <property name="description" value="The second golden item, Golden Coffee, can be picked up just behind the [[Honeydew Resort]]!"/>
+    <property name="page" value="Golden Coffee"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Coffee Bean Ammo" x="7275.37" y="2947.46">
+   <properties>
+    <property name="description" value="In this barrel, [[Clover]] can find the Coffee Bean Ammo."/>
+    <property name="page" value="Coffee Bean Ammo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Honeydew Pancake" x="7370.71" y="2297.65">
+   <properties>
+    <property name="description" value="A fresh Honeydew Pancake lies under the bench."/>
+    <property name="page" value="Honeydew Pancake"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="encounters">
+  <object id="1" name="Frostermit" x="1487.74" y="7197.22">
+   <properties>
+    <property name="description" value="Scripted encounter with Frostermit."/>
+    <property name="page" value="Frostermit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Insomnitot" x="3918.04" y="6268.57">
+   <properties>
+    <property name="description" value="Scripted encounter with Insomnitot."/>
+    <property name="page" value="Insomnitot"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Know Cone" x="4219.54" y="5572.63">
+   <properties>
+    <property name="description" value="Scripted encounter with Know Cone."/>
+    <property name="page" value="Know Cone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Trihecta" x="6289.79" y="3100.62">
+   <properties>
+    <property name="description" value="Scripted encounter with Trihecta."/>
+    <property name="page" value="Trihecta"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Martlet" x="7239.66" y="1480.42">
+   <properties>
+    <property name="description" value="Boss battle against Martlet."/>
+    <property name="page" value="Martlet/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="The Shufflers" x="4421.18" y="3737.17">
+   <properties>
+    <property name="description" value="Local Snowdin gang, The Shufflers, are waiting for [[Honeydew Resort]] visitors and making them play a cup game."/>
+    <property name="page" value="The Shufflers"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="annotations">
+  <object id="74" name="Front entrance to Honeydew Resort" x="4418.03" y="3238.4">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="2.4176,17.7291 377.61,16.832 378.075,-380.551"/>
+  </object>
+  <object id="75" name="Back exit from Honeydew Resort" x="4659.9" y="2459.14">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -341.308,0.933126 -340.928,553.079"/>
+  </object>
+  <object id="83" name="Entrance and exit from the fun value room" x="4196.44" y="6495.13">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 2.56454,241.922"/>
+  </object>
+ </objectgroup>
 </map>
