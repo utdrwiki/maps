@@ -1,18 +1,1043 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="15" nextobjectid="181">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
- <imagelayer id="2" name="Steamworks map">
+ <imagelayer id="2" name="Steamworks map" locked="1">
   <image source="images/Steamworks.png" width="27924" height="5186"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="6" name="ugps"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="7" name="signs"/>
- <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="items"/>
- <objectgroup id="10" name="encounters"/>
- <objectgroup id="11" name="annotations"/>
+ <objectgroup id="3" name="plot">
+  <object id="57" name="Locker" x="26844.2" y="2957.16">
+   <properties>
+    <property name="description" value="This is [[Axis]]'s charging locker. It breaks open after the generator is turned on. He returns here after he is spared."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Generator switch" x="27847.8" y="2996.5">
+   <properties>
+    <property name="description" value="This turns on the generator, simultaneously allowing [[Clover]] to continue and powering all the robots."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Steamworks Sign" x="25804.5" y="2440">
+   <properties>
+    <property name="description" value="This flickering sign announces the entrance to the Steamworks."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Enter Axis" x="22023" y="2094">
+   <properties>
+    <property name="description" value="The first encounter with Axis. In a [[Neutral Route|Neutral]] and [[Pacifist Route]], he will send [[Clover]] (and [[Ceroba]] on Pacifist) through a trapdoor. In a [[Genocide Route]], he will attempt to initate combat, but Clover will shoot him and he will flee through the trapdoor."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Build-a-Bot" x="21577.7" y="2565.67">
+   <properties>
+    <property name="description" value="On the [[Pacifist Route]], [[Ceroba]] has the idea to build [[Axis]] a partner. [[Clover]] must pick out four pieces of trash from around the room and shape it into a trash robot."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Chujin's failed showcases" x="6268.67" y="903.333">
+   <properties>
+    <property name="description" value="[[Ceroba]] reads through Chujin's employee reports and discovers he was terrible at making robots, to the point where [[Asgore]] directly told him to stop."/>
+    <property name="page" value="Chujin Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Axis encounter" x="6572.63" y="411">
+   <properties>
+    <property name="description" value="On a [[Neutral Route]], [[Axis]] will be behind the door when [[Clover]] opens it. He tries to pour [[Hydrochloric Acid]] on them but drops it and falls through the hole in the floor it creates. On a [[Genocide Route]], he speaks to them from behind the door when they first enter the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Generator" x="26427" y="3774">
+   <properties>
+    <property name="description">The Steamworks generator. After flipping the generator switch, this will once again provide power to the Steamworks.
+
+On a [[Genocide Route]], [[Clover]] shoots the generator. When they turn it on, it is unstable, affecting machinery in other parts of the facility.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Laundry chute shortcut" x="26014" y="2955">
+   <properties>
+    <property name="description" value="After defeating [[Axis]], this can be used to fast travel to and from the room after The Furnace. In the [[Pacifist Route]], [[Feisty Four#Ed|Ed]] and [[Starlo]] use it to travel."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Axis spying 1" x="23914.7" y="1778.67">
+   <properties>
+    <property name="description" value="Axis's shadowy figure can be seen watching [[Clover]] before running along the catwalk here."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Axis recapture" x="21756.3" y="2519.25">
+   <properties>
+    <property name="description" value="[[Clover]] can leave through this door twice. They get caught and returned to detainment by Axis both times. He locks the door after their second try."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Laundry chute shortcut" x="930.5" y="753.5">
+   <properties>
+    <property name="description" value="After defeating [[Axis]], this can be used to fast travel to and from the laundry room by the generator. In the [[Pacifist Route]], [[Feisty Four#Ed|Ed]] and [[Starlo]] use it to travel."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Control Station" x="4788" y="718">
+   <properties>
+    <property name="description" value="This station controls all the Steamworks bots except [[Axis]]. [[Clover]] tries to use this to shut down the bots on a [[Neutral Route|Neutral]] and [[Pacifist Route]], which extends the bridge to the next room but does not shut them down."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Axis spying 2" x="17935" y="1255.33">
+   <properties>
+    <property name="description">Axis's eyes blend in with the lights here and disappear when [[Clover]] walks far enough away.
+
+This does not happen on the [[Genocide Route]].</property>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Annoying Dog Fun Value" x="5892.5" y="2913">
+   <properties>
+    <property name="description" value="If the Fun Value is between 11 and 15, the conveyor will spit out the Annoying Dog after 7 items, who will run away."/>
+    <property name="page" value="Fun Value"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Ice-E Fun Value" x="17324.5" y="1115.25">
+   <properties>
+    <property name="description" value="When the Fun Value is between 11 and 15, the static clears to show a grinning [[dr:Ice-E|Ice-E]]. Interacting with the screen causes it to scream and shut off."/>
+    <property name="page" value="Fun Value"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Axis chase 1" x="17676.7" y="1523.33">
+   <properties>
+    <property name="description" value="[[Axis]] chases [[Clover]] down through this room. On a [[Genocide Route]], Clover chases him down instead."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Axis chase 2" x="15036" y="2133.33">
+   <properties>
+    <property name="description">[[Axis]] throws energy balls at [[Clover]] through the broken window. If they are hit, they are put into a battle where they dodge energy balls from all sides.
+
+This is skipped in the [[Genocide Route]].</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Break with Ceroba" x="12343.3" y="2055.33">
+   <properties>
+    <property name="description" value="[[Ceroba]] sits down and takes a breather here. She talks to [[Clover]] about [[Kanako]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Mr. Screen encounter 2" x="5948" y="2441">
+   <properties>
+    <property name="description" value="Mr. Screen again forces [[Ceroba]] and [[Clover]] to complete the puzzle."/>
+    <property name="page" value="Mr. Screen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Mr. Screen encounter 3" x="6191.67" y="1928">
+   <properties>
+    <property name="description" value="Mr. Screen loudly interrupts [[Ceroba]] when she is hiding from [[Axis]]. She kills her"/>
+    <property name="page" value="Mr. Screen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="Elevator to Hotland" x="171" y="744.333">
+   <properties>
+    <property name="description" value="This elevator links to Hotland elevator R3. On a [[Pacifist Route]], [[Clover]] is stopped before entering and is taken away by [[Feisty Four#Ed|Ed]] as [[Starlo]] follows [[Ceroba]] fleeing through this elevator."/>
+    <property name="page" value="Hotland"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Mysteries of the Underground" x="7142.33" y="182">
+   <properties>
+    <property name="description" value="The book &quot;Mysteries of the Underground&quot; is found here."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="174" name="Entrance from Dunes" x="27225.2" y="5178.26">
+   <properties>
+    <property name="description">[[Clover]], together with [[Ceroba]] on a [[Pacifist Route]], enters the [[Steamworks]] through this entrance from the Dunes. The entrance remains closed until encountering [[Axis]].
+
+If the [[Dunes]] kill count has been exhausted on a [[Genocide Route]], this entrance never re-opens.</property>
+    <property name="page" value="Dunes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="176" name="Crossroad" x="8126.78" y="2122.6">
+   <properties>
+    <property name="description" value="On a [[Pacifist Route]], [[Ceroba]] chooses to go west into the [[Steamworks]] Factory. On a [[Neutral Route|Neutral]] and [[Genocide Route]], Clover does not have the necessary passcode and has to enter the laboratory to the north instead."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="180" name="Laundry chute shortcut" x="26014.3" y="2955.03">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -2210.8,0 -2213.47,1843.64 -25080.7,1845.2 -25080.7,-2206.07"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="63" name="Manta Bot" x="20339" y="1891">
+   <properties>
+    <property name="description" value="This bot ferrys [[Clover]], as well as [[Ceroba]] if she is accompying, across the large lake."/>
+    <property name="page" value="Manta Bot"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Grandfather Clock" x="19247.5" y="2600.5">
+   <properties>
+    <property name="description" value="This bot kept the time for the Underground. Its time is off and it is unaware the Steamworks are shut down."/>
+    <property name="page" value="Grandfather Clock"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Boba Drinker" x="20333" y="1041.33">
+   <properties>
+    <property name="description" value="This bot drinks the coolant out of the lake."/>
+    <property name="page" value="Boba Drinker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Hermit" x="7106.5" y="246">
+   <properties>
+    <property name="description" value="The Hermit is a monster in a hidden room behind the cabinet. They are a former employee who has hidden out in the Steamworks ever since it shut down to keep doing science. Their room is only accessible in a [[Neutral Route]]."/>
+    <property name="page" value="Hermit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Jandroid" x="20902.5" y="1938.5">
+   <properties>
+    <property name="description" value="After sparing [[Axis]] on the [[Pacifist Route]], Jandroid is here mopping the bridge. They no longer seem to hate cleaning."/>
+    <property name="page" value="Jandroid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="Goosic" x="12356.3" y="1984">
+   <properties>
+    <property name="description" value="After sparing [[Axis]] on the [[Pacifist Route]], Goosic stands here in the commons and discusses music it is broadcasting."/>
+    <property name="page" value="Goosic"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Telly-Vis" x="8655" y="2123.67">
+   <properties>
+    <property name="description" value="After sparing [[Axis]] on the [[Pacifist Route]], Telly and Vis can be found here bickering."/>
+    <property name="page" value="Telly-Vis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Sousborg" x="7689" y="456">
+   <properties>
+    <property name="description" value="Editing the game files to enter the chemistry lab after sparing [[Axis]] on the [[Pacifist Route]] shows a normally unseen Sousborg. He talks about cooking and monster culture."/>
+    <property name="page" value="Sousborg"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Mr. Screen" x="5726" y="2858.5">
+   <properties>
+    <property name="description" value="Mr. Screen appears here and forces [[Ceroba]] and [[Clover]] to complete the packaging puzzle to proceed."/>
+    <property name="page" value="Mr. Screen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Lil Bot 3" x="10556.7" y="3675.33">
+   <properties>
+    <property name="description" value="The third Lil Bot appears here after sparing [[Axis]] on the [[Pacifist Route]], planning to take [[Guardener]] on a date."/>
+    <property name="page" value="Lil Bots"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Lil Bot 2" x="10100.5" y="3698.5">
+   <properties>
+    <property name="description" value="The second Lil Bot appears here after sparing [[Axis]] on the [[Pacifist Route]]. They tell [[Clover]] some bot facts."/>
+    <property name="page" value="Lil Bots"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Lil Bot 1" x="9315.5" y="2492.5">
+   <properties>
+    <property name="description" value="The first Lil Bot appears here after sparing [[Axis]] on the [[Pacifist Route]]. It talks about the fate of the seven other Lil Bots [[Clover]] never met. They all jumped into the lake and died."/>
+    <property name="page" value="Lil Bots"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Broom" x="17454.3" y="1126.5">
+   <properties>
+    <property name="description" value="This broom references [[Dalv]]'s [[broom]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Axis" x="26829.6" y="2992.59">
+   <properties>
+    <property name="description" value="After his battle, Axis can be found here if he was spared (excluding a Genocide Route aborted in the Steamworks.) He will talk about the various plans for the future the bots have. On a [[Pacifist Route]], he will also talk about [[Daisy]] which is next to him."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="ugps">
+  <object id="28" name="Steamw. - Commons" x="11695" y="2086.25">
+   <properties>
+    <property name="description" value="The Steamworks Commons UGPS sign."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Steamw. - C. Station" x="5418.5" y="760.125">
+   <properties>
+    <property name="description" value="The Steamworks Control Station UGPS sign. On a [[Neutral Route]], the Mail Whale arrives to give Martlet's letter to Clover here."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles" offsetx="-1" offsety="1.75">
+  <object id="55" name="Valve Puzzle 1" x="25695.3" y="3681">
+   <properties>
+    <property name="description" value="Adjust the liquid in the tubes using arrow keys so the fluid in all three fits in between the markings."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Valve Puzzle 2" x="27186" y="3663.67">
+   <properties>
+    <property name="description" value="Adjust the liquid in the tubes using arrow keys so the fluid in all four fits in between the markings."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Steam Puzzle 1" x="25263" y="2497">
+   <properties>
+    <property name="description" value="[[Clover]] has to avoid steam periodically releasing from the vents on the floor. If hit, they enter a mini battle where they dodge steam bullets. Once completed, they automatically switch the lever to disable the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Macro Froggit door switch" x="19298" y="2765">
+   <properties>
+    <property name="description" value="Interacting with the bottom-right corner of this room opens the door to the Macro Froggit room."/>
+    <property name="page" value="Macro Froggit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Steam Puzzle 2" x="18658" y="1732">
+   <properties>
+    <property name="description">[[Clover]] has to avoid steam periodically releasing from the vents on the floor. If hit, they enter a mini battle where they dodge steam bullets. Once completed, they automatically switch the lever to disable the puzzle.
+A button at the end of this puzzle must be pressed to open the gates in the lake to reach the next area.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Passcode" x="6192.67" y="854.667">
+   <properties>
+    <property name="description" value="The elevator passcode is written here."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Hydrochloric Acid puzzle" x="6571.5" y="482">
+   <properties>
+    <property name="description" value="[[Clover]] has to break through the lock on the door. Various items are in this room that Clover can balance on their head and toss into the machine. They must toss in both hydrogen and chlorine, then complete a maze minigame to obtain the hydrochloric acid they need."/>
+    <property name="page" value="Hydrochloric Acid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Packaging puzzle 1" x="5798.67" y="2993.33">
+   <properties>
+    <property name="description" value="[[Clover]] and [[Ceroba]] work together to box the red and blue goods to get to the next area of the Factory. The confirm key is used to box blue goods passing under the press, the cancel key is used to box the red goods, and different colored ones must be ignored."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Packaging puzzle 2" x="5860.67" y="2585.67">
+   <properties>
+    <property name="description" value="[[Clover]] and [[Ceroba]] work together to sort the red and blue boxes from the last room to get to the next area of the Factory. The left and right buttons must be pressed to send boxes into the blue and red chutes."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Furnaces puzzle" x="6033" y="2114">
+   <properties>
+    <property name="description" value="[[Clover]] and [[Ceroba]] must sneak around to light the furnaces to reveal the door passcode while avoiding [[Axis]]. Each furnace reveals a letter and a number (for example, &lt;code&gt;A4&lt;/code&gt;), and numbers in the passcode have to be arranged in the order of the letters (for example, &lt;code&gt;A3&lt;/code&gt;, &lt;code&gt;B2&lt;/code&gt;, &lt;code&gt;C3&lt;/code&gt;, &lt;code&gt;D1&lt;/code&gt;) gives a passcode of &lt;code&gt;3231&lt;/code&gt;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Steam puzzle 3" x="10933.8" y="2102">
+   <properties>
+    <property name="description" value="[[Clover]] has to avoid steam periodically releasing from the vents on the floor. If hit, they enter a mini battle where they dodge steam bullets. Once completed, they automatically switch the lever to disable the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Macro Froggit room" x="19935.3" y="774">
+   <properties>
+    <property name="description" value="The room where Macro Froggit is found. This room is opened after pressing the switch in Grandfather Clock's room. Upon placing the three golden items found throughout the Underground on the pedestals, Macro Froggit's gate opens."/>
+    <property name="page" value="Macro Froggit"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="signs">
+  <object id="43" name="Sign" x="10240.5" y="3639.25">
+   <properties>
+    <property name="description">&quot;To: Science Division
+Employees have reported the generator is showing more wear than ever.
+The engineers predict the machine won't last longer than one year from now.
+I need you to speed up the testing of alternate power sources.
+The Underground depends on it.
+- Head Office&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Sign" x="10060.5" y="3637.75">
+   <properties>
+    <property name="description">&quot;To: Head Office
+More tests are underway, both biological and mechanical.
+We don't know which direction will ultimately be best for monsterkind yet.
+However, the chemistry lab did have a breakthrough regarding a white plant.
+I'll get back to you on that once further testing has commenced.
+- Science Division&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Sign" x="9880.33" y="3638.67">
+   <properties>
+    <property name="description">&quot;To: Head Office
+I think we've got it!
+The white plants have proven able to generate electricity at a fantastic rate!
+The only issues are that they grow four times faster than normal flora...
+...and once their power is drained, they wilt into a dark, sticky substance.
+If this is greenlit, we will need a new division to tend to these plants.
+Otherwise, working conditions will suffer greatly.
+- Science Division&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Sign" x="9701.33" y="3637.67">
+   <properties>
+    <property name="description">&quot;To: Science Division
+The plants should suffice as a temporary solution.
+I've heard one of our top scientists is working toward a new compound.
+One made from special energy. It could be the key we need.
+Much more time is necessary to develop it properly, however.
+As for the proposed &quot;Greenhouse Division&quot;, I have an idea.
+Cheaper, more efficient, and trustworthy.
+I'll send you some blueprints shortly. Thank you for your time and research.
+- Head Office&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Award" x="22692" y="1834.33">
+   <properties>
+    <property name="description" value="&quot;Excellence in Engineering Award: Dr. Rutherford-Oscar&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Award" x="22652.3" y="1836">
+   <properties>
+    <property name="description" value="&quot;Decency in Engineering Award: Prof. Daniels&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Award" x="22613.3" y="1838">
+   <properties>
+    <property name="description" value="&quot;You Tried in Engineering Award: Mr. Chujin Ketsukane&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Award" x="22573.3" y="1835.33">
+   <properties>
+    <property name="description">&quot;Greatness in C--
+(You can't make out the rest.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Safety notice" x="19789" y="2180">
+   <properties>
+    <property name="description">&quot;Safety is priority!
+- Wear your Steamworks [[Safety Goggles]] during work hours!
+- Always keep your Steamworks ID with you!
+- Decontaminate yourself of any biohazards before leaving the premises!
+- But most of all, have fun :)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Propaganda" x="19829.8" y="2159.75">
+   <properties>
+    <property name="description">&quot;(A poster of a smiling monster with a slogan above them.)
+&quot;Tomorrow means the Surface!&quot;&quot;
+
+On a [[Genocide Route]], this interaction instead reads:
+&quot;(Some kind of propaganda.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Letter" x="19329.5" y="1499.45">
+   <properties>
+    <property name="description">&quot;The first interaction reads:
+To: King ASGORE.
+This project, while exciting, will be quite the undertaking.
+We will need Mining Co. to work overtime to provide the necessary materials.
+Furthermore, a meeting was conducted at the Factory.
+I'm happy to report that everyone is on board!
+There already are many great robot ideas floating about.
+[[Sousborg|Cooking]], [[Jandroid|cleaning]], [[Goosic|recreation]]; the motivation is through the roof!
+Though... one engineer suggested we take this further with a &quot;[[Axis|protection bot]].&quot;
+I am quite unsure about that proposition but you have the final say.
+In any case, we will see this completed.
+- Prof. Z.
+
+The second interaction reads:
+(The paper underneath reads:)
+Project: Metal &amp; Magic:
+Effective immediately, cease home utility production at the Factory-
+(The rest of the page is redacted.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Sticky notes" x="6275.67" y="1159.67">
+   <properties>
+    <property name="description">&quot;(Many sticky notes are posted around the smashed-in PC.)
+We've replaced your computer six times now.
+Please control your temper. It's just Solitaire.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Firings" x="6193.5" y="910">
+   <properties>
+    <property name="description">&quot;(A dilapiated desk with several ripped up notes strewn about.)
+(Among the notes sits a piece of paper with one thing written on it:)
+How do I tell them?&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Notice board" x="6261.5" y="1054">
+   <properties>
+    <property name="description">&quot;DOWNSIZING IMMINENT!
+But definitely not for the employee who's reading this.
+You're doing a great job!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Notice board" x="7747.75" y="404.75">
+   <properties>
+    <property name="description">&quot;(A few sticky notes are pinned to the cork board.)
+
+Interaction 1:
+Will someone please tell Mr. Fish to stop using the lab to create colored slime?
+I don't care if it makes funny noises, it does not count as work.
+
+Interaction 2:
+Todo: -Try new things -Fail miserably -Quit my job.
+
+Interaction 3:
+(This one consists of all 31 trillion numbers of pi written in crayon.)
+
+Interaction 4:
+(This one pounts to the note with the pi numbers.)
+What a showoff.
+Check it: pi x infinity.
+Owned B)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Note" x="6142.67" y="1167.33">
+   <properties>
+    <property name="description">&quot;(The note on the powered off PC reads:)
+The future is bright.
+Hang in there!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Certificate" x="6163" y="852.5">
+   <properties>
+    <property name="description">&quot;Richter B. Oni
+Engineering Certificate - X/X/20XX&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Note" x="6357.25" y="425">
+   <properties>
+    <property name="description">&quot;Today's assignment: Compound mixing!
+The head office said we have free use over the Compound Computer for today.
+They also said the machine exploding and killing us all is a risk they're willing to take.
+So grab anything you can and toss it in!
+Have fun!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Help wanted" x="5722.67" y="89.6667">
+   <properties>
+    <property name="description">&quot;Help wanted for Project: Steam!
+Are you a monster with an above average IQ?
+Probably not. But in case you are, we NEED YOUR KNOWLEDGE!
+King ASGORE has called on the greatest monster minds to help develop society!
+Scientists, engineers, mathematicians, janitors - you name it!
+Sign up at the King's settlement and make your way southeast.
+You'll know you've arrived when you see a metallic construction site.
+The Steamworks: Tomorrow means the Surface!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Sign" x="5770.5" y="3309">
+   <properties>
+    <property name="description">&quot;Wishing everyone a productive final workday.
+Feel free to take pictures with your creations, as they must be left behind.
+As always, thank you for your contributions to the Steamworks.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Propaganda" x="5670.33" y="3186.33">
+   <properties>
+    <property name="description" value="&quot;Tomorrow means the Surface!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Rules" x="17425" y="1094.5">
+   <properties>
+    <property name="description">&quot;Break room rules:
+Do not work in the break room.
+Do not fix in the break room.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Fire escape plan" x="6032.36" y="1606.73">
+   <properties>
+    <property name="description">&quot;Metalworks Emergency Escape Plan (or MEEP):
+In case someone sets the room on fire, do not use the elevator.
+Evacuate down to floor 01 or use a passcode to access floor 03.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="178" name="Unfortunate incident" x="6152.81" y="2548.72">
+   <properties>
+    <property name="description" value="&quot;(An unfortunate incident.)&quot;"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves" offsetx="-7.38636" offsety="-6.09091">
+  <object id="6" name="Steamw - Raised Path" x="24556.7" y="1901.33">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Raised Path&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Steamw. - Generator" x="26430.7" y="3051.45">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Generator&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Steamw. - Lake" x="21402.3" y="1924">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Lake&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Steamw. - ???" x="19883.1" y="846.909">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - ???&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Steamw. - Offices" x="18612.9" y="1286.84">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Offices&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Steamw. - Commons" x="12083.8" y="2101.09">
+   <properties>
+    <property name="description" value="The location of the &quot;Steamw. - Commons&quot; SAVE point on the [[Pacifist Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="168" name="Steamw. - Commons" x="12526.3" y="2098.71">
+   <properties>
+    <property name="description" value="The location of the &quot;Steamw. - Commons&quot; SAVE point on the [[Neutral Route|Neutral]] and [[Genocide Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Greenhouse" x="9324.01" y="3581.47">
+   <properties>
+    <property name="description" value="SAVE point &quot;Greenhouse&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Steamw. - Crossroads" x="9354.75" y="2111.45">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Crossroads&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Steamw. - Laboratory" x="8073.89" y="511.216">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Laboratory&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Steamw. - Botany Hall" x="6568.89" y="126.341">
+   <properties>
+    <property name="description" value="SAVE point &quot;Steamw. - Botany Hall&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Factory - Lobby" x="5888.39" y="3322.09">
+   <properties>
+    <property name="description" value="SAVE point &quot;Factory - Lobby&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Factory - Offices" x="6088.84" y="1330.09">
+   <properties>
+    <property name="description" value="SAVE point &quot;Factory - Offices&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="The Furnace" x="3357.32" y="763.903">
+   <properties>
+    <property name="description" value="SAVE point &quot;The Furnace&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="A Road Ahead" x="1016.89" y="778.716">
+   <properties>
+    <property name="description" value="SAVE point &quot;A Road Ahead&quot;."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="vendors">
+  <object id="30" name="Vendy" x="12195" y="1963">
+   <properties>
+    <property name="description">Vendy is a robotic vending machine. They respond to [[Clover]] enthusiastically when they have a Steamworks ID and rudely when they don't. Clover can buy:
+* [[Gravity Granola]] for 36G
+* [[Dihydrogen Monoxide]] for 32G
+* [[Popato Chisps]] for 24G
+* [[Safety Goggles]] for 70G
+On a [[Genocide Route]], Vendy will stay silent out of fear but still dispense items.</property>
+    <property name="page" value="Vendy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Mo" x="19562" y="496.667">
+   <properties>
+    <property name="description">Mo's stand in the Steamworks. It catches fire, so he just sells items out of his pockets. He offers:
+* [[Moss Salad]]
+* [[Grassy Fries]]
+* [[Flower Stew]]
+Each cost 30G. On the [[Genocide Route]], Clover instead has the choice to rob him of 450G.</property>
+    <property name="page" value="Mo"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="items">
+  <object id="27" name="Beef Jerky" x="26150" y="2975.25">
+   <properties>
+    <property name="description" value="A stick of Beef Jerky can be found in this washer."/>
+    <property name="page" value="Beef Jerky"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Grassy Fries" x="9301.75" y="3189">
+   <properties>
+    <property name="description" value="Grassy Fries can be taken from inside this box."/>
+    <property name="page" value="Grassy Fries"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Gravity Granola" x="3278.18" y="733.455">
+   <properties>
+    <property name="description" value="A Gravity Granola can be taken from inside this broken [[Vendy]] model."/>
+    <property name="page" value="Gravity Granola"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Beef Jerky" x="5591.25" y="2595.75">
+   <properties>
+    <property name="description" value="There is a stick of Beef Jerky inside this trashcan."/>
+    <property name="page" value="Beef Jerky"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Cake" x="7624" y="428">
+   <properties>
+    <property name="description" value="There is a Cake sitting on the counter. [[Clover]] can pick it up on a [[Neutral Route]], but on a [[Genocide Route]], they leave it."/>
+    <property name="page" value="Cake"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="H2O" x="6967.67" y="445">
+   <properties>
+    <property name="description" value="There is water inside this cabinet."/>
+    <property name="page" value="Dihydrogen Monoxide"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="60G" x="6112" y="1929">
+   <properties>
+    <property name="description" value="60G can be picked up from this machine."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Gravity Granola" x="9438.25" y="2869">
+   <properties>
+    <property name="description" value="A Gravity Granola is inside this box."/>
+    <property name="page" value="Gravity Granola"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Nails" x="10701.8" y="3668">
+   <properties>
+    <property name="description" value="A bucket of Nails are found in this box. They are ammo."/>
+    <property name="page" value="Nails"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Golden Bandana" x="19774" y="1110">
+   <properties>
+    <property name="description" value="The Golden Bandana can be obtained here after defeating [[Macro Froggit]] on a [[Neutral Route|Neutral]] or [[Pacifist Route]]. On a [[Genocide Route]], this chest is instead tossed out in front of the gates inside of the room."/>
+    <property name="page" value="Golden Bandana"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Friendliness Pellets" x="3327.67" y="759">
+   <properties>
+    <property name="description" value="[[Flowey]] gives [[Clover]] the Friendliness Pellets here on the [[Neutral Route]]."/>
+    <property name="name" value="Friendliness Pellets"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="60G" x="19370.3" y="1494">
+   <properties>
+    <property name="description" value="60G can be picked up from this trash can."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Bullet Points" x="6235" y="1300.67">
+   <properties>
+    <property name="description" value="An outline of how the Steamworks operate. This goes into [[Clover]]'s mail."/>
+    <property name="page" value="Mail"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Steamworks ID" x="8125" y="1433">
+   <properties>
+    <property name="description" value="[[Clover]] makes their Steamworks ID here, allowing them access to the rest of the chemistry wing. It goes in their mail."/>
+    <property name="page" value="Mail"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Mixin' It Up! (Essay)" x="6337.82" y="461.636">
+   <properties>
+    <property name="description" value="There is a crumpled up essay in the trash can with the solution to the [[Hydrochloric Acid]] puzzle here. It goes in [[Clover]]'s mail."/>
+    <property name="page" value="Mail"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Hydrochloric Acid" x="6531.5" y="457">
+   <properties>
+    <property name="description" value="After completing its puzzle, the machine outputs the acid here. [[Clover]] is meant to dissolve the lock with it, but they also have the option to drink the acid and instantly die."/>
+    <property name="page" value="Hydrochloric Acid"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="encounters" tintcolor="#ff0000">
+  <object id="20" name="Jandroid" x="20870" y="1946.67">
+   <properties>
+    <property name="description" value="Scripted encounter with Jandroid."/>
+    <property name="page" value="Jandroid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Goosic" x="10026.8" y="2303.75">
+   <properties>
+    <property name="description" value="Scripted encounter with Goosic."/>
+    <property name="page" value="Goosic"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Guardener" x="9366" y="2659.5">
+   <properties>
+    <property name="description" value="Miniboss battle against Guardener."/>
+    <property name="page" value="Guardener"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Telly-Vis" x="8686.91" y="2134.55">
+   <properties>
+    <property name="description" value="Scripted encounter with Telly-Vis."/>
+    <property name="page" value="Telly-Vis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Sousborg" x="7487" y="473.5">
+   <properties>
+    <property name="description" value="Scripted and only encounter with Sousborg."/>
+    <property name="page" value="Sousborg"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Macro Froggit" x="19933" y="660">
+   <properties>
+    <property name="description">Big frog.
+
+The secret boss, Macro Froggit, is fought here. On a [[Genocide Route]], this encounter does not occur; instead, the gate opens, the [[Golden Bandana]] chest is tossed out in front of [[Clover]], and the gate closes.</property>
+    <property name="page" value="Macro Froggit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Axis" x="2240.44" y="727.134">
+   <properties>
+    <property name="description" value="Boss battle against Axis."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="warnings">
+  <object id="179" name="Encounters stop" x="5081.71" y="793.568">
+   <properties>
+    <property name="description" value="After crossing this point in the [[Steamworks]], encounters stop appearing. This is important in the [[Genocide Route]], because if the kill count has not been exhausted, the route reverts to a [[Neutral Route]] after battling [[Axis]]. '''The game does not warn about this!'''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="annotations">
+  <object id="140" name="Path to gate switch" x="20400" y="1900">
+   <properties>
+    <property name="color" type="color" value="#ff67fdfe"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -300,0 -300,140 -820,140 -820,-160 -1720,-160"/>
+  </object>
+  <object id="142" name="Path to other side of lake" x="20400" y="1900">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -500,0 -500,-140 -680,-140 -700,-140 -700,-580 -1520,-580"/>
+  </object>
+  <object id="143" name="Axis capture location" x="6032.5" y="2120.5">
+   <properties>
+    <property name="color" type="color" value="#ffce1bd6"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 440,0 440,1780 -140,1780"/>
+  </object>
+  <object id="144" name="Axis capture location" x="16900" y="1820">
+   <properties>
+    <property name="color" type="color" value="#ffce1bd6"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,-520 520,-520"/>
+  </object>
+  <object id="150" name="Factory entrance (Pacifist Route only)" x="7920" y="2120">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,1440 -1660,1440"/>
+  </object>
+  <object id="151" name="Second flight of Factory stairs" x="5620" y="2480">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,-860 240,-860"/>
+  </object>
+  <object id="152" name="Third flight of Factory stairs" x="6400" y="2240">
+   <properties>
+    <property name="color" type="color" value="#ff67fdfe"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,-800 -20,-800"/>
+  </object>
+  <object id="159" name="Greenhouse shortcut" x="9860" y="2100">
+   <properties>
+    <property name="color" type="color" value="#ff3627fc"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 120,0"/>
+  </object>
+  <object id="160" name="Clock room entrance" x="19253.1" y="2180.18">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -173.091,-0.181818 -173.091,619.818 -5.73153,619.849"/>
+  </object>
+  <object id="162" name="Vent shortcut" x="17669.4" y="1260">
+   <properties>
+    <property name="color" type="color" value="#ff3627fc"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -2169.41,0 -2169.41,820"/>
+  </object>
+  <object id="164" name="Trapdoor to detainment" x="22180" y="2140">
+   <properties>
+    <property name="color" type="color" value="#ffce1bd6"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,420 -600,420"/>
+  </object>
+  <object id="165" name="Escape from detainment" x="21963.8" y="1880.04">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -83.8261,-0.0434783 -143.826,-0.0434783 -143.826,819.957"/>
+  </object>
+  <object id="166" name="Escape from detainment" x="17527" y="1100">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 142.328,0 142.4,159.989"/>
+  </object>
+  <object id="167" name="Escape from detainment" x="5980" y="3200">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 0,580 -107.622,580.067"/>
+  </object>
+  <object id="173" name="Mr. Screen's elevator" x="6100" y="1060">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="0,0 -280,0 -280,-140 0,-140 0,-300 -180,-300"/>
+  </object>
+  <object id="175" name="Greenhouse entrance" x="9877.35" y="2533.92">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 7.82881,660.23 1323.07,668.058 1328.29,1889.35 1197.81,1889.35"/>
+  </object>
+ </objectgroup>
 </map>
