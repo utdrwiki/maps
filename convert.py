@@ -86,9 +86,12 @@ def convert_layer(
         for obj in layer.tiled_objects:
             coords = add_points(obj.coordinates, offset)
             if isinstance(obj, objects.Point):
+                description = get_property(obj.properties, 'description', str)
+                if get_property(obj.properties, 'multiline', bool):
+                    description = f'<poem>{description}</poem>'
                 markers.append(Marker(coords.x, coords.y,
                     name=None if len(obj.name) == 0 else obj.name,
-                    description=get_property(obj.properties, 'description', str),
+                    description=description,
                     isWikitext=not obj.properties.get('plain', False),
                     article=get_property(obj.properties, 'page', str)))
             elif isinstance(obj, objects.Rectangle):
