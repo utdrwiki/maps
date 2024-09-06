@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="15" nextobjectid="181">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="15" nextobjectid="182">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -632,6 +632,15 @@ Evacuate down to floor 01 or use a passcode to access floor 03.&quot;</property>
   <object id="178" name="Unfortunate incident" x="6152.81" y="2548.72">
    <properties>
     <property name="description" value="&quot;(An unfortunate incident.)&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="181" name="Note" x="6411.02" y="84.4854">
+   <properties>
+    <property name="description">&quot;I am trying to grow energy plants but I always end up with these leafy things.
+They smell like honey and won't stop making trumpet noises!
+Why does this keep happening to me?&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
