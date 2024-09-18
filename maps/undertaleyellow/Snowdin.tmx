@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="378" height="418" tilewidth="20" tileheight="20" infinite="0" nextlayerid="14" nextobjectid="91">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="378" height="418" tilewidth="20" tileheight="20" infinite="0" nextlayerid="14" nextobjectid="93">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -32,7 +32,7 @@
  <objectgroup id="3" name="plot">
   <object id="76" name="Exit from Dark Ruins" x="48.7415" y="8181.65">
    <properties>
-    <property name="description" value="This is where [[Clover]] exits from the [[Dark Ruins]]. Once they do, there is no longer a way to go back."/>
+    <property name="description" value="This is where [[Clover]] exits from the [[Dark Ruins]]. Once they do, there is no way to go back."/>
     <property name="page" value="Dark Ruins"/>
    </properties>
    <point/>
@@ -51,7 +51,7 @@
   </object>
   <object id="79" name="Meeting Martlet 1" x="3051.8" y="7210.63">
    <properties>
-    <property name="description" value="At this point, [[Clover]] sees [[Martlet]] for the first time while she calibrates a puzzle."/>
+    <property name="description" value="At this point, [[Clover]] sees [[Martlet]] for the first time as she finishes recalibrating a puzzle. She leaves without seeing them."/>
    </properties>
    <point/>
   </object>
@@ -71,13 +71,13 @@
   </object>
   <object id="85" name="Meeting Martlet 2" x="5191.2" y="3085.74">
    <properties>
-    <property name="description" value="Here is the second point that [[Clover]] sees [[Martlet]], while she's fixing the sign to the right."/>
+    <property name="description" value="Here is the second point that [[Clover]] sees [[Martlet]]. She is hammering in the sign to the right and leaves without seeing Clover."/>
    </properties>
    <point/>
   </object>
   <object id="86" name="Ava Ride to Dunes" x="7249.89" y="943.604">
    <properties>
-    <property name="description" value="Here, [[Martlet]] and [[Clover]] take the UG Aviator ride to [[Hotland]]. However, their ride goes awry, Clover ends up at the [[Dunes]] instead, together with Ava's pieces."/>
+    <property name="description" value="Here, [[Clover]] takes the UG Aviator ride to [[Hotland]], [[Martlet]] accompanying if she was spared. However, their ride goes awry and Clover ends up at the [[Dunes]] instead, together with Ava's debris."/>
     <property name="page" value="Dunes"/>
    </properties>
    <point/>
@@ -96,20 +96,15 @@
   </object>
   <object id="89" name="Bridge to Martlet's house" x="6959.19" y="857.405">
    <properties>
-    <property name="description" value="After initially visiting Snowdin, this bridge is broken, and Martlet's house cannot be reached. After getting the ability to [[Fast Travel]], [[Clover]] can go back to [[Snowdin]] and revisit this place, when the bridge is fixed and they can access Martlet's house."/>
+    <property name="description" value="After initially visiting Snowdin, this bridge is broken, and Martlet's house cannot be reached. After getting the ability to [[Fast Travel]], [[Clover]] can go back to [[Snowdin]] and revisit this place. The bridge will be fixed and they can access (the entrance to) Martlet's house."/>
    </properties>
    <point/>
-  </object>
-  <object id="90" name="Honeydew Resort" x="3849.98" y="1980.08" width="1157.19" height="1518.92">
-   <properties>
-    <property name="border" type="color" value="#ffffaa00"/>
-   </properties>
   </object>
  </objectgroup>
  <objectgroup id="4" name="npcs">
   <object id="40" name="Sweet Corn" x="143.182" y="8175.18">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], a [[Sweet Corn]] waits here for her siblings to get out of the [[Dark Ruins]]."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], a [[Sweet Corn]] waits here for her siblings to get out of the [[Dark Ruins]] and challenges [[Clover]] to hug someone before they leave."/>
     <property name="page" value="Sweet Corn#Pacifist Route"/>
    </properties>
    <point/>
@@ -132,42 +127,42 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="43" name="Penilla" x="1719.17" y="7219.31">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], Penilla can be found here admiring the frozen lake view."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], Penilla can be found here admiring the frozen lake view."/>
     <property name="page" value="Penilla#Pacifist Route"/>
    </properties>
    <point/>
   </object>
   <object id="44" name="Slurpy" x="3185.54" y="6408.61">
    <properties>
-    <property name="description" value="After three dogs dared him to lick this pole, Slurpy got stuck. To help him, your next stop is retrieving the [[Honeydew Coffee]] from the [[Honeydew Shopkeeper]] and giving it to the [[Martha]] NPC to the east of the [[Honeydew Resort]]."/>
+    <property name="description" value="After three dogs dared him to lick this pole, Slurpy got stuck. To help him, the next stop is retrieving the [[Honeydew Coffee]] from the [[Honeydew Shopkeeper]] and giving it to the [[Maury]] NPC to the east of the [[Honeydew Resort]]."/>
     <property name="page" value="Slurpy"/>
    </properties>
    <point/>
   </object>
   <object id="45" name="Frostermit" x="2119.09" y="7192.65">
    <properties>
-    <property name="description" value="After the battle with [[Martlet]], Frostermit appears here as an NPC, talking about how it wants to move to the [[Wild East]]."/>
+    <property name="description" value="After the battle with [[Martlet]] on a [[Pacifist Route]], Frostermit appears here as an NPC, talking about how it wants to move to the [[Wild East]]."/>
     <property name="page" value="Frostermit#Main Story"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Flier" x="3715.81" y="6286.17">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], Flier appears here after helping [[Dalv]] move. His house business, unfortunately, isn't going very well."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], Flier appears here after helping [[Dalv]] move. His house business, unfortunately, isn't going very well."/>
     <property name="page" value="Flier#Pacifist Route"/>
    </properties>
    <point/>
   </object>
   <object id="47" name="Dalv" x="3852.08" y="6292.09">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], Dalv appears here with [[Pops]], intending to move from [[Dark Ruins]] to this dilapidated shack."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], Dalv appears here with [[Pops]], intending to move from [[Dark Ruins]] to this dilapidated shack."/>
     <property name="page" value="Dalv#Pacifist Route"/>
    </properties>
    <point/>
   </object>
   <object id="48" name="Know Cone" x="4114.74" y="6433.3">
    <properties>
-    <property name="description" value="After the battle with [[Martlet]], Know Cone appears here, planning to climb a big hill to see [[Hotland]]."/>
+    <property name="description" value="After the battle with [[Martlet]] on a [[Pacifist Route]], Know Cone appears here, planning to climb a big hill to see [[Hotland]]."/>
     <property name="page" value="Know Cone#Main Story"/>
    </properties>
    <point/>
@@ -181,7 +176,7 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="50" name="Trihecta" x="4307.3" y="5340.18">
    <properties>
-    <property name="description" value="After the battle with [[Martlet]], this trio appears as NPCs, each with their own concerns."/>
+    <property name="description" value="After the battle with [[Martlet]] on a [[Pacifist Route]], this trio appears as NPCs, each with their own concerns."/>
     <property name="page" value="Trihecta#Main Story"/>
    </properties>
    <point/>
@@ -216,12 +211,13 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   <object id="55" name="The Log" x="4200.52" y="3213.59">
    <properties>
     <property name="description" value="On a [[Genocide Route]], this log sees everything."/>
+    <property name="page" value="Blankie"/>
    </properties>
    <point/>
   </object>
   <object id="56" name="Rorrim" x="4338.99" y="3234.49">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], this mirror monster is back from the [[Dark Ruins]]! He's dreaming of becoming [[Asgore]]'s tailor."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], this mirror monster is back from the [[Dark Ruins]]! He's dreaming of becoming [[Asgore]]'s tailor."/>
     <property name="page" value="Rorrim#Pacifist Route"/>
    </properties>
    <point/>
@@ -270,7 +266,7 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="64" name="Couch Bear" x="4727.63" y="2662.97">
    <properties>
-    <property name="description" value="They were told to visit the [[Honeydew Resort]] to relieve stress, but they can't shake off the feeling that they are causing the downfall of the Underground."/>
+    <property name="description" value="This rambling monster was told to visit the [[Honeydew Resort]] to relieve stress, but they can't shake off the feeling that they are causing the downfall of the Underground."/>
     <property name="page" value="Couch Bear"/>
    </properties>
    <point/>
@@ -298,7 +294,7 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="68" name="Maury" x="5061.4" y="3015.68">
    <properties>
-    <property name="description" value="This NPC is too lazy to move, they eventually freeze. [[Clover]] can exchange a [[Honeydew Coffee]] with them for a [[Soggy Mitten]], and later [[Matches]] for a [[Lukewarm Coffee]], that they can use to free [[Slurpy]]."/>
+    <property name="description" value="This NPC is too lazy to move. [[Clover]] can exchange a [[Honeydew Coffee]] with them for a [[Soggy Mitten]], and later [[Matches]] for a [[Lukewarm Coffee]], that they can use to free [[Slurpy]]. Maury still does not move at this point; they have frozen solid."/>
     <property name="page" value="Maury"/>
    </properties>
    <point/>
@@ -319,14 +315,14 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="72" name="Insomnitot" x="6582.63" y="3055.52">
    <properties>
-    <property name="description" value="After [[Martlet]]'s battle, Insomnitot appears here in an endless cycle of attempting to sleep."/>
+    <property name="description" value="After [[Martlet]]'s battle on a [[Pacifist Route]], Insomnitot appears here in an endless cycle of attempting to sleep."/>
     <property name="page" value="Insomnitot#Main Story"/>
    </properties>
    <point/>
   </object>
   <object id="73" name="Crispy Scroll" x="7113.65" y="917.048">
    <properties>
-    <property name="description" value="After getting the ability to [[Fast Travel]], Crispy Scroll can be found by the docks. He is disappointed by the lack of anime to be found at the [[Garbage Dump]]."/>
+    <property name="description" value="After getting the ability to [[Fast Travel]] on a [[Pacifist Route]], Crispy Scroll can be found by the docks. He is disappointed by the lack of anime to be found at the [[Garbage Dump]]."/>
     <property name="page" value="Crispy Scroll#Pacifist Route"/>
    </properties>
    <point/>
@@ -348,13 +344,13 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
   </object>
   <object id="38" name="Bridge Puzzle" x="5581.12" y="3094.7">
    <properties>
-    <property name="description" value="In this puzzle, you must cross over the bridge holes while the swings are in place. Otherwise, you fall down to the pillow below."/>
+    <property name="description" value="In this puzzle, [[Clover]] must time their crossing over the bridge while several of its planks swing up and down. Otherwise, they fall down to the pillow below."/>
    </properties>
    <point/>
   </object>
   <object id="39" name="Molten Rock Puzzle 2" x="7430.63" y="2457.79">
    <properties>
-    <property name="description" value="Similarly to the first molten rock puzzle, you move the platforms up and down to navigate the ball towards the ice cube at the bottom."/>
+    <property name="description" value="Similarly to the first molten rock puzzle, move the platforms up and down to navigate the ball towards the ice cube at the bottom."/>
    </properties>
    <point/>
   </object>
@@ -362,7 +358,7 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
  <objectgroup id="12" name="ugps">
   <object id="36" name="Snowdin - Forest" x="4154.24" y="4607.48">
    <properties>
-    <property name="description" value="First station of the Underground Postal Service! [[Mail Whale]] arrives here to give [[Clover]] the [[Mail#Intro Letter|Intro Letter]]."/>
+    <property name="description" value="The first station of the Underground Postal Service! [[Mail Whale]] arrives here to give [[Clover]] the [[Mail#Intro Letter|Intro Letter]]."/>
     <property name="page" value="Underground Postal Service"/>
    </properties>
    <point/>
@@ -371,52 +367,79 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
  <objectgroup id="6" name="signs">
   <object id="21" name="Sign" x="116.009" y="8179.5">
    <properties>
-    <property name="description" value="&quot;(The original text of this sign was crossed out.) (Now it reads &quot;&lt;span data-color=&quot;blue&quot;&gt;Entry Forbidden&lt;/span&gt;&quot; in blue crayon.)&quot;\"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="22" name="Delta Rock" x="1052.57" y="7207.29">
-   <properties>
-    <property name="description" value="&quot;(There appears to be something interesting on this rock.) (Touch it?)&quot;"/>
+    <property name="description">&quot;(The original text of this sign was crossed out.)
+(Now it reads &quot;Entry Forbidden&quot; in blue crayon.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="24" name="Sign" x="1857.41" y="7072.18">
    <properties>
-    <property name="description" value="&quot;This is a box. It is a stupid box. You can put items in it and they'll stay there. Until you take it out that is, then it's not there. And then there are more of these boxes later. You can use them to retrieve the stuff you put it this box. It's super dumb. Sincerely, a box hater.&quot;"/>
+    <property name="description">&quot;This is a box.
+It is a stupid box.
+You can put items in it and they'll stay there.
+Until you take it out that is, then it's not there.
+And then there are more of these boxes later.
+You can use them to retrieve the stuff you put it this box.
+It's super dumb.
+Sincerely, a box hater.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="25" name="Sign" x="3163.82" y="6997.14">
    <properties>
-    <property name="description" value="To whom it may concern: In accordance with Royal Guard guide book section four, paragraph two, This puzzle is intended to impede the progress of an intruder (probably you), Entertain the residents of the surrounding area (Snowdin), And appear intimidating to would-be intruders or wrong-doers, (I'm unclear on what they mean by that, just go with it.) To pass by this challenge, you must melt the icecube. Make sure the ball-thing gets to the bottom without breaking though. Signed: Martlet of the Underground Royal Guard"/>
+    <property name="description">&quot;To whom it may concern:
+In accordance with Royal Guard guide book section four, paragraph two,
+This puzzle is intended to impede the progress of an intruder (probably you),
+Entertain the residents of the surrounding area (Snowdin),
+And appear intimidating to would-be intruders or wrong-doers,
+(I'm unclear on what they mean by that, just go with it.)
+To pass by this challenge, you must melt the icecube.
+Make sure the ball-thing gets to the bottom without breaking though.
+Signed: Martlet of the Underground Royal Guard&quot;
+[Sign continues with a P.S., P.P.S., P.P.P.S. and P.P.P.P.S.]</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="26" name="Martlet's note" x="3850.1" y="6504.39">
    <properties>
-    <property name="description" value="&quot;Dear owners of dilapidated cabin: First, I am very sorry that your cabin is so dilapidated. Like, I don't know what happened to it, but I'm sure it was unfortunate. Second, I am sorry that some of your wood has gone missing. According to the Royal Guard guide book section forty-two, paragraph one, So long as notice is given to the original owner at least two business days prior, Any and all eyesores can be repurposed for puzzles or other diversions. Well, I didn't know how to contact you, but consider this notice! ...Unfortunately not of the prior variety, but you know... notice.&quot;"/>
+    <property name="description">&quot;Dear owners of dilapidated cabin:
+First, I am very sorry that your cabin is so dilapidated.
+Like, I don't know what happened to it, but I'm sure it was unfortunate.
+Second, I am sorry that some of your wood has gone missing. According to the Royal Guard guide book section forty-two, paragraph one,
+So long as notice is given to the original owner at least two business days prior,
+Any and all eyesores can be repurposed for puzzles or other diversions.
+Well, I didn't know how to contact you, but consider this notice!
+...Unfortunately not of the prior variety, but you know... notice.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Sign" x="4379.38" y="3364.27">
    <properties>
     <property name="description">&quot;Welcome to the Honeydew Resort!
-* North: The Honeydew Lodge
-* Northwest: The Honeydew Hotspring
-* East: Exit to Snowdin&quot;</property>
+North: The Honeydew Lodge
+Northwest: The Honeydew Hotspring
+East: Exit to Snowdin&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="28" name="Sign" x="4097.96" y="2979.16">
    <properties>
     <property name="description" value="&quot;This way to the hot spring!&quot;"/>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="29" name="Space heater" x="4792.14" y="2648.37">
    <properties>
-    <property name="description" value="&quot;(Nice and cozy!) (You notice a sticker on the heater.) Crafted with love by Chujin &amp; Martlet!&quot;"/>
+    <property name="description">&quot;(Nice and cozy!)
+(You notice a sticker on the heater.)
+Crafted with love by Chujin &amp; Martlet!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -424,13 +447,14 @@ Next stop in the [[Slurpy]] puzzle: the [[Maury]] NPC to the east of [[Honeydew 
    <properties>
     <property name="description">&quot;Honeydew Resort: Family owned and operated
 All travelers are welcome!&quot;</property>
-    <property name="plain" type="bool" value="true"/>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="31" name="Sign" x="5346.1" y="3054.21">
    <properties>
     <property name="description" value="&quot;Bridge slippery during snowfall - NO RUNNING.&quot;"/>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -444,7 +468,7 @@ All travelers are welcome!&quot;</property>
    <properties>
     <property name="description">&quot;10 steps to the East - 3rd Sign
 10 steps to the West - 1st Sign&quot;</property>
-    <property name="plain" type="bool" value="true"/>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -466,6 +490,7 @@ With a new vertical design, you can see what you're controlling!
 The parts may still get stuck though.
 Please refer to my instructions back at the first puzzle if that happens.
 Signed: Martlet of the Underground Royal Guard&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -534,7 +559,7 @@ Each item costs 15G.</property>
  <objectgroup id="8" name="items">
   <object id="9" name="Ice Pellets" x="4491.66" y="6484.61">
    <properties>
-    <property name="description" value="After interacting with this crystal, ice shards fall from the tree and allow Clover to pick Ice Pellets from the floor."/>
+    <property name="description" value="After interacting with this crystal, ice shards fall from the tree and allow [[Clover]] to pick up Ice Pellets."/>
     <property name="page" value="Ice Pellets"/>
    </properties>
    <point/>
