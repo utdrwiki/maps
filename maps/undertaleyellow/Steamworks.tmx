@@ -930,7 +930,7 @@ The secret boss, Macro Froggit, is fought here. On a [[Genocide Route]], this en
  <objectgroup id="14" name="warnings">
   <object id="179" name="Encounters stop" x="5081.71" y="793.568">
    <properties>
-    <property name="description" value="After crossing this point in the [[Steamworks]], encounters stop appearing. This is important in the [[Genocide Route]], because if the kill count has not been exhausted, the route reverts to a [[Neutral Route]] after battling [[Axis]]. '''The game does not warn about this!'''"/>
+    <property name="description" value="After crossing this point in the [[Steamworks]], encounters stop appearing. This is important in the [[Genocide Route]], because if the kill count has not been exhausted by this point, the route reverts to a [[Neutral Route]] after battling [[Axis]]. '''The game does not warn about this!'''"/>
    </properties>
    <point/>
   </object>
