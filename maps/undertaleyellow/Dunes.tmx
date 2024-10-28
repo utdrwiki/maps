@@ -1,18 +1,540 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="916" height="261" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="916" height="261" tilewidth="20" tileheight="20" infinite="0" nextlayerid="16" nextobjectid="81">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Dunes map">
   <image source="images/Dunes.png" width="18306" height="5220"/>
  </imagelayer>
- <objectgroup id="10" name="plot"/>
- <objectgroup id="9" name="npcs"/>
- <objectgroup id="8" name="ugps"/>
- <objectgroup id="7" name="puzzles"/>
- <objectgroup id="6" name="signs"/>
- <objectgroup id="5" name="saves"/>
- <objectgroup id="4" name="items"/>
- <objectgroup id="3" name="encounters"/>
- <objectgroup id="11" name="annotations"/>
+ <objectgroup id="14" name="boxes">
+  <object id="29" name="Dimensional Box" x="2550.05" y="4797.19">
+   <properties>
+    <property name="description" value="First Dimensional Box found in the [[Dunes]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="npcs">
+  <object id="28" name="Gerson" x="777.727" y="4567.67">
+   <properties>
+    <property name="description" value="This turtle, returning from ''[[ut:Undertale|Undertale]]'', can be encountered when the [[Fun Value]] is between 51 and 55! Unfortunately, he forgot all of his famous stories."/>
+    <property name="page" value="Gerson"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Dunebud" x="2636.78" y="4853.42">
+   <properties>
+    <property name="description" value="After finishing the [[Starlo]] fight on a [[Pacifist Route]], a Dunebud appears here, as incomprehensible to [[Clover]] as ever."/>
+    <property name="page" value="Dunebud#Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="TNT Man" x="4862.45" y="5043.46">
+   <properties>
+    <property name="description" value="This NPC stole TNT from from [[Bryan|his brother in the East Mines]], and now is trying to blow up an entrance to this cave. After defeating [[El Bailador]], [[Clover]] can return to this place to see the hole blown up!"/>
+    <property name="page" value="TNT Man"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="TNT Man" x="4798.66" y="4445.42">
+   <properties>
+    <property name="description" value="After blowing up the entrance to this hidden cave, TNT Man found a bunch of [[Micro Froggit]]s, who are now his friends. He no longer cares about whatever treasure lies within the cave."/>
+    <property name="page" value="TNT Man"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Sandstorm Stander" x="6295.17" y="4719.76">
+   <properties>
+    <property name="description" value="This NPC can't standstorm this sandstorm."/>
+    <property name="page" value="Sandstorm Stander"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Fan Fan" x="7131.68" y="4794.1">
+   <properties>
+    <property name="description" value="Unlike the [[Sandstorm Stander]], this NPC is a real fan of fans, and gets irritated when [[Clover]] turns their entertainment device off."/>
+    <property name="page" value="Fan Fan"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Red Miner" x="9901.09" y="4416.58">
+   <properties>
+    <property name="description" value="They are running from [[East Mines]] to [[Snowdin]] on urgent business related to a large boulder blocking a cave."/>
+    <property name="page" value="Red Miner"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Kanako's Friend" x="10535.9" y="4571.72">
+   <properties>
+    <property name="description" value="Also known as Sadie, this NPC has been bored on the playground ever since their friend, [[Kanako Ketsukane]], stopped showing up. However, [[Clover]] can sit on the other swing to make them company!"/>
+    <property name="page" value="Kanako's Friend"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Rosa" x="10548.8" y="4379.08">
+   <properties>
+    <property name="description" value="After defeating [[Starlo]] on a [[Pacifist Route]], Rosa appears here as an NPC. This energetic Flower Girl mistakes [[Clover]] for a [[Wild East]] resident, not realizing they are a human."/>
+    <property name="page" value="Rosa"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Giftshopper" x="10919.9" y="4040.99">
+   <properties>
+    <property name="description" value="This NPC seems desperate to get [[Clover]] to buy their mug. However, if Clover refuses, they don't give them another chance to buy the item."/>
+    <property name="page" value="Giftshopper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Pedla" x="11468.7" y="4393.95">
+   <properties>
+    <property name="description" value="After defeating [[Starlo]] on a [[Pacifist Route]], Pedla appears here. She appears very concerned for the ecosystem of the [[Dunes]], and mentions rumors about an abandoned [[greenhouse]]."/>
+    <property name="page" value="Pedla"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Big Cactus" x="15022.5" y="4829.86">
+   <properties>
+    <property name="description" value="This girlboss cactus is stonebathing and blocking a path from [[Clover]], and does not move away at any point in the game."/>
+    <property name="page" value="Big Cactus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Solomon" x="17961.3" y="1167.78">
+   <properties>
+    <property name="description" value="Starlo's father, Solomon, welcomes [[Clover]] to the [[Sunnyside Farm]]. He expresses acceptance of his son's [[Wild East]] activities, as they have also brought profits to their family farm."/>
+    <property name="page" value="Solomon"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Orion" x="17656" y="1116.03">
+   <properties>
+    <property name="description" value="In contrast to [[Solomon]], [[Starlo]]'s brother Orion is annoyed at [[Starlo]] having fun in the [[Wild East]] while he has to work on the crops."/>
+    <property name="page" value="Orion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Crestina" x="17659.7" y="553.977">
+   <properties>
+    <property name="description" value="[[Starlo]]'s mother, Crestina, talks about the heartbreak Starlo experienced when [[Ceroba]] got engaged to [[Chujin Ketsukane]], and considers inviting [[Gilbert]] and [[Angie]] for a barbecue."/>
+    <property name="page" value="Crestina"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="plot">
+  <object id="69" name="Gerson Door" x="786.577" y="4747.17">
+   <properties>
+    <property name="description" value="When the Fun Value is between 51 and 55, this door opens to the north, letting [[Clover]] enter the cavern with [[Gerson]]. However, if on a [[Genocide Route]], Gerson does not appear."/>
+    <property name="page" value="Fun Value#Gerson"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="East Mines Entrance" x="9900.3" y="4343.23">
+   <properties>
+    <property name="description" value="Through this door, [[Clover]] has to enter the East Mines on their first visit to the [[Dunes]]."/>
+    <property name="page" value="East Mines"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="East Mines Elevator" x="10417" y="4372.15">
+   <properties>
+    <property name="description" value="After the battle with [[El Bailador]], [[Clover]] uses this elevator to get down from the mountaintop."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Martlet" x="12149.2" y="4450.33">
+   <properties>
+    <property name="description" value="[[Clover]] meets up with [[Martlet]] at this point, and their conversation goes differently depending on what route they took and how they battled her back in [[Snowdin]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Steamworks Entrance" x="18086.2" y="89.4539">
+   <properties>
+    <property name="description" value="[[Clover]] enters the [[Steamworks]] through this door. If on the [[Pacifist Route]], a cutscene with [[Starlo]] and [[Ceroba]] plays here, and Ceroba follows Clover into the Steamworks. Otherwise, they enter alone, with [[Flowey]]'s help."/>
+    <property name="page" value="Steamworks"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Flowey" x="531.098" y="4807.21">
+   <properties>
+    <property name="description" value="[[Flowey]] welcomes [[Clover]] to the [[Dunes]], and laments the fact that they now have a take a detour to [[Hotland]]. If Clover hasn't [[save]]d before, and refuses Flowey's offer to save here, he becomes angry at Clover for not taking up his offers to save."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="ugps">
+  <object id="19" name="Wild East - Farm" x="17986.6" y="833.087">
+   <properties>
+    <property name="description" value="Third UGPS station in the [[Dunes]], and the place where [[Clover]] gets the ability to [[Fast Travel]] across previously visited UGPS stations."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Dunes - West Mines" x="3313.63" y="4767.83">
+   <properties>
+    <property name="description" value="First UGPS station in the [[Dunes]], where [[Mail Whale]] arrives to give [[Clover]] a letter from [[Mo]] (as well from [[Slurpy]], if they haven't picked it up in [[Snowdin]])."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="puzzles">
+  <object id="48" name="Sandstorm" x="4152.2" y="4869.16">
+   <properties>
+    <property name="description" value="[[Clover]] encounters a big sandstorm here, and to pass through they must move while the sand isn't blowing and hide behind shelters when it is."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Fan" x="7325.77" y="4815.75">
+   <properties>
+    <property name="description" value="To end the sandstorm, [[Clover]] has to turn off this fan using a switch at its southern part."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Falling Tumbleweeds" x="7978.64" y="4210.95">
+   <properties>
+    <property name="description" value="Here, [[Clover]] encounters a tumbleweed that appears out of the hole above and slowly falls down. Further on, there is a set of four holes, each with tumbleweeds falling at various speeds, which Clover has to avoid as they otherwise push them down to the bridge below."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Roadblock" x="10082.8" y="4427.24">
+   <properties>
+    <property name="description" value="These rocks are blocking [[Clover]]'s path further through the [[Dunes]]. They must enter the [[East Mines]] and pass through them all the way to the mountaintop. When they get down from the mountaintop, these rocks are gone."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="52" name="Container" x="149.049" y="4831.84">
+   <properties>
+    <property name="description">(A container bearing a strange symbol.)
+(The lid is bolted shut. It's impossible to open.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Sign" x="748.707" y="4751.45">
+   <properties>
+    <property name="description" value="&quot;Northern Caverns up ahead.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Sign" x="1267.12" y="4766.16">
+   <properties>
+    <property name="description">The West Mines.
+Property of Mining Co.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Warning Sign" x="3838.98" y="4771.19">
+   <properties>
+    <property name="description" value="&quot;WARNING! DANGER SIGN AHEAD!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Danger Sign" x="3928.53" y="4770.64">
+   <properties>
+    <property name="description" value="&quot;DANGER! SANDSTORM AHEAD! TAKE COVER!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Alert Sign" x="3747.76" y="4772.26">
+   <properties>
+    <property name="description" value="&quot;ALERT! WARNING SIGN AHEAD!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Picture" x="5053.75" y="4724">
+   <properties>
+    <property name="description" value="&quot;(Doggy.....)&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Sign" x="9822.19" y="4393.44">
+   <properties>
+    <property name="description" value="&quot;East Mines.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Attention Sign" x="10957.7" y="4407.18">
+   <properties>
+    <property name="description" value="&quot;ATTENTION! Gift shop ahead!&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Note" x="10942.9" y="4366.71">
+   <properties>
+    <property name="description">; OPENING HOURS
+: MO-FRI: 8AM - 4PM
+: SAT-SUN: 8AM - 2PM
+; LUNCH BREAK
+: 12:00AM - 12:15PM</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Note" x="10880.3" y="4374.86">
+   <properties>
+    <property name="description">(There's a note attached to the cactus.)
+50% OFF ON ALL OF OUR PRODUCT-!
+
+(The &quot;s&quot; in &quot;products&quot; is crudely scribbled out.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Picture" x="17669.1" y="403.462">
+   <properties>
+    <property name="description" value="A [[Media:Starlo and Ceroba picture screenshot.png|picture]] of [[Starlo]] and [[Ceroba]] as teenagers."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Cellar" x="17714.2" y="955.744">
+   <properties>
+    <property name="description">&quot;(The cellar is locked. Must be where the harvest is stored.)&quot;
+
+On a [[Genocide Route]]: &quot;(You hear whispering coming from the cellar.)&quot;</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Bed" x="17468.2" y="183.616">
+   <properties>
+    <property name="description">(A doubledecker rocketship, ready to blast off into pleasant dreams.)
+(See you space cowboy.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Desk" x="17614.2" y="201.271">
+   <properties>
+    <property name="description">(A desk displaying western memorabilia and a sewing machine.)
+(The piece of fabric under the machine has been left unfinished.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="saves">
+  <object id="13" name="Dunes - Cave" x="529.476" y="4743.72">
+   <properties>
+    <property name="description" value="SAVE point &quot;Dunes - Cave&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Dunes - Tree" x="7218.45" y="4332.64">
+   <properties>
+    <property name="description" value="SAVE point &quot;Dunes - Tree&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Dunes - Playground" x="10368.8" y="4556.9">
+   <properties>
+    <property name="description" value="SAVE point &quot;Dunes - Playground&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Dunes - Well" x="15561.1" y="4895.25">
+   <properties>
+    <property name="description" value="SAVE point &quot;Dunes - Well&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Wild East - Outskirts" x="17427" y="2912.36">
+   <properties>
+    <property name="description" value="SAVE point &quot;Wild East - Outskirts&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Wild East - Sunnyside" x="17731.9" y="1731.09">
+   <properties>
+    <property name="description" value="SAVE point &quot;Wild East - Sunnyside&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="vendors">
+  <object id="9" name="Mo" x="7223.26" y="3561.72">
+   <properties>
+    <property name="description">Mo's Dunes stand, where he sells ice tea (but the ice he used had already melted):
+* [[Ice Tea]]
+* [[Green Tea]]
+* [[Sea Tea]]
+Each item costs 20G.</property>
+    <property name="page" value="Mo"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="items">
+  <object id="6" name="Trail Mix" x="58.9623" y="4844.66">
+   <properties>
+    <property name="description" value="In this box, Trail Mix can be found."/>
+    <property name="page" value="Trail Mix"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Packing Peanuts" x="2879.77" y="5015.78">
+   <properties>
+    <property name="description" value="This [[UGPS]]-branded box contains some Packing Peanuts, and what appear to be real peanuts. When interacted with, [[Clover]] can pick up the Packing Peanuts, but leaves everything else."/>
+    <property name="page" value="Packing Peanuts"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Golden Cactus" x="4701.53" y="4043.4">
+   <properties>
+    <property name="description" value="Third golden item, the Golden Cactus, is found in the depth of this cave."/>
+    <property name="page" value="Golden Cactus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Flint Ammo" x="9688.33" y="4407.88">
+   <properties>
+    <property name="description" value="Within this pile of rocks, [[Clover]] finds the Flint Ammo."/>
+    <property name="page" value="Flint Ammo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Glass Ammo" x="10973.8" y="4008.44">
+   <properties>
+    <property name="description" value="After the [[Giftshopper]] tries to sell this mug to [[Clover]] for 40G, Clover tries to retrieve the mug from the shelf and fails, with the mug falling to the floor and breaking. Giftshopper then gives Clover the leftover shards for free, which turn out to be Glass Ammo."/>
+    <property name="page" value="Glass Ammo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Well" x="15561.4" y="5048.26">
+   <properties>
+    <property name="description">Here, [[Martlet]] asks [[Clover]] for G to throw into the well (but Clover's G isn't reduced after this interaction). Martlet wishes that Clover makes it to the surface safely.
+
+If Clover does interact with the well, or does not let Martlet throw G into the well, they can come back to the well later and steal 50G from it (even though the game says they only stole 5G).</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Wild Revolver" x="16399.9" y="4675.96">
+   <properties>
+    <property name="description" value="On a [[Genocide Route]], [[Clover]] finds the Wild Revolver here, right before the battles against [[Starlo]] and [[Ceroba]] in the [[Wild East]]."/>
+    <property name="page" value="Wild Revolver"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="encounters">
+  <object id="1" name="Dunebud" x="2547.24" y="4896.2">
+   <properties>
+    <property name="description" value="Scripted encounter with Dunebud."/>
+    <property name="page" value="Dunebud"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Sir Slither" x="7710.04" y="4206.51">
+   <properties>
+    <property name="description" value="Scripted encounter with Sir Slither."/>
+    <property name="page" value="Sir Slither"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Cactony" x="8947.52" y="4450.71">
+   <properties>
+    <property name="description" value="Scripted encounter with Cactony."/>
+    <property name="page" value="Cactony"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Flower Girls" x="11573.4" y="4436.33">
+   <properties>
+    <property name="description" value="Scripted encounter with the Flower Girls."/>
+    <property name="page" value="Flower Girls"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Starlo" x="17809.1" y="2378.5">
+   <properties>
+    <property name="description" value="Boss battle against Starlo."/>
+    <property name="page" value="Starlo"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="sublocations">
+  <object id="22" name="Oasis Valley" x="13027.5" y="4534.91">
+   <properties>
+    <property name="description" value="This oasis is an important place for many monsters in the [[Dunes]]. Please visit its article to find a detailed map of it!"/>
+    <property name="page" value="Oasis Valley"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="East Mines" x="10208.9" y="4001.74">
+   <properties>
+    <property name="description" value="[[Clover]] has to travel through the mines and over the mountaintop to avoid the pile of rocks blocking their path. See the detailed map of their journey on East Mines' own article!"/>
+    <property name="page" value="East Mines"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Wild East" x="16401.3" y="3507.34">
+   <properties>
+    <property name="description" value="After [[Oasis Valley]], [[Clover]]'s journey continues with the Wild East, where they stay for several days. Check out the detailed maps on Wild East's article!"/>
+    <property name="page" value="Wild East"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Ketsukane Estate" x="13036.4" y="3444.01">
+   <properties>
+    <property name="description" value="North of the [[Oasis Valley]] is the residence of the Ketsukane family, where [[Ceroba]], [[Chujin]] and [[Kanako Ketsukane]] used to live. Find the map of their residence on its article page!"/>
+    <property name="page" value="Ketsukane Estate"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="15" name="warnings">
+  <object id="73" name="Point of No Return" x="11837.3" y="4447.98">
+   <properties>
+    <property name="description" value="The game warns the player at this point if, on a [[Genocide Route]], they haven't exhausted the kill count in the [[Dunes]]. If they proceed without exhausting the kill count and interact with [[Martlet]] further ahead, they abort the Genocide Route."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="annotations">
+  <object id="20" name="Oasis Valley" x="12440" y="4137" width="1200" height="940">
+   <properties>
+    <property name="border" type="color" value="#ffffaa00"/>
+    <property name="fill" type="color" value="#ffffff7f"/>
+   </properties>
+  </object>
+  <object id="23" name="East Mines" x="9695.3" y="2922.23" width="1059.2" height="1244.92">
+   <properties>
+    <property name="border" type="color" value="#ffaa0000"/>
+    <property name="fill" type="color" value="#ffaa5500"/>
+   </properties>
+  </object>
+  <object id="26" x="15682" y="3140" width="2180.08" height="1000">
+   <properties>
+    <property name="border" type="color" value="#ffaa5500"/>
+    <property name="fill" type="color" value="#ffffaa00"/>
+   </properties>
+  </object>
+  <object id="34" name="Entrance to the secret cave" x="4811.61" y="5028.87">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+   </properties>
+   <polyline points="0,0 -6.07718,-527.195"/>
+  </object>
+  <object id="36" name="Entrance to Starlo's family house" x="17928.7" y="1067.13">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+   </properties>
+   <polyline points="0,0 -286.456,-8.65665 -282.521,-357.283"/>
+  </object>
+  <object id="67" name="Ketsukane Estate" x="12441" y="2791.39" width="1197.62" height="1344.17">
+   <properties>
+    <property name="border" type="color" value="#ffffaa00"/>
+    <property name="fill" type="color" value="#ffaa0000"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
