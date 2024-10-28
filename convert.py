@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Literal, NamedTuple, Optional, Set, Tuple, T
 from mwcleric import AuthCredentials, WikiClient
 import pytiled_parser as tiled
 import pytiled_parser.tiled_object as objects
+from slugify import slugify
 
 from datamaps import CoordinateSystem, DataMap, ImageBackground, Order, Marker
 from datamaps.background import TiledBackground
@@ -60,6 +61,20 @@ def add_points(p1: NamedTuple, p2: NamedTuple) -> tiled.OrderedPair:
     return tiled.OrderedPair(p1[0] + p2[0], p1[1] + p2[1])
 
 
+def find_marker_id(layers: List[str], marker_name: str, markers: List[Marker]) -> str:
+    marker_id_base = '-'.join(slugify(name) for name in layers + [marker_name])
+    marker_id = marker_id_base
+    index = 1
+    while True:
+        for marker in markers:
+            if marker.id == marker_id:
+                index += 1
+                marker_id = f'{marker_id_base}-{index}'
+                break
+        else:
+            return marker_id
+
+
 def convert_layer(
     layer: tiled.Layer,
     datamap: DataMap,
@@ -86,10 +101,12 @@ def convert_layer(
         for obj in layer.tiled_objects:
             coords = add_points(obj.coordinates, offset)
             if isinstance(obj, objects.Point):
+                marker_id = find_marker_id(parent_layers + [layer.name],
+                    obj.name, markers)
                 description = get_property(obj.properties, 'description', str)
                 if get_property(obj.properties, 'multiline', bool):
                     description = f'<poem>{description}</poem>'
-                markers.append(Marker(coords.x, coords.y,
+                markers.append(Marker(coords.x, coords.y, marker_id,
                     name=None if len(obj.name) == 0 else obj.name,
                     description=description,
                     isWikitext=not obj.properties.get('plain', False),

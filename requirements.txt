@@ -1,3 +1,4 @@
 dataclasses-json
 mwcleric
-pytiled-parser
+python-slugify
+pytiled-parser>=2.2.7
