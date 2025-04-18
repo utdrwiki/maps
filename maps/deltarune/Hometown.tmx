@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="85" height="134" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="44">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Hometown map">
+  <image source="images/Hometown.png" width="2718" height="4267"/>
+ </imagelayer>
+ <objectgroup id="6" name="sublocations">
+  <object id="2" name="School" x="2149.6" y="2026.75">
+   <properties>
+    <property name="description" value="School is one of the most important locations in Hometown, both as a place where we [[Kris]]'s classmates are introduced, as well as the location of the [[Closet Dark World]] and [[Card Kingdom]]."/>
+    <property name="page" value="School"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Dreemurr Residence" x="513.898" y="427.119">
+   <properties>
+    <property name="description" value="Dreemurr Residence is the home of [[Kris]], [[Toriel]], [[Asriel]] and formerly [[Asgore]]."/>
+    <property name="page" value="Dreemurr Residence"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="npcs">
+  <object id="25" name="Toriel" x="678.26" y="379.065">
+   <properties>
+    <property name="description" value="Toriel can be seen here during most of [[Hometown]] visits."/>
+    <property name="page" value="Toriel"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Catty" x="940.771" y="965.755">
+   <properties>
+    <property name="description" value="Catty appears in front of her house in [[Chapter 1]] and talks to [[Kris]] about her sister, [[Catti]], [[Asriel]], and [[Bratty]]. In [[Chapter 2]], she's off to [[QC's Diner]] with the rest of the family."/>
+    <property name="page" value="Catty"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Dad Cat" x="1045.88" y="946.371">
+   <properties>
+    <property name="description" value="Dad Cat appears in front of his family house in [[Chapter 1]], talking about how [[Asriel]] (who he named &quot;Doug&quot;) didn't like his wife's cooking. In [[Chapter 2]], he's off to [[QC's Diner]] to support [[Catti]]."/>
+    <property name="page" value="Dad Cat"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Bratty" x="1290.11" y="950.678">
+   <properties>
+    <property name="description" value="Bratty can be found in front of her house during [[Chapter 1]], talking to [[Kris]] mostly about [[Catty]]."/>
+    <property name="page" value="Bratty"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Asgore" x="1627.28" y="684.834">
+   <properties>
+    <property name="description" value="Asgore is found in his flower shop in [[Chapter 1]], giving [[Kris]] a big hug and a bouquet for [[Toriel]]."/>
+    <property name="page" value="Asgore Dreemurr"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Nobody" x="1470.12" y="966.082">
+   <properties>
+    <property name="description" value="This NPC, whose verbal quirks are similar to those of [[ut:Mettaton|Mettaton]], doesn't let [[Kris]] into their house and describes themselves as a &quot;nobody,&quot; appearing surprised that Kris wants to talk to them."/>
+    <property name="page" value="Nobody"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Wet-Nose Bandits" x="494.624" y="1946.95">
+   <properties>
+    <property name="description" value="This group of dogs, returning from ''[[ut:Undertale|Undertale]]''&lt;nowiki /&gt;'s [[ut:Snowdin Canine Unit|Snowdin Canine Unit]], is said to have attempted to sneak into a large house over the holidays. If talking to [[Undyne]] about &quot;[[Dark World]]&quot;, she accidentally unlocks their cell, and they escape."/>
+    <property name="page" value="Wet-Nose Bandits"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Undyne" x="440.86" y="2009.32">
+   <properties>
+    <property name="description" value="In [[Chapter 2]], Undyne appears inside the police station, guarding the jail cell of the [[Wet-Nose Bandits]]."/>
+    <property name="page" value="Undyne"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Napstablook" x="378.495" y="1996.42">
+   <properties>
+    <property name="description" value="Napstablook has become a police officer by accident, but cannot quit due to their cousins relying on them. In [[Chapter 1]], they don't let [[Kris]] into the police station, and simply close the blinds."/>
+    <property name="page" value="Napstablook"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Undyne" x="910.394" y="2289.61">
+   <properties>
+    <property name="description" value="During [[Chapter 1]]'s epilogue, Undyne is seen on the street attempting to direct traffic by yelling at everyone to get out of her way. She appears to not recognize [[Alphys]]'s name. In [[Chapter 2]], she is instead in the [[Police Station]]."/>
+    <property name="page" value="Undyne"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Berdly" x="1129.03" y="2072.4">
+   <properties>
+    <property name="description" value="In [[Chapter 1]], Berdly works at the [[library]]'s desk, mocking [[Kris]] for not returning ''How to Draw Dragons'' for 2583 days."/>
+    <property name="page" value="Berdly"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="signs" class="Computer desk">
+  <object id="4" name="Toilet" x="218.431" y="411.781">
+   <properties>
+    <property name="description" value="Interacting with this toilet several times leads to additional flavor text."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Computer desk" x="141.818" y="143.636">
+   <properties>
+    <property name="description">It's a computer desk.
+There are many boxes under it filled with old books.
+On the computer's desktop is a folder called &quot;EPIC games Stuff!!!!&quot;
+It's a poorly-drawn design for a game...
+Seems the last boss is a creature with giant rainbow wings.
+Doesn't seem like this game ever saw the light of day...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Asriel's bed" x="140.326" y="53.2983">
+   <properties>
+    <property name="description">'''Chapter 1:'''
+There are CDs under the bed.
+Classical, jazz, religious ska...
+There's also a game console.
+It has one normal controller, and one knock-off one.
+'''Chapter 2:'''
+Underneath the bed is an old cartridge of &quot;Cat Petters RPG&quot;.
+&quot;catti &amp; catty&quot; can be seen faintly written on it in worn gel pen.
+</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Asriel's drawer" x="189.505" y="58.4479">
+   <properties>
+    <property name="description">The drawer is mostly empty, except for...
+'''Save slot 1:''' A school cross country shirt with a tear in it.
+'''Save slot 2:''' A very old school ID with an embarrassing haircut.
+'''Save slot 3:''' A coupon book.
+Every coupon is for half-off a large pizza.
+All the coupons expired before the book's print date.
+'''After interacting:''' There's nothing useful in the drawer.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Toriel's room" x="39.4653" y="242.521">
+   <properties>
+    <property name="description" value="The door is locked."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Hallway drawer" x="141.311" y="255.888">
+   <properties>
+    <property name="description">'''Chapter 1:'''
+There are crayons in the drawer. Their labels have long faded, and there's no green.
+'''Chapter 2:'''
+(... How to Draw Dragons is at the bottom of the drawer.)
+(The purple character on the cover is dressed... immodestly.)
+(Your brother will never return this book.)
+</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Bookshelf" x="303.628" y="232.336">
+   <properties>
+    <property name="description">'''Chapter 1:'''
+There are many books.
+Tales of Snails - A Story Book.
+Snails Do Not Have Tails - A Scientific Refutation.
+Can Snails Help Your Garden? Um, Not Really.
+And a signed copy of The History of Humans and Monsters, by Gerson Boom.
+'''After interacting:''' There's no time to read anything right now.
+'''Chapter 2:'''
+(There's no time to read books. Just generally.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Kitchen sink" x="473.291" y="359.027">
+   <properties>
+    <property name="description">It's a sink. You could wash your hands here.
+... but, isn't the sink in the bathroom better?
+'''After [[Susie]] and [[Toriel]] finish making pie:''' There is some white fur stuck in the drain.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Stovetop" x="511.38" y="361.525">
+   <properties>
+    <property name="description">There's some cinnamony batter caked on the stovetop.
+'''After [[Susie]] and [[Toriel]] make pie:''' (It's a butterscotch-cinnamon pie.) (It's still cooling.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Trashcan" x="580.375" y="402.11">
+   <properties>
+    <property name="description">It's a trashcan.
+Somehow, it's emitting a pleasant floral scent.
+'''After bringing the bouquet from [[Asgore]]:'''
+Somehow, its floral scent has increased.
+</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Phone" x="613.468" y="385.876">
+   <properties>
+    <property name="description" value="It's a landline phone. But you already have a cell phone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="TV" x="724.611" y="366.832">
+   <properties>
+    <property name="description">It's the TV.
+Doesn't seem to even be plugged in anymore.
+'''Chapter 2+:'''
+Looks like it's plugged in, but it's dusty.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Book" x="811.401" y="458.618">
+   <properties>
+    <property name="description" value="It's a book of hymns."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Shower" x="166.713" y="423.028">
+   <properties>
+    <property name="description">On the shower ledge, there's a small container of apple-scented shampoo.
+... and a gallon-sized container of pet shampoo.
+'''Chapter 2, during bathroom cutscene:''' (No need for it.)
+'''Chapter 2, after bathroom cutscene:''' (The apple-scented shampoo feels lighter than usual.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Sink cupboard" x="247.26" y="420.842">
+   <properties>
+    <property name="description">You looked inside the sink cupboard. There's...
+A can of Ice-E's Cool Boys Body Spray &quot;Spray For The Boys,&quot; Flamin' Hot Pizza Flavor.
+It seems to be almost entirely full.
+</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Fridge" x="441.135" y="377.447">
+   <properties>
+    <property name="description" value="There's a photo on the fridge. It's of you, your mother, and your brother."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Unknown door" x="1941.62" y="1644.44">
+   <properties>
+    <property name="description" value="The door is locked."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="items"/>
+ <objectgroup id="9" name="darkworld">
+  <object id="32" name="Cyber World" x="1199.2" y="1964.72">
+   <properties>
+    <property name="description" value="In [[Chapter 2]], [[Kris]] and [[Susie]] (as well as [[Noelle]] and [[Berdly]] previously) use this door to enter the chapter's [[Dark World]]."/>
+    <property name="page" value="Cyber World"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Closet Dark World" x="2150.58" y="1645.49">
+   <properties>
+    <property name="description" value="In this closet there is a [[Dark World]] persisting through all [[chapter]]s. In [[Chapter 1]], [[Kris]] and [[Susie]] land in [[??????]] upon entrance, whereas in [[Chapter 2]] onwards they land in [[Castle Town]]."/>
+    <property name="page" value="Closet Dark World"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="plot">
+  <object id="10" name="Kris's bed" x="332.212" y="57.3123">
+   <properties>
+    <property name="description" value="Interacting with this bed allows Kris to enter the [[chapter]]'s [[Dark World]], if that Dark World was visited at least once before."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Chapter 1 ending cutscene" x="238.065" y="108.211">
+   <properties>
+    <property name="description" value="During the [[Chapter 1]] ending cutscene, [[Kris]] rips their [[SOUL]] out in this location, throws it in the cage, and pulls out a knife."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Chapter 2 bathroom cutscene" x="213.571" y="460.53">
+   <properties>
+    <property name="description" value="During the [[Chapter 2]] ending, [[Kris]] rips out their [[SOUL]] in the bathroom, leaves through the window, then comes back."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Unused classroom" x="2376.35" y="1511.08">
+   <properties>
+    <property name="description" value="After returning from [[Card Kingdom]], [[Kris]] and [[Susie]] return in this classroom, which appears to contain real-world representations of [[Darkners]] from that [[Dark World]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Mysterious Bunker" x="1039.59" y="4144.7">
+   <properties>
+    <property name="description" value="Near this bunker, &lt;code&gt;mus_smile&lt;/code&gt; (sound associated with [[W.D. Gaster]]) can be heard. In [[Chapter 2]], [[Monster Kid]] and [[Snowy]] appear here to talk about rumors that [[Kris]] has been spreading about this bunker, before [[Susie]] scares them away."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Gate to Noelle's house" x="565.998" y="1009.14">
+   <properties>
+    <property name="description" value="Near this gate in [[Chapter 1]], [[Noelle]] can be found waiting after returning from the [[hospital]]. She talks to [[Kris]] about [[Susie]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="annotations">
+  <properties>
+   <property name="color" type="color" value="#ff0000ff"/>
+   <property name="thickness" type="float" value="3"/>
+  </properties>
+  <object id="1" name="Entrance to school" x="1879.21" y="2166.81">
+   <polyline points="0,0 0.575209,-47.1671 175.439,-47.1671 176.014,98.9359 277.251,97.7854 275.525,33.3621"/>
+  </object>
+  <object id="30" name="Entrance to Town Hall" x="1180.63" y="2519.04">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -1.81357,94.3054 299.238,101.56 297.425,54.407"/>
+  </object>
+  <object id="31" name="Staircase" x="1283.37" y="1944.36">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-36.9894 239.627,-38.5976"/>
+  </object>
+ </objectgroup>
+</map>
