@@ -186,7 +186,7 @@ def get_wiki(project_name: str) -> Optional[Tuple[str, str]]:
 
 def log_in_to_wiki(project_name: str) -> WikiClient:
     wiki = get_wiki(project_name)
-    credentials = AuthCredentials(user_file='tiled-datamaps')
+    credentials = AuthCredentials(user_file=f'tiled-datamaps-{project_name}')
     if wiki is None:
         raise ValueError('Could not find wiki information in project file')
     return WikiClient(*wiki, credentials, max_retries=0)
