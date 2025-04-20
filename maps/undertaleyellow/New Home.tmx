@@ -1,16 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="263" height="128" tilewidth="20" tileheight="20" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="263" height="128" tilewidth="20" tileheight="20" infinite="0" nextlayerid="10" nextobjectid="22">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="New Home map">
   <image source="images/New Home.png" width="5254" height="2560"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="5" name="signs"/>
- <objectgroup id="6" name="saves"/>
- <objectgroup id="7" name="items"/>
- <objectgroup id="8" name="encounters"/>
- <objectgroup id="9" name="annotations"/>
+ <objectgroup id="3" name="plot">
+  <object id="3" name="Elevator to Hotland" x="1797.25" y="2301">
+   <properties>
+    <property name="description" value="This elevator is where [[Clover]] enters from [[UG Apartments]]."/>
+    <property name="page" value="Hotland"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="ASGORE" x="4532" y="982.5">
+   <properties>
+    <property name="description">[[Clover]] meets ASGORE here on the [[Flawed Pacifist]] and [[Genocide Route]]s.
+
+On the Flawed Pasifist Route, he sends [[Martlet]] away and leads Clover to the Barrier. On the Genocide Route, he attempts to attack Clover. It has no effect and Clover evaporates him, burning the flowers below him. They take his SOUL, free the five human SOULs, and exit the Underground.</property>
+    <property name="page" value="Asgore Dreemurr"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Blocker" x="2769" y="1758.33">
+   <properties>
+    <property name="description" value="[[Clover]] will not walk past this point."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Clover's death" x="800" y="240">
+   <properties>
+    <property name="description" value="If [[Ceroba]] is spared, the game ends here when [[Clover]] gives up their SOUL. The tree above them resembles the one at [[Ketsukane Estate|Chujin's grave]]."/>
+    <property name="page" value="Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Coffins" x="4892.09" y="2461.09">
+   <properties>
+    <property name="description" value="The [[ut:Eight Humans|human children's]] graves seen in ''[[ut:Undertale|Undertale]]''. There is no coffin with a yellow heart."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="1" name="Umbrella Lady" x="1479" y="2277.75">
+   <properties>
+    <property name="description" value="This well-dressed monster insists their husband do the dishes when they get home."/>
+    <property name="page" value="Umbrella Lady"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Charles" x="1441.75" y="2291.5">
+   <properties>
+    <property name="description" value="This monster talks to the [[Umbrella Lady]] about not liking their partner's soap."/>
+    <property name="page" value="Charles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Watcher" x="389.125" y="1575.63">
+   <properties>
+    <property name="description" value="A shadowy figure watches the street below."/>
+    <property name="page" value="Watcher"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="signs">
+  <object id="5" name="Nice Cream" x="500" y="1380">
+   <properties>
+    <property name="description">&quot;Oh no! I'm closed!
+Come back bright and early for a scoop of Nice Cream!&quot;</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Sign" x="4421.33" y="1366.33">
+   <properties>
+    <property name="description" value="&quot;Throne Room&quot;"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="saves">
+  <object id="8" name="New Home" x="800" y="1300">
+   <properties>
+    <property name="description" value="SAVE point &quot;New Home&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="items">
+  <object id="6" name="Popato Chisps" x="1502.75" y="2290.5">
+   <properties>
+    <property name="description" value="[[Clover]] can pick up Popato Chisps from underneath this bench, even on a [[Genocide Route]]."/>
+    <property name="page" value="Popato Chisps"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Adult Soda" x="393.813" y="2272.75">
+   <properties>
+    <property name="description" value="[[Clover]] can pick up an Adult Soda from this trash can on a [[Pacifist Route]]."/>
+    <property name="page" value="Adult Soda"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="encounters">
+  <object id="9" name="Pacifist final boss" x="800" y="300">
+   <properties>
+    <property name="description" value="On a [[Pacifist Route]], [[Clover]] and [[Martlet]] arrive to confront [[Ceroba]], who is arguing with [[Starlo]] here."/>
+    <property name="page" value="Ceroba Ketsukane/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Flawed Pacifist final boss" x="4940" y="340">
+   <properties>
+    <property name="description" value="After Asgore leads [[Clover]] to the Barrier, he shows them the five human SOULS. The two fight; Clover cannot take a turn in the battle and Asgore eventually collects their SOUL."/>
+    <property name="page" value="Asgore Dreemurr"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="annotations">
+  <object id="11" name="Elevator to Asgore's Castle" x="3340" y="1720">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-380 -1740,-380"/>
+  </object>
+ </objectgroup>
 </map>

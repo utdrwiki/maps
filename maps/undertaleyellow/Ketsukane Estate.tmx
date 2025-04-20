@@ -1,13 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="109" height="127" tilewidth="20" tileheight="20" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="109" height="127" tilewidth="20" tileheight="20" infinite="0" nextlayerid="9" nextobjectid="43">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Ketsukane Estate map">
   <image source="images/Ketsukane Estate.png" width="2176" height="2541"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="signs"/>
- <objectgroup id="5" name="saves"/>
- <objectgroup id="6" name="items"/>
+ <objectgroup id="3" name="plot">
+  <object id="1" name="Gate" x="579" y="2118.18">
+   <properties>
+    <property name="description" value="This gate blocks off the entrance to the estate. It only opens after [[Starlo]] and [[Ed]] unlock it towards the end of the [[Pacifist Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Blocker" x="160" y="1320">
+   <properties>
+    <property name="description" value="[[Martlet]] prevents [[Clover]] from walking off track. They can only move past this point after watching [[Chujin]]'s tapes."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Map" x="855.75" y="274">
+   <properties>
+    <property name="description" value="A map with annotations at the death locations of the [[ut:Eight Humans|five humans]]. The blue SOUL human's location is not marked."/>
+    <property name="page" value="Integrity"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Family photo" x="1699.27" y="1141.09">
+   <properties>
+    <property name="description" value="A picture of [[Ceroba]], [[Chujin]], and [[Kanako]] taken in the dining room. [[Ceroba Ketsukane/In Battle|Kanako's mask]] is visible in the background."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Closet" x="1890.75" y="1123">
+   <properties>
+    <property name="description" value="[[Ceroba]]'s many almost identical outfits are seen here. [[Chujin]]'s outfits are said to be behind hers. Notably, Chujin's zabuton and Ceroba's [[Café Dune]] waiter outfit are visible here. This is also the only part of the Ketsukane Estate's design that is identifiable as Ceroba's."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Trapdoor" x="1406.25" y="635.75">
+   <properties>
+    <property name="description" value="The entrance to [[Chujin]]'s study is under this kotatsu, through a trapdoor."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Axis head" x="1315.94" y="93.625">
+   <properties>
+    <property name="description" value="Early Axis prototypes are found around the study, but this face is most recognizable as his."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Television" x="1403.5" y="84.25">
+   <properties>
+    <property name="description" value="This television is where [[Martlet]] and [[Clover]] watch Chujin's video journals. Returning here and interacting with the television with the [[Videotape]] in Clover's inventory lets them watch it. This is also the location of a [[Fun Value#Chujin stare|Fun Event]]."/>
+    <property name="page" value="Chujin Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Chujin's garden" x="760" y="1720">
+   <properties>
+    <property name="description" value="The front yard contains what is presumably the remnants of [[Chujin]]'s garden."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Locked door" x="1403.67" y="950.333">
+   <properties>
+    <property name="description" value="While this would be a straight shot to the trapdoor, this door cannot be opened or unlocked."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Files" x="981.25" y="335.25">
+   <properties>
+    <property name="description" value="This cabinet contains records of Chujin's friends. The ones that [[Martlet]] read off include [[Sandra]], Luis, Dr. Fish, [[Rosa]], and herself."/>
+    <property name="page" value="Chujin Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Dishes" x="1962.5" y="570.5">
+   <properties>
+    <property name="description" value="These dishes remind Clover of vague duties back on the Surface that they have moved on from."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="art">
+  <object id="35" name="Chujin drawing" x="821" y="265.636">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of Chujin."/>
+    <property name="page" value="Chujin Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Sadie drawing" x="471.25" y="354.75">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of Sadie."/>
+    <property name="page" value="Sadie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Dalv drawing" x="436.727" y="365.818">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of Dalv."/>
+    <property name="page" value="Dalv"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Tutu drawing" x="438" y="439.375">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of a tutu."/>
+    <property name="page" value="Integrity"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Axis drawing" x="465.5" y="450.75">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of Axis."/>
+    <property name="page" value="Axis"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Family drawing" x="543.375" y="361.125">
+   <properties>
+    <property name="description" value="[[Kanako]]'s drawing of herself, [[Chujin]], and [[Ceroba]]. Chujin's face is covered by torn paper."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Kanako's mask" x="1403.91" y="544.636">
+   <properties>
+    <property name="description" value="The mask [[Kanako]] made used to rest here."/>
+    <property name="page" value="Ceroba Ketsukane/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="signs">
+  <object id="3" name="Grave" x="160.25" y="215.5">
+   <properties>
+    <property name="description">&quot;Chujin Ketsukane
+The best of us.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="Chujin Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Family crest" x="1093.75" y="542.25">
+   <properties>
+    <property name="description">&quot;The Founder's Crest
+&quot;Decisive. Devoted. Determined.&quot;&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Family crest" x="1714.94" y="542.188">
+   <properties>
+    <property name="description">&quot;The Founder's Crest
+&quot;Decisive. Devoted. Determined.&quot;&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Book" x="770.182" y="306.182">
+   <properties>
+    <property name="description">&quot;(Dozens of books line the shelves.)
+(A thick, degraded book sticks out from the others.)
+&quot;Home: Blueprints and Annotations - Ketsukane&quot;&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="New Home"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="saves">
+  <object id="5" name="Estate" x="1404.88" y="1035.88">
+   <properties>
+    <property name="description" value="SAVE point &quot;Estate&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="items">
+  <object id="4" name="Videotape" x="160.125" y="194.625">
+   <properties>
+    <property name="description" value="The Videotape can be picked up by interacting with the back of [[Chujin]]'s grave."/>
+    <property name="page" value="Videotape"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="PSA" x="1819" y="1159.75">
+   <properties>
+    <property name="description" value="A letter sent out asking for the fallen down to be sent to [[ut:Lab|The Lab]] can be found in Ceroba's nightstand."/>
+    <property name="page" value="Mail#PSA"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Corn Chowder" x="2078" y="571.091">
+   <properties>
+    <property name="description" value="Leftover Corn Chowder can be taken out of this fridge. If [[Clover]] waits until [[Martlet]] has left to take it, they can keep taking it infinitely."/>
+    <property name="page" value="Corn Chowder"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="annotations">
+  <object id="27" name="Path to Chujin's office" x="853.273" y="579.636">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-141.273"/>
+  </object>
+  <object id="28" name="Path to Kanako's room" x="751.375" y="521.625">
+   <properties>
+    <property name="color" type="color" value="#ffce1bd6"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -104.625,0 -104.625,-13.875"/>
+  </object>
+  <object id="29" name="Path to Chujin and Ceroba's room" x="1740" y="940">
+   <properties>
+    <property name="color" type="color" value="#fff4001c"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -120,0 -120,340 -20,340"/>
+  </object>
+  <object id="30" name="Path to west hall" x="1200" y="980">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,80 80,80"/>
+  </object>
+  <object id="33" name="Path to east hall" x="1520" y="1060">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 80,0 80,-80"/>
+  </object>
+  <object id="34" name="Entrance to Ketsukane Estate" x="573.667" y="1440">
+   <properties>
+    <property name="color" type="color" value="#fff4a521"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 826.333,0 826.333,-180"/>
+  </object>
+  <object id="40" name="Path to Chujin's study" x="1405.64" y="623.273">
+   <properties>
+    <property name="color" type="color" value="#ff3627fc"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-181.636"/>
+  </object>
+ </objectgroup>
 </map>

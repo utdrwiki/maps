@@ -1,12 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="92" height="59" tilewidth="20" tileheight="20" infinite="0" nextlayerid="7" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="92" height="59" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="44">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Oasis Valley map">
   <image source="images/Oasis Valley.png" width="1840" height="1180"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="5" name="ugps"/>
+ <objectgroup id="3" name="plot">
+  <object id="25" name="Path to Ketsukane Estate" x="948.5" y="246.5">
+   <properties>
+    <property name="description" value="Following this road leads to the gate to the Ketsukane Estate. The gate only opens after completing the [[Steamworks]] on a [[Pacifist Route]]."/>
+    <property name="page" value="Ketsukane Estate"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Entrance from Dunes" x="340" y="560">
+   <properties>
+    <property name="description" value="After a cutscene with [[Martlet]], Clover enters Oasis Valley through this path."/>
+    <property name="page" value="Dunes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Path to Wild East" x="1354.91" y="1010.18">
+   <properties>
+    <property name="description" value="The road to the Wild East is through this hallway."/>
+    <property name="page" value="Wild East"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Mew Mew Love Blaster!" x="1564.75" y="546.25">
+   <properties>
+    <property name="description" value="This arcade machine lets [[Clover]] play Mew Mew Love Blaster! for 3G."/>
+    <property name="page" value="Mew Mew Love Blaster!"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Closed house" x="982.75" y="905.25">
+   <properties>
+    <property name="description" value="If [[Clover]] knocks on this door, the person inside just responds they're not home."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Flower" x="153.75" y="998.5">
+   <properties>
+    <property name="description" value="This flower was planted by the [[Rock Man]]; the whole town takes care of it. It grows in stages over the course of the game. On a [[Genocide Route]], it has withered away by the time [[Clover]] enters."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="11" name="Rock Man" x="741.25" y="80">
+   <properties>
+    <property name="description" value="The Rock Man tells [[Clover]] about their attempts to grow plants, including the grass next to them and the flower in the plant shelter south of their house. They share some information about the Meadows. After returning to enter the [[Ketsukane Estate]] on the [[Pacifist Route]], the Rock Man is now outside by the Oasis. They comment on the increased activity at the estate."/>
+    <property name="page" value="Rock Man"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Fortune Teller" x="1063.63" y="102.625">
+   <properties>
+    <property name="description">The Fortune Teller offers [[Clover]] a bite-sized fortune for 5G. They can buy up to four fortunes. The fortunes are:
+* Her predicting Clover getting into a &quot;tumble,&quot; then realizing she misunderstood &quot;tumbleweed,&quot;
+* Her predicting the time the player's computer will be on in 2 minutes,
+* Her seeing death in Clover's future,
+* Her seeing [[ut:Frisk|Frisk]] walking past the water cooler in [[Hotland]]. She returns Clover's 5G for this fortune.</property>
+    <property name="page" value="Fortune Teller"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Sandra" x="1620" y="600">
+   <properties>
+    <property name="description" value="Sandra comments on the ice hockey table functioning poorly. They also mention hearing plans to reforest the [[Dunes]]."/>
+    <property name="page" value="Sandra"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Clerk" x="1772.75" y="549.5">
+   <properties>
+    <property name="description" value="The Café Dune Clerk tells [[Clover]] they cannot buy items, since they, the manager, are on strike."/>
+    <property name="page" value="Clerk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Modernist" x="1760.5" y="619.25">
+   <properties>
+    <property name="description" value="The Modernist sits in the [[Café Dune]], drinking tea and bragging about using technology."/>
+    <property name="page" value="Modernist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Gamer Kid" x="1641.58" y="558.542">
+   <properties>
+    <property name="description" value="The Gamer Kid talks about the games the arcade has. They offer to hang out with [[Clover]] some time. They mention their friend group having less members recently, hinting at [[Kanako Ketsukane]]'s disappearance."/>
+    <property name="page" value="Gamer Kid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Sir Slither" x="1010.88" y="452.75">
+   <properties>
+    <property name="description" value="After exiting the [[Ketsukane Estate]] on a [[Pacifist Route]], Sir Slither can be found by the entrance. He offers to accompany [[Clover]] on their journey."/>
+    <property name="page" value="Sir Slither"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Aunt Glover" x="1020" y="660">
+   <properties>
+    <property name="description" value="Aunt Glover rambles about the different ways to categorize heat. If  [[Donald Glover]]'s mitten was returned, she asks about how he is doing."/>
+    <property name="page" value="Aunt Glover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Drinki" x="820" y="640">
+   <properties>
+    <property name="description" value="Drinki silently drinks the water from the oasis. They disappear after exiting the [[Ketsukane Estate]] on a [[Pacifist Route]]."/>
+    <property name="page" value="Drinki"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Red" x="1081.09" y="926.727">
+   <properties>
+    <property name="description" value="Red, a cameo from the fangame UnderTale RED, can be found here. If [[Martlet]] is accompanying, her and Red will talk about how Martlet mistook her for a human a week ago. Martlet offers her a job at the Royal Guard. If [[Clover]] is alone, she awkwardly converses."/>
+    <property name="page" value="Red"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Sandstorm Stander" x="1258.64" y="898.091">
+   <properties>
+    <property name="description" value="The Sandstorm Stander from the earlier sandstorm puzzle in the [[Dunes]] complains about the heat."/>
+    <property name="page" value="Sandstorm Stander"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Violetta" x="153.25" y="960">
+   <properties>
+    <property name="description" value="After sparing [[Starlo]] on a [[Pacifist Route]], Violetta can be found here tending to the sprout."/>
+    <property name="page" value="Violetta"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Hugtony" x="685.636" y="926">
+   <properties>
+    <property name="description" value="Hugtony, possibly a specimen [[Cactony]], sits at a booth offering free hugs. However, if [[Clover]] talks to them, Hugtony goes back and forth on wanting a hug, eventually reaching the conclusion to not hug Clover."/>
+    <property name="page" value="Hugtony"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Dunes Frostermits" x="611.667" y="769.333">
+   <properties>
+    <property name="description" value="Three Frostermits with pyramids on their backs sit inside the fenced in area."/>
+    <property name="page" value="Frostermit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Mr. Sir" x="1617.5" y="514">
+   <properties>
+    <property name="description" value="Mr. Sir appears during [[Fun_Value#Game_Machine|Fun Values]] 65 through 69. He tries to prevent [[Clover]] from being interested in the broken machine beside him."/>
+    <property name="page" value="Mr. Sir"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="ugps">
+  <object id="1" name="Dunes - Oasis Valley" x="1173.33" y="915.333">
+   <properties>
+    <property name="description" value="The Oasis Valley UGPS sign."/>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="signs">
+  <object id="2" name="Welcome sign" x="589.5" y="480.5">
+   <properties>
+    <property name="description">&quot;Welcome to Oasis Valley!
+Home to the largest body of water in the Dunes!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Drawing" x="1685" y="528.5">
+   <properties>
+    <property name="description">&quot;(A child's drawing depicting three happy monsters.)
+My precious family - by me :)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="Kanako Ketsukane"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="vendors">
+  <object id="43" name="Café Dune" x="1704" y="655">
+   <properties>
+    <property name="description">Café Dune is referred to as the most modern part of the [[Dunes]]. Since the clerk/manager is on strike, no items can be bought here. Only on a [[Genocide Route]] can [[Clover]] steal the following items:
+* [[Icewater]]
+* [[Oasis Latte]]
+* [[Cinnamon Cookie]]
+* [[Floral Cupcake]]</property>
+    <property name="page" value="Café Dune"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="items">
+  <object id="33" name="Bake Sale Spider" x="649.333" y="944.167">
+   <properties>
+    <property name="description" value="This spider sells [[Clover]] some [[Spider Donut]]s. They can buy up to four."/>
+    <property name="page" value="Bake Sale Spider"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="30G" x="855.5" y="365.75">
+   <properties>
+    <property name="description" value="30G can be stolen from this pair of pants."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="annotations">
+  <object id="5" name="Fortune Teller entrance" x="1056.73" y="453.636">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-252.273"/>
+  </object>
+  <object id="6" name="Rock Man's home entrance" x="756.364" y="481.636">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-277.5"/>
+  </object>
+  <object id="9" name="Café Dune entrance" x="1354" y="670.5">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,55.5 351,55.5"/>
+  </object>
+  <object id="10" name="Plant house entrance" x="277.636" y="1011.36">
+   <properties>
+    <property name="color" type="color" value="#ff3627fc"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 255.273,0 255.273,-20.1818"/>
+  </object>
+  <object id="35" name="Rock Man's balcony" x="800" y="40">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 20,0 20,360"/>
+  </object>
+ </objectgroup>
 </map>

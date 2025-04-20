@@ -1,13 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="60" height="82" tilewidth="20" tileheight="20" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="82" tilewidth="20" tileheight="20" infinite="0" nextlayerid="9" nextobjectid="13">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Ruins map">
   <image source="images/Ruins.png" width="1196" height="1624"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="puzzles"/>
- <objectgroup id="5" name="signs"/>
- <objectgroup id="6" name="encounters"/>
+ <objectgroup id="3" name="plot">
+  <object id="1" name="Golden flowers" x="151.667" y="1498.33">
+   <properties>
+    <property name="description" value="The spot where [[Clover]] enters the Underground. In ''[[ut:Undertale|Undertale]]'', this is also the location where [[ut:Frisk|Frisk]] first falls and where [[ut:Chara|Chara]] is implied to be buried."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Tampered switch" x="1092.33" y="53.6667">
+   <properties>
+    <property name="description" value="This switch is meant to be the wrong switch for the puzzle. [[Clover]] pulls it after the puzzle fails to complete, sending them into the Dark Ruins."/>
+    <property name="page" value="Dark Ruins"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Meeting Toriel" x="614.5" y="1180">
+   <properties>
+    <property name="description" value="Toriel interrupts the battle between [[Clover]] and the [[Froggit]]. She guides them through the the [[Ruins]] up until they fall into the [[Dark Ruins]]."/>
+    <property name="page" value="Toriel"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="puzzles">
+  <object id="8" name="Middle road puzzle" x="666.5" y="288.5">
+   <properties>
+    <property name="description" value="This puzzle is solved by pressing the four switches on the darker section of the floor. [[Toriel]] solves this for [[Clover]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Switch puzzle" x="846.5" y="151">
+   <properties>
+    <property name="description" value="This puzzle is meant to be solved by pressing the levers on the path to lower the spikes. [[Toriel]] made it easier by adding arrows pointing to the correct switches. She encourages [[Clover]] to solve it themself but attempts to help them when the path does not open after the puzzle is completed."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="signs">
+  <object id="3" name="Puzzle" x="545" y="282.333">
+   <properties>
+    <property name="description">&quot;Only the fearless may proceed.
+Brave ones, foolish ones.
+Both walk not the middle road.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Sign" x="596.5" y="119.75">
+   <properties>
+    <property name="description" value="Tells Clover to press the confirm key to read signs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Sign" x="566" y="39.25">
+   <properties>
+    <property name="description" value="&quot;Stay on the road.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Instructions" x="821.455" y="59.4545">
+   <properties>
+    <property name="description" value="&quot;Press this switch, please! -Toriel&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Instructions" x="1021.63" y="59.75">
+   <properties>
+    <property name="description" value="&quot;Also press this switch, please! -Toriel&quot;"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="encounters">
+  <object id="2" name="Froggit" x="614.5" y="1223.5">
+   <properties>
+    <property name="description" value="Scripted encounter with Froggit."/>
+    <property name="page" value="Froggit"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

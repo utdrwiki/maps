@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="15" nextobjectid="182">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1397" height="260" tilewidth="20" tileheight="20" infinite="0" nextlayerid="15" nextobjectid="187">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -164,9 +164,7 @@ This is skipped in the [[Genocide Route]].</property>
   </object>
   <object id="174" name="Entrance from Dunes" x="27225.2" y="5178.26">
    <properties>
-    <property name="description">[[Clover]], together with [[Ceroba]] on a [[Pacifist Route]], enters the [[Steamworks]] through this entrance from the Dunes. The entrance remains closed until encountering [[Axis]].
-
-If the [[Dunes]] kill count has been exhausted on a [[Genocide Route]], this entrance never re-opens.</property>
+    <property name="description" value="[[Clover]] enters the [[Steamworks]] through this entrance from the Dunes. The entrance remains closed until the battle against [[Axis]] on the [[Pacifist]] and [[Neutral Route]]s. If the Dunes kill count was exhausted on a [[Genocide Route]], this entrance never re-opens."/>
     <property name="page" value="Dunes"/>
    </properties>
    <point/>
@@ -177,12 +175,26 @@ If the [[Dunes]] kill count has been exhausted on a [[Genocide Route]], this ent
    </properties>
    <point/>
   </object>
-  <object id="180" name="Laundry chute shortcut" x="26014.3" y="2955.03">
+  <object id="184" name="Greenhouse" x="10754.7" y="3909.33">
    <properties>
-    <property name="color" type="color" value="#ff00ff00"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="The Greenhouse is where energy plants were grown. At the time [[Clover]] enters, with nobody to take care of it, the Greenhouse has been completely overrun by the plants. [[Guardener]], the Steamworks miniboss, is fought here on the [[Neutral]] and [[Pacifist Route]]s."/>
+    <property name="page" value="Greenhouse"/>
    </properties>
-   <polyline points="0,0 -2210.8,0 -2213.47,1843.64 -25080.7,1845.2 -25080.7,-2206.07"/>
+   <point/>
+  </object>
+  <object id="185" name="Factory" x="6250" y="3555.33">
+   <properties>
+    <property name="description" value="[[Clover]] and [[Ceroba]] enter the Factory on the [[Pacifist Route]]. This is where G, robot, and other kinds of manufacturing used to take place. [[Chujin]] also used to work here."/>
+    <property name="page" value="Factory"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="186" name="Chemistry Lab" x="8127" y="1798.33">
+   <properties>
+    <property name="description" value="[[Clover]] enters the Chemistry Lab on the [[Neutral]] and [[Genocide Route]]s. When the Steamworks were operational, this was where chemistry experiments and energy research took place."/>
+    <property name="page" value="Chemistry Lab"/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
  <objectgroup id="4" name="npcs">
@@ -341,7 +353,7 @@ A button at the end of this puzzle must be pressed to open the gates in the lake
   </object>
   <object id="88" name="Hydrochloric Acid puzzle" x="6571.5" y="482">
    <properties>
-    <property name="description" value="[[Clover]] has to break through the lock on the door. Various items are in this room that Clover can balance on their head and toss into the machine. They must toss in both hydrogen and chlorine, then complete a maze minigame to obtain the hydrochloric acid they need."/>
+    <property name="description" value="[[Clover]] has to break through the lock on the door. Various items that Clover can balance on their head and toss into the Compound Computer are in this room. They must toss in both hydrogen and chlorine, then complete a maze minigame to obtain the Hydrochloric Acid they need."/>
     <property name="page" value="Hydrochloric Acid"/>
    </properties>
    <point/>
@@ -374,6 +386,20 @@ A button at the end of this puzzle must be pressed to open the gates in the lake
    <properties>
     <property name="description" value="The room where Macro Froggit is found. This room is opened after pressing the switch in Grandfather Clock's room. Upon placing the three golden items found throughout the Underground on the pedestals, Macro Froggit's gate opens."/>
     <property name="page" value="Macro Froggit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="182" name="Hydrogen" x="6499" y="613.583">
+   <properties>
+    <property name="description" value="The hydrogen to be used to make the acid is on this counter."/>
+    <property name="page" value="Hydrochloric Acid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="183" name="Chlorine" x="6769" y="626.25">
+   <properties>
+    <property name="description" value="The chlorine to be used to make the acid is in this cabinet."/>
+    <property name="page" value="Hydrochloric Acid"/>
    </properties>
    <point/>
   </object>
@@ -1047,6 +1073,13 @@ The secret boss, Macro Froggit, is fought here. On a [[Genocide Route]], this en
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 7.82881,660.23 1323.07,668.058 1328.29,1889.35 1197.81,1889.35"/>
+  </object>
+  <object id="180" name="Laundry chute shortcut" x="26014.3" y="2955.03">
+   <properties>
+    <property name="color" type="color" value="#ff34c217"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -2210.8,0 -2213.47,1843.64 -25080.7,1845.2 -25080.7,-2206.07"/>
   </object>
  </objectgroup>
 </map>

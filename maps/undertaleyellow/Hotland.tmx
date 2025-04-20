@@ -1,17 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="138" height="83" tilewidth="20" tileheight="20" infinite="0" nextlayerid="11" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="138" height="83" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="45">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Hotland map">
   <image source="images/Hotland.png" width="2746" height="1641"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="5" name="ugps"/>
- <objectgroup id="6" name="signs"/>
- <objectgroup id="7" name="saves"/>
- <objectgroup id="8" name="items"/>
- <objectgroup id="9" name="encounters"/>
- <objectgroup id="10" name="annotations"/>
+ <objectgroup id="3" name="plot">
+  <object id="36" name="Elevator from Steamworks" x="2582.91" y="1258.55">
+   <properties>
+    <property name="description" value="[[Clover]] enters [[Hotland]] from the Steamworks through this elevator."/>
+    <property name="page" value="Steamworks"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Elevator to New Home" x="1360" y="328.5">
+   <properties>
+    <property name="description" value="This elevator, leading to New Home, is usually in use. It only opens after joining up with [[Martlet]] in the [[Pacifist Route]] or killing her in the [[Genocide Route]]."/>
+    <property name="page" value="New Home"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Trumpeting plant" x="51.25" y="399.75">
+   <properties>
+    <property name="description" value="A trumpeting plant, one of the ones from the [[Chemistry Lab]], appears here."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Martlet's judgement" x="2271" y="304.667">
+   <properties>
+    <property name="description">[[Clover]] meets with Martlet on the rooftop on all three routes.
+* On the [[Neutral Route]], she convinces Clover to live in [[Snowdin]] with her. Unsatisfied with this ending, [[Flowey]] instead kills her and absorbs Clover's SOUL.
+* On the [[Pacifist Route]], she tells Clover how much she cares about them and her plan for getting them to the Surface. She follows them to [[New Home]] to confront [[Ceroba]].
+* On the [[Genocide Route]], she injects herself with [[determination]] to stop them. After she is defeated, the rooftop is in ruins.</property>
+    <property name="page" value="Martlet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="UG Apartments" x="1180" y="580">
+   <properties>
+    <property name="description" value="UG Apartments is an apartment complex. While [[Clover]] cannot rent a room, they can [[SAVE]], purchase items, and talk to [[UG Apartments/NPCs|NPCs]] before heading off to the final boss."/>
+    <property name="page" value="UG Apartments"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="13" name="Janitor" x="1933.09" y="423.818">
+   <properties>
+    <property name="description" value="The slime janitor from ''[[ut:Undertale|Undertale]]'' admires their hard work here."/>
+    <property name="page" value="Janitor"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Lobby Lad" x="1286" y="403.273">
+   <properties>
+    <property name="description" value="This monster chats about the future of the Underground."/>
+    <property name="page" value="Lobby Lad"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Mr. Cursor" x="1402.73" y="378.727">
+   <properties>
+    <property name="description" value="This monster expresses frustration about their name being misunderstood and the elevator being occupied."/>
+    <property name="page" value="Mr. Cursor"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Handlord" x="1098.75" y="306">
+   <properties>
+    <property name="description" value="The handlord from ''[[ut:Undertale|Undertale]]'' talks about the apartment complex or the [[ut:CORE|CORE]] being under maintenance, depending on what [[Clover]] asks. After they walk away, the Handlord calls after them to tell them [[Martlet]] wanted to meet them on the rooftop."/>
+    <property name="page" value="Handlord"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Receptionist" x="806" y="397.333">
+   <properties>
+    <property name="description" value="The fish receptionist from ''[[ut:Undertale|Undertale]]'' cannot offer [[Clover]] a reservation, as the dining room is full of ghosts."/>
+    <property name="page" value="Receptionist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Rodney's Band" x="602" y="336.667">
+   <properties>
+    <property name="description" value="Rodney's band only plays one song this time, ''[[UG Apartments]]''. Rodney wishes [[Clover]] luck on the end of their journey."/>
+    <property name="page" value="Rodney's Band"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Cold Man" x="485.25" y="496">
+   <properties>
+    <property name="description" value="This monster is extremely early to a date."/>
+    <property name="page" value="Cold Man"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Food Enjoyer" x="230.568" y="492.966">
+   <properties>
+    <property name="description" value="This tiny monster talks about how much they love [[UG Apartments]]."/>
+    <property name="page" value="Food Enjoyer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Spider Girl" x="176.625" y="397.188">
+   <properties>
+    <property name="description" value="This spider monster talks about a story their grandmother told them about rain. They also talk about [[Waterfall]] being hard to get to from [[Hotland]] at the moment, hinting at &quot;the path.&quot;"/>
+    <property name="page" value="Spider Girl"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Producer" x="1677.27" y="1202.73">
+   <properties>
+    <property name="description" value="The washed-up monster from the [[Wild East]] saloon just bought an apartment! They plan to use it to produce music."/>
+    <property name="page" value="Producer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Fan Fan" x="2106.25" y="1478.5">
+   <properties>
+    <property name="description" value="The monster from the [[Dunes]] sandstorm now waits in line here impatiently."/>
+    <property name="page" value="Fan Fan"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Diamond Boy" x="2074.25" y="1484.75">
+   <properties>
+    <property name="description" value="The diamond monster from ''[[ut:Undertale|Undertale]]'' waits in line, wishing someone would bring them easy entertainment."/>
+    <property name="page" value="Diamond Boy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Heats Flamesman" x="2047.25" y="1495.75">
+   <properties>
+    <property name="description" value="Heats Flamesman from ''[[ut:Undertale|Undertale]]'' insists his name must be on the guest list."/>
+    <property name="page" value="Heats Flamesman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Bouncer" x="2019.25" y="1468.25">
+   <properties>
+    <property name="description" value="This monster is Club Danza's bouncer. They are surprised to find [[Clover]] on the VIP guest list if [[El Bailador]] was spared and tells them the club is closed if he was killed."/>
+    <property name="page" value="Bouncer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="El Bailador" x="1681.45" y="1458.18">
+   <properties>
+    <property name="description" value="El Bailador returns! Having been the one to add [[Clover]] to the guest list, he invites them to dance. He also shares his backstory with [[Decibat]]."/>
+    <property name="page" value="El Bailador"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Frostermits" x="1412.67" y="1503.33">
+   <properties>
+    <property name="description" value="Four Frostermits are found here, in four different appearances. One is a [[Snowdin]] Frostermit, one is [[Dunes]], one is [[Steamworks]], and one is [[Hotland]]."/>
+    <property name="page" value="Frostermit"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Spider Workers" x="1400" y="1260">
+   <properties>
+    <property name="description" value="These spiders are in the midst of construction and do not let [[Clover]] pass. They are working on [[ut:Muffet|Muffet]]'s boss room from ''[[Undertale]]''."/>
+    <property name="page" value="Spider Workers"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="ugps">
+  <object id="12" name="Hotland - Crossroads" x="2072.33" y="1230.33">
+   <properties>
+    <property name="description">The UGPS station in [[Hotland]]. The letters obtainable here are:
+* [[Mail#MAIL???|Axis's letter]] if he was spared, not including on a [[Genocide Route]] aborted in the [[Steamworks]],
+* [[Mail#Ceroba (Important)|Ceroba's letter]], only on a [[Neutral Route]] where [[Starlo]] was spared,
+* [[Mail#Slurpy Letter 2|Slurpy's second letter]] if their sidequest was completed,
+* Of couse, any letters from past signs not picked up, including [[Mail#Starlo (Urgent)|Starlo's urgent letter]] on a [[Pacifist Route]].</property>
+    <property name="page" value="Underground Postal Service"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="5" name="Garbage notice" x="2487.75" y="593.5">
+   <properties>
+    <property name="description">&quot;Garbage day: Monday
+If you can't reach the Dump, throw all trash bags off the cliff south of here.
+The lava below should do the job.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Note" x="2526.67" y="588.333">
+   <properties>
+    <property name="description">&quot;(There's a note on the door.)
+Stranger, please stop eating the cat food I leave out.
+It's for a stray who's stuck in here with us, not for monsters.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Inscription" x="1180" y="494.545">
+   <properties>
+    <property name="description">&quot;(There's an inscription on the fountain.)
+Hopes and Dreams
+Built 201X
+(You hear a faint melody coming from the statue.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="ut:Memory"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Board" x="477.25" y="369.5">
+   <properties>
+    <property name="description">&quot;(You notice a ranking sheet on the board.)
+Winners of the &quot;Actually Magma Smoothie Challenge&quot;:
+- Pyrope (Fastest time.)
+- Grillby (Calm and collected.)
+- Cinderhead (Struggled but finished strong.)
+- Heats... something (We forgot who this was.)
+- Starlo (Was only trying to impress someone.)
+- Fuku Fire (Most enthusiasm)
+- Know Cone (Transported to a hospital. We might be in legal trouble.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Board" x="254.364" y="367.636">
+   <properties>
+    <property name="description">&quot;(You notice a schedule of upcoming acts on the board.)
+(The name &quot;Mettaton&quot; appears many, many times.)&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Wet Floor signs" x="1852.25" y="469.5">
+   <properties>
+    <property name="description">&quot;Caution: Slippery when wet!
+Caution: Slippery when dry!
+This section of tiling lacks friction and we do not know how to fix it!&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Roadblock" x="1180" y="332.727">
+   <properties>
+    <property name="description">&quot;CORE currently under maintenance.
+Please do not climb over the velvet rope.&quot;</property>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="saves">
+  <object id="11" name="Apt. Complex" x="1180" y="522.545">
+   <properties>
+    <property name="description" value="SAVE point &quot;Apt. Complex&quot;."/>
+    <property name="page" value="SAVE"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="vendors">
+  <object id="42" name="Bits &amp; Bites" x="1260" y="320">
+   <properties>
+    <property name="description">This shop is run by two monsters, Bits and Buttons. They sell:
+* [[Monster Candy+]] (26G)
+* [[C-B Strudel]] (24G)
+* [[Floral Cupcake]] (50G)
+* [[Delta Rune Patch]] (100G)
+On the [[Genocide Route]], the shop background is dark, presumably since its lights are off.</property>
+    <property name="page" value="Bits &amp; Bites"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="3" name="Hot Dog" x="2426.97" y="736.909">
+   <properties>
+    <property name="description" value="[[Clover]] can take a Hot Dog from this trash can."/>
+    <property name="page" value="Hot Dog"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Monster Candy" x="2555.5" y="626">
+   <properties>
+    <property name="description" value="[[Clover]] can take a butterscotch flavored Monster Candy from this trash can."/>
+    <property name="page" value="Monster Candy"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="encounters">
+  <object id="2" name="Neutral and Genocide final bosses" x="2270.5" y="378">
+   <properties>
+    <property name="description" value="On the [[Neutral Route]], [[Clover]] battles [[Flowey]] here until he resets. On the [[Genocide Route]], Clover battles [[Zenith Martlet]] here, then moves on to [[New Home]] when she is defeated."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="warnings">
+  <object id="43" name="Point of no return" x="2618.67" y="498.667">
+   <properties>
+    <property name="description" value="The final point of no return on all three routes. On the [[Genocide Route]], [[Clover]] can still reload back before this point if they die here. On the [[Neutral Route]], make sure you have seen everything you wanted to before continuing. On the [[Pacifist Route]], see everything you wanted to, '''stock up on healing items''', and '''get better armor''' before continuing."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="annotations">
+  <object id="1" name="Entrance to UG Apartments" x="2152.61" y="960">
+   <properties>
+    <property name="color" type="color" value="#fffbff29"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -972.609,0 -972.609,-300"/>
+  </object>
+  <object id="35" name="Club Danza to Producer's house" x="1680" y="1360">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -680,0 -680,60"/>
+  </object>
+ </objectgroup>
 </map>

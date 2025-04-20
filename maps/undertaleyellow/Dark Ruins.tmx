@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="287" height="287" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="74">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="287" height="287" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="74">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -9,7 +9,7 @@
  <objectgroup id="9" name="plot">
   <object id="1" name="Starting Point" x="520.53" y="5539.25">
    <properties>
-    <property name="description" value="This point marks the start of [[Dark Ruins]], where [[Clover]] falls down from the [[Ruins]]. If Clover waits here long enough, [[Toriel]] throws down a rope."/>
+    <property name="description" value="This point marks the start of [[Dark Ruins]], where [[Clover]] falls down from the [[Ruins]]. If Clover waits here long enough without changing rooms, [[Toriel]] throws down a rope."/>
    </properties>
    <point/>
   </object>
@@ -274,7 +274,10 @@
   </object>
   <object id="12" name="Sign" x="2809.1" y="2488.59">
    <properties>
-    <property name="description" value="Friend: I planted these for you. It isn't much but I hope it brightens your day. It always brightened mine."/>
+    <property name="description">Friend: I planted these for you.
+It isn't much but I hope it brightens your day.
+It always brightened mine.</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -286,7 +289,7 @@
   </object>
   <object id="14" name="Sign" x="4630.95" y="4286.47">
    <properties>
-    <property name="description" value="I seem to recall what I once saw so often..."/>
+    <property name="description" value="&quot;I seem to recall what I once saw so often...&quot;"/>
    </properties>
    <point/>
   </object>
@@ -310,7 +313,10 @@
   </object>
   <object id="18" name="Sign" x="4289.98" y="2216.64">
    <properties>
-    <property name="description" value="&quot;Property of Dalv (That monster in the cloak.) NO TRESPASSING!&quot;"/>
+    <property name="description">Property of Dalv
+(That monster in the cloak.)
+NO TRESPASSING!</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -383,7 +389,7 @@
   </object>
   <object id="41" name="Stray Feather" x="4667.35" y="3996.32">
    <properties>
-    <property name="description" value="A Stray Feather can be found here."/>
+    <property name="description" value="Stray Feather can be found here."/>
     <property name="page" value="Feather"/>
    </properties>
    <point/>

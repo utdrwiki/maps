@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="916" height="261" tilewidth="20" tileheight="20" infinite="0" nextlayerid="16" nextobjectid="81">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="916" height="261" tilewidth="20" tileheight="20" infinite="0" nextlayerid="16" nextobjectid="81">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -15,10 +15,64 @@
    <point/>
   </object>
  </objectgroup>
+ <objectgroup id="10" name="plot">
+  <object id="69" name="Gerson Door" x="786.577" y="4747.17">
+   <properties>
+    <property name="description" value="When the Fun Value is between 51 and 55, this door opens to the north, letting [[Clover]] enter the cavern with [[Gerson]]. However, if on a [[Genocide Route]], Gerson is not inside."/>
+    <property name="page" value="Fun Value#Gerson"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="East Mines Entrance" x="9900.3" y="4343.23">
+   <properties>
+    <property name="description" value="Through this door, [[Clover]] has to enter the East Mines on their first visit to the [[Dunes]]."/>
+    <property name="page" value="East Mines"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="East Mines Elevator" x="10417" y="4372.15">
+   <properties>
+    <property name="description" value="After the battle with [[El Bailador]], [[Clover]] uses this elevator to get down from the mountaintop."/>
+    <property name="page" value="East Mines"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Martlet" x="12149.2" y="4450.33">
+   <properties>
+    <property name="description" value="[[Clover]] meets up with [[Martlet]] at this point. Their conversation goes differently depending on what route they took and how they battled her back in [[Snowdin]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Steamworks Entrance" x="18086.2" y="89.4539">
+   <properties>
+    <property name="description" value="[[Clover]] enters the Steamworks through this door. If on the [[Pacifist Route]], a cutscene with [[Starlo]] and [[Ceroba]] plays here, and Ceroba follows Clover into the Steamworks. Otherwise, they enter alone, with [[Flowey]]'s help."/>
+    <property name="page" value="Steamworks"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Flowey" x="531.098" y="4807.21">
+   <properties>
+    <property name="description" value="[[Flowey]] welcomes [[Clover]] to the [[Dunes]], and laments the fact that they now have a take a detour to [[Hotland]]. If Clover hasn't [[save]]d before, and refuses Flowey's offer to save here, he becomes angry at Clover for not taking up his offers to save."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Container" x="149.049" y="4831.84">
+   <properties>
+    <property name="description" value="The first instance of the heart container in the game."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Cellar" x="17714.2" y="955.744">
+   <properties>
+    <property name="description" value="The cellar where harvest is stored. On a [[Genocide Route]], [[Clover]] can hear whispering from inside. It is always locked. There is an unused sprite of the cellar door opened."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="9" name="npcs">
   <object id="28" name="Gerson" x="777.727" y="4567.67">
    <properties>
-    <property name="description" value="This turtle, returning from ''[[ut:Undertale|Undertale]]'', can be encountered when the [[Fun Value]] is between 51 and 55! Unfortunately, he forgot all of his famous stories."/>
+    <property name="description" value="Gerson, returning from ''[[ut:Undertale|Undertale]]'', can be encountered when the [[Fun Value]] is between 51 and 55! Unfortunately, he forgot all of his famous stories."/>
     <property name="page" value="Gerson"/>
    </properties>
    <point/>
@@ -67,7 +121,7 @@
   </object>
   <object id="40" name="Kanako's Friend" x="10535.9" y="4571.72">
    <properties>
-    <property name="description" value="Also known as Sadie, this NPC has been bored on the playground ever since their friend, [[Kanako Ketsukane]], stopped showing up. However, [[Clover]] can sit on the other swing to make them company!"/>
+    <property name="description" value="Also known as Sadie, this NPC has been bored on the playground ever since their friend, [[Kanako Ketsukane]], stopped showing up. However, [[Clover]] can sit on the other swing to keep them company!"/>
     <property name="page" value="Kanako's Friend"/>
    </properties>
    <point/>
@@ -95,70 +149,29 @@
   </object>
   <object id="44" name="Big Cactus" x="15022.5" y="4829.86">
    <properties>
-    <property name="description" value="This girlboss cactus is stonebathing and blocking a path from [[Clover]], and does not move away at any point in the game."/>
+    <property name="description" value="This girlboss cactus is stonebathing and blocking a path from [[Clover]]. They do not move away at any point in the game."/>
     <property name="page" value="Big Cactus"/>
    </properties>
    <point/>
   </object>
   <object id="45" name="Solomon" x="17961.3" y="1167.78">
    <properties>
-    <property name="description" value="Starlo's father, Solomon, welcomes [[Clover]] to the [[Sunnyside Farm]]. He expresses acceptance of his son's [[Wild East]] activities, as they have also brought profits to their family farm."/>
+    <property name="description" value="Starlo's father, Solomon, welcomes [[Clover]] to the [[Sunnyside Farm]]. He expresses acceptance of his son's [[Wild East]] activities, as they have also brought profits to their family farm. On a [[Neutral Route]] where Starlo was killed, he is inside the farm house and is too distracted to talk to Clover."/>
     <property name="page" value="Solomon"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Orion" x="17656" y="1116.03">
    <properties>
-    <property name="description" value="In contrast to [[Solomon]], [[Starlo]]'s brother Orion is annoyed at [[Starlo]] having fun in the [[Wild East]] while he has to work on the crops."/>
+    <property name="description" value="In contrast to [[Solomon]], [[Starlo]]'s brother Orion is annoyed at [[Starlo]] having fun in the [[Wild East]] while he has to work on the crops. On a [[Neutral Route]] where Starlo was killed, he is inside the farm house and dismisses [[Clover]]."/>
     <property name="page" value="Orion"/>
    </properties>
    <point/>
   </object>
   <object id="47" name="Crestina" x="17659.7" y="553.977">
    <properties>
-    <property name="description" value="[[Starlo]]'s mother, Crestina, talks about the heartbreak Starlo experienced when [[Ceroba]] got engaged to [[Chujin Ketsukane]], and considers inviting [[Gilbert]] and [[Angie]] for a barbecue."/>
+    <property name="description" value="[[Starlo]]'s mother, Crestina, talks about the heartbreak Starlo experienced when [[Ceroba]] got engaged to [[Chujin Ketsukane]], and considers inviting [[Gilbert]] and [[Angie]] for a barbecue. On a [[Neutral Route]] where Starlo was killed, she worries about where he went."/>
     <property name="page" value="Crestina"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="10" name="plot">
-  <object id="69" name="Gerson Door" x="786.577" y="4747.17">
-   <properties>
-    <property name="description" value="When the Fun Value is between 51 and 55, this door opens to the north, letting [[Clover]] enter the cavern with [[Gerson]]. However, if on a [[Genocide Route]], Gerson does not appear."/>
-    <property name="page" value="Fun Value#Gerson"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="70" name="East Mines Entrance" x="9900.3" y="4343.23">
-   <properties>
-    <property name="description" value="Through this door, [[Clover]] has to enter the East Mines on their first visit to the [[Dunes]]."/>
-    <property name="page" value="East Mines"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="71" name="East Mines Elevator" x="10417" y="4372.15">
-   <properties>
-    <property name="description" value="After the battle with [[El Bailador]], [[Clover]] uses this elevator to get down from the mountaintop."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="72" name="Martlet" x="12149.2" y="4450.33">
-   <properties>
-    <property name="description" value="[[Clover]] meets up with [[Martlet]] at this point, and their conversation goes differently depending on what route they took and how they battled her back in [[Snowdin]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="76" name="Steamworks Entrance" x="18086.2" y="89.4539">
-   <properties>
-    <property name="description" value="[[Clover]] enters the [[Steamworks]] through this door. If on the [[Pacifist Route]], a cutscene with [[Starlo]] and [[Ceroba]] plays here, and Ceroba follows Clover into the Steamworks. Otherwise, they enter alone, with [[Flowey]]'s help."/>
-    <property name="page" value="Steamworks"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="80" name="Flowey" x="531.098" y="4807.21">
-   <properties>
-    <property name="description" value="[[Flowey]] welcomes [[Clover]] to the [[Dunes]], and laments the fact that they now have a take a detour to [[Hotland]]. If Clover hasn't [[save]]d before, and refuses Flowey's offer to save here, he becomes angry at Clover for not taking up his offers to save."/>
    </properties>
    <point/>
   </object>
@@ -182,19 +195,19 @@
  <objectgroup id="7" name="puzzles">
   <object id="48" name="Sandstorm" x="4152.2" y="4869.16">
    <properties>
-    <property name="description" value="[[Clover]] encounters a big sandstorm here, and to pass through they must move while the sand isn't blowing and hide behind shelters when it is."/>
+    <property name="description" value="[[Clover]] encounters a big sandstorm here. To pass through, they must move while the sand isn't blowing and hide behind shelters when it is."/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Fan" x="7325.77" y="4815.75">
    <properties>
-    <property name="description" value="To end the sandstorm, [[Clover]] has to turn off this fan using a switch at its southern part."/>
+    <property name="description" value="[[Clover]] can end the sandstorm by interacting with either side of this fan."/>
    </properties>
    <point/>
   </object>
   <object id="50" name="Falling Tumbleweeds" x="7978.64" y="4210.95">
    <properties>
-    <property name="description" value="Here, [[Clover]] encounters a tumbleweed that appears out of the hole above and slowly falls down. Further on, there is a set of four holes, each with tumbleweeds falling at various speeds, which Clover has to avoid as they otherwise push them down to the bridge below."/>
+    <property name="description" value="Here, [[Clover]] encounters a tumbleweed that appears out of the hole above and slowly falls down. Further on, there is a set of four holes, each with tumbleweeds falling at various speeds. Clover has to avoid them, as they fall to the bridge below if they make impact."/>
    </properties>
    <point/>
   </object>
@@ -206,14 +219,6 @@
   </object>
  </objectgroup>
  <objectgroup id="6" name="signs">
-  <object id="52" name="Container" x="149.049" y="4831.84">
-   <properties>
-    <property name="description">(A container bearing a strange symbol.)
-(The lid is bolted shut. It's impossible to open.)</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
   <object id="53" name="Sign" x="748.707" y="4751.45">
    <properties>
     <property name="description" value="&quot;Northern Caverns up ahead.&quot;"/>
@@ -266,7 +271,8 @@ Property of Mining Co.</property>
   </object>
   <object id="62" name="Note" x="10942.9" y="4366.71">
    <properties>
-    <property name="description">; OPENING HOURS
+    <property name="description">
+; OPENING HOURS
 : MO-FRI: 8AM - 4PM
 : SAT-SUN: 8AM - 2PM
 ; LUNCH BREAK
@@ -290,14 +296,6 @@ Property of Mining Co.</property>
    </properties>
    <point/>
   </object>
-  <object id="75" name="Cellar" x="17714.2" y="955.744">
-   <properties>
-    <property name="description">&quot;(The cellar is locked. Must be where the harvest is stored.)&quot;
-
-On a [[Genocide Route]]: &quot;(You hear whispering coming from the cellar.)&quot;</property>
-   </properties>
-   <point/>
-  </object>
   <object id="77" name="Bed" x="17468.2" y="183.616">
    <properties>
     <property name="description">(A doubledecker rocketship, ready to blast off into pleasant dreams.)
@@ -308,8 +306,10 @@ On a [[Genocide Route]]: &quot;(You hear whispering coming from the cellar.)&quo
   </object>
   <object id="78" name="Desk" x="17614.2" y="201.271">
    <properties>
-    <property name="description">(A desk displaying western memorabilia and a sewing machine.)
-(The piece of fabric under the machine has been left unfinished.)</property>
+    <property name="description">&quot;(A desk displaying western memorabilia and a sewing machine.)
+(The piece of fabric under the machine has been left unfinished.)&quot;
+
+On a [[Genocide Route]]: &quot;(Unfinished business.)&quot;</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -362,7 +362,7 @@ On a [[Genocide Route]]: &quot;(You hear whispering coming from the cellar.)&quo
  <objectgroup id="12" name="vendors">
   <object id="9" name="Mo" x="7223.26" y="3561.72">
    <properties>
-    <property name="description">Mo's Dunes stand, where he sells ice tea (but the ice he used had already melted):
+    <property name="description">Mo's Dunes stand. After failing to sell [[Clover]] ice, he pulls out a gaudier stand and sells them:
 * [[Ice Tea]]
 * [[Green Tea]]
 * [[Sea Tea]]
@@ -389,7 +389,7 @@ Each item costs 20G.</property>
   </object>
   <object id="8" name="Golden Cactus" x="4701.53" y="4043.4">
    <properties>
-    <property name="description" value="Third golden item, the Golden Cactus, is found in the depth of this cave."/>
+    <property name="description" value="The third golden item, the Golden Cactus, is found in the depth of this cave."/>
     <property name="page" value="Golden Cactus"/>
    </properties>
    <point/>
@@ -403,7 +403,7 @@ Each item costs 20G.</property>
   </object>
   <object id="11" name="Glass Ammo" x="10973.8" y="4008.44">
    <properties>
-    <property name="description" value="After the [[Giftshopper]] tries to sell this mug to [[Clover]] for 40G, Clover tries to retrieve the mug from the shelf and fails, with the mug falling to the floor and breaking. Giftshopper then gives Clover the leftover shards for free, which turn out to be Glass Ammo."/>
+    <property name="description" value="After the [[Giftshopper]] tries to sell this mug to [[Clover]] for 40G, Clover tries to retrieve the mug from the shelf. They fail, dropping the mug and breaking it. Giftshopper then gives Clover the leftover shards for free, which turn out to be Glass Ammo."/>
     <property name="page" value="Glass Ammo"/>
    </properties>
    <point/>
@@ -412,13 +412,13 @@ Each item costs 20G.</property>
    <properties>
     <property name="description">Here, [[Martlet]] asks [[Clover]] for G to throw into the well (but Clover's G isn't reduced after this interaction). Martlet wishes that Clover makes it to the surface safely.
 
-If Clover does interact with the well, or does not let Martlet throw G into the well, they can come back to the well later and steal 50G from it (even though the game says they only stole 5G).</property>
+If Clover does not interact with the well, or does not let Martlet throw G into the well, they can come back to the well later and steal 50G from it (even though the game says they only stole 5G).</property>
    </properties>
    <point/>
   </object>
   <object id="79" name="Wild Revolver" x="16399.9" y="4675.96">
    <properties>
-    <property name="description" value="On a [[Genocide Route]], [[Clover]] finds the Wild Revolver here, right before the battles against [[Starlo]] and [[Ceroba]] in the [[Wild East]]."/>
+    <property name="description" value="On a [[Genocide Route]], [[Clover]] finds the Wild Revolver here, right before the encounter with [[Starlo]] and [[Ceroba]] in the [[Wild East]]."/>
     <property name="page" value="Wild Revolver"/>
    </properties>
    <point/>
@@ -471,14 +471,14 @@ If Clover does interact with the well, or does not let Martlet throw G into the 
   </object>
   <object id="24" name="East Mines" x="10208.9" y="4001.74">
    <properties>
-    <property name="description" value="[[Clover]] has to travel through the mines and over the mountaintop to avoid the pile of rocks blocking their path. See the detailed map of their journey on East Mines' own article!"/>
+    <property name="description" value="[[Clover]] has to travel through the mines and over the mountaintop to avoid the pile of rocks blocking their path. See the detailed map of their journey on the East Mines article!"/>
     <property name="page" value="East Mines"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Wild East" x="16401.3" y="3507.34">
    <properties>
-    <property name="description" value="After [[Oasis Valley]], [[Clover]]'s journey continues with the Wild East, where they stay for several days. Check out the detailed maps on Wild East's article!"/>
+    <property name="description" value="After [[Oasis Valley]], [[Clover]]'s journey continues with the Wild East, where they stay for some time. Check out the detailed maps on the Wild East's article!"/>
     <property name="page" value="Wild East"/>
    </properties>
    <point/>
@@ -494,7 +494,7 @@ If Clover does interact with the well, or does not let Martlet throw G into the 
  <objectgroup id="15" name="warnings">
   <object id="73" name="Point of No Return" x="11837.3" y="4447.98">
    <properties>
-    <property name="description" value="The game warns the player at this point if, on a [[Genocide Route]], they haven't exhausted the kill count in the [[Dunes]]. If they proceed without exhausting the kill count and interact with [[Martlet]] further ahead, they abort the Genocide Route."/>
+    <property name="description" value="The game warns the player at this point if, on a [[Genocide Route]], they have not exhausted the kill count in the [[Dunes]]. If they proceed without exhausting the kill count and interact with [[Martlet]] further ahead, they abort the Genocide Route."/>
    </properties>
    <point/>
   </object>
@@ -512,7 +512,7 @@ If Clover does interact with the well, or does not let Martlet throw G into the 
     <property name="fill" type="color" value="#ffaa5500"/>
    </properties>
   </object>
-  <object id="26" x="15682" y="3140" width="2180.08" height="1000">
+  <object id="26" name="Wild East" x="15682" y="3140" width="2180.08" height="1000">
    <properties>
     <property name="border" type="color" value="#ffaa5500"/>
     <property name="fill" type="color" value="#ffffaa00"/>
@@ -520,13 +520,13 @@ If Clover does interact with the well, or does not let Martlet throw G into the 
   </object>
   <object id="34" name="Entrance to the secret cave" x="4811.61" y="5028.87">
    <properties>
-    <property name="color" type="color" value="#ffff0000"/>
+    <property name="color" type="color" value="#fff4001c"/>
    </properties>
    <polyline points="0,0 -6.07718,-527.195"/>
   </object>
   <object id="36" name="Entrance to Starlo's family house" x="17928.7" y="1067.13">
    <properties>
-    <property name="color" type="color" value="#ffff0000"/>
+    <property name="color" type="color" value="#fff4001c"/>
    </properties>
    <polyline points="0,0 -286.456,-8.65665 -282.521,-357.283"/>
   </object>
