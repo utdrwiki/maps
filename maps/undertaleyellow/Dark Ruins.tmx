@@ -373,10 +373,10 @@ NO TRESPASSING!</property>
    </properties>
    <point/>
   </object>
-  <object id="39" name="Pebble Ammo" x="2269.8" y="2306.63">
+  <object id="39" name="Pebbles" x="2269.8" y="2306.63">
    <properties>
-    <property name="description" value="Pebble Ammo is found here."/>
-    <property name="page" value="Pebble Ammo"/>
+    <property name="description" value="Pebbles are found here."/>
+    <property name="page" value="Pebbles"/>
    </properties>
    <point/>
   </object>
