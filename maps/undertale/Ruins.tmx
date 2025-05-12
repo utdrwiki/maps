@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="322" height="192" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="2">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Ruins map">
+  <image source="images/Ruins.png" width="10278" height="6142"/>
+ </imagelayer>
+ <objectgroup id="7" name="saves"/>
+ <objectgroup id="8" name="signs"/>
+ <objectgroup id="9" name="items"/>
+ <objectgroup id="10" name="enemies"/>
+ <objectgroup id="3" name="plot">
+  <object id="1" name="Golden flowers" x="150.788" y="6013.97">
+   <properties>
+    <property name="description" value="The spot where [[Frisk|the protagonist]] enters the [[Underground]]. It is implied that the [[Chara|first human]] is buried here."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors"/>
+ <objectgroup id="5" name="puzzles"/>
+ <objectgroup id="6" name="npcs"/>
+</map>
