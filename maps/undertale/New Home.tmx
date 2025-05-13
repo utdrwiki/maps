@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="New Home map">
+  <image source="images/New Home.png" width="6750" height="4630"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="boxes"/>
+ <objectgroup id="5" name="sublocations"/>
+ <objectgroup id="6" name="saves"/>
+ <objectgroup id="7" name="puzzles"/>
+ <objectgroup id="8" name="signs"/>
+ <objectgroup id="9" name="items"/>
+ <objectgroup id="10" name="enemies"/>
+</map>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="272" height="229" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Hotland map">
+  <image source="images/Hotland.png" width="8690" height="7320"/>
+ </imagelayer>
+ <objectgroup id="14" name="sublocations"/>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="vendors"/>
+ <objectgroup id="5" name="boxes"/>
+ <objectgroup id="6" name="puzzles"/>
+ <objectgroup id="7" name="saves"/>
+ <objectgroup id="8" name="calls"/>
+ <objectgroup id="9" name="npcs"/>
+ <objectgroup id="10" name="signs"/>
+ <objectgroup id="11" name="items"/>
+ <objectgroup id="13" name="enemies"/>
+</map>
