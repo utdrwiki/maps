@@ -10,6 +10,7 @@ from mwcleric import AuthCredentials, WikiClient
 import pytiled_parser as tiled
 import pytiled_parser.tiled_object as objects
 from slugify import slugify
+from PIL import Image
 
 from datamaps import CoordinateSystem, DataMap, ImageBackground, Order, Marker
 from datamaps.background import TiledBackground
@@ -79,6 +80,7 @@ def convert_layer(
     layer: tiled.Layer,
     datamap: DataMap,
     converted_layers: Set[Optional[int]],
+    project_path: Path,
     parent_layers: List[str] = [],
     offset: tiled.OrderedPair = tiled.OrderedPair(0, 0)
 ):
@@ -94,6 +96,12 @@ def convert_layer(
         if datamap.backgrounds[0].name == '<default>':
             bg.overlays = datamap.backgrounds[0].overlays
             datamap.backgrounds[0] = bg
+            # Main background image size is more accurate to use for the map
+            # size than what we set for the Tiled map size, otherwise markers
+            # may be offset.
+            if isinstance(datamap.crs, CoordinateSystem):
+                image_path = project_path / layer.image
+                datamap.crs.bottomRight = Image.open(image_path).size
         else:
             datamap.backgrounds.append(bg)
     elif isinstance(layer, tiled.ObjectLayer):
@@ -138,7 +146,7 @@ def convert_layer(
     elif isinstance(layer, tiled.LayerGroup):
         for child_layer in layer.layers or []:
             convert_layer(child_layer, datamap, converted_layers,
-                parent_layers + [layer.name], offset)
+                project_path, parent_layers + [layer.name], offset)
     elif isinstance(layer, tiled.TileLayer):
         raise ValueError('Tile layers are not yet supported!')
     else:
@@ -147,12 +155,12 @@ def convert_layer(
     converted_layers.add(layer.id)
 
 
-def convert_tiled_to_datamap(map: tiled.TiledMap) -> DataMap:
+def convert_tiled_to_datamap(project_path: Path, map: tiled.TiledMap) -> DataMap:
     datamap = DataMap()
     map_width = map.map_size.width * map.tile_size.width
     map_height = map.map_size.height * map.tile_size.height
     datamap.crs = CoordinateSystem(order=Order.xy, topLeft=[0, 0],
-        bottomRight=[map_width, map_height])
+        bottomRight=(int(map_width), int(map_height)))
     datamap.custom.map_name = map.map_file.name.replace('.tmx', '')
     datamap.disclaimer = get_property(map.properties, 'disclaimer', str)
     datamap.include = get_list_property(map.properties, 'include')
@@ -163,7 +171,7 @@ def convert_tiled_to_datamap(map: tiled.TiledMap) -> DataMap:
 
     converted_layers: Set[Optional[int]] = set()
     for layer in reversed(map.layers):
-        convert_layer(layer, datamap, converted_layers)
+        convert_layer(layer, datamap, converted_layers, project_path)
     return datamap
 
 
@@ -265,6 +273,6 @@ if __name__ == '__main__':
     wiki = log_in_to_wiki(project_name)
     maps = get_maps_to_convert(project_path, args.map, args.mappath)
     for map in maps:
-        datamap = convert_tiled_to_datamap(map)
+        datamap = convert_tiled_to_datamap(project_path, map)
         publish_datamap_to_wiki(datamap, wiki)
     logging.info('All maps converted successfully!')
