@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Snowdin map">
+  <image source="images/Snowdin.png" width="15620" height="2500"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="vendors"/>
+ <objectgroup id="5" name="boxes"/>
+ <objectgroup id="6" name="puzzles"/>
+ <objectgroup id="7" name="saves"/>
+ <objectgroup id="8" name="npcs"/>
+ <objectgroup id="9" name="signs"/>
+ <objectgroup id="10" name="items"/>
+ <objectgroup id="11" name="enemies"/>
+</map>
