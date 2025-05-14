@@ -1,18 +1,1001 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="149">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Snowdin map">
   <image source="images/Snowdin.png" width="15620" height="2500"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="boxes"/>
- <objectgroup id="6" name="puzzles"/>
- <objectgroup id="7" name="saves"/>
- <objectgroup id="8" name="npcs"/>
- <objectgroup id="9" name="signs"/>
- <objectgroup id="10" name="items"/>
- <objectgroup id="11" name="enemies"/>
+ <objectgroup id="12" name="calls">
+  <object id="48" name="Fun Value phone call" x="3919.66" y="488.953">
+   <properties>
+    <property name="description" value="If the [[Fun Value]] is between 40 and 45, [[Sans]] calls the protagonist and asks if their fridge is running. If the value is between 46 and 50, [[Alphys]] calls instead and attempts to order pizza."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="sublocations">
+  <object id="68" name="Mysterious Door" x="9941.26" y="1782.11">
+   <properties>
+    <property name="description" value="A locked door. It only unlocks after [[SAVE#Reset|resetting]] from the end of the [[True Pacifist Route]] if the protagonist had not touched any of the names in the [[True Pacifist Ending Credits]]. [[Glyde]] can be fought in this room."/>
+    <property name="page" value="Mysterious Door"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Snowdin Town" x="13616.5" y="1318.49">
+   <properties>
+    <property name="description" value="Town situated at the end of [[Snowdin Forest]]. On the [[Genocide Route]], the town is abandoned after all of the inhabitants had evacuated."/>
+    <property name="page" value="Snowdin"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Papyrus and Sans's House" x="14274.1" y="856.941">
+   <properties>
+    <property name="description" value="Papyrus and Sans's house, accessible after Papyrus unlocks the front door. The date/hangout with Papyrus occurs here."/>
+    <property name="page" value="Papyrus and Sans's House"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Grillby's" x="13323.3" y="1283.64">
+   <properties>
+    <property name="description" value="A restaurant. A hangout with [[Sans]] occurs here only if [[Papyrus]] was spared on the [[Neutral Route]].."/>
+    <property name="page" value="Grillby's"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Entrance to Snowdin Library" x="13849.7" y="1276.56">
+   <properties>
+    <property name="color" type="color" value="#ffba5327"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0704384,-146.928 114.293,-145.528 113.359,-342.979"/>
+  </object>
+  <object id="134" name="Dog Shrine" x="14453.7" y="378.096">
+   <properties>
+    <property name="description" value="Only available on the console versions of [[Undertale]]. The shrine is accessible by entering through the sink in [[Papyrus]]'s kitchen. Each console version has a different iteration of the Dog Shrine."/>
+    <property name="page" value="Dog Shrine"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" x="12032.1" y="0" width="3062.95" height="1685.68">
+   <properties>
+    <property name="border" type="color" value="#ffa97c29"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="1" name="Ruins door" x="39.3106" y="450.055">
+   <properties>
+    <property name="description" value="The door to the Ruins. It remains locked throughout the game, but it unlocks at the end of the [[True Pacifist Route]]."/>
+    <property name="page" value="Ruins"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Camera" x="90.2127" y="441.488">
+   <properties>
+    <property name="description" value="A camera hidden in the bushes."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Sans's introduction" x="2602.56" y="505.997">
+   <properties>
+    <property name="description" value="[[Sans]] makes his introduction here and guides the protagonist to the conveniently-shaped lamp to hide from his brother [[Papyrus]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Papyrus's Introduction" x="3051.84" y="500.813">
+   <properties>
+    <property name="description" value="[[Papyrus]] makes his first appearance here. He complains that Sans is not doing his job properly, to which Sans responds by making jokes. On the [[Genocide Route]], Papyrus simply asks if Sans has found a human yet and quickly leaves afterwards."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Camera" x="3038.75" y="387.915">
+   <properties>
+    <property name="description" value="A camera hidden behind [[Sans]]'s sentry station."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Sound Test Room" x="3369.31" y="321.08">
+   <properties>
+    <property name="description" value="If the Fun Value is set to 65, there is a 50% chance that the Sound Test room will appear in between these two rooms after defeating [[Papyrus]]. The protagonist must select Gaster's Theme from the list of options in order to leave."/>
+    <property name="page" value="Fun Value#Sound Test Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="First Papyrus encounter" x="3629.43" y="486.362">
+   <properties>
+    <property name="description" value="The protagonist's first meeting with [[Papyrus]]. Papyrus declares his desire to capture the protagonist and retreats to prepare his puzzles."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Camera" x="3980.76" y="371.658">
+   <properties>
+    <property name="description" value="A camera hidden behind [[Papyrus]]'s sentry station."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Second Papyrus encounter" x="5270.5" y="456.105">
+   <properties>
+    <property name="description" value="[[Papyrus]] introduces the protagonist to the Invisible Electricity Maze. He is initially shocked by his own orb, and [[Sans]] reminds him that the human has to hold it in order for the puzzle to work as intended. On the [[Genocide Route]], the protagonist walks through the puzzle, much to Papyrus's confusion and annoyance."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Camera" x="5969.11" y="687.771">
+   <properties>
+    <property name="description" value="A camera hidden in the lump of snow."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Third Papyrus encounter" x="6346.64" y="760.025">
+   <properties>
+    <property name="description" value="[[Papyrus]] introduces a puzzle that [[Sans]] had created. After viewing or skipping the puzzle, Sans mentions that he should have used a crossword instead, to which Papyrus responds by saying that Junior Jumble is harder. Papyrus asks the protagonist whether crosswords or Junior Jumble is harder."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Camera" x="7028.99" y="729.769">
+   <properties>
+    <property name="description" value="A camera hidden inside the tree."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Fourth Papyrus encounter" x="7651.28" y="1329.48">
+   <properties>
+    <property name="description" value="[[Papyrus]] asks the protagonist what they did with the spaghetti in Snowdin's Spaghetti room. The protagonist can respond by saying they either ate it all or left it alone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Fifth Papyrus encounter" x="8616.36" y="1327.98">
+   <properties>
+    <property name="description" value="[[Papyrus]] introduces the [[Multicolor Tile Puzzle]] and explains the functionalities of each tile color. On the [[Genocide Route]] the protagonist cuts off Papyrus's explanation by walking through the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Snowdogs" x="9167.34" y="1352.73">
+   <properties>
+    <property name="description" value="[[Lesser Dog]]'s dog sculptures. How many are present depends on how many times Lesser Dog has been pet during its battle. If Lesser Dog was killed, all that remains is a pile of mushy snow."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Camera" x="11124" y="1323.6">
+   <properties>
+    <property name="description" value="A camera hidden under the bridge."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Camera" x="11777.4" y="1326.44">
+   <properties>
+    <property name="description" value="A camera hidden under the bridge."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Sixth Papyrus encounter" x="11578.1" y="1327.24">
+   <properties>
+    <property name="description" value="[[Papyrus]] introduces the [[Snowdin/Puzzles#The Gauntlet of Deadly Terror|Gauntlet of Deadly Terror]], but he quickly retracts it after realizing that it may be too dangerous for the protagonist or, on the [[Genocide Route]], that they might not enjoy it as much as [[Undyne]] would."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Camera" x="9149.62" y="1226.57">
+   <properties>
+    <property name="description" value="Camera hidden behind [[Lesser Dog]]'s sentry station."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Camera" x="13619.3" y="1388.82">
+   <properties>
+    <property name="description" value="Camera hidden in the trees."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Snowed Inn" x="12647.9" y="1043.67">
+   <properties>
+    <property name="description" value="The protagonist can sleep at the inn and restore their HP beyond their maximum. The money they spend here is immediately refunded."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Undersnow Tunnels" x="12745.4" y="1303.03">
+   <properties>
+    <property name="description" value="An igloo network that warps the protagonist to the other side of town."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Undersnow Tunnels" x="12745.4" y="1304.58">
+   <properties>
+    <property name="color" type="color" value="#ffcfdbff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.16643,157.944 1604.86,157.618 1604.98,10.4797"/>
+  </object>
+  <object id="124" name="Papyrus's Shed" x="14489.5" y="1074.91">
+   <properties>
+    <property name="description" value="The protagonist is taken here if they lose to [[Papyrus]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Befriending Papyrus" x="14132.4" y="590.336">
+   <properties>
+    <property name="description" value="[[Papyrus]] initiates the date/hangout with him in his room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Donation box" x="14132.5" y="318.956">
+   <properties>
+    <property name="description" value="On the PlayStation versions of [[Undertale]], the protagonist can donate to upgrade the [[Dog Shrine]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Locked door" x="14452.8" y="282.663">
+   <properties>
+    <property name="description" value="On the Nintendo Switch version of [[Undertale]], the door at the back of the [[Dog Shrine]] unlocks after defeating [[Mettaton EX]]. It can be opened by tilting both control sticks in opposite directions."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Casino" x="14773.2" y="290.341">
+   <properties>
+    <property name="description" value="On the Xbox versions of [[Undertale]], the protagonist can win specialized currency in the [[Dog Shrine]]'s casino, with which they can use to buy items for the shrine."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Sans's Room" x="14380.8" y="758.751">
+   <properties>
+    <property name="description" value="The protagonist is given a key to [[Sans]]'s room ater repeatedly reloading a [[SAVE]] and going through Sans's judgement in the [[Last Corridor]] if they had gained no [[Stats#EXP|EXP]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Sans's Workshop" x="14181" y="1540.57">
+   <properties>
+    <property name="description" value="Unlocked after using the [[Silver Key]] on the doot in the back of [[Papyrus and Sans's House]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" x="14174.2" y="1287.77">
+   <properties>
+    <property name="color" type="color" value="#ff9f85af"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,252.809"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors">
+  <object id="27" name="Nice Cream Guy" x="5620.94" y="374.368">
+   <properties>
+    <property name="description" value="Sells [[Nice Cream]] for 15G. The Nice Cream Guy does not show up on the [[Genocide Route]] and disappears after exhausting Snowdin's kill counter on the [[Neutral Route]]."/>
+    <property name="page" value="Nice Cream Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Snowdin Shop" x="12458.7" y="1292.47">
+   <properties>
+    <property name="description" value="The protagonist can buy items from the shop."/>
+    <property name="page" value="Snowdin Shopkeeper"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="boxes">
+  <object id="9" name="Dimensional Box" x="3449.24" y="419.527">
+   <properties>
+    <property name="description" value="A Dimensional Box in Sonwdin's Box Road."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Dimensional Box" x="12577.8" y="1334.54">
+   <properties>
+    <property name="description" value="A [[Dimentional Box]] in Snowdin Town."/>
+    <property name="page" value="Dimentional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="24" name="Invisible Electricity Maze" x="5372.11" y="432.623">
+   <properties>
+    <property name="description" value="The protagonist must navigate the maze and avoid touching the invisible walls, upon which they get shocked by the orb they are holding. [[Papyrus]] unknowingly traces the correct path on the ground, which the protagonist can use to walk across."/>
+    <property name="page" value="Snowdin/Puzzles#The Invisible Electricity Maze"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Solution to Invisible Electricity Maze" x="5438.04" y="522.038">
+   <properties>
+    <property name="color" type="color" value="#ff00235f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -32.0629,-0.45159 -31.1597,-100.704 -94.3822,-100.704 -94.3822,-63.2225 -150.831,-62.771"/>
+  </object>
+  <object id="28" name="Ball Game" x="5969.56" y="768.154">
+   <properties>
+    <property name="description" value="The protagonist must guide the snowball at the top of the course to this hole before the snowball disappears. Once the ball makes it into the hole, a flag pops out, its color changing depending on how long it took to get the ball into the hole. The protagonist also receives some [[GOLD]]."/>
+    <property name="page" value="Snowdin/Puzzles#Ball Game"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Monster Kidz Word Search" x="6439.67" y="747.832">
+   <properties>
+    <property name="description" value="A word search that [[Sans]] had placed for the protagonist, containing a drawing of Ice-E. If the [[Fun Value]] is between 56 and 57, an additional drawing of a snowman named &quot;Nightmare&quot; appears on the word search."/>
+    <property name="page" value="Snowdin/Puzzles#Monster Kidz Word Search"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Snow Puzzle" x="7339.69" y="757.767">
+   <properties>
+    <property name="description" value="The protagonist must press the switch hidden under this patch of snow to unlock the way forward. On the [[Genocide Route]], the puzzle will have already been solved by the time the protagonist reaches this point."/>
+    <property name="page" value="Snowdin/Puzzles#The Snow Puzz;le"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="XOXO Puzzle 1" x="7509.93" y="1278">
+   <properties>
+    <property name="description" value="The protagonist must step on each X panels to turn them into O panels, then press the switch to unlock the way forward. On the [[Genocide Route]], this puzzle is already solved."/>
+    <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Snow Puzzle map" x="7055.38" y="1017.5">
+   <properties>
+    <property name="description" value="A map of the snow puzzle depicting the entire room. An &quot;X&quot; in the top-right marks where the switch is situated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="XOXO Puzzle 2" x="8105.6" y="1325.11">
+   <properties>
+    <property name="description" value="A puzzle shaped like [[Papyrus]]'s face.  The protagonist can either solve the puzzle manually or press the switch hidden in the tree to immediately disable it. On the [[Genocide Route]], the puzzle is already solved."/>
+    <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="XOXO Puzzle kill switch" x="7966.71" y="1250.5">
+   <properties>
+    <property name="description" value="A switch hidden in the tree. Pressing it and stepping on the switch in front of the puzzle immediately disables it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Multicolor Tile Puzzle" x="8740.32" y="1334.29">
+   <properties>
+    <property name="description" value="The protagonist must navigate across the puzzle through the walkable tiles. When [[Papyrus]] activates this puzzle, the solution is aways the same, allowing the protagonist to walk across without issue."/>
+    <property name="page" value="Multicolor Tile Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Solution to XOXO Puzzle 2" x="8154.95" y="1349.78">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 36.1549,-1.14778 37.8766,19.5122 96.9871,19.5122 93.5438,-1.72166 113.056,-1.72166 110.76,-22.3816 137.733,-21.2339 134.864,-60.8321 96.4132,-61.9799 96.4132,-22.9555 12.6255,-23.5294 13.1994,-60.8321 31.5638,-61.406"/>
+  </object>
+  <object id="60" name="XOXO Puzzle 3" x="9749.75" y="1309.96">
+   <properties>
+    <property name="description" value="The protagonist must solve this puzzle in order to extend the bridge and progress forward."/>
+    <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="XOXO Puzzle 3 (Fail Room)" x="9613.94" y="1580.39">
+   <properties>
+    <property name="description" value="The protagonist lands here if they fall off the edge of the room. They are taken back to the start."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" x="10601.1" y="2263.08">
+   <properties>
+    <property name="color" type="color" value="#fff59e81"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0844107,-754.477 -280.904,-751.795 -281.46,-938.792"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="saves">
+  <object id="7" name="Snowdin - Box Road" x="3248.74" y="466.944">
+   <properties>
+    <property name="description" value="''The convenience of that lamp still fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Snowdin - Spaghetti" x="6754.43" y="783.508">
+   <properties>
+    <property name="description">''Knowing the mouse might one day find a way to heat up the spaghetti...''
+''It fills you with determination.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Snowdin - Dog House" x="9270.03" y="1389.16">
+   <properties>
+    <property name="description">'''Spared [[Lesser Dog]]:''' ''Knowing the dog will never give up trying to make the perfect snowdog...''
+''It fills you with determination.''
+
+'''Killed Lesser Dog:''' ''Snow can always be broken down and rebuilt into something more useful.''
+''This simple fact fills you with determination.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Snowdin - Town" x="12527.7" y="1332.29">
+   <properties>
+    <property name="description" value="''The sight of such a friendly town fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="npcs">
+  <object id="5" name="Sans" x="2893.33" y="485.91">
+   <properties>
+    <property name="description" value="After [[Papyrus]]'s introduction, the protagonist can talk to [[Sans]]. He warns them that Papyrus may come back if they linger, but on the [[Genocide Route]], he only comments that the protagonist is staring at him."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Fishing Rod" x="3446.08" y="202.764">
+   <properties>
+    <property name="description" value="The [[Snowdin/NPCs#Ugly Fish|Ugly Fish]]'s fishing rod. Reeling it in reveals a note that says ''Call me! Here's my number!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Snowdrake" x="3754.06" y="437.139">
+   <properties>
+    <property name="description" value="Snowdrake appears here after defeating [[Papyrus]] if no monsters have been killed. He reveals why he ran away from home."/>
+    <property name="page" value="Snowdrake"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Snowdrake's Mother" x="3794.71" y="421.785">
+   <properties>
+    <property name="description" value="After completing the [[True Pacifist Route]], Snowdrake's Mother appears here, having reunited with her son and husband."/>
+    <property name="page" value="Snowdrake's Mother"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Snowdrake's Father" x="3856.12" y="429.913">
+   <properties>
+    <property name="description" value="After completing the [[True Pacifist Route]]. Snowdrake's Father appears here, having reunited with his wife and son."/>
+    <property name="page" value="MTT Resort/NPCs#Snowdrake's Father"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Sans" x="4692.02" y="466.492">
+   <properties>
+    <property name="description" value="[[Sans]] teaches the protagonist about [[Attack Types#Light Blue Attack|blue attacks]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Snowman" x="4920.07" y="149.928">
+   <properties>
+    <property name="description" value="The snowman offers a [[Snowman Piece]] to the protagonist and requests that they take it &quot;to the ends of the earth.&quot; On the [[Genocide Route]], the protagonist can forcibly take up to three Snowman Pieces at once."/>
+    <property name="page" value="Snowdin/NPCs#Snowman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Sans" x="5452.49" y="398.302">
+   <properties>
+    <property name="description" value="[[Sans]] tells the protagonist about [[Papyrus]]'s clothing, which he calls his &quot;battle body.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Chilldrake" x="5973.63" y="352.691">
+   <properties>
+    <property name="description" value="A [[Chilldrake]] appears here after defeating [[Papyrus]] and no monsters have been killed. They proudly claim that they and their peers rule the forest with a &quot;smaller-than adult fist.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Sans" x="6132.14" y="384.303">
+   <properties>
+    <property name="description" value="[[Sans]] pretends to sell &quot;fried snow&quot; at increasingly expensive prices. He then claims to not have any snow."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Sans" x="6531.34" y="717.576">
+   <properties>
+    <property name="description" value="[[Sans]] tells the protagonist that [[Papyrus]] had difficulty attempting to &quot;solve&quot; a horoscope."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Ice Cap" x="7071.44" y="676.03">
+   <properties>
+    <property name="description" value="An [[Ice Cap]] appears after defeating [[Papyrus]] if no monsters have been killed. They bring attention to their hat and ask the protagonist to think about it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Papyrus" x="7872.56" y="1262.64">
+   <properties>
+    <property name="description" value="[[Papyrus]] tells the protagonist about [[Sans]]'s sock collection and wonders aloud what Sans would do without him taking care of him."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Chilldrake" x="8036.49" y="1250.9">
+   <properties>
+    <property name="description" value="A [[Chilldrake]] appears here after defeating [[Papyrus]] if no monsters have been kiled. They mention how the rebellious teenagers have to share their lunch with [[Snowdrake]] since he ran away from home."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Sans" x="8392.54" y="1285.51">
+   <properties>
+    <property name="description" value="[[Sans]] tells the protagonist that they could have asked him for help with the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Ice Cap" x="9710.9" y="1594.54">
+   <properties>
+    <property name="description" value="An [[Ice Cap]] appears here after defeating [[Papyrus]] of no monsters have been killed. They express their desre to wear different clothing from their peers."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Gyftrot" x="10368.9" y="2367.8">
+   <properties>
+    <property name="description" value="Gyftrot appears here after defeating [[Papyrus]] if no monsters have been killed. They acknoledge the tradition based on how they are always being decorated."/>
+    <property name="page" value="Gyftrot"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Ice Cap" x="10649.7" y="1375.1">
+   <properties>
+    <property name="description" value="An [[Ice Cap]] appears here after defeating [[Papyrus]] if no monsters have been killed. They lament that no one is around to pay attention to them since they live in the woods."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Sans" x="10552.2" y="2365.62">
+   <properties>
+    <property name="description" value="[[Sans]] greets the protagonist."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Sans" x="10204.5" y="2365.34">
+   <properties>
+    <property name="description" value="[[Sans]] appears here once he is no longer visible from the right. He accuses the protagonist of following them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Annoying Dog" x="9934.26" y="1553.58">
+   <properties>
+    <property name="description" value="A sleeping dog. The protagonist is given the option to &quot;fight&quot; the dog, but no fight takes place regardless of their choice."/>
+    <property name="page" value="Annoying Dog"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Sans" x="8836.45" y="1345.64">
+   <properties>
+    <property name="description" value="[[Sans]] comments on [[Papyrus]]'s cooking and states the possibility that he could make something edible one day,"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Sans" x="11792.5" y="1264.3">
+   <properties>
+    <property name="description" value="[[Sans]] warns the protagonist of [[Papyrus]]'s blue attacks. On the [[Genocide Route]], he warns them of a &quot;bad time&quot; before teleporting away."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Innkeeper's Child" x="12696.7" y="1055.28">
+   <properties>
+    <property name="description" value="Child of the Innkeeper. They explain the functionalities of the inn. On the [[Genocide Route]], the child is replaced with an identical-looking decoy."/>
+    <property name="page" value="Snowdin/NPCs#Innkeeper's Child"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Rabbit Kid" x="12849.7" y="1271.95">
+   <properties>
+    <property name="description" value="A rabbit NPC who is disturbed by the [[Snowdin/NPCs#Rabbit Girl and Cinnamon|Rabbit Girl]]'s mannerisms."/>
+    <property name="page" value="Snowdin/NPCs#Rabbit Kid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Rabbit Girl and Cinnamon" x="12913" y="1350.86">
+   <properties>
+    <property name="description" value="The Rabbit Girl is seen walking her little brother Cinnamon on a leash, oblivious to the [[Snowdin/NPCs#Rabbit Kid|Rabbit Kid]] staring at her."/>
+    <property name="page" value="Snowdin/NPCs#Rabbit Girl and Cinnamon"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Gift Bear" x="12991" y="1332.36">
+   <properties>
+    <property name="description" value="Explains the gift-giving tradition based on [[Gyftrot]]'s situation."/>
+    <property name="page" value="Snowdin/NPCs#Gift Bear"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Monster Kid" x="13098.5" y="1339.27">
+   <properties>
+    <property name="description" value="Recognizes the protagonist as a fellow kid based on their striped shirt. They are still present on the [[Genocide Route]], explaining that everyone had evacuated."/>
+    <property name="page" value="Monster Kid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Politics Bear" x="13201.8" y="1289.7">
+   <properties>
+    <property name="description" value="Explains how Snowdin's political system is based on [[Papyrus]] usually reporting directly to [[Undyne]]."/>
+    <property name="page" value="Snowdin/NPCs#Politics Bear"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="Dogamy" x="13212.4" y="1121.45">
+   <properties>
+    <property name="description" value="Warns the protagonist about [[Greater Dog]]'s affectionate behavior."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Dogaressa" x="13238.4" y="1104.15">
+   <properties>
+    <property name="description" value="Laments that the sentries do not gain any respect and wishes  [[Sans]] or [[Papyrus]] would give them a bone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="Doggo" x="13134.4" y="1108.53">
+   <properties>
+    <property name="description" value="Considers getting a collar to express his desire to be taken for a walk."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Greater Dog" x="13174.5" y="1080.5">
+   <properties>
+    <property name="description" value="Makes a single sound effect."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Lesser Dog" x="13157.6" y="1030.35">
+   <properties>
+    <property name="description" value="Is in the middle of a game of poker against itself."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Ugly Fish" x="13194.8" y="1037.43">
+   <properties>
+    <property name="description" value="Explains that they are literally fishing for a date with a girl. "/>
+    <property name="page" value="Snowdin/NPCs#Ugly Fish"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Red Bird" x="13218.1" y="1037.43">
+   <properties>
+    <property name="description" value="Explains the [[Royal Guard]] to the protagonist. She usually acts as a translator for [[Snowdin/NPCs#Grillby|Grillby]]."/>
+    <property name="page" value="Snowdin/NPCs#Red Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Grillby" x="13246.6" y="1017.73">
+   <properties>
+    <property name="description" value="The bartender and owner of the restaurant. He is usually silent and only speaks a single line at the end of the [[True Pacifist Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Punk Hamster" x="13331.1" y="1017.73">
+   <properties>
+    <property name="description" value="Explains the overcrowding situation and [[New Home]]. He fears the erasure of Snowdin's local culture if people from the capital start moving."/>
+    <property name="page" value="Snowdin/NPCs#Punk Hamster"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="Big Mouth" x="13325.4" y="1083.84">
+   <properties>
+    <property name="description" value="Explains the differences between monster food and human food and expresses desire to try some."/>
+    <property name="page" value="Snowdin/NPCs#Big Mouth"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Drunk Bun" x="13316.4" y="1146.8">
+   <properties>
+    <property name="description" value="Expresses desire for new drinks and &quot;hot guys.&quot;"/>
+    <property name="page" value="Snowdin/NPCs#Drunk Bun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Scarf Mouse" x="13456.5" y="1291.97">
+   <properties>
+    <property name="description" value="Complains that people are making light of the depressing situation in the [[Underground]]."/>
+    <property name="page" value="Snowdin/NPCs#Scarf Mouse"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Red Demon" x="13516.3" y="1286.2">
+   <properties>
+    <property name="description" value="Explains that people make light of the depressing situation in the [[Underground]] because they cannot do anything aout it."/>
+    <property name="page" value="Snowdin/NPCs#Red Demon"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Dad Slime" x="13464" y="1094.42">
+   <properties>
+    <property name="description" value="A father of two slime children. Reminisces about his younger days."/>
+    <property name="page" value="Snowdin/NPCs#Slime Family"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Slime Children" x="13512" y="1126.36">
+   <properties>
+    <property name="description" value="Two children playing a game of &quot;Monsters and Humans.&quot; They are sent inside by their father if either [[Papyrus]] or the [[Royal Guard|Snowdin Canine Unit]] are killed."/>
+    <property name="page" value="Snowdin/NPCs#Slime Family"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Knock Lover" x="13506.5" y="1061.63">
+   <properties>
+    <property name="description" value="Express joy at hearing the protagonist knock on their door."/>
+    <property name="page" value="Snowdin/NPCs#Knock Lover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Ice Wolf" x="13915.6" y="1044.94">
+   <properties>
+    <property name="description" value="Is seen throwing ice into the water, which eventually travels to the [[CORE]]. Can be spoken to directly at the end of the [[True Pacifist Route]], where they express desire to buy a new pair of pants."/>
+    <property name="page" value="Snowdin/NPCs#Ice Wolf"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="River Person" x="13616.4" y="850.452">
+   <properties>
+    <property name="description" value="Ferries the protagonist to either [[Waterfall]] or [[Hotland]]."/>
+    <property name="page" value="River Person"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Library Lizard" x="13897.6" y="866.064">
+   <properties>
+    <property name="description" value="Snowdin's librarian. They acknoledge the misspelled sign outside the library."/>
+    <property name="page" value="Snowdin/NPCs#Library Lizard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Library Loox" x="14033.6" y="884.671">
+   <properties>
+    <property name="description" value="A monster resembling a [[Loox]]. They note the protagonist's difficulty solving either crosswords or Junior Jumble."/>
+    <property name="page" value="Snowdin/NPCs#Library Loox"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Newspaper Editor" x="14006.9" y="815.319">
+   <properties>
+    <property name="description" value="Explains that she usually fills the newspaper with comics and games due to lack of news to report."/>
+    <property name="page" value="Snowdin/NPCs#Newspaper Editors"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Newspaper Editor" x="14045.5" y="815.657">
+   <properties>
+    <property name="description" value="Claims to be the number-one word-search creator in the [[Underground]]. "/>
+    <property name="page" value="Snowdin/NPCs#Newspaper Editors"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="Doggo" x="14053.8" y="1294.82">
+   <properties>
+    <property name="description" value="[[Doggo]] relocates here at the end of the [[True Pacifist Route]]. He is happy that he has a constantly moving family member."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Dogaressa" x="14017.1" y="1287.76">
+   <properties>
+    <property name="description" value=", having reunited with her amalgamated family members."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Greater Dog" x="13968.3" y="1279.08">
+   <properties>
+    <property name="description" value="[[Greater Dog]] relocates here at the end of the [[True Pacifist Route]], having reunited with its amalgamated family members."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Endogeny" x="13934.4" y="1284.78">
+   <properties>
+    <property name="description" value="Relocates here at the end of the [[True Pacifist Route]], having reunited with its family members."/>
+    <property name="page" value="Endogeny"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Dogamy" x="13888.5" y="1284.29">
+   <properties>
+    <property name="description" value="[[Dogamy and Dogaressa|Dogamy]] relocates here at the end of the [[True Pacifist Route]], having reunited with his amalgamated family members. He wonders if he would be considered to be married to his sister due to their parents having amalgaated into the same entity. "/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Undyne" x="14151.6" y="1306.62">
+   <properties>
+    <property name="description" value="Undyne relocates here after befriending her. On the [[True Pacifist Route]], she gives [[Undyne's Letter|a letter]] to the protagonist and asks them to deliver it to [[Alphys]] on her behalf."/>
+    <property name="page" value="Undyne"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Papyrus" x="14189.1" y="1310.93">
+   <properties>
+    <property name="description" value="[[Papyrus]] guides the protagonist to [[Papyrus and Sans's House|his house]] and unlocks the door."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Papyrus" x="14156.5" y="866.21">
+   <properties>
+    <property name="description" value="[[Papyrus]] welcomes the protagonist to his house and acts as a host."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="Sans" x="14861.1" y="254.746">
+   <properties>
+    <property name="description" value="[[Sans]] provides commentary on the items in the room. After defeating [[Mettaton EX]], he is replaced with [[Mad Mew Mew]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" x="13961.1" y="0" width="972.31" height="1225.96">
+   <properties>
+    <property name="border" type="color" value="#ff154054"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="signs">
+  <object id="8" name="Sign" x="3424.4" y="420.43">
+   <properties>
+    <property name="description">''This is a [[Dimensional Box|box]].''
+''You can put an item inside or take an item out.''
+''The same box will appear later, so don't worry about coming back.''
+''Sincerely, a box lover.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Papyrus's Sentry Station" x="3983.47" y="421.785">
+   <properties>
+    <property name="description">''YOU OBSERVE THE WELL-CRAFTED SENTRY STATION.''
+''WHO COULD HAVE BUILT THIS, YOU PONDER...''
+''I BET IT WAS THAT VERY FAMOUS ROYAL GUARDSMAN!''
+''(NOTE: NOT YET A VERY FAMOUS ROYAL GUARDSMAN.)''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Sign" x="4209.72" y="475.975">
+   <properties>
+    <property name="description" value="''Absolutely NO MOVING!!!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Sign" x="4899.3" y="458.363">
+   <properties>
+    <property name="description">''North: Ice''
+''South: Ice''
+''West: Ice''
+''East: [[Snowdin|Snowdin Town]]''
+''(... and ice)''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Sign" x="6439.22" y="405.076">
+   <properties>
+    <property name="description">''SMELL DANGER RATING''
+
+''Snow Smell - Snowman''
+''White Rating''
+''Can become YELLOW Rating''
+
+''Unsuspicious Smell - Puppy''
+''BLUE Rating''
+''Smell of rolling around.''
+
+''Weird Smell - Humans''
+''GREEN Rating''
+''Destroy at all costs!''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Note from Papyrus" x="6698.88" y="737.897">
+   <properties>
+    <property name="description">''HUMAN!! PLEASE ENJOY THIS SPAGHETTI.''
+''(LITTLE DO YOU KNOW, THIS SPAGHETTI IS A TRAP...)''
+''(DESIGNED TO ENTICE YOU!!!)''
+''(YOU'LL BE SO BUSY EATING IT...)''
+''(THAT YOU WON'T REALIZE THAT YOU AREN'T PROGRESSING!!)''
+''(THOROUGHLY JAPED AGAIN BY THE GREAT PAPYRUS!!!)''
+
+''NYEH HEH HEH, PAPYRUS''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Sign" x="6989.25" y="726.608">
+   <properties>
+    <property name="description">''Warning: Dog Marriage''
+''(Yes, you read that correctly.)''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Sign" x="7509.03" y="1357.48">
+   <properties>
+    <property name="description" value="''Turn every X into an O. Then press the switch.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Sign" x="8106.17" y="1283.79">
+   <properties>
+    <property name="description" value="''Turn every X into an O. Then press the switch.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Sign" x="9190.23" y="1285.57">
+   <properties>
+    <property name="description">''AWARE OF DOG''
+''pleas pet dog''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Sign" x="10610.3" y="1274.53">
+   <properties>
+    <property name="description" value="''Woof.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Sign" x="12785.7" y="1302.69">
+   <properties>
+    <property name="description">''Don't want to walk to the other side of town?''
+''Try the undersnow tunnels. They're efficiently laid out.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Note on treadmill" x="14417.4" y="620.972">
+   <properties>
+    <property name="description" value="''the truth is that you got owned, nerd......''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="items">
+  <object id="74" name="Snow Poff GOLD" x="10805.4" y="1303.73">
+   <properties>
+    <property name="description" value="[[GOLD]] can be obtained from any snow poff after interacting with all previous snow poffs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Silver Key" x="14356.1" y="576.203">
+   <properties>
+    <property name="description" value="Unlocks the door in the back of the house."/>
+    <property name="page" value="Silver Key"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Couch GOLD" x="14262.3" y="910.943">
+   <properties>
+    <property name="description" value="The protagonist can pilfer 20 [[GOLD]] from underneath [[Papyrus]]'s couch."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="enemies">
+  <object id="19" name="Doggo" x="4350.61" y="451.138">
+   <properties>
+    <property name="description" value="Miniboss battle against Doggo."/>
+    <property name="page" value="Doggo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Dogi" x="7380.33" y="1045.88">
+   <properties>
+    <property name="description" value="Miniboss battle against the Dogi."/>
+    <property name="page" value="Dogamy and Dogaressa"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Greater Dog" x="10882.1" y="1361.56">
+   <properties>
+    <property name="description" value="Miniboss battle against Greater Dog."/>
+    <property name="page" value="Greater Dog"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Faun" x="9367.51" y="1267.4">
+   <properties>
+    <property name="description" value="Provides commentary on [[Lesser Dog]]'s attempts to build a snowdog."/>
+    <property name="page" value="Snowdin/NPCs#Faun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Seventh Papyrus encounter" x="15392.3" y="1315.91">
+   <properties>
+    <property name="description" value="Boss battle against Papyrus. He refuses to fight on the [[Genocide Route]] and instead immediately spares them."/>
+    <property name="page" value="Papyrus/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Mad Mew Mew" x="14454.2" y="91.4294">
+   <properties>
+    <property name="description" value="Boss battle against Mad Mew Mew, only available on the Nintendo Switch version of [[Undertale]]."/>
+    <property name="page" value="Mad Mew Mew"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
