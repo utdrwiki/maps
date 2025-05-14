@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="149">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="157">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -60,6 +60,11 @@
   <object id="146" x="12032.1" y="0" width="3062.95" height="1685.68">
    <properties>
     <property name="border" type="color" value="#ffa97c29"/>
+   </properties>
+  </object>
+  <object id="147" x="13972.2" y="0" width="972.31" height="1225.96">
+   <properties>
+    <property name="border" type="color" value="#ff154054"/>
    </properties>
   </object>
  </objectgroup>
@@ -208,6 +213,7 @@
   <object id="124" name="Papyrus's Shed" x="14489.5" y="1074.91">
    <properties>
     <property name="description" value="The protagonist is taken here if they lose to [[Papyrus]]."/>
+    <property name="page" value="Papyrus ans Sans's House#Papyrus's Toolshed"/>
    </properties>
    <point/>
   </object>
@@ -238,12 +244,14 @@
   <object id="140" name="Sans's Room" x="14380.8" y="758.751">
    <properties>
     <property name="description" value="The protagonist is given a key to [[Sans]]'s room ater repeatedly reloading a [[SAVE]] and going through Sans's judgement in the [[Last Corridor]] if they had gained no [[Stats#EXP|EXP]]."/>
+    <property name="page" value="Papyrus and Sans's House#Sans's Room"/>
    </properties>
    <point/>
   </object>
   <object id="144" name="Sans's Workshop" x="14181" y="1540.57">
    <properties>
     <property name="description" value="Unlocked after using the [[Silver Key]] on the doot in the back of [[Papyrus and Sans's House]]."/>
+    <property name="page" value="Papyrus and Sans's House#Sans's Workshop"/>
    </properties>
    <point/>
   </object>
@@ -759,7 +767,7 @@
   </object>
   <object id="126" name="Dogaressa" x="14017.1" y="1287.76">
    <properties>
-    <property name="description" value=", having reunited with her amalgamated family members."/>
+    <property name="description" value="[[Dogamy and Dogaressa|Dogaressa]] relocates here at the end of the [[True Pacifist Route]], having reunited with her amalgamated family members."/>
    </properties>
    <point/>
   </object>
@@ -807,10 +815,12 @@
    </properties>
    <point/>
   </object>
-  <object id="147" x="13961.1" y="0" width="972.31" height="1225.96">
+  <object id="72" name="Faun" x="9367.51" y="1267.4">
    <properties>
-    <property name="border" type="color" value="#ff154054"/>
+    <property name="description" value="Provides commentary on [[Lesser Dog]]'s attempts to build a snowdog."/>
+    <property name="page" value="Snowdin/NPCs#Faun"/>
    </properties>
+   <point/>
   </object>
  </objectgroup>
  <objectgroup id="9" name="signs">
@@ -932,6 +942,94 @@
    </properties>
    <point/>
   </object>
+  <object id="149" name="Note from Papyrus" x="14485.5" y="1029.55">
+   <properties>
+    <property name="description">'''First time:''' ''SORRY, I HAVE TO LOCK YOU IN THE GUEST ROOM UNTIL [[Undyne|UNDYNE]] ARRIVES.''
+''FEEL FREE TO MAKE YOURSELF AT HOME!!!''
+''REFRESHMENTS AND ACCOMODATIONS HAVE BEEN PROVIDED.''
+''- NYEHFULLY YOURS, PAPYRUS''
+
+'''Second time:''' ''PLEASE ASK BEFORE YOU ESCAPE!!!''
+''WHEN YOU WENT MISSING, I GOT WORRIED SICK!!!''
+''- SLIGHTLY BONETROUSLED, PAPYRUS''
+
+''Third time onward:''' ''IF YOU'RE JUST LOOKING FOR A PLACE TO STAY...''
+''JUST ASK!!! YOU DON'T NEED TO FIGHT ME!!!''
+''- YOUR HOST, PAPYRUS''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="School report on monster funerals" x="13861.7" y="781.787">
+   <properties>
+    <property name="description">''Monster funerals, technically speaking, are cool as heck.''
+''When monsters get old and kick the bucket, they turn into dust.''
+''At funerals, we take that dust and spread it on that person's favorite thing.''
+''Then their essence will live on in that thing...''
+''Uhhh, am I at the page minimum yet? I'm kinda sick of writing this.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="Book on magic" x="13901.6" y="781.558">
+   <properties>
+    <property name="description">''While monsters are mostly made of magic, human beings are mostly made of water.''
+''Humans, with their physical forms, are far stronger than us.''
+''But they will never know the joy of expressing themselves through magic.''
+''They will never get a bullet-pattern birthday card...''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="152" name="Unfinished book" x="13942.2" y="782.475">
+   <properties>
+    <property name="description">''Here I am... Writing this book.''
+''A person comes in and picks up the book...''
+''They start reading it...!''
+
+'''Scarf Lady:''' &quot;Oh, sorry. I'm still writing that one.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="153" name="Book on fighting" x="13981.4" y="782.246">
+   <properties>
+    <property name="description">''Because they are made of magic, monsters' bodies are attuned to their [[SOUL]].''
+''If a monster doesn't want to fight, its defenses will weaken.''
+''And the crueller the intentions of our enemies, the more their attacks will hurt us.''
+''Therefore, if a being with a powerful SOUL struck with the desire to kill...''
+''Um, let's end the chapter here.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="MONSTER HISTORY PART 4" x="14021" y="782.017">
+   <properties>
+    <property name="description">''Fearing the humans no longer, we moved out of our old city, [[Home|HOME]].''
+''We braved harsh cold, [[Waterfall|damp swampland]], and [[Hotland|searing heat]]...''
+''Until we reached what we now call our capital.''
+''&quot;[[New Home|NEW HOME]].&quot;''
+''Again, our [[Asgore Dreemurr|King]] is really bad at names...?''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Book on SOULs" x="14061.9" y="782.246">
+   <properties>
+    <property name="description">''Love, hope, compassion... This is what people say monster [[SOUL]]s are made of.''
+''But the absolute nature of the &quot;SOUL&quot; is unknown.''
+''After all, humans have proven their SOULs don't need these things to exist.''</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="Solution to XOXO Puzzle 3" x="9501.52" y="1320.63">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.281944,69.6402 208.639,69.6402 208.075,-71.6138 47.6486,-71.6138 48.2125,-50.75 169.449,-51.0319 168.039,28.7583 87.6847,29.0403 88.2486,8.74027 128.285,9.02222 128.149,-10.6354 248.957,-11.2778"/>
+  </object>
  </objectgroup>
  <objectgroup id="10" name="items">
   <object id="74" name="Snow Poff GOLD" x="10805.4" y="1303.73">
@@ -973,13 +1071,6 @@
    <properties>
     <property name="description" value="Miniboss battle against Greater Dog."/>
     <property name="page" value="Greater Dog"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="72" name="Faun" x="9367.51" y="1267.4">
-   <properties>
-    <property name="description" value="Provides commentary on [[Lesser Dog]]'s attempts to build a snowdog."/>
-    <property name="page" value="Snowdin/NPCs#Faun"/>
    </properties>
    <point/>
   </object>
