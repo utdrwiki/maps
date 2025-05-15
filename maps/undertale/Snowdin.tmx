@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="157">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="158">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Snowdin map">
   <image source="images/Snowdin.png" width="15620" height="2500"/>
  </imagelayer>
- <objectgroup id="12" name="calls">
-  <object id="48" name="Fun Value phone call" x="3919.66" y="488.953">
-   <properties>
-    <property name="description" value="If the [[Fun Value]] is between 40 and 45, [[Sans]] calls the protagonist and asks if their fridge is running. If the value is between 46 and 50, [[Alphys]] calls instead and attempts to order pizza."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="13" name="sublocations">
   <object id="68" name="Mysterious Door" x="9941.26" y="1782.11">
    <properties>
@@ -66,6 +58,21 @@
    <properties>
     <property name="border" type="color" value="#ff154054"/>
    </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="calls">
+  <object id="48" name="Fun Value phone call" x="3919.66" y="488.953">
+   <properties>
+    <property name="description" value="If the [[Fun Value]] is between 40 and 45, [[Sans]] calls the protagonist and asks if their fridge is running. If the value is between 46 and 50, [[Alphys]] calls instead and attempts to order pizza."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="157" name="Wrong Number Song" x="13631.1" y="912.931">
+   <properties>
+    <property name="description" value="If the Fun Value is between 2 and 39, the protagonist receives a phone call addressed to someone whose name starts with the letter &quot;G&quot;. The caller realizes that they called the wrong number and plays the Wrong Number Song."/>
+    <property name="page" value="Fun Value#Wrong Number Song"/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
  <objectgroup id="3" name="plot">
@@ -161,13 +168,13 @@
    </properties>
    <point/>
   </object>
-  <object id="75" name="Camera" x="11124" y="1323.6">
+  <object id="75" name="Camera" x="11123.8" y="1327">
    <properties>
     <property name="description" value="A camera hidden under the bridge."/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="Camera" x="11777.4" y="1326.44">
+  <object id="76" name="Camera" x="11777.4" y="1327">
    <properties>
     <property name="description" value="A camera hidden under the bridge."/>
    </properties>
@@ -962,7 +969,7 @@
    </properties>
    <point/>
   </object>
-  <object id="150" name="School report on monster funerals" x="13861.7" y="781.787">
+  <object id="150" name="School report on monster funerals" x="13861.7" y="781">
    <properties>
     <property name="description">''Monster funerals, technically speaking, are cool as heck.''
 ''When monsters get old and kick the bucket, they turn into dust.''
@@ -973,7 +980,7 @@
    </properties>
    <point/>
   </object>
-  <object id="151" name="Book on magic" x="13901.6" y="781.558">
+  <object id="151" name="Book on magic" x="13901.6" y="781">
    <properties>
     <property name="description">''While monsters are mostly made of magic, human beings are mostly made of water.''
 ''Humans, with their physical forms, are far stronger than us.''
@@ -983,7 +990,7 @@
    </properties>
    <point/>
   </object>
-  <object id="152" name="Unfinished book" x="13942.2" y="782.475">
+  <object id="152" name="Unfinished book" x="13942.2" y="781">
    <properties>
     <property name="description">''Here I am... Writing this book.''
 ''A person comes in and picks up the book...''
@@ -994,7 +1001,7 @@
    </properties>
    <point/>
   </object>
-  <object id="153" name="Book on fighting" x="13981.4" y="782.246">
+  <object id="153" name="Book on fighting" x="13981.4" y="781">
    <properties>
     <property name="description">''Because they are made of magic, monsters' bodies are attuned to their [[SOUL]].''
 ''If a monster doesn't want to fight, its defenses will weaken.''
@@ -1005,7 +1012,7 @@
    </properties>
    <point/>
   </object>
-  <object id="154" name="MONSTER HISTORY PART 4" x="14021" y="782.017">
+  <object id="154" name="MONSTER HISTORY PART 4" x="14021" y="781">
    <properties>
     <property name="description">''Fearing the humans no longer, we moved out of our old city, [[Home|HOME]].''
 ''We braved harsh cold, [[Waterfall|damp swampland]], and [[Hotland|searing heat]]...''
@@ -1016,7 +1023,7 @@
    </properties>
    <point/>
   </object>
-  <object id="155" name="Book on SOULs" x="14061.9" y="782.246">
+  <object id="155" name="Book on SOULs" x="14061.9" y="781">
    <properties>
     <property name="description">''Love, hope, compassion... This is what people say monster [[SOUL]]s are made of.''
 ''But the absolute nature of the &quot;SOUL&quot; is unknown.''
@@ -1076,7 +1083,7 @@
    </properties>
    <point/>
   </object>
-  <object id="85" name="Seventh Papyrus encounter" x="15392.3" y="1315.91">
+  <object id="85" name="Final Papyrus encounter" x="15392.3" y="1315.91">
    <properties>
     <property name="description" value="Boss battle against Papyrus. He refuses to fight on the [[Genocide Route]] and instead immediately spares them."/>
     <property name="page" value="Papyrus/In Battle"/>
