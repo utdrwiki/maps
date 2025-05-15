@@ -38,7 +38,7 @@
   </object>
   <object id="84" name="Grillby's" x="13323.3" y="1283.64">
    <properties>
-    <property name="description" value="A restaurant. A hangout with [[Sans]] occurs here only if [[Papyrus]] was spared on the [[Neutral Route]].."/>
+    <property name="description" value="A restaurant. A hangout with [[Sans]] occurs here only if [[Papyrus]] was spared on the [[Neutral Route]]."/>
     <property name="page" value="Grillby's"/>
    </properties>
    <point/>
@@ -48,7 +48,7 @@
     <property name="color" type="color" value="#ffba5327"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -0.0704384,-146.928 114.293,-145.528 113.359,-342.979"/>
+   <polyline points="0,0 -0.0704384,-146.928 114.293,-146.097 113.359,-342.979"/>
   </object>
   <object id="134" name="Dog Shrine" x="14453.7" y="378.096">
    <properties>
@@ -181,13 +181,13 @@
   </object>
   <object id="80" name="Camera" x="9149.62" y="1226.57">
    <properties>
-    <property name="description" value="Camera hidden behind [[Lesser Dog]]'s sentry station."/>
+    <property name="description" value="A camera hidden behind [[Lesser Dog]]'s sentry station."/>
    </properties>
    <point/>
   </object>
   <object id="86" name="Camera" x="13619.3" y="1388.82">
    <properties>
-    <property name="description" value="Camera hidden in the trees."/>
+    <property name="description" value="A camera hidden in the trees."/>
    </properties>
    <point/>
   </object>
@@ -213,7 +213,7 @@
   <object id="124" name="Papyrus's Shed" x="14489.5" y="1074.91">
    <properties>
     <property name="description" value="The protagonist is taken here if they lose to [[Papyrus]]."/>
-    <property name="page" value="Papyrus ans Sans's House#Papyrus's Toolshed"/>
+    <property name="page" value="Papyrus and Sans's House#Papyrus's Toolshed"/>
    </properties>
    <point/>
   </object>
@@ -255,7 +255,7 @@
    </properties>
    <point/>
   </object>
-  <object id="145" x="14174.2" y="1287.77">
+  <object id="145" x="14181.6" y="1290.05">
    <properties>
     <property name="color" type="color" value="#ff9f85af"/>
     <property name="thickness" type="float" value="3"/>
@@ -283,13 +283,14 @@
   <object id="9" name="Dimensional Box" x="3449.24" y="419.527">
    <properties>
     <property name="description" value="A Dimensional Box in Sonwdin's Box Road."/>
+    <property name="page" value="Dimensional Box"/>
    </properties>
    <point/>
   </object>
   <object id="88" name="Dimensional Box" x="12577.8" y="1334.54">
    <properties>
-    <property name="description" value="A [[Dimentional Box]] in Snowdin Town."/>
-    <property name="page" value="Dimentional Box"/>
+    <property name="description" value="A Dimensional Box in Snowdin Town."/>
+    <property name="page" value="Dimensional Box"/>
    </properties>
    <point/>
   </object>
@@ -658,6 +659,7 @@
   <object id="108" name="Grillby" x="13246.6" y="1017.73">
    <properties>
     <property name="description" value="The bartender and owner of the restaurant. He is usually silent and only speaks a single line at the end of the [[True Pacifist Route]]."/>
+    <property name="page" value="Snowdin/NPCs#Grillby"/>
    </properties>
    <point/>
   </object>
@@ -1034,7 +1036,7 @@
  <objectgroup id="10" name="items">
   <object id="74" name="Snow Poff GOLD" x="10805.4" y="1303.73">
    <properties>
-    <property name="description" value="[[GOLD]] can be obtained from any snow poff after interacting with all previous snow poffs."/>
+    <property name="description" value="30 [[GOLD]] can be obtained from any snow poff after interacting with all previous snow poffs."/>
    </properties>
    <point/>
   </object>
