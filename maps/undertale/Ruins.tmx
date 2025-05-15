@@ -1,11 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="322" height="192" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="90">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="322" height="192" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="92">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Ruins map">
   <image source="images/Ruins.png" width="10278" height="6142"/>
  </imagelayer>
+ <objectgroup id="11" name="sublocations">
+  <object id="65" name="Home" x="9573.28" y="3466.15">
+   <properties>
+    <property name="description" value="The former capital of the [[Underground]]. Most monsters had left this area in favor of [[New Home]], the current capital city."/>
+    <property name="page" value="Home"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Toriel's Home" x="9117.97" y="2846.92">
+   <properties>
+    <property name="description" value="Toriel's home. She intends for the protagonist to live here with her."/>
+    <property name="page" value="Toriel's Home"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" x="8635.42" y="2434.85" width="1446.38" height="479.361">
+   <properties>
+    <property name="border" type="color" value="#ffe82313"/>
+   </properties>
+  </object>
+  <object id="75" x="9154.04" y="2789.44">
+   <properties>
+    <property name="color" type="color" value="#ffe82313"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -224.998,-0.885818 -224.998,-465.054 -47.8342,-464.413"/>
+  </object>
+ </objectgroup>
  <objectgroup id="12" name="calls">
   <object id="82" name="Phone call 1" x="4975.27" y="4469.94">
    <properties>
@@ -38,34 +66,6 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="11" name="sublocations">
-  <object id="65" name="Home" x="9573.28" y="3466.15">
-   <properties>
-    <property name="description" value="The former capital of the [[Underground]]. Most monsters had left this area in favor of [[New Home]], the current capital city."/>
-    <property name="page" value="Home"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="68" name="Toriel's Home" x="9117.97" y="2846.92">
-   <properties>
-    <property name="description" value="Toriel's home. She intends for the protagonist to live here with her."/>
-    <property name="page" value="Toriel's Home"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="73" x="8635.42" y="2434.85" width="1446.38" height="479.361">
-   <properties>
-    <property name="border" type="color" value="#ffe82313"/>
-   </properties>
-  </object>
-  <object id="75" x="9154.04" y="2789.44">
-   <properties>
-    <property name="color" type="color" value="#ff612c61"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -224.998,-0.885818 -224.998,-465.054 -47.8342,-462.397"/>
-  </object>
- </objectgroup>
  <objectgroup id="7" name="saves">
   <object id="6" name="Ruins - Entrance" x="618.419" y="5274.53">
    <properties>
@@ -81,8 +81,8 @@
   </object>
   <object id="36" name="Ruins - Mouse Hole" x="7277.63" y="4859.13">
    <properties>
-    <property name="description">''Knowing the mouse might one day leave its hole and get the cheese...''
-''It fills you with determination.''</property>
+    <property name="description">Knowing the mouse might one day leave its hole and get the cheese...
+It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -113,20 +113,20 @@
    </properties>
    <point/>
   </object>
-  <object id="11" name="Label" x="823.166" y="4656.11">
+  <object id="11" name="Label" x="823.166" y="4656">
    <properties>
-    <property name="description">''Please press this switch.''
+    <property name="description">Please press this switch.
 
-''	- TORIEL''</property>
+- TORIEL</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
-  <object id="12" name="Label" x="1021.64" y="4656.53">
+  <object id="12" name="Label" x="1021.64" y="4656">
    <properties>
-    <property name="description">''Please press this switch too.''
+    <property name="description">Please press this switch too.
 
-''	- TORIEL''</property>
+- TORIEL</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -157,8 +157,8 @@
   </object>
   <object id="38" name="Sign" x="7958.09" y="4813.86">
    <properties>
-    <property name="description">''Spider Bake Sale''
-''All proceeds go to real spiders.''</property>
+    <property name="description">Spider Bake Sale
+All proceeds go to real spiders.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="Spider Bake Sale"/>
    </properties>
@@ -166,8 +166,8 @@
   </object>
   <object id="41" name="Sign" x="7707.11" y="4534.66">
    <properties>
-    <property name="description">''Did you miss it? [[Spider Bake Sale|Spider Bakesale]] down and to the right.''
-''Come eat food made by spiders, for spiders, of spiders!''</property>
+    <property name="description">Did you miss it? [[Spider Bake Sale|Spider Bakesale]] down and to the right.
+Come eat food made by spiders, for spiders, of spiders!</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -199,6 +199,27 @@
   <object id="61" name="Sign" x="8617.13" y="3657.98">
    <properties>
     <property name="description" value="''If you can read this, press the green switch.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="History book" x="8879.4" y="2714.59">
+   <properties>
+    <property name="description">Trapped behind the [[barrier]] and fearful of further [[Humans|human]] attacks, we retreated.
+Far, far into the earth we walked, until we reached the cavern's end.
+This was our home, which we named...
+&quot;[[Home]].&quot;
+As great as [[Asgore Dreemurr|our king]] is, he is pretty lousy at names.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Encyclopedia" x="9760.94" y="2501.44">
+   <properties>
+    <property name="description">It's an encyclopedia of subterranean plants. You open to the middle...
+
+&quot;Typha&quot; - A group of wetland flowering plants with brown, oblong seedpods.
+Known more commonly as &quot;water sausages.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -408,10 +429,10 @@
   </object>
   <object id="34" name="Solution to Leaf Puzzle 2" x="6357.35" y="4721.76">
    <properties>
-    <property name="color" type="color" value="#ffb962b9"/>
+    <property name="color" type="color" value="#ff93d0e1"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 0.0227432,153.364 60.6551,152.642 59.9332,59.167 132.115,58.8061 133.197,160.221 194.551,159.86 194.19,106.446"/>
+   <polyline points="0,0 -0.230453,160.454 60.6551,159.985 59.9332,59.167 132.115,58.8061 133.197,160.221 194.551,159.86 194.19,106.446"/>
   </object>
   <object id="35" name="Rock Puzzle 2" x="6826.55" y="4870.43">
    <properties>
@@ -451,7 +472,7 @@
     <property name="color" type="color" value="#ffff0000"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 3.53753,-873.769 -35.9649,-874.359"/>
+   <polyline points="3.31895,0.195232 3.53753,-873.769 -35.9649,-874.359"/>
   </object>
   <object id="60" name="Rotating Switch Puzzle (Room 3)" x="8508.24" y="4198.06">
    <properties>

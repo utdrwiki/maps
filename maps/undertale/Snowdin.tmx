@@ -408,8 +408,8 @@
   </object>
   <object id="36" name="Snowdin - Spaghetti" x="6754.43" y="783.508">
    <properties>
-    <property name="description">''Knowing the mouse might one day find a way to heat up the spaghetti...''
-''It fills you with determination.''</property>
+    <property name="description">Knowing the mouse might one day find a way to heat up the spaghetti...
+It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -835,20 +835,20 @@
  <objectgroup id="9" name="signs">
   <object id="8" name="Sign" x="3424.4" y="420.43">
    <properties>
-    <property name="description">''This is a [[Dimensional Box|box]].''
-''You can put an item inside or take an item out.''
-''The same box will appear later, so don't worry about coming back.''
-''Sincerely, a box lover.''</property>
+    <property name="description">This is a [[Dimensional Box|box]].
+You can put an item inside or take an item out.
+The same box will appear later, so don't worry about coming back.
+Sincerely, a box lover.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="17" name="Papyrus's Sentry Station" x="3983.47" y="421.785">
    <properties>
-    <property name="description">''YOU OBSERVE THE WELL-CRAFTED SENTRY STATION.''
-''WHO COULD HAVE BUILT THIS, YOU PONDER...''
-''I BET IT WAS THAT VERY FAMOUS ROYAL GUARDSMAN!''
-''(NOTE: NOT YET A VERY FAMOUS ROYAL GUARDSMAN.)''</property>
+    <property name="description">YOU OBSERVE THE WELL-CRAFTED SENTRY STATION.
+WHO COULD HAVE BUILT THIS, YOU PONDER...
+I BET IT WAS THAT VERY FAMOUS ROYAL GUARDSMAN!
+(NOTE: NOT YET A VERY FAMOUS ROYAL GUARDSMAN.)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -861,52 +861,52 @@
   </object>
   <object id="21" name="Sign" x="4899.3" y="458.363">
    <properties>
-    <property name="description">''North: Ice''
-''South: Ice''
-''West: Ice''
-''East: [[Snowdin|Snowdin Town]]''
-''(... and ice)''</property>
+    <property name="description">North: Ice
+South: Ice
+West: Ice
+East: [[Snowdin|Snowdin Town]]
+(... and ice)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="32" name="Sign" x="6439.22" y="405.076">
    <properties>
-    <property name="description">''SMELL DANGER RATING''
+    <property name="description">SMELL DANGER RATING
 
-''Snow Smell - Snowman''
-''White Rating''
-''Can become YELLOW Rating''
+Snow Smell - Snowman
+White Rating
+Can become YELLOW Rating
 
-''Unsuspicious Smell - Puppy''
-''BLUE Rating''
-''Smell of rolling around.''
+Unsuspicious Smell - Puppy
+BLUE Rating
+Smell of rolling around.
 
-''Weird Smell - Humans''
-''GREEN Rating''
-''Destroy at all costs!''</property>
+Weird Smell - Humans
+GREEN Rating
+Destroy at all costs!</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="37" name="Note from Papyrus" x="6698.88" y="737.897">
    <properties>
-    <property name="description">''HUMAN!! PLEASE ENJOY THIS SPAGHETTI.''
-''(LITTLE DO YOU KNOW, THIS SPAGHETTI IS A TRAP...)''
-''(DESIGNED TO ENTICE YOU!!!)''
-''(YOU'LL BE SO BUSY EATING IT...)''
-''(THAT YOU WON'T REALIZE THAT YOU AREN'T PROGRESSING!!)''
-''(THOROUGHLY JAPED AGAIN BY THE GREAT PAPYRUS!!!)''
+    <property name="description">HUMAN!! PLEASE ENJOY THIS SPAGHETTI.
+(LITTLE DO YOU KNOW, THIS SPAGHETTI IS A TRAP...)
+(DESIGNED TO ENTICE YOU!!!)
+(YOU'LL BE SO BUSY EATING IT...)
+(THAT YOU WON'T REALIZE THAT YOU AREN'T PROGRESSING!!)
+(THOROUGHLY JAPED AGAIN BY THE GREAT PAPYRUS!!!)
 
-''NYEH HEH HEH, PAPYRUS''</property>
+NYEH HEH HEH, PAPYRUS</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="39" name="Sign" x="6989.25" y="726.608">
    <properties>
-    <property name="description">''Warning: Dog Marriage''
-''(Yes, you read that correctly.)''</property>
+    <property name="description">Warning: Dog Marriage
+(Yes, you read that correctly.)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -925,8 +925,8 @@
   </object>
   <object id="57" name="Sign" x="9190.23" y="1285.57">
    <properties>
-    <property name="description">''AWARE OF DOG''
-''pleas pet dog''</property>
+    <property name="description">AWARE OF DOG
+pleas pet dog</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -939,8 +939,8 @@
   </object>
   <object id="89" name="Sign" x="12785.7" y="1302.69">
    <properties>
-    <property name="description">''Don't want to walk to the other side of town?''
-''Try the undersnow tunnels. They're efficiently laid out.''</property>
+    <property name="description">Don't want to walk to the other side of town?
+Try the undersnow tunnels. They're efficiently laid out.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -953,48 +953,48 @@
   </object>
   <object id="149" name="Note from Papyrus" x="14485.5" y="1029.55">
    <properties>
-    <property name="description">'''First time:''' ''SORRY, I HAVE TO LOCK YOU IN THE GUEST ROOM UNTIL [[Undyne|UNDYNE]] ARRIVES.''
-''FEEL FREE TO MAKE YOURSELF AT HOME!!!''
-''REFRESHMENTS AND ACCOMODATIONS HAVE BEEN PROVIDED.''
-''- NYEHFULLY YOURS, PAPYRUS''
+    <property name="description">'''First time:''' SORRY, I HAVE TO LOCK YOU IN THE GUEST ROOM UNTIL [[Undyne|UNDYNE]] ARRIVES.
+FEEL FREE TO MAKE YOURSELF AT HOME!!!
+REFRESHMENTS AND ACCOMODATIONS HAVE BEEN PROVIDED.
+- NYEHFULLY YOURS, PAPYRUS
 
-'''Second time:''' ''PLEASE ASK BEFORE YOU ESCAPE!!!''
-''WHEN YOU WENT MISSING, I GOT WORRIED SICK!!!''
-''- SLIGHTLY BONETROUSLED, PAPYRUS''
+'''Second time:''' PLEASE ASK BEFORE YOU ESCAPE!!!
+WHEN YOU WENT MISSING, I GOT WORRIED SICK!!!
+- SLIGHTLY BONETROUSLED, PAPYRUS
 
-''Third time onward:''' ''IF YOU'RE JUST LOOKING FOR A PLACE TO STAY...''
-''JUST ASK!!! YOU DON'T NEED TO FIGHT ME!!!''
-''- YOUR HOST, PAPYRUS''</property>
+'''Third time onward:''' IF YOU'RE JUST LOOKING FOR A PLACE TO STAY...
+JUST ASK!!! YOU DON'T NEED TO FIGHT ME!!!
+- YOUR HOST, PAPYRUS</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="150" name="School report on monster funerals" x="13861.7" y="781">
    <properties>
-    <property name="description">''Monster funerals, technically speaking, are cool as heck.''
-''When monsters get old and kick the bucket, they turn into dust.''
-''At funerals, we take that dust and spread it on that person's favorite thing.''
-''Then their essence will live on in that thing...''
-''Uhhh, am I at the page minimum yet? I'm kinda sick of writing this.''</property>
+    <property name="description">[[Monsters|Monster]] funerals, technically speaking, are cool as heck.
+When monsters get old and kick the bucket, they turn into dust.
+At funerals, we take that dust and spread it on that person's favorite thing.
+Then their essence will live on in that thing...
+Uhhh, am I at the page minimum yet? I'm kinda sick of writing this.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="151" name="Book on magic" x="13901.6" y="781">
    <properties>
-    <property name="description">''While monsters are mostly made of magic, human beings are mostly made of water.''
-''Humans, with their physical forms, are far stronger than us.''
-''But they will never know the joy of expressing themselves through magic.''
-''They will never get a bullet-pattern birthday card...''</property>
+    <property name="description">While [[monsters]] are mostly made of magic, [[Humans|human]] beings are mostly made of water.
+Humans, with their physical forms, are far stronger than us.
+But they will never know the joy of expressing themselves through magic.
+They will never get a bullet-pattern birthday card...</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="152" name="Unfinished book" x="13942.2" y="781">
    <properties>
-    <property name="description">''Here I am... Writing this book.''
-''A person comes in and picks up the book...''
-''They start reading it...!''
+    <property name="description">Here I am... Writing this book.
+A person comes in and picks up the book...
+They start reading it...!
 
 '''Scarf Lady:''' &quot;Oh, sorry. I'm still writing that one.&quot;</property>
     <property name="multiline" type="bool" value="true"/>
@@ -1003,31 +1003,31 @@
   </object>
   <object id="153" name="Book on fighting" x="13981.4" y="781">
    <properties>
-    <property name="description">''Because they are made of magic, monsters' bodies are attuned to their [[SOUL]].''
-''If a monster doesn't want to fight, its defenses will weaken.''
-''And the crueller the intentions of our enemies, the more their attacks will hurt us.''
-''Therefore, if a being with a powerful SOUL struck with the desire to kill...''
-''Um, let's end the chapter here.''</property>
+    <property name="description">Because they are made of magic, [[monsters]]' bodies are attuned to their [[SOUL]].
+If a monster doesn't want to fight, its defenses will weaken.
+And the crueller the intentions of our enemies, the more their attacks will hurt us.
+Therefore, if a being with a powerful SOUL struck with the desire to kill...
+Um, let's end the chapter here.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="154" name="MONSTER HISTORY PART 4" x="14021" y="781">
    <properties>
-    <property name="description">''Fearing the humans no longer, we moved out of our old city, [[Home|HOME]].''
-''We braved harsh cold, [[Waterfall|damp swampland]], and [[Hotland|searing heat]]...''
-''Until we reached what we now call our capital.''
-''&quot;[[New Home|NEW HOME]].&quot;''
-''Again, our [[Asgore Dreemurr|King]] is really bad at names...?''</property>
+    <property name="description">Fearing the [[humans]] no longer, we moved out of our old city, [[Home|HOME]].
+We braved harsh cold, [[Waterfall|damp swampland]], and [[Hotland|searing heat]]...
+Until we reached what we now call our capital.
+&quot;[[New Home|NEW HOME]].&quot;
+Again, our [[Asgore Dreemurr|King]] is really bad at names...?</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
   <object id="155" name="Book on SOULs" x="14061.9" y="781">
    <properties>
-    <property name="description">''Love, hope, compassion... This is what people say monster [[SOUL]]s are made of.''
-''But the absolute nature of the &quot;SOUL&quot; is unknown.''
-''After all, humans have proven their SOULs don't need these things to exist.''</property>
+    <property name="description">Love, hope, compassion... This is what people say monster [[SOUL]]s are made of.
+But the absolute nature of the &quot;SOUL&quot; is unknown.
+After all, [[humans]] have proven their SOULs don't need these things to exist.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
