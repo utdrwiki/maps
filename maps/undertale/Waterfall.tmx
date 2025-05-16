@@ -1,20 +1,1284 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="758" height="107" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="758" height="107" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="180">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Waterfall map">
   <image source="images/Waterfall.png" width="24230" height="3400"/>
  </imagelayer>
- <objectgroup id="13" name="enemies"/>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="boxes"/>
- <objectgroup id="6" name="sublocations"/>
- <objectgroup id="7" name="puzzles"/>
- <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="npcs"/>
- <objectgroup id="10" name="signs"/>
- <objectgroup id="11" name="calls"/>
- <objectgroup id="12" name="items"/>
+ <objectgroup id="6" name="sublocations">
+  <object id="64" x="18358.8" y="2354.59">
+   <properties>
+    <property name="color" type="color" value="#ffffff40"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 1.14884,-2352.93 -9778.89,-2353.26 -9778.86,-1770.01"/>
+  </object>
+  <object id="102" name="Garbage Dump" x="18153.5" y="3271.1">
+   <properties>
+    <property name="description" value="An area with an excess of garbage originating from the [[Surface]]."/>
+    <property name="page" value="Garbage Dump"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" x="17573.7" y="2649.67" width="1477.97" height="752.508">
+   <properties>
+    <property name="border" type="color" value="#ffb5e61d"/>
+   </properties>
+  </object>
+  <object id="110" name="Blook Acres" x="19116.3" y="2108.18">
+   <properties>
+    <property name="description" value="A three-section neighborhood consisting of [[Undyne's House]], [[Napstablook]]'s and [[Mettaton]]'s houses, and the snail farm. On the [[Genocide Route]] the area is evacuated, and no NPCs show up."/>
+    <property name="page" value="Blook Acres"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" x="18449.4" y="1718.71" width="1401.89" height="502.767">
+   <properties>
+    <property name="border" type="color" value="#ffbf3f66"/>
+   </properties>
+  </object>
+  <object id="112" name="Undyne's House" x="18612.8" y="1977.26">
+   <properties>
+    <property name="description" value="[[Undyne]]'s house. She is befriended here if no [[Stats#EXP|EXP]] had been gained at that point."/>
+    <property name="page" value="Undyne's House"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Temmie Village" x="21377.7" y="3096.7">
+   <properties>
+    <property name="description" value="Hidden village inhabited by [[Temmie]]s."/>
+    <property name="page" value="Temmie Village"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="170" name="Entrance toi Undyne's House" x="18758.4" y="2243.52">
+   <properties>
+    <property name="color" type="color" value="#fff5fb97"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,1.06532 -159.932,1.22085 -159.118,-62.2635"/>
+  </object>
+  <object id="171" name="Entrance to the snail farm" x="19079.1" y="2252.17">
+   <properties>
+    <property name="color" type="color" value="#ff8b7658"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 192.885,0.00844899 192.893,-75.9784"/>
+  </object>
+  <object id="172" name="Entrance to Mettaton's House" x="18950.7" y="2097.15">
+   <properties>
+    <property name="color" type="color" value="#ff99d9ea"/>
+    <property name="thickness" value="3.0"/>
+   </properties>
+   <polyline points="-1.77557,-0.16646 -1.75113,-146.745 291.388,-147.095"/>
+  </object>
+  <object id="173" name="Entrance to Napstablook's House" x="18897.3" y="2098.43">
+   <properties>
+    <property name="color" type="color" value="#ffcfcfba"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -47.6382,-0.0581166 -47.7473,-155.077"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="enemies">
+  <object id="25" name="Aaron" x="2794.95" y="1507.46">
+   <properties>
+    <property name="description" value="Scripted encounter against an Aaron."/>
+    <property name="page" value="Aaron"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Shyren" x="10158" y="651.526">
+   <properties>
+    <property name="description" value="Scripted encounter against Shyren."/>
+    <property name="page" value="Shyren"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="Mad Dummy" x="18939.6" y="2710.42">
+   <properties>
+    <property name="description" value="Miniboss battle against [[Mad Dummy]]. On the [[Genocide Route]], the dummy becomes corporeal and is renamed to Glad Dummy."/>
+    <property name="page" value="Mad Dummy/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="164" name="Final Undyne encounter (Genocide Route)" x="22517.7" y="2016.73">
+   <properties>
+    <property name="description" value="[[Monster Kid]] confronts the protagonist, but the protagonist engages them in battle and attacks them. [[Undyne]] leaps in and takes the fatal blow in their place. She tells Monster Kid to leave and transforms into Undyne the Undying."/>
+    <property name="page" value="Undyne the Undying"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="166" name="Final Undyne encounter (Neutral Route)" x="23465.9" y="1523.64">
+   <properties>
+    <property name="description" value="Boss battle against [[Undyne]]. Her pre-battle monologue changes depending on whether they killed monsters or killed [[Papyrus]]."/>
+    <property name="page" value="Undyne/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="5" name="Sans" x="894.363" y="1445.73">
+   <properties>
+    <property name="description" value="[[Sans]] offers to take the protagonist to [[Grillby's]]. He leads them through a &quot;shortcut', which teleports them straight there."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Camera" x="1261.76" y="1647.9">
+   <properties>
+    <property name="description" value="A camera hidden behind the waterfall."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="First Undyne encounter" x="1820.47" y="1359.29">
+   <properties>
+    <property name="description" value="[[Undyne]] notices the protagonist as they attempt to move through the grass. She refrains from attacking since the grass is under scientific protection. [[Monster Kid]] shows up after she leaves and expresses excitement about the way she was staring at the protagonist."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Second Undyne encounter" x="4390.96" y="382.239">
+   <properties>
+    <property name="description" value="[[Undyne]] chases the protagonist across the dock and continuously throws spears at them. The protagonist must make it across while avoiding the spears."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="First Undyne chase conclusion" x="6722.39" y="558.047">
+   <properties>
+    <property name="description" value="[[Undyne]] approaches the protagonist and attempts to grab them, only to grab [[Monster Kid]] instead, who expresses excitement that Undyne touched them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Fake Hallway" x="7523.33" y="537.11">
+   <properties>
+    <property name="description" value="If the Fun Value is 66, a fake hallway appears after Waterfall's Crystal room. There is an additional 10% chance that a door appears in this hallway."/>
+    <property name="page" value="Fun Value#Fake Hallway"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Umbrella" x="11169" y="642.378">
+   <properties>
+    <property name="description" value="The protagonist can take an umbrella and carry it around with them. The umbrella can be used to prompt altered dialogue with some characters and reveal the solution to the [[Waterfall/Puzzles#The Piano Puzzle|Piano Puzzle]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Monster Kid" x="11921.1" y="628.766">
+   <properties>
+    <property name="description" value="[[Monster Kid]] follows the protagonist throughout the next few rooms."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Monster Kid intermission 1" x="12761.9" y="689.356">
+   <properties>
+    <property name="description" value="[[Monster Kid]] exclaims how cool [[Undyne]] is."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Monster Kid intermission 2" x="12838" y="1318.79">
+   <properties>
+    <property name="description" value="[[Monster Kid]] relates a story about [[Asgore Dreemurr|Asgore]] coming to school one day and states the possibility of [[Undyne]] coming to school as well."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Monster Kid intermission 3" x="12912.3" y="1686.39">
+   <properties>
+    <property name="description" value="[[Monster Kid]] claims that [[Undyne]] would never hurt an innocent person."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Monster Kid intermission 4" x="14738.7" y="1703.98">
+   <properties>
+    <property name="description" value="[[Monster Kid]] allows the protagonist to climb on top of their shoulders in order to reach the ledge."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Umbrella" x="14603.5" y="1677.79">
+   <properties>
+    <property name="description" value="The protagonist can place their umbrella here if they are carrying one."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="Third Undyne Encounter" x="15877" y="1726.54">
+   <properties>
+    <property name="description" value="[[Undyne]] chases the protagonist across the bridge and continuously thrusts spears from underneath. The protagonist must make it across while avoiding the spears."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Second Undyne chase path" x="15697.7" y="1686.13">
+   <properties>
+    <property name="color" type="color" value="#ff7bfbfe"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 519.991,-2.33492 520.014,113.396 680.799,112.55 680.799,32.8019 599.918,33.0236 600.076,-38.4609 849.623,-38.5039 849.535,36.0533 770.79,35.5194 770.568,88.8514 1274.35,89.2805 1275.3,198.42 1372.11,198.599 1371.82,634.12 1293.05,634.256 1293.3,670.221 872.739,670.289 873.721,1032.41 1612.51,1032.41 1612.35,917.456 1817.3,918.592"/>
+  </object>
+  <object id="95" name="Second Undyne chase conclusion" x="18052.3" y="2608.59">
+   <properties>
+    <property name="description" value="[[Undyne]] destroys the bridge with the protagonist on it. The protagonist plummets into the [[Garbage Dump]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Flashback" x="17718.5" y="3258.32">
+   <properties>
+    <property name="description" value="A brief flashback of [[Asriel Dreemurr]] meeting the [[Chara|first human]]. The flashback cuts off before Asriel says his name."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Donation box" x="17899.5" y="3266">
+   <properties>
+    <property name="description" value="On the console versions of [[Undertale]], a donation box appears here on the [[Genocide Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Napstablook's invitation" x="18920.1" y="2402.71">
+   <properties>
+    <property name="description" value="After interrupting the battle against [[Mad Dummy]], [[Napstablook]] invites the protagonist to their house in [[Blook Acres]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Special Aaron encounter" x="18994.9" y="2294.79">
+   <properties>
+    <property name="description" value="A special encounter with [[Aaron]] and [[Woshua]] is triggered here if the protagonist left one of [[Napstablook]]'s CDs playing. This unlocks Aaron's yellow credit text in the [[True Pacifist Ending Credits]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Befriending Undyne" x="18603.2" y="2065.38">
+   <properties>
+    <property name="description" value="[[Papyrus]] appears here and initiates the hangout with [[Undyne]] if no [[Stats#EXP|EXP]] had been gained at that point."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Mettaton's House" x="18950.2" y="2095.5">
+   <properties>
+    <property name="description" value="A house next to [[Napstablook]]'s. It remains locked throughout the game, but it can be unlocked by using the [[Mystery Key]] bought from [[Bratty and Catty]]."/>
+    <property name="page" value="Blook Acres#Mettaton's House"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Thundersnail" x="19798.1" y="2115.57">
+   <properties>
+    <property name="description" value="[[Napstablook]] invites the protagoist to play a game of Thundersnail for the price of 10G."/>
+    <property name="page" value="Thundersnail"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Hidden path to Temmie Village" x="21101" y="2811.11">
+   <properties>
+    <property name="description" value="This path lights up upon exiting [[Temmie Village]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="Fourth Undyne encounter" x="22568.5" y="2650.97">
+   <properties>
+    <property name="description" value="[[Undyne]] corners the protagonist and attempts to take their [[SOUL]]. However, [[Monster Kid]] jumps out at the last second and interrupts the ensuing battle. Undyne drags them away."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="159" name="Flowey's message" x="22199" y="2346.11">
+   <properties>
+    <property name="description">Upon backtracking to this spot, [[Flowey]] will have modified the message spoken by the Echo Flower. The message changes depending on whether [[Toriel]] was spared or killed. On the [[Genocide Route]], The Echo Flower still outputs &quot;''(It's strangely silent.)''&quot; but in Toriel's voice.
+
+'''If Toriel was spared:'''
+'''Toriel:''' Where oh where could that child be...?
+I've been looking all over for them...
+'''Flowey:''' ...
+Hee hee hee.
+THAT'S not true.
+She'll find another kid, and instantly forget about you.
+You'll NEVER see her again.
+
+'''If Toriel was killed:'''
+'''Toriel:''' Where am I...?
+It's so cold here... And so dark...
+Someone help me... Anyone... please... Help me...
+'''Flowey:''' ...
+But nobody came.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="160" name="Echo Flowers" x="770.691" y="1483.49">
+   <properties>
+    <property name="description" value="They repeat the last message someone has said to it. On the [[Genocide Route]] or if [[Undyne]] was killed on the [[Neutral Route]], all Echo Flowers output the message &quot;''(It's strangely silent.)''&quot;"/>
+    <property name="page" value="Echo Flowers"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="161" name="Genocide Route reminder" x="22199.4" y="2119.49">
+   <properties>
+    <property name="description" value="If the kill counter has not yet been exhausted at this point, the protagonist is given a reminder of how many monsters remain."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="163" name="Fifth Undyne encounter (Neutral Route)" x="22649.5" y="2060.78">
+   <properties>
+    <property name="description" value="[[Monster Kid]] confronts the protagonist and asks them to confirm whether they are a human. Monster Kid then attempts to leave, only to trip and fall off the bridge. As they hang onto the ledge below, [[Undyne]] appears on the other side. The protagonist can save Monster Kid, confront Undyne, let Monster Kid fall, or run away into the next room."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors">
+  <object id="56" name="Nice Cream Guy" x="7927.99" y="100.412">
+   <properties>
+    <property name="description" value="Sells [[Nice Cream]] for 25G and offers a [[Punch Card]] for every purchase. If the protagonist is holding an umbrella, the Nice Cream Guy sells Nice Cream for a discounted price of 15G."/>
+    <property name="page" value="Nice Cream Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Gerson" x="19389.9" y="2283.28">
+   <properties>
+    <property name="description" value="The protagonist can buy items from Gerson's shop."/>
+    <property name="page" value="Gerson"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Tem Shop" x="21379.2" y="3027.89">
+   <properties>
+    <property name="description" value="The protagonist can buy and sell items at the Tem Shop."/>
+    <property name="page" value="Tem Shop"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="boxes">
+  <object id="8" name="Dimensional Box" x="1120.03" y="1474.59">
+   <properties>
+    <property name="description" value="A Dimensional Box in the [[Waterfall/Puzzles#The Rock Puzzle|Rock Puzzle Room]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Dimensional Box" x="7950.09" y="557.856">
+   <properties>
+    <property name="description" value="A Dimensional Box near [[Sans]]'s telescope."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Dimensional Box" x="19469.9" y="2315.51">
+   <properties>
+    <property name="description" value="A Dimensional Box in front of [[Gerson]]'s shop."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Dimensional Box" x="21394" y="3129.92">
+   <properties>
+    <property name="description" value="A Dimensional Box in [[Temmie Village]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="puzzles">
+  <object id="9" name="Rock Puzzle" x="1261.76" y="1492.57">
+   <properties>
+    <property name="description" value="The protagonist must avoid the rocks as they cross the water. The rocks can push the protagonist off the waterfall, after which they must start from the beginning."/>
+    <property name="page" value="Waterfall/Puzzles#The Rock Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Hidden room" x="1260.6" y="1423.47">
+   <properties>
+    <property name="description" value="A hidden room behind this waterfall."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Bridge Seed Puzzle 1" x="2371.24" y="1510.73">
+   <properties>
+    <property name="description" value="The protagonist must construct a bridge across the water by aligning four Bridge Seeds in a straight line. To solve this puzzle, the protagonist must construct a horizontal bridge from this spot. On the [[Genocide Route]], this puzzle is already solved."/>
+    <property name="page" value="Bridge Seed"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Bridge Seed Puzzle 2" x="2989.59" y="1369.07">
+   <properties>
+    <property name="description" value="The protagonist must construct a bridge using four Bridge Seeds to continue forward. There are two solutions to this puzzle. On the [[Genocide Route]], this puzzle is already solved."/>
+    <property name="page" value="Bridge Seed"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Bridge Seed Puzzle 2 (Solution 1)" x="2872.01" y="1369.34">
+   <properties>
+    <property name="description" value="The protagonist can solve this puzzle by constructing a vertical bridge from this spot."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Bridge Seed Puzzle 2 (Solution 2)" x="2851.58" y="1507.08">
+   <properties>
+    <property name="description" value="The protagonist can solve this puzzle by constructing a vertical bridge from this spot."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Bridge Seed Puzzle 2 (Secret Solution)" x="2911.24" y="1553.43">
+   <properties>
+    <property name="description" value="By constructing a horizontal bridge from this spot, they can access a secret room containing the [[Abandoned Quiche]]. This bridge must still be constructed on the [[Genocide Route]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Bell Blossom" x="3049.7" y="1206.63">
+   <properties>
+    <property name="description" value="Can be used to reset the [[Bridge Seed]] puzzle to its default state."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Wishing Room Wall Puzzle" x="3129.95" y="841.224">
+   <properties>
+    <property name="description" value="The protagonist must interact with this wall to reveal a hidden doorway to the next room."/>
+    <property name="page" value="Waterfall/Puzzles#The Wishing Room Wall Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Wall Puzzle Telescope" x="3132.21" y="1072.62">
+   <properties>
+    <property name="description" value="Using this telescope reveals a hidden clue that directs the protagonist to the northern wall."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Piano Puzzle" x="10087.8" y="415.111">
+   <properties>
+    <property name="description" value="The protagonist must play the piano to the tune of ''[[His Theme]]'' in order to unlock the [[Artifact Room]]."/>
+    <property name="page" value="Waterfall/Puzzles#The Piano Puzzle "/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Statue" x="10787" y="626.663">
+   <properties>
+    <property name="description" value="If the protagonist places an umbrella on this statue, they can view the solution to the Piano Puzzle."/>
+    <property name="page" value="Waterfall/Puzzles#The Piano Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves">
+  <object id="3" name="Waterfall - Checkpoint" x="823.697" y="1439.03">
+   <properties>
+    <property name="description" value="''The sound of rushing water fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Waterfall - Hallway" x="2045.17" y="1493.69">
+   <properties>
+    <property name="description" value="''A feeling of dread hangs over you... But you stay determined.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Waterfall - Crystal" x="7270.16" y="548.981">
+   <properties>
+    <property name="description">Knowing the mouse might one day extract the cheese from the mystical crystal...
+It fills you with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Waterfall - Bridge" x="15159.9" y="1648.96">
+   <properties>
+    <property name="description">'''Did not give umbrella to the statue:''' The sound of muffled rain on the cavetop...
+It fills you with determination.
+
+'''Gave umbrella to the statue:''' The serene sound of a distant music box...
+It fills you with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Waterfall - Trash Zone" x="18559.8" y="3242.98">
+   <properties>
+    <property name="description">'''First time:''' The waterfall here seems to flow from the ceiling of the cavern...
+Occasionally, a piece of trash will flow through...
+... and fall into the bottomless abyss below.
+Viewing this endless cycle of worthless garbage...
+It fills you with determination.
+
+'''Second time:''' Partaking in worthless garbage fills you with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Waterfall - Quiet Area" x="18920" y="2349.11">
+   <properties>
+    <property name="description" value="''You feel a calming tranquility. You're filled with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Waterfall - Temmie Village" x="21353.6" y="3128.95">
+   <properties>
+    <property name="description" value="''You feel... something. You're filled with detemmienation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="162" name="Unnamed SAVE Point" x="22319.8" y="2007.71">
+   <properties>
+    <property name="description" value="SAVE Point in the [[Echo Flowers|Echo Flower]] hallway. Only appears on the [[Genocide Route]] and disappears after killing [[Undyne the Undying]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="167" name="Waterfall - Undyne Arena" x="23539.9" y="2045.89">
+   <properties>
+    <property name="description">''Before battle:''' The wind is howling. You're filled with determination...
+
+'''If Undyne was spared:''' The howling wind is now a breeze. This gives you determination...
+
+'''If Undyne was killed:''' The wind has stopped. You're filled with determination...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="npcs">
+  <object id="1" name="Monster Kid" x="731.244" y="1511.93">
+   <properties>
+    <property name="description" value="Exclaims that they are sneaking out to see [[Undyne]] in action."/>
+    <property name="page" value="Monster Kid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Echo Flower Explainer" x="733.199" y="1420.87">
+   <properties>
+    <property name="description" value="Explains how [[Echo Flowers]] work."/>
+    <property name="page" value="Waterfall/NPCs#Echo Flower Explainer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Ferry" x="3020.31" y="610.885">
+   <properties>
+    <property name="description" value="Appears after the first [[Undyne]] chase. They can ferry the protagonist to the other side of the dock."/>
+    <property name="page" value="Waterfall/NPCs#Ferry"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Woshua" x="3464.21" y="565.398">
+   <properties>
+    <property name="description" value="A [[Woshua]] appears here after defeating [[Undyne]] if no monsters have been killed. They complain that everything is dirty and hard to clean up."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Goner Kid" x="4025.86" y="553.157">
+   <properties>
+    <property name="description" value="Appears if the [[Fun Value]] is 90 or greater. They are terrified of the idea of a world in which they do not exist. They have additional dialogue if the protagonist is carrying an umbrella."/>
+    <property name="page" value="Waterfall/NPCs#Goner Kid"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Ferry" x="6941.09" y="651.807">
+   <properties>
+    <property name="description" value="Appears after the first [[Undyne]] chase. They can ferry the protagonist to the other side of the dock."/>
+    <property name="page" value="Waterfall/NPCs#Ferry"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" x="3021.33" y="619.212">
+   <properties>
+    <property name="color" type="color" value="#ffa349a4"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,-5.10954 0.319346,114.645 3919.97,115.284 3920.61,33.8507"/>
+  </object>
+  <object id="55" name="Mystery Man" x="7524.17" y="289.989">
+   <properties>
+    <property name="description" value="Appears in the room behind the gray door. Fades away once interacted with."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Sans" x="7906.35" y="528.273">
+   <properties>
+    <property name="description" value="[[Sans]] allows the protagonist to look through his telescope, which is a prank that puts red paint over their eye."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Loren" x="8091.33" y="550.689">
+   <properties>
+    <property name="description" value="Has a fixation on stars despite not knowing what they are. They ask the protagonist if they are a star."/>
+    <property name="page" value="Waterfall/NPCs#&quot;Loren&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Small Bird" x="8483.26" y="581.97">
+   <properties>
+    <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the room containing [[Sans]]'s telescope and the Quiet Area."/>
+    <property name="page" value="Waterfall/NPCs#Small Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Small Bird" x="18540.4" y="2345.03">
+   <properties>
+    <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the Quiet Area to the room containing [[Sans]]'s telescope."/>
+    <property name="page" value="Waterfall/NPCs#Small Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Onionsan" x="9276.83" y="553.545">
+   <properties>
+    <property name="description" value="Appears out of the water. They talk to the protagonist as they walk across the room. They retreat back into the water as the protagonist leaves the room."/>
+    <property name="page" value="Waterfall/NPCs#Onionsan"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Lemon Bread" x="10192.8" y="690.876">
+   <properties>
+    <property name="description" value="Relocates here at the end of the [[True Pacifist Route]], having reuinted with her sister [[Shyren]]."/>
+    <property name="page" value="Lemon Bread"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Aaron" x="14510.5" y="1663.61">
+   <properties>
+    <property name="description" value="An [[Aaron]] appears here after defeating [[Undyne]] if no monsters have been killed. His dialogue varies depending on whether he heard [[Napstablook]]'s music in [[Blook Acres]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Woshua" x="17844.4" y="3248.44">
+   <properties>
+    <property name="description" value="A [[Woshua]] appears here after defeating [[Undyne]] if no monsters have been killed. They explain that they are cleaning the garbage."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Clam Girl" x="19141.5" y="2355">
+   <properties>
+    <property name="description" value="Appears if the [[Fun Value]] is between 80 and 89. She mentions that Suzy, her neighbor's daughter, looks to be about the protagonist's age. On the Nintendo Switch and Xbox versions, if the Fun Value is 81, she becomes a &quot;goner&quot; at the end of the [[True Pacifist Route]] and disappears."/>
+    <property name="page" value="Waterfall/NPCs#Clam Girl"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Mad Dummy" x="18514.5" y="2120.76">
+   <properties>
+    <property name="description" value="[[Mad Dummy]] appears here after their battle. On the Nintendo Switch version of [[Undertale]], the dummy is replaced with [[Mad Mew Mew]] after her battle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Undyne" x="18599.1" y="1832.26">
+   <properties>
+    <property name="description" value="[[Undyne]] provides commentary on the objects inside her house."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Napstablook" x="18990.7" y="1819.83">
+   <properties>
+    <property name="description" value="[[Napstablook]] provides commentary on the objects in their house and invites the protagonist to participate in a family tradition."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Napstablook" x="18832.6" y="2124.71">
+   <properties>
+    <property name="description" value="[[Napstablook]] relocates here at the end of the [[True Pacifist Route]]. They ask the protagonist for their name since they did not learn it when everyone else did."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Mettaton" x="19005.5" y="2109.61">
+   <properties>
+    <property name="description" value="[[Mettaton EX]] relocates here at the end of the [[True Pacifist Route]]. He expresses desire to become a star on the surface and has enlisted [[Shyren]] and [[Napstablook]] to be part of his troupe."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Napstablook" x="19330" y="2110.22">
+   <properties>
+    <property name="description" value="[[Napstablook]] explains that they work at the Blook Family Snail Farm."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Snail" x="19235.5" y="2062.84">
+   <properties>
+    <property name="description" value="Does not say anything on its own, but the narration suggests that the protagonist wonders what it tastes like. "/>
+    <property name="page" value="Waterfall/NPCs#Snails"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Long Snail" x="19314.3" y="2074.31">
+   <properties>
+    <property name="description" value="Encourages the protagonist to reach far on their journey."/>
+    <property name="page" value="Waterfall/NPCs#Snails"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="Snail Guy" x="19396.8" y="2066.66">
+   <properties>
+    <property name="description" value="A humanoid monster who had just purchased a shell from a snail as a second house."/>
+    <property name="page" value="Waterfall/NPCs#Snails"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Slug" x="19431.5" y="2069.47">
+   <properties>
+    <property name="description" value="Is counting dollar bills, presumably because it had just sold its shell to the Snail Guy."/>
+    <property name="page" value="Waterfall/NPCs#Snails"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="River Person" x="19363.7" y="2564.15">
+   <properties>
+    <property name="description" value="Can ferry the protagonist to either [[Snowdin]] or [[Hotland]]."/>
+    <property name="page" value="River Person"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Temmie" x="21198.8" y="3083.51">
+   <properties>
+    <property name="description" value="Introduces herself and her friend to the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="Temmie" x="21233.4" y="3087.04">
+   <properties>
+    <property name="description" value="Introduces herself and her friend to the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Temmie" x="21266.1" y="3075.81">
+   <properties>
+    <property name="description" value="Introduces herself and her friend to the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Temmie" x="21298.8" y="3081.91">
+   <properties>
+    <property name="description" value="Introduces themself as &quot;Bob&quot; and speaks proper English."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" name="Temmie" x="21445" y="3074.89">
+   <properties>
+    <property name="description" value="Recognizes the protagonist as a human and considers them cute."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" name="Temmie" x="21503.1" y="3118.46">
+   <properties>
+    <property name="description" value="Claims that she is watching over an egg in hopes of becoming a parent. The egg is hard-boiled."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="Temmie" x="21608.5" y="3116.74">
+   <properties>
+    <property name="description" value="Explains that she, like the protagonist, is allergic to Temmies. The Temmie breaks out in hives afterward."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Temmie" x="21583.3" y="3025.83">
+   <properties>
+    <property name="description" value="Is seen peeking out from behind a hole in the wall."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="149" name="Ragel" x="21565.8" y="3080.23">
+   <properties>
+    <property name="description" value="Performs a dance for the protagonist and provides commentary depending on whether the protagonist has killed any monster."/>
+    <property name="page" value="Waterfall/NPCs#Ragel"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="165" name="Elder Puzzler" x="23079.1" y="2008.53">
+   <properties>
+    <property name="description" value="Appears after defeating [[Undyne]]. They have prepared a puzzle for the protagonist to solve, but they immediately criticize them for how they attempt to push the box."/>
+    <property name="page" value="Waterfall/NPCs#Elder Puzzler"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="signs">
+  <object id="4" name="Echo Flower" x="768.393" y="1429.53">
+   <properties>
+    <property name="description">All that gives my life validation is explaining the Echo Flower
+No one can know...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Sign" x="1089.77" y="1474.36">
+   <properties>
+    <property name="description">This is a [[Dimensional Box|box]].
+You can put an item in or take an item out.
+Why would you though??? You can't use items when they're in the box!
+Sincerely, a box hater.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Echo Flower" x="1449.26" y="1732.05">
+   <properties>
+    <property name="description" value="''I swore I saw something... Behind that rushing water...''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Sign" x="2179.86" y="1467.36">
+   <properties>
+    <property name="description" value="''When four [[Bridge Seed]]s align in the water, they will sprout.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Sign" x="2849.11" y="1556.37">
+   <properties>
+    <property name="description">Congratulations!
+You failed the puzzle!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Echo Flower" x="3329.45" y="1468.33">
+   <properties>
+    <property name="description" value="''I just wasn't ready for the responsibility.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Sign" x="2999.2" y="1210.13">
+   <properties>
+    <property name="description" value="''If an error is made, the Bell Blossom can call [[Bridge Seed]]s back to where they started.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Sign" x="2779.42" y="1008.87">
+   <properties>
+    <property name="description" value="''WISHING ROOM''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Echo Flower" x="2699.49" y="1048.87">
+   <properties>
+    <property name="description">A long time ago, monsters would whisper their wishes to the stars in the sky.
+If you hoped with all your heart, your wish would come true.
+Now, all we have are these sparkling stones on the ceiling.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Echo Flower" x="2889.41" y="1068.98">
+   <properties>
+    <property name="description">Thousands of people wishing together can't be wrong!
+[[Asgore Dreemurr|The king]] will prove that.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Echo Flower" x="2989.32" y="1028.75">
+   <properties>
+    <property name="description" value="''C'mon, sis!  Make a wish!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Echo Flower" x="3049.51" y="1028.48">
+   <properties>
+    <property name="description" value="''I wish my sister and I will see the real stars someday...''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Echo Flower" x="3269.3" y="1048.48">
+   <properties>
+    <property name="description" value="''Ah... seems my horoscope is the same as last week's...''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="War of Humans and Monsters, part 1" x="3109.68" y="508">
+   <properties>
+    <property name="description">(Ancient writing covers the walls... you can just make out the words.)
+
+[[The War of Humans and Monsters]].</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="War of Humans and Monsters, part 2" x="3190.29" y="508">
+   <properties>
+    <property name="description">Why did the [[humans]] attack? Indeed, it seemed they had nothing to fear.
+Humans are unbelievably strong. It would take the [[SOUL]] of nearly every [[Monsters|monster]]...
+...just to equal the power of a single human SOUL.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="War of Humans and Monsters, part 3" x="3269.49" y="508">
+   <properties>
+    <property name="description">But [[humans]] have one weakness. Ironically, it is the strength of their [[SOUL]].
+Its power allows it to persist outside the human body, even after death.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="War of Humans and Monsters, part 4" x="3349.49" y="508">
+   <properties>
+    <property name="description">If a [[Monsters|monster]] defeats a [[Humans|human]], they can take its [[SOUL]].
+A monster with a human SOUL... A horrible beast with unfathomable power.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="War of Humans and Monsters, part 5" x="3429.49" y="508">
+   <properties>
+    <property name="description">(It's an illustration of a strange creature...)
+(There is something very unsettling about this drawing.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Echo Flower" x="7229.01" y="508.365">
+   <properties>
+    <property name="description" value="''Squeak.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Sign" x="7989.33" y="47.7988">
+   <properties>
+    <property name="description" value="Has been defaced with a list of 21 different flavors."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Echo Flower" x="8459.51" y="1101.35">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+So? Don't you have any wishes to make?</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Echo Flower" x="8459.24" y="1233.9">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+... hmm, just one, but...
+It's kind of stupid.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Echo Flower" x="8729" y="1180.97">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+Don't say that! Come on, I promise I won't laugh.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="War of Humans and Monsters, part 6" x="8869.56" y="828.418">
+   <properties>
+    <property name="description">The power to take their [[SOUL]]s.
+This is the power that the [[humans]] feared.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Sign" x="10229.3" y="588.91">
+   <properties>
+    <property name="description" value="''The northern room hides a great treasure.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Sign" x="10230.2" y="389.057">
+   <properties>
+    <property name="description">A haunting song echoes down the corridor... Won't you play along?
+Only the first 8 are fine.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="War of Humans and Monsters, part 7" x="10409.5" y="629">
+   <properties>
+    <property name="description">This power has no counter. Indeed, a [[Humans|human]] cannot take a [[Monsters|monster]]'s [[SOUL]].
+When a monster dies, its SOUL disappears.
+And an incredible power would be needed to take the SOUL of a living monster.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="War of Humans and Monsters, part 8" x="10509.3" y="629">
+   <properties>
+    <property name="description">There is only one exception.
+The [[SOUL]] of a special species of [[Monsters|monster]] called a &quot;[[Boss Monster]].&quot;
+A Boss Monster's SOUL is strong enough to persist after death...
+If only for a few moments.
+A [[Humans|human]] could absorb this SOUL. But this has never happened.
+And now it never will.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Sign" x="11070" y="644.781">
+   <properties>
+    <property name="description" value="''Please take one.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="War of Humans and Monsters, part 9" x="15088.9" y="1609">
+   <properties>
+    <property name="description">The [[humans]], afraid of our power, declared war on us.
+They attacked suddenly, and without mercy.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="War of Humand and Monsters, part 10" x="15229.9" y="1609">
+   <properties>
+    <property name="description">In the end, it could hardly be called a war.
+United, the [[humans]] were too powerful, and us [[monsters]], too weak.
+Not a single [[SOUL]] was taken, and countless monsters were turned to dust...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Sign" x="19119.7" y="2284.36">
+   <properties>
+    <property name="description">North: [[Blook Acres]]
+East: [[Hotland]]
+???: [[Temmie Village]]</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="War of Humans and Monsters, part 11" x="19769.5" y="2290">
+   <properties>
+    <property name="description">Hurt, beaten, and fearful of our lives, we surrendered to the [[humans]].
+Seven of their greatest magicians sealed us underground with a magic spell.
+Anything can enter through the seal, but only beings with a powerful [[SOUL]] can leave.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="War of Humans and Monsters, part 12" x="19929" y="2290">
+   <properties>
+    <property name="description">There is only one way to reverse this spell.
+If a huge power, equivalent to seven human [[SOUL]]s, attacks the [[barrier]]...
+It will be destroyed.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="War of Humans and Monsters, part 13" x="20188.8" y="2290">
+   <properties>
+    <property name="description">But this cursed place has no entrances or exits.
+There is no way a [[Humans|human]] could come here.
+We will remain trapped down here forever.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Sign" x="21152.7" y="3073.78">
+   <properties>
+    <property name="description">hOI!
+welcom to...
+TEM VILLAGE!!!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Sign" x="21346.2" y="3069.27">
+   <properties>
+    <property name="description">hOI!!
+u shud check out...
+[[Tem Shop|TEM SHOP]]!!!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="Sign" x="21410.8" y="3069.98">
+   <properties>
+    <property name="description">yaYA!! i AGREES!!
+shud check...
+[[Tem Shop|TEM SHOP]]!!!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="Sign" x="21309.4" y="2427.89">
+   <properties>
+    <property name="description" value="''Without candles or magic to guide them Home, the monsters used crystals to navigate.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="152" name="Echo Flower" x="22619.2" y="2647.62">
+   <properties>
+    <property name="description" value="''You aren't gonna tell my parents about this, are you?''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="153" name="Echo Flower" x="22219" y="2370.69">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+... hmm... if I say my wish... You promise you won't laugh at me?</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="Echo Flower" x="22178.6" y="2328.81">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+Of course I won't laugh!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Echo Flower" x="22219" y="2229.57">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+Someday, I'd like to climb this mountain we're all buried under.
+Standing under the sky, looking at the world all around... That's my wish.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="Echo Flower" x="22178.6" y="2148.48">
+   <properties>
+    <property name="description">(You hear laughter.)
+
+... hey, you said you wouldn't laugh at it!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="157" name="Echo Flower" x="22219" y="2069.25">
+   <properties>
+    <property name="description">(You hear a passing conversation.)
+
+Sorry, it's just funny...
+That's my wish, too.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="158" name="War of Humans and Monsters, part 14" x="22208.5" y="1989.22">
+   <properties>
+    <property name="description">However... There is a prophecy.
+The Angel... The One Who Has Seen The [[Surface]]...
+They will return. And the [[underground]] will go empty.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="174" name="Diary 1" x="19166.8" y="1855.6">
+   <properties>
+    <property name="description">Dear Diary: [[Lemon Bread|Shyren's sister]] &quot;fell down&quot; recently.
+It's sad. Without her sister to speak for her...
+She's become more reclusive than ever.
+So I reached out to her, and told her...
+Thst she, [[Napstablook|Blooky]], and I should all perform together sometime.
+She seemed to like that idea.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="175" name="Diary 2" x="19196.8" y="1835.71">
+   <properties>
+    <property name="description">Dearer Diary: I like to buy a new diary for every entry I make.
+I love to collect diaries.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="176" name="Diary 3" x="19221.8" y="1856.01">
+   <properties>
+    <property name="description">Dearest Diary: Our cousin left the farm to become a training dummy.
+That leaves just [[Napstablook|Blooky]] and I.
+Blooky asked me if I was going to try to become corporeal, too.
+They sounded so... Resigned...
+Come on, Blooky. You know I'd never leave you behind.
+And besides...
+I'd never find the kind of body I'm looking for, anyway.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="177" name="Diary 4" x="19251.6" y="1835.71">
+   <properties>
+    <property name="description">My Darling Diary: I met someone... Interesting today.
+Last week I posted that advertisement for my Human Fanclub.
+Today was our first meeting.
+Only one other person came.
+Honestly, she's a dork. And she's obsessed with these awful cartoons.
+But she's kind of funny, too...
+I want to see her again.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="178" name="Diary 5" x="19276.6" y="1861.49">
+   <properties>
+    <property name="description">Diary... My dear: My diary collection is growing fabulously.
+I have like five now.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="179" name="Diary 6" x="19306.2" y="1840.38">
+   <properties>
+    <property name="description">Dear Diary: She surprised me with something today.
+Sketches of a body she wants to create for me...
+A form beyond my wildest fantasies.
+In a form like that, I could finally feel like... &quot;myself.&quot;
+After all, there's no way I can become a star the way I am now.
+Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="calls">
+  <object id="28" name="Phone call 1" x="2783.84" y="1288.68">
+   <properties>
+    <property name="description" value="[[Papyrus]] calls the protagonist and asks them what they are wearing. They can either tell him the truth or lie to him."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Phone call 2" x="8408.71" y="1466.72">
+   <properties>
+    <property name="description" value="[[Papyrus]] calls the protagonist again and he reveals that he used the protagonist's response to his previous question to attempt to distract [[Undyne]]. Regardless of what they told him or whether they had changed their [[armor]] after the call, Papyrus explains that he had told Undyne what the protagonist is currently wearing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="168" name="Phone call 3" x="23935.4" y="798.354">
+   <properties>
+    <property name="description" value="[[Papyrus]] calls the protagonist and tells them that they should hang out with [[Undyne]]. If Papyrus was not befriended, he reminds the protagonist that they should hang out with him first."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="169" name="True Pacifist Route phone call" x="18921.9" y="2620.83">
+   <properties>
+    <property name="description" value="On the [[True Pacifist Route]], [[Papyrus]] calls the protagonist and tells them to head to [[Alphys]]'s [[Lab]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="items">
+  <object id="12" name="Old Tutu" x="1250.65" y="1243.1">
+   <properties>
+    <property name="description" value="The protagonist can pick up the Old Tutu in this area."/>
+    <property name="page" value="Old Tutu"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Abandoned Quiche" x="3281.27" y="1493.42">
+   <properties>
+    <property name="description" value="The protagonist can obtain the Abandoned Quiche from underneath this bench."/>
+    <property name="page" value="Abandoned Quiche"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Punch Card" x="8070.38" y="126.771">
+   <properties>
+    <property name="description" value="A box containing one Punch Card for every [[Nice Cream]] purchased."/>
+    <property name="page" value="Punch Card"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Ballet Shoes" x="7602.28" y="1242.09">
+   <properties>
+    <property name="description" value="The protagonist can pick up the Ballet Shoes in this area."/>
+    <property name="page" value="Ballet Shoes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Legendary Artifact" x="10171.7" y="152.754">
+   <properties>
+    <property name="description" value="The protagonist attempts to claim the artifact, only for the [[Annoying Dog]] to appear in their inventory, preventing them from obtaining it. Deploying the dog causes it to absorb the artifact, leving [[Dog Residue]] behind."/>
+    <property name="page" value="Artifact Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="Astronaut Food" x="18965.6" y="2825.19">
+   <properties>
+    <property name="description" value="The protagonist can pick up two pieces of Astronaut Food from this cooler."/>
+    <property name="page" value="Astronaut Food"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
