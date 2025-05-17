@@ -1,20 +1,1058 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="272" height="229" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="272" height="229" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="151">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Hotland map">
   <image source="images/Hotland.png" width="8690" height="7320"/>
  </imagelayer>
- <objectgroup id="14" name="sublocations"/>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="boxes"/>
- <objectgroup id="6" name="puzzles"/>
- <objectgroup id="7" name="saves"/>
- <objectgroup id="8" name="calls"/>
- <objectgroup id="9" name="npcs"/>
- <objectgroup id="10" name="signs"/>
- <objectgroup id="11" name="items"/>
- <objectgroup id="13" name="enemies"/>
+ <objectgroup id="14" name="sublocations">
+  <object id="7" name="Lab" x="2097.15" y="6817.75">
+   <properties>
+    <property name="description" value="[[Alphys]]'s Lab. Both she and [[Mettaton]] make their first appearances here, but on the [[Genocide Route]], only Mettaton makes an appearance. Contains a secret entrance to the [[True Lab]]."/>
+    <property name="page" value="Lab"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" x="4216.94" y="4542.55">
+   <properties>
+    <property name="color" type="color" value="#ffef9968"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-0.0383935,-1.61253 370.588,-1.62967"/>
+  </object>
+  <object id="55" x="4828.85" y="3975.44">
+   <properties>
+    <property name="color" type="color" value="#ffb55515"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="1.41347,0.0314105 1.44891,169.522"/>
+  </object>
+  <object id="56" x="6981.79" y="3682.42">
+   <properties>
+    <property name="color" type="color" value="#ffa797aa"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-578.232"/>
+  </object>
+  <object id="87" x="3691.54" y="2779.35">
+   <properties>
+    <property name="color" type="color" value="#ff932111"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-4.4463,-0.0673682 -4.50714,-282.029 36.6796,-281.647"/>
+  </object>
+  <object id="91" x="3781.99" y="1945.99">
+   <properties>
+    <property name="color" type="color" value="#ffa797aa"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-1.6252,0.0266426 -1.57872,-359.208"/>
+  </object>
+  <object id="128" name="MTT Resort" x="7549.81" y="322.697">
+   <properties>
+    <property name="description" value="Hotel owned by [[Mettaton]]. On the [[Genocide Route]], the resort is evacuated, and no NPCs are present. It directly connects to the [[CORE]]."/>
+    <property name="page" value="MTT Resort"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" x="8148.35" y="313.318">
+   <properties>
+    <property name="color" type="color" value="#ffa64a00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-72.9113,37.6224 -72.9726,-41.1795 -120.587,-41.0265 -120.467,-109.883"/>
+  </object>
+  <object id="146" name="Void beyond the wall" x="8327.52" y="434.516">
+   <properties>
+    <property name="color" type="color" value="#fffbcd79"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 161.53,0.32306"/>
+  </object>
+  <object id="147" x="6327.24" y="0" width="2363.9" height="987.138">
+   <properties>
+    <property name="border" type="color" value="#ffeb6963"/>
+   </properties>
+  </object>
+  <object id="149" x="1439.89" y="6598.99" width="1101.1" height="481.278">
+   <properties>
+    <property name="border" type="color" value="#ffdcffba"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="1" name="Third Undyne chase colclusion" x="576.041" y="6943.07">
+   <properties>
+    <property name="description" value="[[Undyne]] chases the protagonist into Hotland, where she collapses due to excessive heat. The protagonist can pour water on her from the nearby water cooler, which allows her to be befriended at [[Undyne's House|her house]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Water cooler" x="729.923" y="6884.46">
+   <properties>
+    <property name="description" value="The protagonist can grab a cup of water from the cooler, which evaporates when the protagonist leaves the room. They can dump out the water onto the ground next to the cooler, which forms a puddle that grows in size as more water is dumped out. At the end of the [[True Pacifist Route]], a small tree groes from the puddle if all the water has been dumped out."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="First Mettaton encounter (Neutral Route)" x="2213.99" y="6909.65">
+   <properties>
+    <property name="description" value="[[Mettaton]] bursts through the wall and subjects the protagonist to a quiz show, during which [[Alphys]] helps them answer his questions."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="First Mettaton encounter (Genocide Route)" x="2122.5" y="6983.35">
+   <properties>
+    <property name="description" value="[[Mettaton]] is present in the lab. He explains that [[Alphys]] had already evacuated everyone in Hotland to a safe location prior to the protagonist's arrival. He retreats shortly afterward and is only seen again in the [[CORE]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Video feed" x="1828.33" y="6895.8">
+   <properties>
+    <property name="description" value="A video feed of the protagonist's location. It tracks the protagonist's movements."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Alphys" x="2214.12" y="6973.01">
+   <properties>
+    <property name="description" value="Alphys upgrades the protagonist's phone to include [[Dimensional Box]] functionalities and adds a second box for the protagonist to use. She then retreats into her &quot;bathroom.&quot;"/>
+    <property name="page" value="Alphys"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Entrance to True Lab" x="2339.93" y="6910.81">
+   <properties>
+    <property name="description" value="Initiially disguised as a bathroom, this door reveals an elevator that leads down into the True Lab. It can only be opened on the [[True Pacifist Route]]."/>
+    <property name="page" value="True Lab"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Befriending Alphys" x="1342.11" y="6957.46">
+   <properties>
+    <property name="description" value="After delivering [[Undyne's Letter]] to the [[Lab]] door, [[Alphys]] initiates a date with the protagonist. The date concludes in the [[Garbage Dump]], after which the Lab door unlocks."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Second Mettaton encounter (Neutral Route)" x="5665.41" y="3841.77">
+   <properties>
+    <property name="description" value="[[Mettaton]] subjects the protagonist to a cooking show and asks them to retrieve sugar, milk, and eggs from the counter behind him. He then directs the protagonist to the can on the counter to the right, which rockets upwards. [[Alphys]] activates the jetpack on the protagonist's phone, allowing them to attempt to claim it while Mettaton impedes their progress."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Genocide Route floor blockage" x="6900.71" y="3125">
+   <properties>
+    <property name="description" value="On the [[Genocide Route]], the second floor of Hotland is blocked off by force fields, preventing access."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Hidden path to the Art Club Room" x="5909.23" y="3061.32">
+   <properties>
+    <property name="description" value="An invisible pathway to the [[Art Club Room]], made of tiles of magic glass."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Third Mettaton encounter (Neutral Route)" x="4186.84" y="2460.11">
+   <properties>
+    <property name="description" value="[[Mettaton]] conducts a news report of the area and asks the protagonist to report on one of six available objects. He then reveals that every object was a bomb and tasks the protagonist with defusing them all before the time runs out. [[Alphys]] points out the bomb defusal program on their phone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Fourth Mettaton encounter (Neutral Route)" x="7262.07" y="957.578">
+   <properties>
+    <property name="description" value="[[Mettaton]] performs a musical for the protagonist and dropes them down into the room containing the [[Multicolor Tile Puzzle]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Mettaton's dungeon" x="6428.24" y="1272.6">
+   <properties>
+    <property name="description" value="[[Mettaton]] tasks the protagonist with completing the [[Multicolor Tile Puzzle]] before the time runs out, after which he launches an attack. [[Alphys]] tells the protagonist to press the [[SOUL Modes#Yellow|yellow button]] on their phone, which allows them to counterattack and force Mettaton to retreat."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Sans" x="7472.48" y="824.756">
+   <properties>
+    <property name="description" value="[[Sans]] offers to take the protagonist to the restaurant inside the [[MTT Resort]]. He leads them through a &quot;shortcut,&quot; which teleports them straight there."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Entrance to the CORE" x="7549.87" y="113.166">
+   <properties>
+    <property name="description" value="Entrance to the CORE, which leads directly to [[New Home]]."/>
+    <property name="page" value="CORE"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="Hotel door 2" x="8075.69" y="358">
+   <properties>
+    <property name="description" value="This door can be unlocked by speaking to the Hand Receptionist and paying for a room to stay in."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="Genocide Route floor blockage" x="3888.14" y="2116.91">
+   <properties>
+    <property name="description" value="On the [[Genocide Route]], the second floor of Hotland is blocked off by force fields, preventing access."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors">
+  <object id="60" name="Sans" x="6612.52" y="3069.52">
+   <properties>
+    <property name="description" value="Sells hot dogs for 30G. The second hot dog bought is revealed to be a Hot Cat. If the protagonist has a full inventory, Sans stacks up to 30 hot dogs on their head free of charge."/>
+    <property name="page" value="Hot Dog...?"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Spider Donut" x="4260.42" y="1588.19">
+   <properties>
+    <property name="description" value="The protagonist can buy a Spider Donut for 9999G."/>
+    <property name="page" value="Spider Donut"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Spider Cider" x="4310.03" y="1580.76">
+   <properties>
+    <property name="description" value="The protagonist can buy a Spider Cider for 9999G."/>
+    <property name="page" value="Spider Cider"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Nice Cream Guy" x="7495.96" y="1085.15">
+   <properties>
+    <property name="description" value="Sells [[Nice Cream]] for 12G if the [[Royal Guards]] were killed. If they were spared, they will have bought out his entire stock, preventing the protagonist from buying any Nice Cream."/>
+    <property name="page" value="Nice Cream Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Bratty and Catty" x="7730.09" y="637.233">
+   <properties>
+    <property name="description" value="The protagonist can buy items from the shop inside the alleyway."/>
+    <property name="page" value="Bratty and Catty"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Burgerpants" x="7629.75" y="251.363">
+   <properties>
+    <property name="description" value="The protagonist can buy items inside the MTT Brand Burger Emporium."/>
+    <property name="page" value="Burgerpants"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="boxes">
+  <object id="125" name="Dimensional Box" x="7630.08" y="518.857">
+   <properties>
+    <property name="description" value="A Dimensional Box inside the [[MTT Resort]], only available on the [[Genocide Route]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="35" name="Reactivated Door Puzzle 1" x="4829.8" y="4246.26">
+   <properties>
+    <property name="description" value="The protagonist must unlock this door by solving the puzzles to the left and right. To solve the puzzles, the protagonist must maneuver the boxes so that they can shoot the opposing ship. Here, the protagonist is given two rounds of ammunition for each puzzle. On the [[Genocide Route]], this door is already open."/>
+    <property name="page" value="Hotland/Puzzles#Reactivated Door Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Left shooting puzzle" x="4399.42" y="4148">
+   <properties>
+    <property name="description" value="Can be solved by entering ''up'', ''left'', ''down'', and ''left''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Right shooting puzzle" x="5279.25" y="4148">
+   <properties>
+    <property name="description" value="Can be solved by entering either ''up'' or ''down'', then ''left'' or ''right''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Conveyor Belt Puzzle" x="5284.96" y="3047">
+   <properties>
+    <property name="description" value="To deactivate the force field, the protagonist must press the three switches within three seconds. If the protagonist misses the timing, they must ride the conveyor belt back to the beginning and start again."/>
+    <property name="page" value="Hotland/Puzzles#The Conveyor Belt Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Vent Puzzle" x="4650.1" y="3110.89">
+   <properties>
+    <property name="description" value="The protagonist must navigate the puzzle by pressing the buttons to reorient the vents."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Solution to Vent Puzzle" x="4750.52" y="3010.91">
+   <properties>
+    <property name="color" type="color" value="#ffbae9e9"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-0.118713,-1.42455 -100.463,-1.12041 -99.7162,199.059 -193.293,199.107 -193.587,95.9645 -200.456,95.9815 -199.936,199.11 -208.396,199.11 -207.55,-5.88415 -305.124,-5.9755"/>
+  </object>
+  <object id="99" name="Reactivated Door Puzzle 2" x="5231.09" y="1448.13">
+   <properties>
+    <property name="description" value="The protagonist must solve the puzzles to the north and south in order to unlock this door. They are given only one round of ammunition for each puzzle. On the [[Genocide Route]], this door is already open."/>
+    <property name="page" value="Hotland/Puzzles#Reactivated Door Puzzle_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="Top route" x="4582.93" y="1608.9">
+   <properties>
+    <property name="color" type="color" value="#ffff0133"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,-9.4506 76.5085,-8.62645 75.1141,-97.0403 186.14,-96.2681 186.189,70.9091 237.424,71.1904 236.937,0.327252 329.492,0.892644 329.473,-158.55 246.762,-158.56 246.686,-244.596"/>
+  </object>
+  <object id="101" name="Bottom route" x="4582.81" y="1617.88">
+   <properties>
+    <property name="color" type="color" value="#ff85cefa"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 100.349,0.992743 100.138,-93.1167 161.69,-93.1114 162.412,80.4721 329.091,80.8837 329.112,152.875 246.259,152.128 247.006,255.383"/>
+  </object>
+  <object id="105" name="Bottom shooting puzzle" x="5559.64" y="1868.99">
+   <properties>
+    <property name="description" value="The protagonist can solve this puzzle by entering ''left'', ''up'', ''left'', ''left'', ''right''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Top shooting puzzle" x="4829.67" y="887.809">
+   <properties>
+    <property name="description" value="The protagonist can solve this puzzle by entering ''left'', ''right''."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="saves">
+  <object id="4" name="Hotland - Laboratory Entrance" x="1050.1" y="6968.49">
+   <properties>
+    <property name="description">Seeing such a strange laboratory in a place like this...
+You're filled with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Hotland - Magma Chamber" x="2969.87" y="4947.95">
+   <properties>
+    <property name="description" value="''The whooshing sound of steam and cogs... it fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Hotland - Core View" x="6249.9" y="3829.5">
+   <properties>
+    <property name="description">An [[CORE|ominous structure]] looms in the distance...
+You're filled with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Hotland - Bad Opinion Zone" x="4016" y="2981.07">
+   <properties>
+    <property name="description">Knowing the mouse might one day hack the computerized safe and get the cheese...
+It fills you with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="Hotland - Spider Entrance" x="5310.09" y="1148.51">
+   <properties>
+    <property name="description">The smell of cobwebs fills the air...
+You're filled with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Hotland - Hotel Lobby" x="7549.88" y="456.86">
+   <properties>
+    <property name="description" value="''The relaxing atmosphere of this hotel... it fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="calls">
+  <object id="16" name="UnderNet status update 1" x="2724.71" y="6979.24">
+   <properties>
+    <property name="description">ALPHYS updated status.
+just realized i didn't watch [[undyne]] fight the human v.v</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="UnderNet status update 2" x="2918.72" y="6977.65">
+   <properties>
+    <property name="description">ALPHYS updated status.
+well i know she's unbeatable i'll ask her abt it later ^.^</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="UnderNet status update 3" x="2960.01" y="6899.59">
+   <properties>
+    <property name="description">ALPHYS updated status.
+for now i gotta call up the human and guide them =^.^=</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="UnderNet status update 4" x="2959.71" y="6058.29">
+   <properties>
+    <property name="description">ALPHYS updated status.
+gonna call them in a minute!!! =^.^=</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="UnderNet status update 5" x="3094.87" y="4969.36">
+   <properties>
+    <property name="description">ALPHYS updated status.
+I HATE USING THE PHONE I DON'T WANT TO DO THIS LMAO ^.^</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="UnderNet status update 6" x="3432.23" y="4755.12">
+   <properties>
+    <property name="description">ALPHYS updated status.
+omg ive had my claw over the last digit for 5 minutes
+omg i'm just gonna do it
+i'm just gonna call!!!!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Phone call 1" x="3228.41" y="4727.92">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and immediately hangs up before they can answer it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Phone call 2" x="3232.94" y="4544.04">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and teaches the protagonist about how to avoid the [[Attack Types#Light Blue Attack|blue]] and [[Attack Types#Orange Attack|orange]] lasers."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="UnderNet status update 7" x="3272.97" y="4543.85">
+   <properties>
+    <property name="description">ALPHYS updated status.
+OMG I DID IT!!!
+claws haven't shook like that since [[undyne]] called me to ask about the weather... v.v</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="UnderNet status update 8" x="3433.22" y="4543.14">
+   <properties>
+    <property name="description">ALPHYS updated status.
+WAIT THERE'S NO WEATHER DOWN HERE WHY DID SHE CALL ME</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="UnderNet status update 9" x="4670.97" y="4539">
+   <properties>
+    <property name="description">ALPHYS updated status.
+Oh My God i Forgot to Tell THem Where To Go</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="UnderNet status update 10" x="4712.39" y="4539">
+   <properties>
+    <property name="description">ALPHYS posted a picture.
+CUte PIC OF ME RIGHT NOW ^.^
+
+(It's a photo of a garbage can with several pink, glittery filters over it.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Phone call 3" x="4828.89" y="4388.82">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and warns them of the upcoming puzzles. She directs them to the puzzle on the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Phone call 4" x="4527.95" y="4350.11">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and notes the blue laser in their way. She deactivates the laser, which allows the protagonist to complete the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="UnderNet status update 11" x="5243.19" y="4349.57">
+   <properties>
+    <property name="description">ALPHYS updated status.
+wonder if it would be unfun if i explained the puzzle...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="UnderNet status update 12" x="4829.83" y="3948.24">
+   <properties>
+    <property name="description">ALPHYS updated status.
+whatever!!! i'll just explain it!!!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Phone call 5" x="4828.65" y="3885.02">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and attempts to explain the puzzle, only to realize that they had already solved it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Phone call 6" x="6320.78" y="3845.2">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and explains that the structure in the distance is the [[CORE]], and it contains an elevator that leads straight to [[New Home]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="UnderNet status update 13" x="6313.57" y="3125">
+   <properties>
+    <property name="description">ALPHYS posted a picture.
+dinner with the girlfriend ;)
+
+(It's a picture of a catgirl figurine next to a bowl of instant noodles.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="UnderNet status update 14" x="6187.94" y="3125">
+   <properties>
+    <property name="description">CoolSkeleton95 posted a picture.
+ARE WE POSTING HOT &quot;PICS???&quot; HERE IS ME AND MY COOL FRIEND
+
+(It's a picture of [[Papyrus]] flexing in front of a mirror. He is wearing sunglasses.)
+(Giant muscular biceps are pasted onto his arms.)
+(The biceps are also wearing sunglasses.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="UnderNet status update 15" x="6094.88" y="3125">
+   <properties>
+    <property name="description">ALPHYS updated status.
+LOL, CoolSkeleton95! ... that's a joke, right?</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="UnderNet status update 16" x="6001.83" y="3125">
+   <properties>
+    <property name="description">CoolSkeleton95 updated status.
+THE ONLY JOKE HERE, IS HOW STRONG MY MUSCLES ARE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="UnderNet friend request" x="5908.59" y="3247.38">
+   <properties>
+    <property name="description" value="NAPSTABLOOK22 sends a friend request to the protagonist, but it is immediately withdrawn before they can accept or reject it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Phone call 7" x="5470.28" y="3090.57">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and explains the timing-based puzzle. She offers to help the protagonist with the timing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Phone call 8" x="5198.99" y="3047">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist as they attempt to press the last switch, causing them to miss the timing. Alphys manually deactivates the force field blocking the way."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="UnderNet status update 17" x="4749.07" y="3106.52">
+   <properties>
+    <property name="description">ALPHYS updated status.
+that's the last time i try to help with a puzzle lmao</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Phone call 9" x="4748.11" y="3057.23">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and announces that she has to use the bathroom. She leaves the protagonist to solve the upcoming puzzle without assistance."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="UnderNet status update 18" x="4120.39" y="3007">
+   <properties>
+    <property name="description">ALPHYS updated status.
+OMG? ppl think Mew Mew 2 is better than Mew Mew 1?
+LOLLLLL that's a joke right...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="UnderNet status update 19" x="3892.68" y="3007">
+   <properties>
+    <property name="description">ALPHYS updated status.
+omg... DONT THEY GET IT RUINS Mew Mew's ENTIRE CHARACTER ARC</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="UnderNet status update 20" x="3827.9" y="3007">
+   <properties>
+    <property name="description">ALPHYS updated status.
+My Mew Mew 2 Review:
+Mew Mew Kissie Cutie 2 Is Neither Kissy Nor Cutie. It's Trash. 0 stars</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="UnderNet status update 21" x="3231.39" y="2875.52">
+   <properties>
+    <property name="description">ALPHYS updated status.
+oopswait how's the human doing</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="UnderNet status update 22" x="3328.46" y="2778.82">
+   <properties>
+    <property name="description">ALPHYS updated status.
+Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Phone call 10" x="4273.93" y="2110.61">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and notes their silence. She assumes that they are worried about [[Asgore Dreemurr|Asgore]] and reassure them that he is a nice person."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Phone call 11" x="4551.08" y="1608.77">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and informs them of the puzzles to the north and south. She invites them to send her a message on UnderNet before realizing that the protagonist had been reading her messages since their phone was upgraded."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="Phone call 12" x="5494.42" y="2135.06">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and asks them if they would want to watch anime with her."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="npcs">
+  <object id="2" name="Clam Guy" x="739.437" y="6947.84">
+   <properties>
+    <property name="description" value="Appears the second time the protagonist enters this room. He explains how he wanted to get a drink from the water cooler."/>
+    <property name="page" value="Hotland/NPCs#Clam Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="River Person" x="1033.58" y="7194.51">
+   <properties>
+    <property name="description" value="Can ferry the protagonist to either [[Snowdin]] or [[Waterfall]]."/>
+    <property name="page" value="River Person"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Royal Guards" x="1049.7" y="6874.4">
+   <properties>
+    <property name="description" value="The Royal Guards initially block the way to elevator L1. They explain that they are on watch for any humans that enter the area."/>
+    <property name="page" value="Royal Guards"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Mettaton EX" x="2095.46" y="6692.34">
+   <properties>
+    <property name="description" value="[[Mettaton EX]]'s body can be seen on the [[True Pacifist Route]] undergoing repairs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Vulkin" x="3009.81" y="5896.72">
+   <properties>
+    <property name="description" value="A [[Vulkin]] appears after receiving [[Undyne's Letter]]. They comment on how the protagonist's hugs make them feel &quot;spicey.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Pyrope" x="3781.7" y="5154.12">
+   <properties>
+    <property name="description" value="A [[Pyrope]] appears here after receiving [[Undyne's Letter]]. They claim to have set the lava on fire and comment that it is now &quot;spicey.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Fuku Fire" x="4298.14" y="4359.16">
+   <properties>
+    <property name="description" value="Is seen loitering behind the laser. She says that she will continue loitering despite the laser being deactivated."/>
+    <property name="page" value="Hotland/NPCs#Fuku Fire"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Skateboard Girl" x="4301.1" y="4297.46">
+   <properties>
+    <property name="description" value="Is seen loitering behind the laser. Expresses relief at the possibility that school would be canceled due to the reactivated puzzles before realizing that school is on break anyway."/>
+    <property name="page" value="Hotland/NPCs#Skateboard Girl"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Business Dude" x="5258.73" y="4395.82">
+   <properties>
+    <property name="description" value="Says that they are watching [[Mettaton]]'s show due to the way to work being blocked."/>
+    <property name="page" value="Hotland/NPCs#Business Dudes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Business Dude" x="5314.74" y="4395.82">
+   <properties>
+    <property name="description" value="Explains that they are a member of [[Mettaton]]'s fan club, which has at least three dozen members."/>
+    <property name="page" value="Hotland/NPCs#Business Dudes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Fox Head" x="5357.23" y="4162.73">
+   <properties>
+    <property name="description" value="Struggles to complete the puzzle and complains that their co-workers are doing nothing to help."/>
+    <property name="page" value="Hotland/NPCs#Fox Head"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Gaster Follower 1" x="7053.77" y="3824.13">
+   <properties>
+    <property name="description" value="Has a 20% chance of appearing if the [[Fun Value]] is 61. Mentions how [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], suddenly vanished without a trace, shattering across time and space. They claim to be holding a piece of him and abruptly vanish."/>
+    <property name="page" value="Hotland/NPCs#Gaster Follower 2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Heats Flamesman" x="7067.01" y="3132.05">
+   <properties>
+    <property name="description" value="Asks the protagonist to remember their name."/>
+    <property name="page" value="Hotland/NPCs#Heats Flamesman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Hot Dog Harpy" x="6709.03" y="3064.74">
+   <properties>
+    <property name="description" value="Notes the oddity of snow on the sentry station roof, but writes it off as [[Sans]] being too lazy to clean it off."/>
+    <property name="page" value="Hotland/NPCs#Hot Dog Harpy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Hot Dog Vulkin" x="6634.67" y="3146.59">
+   <properties>
+    <property name="description" value="Is eagerly enjoying its hot dog."/>
+    <property name="page" value="Hotland/NPCs#Hot Dog Vulkin"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="So Sorry" x="5969.86" y="3082.62">
+   <properties>
+    <property name="description" value="Appears at the end of the [[True Pacifist Route]] if they were fought."/>
+    <property name="page" value="So Sorry"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Tsunderplane" x="5849.11" y="3089.54">
+   <properties>
+    <property name="description" value="A [[Tsunderplane]] appears here after receiving [[Undyne's Letter]]. Invites the protagonist to stand closer after initially rebuffing them, referring to the action as &quot;spicey.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Pyrope" x="3231.79" y="2728.34">
+   <properties>
+    <property name="description" value="A [[Pyrope]] appears here after receiving [[Undyne's Letter]]. They invite the protagonist to hang out before claiming that they are too &quot;spicey&quot; to have any friends."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Gaster Follower 3" x="3877.25" y="2055.14">
+   <properties>
+    <property name="description" value="Has a 50% chance of appearing if the [[Fun Value]] is 63. They mention that the life of [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], was cut short after his experiments went wrong. They then stop talking after implying that he is listening."/>
+    <property name="page" value="Hotland/NPCs#Gaster Follower 3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Gaster Follower 1" x="3873.41" y="1566.53">
+   <properties>
+    <property name="description" value="Has a 50% chance to appear if the [[Fun Value]] is 61. Mentions how [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], was responsible for constructing the [[CORE]], but his life was cut short after falling into his creation."/>
+    <property name="page" value="Hotland/NPCs#Gaster Follower 1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="Muffet" x="4160.71" y="1566.65">
+   <properties>
+    <property name="description" value="Hosts the [[Spider Bake Sale]] in Hotland."/>
+    <property name="page" value="Muffet"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Scared Donut Guy" x="4291.61" y="1614.03">
+   <properties>
+    <property name="description" value="They were scammed into buying a donut for all of their cash."/>
+    <property name="page" value="Hotland/NPCs#Scared Donut Guy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Tsunderplane" x="5464.22" y="2099.51">
+   <properties>
+    <property name="description" value="A [[Tsunderplane]] appears here after receiving [[Undyne's Letter]]. Accuses the protagonist of following it before also accusing them of thinking that it is not &quot;spicey&quot; enough for them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Diamond Boy" x="4749.9" y="1151">
+   <properties>
+    <property name="description" value="Appears after clearing the top shooting puzzle. He provides a hint on how to gain ratings during the battle against [[Mettaton EX]]: &quot;when everything looks the baddest, he poses dramatically.&quot;"/>
+    <property name="page" value="Hotland/NPCs#Diamond Boys"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Diamond Boy" x="4905.49" y="1151">
+   <properties>
+    <property name="description" value="Appears after clearing the top shooting puzzle. He provides a hint on how to gain ratings during the battle against [[Mettaton EX]]: &quot;beats up the heel-turning villains.&quot;"/>
+    <property name="page" value="Hotland/NPCs#Diamond Boys"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Dress Lion" x="6886.63" y="1145.7">
+   <properties>
+    <property name="description" value="Appears after [[Mettaton]]'s musical. They wish to have a dress like Mettaton's. Mettaton gives them his dress at the end of the [[True Pacifist Route]]."/>
+    <property name="page" value="Hotland/NPCs#Dress Lion"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Vulkin" x="6388.98" y="1386.73">
+   <properties>
+    <property name="description" value="A [[Vulkin]] appears here after receiving [[Undyne's Letter]]. They comment on how the protagonist's encouragements make them feel &quot;spicey.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Solution to Multicolor Tile Puzzle" x="6629.06" y="1390.36">
+   <properties>
+    <property name="color" type="color" value="#ff832c42"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 20.8977,0.00669278 20.8178,-21.6921 80.0149,-21.8222 80.0918,-1.15304 121.14,-1.58154 121.223,19.967 242.349,20.0327 242.075,-22.6681 282.551,-22.5314 282.927,19.99 321.62,19.9961 321.389,-1.03107 361.452,-0.989903 361.674,-22.3297 380.95,-22.3881 380.982,19.9581 421.178,19.9945 420.765,-21.0928 442.196,-21.1456 442.438,19.4449 495.29,19.3497 495.145,-25.713 505.415,-25.7156 505.344,19.4977 561.369,19.9123 560.949,-20.678 641.853,-20.4162 641.712,-40.9591 681.226,-40.5995 681.721,20.0177 721.469,19.977 721.027,-40.9919 763.511,-40.8961 763.476,20.0464 811.423,20.0639"/>
+  </object>
+  <object id="119" name="Royal Guards" x="7619.95" y="1090.43">
+   <properties>
+    <property name="description" value="The [[Royal Guards]] appear here if they were spared, having bought out the [[Nice Cream Guy]]'s entire stock of [[Nice Cream]]. They ask the protagonist not to tell [[Undyne]] whet they are doing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Heats Flamesman" x="8068.13" y="1163.72">
+   <properties>
+    <property name="description" value="Asks the protagonist if they remembered their name. They express shock regardless of the protagonist's answer."/>
+    <property name="page" value="Hotland/NPCs#Heats Flamesman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Diamond Receptionist" x="7592.56" y="503.181">
+   <properties>
+    <property name="description" value="Welcomes the protagonist to the [[MTT Resort]]."/>
+    <property name="page" value="MTT Resort/NPCs#Diamond Receptionist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Business Manticore" x="7738.35" y="319.258">
+   <properties>
+    <property name="description" value="Explains that the elevator to the capital has stopped working and that the resort is trying to accomodate everyone trying to access it."/>
+    <property name="page" value="MTT Resort/NPCs#Business Manticore"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Sad Dragon" x="7706.75" y="298.071">
+   <properties>
+    <property name="description" value="Is calling their family to let them know that they will not be getting home in time since the elevator is out of order."/>
+    <property name="page" value="MTT Resort/NPCs#Sad Dragon"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Shambling Mass" x="7774.41" y="285">
+   <properties>
+    <property name="description" value="Expresses outrage that the elevator is out of order."/>
+    <property name="page" value="MTT Resort/NPCs#Shambling Mass"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Hand Receptionist" x="7463.88" y="231.83">
+   <properties>
+    <property name="description" value="Offers a stay at the hotel for 200G."/>
+    <property name="page" value="MTT Resort/NPCs#Hand Receptionist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Fish Receptionist" x="7176.4" y="326.337">
+   <properties>
+    <property name="description" value="Informs the protagonist that they have to reserve a table to eat at the restaurant."/>
+    <property name="page" value="MTT Resort/NPCs#Fish Receptionist"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Snowdrake's Father" x="6984.77" y="312.041">
+   <properties>
+    <property name="description" value="The father of [[Snowdrake]] and a comedian at the [[MTT Resort]]. He explains that since Snowdrake ran away from home after [[Snowdrake's Mother|his mother]] fell down."/>
+    <property name="page" value="MTT Resort/NPCs#Snowdrake's Father"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Charles" x="6960.3" y="386.911">
+   <properties>
+    <property name="description" value="Explains that the [[CORE]] is made up of freely swappable parts, allowing them to change the layout as necessary."/>
+    <property name="page" value="MTT Resort/NPCs#Charles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Oni" x="6875.19" y="376.851">
+   <properties>
+    <property name="description" value="Complains about the excess of puzzles in the [[Underground]], a tradition originating from when [[monsters]] would construct puzzles to deter attacks from [[humans]]."/>
+    <property name="page" value="MTT Resort/NPCs#Oni"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Ficus Licker" x="6439.09" y="443.269">
+   <properties>
+    <property name="description" value="They forgot to make a reservation to the restaurant, so they stand in the corner licking the nearby ficus so as to not look like they messed up."/>
+    <property name="page" value="MTT Resort/NPCs#Ficus Licker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="MTT Resort Janitor" x="8270.79" y="373.146">
+   <properties>
+    <property name="description" value="Is constantly cleaning off the slime drooping from their body."/>
+    <property name="page" value="MTT Resort/NPCs#MTT Resort Janitor"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="signs">
+  <object id="39" name="Note" x="4459.17" y="4149.42">
+   <properties>
+    <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Note" x="5219.31" y="4148.11">
+   <properties>
+    <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Art Club Room sign" x="5909.65" y="2860.97">
+   <properties>
+    <property name="description" value="''Art Club: Meet Here! Next meeting: October 10th 8PM''"/>
+    <property name="page" value="Art Club Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Sign" x="4219.42" y="1585.22">
+   <properties>
+    <property name="description">Spider Bake Sale
+All proceeds go to real spiders.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="Spider Bake Sale"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Note" x="5599.52" y="1868.85">
+   <properties>
+    <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Note" x="4889.19" y="888.797">
+   <properties>
+    <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Note" x="7599.55" y="888.438">
+   <properties>
+    <property name="description">Hey!
+Go up the creepy alleyway on the right for some great deals!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Sign" x="8496.06" y="424.951">
+   <properties>
+    <property name="description">Learning how to draw? Come to the [[Art Club Room|Art Lessons]] on the second floor!
+Located in a similar place.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Inscription on the fountain" x="7549.11" y="432.025">
+   <properties>
+    <property name="description">Royal Memorial Fountain
+Built 201X
+([[Mettaton]] Added Last Week)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="items">
+  <object id="8" name="Instant Noodles" x="2037.82" y="6920.86">
+   <properties>
+    <property name="description" value="The protagonist can grab a package of Instant Noodles from the fridge."/>
+    <property name="page" value="Instant Noodles"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Burnt Pan" x="3481.28" y="5197.17">
+   <properties>
+    <property name="description" value="The protagonist can pick up the Burnt Pan in this area."/>
+    <property name="page" value="Burnt Pan"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Stained Apron" x="5848.79" y="3351.36">
+   <properties>
+    <property name="description" value="The protagonist can pick up the Stained Apron in this area."/>
+    <property name="page" value="Stained Apron"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Hotel door 1" x="7999.5" y="358.001">
+   <properties>
+    <property name="description" value="The protagonist can trade a [[Sea Tea]] for 99G."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Hotel door 3" x="8149.71" y="358">
+   <properties>
+    <property name="description" value="The protagonist can trade a [[Cinnamon Bunny]] for 99G."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Hotel door 4" x="8223.65" y="358">
+   <properties>
+    <property name="description" value="The protagonist can trade a [[Hot Dog...?|Hot Dog]] for a [[Hush Puppy]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="enemies">
+  <object id="19" name="Vulkin" x="2920.3" y="6308.13">
+   <properties>
+    <property name="description" value="Scripted encounter against a Vulkin."/>
+    <property name="page" value="Vulkin"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Royal Guards (Genocide Route)" x="4837.51" y="3856.65">
+   <properties>
+    <property name="description" value="Miniboss battle against the Royal Guards on the [[Genocide Route]]."/>
+    <property name="page" value="Royal Guards"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Royal Guards (Neutral Route)" x="3406.81" y="2999.21">
+   <properties>
+    <property name="description" value="Miniboss battle against the Royal Guards on the [[Neutral Route]]."/>
+    <property name="page" value="Royal Guards"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Muffet" x="6286.76" y="1191.68">
+   <properties>
+    <property name="description" value="Boss batle against Muffet. Does not fight if the protagonist donated enough money to the [[Spider Bake Sale]]s."/>
+    <property name="page" value="Muffet/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
