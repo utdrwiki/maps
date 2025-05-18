@@ -1,17 +1,409 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="54">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="New Home map">
   <image source="images/New Home.png" width="6750" height="4630"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="boxes"/>
- <objectgroup id="5" name="sublocations"/>
- <objectgroup id="6" name="saves"/>
+ <objectgroup id="5" name="sublocations">
+  <object id="8" name="Asgore's Home" x="1679.3" y="2872">
+   <properties>
+    <property name="description" value="Asgore's home. The story of [[Asriel Dreemurr|Asriel]] and [[Chara|the first human]] ([[Neutral Route]]) and [[Flowey]]'s story ([[Genocide Route]]) begin here."/>
+    <property name="page" value="Asgore's Home"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" x="1199.38" y="2452.16" width="1444.09" height="480.376">
+   <properties>
+    <property name="border" type="color" value="#fff9f000"/>
+   </properties>
+  </object>
+  <object id="36" name="Last Corridor" x="5314.44" y="2266.59">
+   <properties>
+    <property name="description" value="A long corridor just before the Throne Room. [[Sans]] conducts his judgement here."/>
+    <property name="page" value="Last Corridor"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Barrier" x="6440.46" y="661.088">
+   <properties>
+    <property name="description" value="The magical seal trapping the monsters underneath [[Mount Ebott]]. It can only be destroyed with the power of seven human [[SOUL]]s."/>
+    <property name="page" value="Barrier"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Surface" x="6498.3" y="64.7564">
+   <properties>
+    <property name="description" value="The outside world, inhabited by [[humans]]. [[Monsters]] escape to the Surface at the end of the [[True Pacifist Route]]."/>
+    <property name="page" value="Surface"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" x="1722.71" y="2810.96">
+   <properties>
+    <property name="color" type="color" value="#ffed1c24"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -199.545,-0.116738 -199.498,-462.002 -61.0623,-462.15"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="2" name="Elevator to CORE" x="99.9227" y="4506.49">
+   <properties>
+    <property name="description" value="Elevator leading back down to the [[CORE]]. On the [[True Pacifist Route]], this elevator is blocked off by [[Flowey]]'s vines."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Elevator to Last Corridor" x="299.543" y="4290.39">
+   <properties>
+    <property name="description" value="Elevator leading to the entrance to the [[Last Corridor]]. It only becomes usable after reaching the other side."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Elevator to entrance" x="4840.15" y="2110.11">
+   <properties>
+    <property name="description" value="Elevator leading back to the start of New Home."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" x="301.044" y="4321.36">
+   <properties>
+    <property name="color" type="color" value="#ff8f8f8f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0582713,-2512.06 4540.27,-2512.06 4540.25,-2162.61"/>
+  </object>
+  <object id="16" name="The story of Asriel and the First Human, part 1" x="1293.26" y="2798.94">
+   <properties>
+    <property name="description">A long time ago, [[Chara|a human]] fell into the [[Ruins|RUINS]].
+Injured by its fall, the human called out for help.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="The story of Asriel and the First Human, part 2" x="1947.55" y="2864">
+   <properties>
+    <property name="description">[[Asriel Dreemurr|ASRIEL]], the king's son, heard [[Chara|the human]]'s call.
+He brought the human back to the castle.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="The story of Asriel and the First Human, part 3" x="2319.9" y="2864">
+   <properties>
+    <property name="description">Over time, [[Asriel Dreemurr|ASRIEL]] and [[Chara|the human]] became like siblings.
+The [[Asgore Dreemurr|King]] and [[Toriel|Queen]] treated the human child as their own.
+The [[underground]] was full of hope.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="The story of Asriel and the First Human, part 4" x="1710.5" y="2348">
+   <properties>
+    <property name="description">Then... One day...
+[[Chara|The human]] became very ill.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="The story of Asriel and the First Human, part 5" x="1955.47" y="2348">
+   <properties>
+    <property name="description">[[Chara|The sick human]] had only one request.
+To see the flowers from their village.
+But there was nothing we could do.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="The story of Asriel and the First Human, part 6" x="2149.38" y="2348">
+   <properties>
+    <property name="description">The next day.
+The next day.
+...
+[[Chara|The human]] died.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="The story of Asriel and the First Human, part 7" x="2399.93" y="2348">
+   <properties>
+    <property name="description">[[Asriel Dreemurr|ASRIEL]], wracked with grief, absorbed the human's [[SOUL]].
+He transformed into a being with incredible power.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="The story of Asriel and the First Human, part 8" x="2625.17" y="2348">
+   <properties>
+    <property name="description">With the human [[SOUL]], [[Asriel Dreemurr|ASRIEL]] crossed through the [[barrier]].
+He carried the human's body into the sunset.
+Back to the village of the humans.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="The story of Asriel and the First Human, part 9" x="2769.26" y="2142">
+   <properties>
+    <property name="description">[[Asriel Dreemurr|ASRIEL]] reached the center of the village.
+There, he found a bed of [[Golden Flowers|golden flowers]].
+He carried [[Chara|the human]] onto it.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="The story of Asriel and the First Human, part 10" x="3003.49" y="2142">
+   <properties>
+    <property name="description">Suddenly, screams rang out.
+The villagers saw [[Asriel Dreemurr|ASRIEL]] holding [[Chara|the human]]'s body.
+They thought that he had killed the child.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="The story of Asriel and the First Human, part 11" x="3236.13" y="2142">
+   <properties>
+    <property name="description">The humans attacked him with everything they had.
+He was struck with blow after blow.
+[[Asriel Dreemurr|ASRIEL]] had the power to destroy them all.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="The story of Asriel and the First Human, part 12" x="3434.87" y="2142">
+   <properties>
+    <property name="description">But...
+[[Asriel Dreemurr|ASRIEL]] did not fight back.
+Clutching [[Chara|the human]]...
+ASRIEL smiled, and walked away.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="The story of Asriel and the First Human, part 13" x="3655.76" y="2142">
+   <properties>
+    <property name="description">Wounded, [[Asriel Dreemurr|ASRIEL]] stumbled home.
+He entered the castle and collapsed.
+His dust spread across the garden.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="The story of Asriel and the First Human, part 14" x="3861.89" y="2142">
+   <properties>
+    <property name="description">The kingdom fell into despair.
+The [[Asgore Dreemurr|king]] and [[Toriel|queen]] had lost two children in one night.
+The humans had once again taken everything from us.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="The story of Asriel and the First Human, part 15" x="4076.03" y="2142">
+   <properties>
+    <property name="description">The [[Asgore Dreemurr|king]] decided it was time to end our suffering.
+Every human who falls down here must die.
+With enough [[SOUL|souls]], we can shatter the [[barrier]] forever.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="The story of Asriel and the First Human, part 16" x="4283.5" y="2142">
+   <properties>
+    <property name="description">It's not long now.
+[[Asgore Dreemurr|King ASGORE]] will let us go.
+King ASGORE will give us hope.
+King ASGORE will save us all.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="The story of Asriel and the First Human, part 17" x="4454.22" y="2142">
+   <properties>
+    <property name="description">You should be smiling, too.
+Aren't you excited?
+Aren't you happy?</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="The story of Asriel and the First Human, part 18" x="4619.2" y="2142">
+   <properties>
+    <property name="description" value="''You're going to be free.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Sans's judgement" x="5378.43" y="2369.58">
+   <properties>
+    <property name="description" value="[[Sans]] judges the protagonist based on their accumulated [[Stats#EXP|EXP]] and [[Stats#LOVE|LOVE]], revealing that they are acronyms for &quot;Execution Points&quot; and &quot;Level of Violence&quot; respectively. If the protagonist had gained no EXP and repeatedly reloads their [[SAVE]] after the judgement, Sans gives them the key to [[Papyrus and Sans's House#Sans's Room|his room]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Coffins" x="6388.54" y="2905.17">
+   <properties>
+    <property name="description" value="The coffins for the [[Eight Humans#seven fallen humans]] that came before the protagonist. The nearest one is labeled with the name of [[Chara|the first human]]. At the end of the [[True Pacifist Route]], they are open and empty."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Meeting Asgore" x="6028.6" y="1383.25">
+   <properties>
+    <property name="description" value="The protagonist first meets Asgore here as he is watering the [[Golden Flowers]]. On the [[Neutral Route]], he guides them to the [[Barrier]]."/>
+    <property name="page" value="Asgore Dreemurr"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="True Pacifist Route Epilogue" x="5982.97" y="962.624">
+   <properties>
+    <property name="description" value="At the end of the True Pacifist Route, The protagonist's friends gather here and celebrate the destruction of the [[Barrier]]."/>
+    <property name="page" value="True Pacifist Route#Epilogue"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Flowey's corpse" x="6439.78" y="444.3">
+   <properties>
+    <property name="description" value="After defeating [[Photoshop Flowey]], the protagonist is given the option to finish him off. If they kill him, his corpse is left behind, having turned back into a regular flower."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Neutral Route End" x="6440.68" y="286.419">
+   <properties>
+    <property name="description" value="The game ends after leaving the [[Underground]]. [[Sans]] calls the protagonist's phone and explains the state of the [[Underground]] after [[Asgore Dreemurr|Asgore]]'s death."/>
+    <property name="page" value="Neutral Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Genocide Route End" x="6032.14" y="1564.68">
+   <properties>
+    <property name="description" value="The protagonist approaches [[Asgore Dreemurr|Asgore]], who was warned by [[Flowey]] that they would be arriving soon. The protagonist forcibly engages in a battle against Asgore and depletes his HP in a single strike. Flowey finishes him off and begs for his life, but the protagonist kills him as well. [[Chara|The first human]] reveals themself, thanks the protagonist for bringing them back from death, and destroys the game world."/>
+    <property name="page" value="Genocide Route"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="True Pacifist Route End" x="6447.36" y="121.876">
+   <properties>
+    <property name="description" value="The protagonist and their friends watch the sunset. [[Asgore Dreemurr|Asgore]] asks the protagonist to act as the ambassador to the humans, which they can accept or decline. As their friends make their way down the mountain, [[Toriel]] asks the protagonist if they want to stay with her, altering the post-credits scene."/>
+    <property name="page" value="True Pacifist Route"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="boxes">
+  <object id="7" name="Dimensional Box" x="1749.96" y="3140.93">
+   <properties>
+    <property name="description" value="A Dimensional Box outside [[Asgore's Home]], only available on the [[Genocide Route]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Dimensional Box" x="4739.8" y="2381.28">
+   <properties>
+    <property name="description" value="A Dimensional Box in the [[Last Corridor]], only available on the [[Genocide Route]]."/>
+    <property name="page" value="Dimensional Box"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="saves">
+  <object id="1" name="Castle Elevator" x="429.81" y="4548.01">
+   <properties>
+    <property name="description" value="SAVE Point near the elevator."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="New Home" x="1680.02" y="3177.91">
+   <properties>
+    <property name="description" value="SAVE Point outside [[Asgore's Home]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Last Corridor" x="4689.25" y="2380.54">
+   <properties>
+    <property name="description" value="SAVE Point in the [[Last Corridor]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Throne Entrance" x="6109.74" y="1790.41">
+   <properties>
+    <property name="description" value="SAVE Point outside the Throne Room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Throne Room" x="6039.66" y="1191.19">
+   <properties>
+    <property name="description" value="SAVE Point in the Throne Room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="The End" x="6359.79" y="963.217">
+   <properties>
+    <property name="description" value="SAVE Point outside the [[Barrier]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="7" name="puzzles"/>
- <objectgroup id="8" name="signs"/>
- <objectgroup id="9" name="items"/>
- <objectgroup id="10" name="enemies"/>
+ <objectgroup id="8" name="signs">
+  <object id="9" name="Note on padlock chain" x="1774.45" y="2803.1">
+   <properties>
+    <property name="description">Howdy! I'm in the garden.
+If you have anything you need to get off your chest, please don't hesitate to come.
+The keys are in the kitchen and the hallway.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Note" x="1298.46" y="2583.12">
+   <properties>
+    <property name="description" value="''Howdy! Help yourself to anything you want!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Sign" x="5918.63" y="1760.95">
+   <properties>
+    <property name="description" value="''Throne Room''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="items">
+  <object id="10" name="Worn Dagger/Real Knife" x="1917" y="2631.64">
+   <properties>
+    <property name="description" value="The protagonist can open this present to reveal a [[Worn Dagger]] ([[Neutral Route]]) or the [[Real Knife]] ([[Genocide Route]])."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Heart Locket/The Locket" x="2005.39" y="2618.48">
+   <properties>
+    <property name="description" value="The protagonist can open this present to reveal a [[Heart Locket]] ([[Neutral Route]]) or [[The Locket]] ([[Genocide Route]])."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Key" x="2383.78" y="2814.8">
+   <properties>
+    <property name="description" value="A key in the hallway. It is used to unlock the chain blocking off the stairs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Key" x="1326.38" y="2579.91">
+   <properties>
+    <property name="description" value="A key in the kitchen. It is used to unlock the chain blocking off the stairs."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="enemies">
+  <object id="38" name="Sans (Genocide Route)" x="5502.4" y="2353.87">
+   <properties>
+    <property name="description" value="Boss battle against Sans on the [[Genocide Route]]."/>
+    <property name="page" value="Sans/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Asgore Dreemurr" x="6441.38" y="719.503">
+   <properties>
+    <property name="description" value="Boss battle against [[Asgore Dreemurr]]. On the [[Neutral Route]], [[Flowey]] finishes him off and absorbs the six human [[SOUL]]s, transforming into [[Photoshop Flowey]]. On the [[True Pacifist Route]], the protagonist's friends interrupt the battle, but Flowey absorbs the human SOULs as well as the SOULs of every monster in the [[Underground]], transforming into [[Asriel Dreemurr]]."/>
+    <property name="page" value="Asgore Dreemurr/In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
