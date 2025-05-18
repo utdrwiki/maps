@@ -1,16 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="138" height="87" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="138" height="87" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="51">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="3" name="CORE map">
   <image source="images/CORE.png" width="4410" height="2760"/>
  </imagelayer>
- <objectgroup id="4" name="plot"/>
- <objectgroup id="6" name="puzzles"/>
- <objectgroup id="7" name="saves"/>
- <objectgroup id="8" name="calls"/>
- <objectgroup id="10" name="signs"/>
- <objectgroup id="11" name="items"/>
- <objectgroup id="12" name="enemies"/>
+ <objectgroup id="14" name="sublocations">
+  <object id="49" x="1294.25" y="36.007" width="1468.07" height="1204.95">
+   <properties>
+    <property name="border" type="color" value="#fff4febe"/>
+   </properties>
+  </object>
+  <object id="50" name="CORE Branch" x="2089.38" y="782.052">
+   <properties>
+    <property name="description" value="A section of the CORE split into a 3x3 grid. The protagonist must nagivate this area in order to unlock the way to The End."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="plot">
+  <object id="1" name="CORE Approach" x="318.931" y="2656.18">
+   <properties>
+    <property name="description" value="The protagonist witness two black sausage NPCs retreating into the CORE. [[Alphys]] tells them that monsters are not supposed to inhabit the CORE."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Elevator to CORE End" x="319.84" y="1996.23">
+   <properties>
+    <property name="description" value="An elevator that leads to the end of the CORE. It is initially non-functional, only usable after reaching the other side. On the [[Genocide Route]], this elevator is functional, allowing the protagonist to bypass the rest of the CORE."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Elevator to lobby" x="3439.75" y="838.05">
+   <properties>
+    <property name="description" value="An elevator leading to the lobby of the CORE."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" x="319.972" y="1989.94">
+   <properties>
+    <property name="color" type="color" value="#ff2151a4"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0227496,-479.873 3250.39,-479.433 3250.26,-1211.63 3120.33,-1211.49 3120.34,-1108.78"/>
+  </object>
+  <object id="13" name="Switch" x="259.763" y="1320.41">
+   <properties>
+    <property name="description" value="Pressing this switch deactivates the force field but sends a group of lasers in the following order: ''blue'', ''blue'', ''orange''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Final Alphys conversation" x="3568.85" y="127.101">
+   <properties>
+    <property name="description" value="After evaluating [[Mettaton]]'s situation following his defeat, [[Alphys]] follows the protagonist as they make their way to the elevator."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Elevator to New Home" x="4289.98" y="95.0312">
+   <properties>
+    <property name="description" value="The elevator to New Home. After opening this elevator, [[Alphys]] reveals to the protagonist that they must kill [[Asgore Dreemurr|Asgore]] in order to return home."/>
+    <property name="page" value="New Home"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="29" name="Sage's Path" x="1469.05" y="849.075">
+   <properties>
+    <property name="description" value="The protagonist must solve a shooting puzzle to unlock the way to The End. They are given two rounds of ammunition for the puzzle. It can be solved by entering ''down'', ''left'', ''down'', ''left'', ''down'', ''left'', ''up'', ''right''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Force field" x="2531.47" y="877.537">
+   <properties>
+    <property name="description" value="The protagonist must clear either the Warrior's Path or the Sage's path to deactivate this force field. Alternatively, they can wait in front of it for a while, and it will disappear automatically."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="saves">
+  <object id="24" name="Hotland - Core Branch" x="2090.29" y="1110.58">
+   <properties>
+    <property name="description" value="''The air is filled with the smell of ozone... it fills you with determination.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Hotland - Core End" x="3484.78" y="873.706">
+   <properties>
+    <property name="description">Behind this door must be the elevator to the [[Asgore Dreemurr|King]]'s castle.
+You're filled with determination.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="calls">
+  <object id="2" name="Phone call 1" x="319.471" y="2119.59">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and directs them to the elevator. The protagonist can either check the elevator or enter one of the other rooms."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Phone call 2" x="319.841" y="2044.05">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and notes that the elevator is out of order. She then directs the protagonist to the left or right room depending on where they went first."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Phone call 3" x="480.952" y="1834.13">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and notes the flaming pit, which is not on her map."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Phone call 4" x="159.261" y="1836.77">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and warns them of a monster ambush. After the battle, she wonders why so many monster are present in the CORE."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Phone call 5" x="206.643" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and explains that they cannot progress unless they press the switch, which sends a group of lasers in a specific order. Alphys says the order is ''orange'', ''orange'', ''blue''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Phone call 6" x="559.229" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and notes that she stated the incorrect order of the lasers."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Phone call 7" x="755.985" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and directs the protagonist to the eastern path."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Phone call 8" x="929.981" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist. She changes her mind and directs them to the north."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Phone call 9" x="831.15" y="1198.49">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist after the monster ambush and asks if they are okay."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Phone call 10" x="1208.1" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and attempts to deactivate the lasers blocking the way. After failing to do so, she cuts off power for the entire room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Phone call 11" x="1595.72" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and tells them to stop moving. As she says that, the power suddenly turns back on. Alphys is unable to keep the power off, so she instructs the protagonist to only keep moving while the power is off ans stop once it turns back on."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Phone call 12" x="2073.84" y="1371">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and expresses relief that everything appears to be under control."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Phone call 13" x="2089.81" y="1163.85">
+   <properties>
+    <property name="description" value="[[Alphys]] calls the protagonist and is completely at a loss for how to guide them at this point, so she leaves them alone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="True Pacifist Route phone call" x="319.555" y="2603.72">
+   <properties>
+    <property name="description" value="On the [[True Pacifist Route]], [[Undyne]] calls the protagonist and asks them to deliver [[Undyne's Letter|a letter]] for her."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="npcs">
+  <object id="8" name="Black sausage NPC" x="479.762" y="1768.25">
+   <properties>
+    <property name="description" value="Appears after receiving [[Undyne's Letter]]. Says that they used to make a game out of locating the flaming pit since the CORE is always rearranging."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Black sausage NPC" x="131.097" y="1663.5">
+   <properties>
+    <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains that they were hired by [[Mettaton]] to kill the protagonist but quit since they were never paid."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Black sausage NPC" x="830.918" y="1101.55">
+   <properties>
+    <property name="description" value="Appears after receiving [[Undyne's Letter]]. They appear to be asleep."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Black sausage NPC" x="2111.26" y="842.779">
+   <properties>
+    <property name="description" value="Appears after receiving [[Undyne's Letter]]. Reveals that the CORE was rearranged in anticipation of the protagonist specifically."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Black sausage NPC" x="2661.18" y="175.96">
+   <properties>
+    <property name="description" value="Explains why they look like a &quot;black sausage&quot; instead of any discernible shape."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="signs">
+  <object id="25" name="Sign" x="2018.89" y="1068">
+   <properties>
+    <property name="description" value="''North, the warrior's path. West, the sage's path. Any path leads to The End.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Sign" x="2159.46" y="1068">
+   <properties>
+    <property name="description" value="''East... The End.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Sign" x="1678.06" y="828">
+   <properties>
+    <property name="description" value="''Solve this puzzle, and The End will open.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Sign" x="1777.69" y="327.597">
+   <properties>
+    <property name="description" value="''Why not relax and have a nice snack?''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Sign" x="2179.05" y="828">
+   <properties>
+    <property name="description" value="''Get lost... And stay that way.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Sign" x="2018.1" y="586.079">
+   <properties>
+    <property name="description" value="''Traverse the northern room, and The End will open.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Sign" x="2338.76" y="828">
+   <properties>
+    <property name="description" value="''To the East! This is The End.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Sign" x="2478.05" y="828">
+   <properties>
+    <property name="description">I cannot fight. I cannot think.
+But, with patience, I will make my way through.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="items">
+  <object id="31" name="Glamburger" x="1768.65" y="385">
+   <properties>
+    <property name="description" value="The protagomist can pick up a Glamburger from inside this trash can."/>
+    <property name="page" value="Glamburger"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Trash can GOLD" x="2408.83" y="384.999">
+   <properties>
+    <property name="description" value="The protagonist can pick up 100 [[GOLD]] from inside this trash can."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="enemies">
+  <object id="9" name="Madjick" x="159.261" y="1770.47">
+   <properties>
+    <property name="description" value="Scripted encounter against a Madjick on the [[Neutral Route]]."/>
+    <property name="page" value="Madjick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Knight Knight" x="830.918" y="1148.63">
+   <properties>
+    <property name="description" value="Scripted encounter against a Knight Knight."/>
+    <property name="page" value="Knight Knight"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Warrior's Path 1" x="2209.72" y="179">
+   <properties>
+    <property name="description" value="Part 1 of the Warrior's Path, consisting of an encounter against [[Whimsalot]] and [[Final Froggit]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Warrior's Path 2" x="2350" y="179">
+   <properties>
+    <property name="description" value="Part 2 of the Warrior's Path, consisting of an encounter against [[Knight Knight]] and [[Madjick]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Warrior's Path 3" x="2470.78" y="179">
+   <properties>
+    <property name="description" value="Part 3 of the Warrior's Path, consisting of an encounter against [[Final Froggit]], [[Astigmatism]], and [[Whimsalot]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Final Mettaton encounter" x="3359.66" y="467.82">
+   <properties>
+    <property name="description" value="[[Mettaton]] reveals his true intentions to the protagonist and attacks. On the [[Neutral Route]], the protagonist can trick him into turning him around and exposing the switch on his backside, transforming him into [[Mettaton EX]]. On the [[Genocide Route]], Mettaton transforms into [[Mettaton NEO]], who is killed in a single strike."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
