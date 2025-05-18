@@ -22,7 +22,7 @@
  <objectgroup id="4" name="plot">
   <object id="1" name="CORE Approach" x="318.931" y="2656.18">
    <properties>
-    <property name="description" value="The protagonist witness two black sausage NPCs retreating into the CORE. [[Alphys]] tells them that monsters are not supposed to inhabit the CORE."/>
+    <property name="description" value="The protagonist witnesses two black sausage NPCs retreating into the CORE. [[Alphys]] tells them that monsters are not supposed to inhabit the CORE."/>
    </properties>
    <point/>
   </object>
@@ -134,7 +134,7 @@ You're filled with determination.</property>
   </object>
   <object id="15" name="Phone call 7" x="755.985" y="1371">
    <properties>
-    <property name="description" value="[[Alphys]] calls the protagonist and directs the protagonist to the eastern path."/>
+    <property name="description" value="[[Alphys]] calls the protagonist and directs them to the eastern path."/>
    </properties>
    <point/>
   </object>
@@ -158,7 +158,7 @@ You're filled with determination.</property>
   </object>
   <object id="21" name="Phone call 11" x="1595.72" y="1371">
    <properties>
-    <property name="description" value="[[Alphys]] calls the protagonist and tells them to stop moving. As she says that, the power suddenly turns back on. Alphys is unable to keep the power off, so she instructs the protagonist to only keep moving while the power is off ans stop once it turns back on."/>
+    <property name="description" value="[[Alphys]] calls the protagonist and tells them to stop moving. As she says that, the power suddenly turns back on. Alphys is unable to keep the power off, so she instructs the protagonist to only keep moving while the power is off and stop once it turns back on."/>
    </properties>
    <point/>
   </object>
@@ -208,7 +208,7 @@ You're filled with determination.</property>
   </object>
   <object id="39" name="Black sausage NPC" x="2661.18" y="175.96">
    <properties>
-    <property name="description" value="Explains why they look like a &quot;black sausage&quot; instead of any discernible shape."/>
+    <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains why they look like a &quot;black sausage&quot; instead of any discernible shape."/>
    </properties>
    <point/>
   </object>
@@ -315,7 +315,7 @@ But, with patience, I will make my way through.</property>
   </object>
   <object id="46" name="Final Mettaton encounter" x="3359.66" y="467.82">
    <properties>
-    <property name="description" value="[[Mettaton]] reveals his true intentions to the protagonist and attacks. On the [[Neutral Route]], the protagonist can trick him into turning him around and exposing the switch on his backside, transforming him into [[Mettaton EX]]. On the [[Genocide Route]], Mettaton transforms into [[Mettaton NEO]], who is killed in a single strike."/>
+    <property name="description" value="[[Mettaton]] reveals his true intentions to the protagonist and attacks. On the [[Neutral Route]], the protagonist can trick him into turning around and exposing the switch on his backside, transforming him into [[Mettaton EX]]. On the [[Genocide Route]], Mettaton transforms into [[Mettaton NEO]], who is killed in a single strike."/>
    </properties>
    <point/>
   </object>
