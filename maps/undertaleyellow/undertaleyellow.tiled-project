@@ -29,6 +29,12 @@
             "propertytype": "",
             "type": "string",
             "value": "undertaleyellow.wiki.gg"
+        },
+        {
+            "name": "languageWiki",
+            "propertytype": "",
+            "type": "string",
+            "value": "undertaleyellow.wiki.gg/$1"
         }
     ],
     "propertyTypes": [

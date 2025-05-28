@@ -10,6 +10,16 @@
             "shortcut": "Ctrl+Shift+P",
             "showOutput": true,
             "workingDirectory": "%projectpath/../.."
+        },
+        {
+            "arguments": "convert.py --mappath %mapfile --language zh",
+            "command": ".venv/bin/python",
+            "enabled": true,
+            "name": "Publish current map (Chinese)",
+            "saveBeforeExecute": true,
+            "shortcut": "Ctrl+Shift+P",
+            "showOutput": true,
+            "workingDirectory": "%projectpath/../.."
         }
     ],
     "compatibilityVersion": 1100,
@@ -29,6 +39,12 @@
             "propertytype": "",
             "type": "string",
             "value": "deltarune.wiki"
+        },
+        {
+            "name": "languageWiki",
+            "propertytype": "",
+            "type": "string",
+            "value": "$1.deltarune.wiki"
         }
     ],
     "propertyTypes": [
