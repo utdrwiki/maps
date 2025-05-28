@@ -462,7 +462,7 @@ It fills you with determination.</property>
   <object id="16" name="Snowdrake's Father" x="3856.12" y="429.913">
    <properties>
     <property name="description" value="After completing the [[True Pacifist Route]]. Snowdrake's Father appears here, having reunited with his wife and son."/>
-    <property name="page" value="MTT Resort/NPCs#Snowdrake's Father"/>
+    <property name="page" value="Snowdrake's Father"/>
    </properties>
    <point/>
   </object>
@@ -475,7 +475,7 @@ It fills you with determination.</property>
   <object id="22" name="Snowman" x="4920.07" y="149.928">
    <properties>
     <property name="description" value="The snowman offers a [[Snowman Piece]] to the protagonist and requests that they take it &quot;to the ends of the earth.&quot; On the [[Genocide Route]], the protagonist can forcibly take up to three Snowman Pieces at once."/>
-    <property name="page" value="Snowdin/NPCs#Snowman"/>
+    <property name="page" value="Snowman"/>
    </properties>
    <point/>
   </object>
@@ -658,7 +658,7 @@ It fills you with determination.</property>
   </object>
   <object id="107" name="Red Bird" x="13218.1" y="1037.43">
    <properties>
-    <property name="description" value="Explains the [[Royal Guard]] to the protagonist. She usually acts as a translator for [[Snowdin/NPCs#Grillby|Grillby]]."/>
+    <property name="description" value="Explains the [[Royal Guard]] to the protagonist. She usually acts as a translator for [[Grillby]]."/>
     <property name="page" value="Snowdin/NPCs#Red Bird"/>
    </properties>
    <point/>
@@ -666,7 +666,7 @@ It fills you with determination.</property>
   <object id="108" name="Grillby" x="13246.6" y="1017.73">
    <properties>
     <property name="description" value="The bartender and owner of the restaurant. He is usually silent and only speaks a single line at the end of the [[True Pacifist Route]]."/>
-    <property name="page" value="Snowdin/NPCs#Grillby"/>
+    <property name="page" value="Grillby"/>
    </properties>
    <point/>
   </object>

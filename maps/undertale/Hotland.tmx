@@ -82,7 +82,7 @@
   </object>
  </objectgroup>
  <objectgroup id="3" name="plot">
-  <object id="1" name="Third Undyne chase colclusion" x="576.041" y="6943.07">
+  <object id="1" name="Third Undyne chase conclusion" x="576.041" y="6943.07">
    <properties>
     <property name="description" value="[[Undyne]] chases the protagonist into Hotland, where she collapses due to excessive heat. The protagonist can pour water on her from the nearby water cooler, which allows her to be befriended at [[Undyne's House|her house]]."/>
    </properties>
@@ -721,7 +721,7 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
   <object id="57" name="Heats Flamesman" x="7067.01" y="3132.05">
    <properties>
     <property name="description" value="Asks the protagonist to remember their name."/>
-    <property name="page" value="Hotland/NPCs#Heats Flamesman"/>
+    <property name="page" value="Heats Flamesman"/>
    </properties>
    <point/>
   </object>
@@ -835,7 +835,7 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
   <object id="120" name="Heats Flamesman" x="8068.13" y="1163.72">
    <properties>
     <property name="description" value="Asks the protagonist if they remembered their name. They express shock regardless of the protagonist's answer."/>
-    <property name="page" value="Hotland/NPCs#Heats Flamesman"/>
+    <property name="page" value="Heats Flamesman"/>
    </properties>
    <point/>
   </object>
@@ -884,7 +884,7 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
   <object id="135" name="Snowdrake's Father" x="6984.77" y="312.041">
    <properties>
     <property name="description" value="The father of [[Snowdrake]] and a comedian at the [[MTT Resort]]. He explains that since Snowdrake ran away from home after [[Snowdrake's Mother|his mother]] fell down."/>
-    <property name="page" value="MTT Resort/NPCs#Snowdrake's Father"/>
+    <property name="page" value="Snowdrake's Father"/>
    </properties>
    <point/>
   </object>

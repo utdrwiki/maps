@@ -595,21 +595,21 @@ It fills you with determination.
   <object id="62" name="Small Bird" x="8483.26" y="581.97">
    <properties>
     <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the room containing [[Sans]]'s telescope and the Quiet Area."/>
-    <property name="page" value="Waterfall/NPCs#Small Bird"/>
+    <property name="page" value="Small Bird"/>
    </properties>
    <point/>
   </object>
   <object id="63" name="Small Bird" x="18540.4" y="2345.03">
    <properties>
     <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the Quiet Area to the room containing [[Sans]]'s telescope."/>
-    <property name="page" value="Waterfall/NPCs#Small Bird"/>
+    <property name="page" value="Small Bird"/>
    </properties>
    <point/>
   </object>
   <object id="71" name="Onionsan" x="9276.83" y="553.545">
    <properties>
     <property name="description" value="Appears out of the water. They talk to the protagonist as they walk across the room. They retreat back into the water as the protagonist leaves the room."/>
-    <property name="page" value="Waterfall/NPCs#Onionsan"/>
+    <property name="page" value="Onionsan"/>
    </properties>
    <point/>
   </object>
@@ -1004,7 +1004,7 @@ They attacked suddenly, and without mercy.</property>
    </properties>
    <point/>
   </object>
-  <object id="92" name="War of Humand and Monsters, part 10" x="15229.9" y="1609">
+  <object id="92" name="War of Humans and Monsters, part 10" x="15229.9" y="1609">
    <properties>
     <property name="description">In the end, it could hardly be called a war.
 United, the [[humans]] were too powerful, and us [[monsters]], too weak.

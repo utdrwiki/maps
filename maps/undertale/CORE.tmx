@@ -268,7 +268,7 @@ But, with patience, I will make my way through.</property>
  <objectgroup id="11" name="items">
   <object id="31" name="Glamburger" x="1768.65" y="385">
    <properties>
-    <property name="description" value="The protagomist can pick up a Glamburger from inside this trash can."/>
+    <property name="description" value="The protagonist can pick up a Glamburger from inside this trash can."/>
     <property name="page" value="Glamburger"/>
    </properties>
    <point/>
