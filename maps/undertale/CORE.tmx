@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="138" height="87" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="51">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="核心"/>
  </properties>
  <imagelayer id="3" name="CORE map">
   <image source="images/CORE.png" width="4410" height="2760"/>
@@ -15,6 +16,8 @@
   <object id="50" name="CORE Branch" x="2089.38" y="782.052">
    <properties>
     <property name="description" value="A section of the CORE split into a 3x3 grid. The protagonist must nagivate this area in order to unlock the way to The End."/>
+    <property name="zh_description" value="核心的一部分分裂成3x3的網格。主角必須完成此區域才能解鎖終點的道路。"/>
+    <property name="zh_name" value="核心分支"/>
    </properties>
    <point/>
   </object>
@@ -23,18 +26,24 @@
   <object id="1" name="CORE Approach" x="318.931" y="2656.18">
    <properties>
     <property name="description" value="The protagonist witnesses two black sausage NPCs retreating into the CORE. [[Alphys]] tells them that monsters are not supposed to inhabit the CORE."/>
+    <property name="zh_description" value="主角看見兩個黑色香腸 NPC 進入了核心。[[Alphys]] 對於平常不會有怪物進入核心感到疑惑。"/>
+    <property name="zh_name" value="接近核心"/>
    </properties>
    <point/>
   </object>
   <object id="3" name="Elevator to CORE End" x="319.84" y="1996.23">
    <properties>
     <property name="description" value="An elevator that leads to the end of the CORE. It is initially non-functional, only usable after reaching the other side. On the [[Genocide Route]], this elevator is functional, allowing the protagonist to bypass the rest of the CORE."/>
+    <property name="zh_description" value="通往核心終點的電梯。只有到達終點後才可使用。在[[屠殺路線]]中則正常運作。"/>
+    <property name="zh_name" value="通往核心終點的電梯"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Elevator to lobby" x="3439.75" y="838.05">
    <properties>
     <property name="description" value="An elevator leading to the lobby of the CORE."/>
+    <property name="zh_description" value="回到核心一開始的電梯。"/>
+    <property name="zh_name" value="通往入口的電梯"/>
    </properties>
    <point/>
   </object>
@@ -48,12 +57,16 @@
   <object id="13" name="Switch" x="259.763" y="1320.41">
    <properties>
     <property name="description" value="Pressing this switch deactivates the force field but sends a group of lasers in the following order: ''blue'', ''blue'', ''orange''."/>
+    <property name="zh_description" value="按下此開關將會關閉力場，但會依照&quot;藍&quot;、&quot;藍&quot;、&quot;橙&quot;的順序啟動雷射。"/>
+    <property name="zh_name" value="開關"/>
    </properties>
    <point/>
   </object>
   <object id="47" name="Final Alphys conversation" x="3568.85" y="127.101">
    <properties>
     <property name="description" value="After evaluating [[Mettaton]]'s situation following his defeat, [[Alphys]] follows the protagonist as they make their way to the elevator."/>
+    <property name="zh_description" value="擊敗 [[Mettaton]] 後，[[Alphys]] 跟隨主角走向電梯。"/>
+    <property name="zh_name" value="最終 Alphys 的對話"/>
    </properties>
    <point/>
   </object>
@@ -61,6 +74,8 @@
    <properties>
     <property name="description" value="The elevator to New Home. After opening this elevator, [[Alphys]] reveals to the protagonist that they must kill [[Asgore Dreemurr|Asgore]] in order to return home."/>
     <property name="page" value="New Home"/>
+    <property name="zh_description" value="通往[[新居]]的電梯。打開電梯後 [[Alphys]] 向主角透露，必須殺死 [[Asgore Dreemurr|Asgore]] 才可以回家。"/>
+    <property name="zh_name" value="通往新居的電梯"/>
    </properties>
    <point/>
   </object>
@@ -69,12 +84,17 @@
   <object id="29" name="Sage's Path" x="1469.05" y="849.075">
    <properties>
     <property name="description" value="The protagonist must solve a shooting puzzle to unlock the way to The End. They are given two rounds of ammunition for the puzzle. It can be solved by entering ''down'', ''left'', ''down'', ''left'', ''down'', ''left'', ''up'', ''right''."/>
+    <property name="zh_description">主角必須解開射擊謎題才能開啟通往終點的道路。謎題會提供兩發子彈，
+順序為&quot;下&quot;、&quot;左&quot;、&quot;下&quot;、&quot;左&quot;、&quot;下&quot;、&quot;左&quot;、&quot;上&quot;、&quot;右&quot;。</property>
+    <property name="zh_name" value="智者的道路"/>
    </properties>
    <point/>
   </object>
   <object id="44" name="Force field" x="2531.47" y="877.537">
    <properties>
     <property name="description" value="The protagonist must clear either the Warrior's Path or the Sage's path to deactivate this force field. Alternatively, they can wait in front of it for a while, and it will disappear automatically."/>
+    <property name="zh_description" value="主角必須完成勇者的道路或是智者的道路才能解除。或是在力場前等一陣子，過一段時間後力場會自動消失。"/>
+    <property name="zh_name" value="力場"/>
    </properties>
    <point/>
   </object>
@@ -83,6 +103,9 @@
   <object id="24" name="Hotland - Core Branch" x="2090.29" y="1110.58">
    <properties>
     <property name="description" value="''The air is filled with the smell of ozone... it fills you with determination.''"/>
+    <property name="zh_description">空中瀰漫著臭氧的味道...
+使你充滿了決心。</property>
+    <property name="zh_name" value="熱地-核心岔路"/>
    </properties>
    <point/>
   </object>
@@ -91,6 +114,9 @@
     <property name="description">Behind this door must be the elevator to the [[Asgore Dreemurr|King]]'s castle.
 You're filled with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這扇門的後面肯定就是通往[[新居|王宮]]的電梯了。
+你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 核心盡頭"/>
    </properties>
    <point/>
   </object>
@@ -99,84 +125,112 @@ You're filled with determination.</property>
   <object id="2" name="Phone call 1" x="319.471" y="2119.59">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and directs them to the elevator. The protagonist can either check the elevator or enter one of the other rooms."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。指引他前往電梯。主角可以選擇檢查電梯，也可以進入其他房間。"/>
+    <property name="zh_name" value="Alphys 電話 #1"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Phone call 2" x="319.841" y="2044.05">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and notes that the elevator is out of order. She then directs the protagonist to the left or right room depending on where they went first."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她注意到電梯壞了，並根據主角先去的地方，指引主角前往左邊或右邊的房間。"/>
+    <property name="zh_name" value="Alphys 電話 #2"/>
    </properties>
    <point/>
   </object>
   <object id="7" name="Phone call 3" x="480.952" y="1834.13">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and notes the flaming pit, which is not on her map."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。注意到地圖上沒有顯示的火坑。"/>
+    <property name="zh_name" value="Alphys 電話 #3"/>
    </properties>
    <point/>
   </object>
   <object id="10" name="Phone call 4" x="159.261" y="1836.77">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and warns them of a monster ambush. After the battle, she wonders why so many monster are present in the CORE."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她警告附近出現怪物伏擊。戰鬥結束後她感到疑惑為何核心裡有這麼多怪物。"/>
+    <property name="zh_name" value="Alphys 電話 #4"/>
    </properties>
    <point/>
   </object>
   <object id="12" name="Phone call 5" x="206.643" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and explains that they cannot progress unless they press the switch, which sends a group of lasers in a specific order. Alphys says the order is ''orange'', ''orange'', ''blue''."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她表示除非按下開關，否則主角無法前進，並提示開關會按照&quot;橙&quot;、&quot;橙&quot;、&quot;藍&quot;的順序移動。"/>
+    <property name="zh_name" value="Alphys 電話 #5"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="Phone call 6" x="559.229" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and notes that she stated the incorrect order of the lasers."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她對於給出錯誤的順序感到抱歉。"/>
+    <property name="zh_name" value="Alphys 電話 #6"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Phone call 7" x="755.985" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and directs them to the eastern path."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。建議主角往東方走。"/>
+    <property name="zh_name" value="Alphys 電話 #7"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Phone call 8" x="929.981" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist. She changes her mind and directs them to the north."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。改建議主角往北方走。"/>
+    <property name="zh_name" value="Alphys 電話 #8"/>
    </properties>
    <point/>
   </object>
   <object id="19" name="Phone call 9" x="831.15" y="1198.49">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist after the monster ambush and asks if they are okay."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。在戰鬥後詢問主角狀況。"/>
+    <property name="zh_name" value="Alphys 電話 #9"/>
    </properties>
    <point/>
   </object>
   <object id="20" name="Phone call 10" x="1208.1" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and attempts to deactivate the lasers blocking the way. After failing to do so, she cuts off power for the entire room."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她嘗試著關閉雷射。在失敗後她切斷了整個區域的電源。"/>
+    <property name="zh_name" value="Alphys 電話 #10"/>
    </properties>
    <point/>
   </object>
   <object id="21" name="Phone call 11" x="1595.72" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and tells them to stop moving. As she says that, the power suddenly turns back on. Alphys is unable to keep the power off, so she instructs the protagonist to only keep moving while the power is off and stop once it turns back on."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。表示雷射的開關被自動開啟，因此自己會嘗試關閉雷射，並提醒主角必須根據雷射的開和關來移動。"/>
+    <property name="zh_name" value="Alphys 電話 #11"/>
    </properties>
    <point/>
   </object>
   <object id="22" name="Phone call 12" x="2073.84" y="1371">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and expresses relief that everything appears to be under control."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她表示所有的一切都在掌握中。"/>
+    <property name="zh_name" value="Alphys 電話 #12"/>
    </properties>
    <point/>
   </object>
   <object id="23" name="Phone call 13" x="2089.81" y="1163.85">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and is completely at a loss for how to guide them at this point, so she leaves them alone."/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。此時她完全不知道該如何引導主角，所以她讓主角先待在原地。"/>
+    <property name="zh_name" value="Alphys 電話 #13"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="True Pacifist Route phone call" x="319.555" y="2603.72">
    <properties>
     <property name="description" value="On the [[True Pacifist Route]], [[Undyne]] calls the protagonist and asks them to deliver [[Undyne's Letter|a letter]] for her."/>
+    <property name="zh_description" value="僅在[[完美路線]]中，[[Undyne]] 打電話給主角。希望主角可以幫她送[[Undyne 的信|一封信]]。"/>
+    <property name="zh_name" value="完美路線電話"/>
    </properties>
    <point/>
   </object>
@@ -185,30 +239,40 @@ You're filled with determination.</property>
   <object id="8" name="Black sausage NPC" x="479.762" y="1768.25">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Says that they used to make a game out of locating the flaming pit since the CORE is always rearranging."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示因為核心總是重新排列，因此曾經製作過一個關於找尋火坑遊戲。"/>
+    <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Black sausage NPC" x="131.097" y="1663.5">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains that they were hired by [[Mettaton]] to kill the protagonist but quit since they were never paid."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示受雇於 [[Mettaton]] 去殺主角，但是因為 Mettaton 沒有付薪水而放棄。"/>
+    <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
    <point/>
   </object>
   <object id="17" name="Black sausage NPC" x="830.918" y="1101.55">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. They appear to be asleep."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他看起來要睡著了。"/>
+    <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
    <point/>
   </object>
   <object id="33" name="Black sausage NPC" x="2111.26" y="842.779">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Reveals that the CORE was rearranged in anticipation of the protagonist specifically."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示核心是為了主角而專門重新排列的。"/>
+    <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
    <point/>
   </object>
   <object id="39" name="Black sausage NPC" x="2661.18" y="175.96">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains why they look like a &quot;black sausage&quot; instead of any discernible shape."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他解釋為何自身會長得像&quot;黑色香腸&quot;。"/>
+    <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
    <point/>
   </object>
@@ -217,42 +281,58 @@ You're filled with determination.</property>
   <object id="25" name="Sign" x="2018.89" y="1068">
    <properties>
     <property name="description" value="''North, the warrior's path. West, the sage's path. Any path leads to The End.''"/>
+    <property name="zh_description">北方，勇者的道路
+西方，智者的道路
+所有的道路都將通往終點。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="26" name="Sign" x="2159.46" y="1068">
    <properties>
     <property name="description" value="''East... The End.''"/>
+    <property name="zh_description" value="東方...終點。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="28" name="Sign" x="1678.06" y="828">
    <properties>
     <property name="description" value="''Solve this puzzle, and The End will open.''"/>
+    <property name="zh_description" value="解決謎題，終點將會開啟。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="30" name="Sign" x="1777.69" y="327.597">
    <properties>
     <property name="description" value="''Why not relax and have a nice snack?''"/>
+    <property name="zh_description" value="何不放鬆一下，吃點美味的小點心？"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="32" name="Sign" x="2179.05" y="828">
    <properties>
     <property name="description" value="''Get lost... And stay that way.''"/>
+    <property name="zh_description" value="迷失吧...直到永恆。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="34" name="Sign" x="2018.1" y="586.079">
    <properties>
     <property name="description" value="''Traverse the northern room, and The End will open.''"/>
+    <property name="zh_description" value="行經北方的房間，終點將會開啟。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="41" name="Sign" x="2338.76" y="828">
    <properties>
     <property name="description" value="''To the East! This is The End.''"/>
+    <property name="zh_description" value="往東走！就是終點。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -261,6 +341,9 @@ You're filled with determination.</property>
     <property name="description">I cannot fight. I cannot think.
 But, with patience, I will make my way through.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">無法戰鬥。無法思考。
+但是憑藉著耐心，我將會走出自己的道路。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -270,12 +353,17 @@ But, with patience, I will make my way through.</property>
    <properties>
     <property name="description" value="The protagonist can pick up a Glamburger from inside this trash can."/>
     <property name="page" value="Glamburger"/>
+    <property name="zh_description" value="在垃圾桶內找到。"/>
+    <property name="zh_name" value="魅力漢堡"/>
+    <property name="zh_page" value="魅力漢堡"/>
    </properties>
    <point/>
   </object>
   <object id="43" name="Trash can GOLD" x="2408.83" y="384.999">
    <properties>
     <property name="description" value="The protagonist can pick up 100 [[GOLD]] from inside this trash can."/>
+    <property name="zh_description" value="在垃圾桶內找到100G。"/>
+    <property name="zh_name" value="金錢"/>
    </properties>
    <point/>
   </object>
@@ -285,6 +373,7 @@ But, with patience, I will make my way through.</property>
    <properties>
     <property name="description" value="Scripted encounter against a Madjick on the [[Neutral Route]]."/>
     <property name="page" value="Madjick"/>
+    <property name="zh_description" value="與 Madjick 戰鬥([[中立路線]])。"/>
    </properties>
    <point/>
   </object>
@@ -292,30 +381,39 @@ But, with patience, I will make my way through.</property>
    <properties>
     <property name="description" value="Scripted encounter against a Knight Knight."/>
     <property name="page" value="Knight Knight"/>
+    <property name="zh_description" value="與 Knight Knight 戰鬥([[中立路線]])。"/>
    </properties>
    <point/>
   </object>
   <object id="36" name="Warrior's Path 1" x="2209.72" y="179">
    <properties>
     <property name="description" value="Part 1 of the Warrior's Path, consisting of an encounter against [[Whimsalot]] and [[Final Froggit]]."/>
+    <property name="zh_description" value="與 [[Whimsalot]] 和 [[Final Froggit]] 戰鬥。"/>
+    <property name="zh_name" value="勇者的道路 #1"/>
    </properties>
    <point/>
   </object>
   <object id="37" name="Warrior's Path 2" x="2350" y="179">
    <properties>
     <property name="description" value="Part 2 of the Warrior's Path, consisting of an encounter against [[Knight Knight]] and [[Madjick]]."/>
+    <property name="zh_description" value="與 [[Knight Knight]] 和 [[Madjick]] 戰鬥。"/>
+    <property name="zh_name" value="勇者的道路 #2"/>
    </properties>
    <point/>
   </object>
   <object id="38" name="Warrior's Path 3" x="2470.78" y="179">
    <properties>
     <property name="description" value="Part 3 of the Warrior's Path, consisting of an encounter against [[Final Froggit]], [[Astigmatism]], and [[Whimsalot]]."/>
+    <property name="zh_description" value="與 [[Final Froggit]]、[[Astigmatism]] 和 [[Whimsalot]] 戰鬥。"/>
+    <property name="zh_name" value="勇者的道路 #3"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Final Mettaton encounter" x="3359.66" y="467.82">
    <properties>
     <property name="description" value="[[Mettaton]] reveals his true intentions to the protagonist and attacks. On the [[Neutral Route]], the protagonist can trick him into turning around and exposing the switch on his backside, transforming him into [[Mettaton EX]]. On the [[Genocide Route]], Mettaton transforms into [[Mettaton NEO]], who is killed in a single strike."/>
+    <property name="zh_description" value="[[Mettaton]] 向主角透露了他的真實意圖並發動攻擊。在[[中立路線]]中，主角可以誘騙他轉身，露出他背後的開關。他會變成 [[Mettaton EX]]。在[[屠殺路線]]中，他會變成 [[Mettaton NEO]]。"/>
+    <property name="zh_name" value="Mettaton 最終戰"/>
    </properties>
    <point/>
   </object>
