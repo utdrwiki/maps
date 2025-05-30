@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="322" height="192" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="92">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="廢墟"/>
  </properties>
  <imagelayer id="2" name="Ruins map">
   <image source="images/Ruins.png" width="10278" height="6142"/>
@@ -11,6 +12,9 @@
    <properties>
     <property name="description" value="The former capital of the [[Underground]]. Most monsters had left this area in favor of [[New Home]], the current capital city."/>
     <property name="page" value="Home"/>
+    <property name="zh_description" value="以前[[地下世界]]的首都。目前大部分的[[怪物]]都搬到[[新居]]。"/>
+    <property name="zh_name" value="居所"/>
+    <property name="zh_page" value="居所"/>
    </properties>
    <point/>
   </object>
@@ -18,6 +22,9 @@
    <properties>
     <property name="description" value="Toriel's home. She intends for the protagonist to live here with her."/>
     <property name="page" value="Toriel's Home"/>
+    <property name="zh_description" value="Toriel 的家。她計畫將主角留下來和她一起住在這。"/>
+    <property name="zh_name" value="Toriel 的家"/>
+    <property name="zh_page" value="Toriel 的家"/>
    </properties>
    <point/>
   </object>
@@ -38,30 +45,41 @@
   <object id="82" name="Phone call 1" x="4975.27" y="4469.94">
    <properties>
     <property name="description" value="[[Toriel]] calls the protagonist and warns them of the puzzles ahead."/>
+    <property name="zh_description" value="[[Toriel]] 打電話給主角。並表示前面有謎題先不要前往。"/>
+    <property name="zh_name" value="Toriel 電話 #1"/>
    </properties>
    <point/>
   </object>
   <object id="85" name="Phone call 3" x="5627.57" y="4705.75">
    <properties>
     <property name="description" value="[[Toriel]] calls the protagonist and asks them if they dislike the flavor they had not chosen. The protagonist is not given the option to respond."/>
+    <property name="zh_description" value="[[Toriel]] 打電話給主角。並再次確認主角選擇的口味和是否會挑食。"/>
+    <property name="zh_name" value="Toriel 電話 #3"/>
    </properties>
    <point/>
   </object>
   <object id="86" name="Phone call 2" x="5585.71" y="4705.24">
    <properties>
     <property name="description" value="[[Toriel]] calls the protagonist and asks them if they prefer cinnamon or butterscotch. If the protagonist had [[SAVE#Reset|reset their run]] after this point, Toriel automatically guesses what they had chosen and asks them to confirm it."/>
+    <property name="zh_description">[[Toriel]] 打電話給主角。向主角詢問喜歡的口味是肉桂還是奶油糖。
+若曾經[[存檔#重置|重置]]過，Toriel 會直接猜測之前選擇的選項。</property>
+    <property name="zh_name" value="Toriel 電話 #2"/>
    </properties>
    <point/>
   </object>
   <object id="87" name="Phone call 4" x="5905.08" y="4717.16">
    <properties>
     <property name="description" value="[[Toriel]] calls the protagonist and asks if they have any allergies."/>
+    <property name="zh_description" value="[[Toriel]] 打電話給主角。並表示主角是否會過敏。"/>
+    <property name="zh_name" value="Toriel 電話 #4"/>
    </properties>
    <point/>
   </object>
   <object id="89" name="Phone call 5" x="8064.79" y="4566.23">
    <properties>
     <property name="description" value="[[Toriel]] calls the protagonist and informs them of the various items scattered throughout the Ruins. She warns them not to pick up more than they can carry."/>
+    <property name="zh_description" value="[[Toriel]] 打電話給主角。希望主角不要帶太多物品。"/>
+    <property name="zh_name" value="Toriel 電話 #5"/>
    </properties>
    <point/>
   </object>
@@ -70,12 +88,18 @@
   <object id="6" name="Ruins - Entrance" x="618.419" y="5274.53">
    <properties>
     <property name="description" value="''The shadow of the ruins looms above, filling you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="廢墟的影子在上方朦朧可見，使你充滿了決心。"/>
+    <property name="zh_name" value="廢墟 - 入口"/>
    </properties>
    <point/>
   </object>
   <object id="23" name="Ruins - Leaf Pile" x="5117.22" y="4498.66">
    <properties>
     <property name="description" value="''Playfully crinkling through the leaves fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="以掃過樹葉為樂使你充滿了決心。"/>
+    <property name="zh_name" value="廢墟 - 樹葉堆"/>
    </properties>
    <point/>
   </object>
@@ -84,12 +108,18 @@
     <property name="description">Knowing the mouse might one day leave its hole and get the cheese...
 It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">知道老鼠總有一天會離開老鼠洞取走起司......
+這使你充滿了決心。</property>
+    <property name="zh_name" value="廢墟 - 老鼠洞"/>
    </properties>
    <point/>
   </object>
   <object id="66" name="Ruins - Home" x="9047.6" y="3118.76">
    <properties>
     <property name="description" value="''Seeing such a cute, tidy house in the RUINS gives you determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="看到廢墟中有這麼可愛且整潔的房子，使你充滿了決心。"/>
+    <property name="zh_name" value="廢墟 - 家"/>
    </properties>
    <point/>
   </object>
@@ -98,18 +128,27 @@ It fills you with determination.</property>
   <object id="7" name="Sign" x="546.966" y="4880.08">
    <properties>
     <property name="description" value="''Only the fearless may proceed. Brave ones, foolish ones. Both walk not the middle road.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="只有無懼的人才能前進。勇敢的人，愚蠢的人都不走中間的路。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="8" name="Sign" x="567.441" y="4638.98">
    <properties>
     <property name="description" value="''Stay on the path.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="跟著道路走。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Sign" x="597.526" y="4717.95">
    <properties>
     <property name="description" value="''Press [CONFIRM] to read signs!''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="按下([確定])來閱讀！"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -119,6 +158,10 @@ It fills you with determination.</property>
 
 - TORIEL</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">請按下這個按鈕。
+
+- TORIEL</property>
+    <property name="zh_name" value="提示"/>
    </properties>
    <point/>
   </object>
@@ -128,30 +171,46 @@ It fills you with determination.</property>
 
 - TORIEL</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">也請同樣按下這個按鈕。
+
+- TORIEL</property>
+    <property name="zh_name" value="提示"/>
    </properties>
    <point/>
   </object>
   <object id="17" name="Sign" x="1796.76" y="4478.52">
    <properties>
     <property name="description" value="''The western room is the eastern room's blueprint.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="西方的房間是東方房間的藍圖。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Sign" x="5708.22" y="4636.89">
    <properties>
     <property name="description" value="''Three out of four grey rocks recommend you push them.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="四分之三的石頭希望你可以去推它們。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="31" name="Sign" x="6487.16" y="5138.77">
    <properties>
     <property name="description" value="''Please don't step on the leaves.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="請不要踩在樹葉上。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="32" name="Sign" x="6487.65" y="4739.75">
    <properties>
     <property name="description" value="''Didn't you read the sign downstairs?''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="你沒有閱讀樓下的告示牌嗎？"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -161,6 +220,10 @@ It fills you with determination.</property>
 All proceeds go to real spiders.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="Spider Bake Sale"/>
+    <property name="zh_description">蜘蛛烘焙坊
+所有的收益都將捐給真正的蜘蛛。</property>
+    <property name="zh_name" value="告示牌"/>
+    <property name="zh_page" value="蜘蛛烘焙坊"/>
    </properties>
    <point/>
   </object>
@@ -169,36 +232,54 @@ All proceeds go to real spiders.</property>
     <property name="description">Did you miss it? [[Spider Bake Sale|Spider Bakesale]] down and to the right.
 Come eat food made by spiders, for spiders, of spiders!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">你錯過了嗎？右下角的[[蜘蛛烘焙坊]]。
+快來品嘗由蜘蛛製作，為蜘蛛製作，用蜘蛛製作的美味點心吧！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Sign" x="8286.88" y="4518.13">
    <properties>
     <property name="description" value="''There is only one switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="這裡只有一個開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="56" name="Sign" x="8917.09" y="4539.01">
    <properties>
     <property name="description" value="''The far door is not an exit. It simply marks a rotation in perspective.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="遠方的門並不是出口。它只代表你旋轉了你的視角。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="57" name="Sign" x="8917.26" y="5118.6">
    <properties>
     <property name="description" value="''If you can read this, press the blue switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="如果你看到這個看板，請按下藍色的開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="59" name="Sign" x="8737.77" y="4239.44">
    <properties>
     <property name="description" value="''If you can read this, press the red switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="如果你看到這個看板，請按下紅色的開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="61" name="Sign" x="8617.13" y="3657.98">
    <properties>
     <property name="description" value="''If you can read this, press the green switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="如果你看到這個看板，請按下綠色的開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -210,6 +291,12 @@ This was our home, which we named...
 &quot;[[Home]].&quot;
 As great as [[Asgore Dreemurr|our king]] is, he is pretty lousy at names.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">被困在[[結界]]後且害怕人類進一步攻擊的我們撤退了。
+我們深入地心走了很遠，直到洞穴的盡頭。
+這裡是我們的新家，我們取名為...
+&quot;[[居所]]&quot;。
+我們的[[Asgore Dreemurr|our king]]很不擅長取名字...？</property>
+    <property name="zh_name" value="怪物歷史第一章"/>
    </properties>
    <point/>
   </object>
@@ -220,6 +307,10 @@ As great as [[Asgore Dreemurr|our king]] is, he is pretty lousy at names.</prope
 &quot;Typha&quot; - A group of wetland flowering plants with brown, oblong seedpods.
 Known more commonly as &quot;water sausages.&quot;</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這是一本關於地下植物的百科全書。你翻到中間的頁面...
+&quot;香蒲&quot; - 一種在濕地開花的植物群體，擁有棕色、橢圓形的種莢。
+通常被稱作&quot;水香腸&quot;。</property>
+    <property name="zh_name" value="植物圖鑑"/>
    </properties>
    <point/>
   </object>
@@ -229,6 +320,10 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist is encouraged to take one Monster Candy. The protagonist can take up to four pieces of Monster Candy before the bowl spills onto the floor. In [[Hard Mode]], only three pieces can be taken."/>
     <property name="page" value="Monster Candy"/>
+    <property name="zh_description">可以拿取一顆。主角最多可以拿四顆，之後糖果碗就會翻倒在地板上。
+在[[困難模式]]中最多只能拿取三顆。</property>
+    <property name="zh_name" value="怪物糖果"/>
+    <property name="zh_page" value="怪物糖果"/>
    </properties>
    <point/>
   </object>
@@ -236,6 +331,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The Faded Ribbon can be picked up here."/>
     <property name="page" value="Faded Ribbon"/>
+    <property name="zh_description" value="可以在地上找到。"/>
+    <property name="zh_name" value="褪色絲帶"/>
+    <property name="zh_page" value="褪色絲帶"/>
    </properties>
    <point/>
   </object>
@@ -243,6 +341,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist can pick up the Toy Knife in this area."/>
     <property name="page" value="Toy Knife"/>
+    <property name="zh_description" value="可以在地上找到"/>
+    <property name="zh_name" value="玩具刀"/>
+    <property name="zh_page" value="玩具刀"/>
    </properties>
    <point/>
   </object>
@@ -250,6 +351,10 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Butterscotch-Cinnamon Pie. This item appears after sleeping in the bed. On [[Hard Mode]], this is replaced with [[Snail Pie]]."/>
     <property name="page" value="Butterscotch Pie"/>
+    <property name="zh_description">可以在地上找到。
+在[[困難模式]]中被[[蝸牛派]]給取代。</property>
+    <property name="zh_name" value="奶油派"/>
+    <property name="zh_page" value="奶油派"/>
    </properties>
    <point/>
   </object>
@@ -259,12 +364,16 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="[[Toriel]] introduces the [[Encounter|battle system]] to the protagonist via this [[dummy]]. She asks the protagonist to talk to it, but the protagonist can also kill it, flee from it, or repeatedly perform neutral actions until the dummy becomes bored and leaves automatically."/>
     <property name="page" value="Dummy"/>
+    <property name="zh_description" value="[[Toriel]] 透過[[假人]]向主角介紹[[遭遇戰]]。她要求主角與它對話，但主角也可以選擇殺死它、逃跑，或是不斷寬恕到假人感到無聊而自動離開。"/>
+    <property name="zh_name" value="假人"/>
+    <property name="zh_page" value="假人"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Froggit" x="1742.02" y="4526.99">
    <properties>
     <property name="description" value="Scripted encounter against a [[Froggit]]. [[Toriel]] automatically scares it away after the protagonist's turn."/>
+    <property name="zh_description" value="與 [[Froggit]] 的戰鬥，除了攻擊和逃跑外，[[Toriel]] 會在主角行動後自動將它嚇走。"/>
    </properties>
    <point/>
   </object>
@@ -272,6 +381,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Miniboss battle against [[Napstablook]]."/>
     <property name="page" value="Napstablook/In Battle"/>
+    <property name="zh_description" value="與 Napstablook 戰鬥"/>
+    <property name="zh_page" value="Napstablook/戰鬥中"/>
    </properties>
    <point/>
   </object>
@@ -279,6 +390,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Static encounter against a Vegetoid."/>
     <property name="page" value="Vegetoid"/>
+    <property name="zh_description" value="與 Vegetoid 戰鬥"/>
+    <property name="zh_page" value="Vegetoid"/>
    </properties>
    <point/>
   </object>
@@ -286,6 +399,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Static encounter against a Vegetoid."/>
     <property name="page" value="Vegetoid"/>
+    <property name="zh_description" value="與 Vegetoid 戰鬥"/>
+    <property name="zh_page" value="Vegetoid"/>
    </properties>
    <point/>
   </object>
@@ -293,6 +408,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Boss battle against Toriel."/>
     <property name="page" value="Toriel/In Battle"/>
+    <property name="zh_description" value="Toriel 最終戰"/>
+    <property name="zh_page" value="Toriel/戰鬥中"/>
    </properties>
    <point/>
   </object>
@@ -301,6 +418,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
   <object id="1" name="Golden flowers" x="150.788" y="6013.97">
    <properties>
     <property name="description" value="The spot where [[Frisk|the protagonist]] enters the [[Underground]]. It is implied that the [[Chara|first human]] is buried here."/>
+    <property name="zh_description" value="[[Frisk|主角]]進入[[地下世界]]的起始點。同時也是[[Chara|第一位人類]]的埋葬點。"/>
+    <property name="zh_name" value="金色花朵"/>
    </properties>
    <point/>
   </object>
@@ -308,6 +427,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="Flowey introduces the protagonist to the concepts of the [[SOUL]], [[Stats#EXP|EXP]], and [[Stats#LOVE|LOVE]]. He attempts to kill the protagonist shortly after but is stopped by [[Toriel]]."/>
     <property name="page" value="Flowey"/>
+    <property name="zh_description">Flowey 向主角介紹了[[靈魂]]、[[遊戲數據#EXP|EXP]] 和 [[遊戲數據#LOVE|LOVE]] 的概念。
+他隨後企圖殺害主角，但被 [[Toriel]] 阻止了。</property>
+    <property name="zh_page" value="Flowey"/>
    </properties>
    <point/>
   </object>
@@ -315,48 +437,65 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="After walking across this room, [[Toriel]] gives the protagonist a cell phone and leaves them alone."/>
     <property name="page" value="Cell Phone"/>
+    <property name="zh_description" value="在此 [[Toriel]] 給了主角一支手機，然後獨自離開。"/>
+    <property name="zh_name" value="獲得手機"/>
+    <property name="zh_page" value="手機"/>
    </properties>
    <point/>
   </object>
   <object id="67" name="Ruins End" x="9118.65" y="3392.74">
    <properties>
     <property name="description" value="[[Toriel]] attempts to call the protagonist again only to discover the protagonist is right in front of her. Toriel guides the protagonist to [[Toriel's Home|her house]]."/>
+    <property name="zh_description" value="[[Toriel]] 再次試圖打電話給主角，卻發現主角就在她面前。Toriel 帶領主角前往[[Toriel 的家|她的家]]。"/>
+    <property name="zh_name" value="廢墟終點"/>
    </properties>
    <point/>
   </object>
   <object id="70" name="Guest room bed" x="9488.56" y="2561.83">
    <properties>
     <property name="description" value="The protagonist can sleep here and recover their HP."/>
+    <property name="zh_description" value="主角可透過睡覺恢復 HP。"/>
+    <property name="zh_name" value="客房的床"/>
    </properties>
    <point/>
   </object>
   <object id="71" name="Toriel" x="8780.12" y="2747.92">
    <properties>
     <property name="description" value="[[Toriel]] declares her desire for the protagonist to live with her permanently. Toriel leaves her chair and heads to the basement after the protagonist repeatedly asks her how to leave the Ruins."/>
+    <property name="zh_description">[[Toriel]] 表示她希望主角能永久與她一同生活。
+當主角一再詢問如何離開廢墟時，Toriel 離開她的椅子走向地下室。</property>
    </properties>
    <point/>
   </object>
   <object id="76" name="Basement" x="9208.08" y="2335.9">
    <properties>
     <property name="description" value="[[Toriel]] repeatedly warns the protagonist of the danger they will face if they leave the Ruins and tells the protagonist to go back upstairs. The protagonist follows her to the exit."/>
+    <property name="zh_description">[[Toriel]] 向主角表達離開廢墟的危險，並希望主角可以聽話上樓。
+主角繼續跟隨她至廢墟出口。</property>
+    <property name="zh_name" value="地下室"/>
    </properties>
    <point/>
   </object>
   <object id="79" name="Flowey" x="10118.6" y="202.669">
    <properties>
     <property name="description" value="[[Flowey]] appears at the end of the Ruins and provides commentary based on what the protagonist did."/>
+    <property name="zh_description" value="[[Flowey]] 在廢墟的盡頭出現，並根據主角的行動進行評論。"/>
    </properties>
    <point/>
   </object>
   <object id="80" name="Ruins Exit" x="10119.6" y="46.0814">
    <properties>
     <property name="description" value="Exit to [[Snowdin Forest|Snowdin]]. The protagonist cannot go back to the Ruins after exiting."/>
+    <property name="zh_description" value="出口大門通往[[雪町]]。主角離開後將無法返回廢墟。"/>
+    <property name="zh_name" value="廢墟出口"/>
    </properties>
    <point/>
   </object>
   <object id="81" name="Long Room" x="2509.07" y="4469.84">
    <properties>
     <property name="description" value="The protagonist must walk across this room without assistance from [[Toriel]]."/>
+    <property name="zh_description" value="主角必須在不依靠 [[Toriel]] 的幫助下獨自穿越這個很長的區域。"/>
+    <property name="zh_name" value="很長的區域"/>
    </properties>
    <point/>
   </object>
@@ -366,6 +505,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist can buy a Spider Donut here for 7G."/>
     <property name="page" value="Spider Donut"/>
+    <property name="zh_description" value="以7G 的價格販售蜘蛛甜甜圈。"/>
+    <property name="zh_name" value="蜘蛛甜甜圈"/>
+    <property name="zh_page" value="蜘蛛甜甜圈"/>
    </properties>
    <point/>
   </object>
@@ -373,6 +515,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist can buy a Spider Cider here for 18G."/>
     <property name="page" value="Spider Cider"/>
+    <property name="zh_description" value="以18G 的價格販售蜘蛛蘋果西打。"/>
+    <property name="zh_name" value="蜘蛛蘋果西打"/>
+    <property name="zh_page" value="蜘蛛蘋果西打"/>
    </properties>
    <point/>
   </object>
@@ -382,6 +527,10 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The door to the next room unlocks by stepping on the switches that are not on the marked path, then flipping the lever. [[Toriel]] automatically solves this puzzle."/>
     <property name="page" value="Ruins/Puzzles#The Middle Road Puzzle"/>
+    <property name="zh_description">通往下一個房間的門會在踩在未標記路徑上的開關後，再拉下拉桿時解鎖。
+[[Toriel]] 會自動解開這個謎題。</property>
+    <property name="zh_name" value="中路謎題"/>
+    <property name="zh_page" value="廢墟/謎題#中路謎題"/>
    </properties>
    <point/>
   </object>
@@ -389,6 +538,10 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must flip two switches in order to unlock the next room. [[Toriel]] labeled the correct switches prior to the protagonist's arrival, but they have faded away on [[Hard Mode]]."/>
     <property name="page" value="Ruins/Puzzles#The Switch Room"/>
+    <property name="zh_description">必須拉下兩個開關才能解鎖通往下一個房間的門。[[Toriel]] 在主角抵達前已經標記了正確的開關。
+在[[困難模式]]中這些標記已經消失。</property>
+    <property name="zh_name" value="開關房間"/>
+    <property name="zh_page" value="廢墟/謎題#開關房間"/>
    </properties>
    <point/>
   </object>
@@ -396,6 +549,10 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The path forward is blocked by spikes, some of which automatically retract in a pattern indicated by the markings in the eastern room. The protagonist must remember the path shown by the eastern room in order to cross the spikes in the western room. [[Toriel]] guides the protagonist through the puzzle while holding their hand."/>
     <property name="page" value="Ruins/Puzzles#The Blueprint Puzzle"/>
+    <property name="zh_description">前方的道路被尖刺阻擋，其中一些會依照東側房間的標記自動縮回。主角必須記住東側房間所顯示的路徑，才能穿越西側房間的尖刺。
+[[Toriel]] 牽著主角的手一同解決謎題。</property>
+    <property name="zh_name" value="藍圖謎題"/>
+    <property name="zh_page" value="廢墟/謎題#藍圖謎題"/>
    </properties>
    <point/>
   </object>
@@ -403,6 +560,7 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="color" type="color" value="#ffb962b9"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="藍圖謎題路徑"/>
    </properties>
    <polyline points="0,0 39.6207,0.499987 40.1667,-40.1256 99.9941,-39.7636 99.6053,1.05906 198.357,0.281481 199.524,-39.7636 272.616,-39.7636"/>
   </object>
@@ -410,6 +568,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must fall through the cracks on the top floor and go through the rightmost exit on the bottom floor."/>
     <property name="page" value="Ruins/Puzzles#The Leaf Puzzle"/>
+    <property name="zh_description" value="主角必須從上方的裂縫掉落，並從底層最右邊的出口離開。"/>
+    <property name="zh_name" value="樹葉謎題 #1"/>
+    <property name="zh_page" value="廢墟/謎題#樹葉謎題"/>
    </properties>
    <point/>
   </object>
@@ -417,6 +578,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must push the rock to the pressure plate in order to retract the spikes blocking the path."/>
     <property name="page" value="Ruins/Puzzles#The Rock Puzzle"/>
+    <property name="zh_name" value="石頭謎題 #1"/>
+    <property name="zh_page" value="廢墟/謎題#石頭謎題"/>
    </properties>
    <point/>
   </object>
@@ -424,6 +587,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must follow the path indicated on the bottom floor to make their way across. If they step on a tile with leaves underneath, they will fall to the bottom floor and must start the puzzle over."/>
     <property name="page" value="Ruins/Puzzles#The Leaf Puzzle"/>
+    <property name="zh_description" value="主角必須依照底層所顯示的路徑前進以穿越房間。如果踩到底下有落葉的地磚就會掉落到下面，必須回頭起點重新開始。"/>
+    <property name="zh_name" value="樹葉謎題 #2"/>
+    <property name="zh_page" value="廢墟/謎題#樹葉謎題"/>
    </properties>
    <point/>
   </object>
@@ -431,6 +597,7 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="color" type="color" value="#ff93d0e1"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="樹葉謎題路徑"/>
    </properties>
    <polyline points="0,0 -0.230453,160.454 60.6551,159.985 59.9332,59.167 132.115,58.8061 133.197,160.221 194.551,159.86 194.19,106.446"/>
   </object>
@@ -438,6 +605,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must guide this rock to the pressure plate in order to unlock the way forward."/>
     <property name="page" value="Ruins/Puzzles#The Rock Puzzle"/>
+    <property name="zh_description" value="主角必須引導這塊石頭自己移動到壓力板上才能解鎖前方的道路。"/>
+    <property name="zh_name" value="石頭謎題 #2"/>
+    <property name="zh_page" value="廢墟/謎題#石頭謎題"/>
    </properties>
    <point/>
   </object>
@@ -445,6 +615,9 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The protagonist must fall through this crack and flip the switch on the bottom floor in order to proceed."/>
     <property name="page" value="Ruins/Puzzles#The One Switch Puzzle"/>
+    <property name="zh_description" value="主角必須從這個裂縫掉落到下面並拉下那裡的開關才能繼續前進。"/>
+    <property name="zh_name" value="一個開關謎題"/>
+    <property name="zh_page" value="廢墟/謎題#一個開關謎題"/>
    </properties>
    <point/>
   </object>
@@ -452,18 +625,26 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The next three rooms are rotations of this room. The protagonist must press the correct switch in each in order to proceed."/>
     <property name="page" value="Ruins/Puzzles#The Rotating Puzzle Room"/>
+    <property name="zh_description" value="接下來的三個房間是這個房間的旋轉版本。主角必須在每個房間中按下正確的開關才能繼續前進。"/>
+    <property name="zh_name" value="旋轉謎題房間 #1"/>
+    <property name="zh_page" value="廢墟/謎題#旋轉謎題房間"/>
    </properties>
    <point/>
   </object>
   <object id="54" name="Rotating Switch Puzzle (Fail Foom)" x="9374.3" y="4575.13">
    <properties>
     <property name="description" value="The protagonist lands in this room if they press an incorrect switch. They are taken back to Room 1."/>
+    <property name="zh_description" value="如果主角按下了錯誤的開關就會掉落到這裡。使其回到第一個房間。"/>
+    <property name="zh_name" value="旋轉謎題房間 (失敗)"/>
    </properties>
    <point/>
   </object>
   <object id="55" name="Rotating Switch Puzzle (Room 2)" x="9038.61" y="5066.99">
    <properties>
     <property name="description" value="The protagonist must press this switch to proceed to the next room."/>
+    <property name="zh_description" value="主角必須按下這個開關才能前往下一個房間。"/>
+    <property name="zh_name" value="旋轉謎題房間 #2"/>
+    <property name="zh_page" value="廢墟/謎題#旋轉謎題房間"/>
    </properties>
    <point/>
   </object>
@@ -477,12 +658,18 @@ Known more commonly as &quot;water sausages.&quot;</property>
   <object id="60" name="Rotating Switch Puzzle (Room 3)" x="8508.24" y="4198.06">
    <properties>
     <property name="description" value="The protagonist must press this switch to proceed to the next room."/>
+    <property name="zh_description" value="主角必須按下這個開關才能前往下一個房間。"/>
+    <property name="zh_name" value="旋轉謎題房間 #3"/>
+    <property name="zh_page" value="廢墟/謎題#旋轉謎題房間"/>
    </properties>
    <point/>
   </object>
   <object id="62" name="Rotating Switch Puzzle (Room 4)" x="8538.17" y="3749.09">
    <properties>
     <property name="description" value="The protagonist must press this switch to proceed to the next room."/>
+    <property name="zh_description" value="主角必須按下這個開關才能前往下一個房間。"/>
+    <property name="zh_name" value="旋轉謎題房間 #4"/>
+    <property name="zh_page" value="廢墟/謎題#旋轉謎題房間"/>
    </properties>
    <point/>
   </object>
@@ -491,6 +678,8 @@ Known more commonly as &quot;water sausages.&quot;</property>
   <object id="2" name="Toriel" x="190.54" y="5982.37">
    <properties>
     <property name="description" value="If [[Toriel]] was spared, she appears at the beginning of the Ruins. She is watering the [[Golden Flowers]] in the area. On the [[True Pacifist Route]], she is replaced with [[Asriel Dreemurr|Asriel]]."/>
+    <property name="zh_description">若 [[Toriel]] 被寬恕後，她會出現在廢墟的起點澆灌[[金色花朵]]。
+在[[完美路線]]中會被 [[Asriel Dreemurr|Asriel]] 取代。</property>
    </properties>
    <point/>
   </object>
@@ -498,42 +687,57 @@ Known more commonly as &quot;water sausages.&quot;</property>
    <properties>
     <property name="description" value="The Froggit informs the protagonist about how to spare enemies. It disappears if any monster is killed."/>
     <property name="page" value="Froggit#Main Story"/>
+    <property name="zh_description" value="這隻 Froggit 會告訴主角如何寬恕敵人。當主角殺死過任何怪物後就會消失。"/>
+    <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>
   </object>
   <object id="42" name="Froggit" x="7768.4" y="4532.37">
    <properties>
     <property name="description" value="This [[Froggit]] tells the protagonist how to skip dialogue. It does not show up if the protagonist had skipped dialogue prior to interacting with it."/>
+    <property name="zh_description" value="這隻 [[Froggit]] 會告訴主角如何跳過對話。若主角在與它互動之前已經跳過對話就不會出現。"/>
+    <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>
   </object>
   <object id="43" name="Ant-sized Froggit" x="7832.22" y="4505.92">
    <properties>
     <property name="description" value="An ant-sized [[Froggit]] waves at the protagonist upon discovery."/>
+    <property name="zh_description" value="一隻螞蟻大小的 [[Froggit]] 在牆壁中向主角揮手。"/>
+    <property name="zh_name" value="螞蟻大小的 Froggit"/>
    </properties>
    <point/>
   </object>
   <object id="44" name="Froggit" x="7888.93" y="4532.37">
    <properties>
     <property name="description" value="This [[Froggit]] teaches the protagonist how to make the game window full screen."/>
+    <property name="zh_description">這隻 [[Froggit]] 會教主角如何將遊戲視窗切換為全螢幕模式。
+在[[版本差異|遊戲機版本]]的 ''[[Undertale]]'' 中改教主角邊界。</property>
+    <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>
   </object>
   <object id="45" name="Froggit" x="8007.93" y="4532.12">
    <properties>
     <property name="description" value="This [[Froggit]] teaches the protagonist about the significance of yellow names, which appear when an enemy can be spared. It can offer to remove the yellow names or change the color to pink. It also informs the protagonist that they might have to spare an enemy even when their name is not yellow."/>
+    <property name="zh_name" value="這隻 [[Froggit]] 會教主角黃色名字的意義，當敵人可以被寬恕時名字就會變成黃色。他可以將黃色名字移除，或將顏色改為粉紅色的選項。它也會告訴主角，有時即使敵人的名字不是黃色，也必須寬恕。"/>
+    <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Napstablook" x="8606.77" y="5112.65">
    <properties>
     <property name="description" value="[[Napstablook]] appears here if they were defeated non-violently. They disappear upon realizing that they can fly out of the room."/>
+    <property name="zh_description" value="若 [[Napstablook]] 是在未使用暴力的情況下被擊敗就會出現在這裡。當他意識到自己可以飛出這個房間時就會消失。"/>
    </properties>
    <point/>
   </object>
   <object id="63" name="Froggit" x="9508.48" y="3693.1">
    <properties>
     <property name="description" value="This [[Froggit]] informs the protagonist that [[Toriel]] recently went to buy groceries. On [[Hard Mode]], the Froggit says that she came back empty-handed."/>
+    <property name="zh_description">這隻 [[Froggit]] 告訴主角 [[Toriel]] 最近出去買東西。
+在[[困難模式]]中這隻 Froggit 說她空手而回。</property>
+    <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>
   </object>

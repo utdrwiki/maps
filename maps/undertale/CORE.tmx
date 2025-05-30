@@ -76,6 +76,7 @@
     <property name="page" value="New Home"/>
     <property name="zh_description" value="通往[[新居]]的電梯。打開電梯後 [[Alphys]] 向主角透露，必須殺死 [[Asgore Dreemurr|Asgore]] 才可以回家。"/>
     <property name="zh_name" value="通往新居的電梯"/>
+    <property name="zh_page" value="新居"/>
    </properties>
    <point/>
   </object>
@@ -281,6 +282,7 @@ You're filled with determination.</property>
   <object id="25" name="Sign" x="2018.89" y="1068">
    <properties>
     <property name="description" value="''North, the warrior's path. West, the sage's path. Any path leads to The End.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description">北方，勇者的道路
 西方，智者的道路
 所有的道路都將通往終點。</property>
@@ -291,6 +293,7 @@ You're filled with determination.</property>
   <object id="26" name="Sign" x="2159.46" y="1068">
    <properties>
     <property name="description" value="''East... The End.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="東方...終點。"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -299,6 +302,7 @@ You're filled with determination.</property>
   <object id="28" name="Sign" x="1678.06" y="828">
    <properties>
     <property name="description" value="''Solve this puzzle, and The End will open.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="解決謎題，終點將會開啟。"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -307,6 +311,7 @@ You're filled with determination.</property>
   <object id="30" name="Sign" x="1777.69" y="327.597">
    <properties>
     <property name="description" value="''Why not relax and have a nice snack?''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="何不放鬆一下，吃點美味的小點心？"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -315,6 +320,7 @@ You're filled with determination.</property>
   <object id="32" name="Sign" x="2179.05" y="828">
    <properties>
     <property name="description" value="''Get lost... And stay that way.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="迷失吧...直到永恆。"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -323,6 +329,7 @@ You're filled with determination.</property>
   <object id="34" name="Sign" x="2018.1" y="586.079">
    <properties>
     <property name="description" value="''Traverse the northern room, and The End will open.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="行經北方的房間，終點將會開啟。"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -331,6 +338,7 @@ You're filled with determination.</property>
   <object id="41" name="Sign" x="2338.76" y="828">
    <properties>
     <property name="description" value="''To the East! This is The End.''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="往東走！就是終點。"/>
     <property name="zh_name" value="告示牌"/>
    </properties>
@@ -341,7 +349,8 @@ You're filled with determination.</property>
     <property name="description">I cannot fight. I cannot think.
 But, with patience, I will make my way through.</property>
     <property name="multiline" type="bool" value="true"/>
-    <property name="zh_description">無法戰鬥。無法思考。
+    <property name="zh_description">無法戰鬥。
+無法思考。
 但是憑藉著耐心，我將會走出自己的道路。</property>
     <property name="zh_name" value="告示牌"/>
    </properties>

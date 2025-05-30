@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="758" height="107" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="180">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="瀑布"/>
  </properties>
  <imagelayer id="2" name="Waterfall map">
   <image source="images/Waterfall.png" width="24230" height="3400"/>
@@ -18,6 +19,9 @@
    <properties>
     <property name="description" value="An area with an excess of garbage originating from the [[Surface]]."/>
     <property name="page" value="Garbage Dump"/>
+    <property name="zh_description" value="一個堆滿來自[[地表世界]]垃圾的區域。"/>
+    <property name="zh_name" value="垃圾場"/>
+    <property name="zh_page" value="垃圾場"/>
    </properties>
    <point/>
   </object>
@@ -30,6 +34,10 @@
    <properties>
     <property name="description" value="A three-section neighborhood consisting of [[Undyne's House]], [[Napstablook]]'s and [[Mettaton]]'s houses, and the snail farm. On the [[Genocide Route]] the area is evacuated, and no NPCs show up."/>
     <property name="page" value="Blook Acres"/>
+    <property name="zh_description">一個由三個區域組成的區域，包括 [[Undyne 的家]]、[[Napstablook]] 與 [[Mettaton]] 的家和蝸牛農場。
+在[[屠殺路線]]中沒有任何 NPC。</property>
+    <property name="zh_name" value="幽靈畝"/>
+    <property name="zh_page" value="幽靈畝"/>
    </properties>
    <point/>
   </object>
@@ -42,6 +50,9 @@
    <properties>
     <property name="description" value="[[Undyne]]'s house. She is befriended here if no [[Stats#EXP|EXP]] had been gained at that point."/>
     <property name="page" value="Undyne's House"/>
+    <property name="zh_description" value="[[Undyne]] 的家。如果在那之前沒有獲得任何 [[遊戲數據#EXP|EXP]]，會在這裡與她成為朋友。"/>
+    <property name="zh_name" value="Undyne 的家"/>
+    <property name="zh_page" value="Undyne 的家"/>
    </properties>
    <point/>
   </object>
@@ -49,6 +60,9 @@
    <properties>
     <property name="description" value="Hidden village inhabited by [[Temmie]]s."/>
     <property name="page" value="Temmie Village"/>
+    <property name="zh_description" value="[[Temmie]] 們居住的隱藏村莊。"/>
+    <property name="zh_name" value="Temmie 村莊"/>
+    <property name="zh_page" value="Temmie 村莊"/>
    </properties>
    <point/>
   </object>
@@ -56,6 +70,7 @@
    <properties>
     <property name="color" type="color" value="#fff5fb97"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="往 Unydne 的家入口"/>
    </properties>
    <polyline points="0,1.06532 -159.932,1.22085 -159.118,-62.2635"/>
   </object>
@@ -63,6 +78,7 @@
    <properties>
     <property name="color" type="color" value="#ff8b7658"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="往蝸牛農場入口"/>
    </properties>
    <polyline points="0,0 192.885,0.00844899 192.893,-75.9784"/>
   </object>
@@ -70,6 +86,7 @@
    <properties>
     <property name="color" type="color" value="#ff99d9ea"/>
     <property name="thickness" value="3.0"/>
+    <property name="zh_name" value="往 Mettaton 的家入口"/>
    </properties>
    <polyline points="-1.77557,-0.16646 -1.75113,-146.745 291.388,-147.095"/>
   </object>
@@ -77,6 +94,7 @@
    <properties>
     <property name="color" type="color" value="#ffcfcfba"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="往 Napstablook 的家入口"/>
    </properties>
    <polyline points="0,0 -47.6382,-0.0581166 -47.7473,-155.077"/>
   </object>
@@ -86,6 +104,8 @@
    <properties>
     <property name="description" value="Scripted encounter against an Aaron."/>
     <property name="page" value="Aaron"/>
+    <property name="zh_description" value="與 Aaron 戰鬥"/>
+    <property name="zh_page" value="Aaron"/>
    </properties>
    <point/>
   </object>
@@ -93,6 +113,8 @@
    <properties>
     <property name="description" value="Scripted encounter against Shyren."/>
     <property name="page" value="Shyren"/>
+    <property name="zh_description" value="與 Shyren 戰鬥"/>
+    <property name="zh_page" value="Shyren"/>
    </properties>
    <point/>
   </object>
@@ -100,6 +122,10 @@
    <properties>
     <property name="description" value="Miniboss battle against [[Mad Dummy]]. On the [[Genocide Route]], the dummy becomes corporeal and is renamed to Glad Dummy."/>
     <property name="page" value="Mad Dummy/In Battle"/>
+    <property name="zh_description">與憤怒假人戰鬥。
+在[[屠殺路線]]中，他會變成快樂假人。</property>
+    <property name="zh_name" value="憤怒假人"/>
+    <property name="zh_page" value="憤怒假人/戰鬥中"/>
    </properties>
    <point/>
   </object>
@@ -107,6 +133,10 @@
    <properties>
     <property name="description" value="[[Monster Kid]] confronts the protagonist, but the protagonist engages them in battle and attacks them. [[Undyne]] leaps in and takes the fatal blow in their place. She tells Monster Kid to leave and transforms into Undyne the Undying."/>
     <property name="page" value="Undyne the Undying"/>
+    <property name="zh_description">[[怪物小孩]]與主角對峙，但主角與他進入戰鬥並對他發動攻擊。
+[[Undyne]] 跳出來替他擋下致命一擊。她叫怪物小孩離開，並變身為不朽的 Undyne。</property>
+    <property name="zh_name" value="不朽的 Undyne (屠殺路線)"/>
+    <property name="zh_page" value="不朽的 Undyne"/>
    </properties>
    <point/>
   </object>
@@ -114,6 +144,11 @@
    <properties>
     <property name="description" value="Boss battle against [[Undyne]]. Her pre-battle monologue changes depending on whether they killed monsters or killed [[Papyrus]]."/>
     <property name="page" value="Undyne/In Battle"/>
+    <property name="zh_description">與 [[Undyne]] 的戰鬥。
+戰鬥前她的獨白會根據主角是否殺害了其他怪物或是殺了 [[Papyrus]] 而有所不同。
+</property>
+    <property name="zh_name" value="Undyne 最終戰"/>
+    <property name="zh_page" value="Undyne"/>
    </properties>
    <point/>
   </object>
@@ -122,30 +157,40 @@
   <object id="5" name="Sans" x="894.363" y="1445.73">
    <properties>
     <property name="description" value="[[Sans]] offers to take the protagonist to [[Grillby's]]. He leads them through a &quot;shortcut', which teleports them straight there."/>
+    <property name="zh_description" value="[[Sans]] 提議帶主角透過&quot;捷徑&quot;去 [[Grillby's]]。"/>
    </properties>
    <point/>
   </object>
   <object id="10" name="Camera" x="1261.76" y="1647.9">
    <properties>
     <property name="description" value="A camera hidden behind the waterfall."/>
+    <property name="zh_description" value="隱藏在瀑布內的攝影機"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="First Undyne encounter" x="1820.47" y="1359.29">
    <properties>
     <property name="description" value="[[Undyne]] notices the protagonist as they attempt to move through the grass. She refrains from attacking since the grass is under scientific protection. [[Monster Kid]] shows up after she leaves and expresses excitement about the way she was staring at the protagonist."/>
+    <property name="zh_description">當主角試圖穿過草叢時，[[Undyne]] 注意到了主角。但因為草叢受到科學保護，她沒有發動攻擊。
+在她離開後，[[怪物小孩]]從草叢中跑出現，並興奮地表示她盯著主角看的樣子很酷。</property>
+    <property name="zh_name" value="第一次遇見 Undyne"/>
    </properties>
    <point/>
   </object>
   <object id="48" name="Second Undyne encounter" x="4390.96" y="382.239">
    <properties>
     <property name="description" value="[[Undyne]] chases the protagonist across the dock and continuously throws spears at them. The protagonist must make it across while avoiding the spears."/>
+    <property name="zh_description" value="[[Undyne]] 向主角投擲長矛，主角則避免被長矛給擊中。"/>
+    <property name="zh_name" value="第二次遇見 Undyne"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="First Undyne chase conclusion" x="6722.39" y="558.047">
    <properties>
     <property name="description" value="[[Undyne]] approaches the protagonist and attempts to grab them, only to grab [[Monster Kid]] instead, who expresses excitement that Undyne touched them."/>
+    <property name="zh_description" value="[[Undyne]] 接近主角並試圖抓住主角，卻不小心抓到了[[怪物小孩]]。他興奮地表示 Undyne 碰到他了。"/>
+    <property name="zh_name" value="第一次 Undyne 抓住主角"/>
    </properties>
    <point/>
   </object>
@@ -153,54 +198,73 @@
    <properties>
     <property name="description" value="If the Fun Value is 66, a fake hallway appears after Waterfall's Crystal room. There is an additional 10% chance that a door appears in this hallway."/>
     <property name="page" value="Fun Value#Fake Hallway"/>
+    <property name="zh_description" value="當 [[Fun 值]]為66時出現。一旦離開這個長廊後 Fun 值會重設成0。"/>
+    <property name="zh_name" value="神秘長廊"/>
+    <property name="zh_page" value="Fun_值#神秘長廊"/>
    </properties>
    <point/>
   </object>
   <object id="82" name="Umbrella" x="11169" y="642.378">
    <properties>
     <property name="description" value="The protagonist can take an umbrella and carry it around with them. The umbrella can be used to prompt altered dialogue with some characters and reveal the solution to the [[Waterfall/Puzzles#The Piano Puzzle|Piano Puzzle]]."/>
+    <property name="zh_description" value="主角可以拿起一把雨傘並隨身攜帶。雨傘可用來觸發與某些角色的特殊對話，並揭示[[瀑布/謎題#鋼琴謎題|鋼琴謎題]]的解法。"/>
+    <property name="zh_name" value="傘桶"/>
    </properties>
    <point/>
   </object>
   <object id="83" name="Monster Kid" x="11921.1" y="628.766">
    <properties>
     <property name="description" value="[[Monster Kid]] follows the protagonist throughout the next few rooms."/>
+    <property name="zh_description" value="[[怪物小孩]]跟隨著主角通過幾個區域。"/>
+    <property name="zh_name" value="怪物小孩"/>
    </properties>
    <point/>
   </object>
   <object id="84" name="Monster Kid intermission 1" x="12761.9" y="689.356">
    <properties>
     <property name="description" value="[[Monster Kid]] exclaims how cool [[Undyne]] is."/>
+    <property name="zh_description" value="[[怪物小孩]]提及 [[Undyne]] 有多麼的酷。"/>
+    <property name="zh_name" value="怪物小孩閒聊 #1"/>
    </properties>
    <point/>
   </object>
   <object id="85" name="Monster Kid intermission 2" x="12838" y="1318.79">
    <properties>
     <property name="description" value="[[Monster Kid]] relates a story about [[Asgore Dreemurr|Asgore]] coming to school one day and states the possibility of [[Undyne]] coming to school as well."/>
+    <property name="zh_description" value="[[怪物小孩]]提及 [[Asgore Dreemurr|Asgore]] 來學校教導種花，並希望 [[Undyne]] 成為學校的老師。"/>
+    <property name="zh_name" value="怪物小孩閒聊 #2"/>
    </properties>
    <point/>
   </object>
   <object id="86" name="Monster Kid intermission 3" x="12912.3" y="1686.39">
    <properties>
     <property name="description" value="[[Monster Kid]] claims that [[Undyne]] would never hurt an innocent person."/>
+    <property name="zh_description" value="[[怪物小孩]]表示 [[Undyne]] 絕對不會傷害無辜的人。"/>
+    <property name="zh_name" value="怪物小孩閒聊 #3"/>
    </properties>
    <point/>
   </object>
   <object id="87" name="Monster Kid intermission 4" x="14738.7" y="1703.98">
    <properties>
     <property name="description" value="[[Monster Kid]] allows the protagonist to climb on top of their shoulders in order to reach the ledge."/>
+    <property name="zh_description" value="[[怪物小孩]] 讓主角透過他的肩膀爬上懸崖。"/>
+    <property name="zh_name" value="怪物小孩閒聊 #4"/>
    </properties>
    <point/>
   </object>
   <object id="89" name="Umbrella" x="14603.5" y="1677.79">
    <properties>
     <property name="description" value="The protagonist can place their umbrella here if they are carrying one."/>
+    <property name="zh_description" value="主角必須先將雨傘放回去後才能繼續前進。"/>
+    <property name="zh_name" value="傘桶"/>
    </properties>
    <point/>
   </object>
   <object id="93" name="Third Undyne Encounter" x="15877" y="1726.54">
    <properties>
     <property name="description" value="[[Undyne]] chases the protagonist across the bridge and continuously thrusts spears from underneath. The protagonist must make it across while avoiding the spears."/>
+    <property name="zh_description" value="[[Undyne]] 在橋上追趕主角，並不斷從橋下刺出長矛。主角必須在閃避長矛的同時成功穿越橋樑。"/>
+    <property name="zh_name" value="第三次遇見 Undyne"/>
    </properties>
    <point/>
   </object>
@@ -208,42 +272,56 @@
    <properties>
     <property name="color" type="color" value="#ff7bfbfe"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="Undyne 追逐路線"/>
    </properties>
    <polyline points="0,0 519.991,-2.33492 520.014,113.396 680.799,112.55 680.799,32.8019 599.918,33.0236 600.076,-38.4609 849.623,-38.5039 849.535,36.0533 770.79,35.5194 770.568,88.8514 1274.35,89.2805 1275.3,198.42 1372.11,198.599 1371.82,634.12 1293.05,634.256 1293.3,670.221 872.739,670.289 873.721,1032.41 1612.51,1032.41 1612.35,917.456 1817.3,918.592"/>
   </object>
   <object id="95" name="Second Undyne chase conclusion" x="18052.3" y="2608.59">
    <properties>
     <property name="description" value="[[Undyne]] destroys the bridge with the protagonist on it. The protagonist plummets into the [[Garbage Dump]]."/>
+    <property name="zh_description" value="[[Undyne]] 在主角還在橋上時摧毀了橋樑，導致主角墜入[[垃圾場]]。"/>
+    <property name="zh_name" value="第二次 Undyne 抓住主角"/>
    </properties>
    <point/>
   </object>
   <object id="96" name="Flashback" x="17718.5" y="3258.32">
    <properties>
     <property name="description" value="A brief flashback of [[Asriel Dreemurr]] meeting the [[Chara|first human]]. The flashback cuts off before Asriel says his name."/>
+    <property name="zh_description" value="在主角醒來前短暫播放 [[Asriel Dreemurr]] 剛遇見[[Chara|第一個人類]]時所發生的事。"/>
+    <property name="zh_name" value="短暫回憶"/>
    </properties>
    <point/>
   </object>
   <object id="98" name="Donation box" x="17899.5" y="3266">
    <properties>
     <property name="description" value="On the console versions of [[Undertale]], a donation box appears here on the [[Genocide Route]]."/>
+    <property name="zh_description" value="僅出現在遊戲機版本的 ''[[Undertale]]'' 中，在[[屠殺路線]]中這裡會出現一個捐款箱。"/>
+    <property name="zh_name" value="捐款箱"/>
    </properties>
    <point/>
   </object>
   <object id="108" name="Napstablook's invitation" x="18920.1" y="2402.71">
    <properties>
     <property name="description" value="After interrupting the battle against [[Mad Dummy]], [[Napstablook]] invites the protagonist to their house in [[Blook Acres]]."/>
+    <property name="zh_description" value="在打斷與[[憤怒假人]]的戰鬥後，[[Napstablook]] 邀請主角前往他在[[幽靈畝]]的家。"/>
+    <property name="zh_name" value="Napstablook 的邀請"/>
    </properties>
    <point/>
   </object>
   <object id="109" name="Special Aaron encounter" x="18994.9" y="2294.79">
    <properties>
     <property name="description" value="A special encounter with [[Aaron]] and [[Woshua]] is triggered here if the protagonist left one of [[Napstablook]]'s CDs playing. This unlocks Aaron's yellow credit text in the [[True Pacifist Ending Credits]]."/>
+    <property name="zh_description">若播放 [[Napstablook]] 任一張CD後在此處閒晃，會在這裡觸發與 [[Aaron]] 及 [[Woshua]] 的特殊遭遇事件。
+這將解鎖[[完美路線致謝名單]]中 Aaron 的黃色文字。</property>
+    <property name="zh_name" value="特別 Aaron 遭遇事件"/>
    </properties>
    <point/>
   </object>
   <object id="114" name="Befriending Undyne" x="18603.2" y="2065.38">
    <properties>
     <property name="description" value="[[Papyrus]] appears here and initiates the hangout with [[Undyne]] if no [[Stats#EXP|EXP]] had been gained at that point."/>
+    <property name="zh_description" value="如果在此之前沒有獲得任何 [[遊戲數據#EXP|EXP]]，[[Papyrus]] 會在這裡出現並邀請主角與 [[Undyne]] 碰面的活動。"/>
+    <property name="zh_name" value="和 Undyne 成為朋友"/>
    </properties>
    <point/>
   </object>
@@ -251,6 +329,9 @@
    <properties>
     <property name="description" value="A house next to [[Napstablook]]'s. It remains locked throughout the game, but it can be unlocked by using the [[Mystery Key]] bought from [[Bratty and Catty]]."/>
     <property name="page" value="Blook Acres#Mettaton's House"/>
+    <property name="zh_description" value="在 [[Napstablook]] 家的旁邊。可以使用從 [[Bratty and Catty]] 那裡購買的[[神秘鑰匙]]來解鎖。"/>
+    <property name="zh_name" value="Mettaton 的家"/>
+    <property name="zh_page" value="幽靈畝#Mettaton 的家"/>
    </properties>
    <point/>
   </object>
@@ -258,18 +339,25 @@
    <properties>
     <property name="description" value="[[Napstablook]] invites the protagoist to play a game of Thundersnail for the price of 10G."/>
     <property name="page" value="Thundersnail"/>
+    <property name="zh_description" value="[[Napstablook]] 邀請主角以 10G 的價格玩一場閃電蝸牛遊戲。"/>
+    <property name="zh_name" value="閃電蝸牛"/>
+    <property name="zh_page" value="閃電蝸牛"/>
    </properties>
    <point/>
   </object>
   <object id="133" name="Hidden path to Temmie Village" x="21101" y="2811.11">
    <properties>
     <property name="description" value="This path lights up upon exiting [[Temmie Village]]."/>
+    <property name="zh_description" value="當所有的蘑菇都被點亮時，這條通往 [[Temmie 村莊]]的道路就會出現。"/>
+    <property name="zh_name" value="通往 Temmie 村莊的道路"/>
    </properties>
    <point/>
   </object>
   <object id="151" name="Fourth Undyne encounter" x="22568.5" y="2650.97">
    <properties>
     <property name="description" value="[[Undyne]] corners the protagonist and attempts to take their [[SOUL]]. However, [[Monster Kid]] jumps out at the last second and interrupts the ensuing battle. Undyne drags them away."/>
+    <property name="zh_description" value="[[Undyne]] 逼近主角並試圖奪取[[靈魂]]。然而[[怪物小孩]]在最後一刻跳出來打斷了戰鬥。之後 Undyne 將他帶離現場。"/>
+    <property name="zh_name" value="第四次遇見 Undyne"/>
    </properties>
    <point/>
   </object>
@@ -293,6 +381,9 @@ Someone help me... Anyone... please... Help me...
 '''Flowey:''' ...
 But nobody came.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">當主角回到這個地點時，[[Flowey]] 會修改[[回聲花]]所說的訊息。這段訊息會根據 [[Toriel]] 是被寬恕還是被殺而有所不同。
+在[[屠殺路線]]中，回音花仍然會顯示&quot;異常安靜&quot;，儘管仍使用 Toriel 的聲音。</property>
+    <property name="zh_name" value="Flowey 的訊息"/>
    </properties>
    <point/>
   </object>
@@ -300,18 +391,27 @@ But nobody came.</property>
    <properties>
     <property name="description" value="They repeat the last message someone has said to it. On the [[Genocide Route]] or if [[Undyne]] was killed on the [[Neutral Route]], all Echo Flowers output the message &quot;''(It's strangely silent.)''&quot;"/>
     <property name="page" value="Echo Flowers"/>
+    <property name="zh_description">它們會重複最後一個對它們說話的人的訊息。
+在[[屠殺路線]]中或是 [[Undyne]] 被殺的情況下，所有的回聲花都會顯示&quot;異常安靜&quot;。</property>
+    <property name="zh_name" value="回聲花"/>
+    <property name="zh_page" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="161" name="Genocide Route reminder" x="22199.4" y="2119.49">
    <properties>
     <property name="description" value="If the kill counter has not yet been exhausted at this point, the protagonist is given a reminder of how many monsters remain."/>
+    <property name="zh_description" value="若在與 [[Undyne]] 戰鬥前仍有剩餘怪物，則此存檔點會顯示&quot;強烈感覺還剩下 &lt;Number&gt; 個怪物。尚無法繼續前進&quot;。"/>
+    <property name="zh_name" value="屠殺路線提醒"/>
    </properties>
    <point/>
   </object>
   <object id="163" name="Fifth Undyne encounter (Neutral Route)" x="22649.5" y="2060.78">
    <properties>
     <property name="description" value="[[Monster Kid]] confronts the protagonist and asks them to confirm whether they are a human. Monster Kid then attempts to leave, only to trip and fall off the bridge. As they hang onto the ledge below, [[Undyne]] appears on the other side. The protagonist can save Monster Kid, confront Undyne, let Monster Kid fall, or run away into the next room."/>
+    <property name="zh_description">[[怪物小孩]]懷疑主角是否為人類。接著當他準備離開時，卻不小心絆倒並從橋上摔落。
+此時 [[Undyne]] 出現在橋的另一端。主角可以選擇拯救怪物小孩、衝向 Undyne、讓 怪物小孩掉下去，或是逃跑進入下一個區域。</property>
+    <property name="zh_name" value="第五次遇見 Undyne"/>
    </properties>
    <point/>
   </object>
@@ -321,6 +421,10 @@ But nobody came.</property>
    <properties>
     <property name="description" value="Sells [[Nice Cream]] for 25G and offers a [[Punch Card]] for every purchase. If the protagonist is holding an umbrella, the Nice Cream Guy sells Nice Cream for a discounted price of 15G."/>
     <property name="page" value="Nice Cream Guy"/>
+    <property name="zh_description">以25G 的價格販售[[好棒冰]]，且每次購買都會附上一張[[擊點卡]]。
+若主角正拿著一把雨傘。好棒冰則會以優惠價15G 的價格販售。</property>
+    <property name="zh_name" value="好棒冰店員"/>
+    <property name="zh_page" value="好棒冰店員"/>
    </properties>
    <point/>
   </object>
@@ -328,6 +432,8 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist can buy items from Gerson's shop."/>
     <property name="page" value="Gerson"/>
+    <property name="zh_description" value="主角可以在 Gerson 的店購買物品。"/>
+    <property name="zh_page" value="Gerson"/>
    </properties>
    <point/>
   </object>
@@ -335,6 +441,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist can buy and sell items at the Tem Shop."/>
     <property name="page" value="Tem Shop"/>
+    <property name="zh_description" value="主角可以在 Tem 商店購買或是販售物品。"/>
+    <property name="zh_name" value="Tem 商店"/>
+    <property name="zh_page" value="Tem 商店"/>
    </properties>
    <point/>
   </object>
@@ -344,6 +453,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="A Dimensional Box in the [[Waterfall/Puzzles#The Rock Puzzle|Rock Puzzle Room]]."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在[[瀑布/謎題#石頭謎題|石頭謎題]]的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -351,6 +463,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="A Dimensional Box near [[Sans]]'s telescope."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[Sans]] 望遠鏡旁的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -358,6 +473,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="A Dimensional Box in front of [[Gerson]]'s shop."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[Gerson]] 商店外的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -365,6 +483,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="A Dimensional Box in [[Temmie Village]]."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[Temmie 村莊]]的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -374,19 +495,28 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist must avoid the rocks as they cross the water. The rocks can push the protagonist off the waterfall, after which they must start from the beginning."/>
     <property name="page" value="Waterfall/Puzzles#The Rock Puzzle"/>
+    <property name="zh_description" value="主角在過河時必須避開岩石。岩石可能會將主角推落瀑布，若被推落，就必須從起點重新開始。"/>
+    <property name="zh_name" value="石頭謎題"/>
+    <property name="zh_page" value="瀑布/謎題#石頭謎題"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Hidden room" x="1260.6" y="1423.47">
    <properties>
     <property name="description" value="A hidden room behind this waterfall."/>
+    <property name="zh_description" value="在瀑布後方有一個隱藏區域。"/>
+    <property name="zh_name" value="隱藏區域"/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="Bridge Seed Puzzle 1" x="2371.24" y="1510.73">
+  <object id="19" name="Bridge Seed Puzzle 1" x="2371.24" y="1510.73" visible="0">
    <properties>
     <property name="description" value="The protagonist must construct a bridge across the water by aligning four Bridge Seeds in a straight line. To solve this puzzle, the protagonist must construct a horizontal bridge from this spot. On the [[Genocide Route]], this puzzle is already solved."/>
     <property name="page" value="Bridge Seed"/>
+    <property name="zh_description">主角必須將四個橋種子排成一直線，以建造一座橫跨水面的橋。主角需要從這個位置開始建造一座水平的橋。
+在[[屠殺路線]]中此謎題已被解開。</property>
+    <property name="zh_name" value="橋梁種子 #1"/>
+    <property name="zh_page" value="橋梁種子"/>
    </properties>
    <point/>
   </object>
@@ -394,30 +524,48 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist must construct a bridge using four Bridge Seeds to continue forward. There are two solutions to this puzzle. On the [[Genocide Route]], this puzzle is already solved."/>
     <property name="page" value="Bridge Seed"/>
+    <property name="zh_description">主角必須將四個橋種子排成一直線，以建造一座橫跨水面的橋。
+在[[屠殺路線]]中此謎題已被解開。</property>
+    <property name="zh_name" value="橋梁種子 #2"/>
+    <property name="zh_page" value="橋梁種子"/>
    </properties>
    <point/>
   </object>
   <object id="21" name="Bridge Seed Puzzle 2 (Solution 1)" x="2872.01" y="1369.34">
    <properties>
     <property name="description" value="The protagonist can solve this puzzle by constructing a vertical bridge from this spot."/>
+    <property name="zh_description">主角可從這個位置開始建造一座垂直的橋。
+在[[屠殺路線]]中此謎題已被解開。</property>
+    <property name="zh_name" value="橋梁種子 (方法一)"/>
+    <property name="zh_page" value="橋梁種子"/>
    </properties>
    <point/>
   </object>
   <object id="22" name="Bridge Seed Puzzle 2 (Solution 2)" x="2851.58" y="1507.08">
    <properties>
     <property name="description" value="The protagonist can solve this puzzle by constructing a vertical bridge from this spot."/>
+    <property name="zh_description">主角可從這個位置開始建造一座垂直的橋。
+在[[屠殺路線]]中此謎題已被解開。</property>
+    <property name="zh_name" value="橋梁種子 (方法二)"/>
+    <property name="zh_page" value="橋梁種子"/>
    </properties>
    <point/>
   </object>
   <object id="24" name="Bridge Seed Puzzle 2 (Secret Solution)" x="2911.24" y="1553.43">
    <properties>
     <property name="description" value="By constructing a horizontal bridge from this spot, they can access a secret room containing the [[Abandoned Quiche]]. This bridge must still be constructed on the [[Genocide Route]]."/>
+    <property name="zh_description">透過從這個位置建造一座水平的橋，主角可以前往一個有著[[被拋棄鹹派]]的隱藏區域。
+即便在[[屠殺路線]]中仍需建造這座橋。</property>
+    <property name="zh_name" value="橋梁種子 (可選區域)"/>
+    <property name="zh_page" value="橋梁種子"/>
    </properties>
    <point/>
   </object>
   <object id="30" name="Bell Blossom" x="3049.7" y="1206.63">
    <properties>
     <property name="description" value="Can be used to reset the [[Bridge Seed]] puzzle to its default state."/>
+    <property name="zh_description" value="可以將[[橋梁種子]]恢復原狀。"/>
+    <property name="zh_name" value="鈴鐺花"/>
    </properties>
    <point/>
   </object>
@@ -425,12 +573,17 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist must interact with this wall to reveal a hidden doorway to the next room."/>
     <property name="page" value="Waterfall/Puzzles#The Wishing Room Wall Puzzle"/>
+    <property name="zh_description" value="主角必須與這面牆互動，才能顯現通往下一個房間的隱藏門。"/>
+    <property name="zh_name" value="許願室謎題"/>
+    <property name="zh_page" value="瀑布#最初的海草區域到許願室"/>
    </properties>
    <point/>
   </object>
   <object id="39" name="Wall Puzzle Telescope" x="3132.21" y="1072.62">
    <properties>
     <property name="description" value="Using this telescope reveals a hidden clue that directs the protagonist to the northern wall."/>
+    <property name="zh_description" value="使用這台望遠鏡會顯示一個隱藏的線索，指引主角前往北邊的牆。"/>
+    <property name="zh_name" value="許願室望遠鏡"/>
    </properties>
    <point/>
   </object>
@@ -438,6 +591,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="The protagonist must play the piano to the tune of ''[[His Theme]]'' in order to unlock the [[Artifact Room]]."/>
     <property name="page" value="Waterfall/Puzzles#The Piano Puzzle "/>
+    <property name="zh_description" value="主角必須演奏出特定的旋律，才能解鎖[[神器密室]]。"/>
+    <property name="zh_name" value="鋼琴謎題"/>
+    <property name="zh_page" value="瀑布/謎題#鋼琴謎題"/>
    </properties>
    <point/>
   </object>
@@ -445,6 +601,9 @@ But nobody came.</property>
    <properties>
     <property name="description" value="If the protagonist places an umbrella on this statue, they can view the solution to the Piano Puzzle."/>
     <property name="page" value="Waterfall/Puzzles#The Piano Puzzle"/>
+    <property name="zh_description" value="如果主角將雨傘放在這座雕像上，就能看到鋼琴謎題的解法。"/>
+    <property name="zh_name" value="雕像"/>
+    <property name="zh_page" value="瀑布/謎題#鋼琴謎題"/>
    </properties>
    <point/>
   </object>
@@ -453,12 +612,18 @@ But nobody came.</property>
   <object id="3" name="Waterfall - Checkpoint" x="823.697" y="1439.03">
    <properties>
     <property name="description" value="''The sound of rushing water fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="湍急的流水聲使你充滿了決心。"/>
+    <property name="zh_name" value="瀑布 - 哨站"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Waterfall - Hallway" x="2045.17" y="1493.69">
    <properties>
     <property name="description" value="''A feeling of dread hangs over you... But you stay determined.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="恐懼的感覺籠罩著你......但你仍然保持決心。"/>
+    <property name="zh_name" value="瀑布 - 過道"/>
    </properties>
    <point/>
   </object>
@@ -467,6 +632,9 @@ But nobody came.</property>
     <property name="description">Knowing the mouse might one day extract the cheese from the mystical crystal...
 It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">知道老鼠總有一天會從神秘的水晶中抽取出起司......
+這使你充滿了決心。</property>
+    <property name="zh_name" value="瀑布 - 水晶"/>
    </properties>
    <point/>
   </object>
@@ -478,6 +646,12 @@ It fills you with determination.
 '''Gave umbrella to the statue:''' The serene sound of a distant music box...
 It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">遠方音樂盒的平靜聲音......
+使你充滿了決心。 '''[曾解決鋼琴謎題]'''
+
+自洞頂落下的低沉雨聲......
+使你充滿了決心。 '''[未解決鋼琴謎題]'''</property>
+    <property name="zh_name" value="瀑布 - 橋"/>
    </properties>
    <point/>
   </object>
@@ -491,24 +665,43 @@ It fills you with determination.
 
 '''Second time:''' Partaking in worthless garbage fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這裡的瀑布似乎是從洞頂流下的......
+偶爾會看到垃圾流過......
+然後落入底下的無底深淵。
+看著無止境的無用垃圾的循環......
+使你充滿了決心。 '''[第一次]'''
+
+成為無用垃圾中的一員使你充滿了決心。 '''[第二次以上]'''</property>
+    <property name="zh_name" value="瀑布 - 垃圾場"/>
    </properties>
    <point/>
   </object>
   <object id="105" name="Waterfall - Quiet Area" x="18920" y="2349.11">
    <properties>
     <property name="description" value="''You feel a calming tranquility. You're filled with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">感覺到使人沉靜下來的靜謐。
+你充滿了決心......</property>
+    <property name="zh_name" value="瀑布 - 沉靜區域"/>
    </properties>
    <point/>
   </object>
   <object id="135" name="Waterfall - Temmie Village" x="21353.6" y="3128.95">
    <properties>
     <property name="description" value="''You feel... something. You're filled with detemmienation."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">你感覺到了......某些東西。
+這使你充滿了掘森(Detemmienation)。</property>
+    <property name="zh_name" value="瀑布 - Temmie 村莊"/>
    </properties>
    <point/>
   </object>
   <object id="162" name="Unnamed SAVE Point" x="22319.8" y="2007.71">
    <properties>
     <property name="description" value="SAVE Point in the [[Echo Flowers|Echo Flower]] hallway. Only appears on the [[Genocide Route]] and disappears after killing [[Undyne the Undying]]."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="未命名的存檔點，僅出現在[[屠殺路線]]中曾被[[不朽的 Undyne]]殺死過。"/>
+    <property name="zh_name" value="未命名存檔點"/>
    </properties>
    <point/>
   </object>
@@ -520,6 +713,15 @@ It fills you with determination.
 
 '''If Undyne was killed:''' The wind has stopped. You're filled with determination...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">風呼嘯著。
+你充滿了決心...... '''[尚未和 Undyne 戰鬥]'''
+
+風停了。
+你充滿了決心...... '''[殺了 Undyne 後]'''
+
+原本呼嘯的風現在微微吹拂。
+這使你充滿了決心。'''[寬恕 Undyne 後]'''</property>
+    <property name="zh_name" value="瀑布 - 與 Undyne 的決戰場所"/>
    </properties>
    <point/>
   </object>
@@ -529,6 +731,9 @@ It fills you with determination.
    <properties>
     <property name="description" value="Exclaims that they are sneaking out to see [[Undyne]] in action."/>
     <property name="page" value="Monster Kid"/>
+    <property name="zh_description" value="他興奮地表示他們正偷偷溜出去看 [[Undyne]] 的英姿。"/>
+    <property name="zh_name" value="怪物小孩"/>
+    <property name="zh_page" value="怪物小孩"/>
    </properties>
    <point/>
   </object>
@@ -536,6 +741,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Explains how [[Echo Flowers]] work."/>
     <property name="page" value="Waterfall/NPCs#Echo Flower Explainer"/>
+    <property name="zh_description" value="解釋[[回聲花]]的運作方式。"/>
+    <property name="zh_page" value="瀑布/NPC#Echo Flower Explainer"/>
    </properties>
    <point/>
   </object>
@@ -543,12 +750,17 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears after the first [[Undyne]] chase. They can ferry the protagonist to the other side of the dock."/>
     <property name="page" value="Waterfall/NPCs#Ferry"/>
+    <property name="zh_description" value="在第一次與 [[Undyne]] 追逐後出現。他們可以載主角渡過碼頭到對岸。"/>
+    <property name="zh_page" value="瀑布/NPC#Ferry"/>
    </properties>
    <point/>
   </object>
   <object id="41" name="Woshua" x="3464.21" y="565.398">
    <properties>
     <property name="description" value="A [[Woshua]] appears here after defeating [[Undyne]] if no monsters have been killed. They complain that everything is dirty and hard to clean up."/>
+    <property name="zh_description">在擊敗 [[Undyne]] 後，若沒有殺死任何怪物，這裡會出現一隻 [[Woshua]]。
+他抱怨一切都很髒，難以清理。
+</property>
    </properties>
    <point/>
   </object>
@@ -556,6 +768,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears if the [[Fun Value]] is 90 or greater. They are terrified of the idea of a world in which they do not exist. They have additional dialogue if the protagonist is carrying an umbrella."/>
     <property name="page" value="Waterfall/NPCs#Goner Kid"/>
+    <property name="zh_description" value="當 Fun 值為90以上時有機率出現。他對於自己不存在的世界感到極度恐懼。若主角正拿著一把雨傘，還會有額外的對話。"/>
+    <property name="zh_page" value="瀑布/NPC#Goner Kid"/>
    </properties>
    <point/>
   </object>
@@ -563,6 +777,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears after the first [[Undyne]] chase. They can ferry the protagonist to the other side of the dock."/>
     <property name="page" value="Waterfall/NPCs#Ferry"/>
+    <property name="zh_description" value="在第一次與 [[Undyne]] 追逐後出現。他們可以載主角渡過碼頭到對岸。"/>
+    <property name="zh_page" value="瀑布/NPC#Ferry"/>
    </properties>
    <point/>
   </object>
@@ -576,12 +792,15 @@ It fills you with determination.
   <object id="55" name="Mystery Man" x="7524.17" y="289.989">
    <properties>
     <property name="description" value="Appears in the room behind the gray door. Fades away once interacted with."/>
+    <property name="zh_description" value="出現在灰色門後的房間中。與其互動後便會消失。"/>
    </properties>
    <point/>
   </object>
   <object id="60" name="Sans" x="7906.35" y="528.273">
    <properties>
     <property name="description" value="[[Sans]] allows the protagonist to look through his telescope, which is a prank that puts red paint over their eye."/>
+    <property name="zh_description">[[Sans]] 讓主角透過他的望遠鏡觀看，這其實是一個惡作劇，會在主角的眼睛上留下紅色印記。
+</property>
    </properties>
    <point/>
   </object>
@@ -589,6 +808,9 @@ It fills you with determination.
    <properties>
     <property name="description" value="Has a fixation on stars despite not knowing what they are. They ask the protagonist if they are a star."/>
     <property name="page" value="Waterfall/NPCs#&quot;Loren&quot;"/>
+    <property name="zh_description">他對星星有著執著，即使他不知道星星是什麼。
+他會問主角是否就是一顆星星。</property>
+    <property name="zh_page" value="瀑布/NPC#Loren"/>
    </properties>
    <point/>
   </object>
@@ -596,6 +818,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the room containing [[Sans]]'s telescope and the Quiet Area."/>
     <property name="page" value="Small Bird"/>
+    <property name="zh_description" value="牠會載主角往返 [[Sans]] 的望遠鏡房間與寧靜區域的極不成比例的小裂縫。"/>
+    <property name="zh_page" value="瀑布/NPC#Small Bird"/>
    </properties>
    <point/>
   </object>
@@ -603,6 +827,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Offers to carry the protagonist over the disproportionately small gap connecting the Quiet Area to the room containing [[Sans]]'s telescope."/>
     <property name="page" value="Small Bird"/>
+    <property name="zh_description" value="牠會載主角往返 [[Sans]] 的望遠鏡房間與寧靜區域的極不成比例的小裂縫。"/>
+    <property name="zh_page" value="瀑布/NPC#Small Bird"/>
    </properties>
    <point/>
   </object>
@@ -610,6 +836,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears out of the water. They talk to the protagonist as they walk across the room. They retreat back into the water as the protagonist leaves the room."/>
     <property name="page" value="Onionsan"/>
+    <property name="zh_description" value="他從水中出現。他在主角穿越房間時與其交談，當主角離開房間時，他就會退回水中。"/>
+    <property name="zh_page" value="瀑布/NPC#Onionsan"/>
    </properties>
    <point/>
   </object>
@@ -617,18 +845,25 @@ It fills you with determination.
    <properties>
     <property name="description" value="Relocates here at the end of the [[True Pacifist Route]], having reuinted with her sister [[Shyren]]."/>
     <property name="page" value="Lemon Bread"/>
+    <property name="zh_description" value="在[[完美路線]]結尾時搬到這裡，並與她的妹妹 [[Shyren]] 重聚。"/>
+    <property name="zh_page" value="Lemon Bread"/>
    </properties>
    <point/>
   </object>
   <object id="88" name="Aaron" x="14510.5" y="1663.61">
    <properties>
     <property name="description" value="An [[Aaron]] appears here after defeating [[Undyne]] if no monsters have been killed. His dialogue varies depending on whether he heard [[Napstablook]]'s music in [[Blook Acres]]."/>
+    <property name="zh_description">在擊敗 [[Undyne]] 後，若沒有殺死任何怪物，這裡會出現一隻 [[Aaron]]。
+他的對話會根據他是否在 [[幽靈畝]] 聽過 [[Napstablook]] 的音樂而有所不同。
+</property>
    </properties>
    <point/>
   </object>
   <object id="97" name="Woshua" x="17844.4" y="3248.44">
    <properties>
     <property name="description" value="A [[Woshua]] appears here after defeating [[Undyne]] if no monsters have been killed. They explain that they are cleaning the garbage."/>
+    <property name="zh_description">在擊敗 [[Undyne]] 後，若沒有殺死任何怪物，這裡會出現一隻 [[Woshua]]。
+他表示自己正在清理垃圾。</property>
    </properties>
    <point/>
   </object>
@@ -636,49 +871,64 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears if the [[Fun Value]] is between 80 and 89. She mentions that Suzy, her neighbor's daughter, looks to be about the protagonist's age. On the Nintendo Switch and Xbox versions, if the Fun Value is 81, she becomes a &quot;goner&quot; at the end of the [[True Pacifist Route]] and disappears."/>
     <property name="page" value="Waterfall/NPCs#Clam Girl"/>
+    <property name="zh_description">當 [[Fun 值]]為80~90之間有機率出現。她提到鄰居的女兒 Suzy 看起來和主角年紀差不多。在 Nintendo Switch 和 Xbox 版本中，若 Fun 值為81，她會在[[完美路線]]結尾時消失不見。
+</property>
+    <property name="zh_page" value="瀑布/NPC#Clam Girl"/>
    </properties>
    <point/>
   </object>
   <object id="113" name="Mad Dummy" x="18514.5" y="2120.76">
    <properties>
     <property name="description" value="[[Mad Dummy]] appears here after their battle. On the Nintendo Switch version of [[Undertale]], the dummy is replaced with [[Mad Mew Mew]] after her battle."/>
+    <property name="zh_description" value="在和[[憤怒假人]]戰鬥後會出現在這裡。在 Nintendo Switch 中，在和[[憤怒喵喵]]戰鬥後會取代憤怒假人。"/>
+    <property name="zh_name" value="憤怒假人"/>
    </properties>
    <point/>
   </object>
   <object id="115" name="Undyne" x="18599.1" y="1832.26">
    <properties>
     <property name="description" value="[[Undyne]] provides commentary on the objects inside her house."/>
+    <property name="zh_description" value="[[Undyne]] 會對她家中的物品進行講解與評論。"/>
    </properties>
    <point/>
   </object>
   <object id="116" name="Napstablook" x="18990.7" y="1819.83">
    <properties>
     <property name="description" value="[[Napstablook]] provides commentary on the objects in their house and invites the protagonist to participate in a family tradition."/>
+    <property name="zh_description" value="[[Napstablook]] 會對他家中的物品進行評論，並邀請主角參加一項家族傳統。"/>
    </properties>
    <point/>
   </object>
   <object id="117" name="Napstablook" x="18832.6" y="2124.71">
    <properties>
     <property name="description" value="[[Napstablook]] relocates here at the end of the [[True Pacifist Route]]. They ask the protagonist for their name since they did not learn it when everyone else did."/>
+    <property name="zh_description" value="在[[完美路線]]的結局中，[[Napstablook]] 出現在這裡。他向主角詢問名字，因為除了他以外大家都知道主角的名字。"/>
    </properties>
    <point/>
   </object>
   <object id="118" name="Mettaton" x="19005.5" y="2109.61">
    <properties>
     <property name="description" value="[[Mettaton EX]] relocates here at the end of the [[True Pacifist Route]]. He expresses desire to become a star on the surface and has enlisted [[Shyren]] and [[Napstablook]] to be part of his troupe."/>
+    <property name="zh_description">在[[完美路線]]的結尾中，[[Mettaton EX]] 出現在這裡。他表示想在地表成為明星，並邀請了 [[Shyren]] 和 [[Napstablook]] 加入他的表演團隊。
+</property>
    </properties>
    <point/>
   </object>
   <object id="122" name="Napstablook" x="19330" y="2110.22">
    <properties>
     <property name="description" value="[[Napstablook]] explains that they work at the Blook Family Snail Farm."/>
+    <property name="zh_description">[[Napstablook]] 表示說他們在 Blook 家族的蝸牛農場工作。
+</property>
    </properties>
    <point/>
   </object>
-  <object id="123" name="Snail" x="19235.5" y="2062.84">
+  <object id="123" name="Snail" x="19235.5" y="2062.84" visible="0">
    <properties>
     <property name="description" value="Does not say anything on its own, but the narration suggests that the protagonist wonders what it tastes like. "/>
     <property name="page" value="Waterfall/NPCs#Snails"/>
+    <property name="zh_description" value="牠不會說話，但旁白暗示主角在知道牠吃起來是什麼味道。"/>
+    <property name="zh_name" value="蝸牛"/>
+    <property name="zh_page" value="瀑布/NPC#Snails"/>
    </properties>
    <point/>
   </object>
@@ -686,6 +936,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Encourages the protagonist to reach far on their journey."/>
     <property name="page" value="Waterfall/NPCs#Snails"/>
+    <property name="zh_description" value="他鼓勵主角在旅途中努力前行、追求更遠大的目標。"/>
+    <property name="zh_page" value="瀑布/NPC#Snails"/>
    </properties>
    <point/>
   </object>
@@ -693,6 +945,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="A humanoid monster who had just purchased a shell from a snail as a second house."/>
     <property name="page" value="Waterfall/NPCs#Snails"/>
+    <property name="zh_description" value="他不是一隻蝸牛，而是一位剛從隔壁蝸牛買殼的類人怪物。"/>
+    <property name="zh_page" value="瀑布/NPC#Snails"/>
    </properties>
    <point/>
   </object>
@@ -700,6 +954,9 @@ It fills you with determination.
    <properties>
     <property name="description" value="Is counting dollar bills, presumably because it had just sold its shell to the Snail Guy."/>
     <property name="page" value="Waterfall/NPCs#Snails"/>
+    <property name="zh_description">他正在數鈔票，推測是因為牠剛把自己的殼賣給了 Snail Guy。
+</property>
+    <property name="zh_page" value="瀑布/NPC#Snails"/>
    </properties>
    <point/>
   </object>
@@ -707,54 +964,65 @@ It fills you with determination.
    <properties>
     <property name="description" value="Can ferry the protagonist to either [[Snowdin]] or [[Hotland]]."/>
     <property name="page" value="River Person"/>
+    <property name="zh_description" value="主角可以到[[雪町]]或[[熱地]]。"/>
+    <property name="zh_name" value="河流人"/>
+    <property name="zh_page" value="河流人"/>
    </properties>
    <point/>
   </object>
   <object id="141" name="Temmie" x="21198.8" y="3083.51">
    <properties>
     <property name="description" value="Introduces herself and her friend to the right."/>
+    <property name="zh_description" value="介紹她自己以及站在右邊的朋友。"/>
    </properties>
    <point/>
   </object>
   <object id="142" name="Temmie" x="21233.4" y="3087.04">
    <properties>
     <property name="description" value="Introduces herself and her friend to the right."/>
+    <property name="zh_description" value="介紹她自己以及站在右邊的朋友。"/>
    </properties>
    <point/>
   </object>
   <object id="143" name="Temmie" x="21266.1" y="3075.81">
    <properties>
     <property name="description" value="Introduces herself and her friend to the right."/>
+    <property name="zh_description" value="介紹她自己以及站在右邊的朋友。"/>
    </properties>
    <point/>
   </object>
   <object id="144" name="Temmie" x="21298.8" y="3081.91">
    <properties>
     <property name="description" value="Introduces themself as &quot;Bob&quot; and speaks proper English."/>
+    <property name="zh_description" value="自稱 Bob，並使用正常文法交談。"/>
    </properties>
    <point/>
   </object>
   <object id="145" name="Temmie" x="21445" y="3074.89">
    <properties>
     <property name="description" value="Recognizes the protagonist as a human and considers them cute."/>
+    <property name="zh_description" value="她表達對於主角和人類的喜歡。"/>
    </properties>
    <point/>
   </object>
   <object id="146" name="Temmie" x="21503.1" y="3118.46">
    <properties>
     <property name="description" value="Claims that she is watching over an egg in hopes of becoming a parent. The egg is hard-boiled."/>
+    <property name="zh_description" value="她不斷地看著一顆煮熟的蛋，希望蛋可以孵化。"/>
    </properties>
    <point/>
   </object>
   <object id="147" name="Temmie" x="21608.5" y="3116.74">
    <properties>
     <property name="description" value="Explains that she, like the protagonist, is allergic to Temmies. The Temmie breaks out in hives afterward."/>
+    <property name="zh_description" value="她表示她和主角一樣對 Temmie 過敏。隨後那隻 Temmie 長了蕁麻疹。"/>
    </properties>
    <point/>
   </object>
   <object id="148" name="Temmie" x="21583.3" y="3025.83">
    <properties>
     <property name="description" value="Is seen peeking out from behind a hole in the wall."/>
+    <property name="zh_description" value="她躲在牆壁後面偷看。"/>
    </properties>
    <point/>
   </object>
@@ -762,6 +1030,8 @@ It fills you with determination.
    <properties>
     <property name="description" value="Performs a dance for the protagonist and provides commentary depending on whether the protagonist has killed any monster."/>
     <property name="page" value="Waterfall/NPCs#Ragel"/>
+    <property name="zh_description" value="他會為主角表演一段舞蹈，並根據主角是否有殺過任何怪物而提供不同的評論。"/>
+    <property name="zh_page" value="瀑布/NPC#Ragel"/>
    </properties>
    <point/>
   </object>
@@ -769,6 +1039,9 @@ It fills you with determination.
    <properties>
     <property name="description" value="Appears after defeating [[Undyne]]. They have prepared a puzzle for the protagonist to solve, but they immediately criticize them for how they attempt to push the box."/>
     <property name="page" value="Waterfall/NPCs#Elder Puzzler"/>
+    <property name="zh_description">在擊敗 [[Undyne]] 後出現。他們準備了一個謎題讓主角解開，但當主角嘗試推動箱子時，卻立刻對其方式進行批評。
+</property>
+    <property name="zh_page" value="瀑布/NPC#Elder Puzzler"/>
    </properties>
    <point/>
   </object>
@@ -779,6 +1052,8 @@ It fills you with determination.
     <property name="description">All that gives my life validation is explaining the Echo Flower
 No one can know...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="不會有人知道... 只有解釋回聲花才能驗證我生命的意義。"/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -789,18 +1064,30 @@ You can put an item in or take an item out.
 Why would you though??? You can't use items when they're in the box!
 Sincerely, a box hater.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">即便是不同的[[次元箱|箱子]]，
+你依然可以把東西隨意地拿進拿出
+...但為什麼要這麼做呢？
+放在箱子裡的物品是無法直接使用的！
+您誠摯的 厭箱者。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Echo Flower" x="1449.26" y="1732.05">
    <properties>
     <property name="description" value="''I swore I saw something... Behind that rushing water...''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="我發誓我看到有東西...在湍急的水流後面..."/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="18" name="Sign" x="2179.86" y="1467.36">
    <properties>
     <property name="description" value="''When four [[Bridge Seed]]s align in the water, they will sprout.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="當四個[[橋梁種子]]在水中排成一線，它們就會開花。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -809,24 +1096,36 @@ Sincerely, a box hater.</property>
     <property name="description">Congratulations!
 You failed the puzzle!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">恭喜！
+你的解謎失敗了！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Echo Flower" x="3329.45" y="1468.33">
    <properties>
     <property name="description" value="''I just wasn't ready for the responsibility.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="我還沒準備好去負起責任。"/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="29" name="Sign" x="2999.2" y="1210.13">
    <properties>
     <property name="description" value="''If an error is made, the Bell Blossom can call [[Bridge Seed]]s back to where they started.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="如果擺錯了，敲響鈴鐺花可以使[[橋梁種子]]回到最初的位置。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="31" name="Sign" x="2779.42" y="1008.87">
    <properties>
     <property name="description" value="''WISHING ROOM''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="'''許願室'''"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -836,6 +1135,10 @@ You failed the puzzle!</property>
 If you hoped with all your heart, your wish would come true.
 Now, all we have are these sparkling stones on the ceiling.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">很久以前，怪物們會向天上的星星偷偷訴說他們的願望。
+如果全心全意地許願，你的願望就會成真。
+現在，我們只有天花板上發光的石頭。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -844,24 +1147,36 @@ Now, all we have are these sparkling stones on the ceiling.</property>
     <property name="description">Thousands of people wishing together can't be wrong!
 [[Asgore Dreemurr|The king]] will prove that.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">千萬人一起許願，絕對不會錯！
+國王將證明這一點。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="34" name="Echo Flower" x="2989.32" y="1028.75">
    <properties>
     <property name="description" value="''C'mon, sis!  Make a wish!''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="來嘛！姊妹！許個願！"/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="36" name="Echo Flower" x="3049.51" y="1028.48">
    <properties>
     <property name="description" value="''I wish my sister and I will see the real stars someday...''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="希望我跟我的姊妹有天能看到真正的星星..."/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="37" name="Echo Flower" x="3269.3" y="1048.48">
    <properties>
     <property name="description" value="''Ah... seems my horoscope is the same as last week's...''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="噢...看來我的望遠鏡跟上星期的一樣..."/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -871,6 +1186,10 @@ Now, all we have are these sparkling stones on the ceiling.</property>
 
 [[The War of Humans and Monsters]].</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(古老的文字佈滿了牆壁...你勉強的辨認出了上面的詞句)
+
+[[人類與怪物的戰爭]]</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #1"/>
    </properties>
    <point/>
   </object>
@@ -880,6 +1199,10 @@ Now, all we have are these sparkling stones on the ceiling.</property>
 Humans are unbelievably strong. It would take the [[SOUL]] of nearly every [[Monsters|monster]]...
 ...just to equal the power of a single human SOUL.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">人類為何要向我們宣戰？畢竟，他們看似無人能敵
+人類強大的不可思議 即使傾盡幾乎所有的怪物靈魂...
+...也才不過等同於一名人類靈魂的力量</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #2"/>
    </properties>
    <point/>
   </object>
@@ -888,6 +1211,9 @@ Humans are unbelievably strong. It would take the [[SOUL]] of nearly every [[Mon
     <property name="description">But [[humans]] have one weakness. Ironically, it is the strength of their [[SOUL]].
 Its power allows it to persist outside the human body, even after death.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">但[[人類]]有一個弱點。諷刺的是，這個弱點即是他們強韌的[[靈魂]]。
+它的力量就算在人類的體外也能存續，死後亦然...</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #3"/>
    </properties>
    <point/>
   </object>
@@ -896,6 +1222,9 @@ Its power allows it to persist outside the human body, even after death.</proper
     <property name="description">If a [[Monsters|monster]] defeats a [[Humans|human]], they can take its [[SOUL]].
 A monster with a human SOUL... A horrible beast with unfathomable power.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">若一名[[怪物]]擊敗了一個[[人類]]...就能取走他的[[靈魂]]。
+一名持有人類靈魂的怪物...將是一頭力量深不可測的恐怖野獸</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #4"/>
    </properties>
    <point/>
   </object>
@@ -904,18 +1233,29 @@ A monster with a human SOUL... A horrible beast with unfathomable power.</proper
     <property name="description">(It's an illustration of a strange creature...)
 (There is something very unsettling about this drawing.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(這是一張描繪著一隻詭異生物的畫像...)
+
+
+(這張圖畫的某些地方讓人感到非常的不安)</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #5"/>
    </properties>
    <point/>
   </object>
   <object id="53" name="Echo Flower" x="7229.01" y="508.365">
    <properties>
     <property name="description" value="''Squeak.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="吱。"/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
   <object id="58" name="Sign" x="7989.33" y="47.7988">
    <properties>
     <property name="description" value="Has been defaced with a list of 21 different flavors."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="取而代之的是21種不同口味的清單。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -925,6 +1265,11 @@ A monster with a human SOUL... A horrible beast with unfathomable power.</proper
 
 So? Don't you have any wishes to make?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+
+所以？你沒任何想許的願望嗎？</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -935,6 +1280,10 @@ So? Don't you have any wishes to make?</property>
 ... hmm, just one, but...
 It's kind of stupid.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+...唔嗯嗯，是有一個，但...有點蠢。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -944,6 +1293,10 @@ It's kind of stupid.</property>
 
 Don't say that! Come on, I promise I won't laugh.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+別這樣說！告訴我嘛，保證不會笑你。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -952,12 +1305,19 @@ Don't say that! Come on, I promise I won't laugh.</property>
     <property name="description">The power to take their [[SOUL]]s.
 This is the power that the [[humans]] feared.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這種可以取走他們[[靈魂]]的力量。
+
+這正是人類所[[畏懼]]的。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #6"/>
    </properties>
    <point/>
   </object>
   <object id="74" name="Sign" x="10229.3" y="588.91">
    <properties>
     <property name="description" value="''The northern room hides a great treasure.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="北方的房間隱藏著絕佳的寶藏。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -966,6 +1326,9 @@ This is the power that the [[humans]] feared.</property>
     <property name="description">A haunting song echoes down the corridor... Won't you play along?
 Only the first 8 are fine.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">一首縈繞心頭的歌在走廊上迴響...不來一起彈嗎？
+只需要前八個就好。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -975,6 +1338,10 @@ Only the first 8 are fine.</property>
 When a monster dies, its SOUL disappears.
 And an incredible power would be needed to take the SOUL of a living monster.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這股力量無法計量。確實，一個[[人類]]無法取走一名[[怪物]]了[[靈魂]]。
+當一名怪物死亡時，他的靈魂也會隨之消散。
+必須擁有強大到難以置信的力量，才能夠從一名活著的怪物身上奪取靈魂。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #7"/>
    </properties>
    <point/>
   </object>
@@ -987,12 +1354,23 @@ If only for a few moments.
 A [[Humans|human]] could absorb this SOUL. But this has never happened.
 And now it never will.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">只有一種例外。
+特別[[靈魂]]的怪物...
+&quot;[[頭目怪物]]&quot;
+頭目怪物的靈魂強大得能在死後維持形體...
+僅僅片刻。
+此時[[人類]]可以吸收這個怪物的靈魂。但是從未發生。
+以後也將永不發生。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #8"/>
    </properties>
    <point/>
   </object>
   <object id="81" name="Sign" x="11070" y="644.781">
    <properties>
     <property name="description" value="''Please take one.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="請拿一把。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -1001,6 +1379,9 @@ And now it never will.</property>
     <property name="description">The [[humans]], afraid of our power, declared war on us.
 They attacked suddenly, and without mercy.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[人類]]，因為害怕我們的力量，而向我們宣戰。
+他們突然發動了攻擊，而且不帶一絲仁慈。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #9"/>
    </properties>
    <point/>
   </object>
@@ -1010,6 +1391,10 @@ They attacked suddenly, and without mercy.</property>
 United, the [[humans]] were too powerful, and us [[monsters]], too weak.
 Not a single [[SOUL]] was taken, and countless monsters were turned to dust...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">在最後，它甚至無法被稱作戰爭。
+[[人類]]太過強大，但[[怪物]]太過脆弱。
+一個[[靈魂]]都沒有奪下，卻有無數怪物歸於塵土。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #10"/>
    </properties>
    <point/>
   </object>
@@ -1019,6 +1404,10 @@ Not a single [[SOUL]] was taken, and countless monsters were turned to dust...</
 East: [[Hotland]]
 ???: [[Temmie Village]]</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">北方：[[幽靈畝]]
+東方：[[熱地]]
+？？？：[[Temmie 村莊]]</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -1028,6 +1417,10 @@ East: [[Hotland]]
 Seven of their greatest magicians sealed us underground with a magic spell.
 Anything can enter through the seal, but only beings with a powerful [[SOUL]] can leave.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">由於傷痛，疲憊，以及對生活的恐懼，我們向[[人類]]投降了。
+他們之中七位最強大的魔法師，用魔法咒語將我們封印在地下。
+任何東西都能進入封印，但是唯有擁有強大[[靈魂]]的存在能夠離開。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #11"/>
    </properties>
    <point/>
   </object>
@@ -1037,6 +1430,10 @@ Anything can enter through the seal, but only beings with a powerful [[SOUL]] ca
 If a huge power, equivalent to seven human [[SOUL]]s, attacks the [[barrier]]...
 It will be destroyed.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">只有一個方法能逆轉咒語。
+如果有一股等同七個人類靈魂的強大力量攻擊結界的話...
+它就會被摧毀。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #12"/>
    </properties>
    <point/>
   </object>
@@ -1046,6 +1443,10 @@ It will be destroyed.</property>
 There is no way a [[Humans|human]] could come here.
 We will remain trapped down here forever.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">但是這個受詛咒的地方沒有入口或出口。
+[[人類]]沒有辦法來到這裡。
+我們注定要被困在這下面直到永遠。</property>
+    <property name="zh_name" value="人類和怪物的戰爭 #13"/>
    </properties>
    <point/>
   </object>
@@ -1055,6 +1456,10 @@ We will remain trapped down here forever.</property>
 welcom to...
 TEM VILLAGE!!!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">吼嗨吚！！
+歡瑩來到 
+Temmie 村莊！！！！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -1064,6 +1469,10 @@ TEM VILLAGE!!!</property>
 u shud check out...
 [[Tem Shop|TEM SHOP]]!!!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">吼咿！！
+里英該看看
+[[Tem 商店]]！！！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -1073,18 +1482,28 @@ u shud check out...
 shud check...
 [[Tem Shop|TEM SHOP]]!!!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">兌呀！！哦洞易！！
+里英該看看
+[[Tem 商店]]！！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="150" name="Sign" x="21309.4" y="2427.89">
    <properties>
     <property name="description" value="''Without candles or magic to guide them Home, the monsters used crystals to navigate.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="怪物們不用蠟燭或魔法，而是使用水晶來指引他們回家的路。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="152" name="Echo Flower" x="22619.2" y="2647.62">
    <properties>
     <property name="description" value="''You aren't gonna tell my parents about this, are you?''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="你不會跟我爸媽講的，對不對？"/>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1094,6 +1513,10 @@ shud check...
 
 ... hmm... if I say my wish... You promise you won't laugh at me?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+...唔嗯嗯...如果我說出我的願望...你保證不會笑我？</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1103,6 +1526,10 @@ shud check...
 
 Of course I won't laugh!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。) 
+
+我絕對不會笑！</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1113,6 +1540,11 @@ Of course I won't laugh!</property>
 Someday, I'd like to climb this mountain we're all buried under.
 Standing under the sky, looking at the world all around... That's my wish.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+希望有天，可以爬上這座把我們埋在地底的山。
+站在星空下，看著周圍的世界...這是我的心願。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1122,6 +1554,10 @@ Standing under the sky, looking at the world all around... That's my wish.</prop
 
 ... hey, you said you wouldn't laugh at it!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到笑聲。)
+
+...嘿，你說你不會笑的！</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1132,6 +1568,11 @@ Standing under the sky, looking at the world all around... That's my wish.</prop
 Sorry, it's just funny...
 That's my wish, too.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你聽到短暫的對話。)
+
+抱歉，只是覺得很有趣...
+我也許了同樣的願望。</property>
+    <property name="zh_name" value="回聲花"/>
    </properties>
    <point/>
   </object>
@@ -1141,6 +1582,10 @@ That's my wish, too.</property>
 The Angel... The One Who Has Seen The [[Surface]]...
 They will return. And the [[underground]] will go empty.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">然而...有個預言。
+那個天使...曾經見過[[地表]]...
+祂將會歸來。[[地下世界]]也將空無一人。</property>
+    <property name="zh_name" value="人類和怪物的戰爭"/>
    </properties>
    <point/>
   </object>
@@ -1153,6 +1598,11 @@ So I reached out to her, and told her...
 Thst she, [[Napstablook|Blooky]], and I should all perform together sometime.
 She seemed to like that idea.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">親愛的日記：最近，[[Lemon Bread|Shyren 的姊姊]]最近&quot;倒下&quot;了。
+真令人難過。再也沒有姊姊能夠講話了...她變得比以前更加內向。
+於是我向她伸出援手並告訴她...她，[[Napstablook|Blooky]] 跟我應該找時間一起表演。
+她似乎很喜歡那個主意。</property>
+    <property name="zh_name" value="日記 #1"/>
    </properties>
    <point/>
   </object>
@@ -1161,6 +1611,8 @@ She seemed to like that idea.</property>
     <property name="description">Dearer Diary: I like to buy a new diary for every entry I make.
 I love to collect diaries.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="更親愛的日記：我喜歡每寫一則日記就為自己買本新的日記。我喜歡收集日記。"/>
+    <property name="zh_name" value="日記 #2"/>
    </properties>
    <point/>
   </object>
@@ -1174,6 +1626,13 @@ Come on, Blooky. You know I'd never leave you behind.
 And besides...
 I'd never find the kind of body I'm looking for, anyway.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">最親愛的日記：我們的表親為了成為訓練用假人而離開了農場。
+現在只剩我和 [[Napstablook|Blooky]] 了。
+Blooky 問我是否也想要一個身體。
+聽起來很...無奈...
+拜託，Blooky。你知道我永遠不會離開你身邊的。
+而且另一方面來說...我也永遠找不到自己理想中的身體。</property>
+    <property name="zh_name" value="日記 #3"/>
    </properties>
    <point/>
   </object>
@@ -1187,6 +1646,13 @@ Honestly, she's a dork. And she's obsessed with these awful cartoons.
 But she's kind of funny, too...
 I want to see her again.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我親愛的日記：我今天遇見了某個...很有趣的[[Alphys|人]]。
+我在上周發布自己的人類俱樂部的廣告。
+今天我們是第一次見面。只有一個人來。
+老實說，她很呆。
+而且沉迷那些糟糕的動畫。
+但她也很有趣...我想再見見她。</property>
+    <property name="zh_name" value="日記 #4"/>
    </properties>
    <point/>
   </object>
@@ -1195,6 +1661,9 @@ I want to see her again.</property>
     <property name="description">Diary... My dear: My diary collection is growing fabulously.
 I have like five now.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我日記的親愛：我的日記收藏越來越驚人了。
+我已經有五本了。</property>
+    <property name="zh_name" value="日記 #5"/>
    </properties>
    <point/>
   </object>
@@ -1207,6 +1676,13 @@ In a form like that, I could finally feel like... &quot;myself.&quot;
 After all, there's no way I can become a star the way I am now.
 Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">親愛的日記：她今天帶來讓我非常吃驚的東西。
+一個身體的草圖，她想為我創造一個身體...
+這個身體完全超出我最最狂野的想像。
+以那個形態的話，我終於覺得能成為...&quot;我自己&quot;。
+畢竟一直這樣下去的話，我永遠無法成為明星。
+對不起，[[Napstablook|Blooky]]。我的夢想無法再為任何人耽擱下去...</property>
+    <property name="zh_name" value="日記 #6"/>
    </properties>
    <point/>
   </object>
@@ -1215,24 +1691,32 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
   <object id="28" name="Phone call 1" x="2783.84" y="1288.68">
    <properties>
     <property name="description" value="[[Papyrus]] calls the protagonist and asks them what they are wearing. They can either tell him the truth or lie to him."/>
+    <property name="zh_description" value="[[Papyrus]] 打電話給主角。第一次確認主角的裝備。"/>
+    <property name="zh_name" value="Papyrus 電話 #1"/>
    </properties>
    <point/>
   </object>
   <object id="70" name="Phone call 2" x="8408.71" y="1466.72">
    <properties>
     <property name="description" value="[[Papyrus]] calls the protagonist again and he reveals that he used the protagonist's response to his previous question to attempt to distract [[Undyne]]. Regardless of what they told him or whether they had changed their [[armor]] after the call, Papyrus explains that he had told Undyne what the protagonist is currently wearing."/>
+    <property name="zh_description" value="[[Papyrus]] 打電話給主角。第二次確認主角的裝備。無論主角先前告訴他什麼，或是在通話後是否更換裝備，Papyrus 都會說他告訴了 Undyne 主角現在穿著的裝備。"/>
+    <property name="zh_name" value="Papyrus 電話 #2"/>
    </properties>
    <point/>
   </object>
   <object id="168" name="Phone call 3" x="23935.4" y="798.354">
    <properties>
     <property name="description" value="[[Papyrus]] calls the protagonist and tells them that they should hang out with [[Undyne]]. If Papyrus was not befriended, he reminds the protagonist that they should hang out with him first."/>
+    <property name="zh_description" value="[[Papyrus]] 打電話給主角。邀請主角前往 [[Undyne 的家]]出去玩。"/>
+    <property name="zh_name" value="Papyrus 電話 #3"/>
    </properties>
    <point/>
   </object>
   <object id="169" name="True Pacifist Route phone call" x="18921.9" y="2620.83">
    <properties>
     <property name="description" value="On the [[True Pacifist Route]], [[Papyrus]] calls the protagonist and tells them to head to [[Alphys]]'s [[Lab]]."/>
+    <property name="zh_description" value="在[[完美路線]]中，[[Papyrus]] 向主角建議可以去[[實驗室]]找 [[Alphys]]。"/>
+    <property name="zh_name" value="完美路線來電"/>
    </properties>
    <point/>
   </object>
@@ -1242,6 +1726,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="The protagonist can pick up the Old Tutu in this area."/>
     <property name="page" value="Old Tutu"/>
+    <property name="zh_description" value="在地上找到。"/>
+    <property name="zh_name" value="舊芭蕾舞裙"/>
+    <property name="zh_page" value="舊芭蕾舞裙"/>
    </properties>
    <point/>
   </object>
@@ -1249,6 +1736,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="The protagonist can obtain the Abandoned Quiche from underneath this bench."/>
     <property name="page" value="Abandoned Quiche"/>
+    <property name="zh_description" value="在長椅下找到。"/>
+    <property name="zh_name" value="被拋棄鹹派"/>
+    <property name="zh_page" value="被拋棄鹹派"/>
    </properties>
    <point/>
   </object>
@@ -1256,6 +1746,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="A box containing one Punch Card for every [[Nice Cream]] purchased."/>
     <property name="page" value="Punch Card"/>
+    <property name="zh_description" value="購買[[好棒冰]]後在箱子內找到。"/>
+    <property name="zh_name" value="擊點卡"/>
+    <property name="zh_page" value="擊點卡"/>
    </properties>
    <point/>
   </object>
@@ -1263,6 +1756,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="The protagonist can pick up the Ballet Shoes in this area."/>
     <property name="page" value="Ballet Shoes"/>
+    <property name="zh_description" value="在草叢後找到。"/>
+    <property name="zh_name" value="芭蕾舞鞋"/>
+    <property name="zh_page" value="芭蕾舞鞋"/>
    </properties>
    <point/>
   </object>
@@ -1270,6 +1766,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="The protagonist attempts to claim the artifact, only for the [[Annoying Dog]] to appear in their inventory, preventing them from obtaining it. Deploying the dog causes it to absorb the artifact, leving [[Dog Residue]] behind."/>
     <property name="page" value="Artifact Room"/>
+    <property name="zh_description" value="當主角嘗試取得時，[[煩人的狗]]會吸收神器，留下[[狗的殘留物]]。"/>
+    <property name="zh_name" value="傳說中的神器"/>
+    <property name="zh_page" value="神器密室"/>
    </properties>
    <point/>
   </object>
@@ -1277,6 +1776,9 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
    <properties>
     <property name="description" value="The protagonist can pick up two pieces of Astronaut Food from this cooler."/>
     <property name="page" value="Astronaut Food"/>
+    <property name="zh_description" value="可在箱子中找到，可以拿二次。"/>
+    <property name="zh_name" value="太空食品"/>
+    <property name="zh_page" value="太空食品"/>
    </properties>
    <point/>
   </object>

@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="489" height="79" tilewidth="32" tileheight="32" infinite="0" nextlayerid="14" nextobjectid="158">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="雪町"/>
  </properties>
  <imagelayer id="2" name="Snowdin map">
   <image source="images/Snowdin.png" width="15620" height="2500"/>
@@ -11,6 +12,9 @@
    <properties>
     <property name="description" value="A locked door. It only unlocks after [[SAVE#Reset|resetting]] from the end of the [[True Pacifist Route]] if the protagonist had not touched any of the names in the [[True Pacifist Ending Credits]]. [[Glyde]] can be fought in this room."/>
     <property name="page" value="Mysterious Door"/>
+    <property name="zh_description" value="一扇上鎖的門。只有在[[完美路線]]結尾中未碰到[[完美路線致謝名單]]中的任何名字時才會解鎖。可以在這個房間與 [[Glyde]] 戰鬥。"/>
+    <property name="zh_name" value="神秘的門"/>
+    <property name="zh_page" value="神秘的門"/>
    </properties>
    <point/>
   </object>
@@ -18,6 +22,11 @@
    <properties>
     <property name="description" value="Town situated at the end of [[Snowdin Forest]]. On the [[Genocide Route]], the town is abandoned after all of the inhabitants had evacuated."/>
     <property name="page" value="Snowdin"/>
+    <property name="zh_description">位於[[雪町森林]]盡頭的城鎮。
+在[[屠殺路線]]中不會出現 NPC。
+</property>
+    <property name="zh_name" value="雪町鎮"/>
+    <property name="zh_page" value="雪町鎮"/>
    </properties>
    <point/>
   </object>
@@ -25,6 +34,9 @@
    <properties>
     <property name="description" value="Papyrus and Sans's house, accessible after Papyrus unlocks the front door. The date/hangout with Papyrus occurs here."/>
     <property name="page" value="Papyrus and Sans's House"/>
+    <property name="zh_description" value="在和 Papyrus 戰鬥後解鎖前門後可進入。可以在此和 Papyrus 約會或是一同出去玩。"/>
+    <property name="zh_name" value="Papyrus 和 Sans 的家"/>
+    <property name="zh_page" value="Papyrus 和 Sans 的家"/>
    </properties>
    <point/>
   </object>
@@ -32,6 +44,8 @@
    <properties>
     <property name="description" value="A restaurant. A hangout with [[Sans]] occurs here only if [[Papyrus]] was spared on the [[Neutral Route]]."/>
     <property name="page" value="Grillby's"/>
+    <property name="zh_description" value="一間酒吧。當[[中立路線]]中寬恕 [[Papyrus]] 後可以在此與 [[Sans]] 進行活動。"/>
+    <property name="zh_page" value="Grillby's"/>
    </properties>
    <point/>
   </object>
@@ -39,6 +53,7 @@
    <properties>
     <property name="color" type="color" value="#ffba5327"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="雪町鎮圖書館入口"/>
    </properties>
    <polyline points="0,0 -0.0704384,-146.928 114.293,-146.097 113.359,-342.979"/>
   </object>
@@ -46,6 +61,10 @@
    <properties>
     <property name="description" value="Only available on the console versions of [[Undertale]]. The shrine is accessible by entering through the sink in [[Papyrus]]'s kitchen. Each console version has a different iteration of the Dog Shrine."/>
     <property name="page" value="Dog Shrine"/>
+    <property name="zh_description">僅在[[版本差異|遊戲機版本]]的 ''[[Undertale]]'' 中。該神社可透過進入[[Papyrus]] 廚房水槽來抵達。
+每個主機版本都有不同版本的狗狗神社。</property>
+    <property name="zh_name" value="狗狗神社"/>
+    <property name="zh_page" value="狗狗神社"/>
    </properties>
    <point/>
   </object>
@@ -64,6 +83,10 @@
   <object id="48" name="Fun Value phone call" x="3919.66" y="488.953">
    <properties>
     <property name="description" value="If the [[Fun Value]] is between 40 and 45, [[Sans]] calls the protagonist and asks if their fridge is running. If the value is between 46 and 50, [[Alphys]] calls instead and attempts to order pizza."/>
+    <property name="zh_description">當 [[Fun 值]]為40~50時會有機率接到電話。
+當 Fun 值為40~45時 [[Sans]] 會打電話問冰箱是否在運轉。
+當 Fun 值為45~50時 [[Alphys]]會打電話訂購披薩。</property>
+    <property name="zh_name" value="Fun 值電話區"/>
    </properties>
    <point/>
   </object>
@@ -71,6 +94,9 @@
    <properties>
     <property name="description" value="If the Fun Value is between 2 and 39, the protagonist receives a phone call addressed to someone whose name starts with the letter &quot;G&quot;. The caller realizes that they called the wrong number and plays the Wrong Number Song."/>
     <property name="page" value="Fun Value#Wrong Number Song"/>
+    <property name="zh_description" value="當 [[Fun 值]]為2~39時會有機率接到電話。某個打給某位名字以字母&quot;G&quot;開頭的人。來電者發現打錯號碼後，會播放&quot;錯誤號碼之歌&quot;。"/>
+    <property name="zh_name" value="錯誤號碼之歌"/>
+    <property name="zh_page" value="Fun 值#錯誤號碼之歌"/>
    </properties>
    <point/>
   </object>
@@ -80,30 +106,43 @@
    <properties>
     <property name="description" value="The door to the Ruins. It remains locked throughout the game, but it unlocks at the end of the [[True Pacifist Route]]."/>
     <property name="page" value="Ruins"/>
+    <property name="zh_description" value="通往廢墟的大門，僅在[[完美路線]]的結尾中可回去。"/>
+    <property name="zh_name" value="廢墟"/>
+    <property name="zh_page" value="廢墟"/>
    </properties>
    <point/>
   </object>
   <object id="2" name="Camera" x="90.2127" y="441.488">
    <properties>
     <property name="description" value="A camera hidden in the bushes."/>
+    <property name="zh_description" value="隱藏在草叢內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="3" name="Sans's introduction" x="2602.56" y="505.997">
    <properties>
     <property name="description" value="[[Sans]] makes his introduction here and guides the protagonist to the conveniently-shaped lamp to hide from his brother [[Papyrus]]."/>
+    <property name="zh_description">[[Sans]] 在這裡首次登場，並引導主角躲進一盞造型方便的檯燈後，以避開他的兄弟 [[Papyrus]]。
+</property>
+    <property name="zh_name" value="第一次遇見 Sans"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Papyrus's Introduction" x="3051.84" y="500.813">
    <properties>
     <property name="description" value="[[Papyrus]] makes his first appearance here. He complains that Sans is not doing his job properly, to which Sans responds by making jokes. On the [[Genocide Route]], Papyrus simply asks if Sans has found a human yet and quickly leaves afterwards."/>
+    <property name="zh_description">[[Papyrus]]在這裡首次登場。他抱怨 [[Sans]] 沒有好好執行工作，而 Sans 則以冷笑話作為回應。
+在[[屠殺路線]]中，Papyrus 在問 Sans 是否找到人類後便迅速離開。</property>
+    <property name="zh_name" value="第一次遇見 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Camera" x="3038.75" y="387.915">
    <properties>
     <property name="description" value="A camera hidden behind [[Sans]]'s sentry station."/>
+    <property name="zh_description" value="隱藏在草叢內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
@@ -111,102 +150,142 @@
    <properties>
     <property name="description" value="If the Fun Value is set to 65, there is a 50% chance that the Sound Test room will appear in between these two rooms after defeating [[Papyrus]]. The protagonist must select Gaster's Theme from the list of options in order to leave."/>
     <property name="page" value="Fun Value#Sound Test Room"/>
+    <property name="zh_description">當 [[Fun 值]]為65並已經擊敗 [[Papyrus]] 後會有50%機率進入。
+主角必須從選項中選擇&quot;Gaster 的主題曲&quot;才能離開。</property>
+    <property name="zh_name" value="聲音測試房"/>
+    <property name="zh_page" value="Fun 值#聲音測試房"/>
    </properties>
    <point/>
   </object>
   <object id="12" name="First Papyrus encounter" x="3629.43" y="486.362">
    <properties>
     <property name="description" value="The protagonist's first meeting with [[Papyrus]]. Papyrus declares his desire to capture the protagonist and retreats to prepare his puzzles."/>
+    <property name="zh_description">主角首次與 [[Papyrus]] 見面。Papyrus 宣稱他想要抓住主角，並退場準備他的謎題。
+</property>
+    <property name="zh_name" value="Papyrus 第一次遭遇"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Camera" x="3980.76" y="371.658">
    <properties>
     <property name="description" value="A camera hidden behind [[Papyrus]]'s sentry station."/>
+    <property name="zh_description" value="隱藏在 [[Papyrus]] 的厚紙板哨站內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="23" name="Second Papyrus encounter" x="5270.5" y="456.105">
    <properties>
     <property name="description" value="[[Papyrus]] introduces the protagonist to the Invisible Electricity Maze. He is initially shocked by his own orb, and [[Sans]] reminds him that the human has to hold it in order for the puzzle to work as intended. On the [[Genocide Route]], the protagonist walks through the puzzle, much to Papyrus's confusion and annoyance."/>
+    <property name="zh_description">[[Papyrus]] 向主角介紹&quot;隱形電擊迷宮&quot;。他一開始被自己的球體給電到，而 [[Sans]] 提醒他必須讓人類拿著球體，謎題才會如預期運作。
+在[[屠殺路線]]中，主角會直接穿過迷宮，令 Papyrus 感到困惑又惱怒。</property>
+    <property name="zh_name" value="第二次遭遇 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="30" name="Camera" x="5969.11" y="687.771">
    <properties>
     <property name="description" value="A camera hidden in the lump of snow."/>
+    <property name="zh_description" value="隱藏在雪堆內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="33" name="Third Papyrus encounter" x="6346.64" y="760.025">
    <properties>
     <property name="description" value="[[Papyrus]] introduces a puzzle that [[Sans]] had created. After viewing or skipping the puzzle, Sans mentions that he should have used a crossword instead, to which Papyrus responds by saying that Junior Jumble is harder. Papyrus asks the protagonist whether crosswords or Junior Jumble is harder."/>
+    <property name="zh_description" value="[[Papyrus]] 介紹了一個由 [[Sans]] 設計的謎題。在觀看或略過該謎題後，Sans 表示他本來應該用填字遊戲取代，Papyrus 則回應說縱恆字謎更難。Papyrus 接著詢問主角覺得&quot;填字遊戲&quot;還是&quot;縱恆字謎&quot;比較難。"/>
+    <property name="zh_name" value="第三次遭遇 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="38" name="Camera" x="7028.99" y="729.769">
    <properties>
     <property name="description" value="A camera hidden inside the tree."/>
+    <property name="zh_description" value="隱藏在樹木內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="45" name="Fourth Papyrus encounter" x="7651.28" y="1329.48">
    <properties>
     <property name="description" value="[[Papyrus]] asks the protagonist what they did with the spaghetti in Snowdin's Spaghetti room. The protagonist can respond by saying they either ate it all or left it alone."/>
+    <property name="zh_description" value="[[Papyrus]] 詢問主角是否吃掉義大利麵，或是根本沒動它。"/>
+    <property name="zh_name" value="第四次遭遇 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="54" name="Fifth Papyrus encounter" x="8616.36" y="1327.98">
    <properties>
     <property name="description" value="[[Papyrus]] introduces the [[Multicolor Tile Puzzle]] and explains the functionalities of each tile color. On the [[Genocide Route]] the protagonist cuts off Papyrus's explanation by walking through the puzzle."/>
+    <property name="zh_description">[[Papyrus]] 介紹了[[彩色磚塊謎題]]，並說明每種顏色的功能。
+在[[屠殺路線]]中主角會直接走過謎題，打斷了 Papyrus 的說明。</property>
+    <property name="zh_name" value="第五次遭遇 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="59" name="Snowdogs" x="9167.34" y="1352.73">
    <properties>
     <property name="description" value="[[Lesser Dog]]'s dog sculptures. How many are present depends on how many times Lesser Dog has been pet during its battle. If Lesser Dog was killed, all that remains is a pile of mushy snow."/>
+    <property name="zh_description" value="[[Lesser Dog]] 的雪雕藝術。出現的數量取決於在與 Lesser Dog 戰鬥時被撫摸了多少次。如果 Lesser Dog 被殺死，現場只會剩下一堆鬆軟的雪。"/>
+    <property name="zh_name" value="雪狗"/>
    </properties>
    <point/>
   </object>
   <object id="75" name="Camera" x="11123.8" y="1327">
    <properties>
     <property name="description" value="A camera hidden under the bridge."/>
+    <property name="zh_description" value="隱藏在橋下內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="76" name="Camera" x="11777.4" y="1327">
    <properties>
     <property name="description" value="A camera hidden under the bridge."/>
+    <property name="zh_description" value="隱藏在橋下內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="77" name="Sixth Papyrus encounter" x="11578.1" y="1327.24">
    <properties>
     <property name="description" value="[[Papyrus]] introduces the [[Snowdin/Puzzles#The Gauntlet of Deadly Terror|Gauntlet of Deadly Terror]], but he quickly retracts it after realizing that it may be too dangerous for the protagonist or, on the [[Genocide Route]], that they might not enjoy it as much as [[Undyne]] would."/>
+    <property name="zh_description">[[Papyrus]]介紹了[[雪町/謎題#終極恐懼大考驗|終極恐懼大考驗]]，但很快就收回了這個提案，因為他意識到這對主角來說可能太危險了。
+在[[屠殺路線]]中，他則覺得主角可能不會像 [[Undyne]] 那樣享受這個關卡。</property>
+    <property name="zh_name" value="第六次遭遇 Papyrus"/>
    </properties>
    <point/>
   </object>
   <object id="80" name="Camera" x="9149.62" y="1226.57">
    <properties>
     <property name="description" value="A camera hidden behind [[Lesser Dog]]'s sentry station."/>
+    <property name="zh_description" value="隱藏在 [[Lesser Dog]] 的哨站內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="86" name="Camera" x="13619.3" y="1388.82">
    <properties>
     <property name="description" value="A camera hidden in the trees."/>
+    <property name="zh_description" value="隱藏在樹叢內的攝影機。"/>
+    <property name="zh_name" value="隱藏相機"/>
    </properties>
    <point/>
   </object>
   <object id="90" name="Snowed Inn" x="12647.9" y="1043.67">
    <properties>
     <property name="description" value="The protagonist can sleep at the inn and restore their HP beyond their maximum. The money they spend here is immediately refunded."/>
+    <property name="zh_description" value="主角可以在旅館睡覺，並將 [[遊戲數據#HP|HP]] 恢復至超過最大值。所花費的金錢會立即退還。"/>
+    <property name="zh_name" value="旅館"/>
    </properties>
    <point/>
   </object>
   <object id="92" name="Undersnow Tunnels" x="12745.4" y="1303.03">
    <properties>
     <property name="description" value="An igloo network that warps the protagonist to the other side of town."/>
+    <property name="zh_description" value="可快速往返整個[[雪町鎮]]。"/>
+    <property name="zh_name" value="地下雪屋隧道"/>
    </properties>
    <point/>
   </object>
@@ -214,6 +293,7 @@
    <properties>
     <property name="color" type="color" value="#ffcfdbff"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="地下雪屋隧道"/>
    </properties>
    <polyline points="0,0 0.16643,157.944 1604.86,157.618 1604.98,10.4797"/>
   </object>
@@ -221,30 +301,42 @@
    <properties>
     <property name="description" value="The protagonist is taken here if they lose to [[Papyrus]]."/>
     <property name="page" value="Papyrus and Sans's House#Papyrus's Toolshed"/>
+    <property name="zh_description">若主角在與 [[Papyrus]] 的戰鬥中失敗，便會被帶到這裡。
+</property>
+    <property name="zh_name" value="Papyrus 的棚子"/>
+    <property name="zh_page" value="Papyrus_和_Sans_的家#Papyrus_的棚子"/>
    </properties>
    <point/>
   </object>
   <object id="133" name="Befriending Papyrus" x="14132.4" y="590.336">
    <properties>
     <property name="description" value="[[Papyrus]] initiates the date/hangout with him in his room."/>
+    <property name="zh_description" value="[[Papyrus]] 在他的房間裡主動發起與主角的約會或是出去玩活動。"/>
+    <property name="zh_name" value="和 Papyrus 成為朋友"/>
    </properties>
    <point/>
   </object>
   <object id="135" name="Donation box" x="14132.5" y="318.956">
    <properties>
     <property name="description" value="On the PlayStation versions of [[Undertale]], the protagonist can donate to upgrade the [[Dog Shrine]]."/>
+    <property name="zh_description" value="僅出現在 [[版本差異|PlayStation 版本]]的 ''[[Undertale]]'' 中，主角可以捐款來升級[[狗狗神社]]。"/>
+    <property name="zh_name" value="捐款箱"/>
    </properties>
    <point/>
   </object>
   <object id="136" name="Locked door" x="14452.8" y="282.663">
    <properties>
     <property name="description" value="On the Nintendo Switch version of [[Undertale]], the door at the back of the [[Dog Shrine]] unlocks after defeating [[Mettaton EX]]. It can be opened by tilting both control sticks in opposite directions."/>
+    <property name="zh_description" value="僅出現在 [[版本差異|Nintendo Switch 版本]]的 ''[[Undertale]]'' 中，主角可以與[[憤怒喵喵]]戰鬥。"/>
+    <property name="zh_name" value="上鎖的門"/>
    </properties>
    <point/>
   </object>
   <object id="138" name="Casino" x="14773.2" y="290.341">
    <properties>
     <property name="description" value="On the Xbox versions of [[Undertale]], the protagonist can win specialized currency in the [[Dog Shrine]]'s casino, with which they can use to buy items for the shrine."/>
+    <property name="zh_description" value="僅出現在 [[版本差異|Xbox 版本]]的 ''[[Undertale]]'' 中，主角可以下注來升級[[狗狗神社|狗狗賭場]]。"/>
+    <property name="zh_name" value="捐款箱"/>
    </properties>
    <point/>
   </object>
@@ -252,6 +344,10 @@
    <properties>
     <property name="description" value="The protagonist is given a key to [[Sans]]'s room ater repeatedly reloading a [[SAVE]] and going through Sans's judgement in the [[Last Corridor]] if they had gained no [[Stats#EXP|EXP]]."/>
     <property name="page" value="Papyrus and Sans's House#Sans's Room"/>
+    <property name="zh_description">如果主角在[[最後迴廊]]中經歷 [[Sans]] 的審判時未獲得任何 [[遊戲數據#EXP|EXP]]，並且反覆重新載入[[存檔]]，就會獲得一把前往 Sans 房間的鑰匙。
+</property>
+    <property name="zh_name" value="Sans 的房間"/>
+    <property name="zh_page" value="Papyrus 和 Sans 的家#Sans 的房間"/>
    </properties>
    <point/>
   </object>
@@ -259,6 +355,10 @@
    <properties>
     <property name="description" value="Unlocked after using the [[Silver Key]] on the doot in the back of [[Papyrus and Sans's House]]."/>
     <property name="page" value="Papyrus and Sans's House#Sans's Workshop"/>
+    <property name="zh_description">使用[[銀色鑰匙]]打開[[Papyrus 和 Sans 的家]]後方的門即可解鎖。
+</property>
+    <property name="zh_name" value="Sans 的工作室"/>
+    <property name="zh_page" value="Papyrus 和 Sans 的家#Sans 的工作室"/>
    </properties>
    <point/>
   </object>
@@ -275,6 +375,10 @@
    <properties>
     <property name="description" value="Sells [[Nice Cream]] for 15G. The Nice Cream Guy does not show up on the [[Genocide Route]] and disappears after exhausting Snowdin's kill counter on the [[Neutral Route]]."/>
     <property name="page" value="Nice Cream Guy"/>
+    <property name="zh_description">以15G 的價格販售[[好棒冰]]。
+在[[屠殺路線]]中或是[[雪町]]的擊殺計數達到上限時不會出現。</property>
+    <property name="zh_name" value="好棒冰店員"/>
+    <property name="zh_page" value="好棒冰店員"/>
    </properties>
    <point/>
   </object>
@@ -282,6 +386,9 @@
    <properties>
     <property name="description" value="The protagonist can buy items from the shop."/>
     <property name="page" value="Snowdin Shopkeeper"/>
+    <property name="zh_description" value="主角可以在此購買物品。"/>
+    <property name="zh_name" value="雪町店長"/>
+    <property name="zh_page" value="雪町店長"/>
    </properties>
    <point/>
   </object>
@@ -291,6 +398,9 @@
    <properties>
     <property name="description" value="A Dimensional Box in Sonwdin's Box Road."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="出現在箱子之路的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -298,6 +408,9 @@
    <properties>
     <property name="description" value="A Dimensional Box in Snowdin Town."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="出現在雪町鎮的次元箱。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -307,6 +420,10 @@
    <properties>
     <property name="description" value="The protagonist must navigate the maze and avoid touching the invisible walls, upon which they get shocked by the orb they are holding. [[Papyrus]] unknowingly traces the correct path on the ground, which the protagonist can use to walk across."/>
     <property name="page" value="Snowdin/Puzzles#The Invisible Electricity Maze"/>
+    <property name="zh_description">主角必須穿越迷宮並避免碰觸隱形牆壁，否則會被球體電到。但是 [[Papyrus]] 在不知情的情況下在地上畫出正確的路線，主角可以依此路徑通過迷宮。
+</property>
+    <property name="zh_name" value="隱形電擊迷宮"/>
+    <property name="zh_page" value="雪町/謎題#隱形電擊迷宮"/>
    </properties>
    <point/>
   </object>
@@ -314,6 +431,7 @@
    <properties>
     <property name="color" type="color" value="#ff00235f"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="隱形電擊迷宮路線"/>
    </properties>
    <polyline points="0,0 -32.0629,-0.45159 -31.1597,-100.704 -94.3822,-100.704 -94.3822,-63.2225 -150.831,-62.771"/>
   </object>
@@ -321,6 +439,9 @@
    <properties>
     <property name="description" value="The protagonist must guide the snowball at the top of the course to this hole before the snowball disappears. Once the ball makes it into the hole, a flag pops out, its color changing depending on how long it took to get the ball into the hole. The protagonist also receives some [[GOLD]]."/>
     <property name="page" value="Snowdin/Puzzles#Ball Game"/>
+    <property name="zh_description" value="主角必須在雪球消失之前，將雪球如同高爾夫般推入洞中。一旦雪球進洞，會有一面旗子冒出來，其顏色會根據將雪球送入洞中的時間而變化。主角也會獲得一些[[金錢]]。"/>
+    <property name="zh_name" value="推雪球遊戲"/>
+    <property name="zh_page" value="雪町/謎題#推雪球遊戲"/>
    </properties>
    <point/>
   </object>
@@ -328,6 +449,11 @@
    <properties>
     <property name="description" value="A word search that [[Sans]] had placed for the protagonist, containing a drawing of Ice-E. If the [[Fun Value]] is between 56 and 57, an additional drawing of a snowman named &quot;Nightmare&quot; appears on the word search."/>
     <property name="page" value="Snowdin/Puzzles#Monster Kidz Word Search"/>
+    <property name="zh_description">這是一個 [[Sans]] 為主角準備的單字搜尋遊戲，裡面包含了一幅 Ice-E 的插圖。
+若 [[Fun 值]]介於56~57之間，還會額外出現一幅名為&quot;惡夢(Nightmare)&quot;的雪人插圖。
+</property>
+    <property name="zh_name" value="怪物兒童單詞搜索"/>
+    <property name="zh_page" value="雪町/謎題#怪物兒童單詞搜索"/>
    </properties>
    <point/>
   </object>
@@ -335,6 +461,10 @@
    <properties>
     <property name="description" value="The protagonist must press the switch hidden under this patch of snow to unlock the way forward. On the [[Genocide Route]], the puzzle will have already been solved by the time the protagonist reaches this point."/>
     <property name="page" value="Snowdin/Puzzles#The Snow Puzz;le"/>
+    <property name="zh_description">主角必須按下藏在這片雪地下的開關，才能解鎖前方的道路。
+在[[屠殺路線]]中已被解開。</property>
+    <property name="zh_name" value="雪地謎題"/>
+    <property name="zh_page" value="雪町/謎題#雪地謎題"/>
    </properties>
    <point/>
   </object>
@@ -342,12 +472,19 @@
    <properties>
     <property name="description" value="The protagonist must step on each X panels to turn them into O panels, then press the switch to unlock the way forward. On the [[Genocide Route]], this puzzle is already solved."/>
     <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+    <property name="zh_description">主角必須踩在每個 X 面板上將其變為 O 面板，然後按下開關以解鎖前方的道路。
+在[[屠殺路線]]中已被解開。</property>
+    <property name="zh_name" value="XOXO 謎題 #1"/>
+    <property name="zh_page" value="雪町/謎題#XOXO 謎題"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Snow Puzzle map" x="7055.38" y="1017.5">
    <properties>
     <property name="description" value="A map of the snow puzzle depicting the entire room. An &quot;X&quot; in the top-right marks where the switch is situated."/>
+    <property name="zh_description">一張描繪整個區域雪地謎題的地圖。右上角的&quot;X&quot;標示了開關的位置。
+</property>
+    <property name="zh_name" value="雪地謎題地圖"/>
    </properties>
    <point/>
   </object>
@@ -355,12 +492,18 @@
    <properties>
     <property name="description" value="A puzzle shaped like [[Papyrus]]'s face.  The protagonist can either solve the puzzle manually or press the switch hidden in the tree to immediately disable it. On the [[Genocide Route]], the puzzle is already solved."/>
     <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+    <property name="zh_description">類似 [[Papyrus]] 臉的謎題。主角必須踩在每個 X 面板上將其變為 O 面板，然後按下開關以解鎖前方的道路。
+在[[屠殺路線]]中已被解開。</property>
+    <property name="zh_name" value="XOXO 謎題 #2"/>
+    <property name="zh_page" value="雪町/謎題#XOXO 謎題"/>
    </properties>
    <point/>
   </object>
   <object id="52" name="XOXO Puzzle kill switch" x="7966.71" y="1250.5">
    <properties>
     <property name="description" value="A switch hidden in the tree. Pressing it and stepping on the switch in front of the puzzle immediately disables it."/>
+    <property name="zh_description" value="藏在樹裡的開關。按下它並踩在謎題前方的開關上後，謎題會立即被解除。"/>
+    <property name="zh_name" value="XOXO 快速解決"/>
    </properties>
    <point/>
   </object>
@@ -368,6 +511,9 @@
    <properties>
     <property name="description" value="The protagonist must navigate across the puzzle through the walkable tiles. When [[Papyrus]] activates this puzzle, the solution is aways the same, allowing the protagonist to walk across without issue."/>
     <property name="page" value="Multicolor Tile Puzzle"/>
+    <property name="zh_description" value="主角必須沿著可行走的地板穿越這個謎題。當 [[Papyrus]] 啟動此謎題時，解法始終相同，使主角能輕鬆走過而不會遇到問題。"/>
+    <property name="zh_name" value="彩色磚塊謎題"/>
+    <property name="zh_page" value="彩色磚塊謎題"/>
    </properties>
    <point/>
   </object>
@@ -375,6 +521,7 @@
    <properties>
     <property name="color" type="color" value="#ff00ff00"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="XOXO 謎題 #2 路徑"/>
    </properties>
    <polyline points="0,0 36.1549,-1.14778 37.8766,19.5122 96.9871,19.5122 93.5438,-1.72166 113.056,-1.72166 110.76,-22.3816 137.733,-21.2339 134.864,-60.8321 96.4132,-61.9799 96.4132,-22.9555 12.6255,-23.5294 13.1994,-60.8321 31.5638,-61.406"/>
   </object>
@@ -382,12 +529,17 @@
    <properties>
     <property name="description" value="The protagonist must solve this puzzle in order to extend the bridge and progress forward."/>
     <property name="page" value="Snowdin/Puzzles#The XOXO Puzzles"/>
+    <property name="zh_description" value="主角必須解開這個謎題才能延伸橋樑，繼續前進。"/>
+    <property name="zh_name" value="XOXO 謎題 #3"/>
+    <property name="zh_page" value="雪町/謎題#XOXO 謎題"/>
    </properties>
    <point/>
   </object>
   <object id="61" name="XOXO Puzzle 3 (Fail Room)" x="9613.94" y="1580.39">
    <properties>
     <property name="description" value="The protagonist lands here if they fall off the edge of the room. They are taken back to the start."/>
+    <property name="zh_description" value="如果主角從房間邊緣跌落，會掉到這個地方。"/>
+    <property name="zh_name" value="XOXO 謎題 #3 (失敗區域)"/>
    </properties>
    <point/>
   </object>
@@ -398,11 +550,22 @@
    </properties>
    <polyline points="0,0 0.0844107,-754.477 -280.904,-751.795 -281.46,-938.792"/>
   </object>
+  <object id="156" name="Solution to XOXO Puzzle 3" x="9501.52" y="1320.63">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="XOXO 謎題 #3 路徑"/>
+   </properties>
+   <polyline points="0,0 0.281944,69.6402 208.639,69.6402 208.075,-71.6138 47.6486,-71.6138 48.2125,-50.75 169.449,-51.0319 168.039,28.7583 87.6847,29.0403 88.2486,8.74027 128.285,9.02222 128.149,-10.6354 248.957,-11.2778"/>
+  </object>
  </objectgroup>
  <objectgroup id="7" name="saves">
   <object id="7" name="Snowdin - Box Road" x="3248.74" y="466.944">
    <properties>
     <property name="description" value="''The convenience of that lamp still fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="那盞燈的便利使你依舊充滿了決心。"/>
+    <property name="zh_name" value="雪町 - 箱子通路"/>
    </properties>
    <point/>
   </object>
@@ -411,6 +574,9 @@
     <property name="description">Knowing the mouse might one day find a way to heat up the spaghetti...
 It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">知道老鼠總有一天會找到加熱義大利麵的方法......
+這使你充滿了決心。</property>
+    <property name="zh_name" value="雪町 - 義大利麵"/>
    </properties>
    <point/>
   </object>
@@ -422,12 +588,21 @@ It fills you with determination.</property>
 '''Killed Lesser Dog:''' ''Snow can always be broken down and rebuilt into something more useful.''
 ''This simple fact fills you with determination.''</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">想著狗狗總有一天會做出完美的雪犬，
+使你充滿了決心。 '''[寬恕 Lesser Dog]'''
+
+雪總是能夠打掉、重新做成其他更加有用的東西。
+這簡單的道理使你充滿了決心。 '''[殺掉 Lesser Dog]'''</property>
+    <property name="zh_name" value="雪町 - 狗屋"/>
    </properties>
    <point/>
   </object>
   <object id="81" name="Snowdin - Town" x="12527.7" y="1332.29">
    <properties>
     <property name="description" value="''The sight of such a friendly town fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="眼前如此友善的城鎮使你充滿了決心。"/>
+    <property name="zh_name" value="雪町 - 城鎮"/>
    </properties>
    <point/>
   </object>
@@ -436,12 +611,18 @@ It fills you with determination.</property>
   <object id="5" name="Sans" x="2893.33" y="485.91">
    <properties>
     <property name="description" value="After [[Papyrus]]'s introduction, the protagonist can talk to [[Sans]]. He warns them that Papyrus may come back if they linger, but on the [[Genocide Route]], he only comments that the protagonist is staring at him."/>
+    <property name="zh_description">在 [[Papyrus]] 登場之後，主角可以與 [[Sans]] 對話。他會提醒主角，如果待太久，Papyrus 可能會回來。
+在[[屠殺路線]]中，他會評論主角為何一直盯著他看。
+</property>
    </properties>
    <point/>
   </object>
   <object id="11" name="Fishing Rod" x="3446.08" y="202.764">
    <properties>
     <property name="description" value="The [[Snowdin/NPCs#Ugly Fish|Ugly Fish]]'s fishing rod. Reeling it in reveals a note that says ''Call me! Here's my number!''"/>
+    <property name="zh_description">[[雪町/NPC#Ugly Fish|Ugly Fish]] 的釣魚竿。將釣線拉起會看到一張字條，上面寫著&quot;打給我！這是我的電話號碼！&quot;
+</property>
+    <property name="zh_name" value="釣竿"/>
    </properties>
    <point/>
   </object>
@@ -449,6 +630,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Snowdrake appears here after defeating [[Papyrus]] if no monsters have been killed. He reveals why he ran away from home."/>
     <property name="page" value="Snowdrake"/>
+    <property name="zh_description">若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，Snowdrake 會在此出現。他會透露自己為何離家出走。
+</property>
+    <property name="zh_page" value="Snowdrake"/>
    </properties>
    <point/>
   </object>
@@ -456,6 +640,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="After completing the [[True Pacifist Route]], Snowdrake's Mother appears here, having reunited with her son and husband."/>
     <property name="page" value="Snowdrake's Mother"/>
+    <property name="zh_description" value="在[[完美路線]]結尾出現在這裡，並已與她的兒子和丈夫團聚。"/>
+    <property name="zh_page" value="Snowdrake's Mother"/>
    </properties>
    <point/>
   </object>
@@ -463,12 +649,15 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="After completing the [[True Pacifist Route]]. Snowdrake's Father appears here, having reunited with his wife and son."/>
     <property name="page" value="Snowdrake's Father"/>
+    <property name="zh_description" value="在[[完美路線]]結尾出現在這裡，並已與她的兒子和母親團聚。"/>
+    <property name="zh_page" value="MTT 度假村#Snowdrake's Father"/>
    </properties>
    <point/>
   </object>
   <object id="20" name="Sans" x="4692.02" y="466.492">
    <properties>
     <property name="description" value="[[Sans]] teaches the protagonist about [[Attack Types#Light Blue Attack|blue attacks]]."/>
+    <property name="zh_description" value="[[Sans]]教導主角關於[[攻擊種類#水色攻擊|水色攻擊]]的知識。"/>
    </properties>
    <point/>
   </object>
@@ -476,60 +665,75 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="The snowman offers a [[Snowman Piece]] to the protagonist and requests that they take it &quot;to the ends of the earth.&quot; On the [[Genocide Route]], the protagonist can forcibly take up to three Snowman Pieces at once."/>
     <property name="page" value="Snowman"/>
+    <property name="zh_description">雪人會將一塊[[雪人碎片]]交給主角，並請求他們將它&quot;帶到天涯海角&quot;。
+在[[屠殺路線]]中主角可以強行一次拿走最多三塊雪人碎片。
+</property>
+    <property name="zh_page" value="雪町/NPC#Snowman"/>
    </properties>
    <point/>
   </object>
   <object id="26" name="Sans" x="5452.49" y="398.302">
    <properties>
     <property name="description" value="[[Sans]] tells the protagonist about [[Papyrus]]'s clothing, which he calls his &quot;battle body.&quot;"/>
+    <property name="zh_description" value="[[Sans]] 告訴主角關於 [[Papyrus]] 服裝的事，並稱那是他的&quot;戰鬥服&quot;。"/>
    </properties>
    <point/>
   </object>
   <object id="29" name="Chilldrake" x="5973.63" y="352.691">
    <properties>
     <property name="description" value="A [[Chilldrake]] appears here after defeating [[Papyrus]] and no monsters have been killed. They proudly claim that they and their peers rule the forest with a &quot;smaller-than adult fist.&quot;"/>
+    <property name="zh_description">若在擊敗 [[Papyrus]] 後未殺死任何怪物，這裡會出現一隻 [[Chilldrake]]。他會自豪地宣稱自己和夥伴們以&quot;比大人拳頭還小的拳頭&quot;統治這片森林。
+</property>
    </properties>
    <point/>
   </object>
   <object id="31" name="Sans" x="6132.14" y="384.303">
    <properties>
     <property name="description" value="[[Sans]] pretends to sell &quot;fried snow&quot; at increasingly expensive prices. He then claims to not have any snow."/>
+    <property name="zh_description">[[Sans]] 假裝販售&quot;炸雪&quot;，價格越來越昂貴。最後他表示自己根本沒有雪。
+</property>
    </properties>
    <point/>
   </object>
   <object id="35" name="Sans" x="6531.34" y="717.576">
    <properties>
     <property name="description" value="[[Sans]] tells the protagonist that [[Papyrus]] had difficulty attempting to &quot;solve&quot; a horoscope."/>
+    <property name="zh_description" value="[[Sans]] 告訴主角 [[Papyrus]] 曾經努力想要&quot;解開&quot;一個星座運勢。"/>
    </properties>
    <point/>
   </object>
   <object id="40" name="Ice Cap" x="7071.44" y="676.03">
    <properties>
     <property name="description" value="An [[Ice Cap]] appears after defeating [[Papyrus]] if no monsters have been killed. They bring attention to their hat and ask the protagonist to think about it."/>
+    <property name="zh_description" value="若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，會出現一隻 [[Ice Cap]]。他會特別提到自己的帽子，並請主角好好想想它。"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Papyrus" x="7872.56" y="1262.64">
    <properties>
     <property name="description" value="[[Papyrus]] tells the protagonist about [[Sans]]'s sock collection and wonders aloud what Sans would do without him taking care of him."/>
+    <property name="zh_description" value="[[Papyrus]] 告訴主角有關 [[Sans]] 的襪子收藏，並喃喃自語地想著如果沒有他照顧，Sans 會變成什麼樣子。"/>
    </properties>
    <point/>
   </object>
   <object id="47" name="Chilldrake" x="8036.49" y="1250.9">
    <properties>
     <property name="description" value="A [[Chilldrake]] appears here after defeating [[Papyrus]] if no monsters have been kiled. They mention how the rebellious teenagers have to share their lunch with [[Snowdrake]] since he ran away from home."/>
+    <property name="zh_description" value="若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，這裡會出現一隻 [[Chilldrake]]。他會提到那些叛逆的青少年必須和 [[Snowdrake]] 分享午餐，因為他離家出走。"/>
    </properties>
    <point/>
   </object>
   <object id="53" name="Sans" x="8392.54" y="1285.51">
    <properties>
     <property name="description" value="[[Sans]] tells the protagonist that they could have asked him for help with the puzzle."/>
+    <property name="zh_description" value="[[Sans]] 告訴主角本來可以請他幫忙解這個謎題。"/>
    </properties>
    <point/>
   </object>
   <object id="62" name="Ice Cap" x="9710.9" y="1594.54">
    <properties>
     <property name="description" value="An [[Ice Cap]] appears here after defeating [[Papyrus]] of no monsters have been killed. They express their desre to wear different clothing from their peers."/>
+    <property name="zh_description" value="若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，這裡會出現一隻 [[Ice Cap]]。他表達了自己想穿與其他同伴不一樣的衣服的願望。"/>
    </properties>
    <point/>
   </object>
@@ -537,24 +741,29 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Gyftrot appears here after defeating [[Papyrus]] if no monsters have been killed. They acknoledge the tradition based on how they are always being decorated."/>
     <property name="page" value="Gyftrot"/>
+    <property name="zh_description" value="若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，這裡會出現一隻 Gyftrot。牠會提到自己總是被裝飾，並認可這已成為一種傳統。"/>
+    <property name="zh_page" value="Gyftrot"/>
    </properties>
    <point/>
   </object>
   <object id="65" name="Ice Cap" x="10649.7" y="1375.1">
    <properties>
     <property name="description" value="An [[Ice Cap]] appears here after defeating [[Papyrus]] if no monsters have been killed. They lament that no one is around to pay attention to them since they live in the woods."/>
+    <property name="zh_description" value="若在擊敗 [[Papyrus]] 後沒有殺死任何怪物，這裡會出現一隻 [[Ice Cap]]。他感嘆自己住在森林裡，沒有人在意牠的存在。"/>
    </properties>
    <point/>
   </object>
   <object id="66" name="Sans" x="10552.2" y="2365.62">
    <properties>
     <property name="description" value="[[Sans]] greets the protagonist."/>
+    <property name="zh_description" value="[[Sans]] 向主角打招呼。"/>
    </properties>
    <point/>
   </object>
   <object id="67" name="Sans" x="10204.5" y="2365.34">
    <properties>
     <property name="description" value="[[Sans]] appears here once he is no longer visible from the right. He accuses the protagonist of following them."/>
+    <property name="zh_description" value="[[Sans]] 在從右側看不到後出現。他指責主角一直在跟蹤他。"/>
    </properties>
    <point/>
   </object>
@@ -562,18 +771,24 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="A sleeping dog. The protagonist is given the option to &quot;fight&quot; the dog, but no fight takes place regardless of their choice."/>
     <property name="page" value="Annoying Dog"/>
+    <property name="zh_description" value="一隻正在睡覺的狗。雖然主角會被給予&quot;戰鬥&quot;這隻狗的選項，但無論選擇與否，都不會發生戰鬥。"/>
+    <property name="zh_name" value="煩人的狗"/>
+    <property name="zh_page" value="煩人的狗"/>
    </properties>
    <point/>
   </object>
   <object id="73" name="Sans" x="8836.45" y="1345.64">
    <properties>
     <property name="description" value="[[Sans]] comments on [[Papyrus]]'s cooking and states the possibility that he could make something edible one day,"/>
+    <property name="zh_description" value="[[Sans]] 評論了 [[Papyrus]] 的廚藝，並表示有一天他或許真的能做出可以吃的東西。"/>
    </properties>
    <point/>
   </object>
   <object id="78" name="Sans" x="11792.5" y="1264.3">
    <properties>
     <property name="description" value="[[Sans]] warns the protagonist of [[Papyrus]]'s blue attacks. On the [[Genocide Route]], he warns them of a &quot;bad time&quot; before teleporting away."/>
+    <property name="zh_description">[[Sans]] 警告主角注意 [[Papyrus]] 的藍色攻擊。
+在[[屠殺路線]]中則警告主角將會有個&quot;壞時光&quot;，隨後立刻瞬間移動消失。</property>
    </properties>
    <point/>
   </object>
@@ -581,6 +796,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Child of the Innkeeper. They explain the functionalities of the inn. On the [[Genocide Route]], the child is replaced with an identical-looking decoy."/>
     <property name="page" value="Snowdin/NPCs#Innkeeper's Child"/>
+    <property name="zh_description">旅館老闆的孩子。他會說明旅館的功能。
+在[[屠殺路線]]中被一個誘餌取代。</property>
+    <property name="zh_page" value="雪町/NPC#Inn Keepers"/>
    </properties>
    <point/>
   </object>
@@ -588,6 +806,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="A rabbit NPC who is disturbed by the [[Snowdin/NPCs#Rabbit Girl and Cinnamon|Rabbit Girl]]'s mannerisms."/>
     <property name="page" value="Snowdin/NPCs#Rabbit Kid"/>
+    <property name="zh_description">一位對[[雪町/NPC#Rabbit Girl and Cinnamon|Rabbit Girl]]的舉止感到困擾的兔子。
+</property>
+    <property name="zh_page" value="雪町/NPC#Rabbit Kid"/>
    </properties>
    <point/>
   </object>
@@ -595,6 +816,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="The Rabbit Girl is seen walking her little brother Cinnamon on a leash, oblivious to the [[Snowdin/NPCs#Rabbit Kid|Rabbit Kid]] staring at her."/>
     <property name="page" value="Snowdin/NPCs#Rabbit Girl and Cinnamon"/>
+    <property name="zh_description" value="她正用牽繩牽著她的弟弟散步。"/>
+    <property name="zh_page" value="雪町/NPC#Rabbit Girl and Cinnamon"/>
    </properties>
    <point/>
   </object>
@@ -602,6 +825,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains the gift-giving tradition based on [[Gyftrot]]'s situation."/>
     <property name="page" value="Snowdin/NPCs#Gift Bear"/>
+    <property name="zh_description" value="說明了基於 [[Gyftrot]] 情況而產生的送禮傳統。"/>
+    <property name="zh_page" value="雪町/NPC#Gift Bear"/>
    </properties>
    <point/>
   </object>
@@ -609,6 +834,10 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Recognizes the protagonist as a fellow kid based on their striped shirt. They are still present on the [[Genocide Route]], explaining that everyone had evacuated."/>
     <property name="page" value="Monster Kid"/>
+    <property name="zh_description">根據主角身上的條紋衣服，認出他也是個小孩。
+在[[屠殺路線]]中他則覺得很好奇為何大家要撤離。</property>
+    <property name="zh_name" value="怪物小孩"/>
+    <property name="zh_page" value="怪物小孩"/>
    </properties>
    <point/>
   </object>
@@ -616,36 +845,43 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains how Snowdin's political system is based on [[Papyrus]] usually reporting directly to [[Undyne]]."/>
     <property name="page" value="Snowdin/NPCs#Politics Bear"/>
+    <property name="zh_description" value="解釋了雪町的政治體系是建立在 [[Papyrus]] 向 [[Undyne]] 報告的基礎上。"/>
+    <property name="zh_page" value="雪町/NPC#Politics Bear"/>
    </properties>
    <point/>
   </object>
   <object id="101" name="Dogamy" x="13212.4" y="1121.45">
    <properties>
     <property name="description" value="Warns the protagonist about [[Greater Dog]]'s affectionate behavior."/>
+    <property name="zh_description" value="警告主角要注意 [[Greater Dog]] 那過於親暱的行為。"/>
    </properties>
    <point/>
   </object>
   <object id="102" name="Dogaressa" x="13238.4" y="1104.15">
    <properties>
     <property name="description" value="Laments that the sentries do not gain any respect and wishes  [[Sans]] or [[Papyrus]] would give them a bone."/>
+    <property name="zh_description" value="感嘆哨兵們得不到任何尊重，並希望 [[Sans]] 或 [[Papyrus]] 能給他們一根骨頭。"/>
    </properties>
    <point/>
   </object>
   <object id="103" name="Doggo" x="13134.4" y="1108.53">
    <properties>
     <property name="description" value="Considers getting a collar to express his desire to be taken for a walk."/>
+    <property name="zh_description" value="考慮要不要戴上項圈，以表達他想被帶去散步的願望。"/>
    </properties>
    <point/>
   </object>
   <object id="104" name="Greater Dog" x="13174.5" y="1080.5">
    <properties>
     <property name="description" value="Makes a single sound effect."/>
+    <property name="zh_description" value="發出奇怪的聲音。"/>
    </properties>
    <point/>
   </object>
   <object id="105" name="Lesser Dog" x="13157.6" y="1030.35">
    <properties>
     <property name="description" value="Is in the middle of a game of poker against itself."/>
+    <property name="zh_description" value="他和自己玩撲克牌。"/>
    </properties>
    <point/>
   </object>
@@ -653,6 +889,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains that they are literally fishing for a date with a girl. "/>
     <property name="page" value="Snowdin/NPCs#Ugly Fish"/>
+    <property name="zh_description" value="解釋他釣魚的目的是想釣到一位女孩約會。"/>
+    <property name="zh_page" value="雪町/NPC#Ugly Fish"/>
    </properties>
    <point/>
   </object>
@@ -660,6 +898,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains the [[Royal Guard]] to the protagonist. She usually acts as a translator for [[Grillby]]."/>
     <property name="page" value="Snowdin/NPCs#Red Bird"/>
+    <property name="zh_description" value="向主角解釋 [[Royal Guards]] 的相關資訊。她通常也擔任 [[雪町/NPC#Grillby|Grillby]] 的翻譯。"/>
+    <property name="zh_page" value="雪町/NPC#Red Bird"/>
    </properties>
    <point/>
   </object>
@@ -667,6 +907,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="The bartender and owner of the restaurant. He is usually silent and only speaks a single line at the end of the [[True Pacifist Route]]."/>
     <property name="page" value="Grillby"/>
+    <property name="zh_description" value="酒吧老闆。他通常保持沉默，僅在[[完美路線]]結尾時說出唯一的一句話。"/>
+    <property name="zh_page" value="雪町#NPC/Grillby"/>
    </properties>
    <point/>
   </object>
@@ -674,6 +916,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains the overcrowding situation and [[New Home]]. He fears the erasure of Snowdin's local culture if people from the capital start moving."/>
     <property name="page" value="Snowdin/NPCs#Punk Hamster"/>
+    <property name="zh_description" value="解釋了擁擠的狀況以及[[新居|首都]]的情形。他擔心如果首都的人開始搬過來，雪町的在地文化將會被抹去。"/>
+    <property name="zh_page" value="雪町/NPC#Punk Hamster"/>
    </properties>
    <point/>
   </object>
@@ -681,6 +925,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains the differences between monster food and human food and expresses desire to try some."/>
     <property name="page" value="Snowdin/NPCs#Big Mouth"/>
+    <property name="zh_description" value="解釋了怪物食物與人類食物之間的差異，並表示想嘗試看看人類的食物。"/>
+    <property name="zh_page" value="雪町/NPC#Big Mouth"/>
    </properties>
    <point/>
   </object>
@@ -688,6 +934,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Expresses desire for new drinks and &quot;hot guys.&quot;"/>
     <property name="page" value="Snowdin/NPCs#Drunk Bun"/>
+    <property name="zh_description" value="表達了對新飲品和&quot;帥哥&quot;的渴望。"/>
+    <property name="zh_page" value="雪町/NPC#Drunk Bun"/>
    </properties>
    <point/>
   </object>
@@ -695,6 +943,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Complains that people are making light of the depressing situation in the [[Underground]]."/>
     <property name="page" value="Snowdin/NPCs#Scarf Mouse"/>
+    <property name="zh_description" value="抱怨大家對[[地下世界]]的悲慘處境輕描淡寫不當一回事。"/>
+    <property name="zh_page" value="雪町/NPC#Scarf Mouse"/>
    </properties>
    <point/>
   </object>
@@ -702,6 +952,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains that people make light of the depressing situation in the [[Underground]] because they cannot do anything aout it."/>
     <property name="page" value="Snowdin/NPCs#Red Demon"/>
+    <property name="zh_description" value="解釋說人們之所以對[[地下世界]]的悲慘處境輕描淡寫，是因為他們無能為力、無法改變現狀。"/>
+    <property name="zh_page" value="雪町/NPC#Red Demon"/>
    </properties>
    <point/>
   </object>
@@ -709,6 +961,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="A father of two slime children. Reminisces about his younger days."/>
     <property name="page" value="Snowdin/NPCs#Slime Family"/>
+    <property name="zh_description" value="兩個史萊姆孩子的父親。回憶著自己年輕時的日子。"/>
+    <property name="zh_page" value="雪町/NPC#Slime Family"/>
    </properties>
    <point/>
   </object>
@@ -716,6 +970,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Two children playing a game of &quot;Monsters and Humans.&quot; They are sent inside by their father if either [[Papyrus]] or the [[Royal Guard|Snowdin Canine Unit]] are killed."/>
     <property name="page" value="Snowdin/NPCs#Slime Family"/>
+    <property name="zh_description">兩個孩子正在玩&quot;怪物與人類&quot;的遊戲。
+若 [[Papyrus]] 或任一[[皇家衛隊]]成員被殺，他們的父親會把他們叫回屋裡。</property>
+    <property name="zh_page" value="雪町/NPC#Slime Family"/>
    </properties>
    <point/>
   </object>
@@ -723,6 +980,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Express joy at hearing the protagonist knock on their door."/>
     <property name="page" value="Snowdin/NPCs#Knock Lover"/>
+    <property name="zh_description" value="聽到主角敲門時感到非常高興。"/>
+    <property name="zh_page" value="雪町/NPC#Knock Lover"/>
    </properties>
    <point/>
   </object>
@@ -730,6 +989,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Is seen throwing ice into the water, which eventually travels to the [[CORE]]. Can be spoken to directly at the end of the [[True Pacifist Route]], where they express desire to buy a new pair of pants."/>
     <property name="page" value="Snowdin/NPCs#Ice Wolf"/>
+    <property name="zh_description">可以看到他把冰塊丟進水裡，這些冰塊最終會流向[[核心]]。
+在[[完美路線]]結尾時可以直接與他對話，他表示自己想買一條新褲子。</property>
+    <property name="zh_page" value="雪町/NPC#Ice Wolf"/>
    </properties>
    <point/>
   </object>
@@ -737,6 +999,9 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Ferries the protagonist to either [[Waterfall]] or [[Hotland]]."/>
     <property name="page" value="River Person"/>
+    <property name="zh_description" value="主角可以到[[瀑布]]或[[熱地]]。"/>
+    <property name="zh_name" value="河流人"/>
+    <property name="zh_page" value="河流人"/>
    </properties>
    <point/>
   </object>
@@ -744,6 +1009,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Snowdin's librarian. They acknoledge the misspelled sign outside the library."/>
     <property name="page" value="Snowdin/NPCs#Library Lizard"/>
+    <property name="zh_description" value="雪町的圖書館員。她表示圖書館外的招牌拼錯了字。"/>
+    <property name="zh_page" value="雪町/NPC#Library Lizard"/>
    </properties>
    <point/>
   </object>
@@ -751,6 +1018,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="A monster resembling a [[Loox]]. They note the protagonist's difficulty solving either crosswords or Junior Jumble."/>
     <property name="page" value="Snowdin/NPCs#Library Loox"/>
+    <property name="zh_description" value="一隻外型類似 [[Loox]] 的怪物。他指出主角在解開&quot;填字遊戲&quot;或&quot;縱恆字謎&quot;上的困難。"/>
+    <property name="zh_page" value="雪町/NPC#Library Loox"/>
    </properties>
    <point/>
   </object>
@@ -758,6 +1027,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Explains that she usually fills the newspaper with comics and games due to lack of news to report."/>
     <property name="page" value="Snowdin/NPCs#Newspaper Editors"/>
+    <property name="zh_description" value="解釋說因為沒有什麼新聞可報，她通常會用漫畫和遊戲填滿報紙。"/>
+    <property name="zh_page" value="雪町/NPC#Newspaper Editors"/>
    </properties>
    <point/>
   </object>
@@ -765,24 +1036,29 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Claims to be the number-one word-search creator in the [[Underground]]. "/>
     <property name="page" value="Snowdin/NPCs#Newspaper Editors"/>
+    <property name="zh_description" value="她自稱是[[地下世界]]裡排名第一的單字搜尋遊戲創作者。"/>
+    <property name="zh_page" value="雪町/NPC#Newspaper Editors"/>
    </properties>
    <point/>
   </object>
   <object id="125" name="Doggo" x="14053.8" y="1294.82">
    <properties>
     <property name="description" value="[[Doggo]] relocates here at the end of the [[True Pacifist Route]]. He is happy that he has a constantly moving family member."/>
+    <property name="zh_description" value="在[[完美路線]]結尾中出現。他很高興自己有一位會不停移動的家人。"/>
    </properties>
    <point/>
   </object>
   <object id="126" name="Dogaressa" x="14017.1" y="1287.76">
    <properties>
     <property name="description" value="[[Dogamy and Dogaressa|Dogaressa]] relocates here at the end of the [[True Pacifist Route]], having reunited with her amalgamated family members."/>
+    <property name="zh_description" value="在[[完美路線]]結尾中出現。她很高興家人能夠團聚。"/>
    </properties>
    <point/>
   </object>
   <object id="127" name="Greater Dog" x="13968.3" y="1279.08">
    <properties>
     <property name="description" value="[[Greater Dog]] relocates here at the end of the [[True Pacifist Route]], having reunited with its amalgamated family members."/>
+    <property name="zh_description" value="在[[完美路線]]結尾中出現。他發出奇怪的聲音。"/>
    </properties>
    <point/>
   </object>
@@ -790,12 +1066,15 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Relocates here at the end of the [[True Pacifist Route]], having reunited with its family members."/>
     <property name="page" value="Endogeny"/>
+    <property name="zh_description" value="在[[完美路線]]結尾中出現。他發出奇怪的聲音。"/>
+    <property name="zh_page" value="Endogeny"/>
    </properties>
    <point/>
   </object>
   <object id="129" name="Dogamy" x="13888.5" y="1284.29">
    <properties>
     <property name="description" value="[[Dogamy and Dogaressa|Dogamy]] relocates here at the end of the [[True Pacifist Route]], having reunited with his amalgamated family members. He wonders if he would be considered to be married to his sister due to their parents having amalgaated into the same entity. "/>
+    <property name="zh_description" value="在[[完美路線]]結尾中出現。他疑惑由於父母融合成了同一個個體，這是否意味著他和自己的姊姊算是結婚了。"/>
    </properties>
    <point/>
   </object>
@@ -803,24 +1082,31 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Undyne relocates here after befriending her. On the [[True Pacifist Route]], she gives [[Undyne's Letter|a letter]] to the protagonist and asks them to deliver it to [[Alphys]] on her behalf."/>
     <property name="page" value="Undyne"/>
+    <property name="zh_description">在與 Undyne 成為朋友後出現在這。
+在[[完美路線]]中她會將[[Undyne 的信|一封信]]交給主角，請代為轉交給 [[Alphys]]。</property>
+    <property name="zh_page" value="Undyne"/>
    </properties>
    <point/>
   </object>
   <object id="131" name="Papyrus" x="14189.1" y="1310.93">
    <properties>
     <property name="description" value="[[Papyrus]] guides the protagonist to [[Papyrus and Sans's House|his house]] and unlocks the door."/>
+    <property name="zh_description" value="[[Papyrus]] 帶領主角前往[[Papyrus 和 Sans 的家|他的家]]並解鎖大門。"/>
    </properties>
    <point/>
   </object>
   <object id="132" name="Papyrus" x="14156.5" y="866.21">
    <properties>
     <property name="description" value="[[Papyrus]] welcomes the protagonist to his house and acts as a host."/>
+    <property name="zh_description" value="[[Papyrus]] 歡迎主角來到他的家，並擔任主人的角色招待對方。"/>
    </properties>
    <point/>
   </object>
   <object id="139" name="Sans" x="14861.1" y="254.746">
    <properties>
     <property name="description" value="[[Sans]] provides commentary on the items in the room. After defeating [[Mettaton EX]], he is replaced with [[Mad Mew Mew]]."/>
+    <property name="zh_description">[[Sans]] 會對房間內的物品發表評論。
+在擊敗 [[Mettaton EX]] 之後被[[憤怒喵喵]]取代。</property>
    </properties>
    <point/>
   </object>
@@ -828,6 +1114,8 @@ It fills you with determination.</property>
    <properties>
     <property name="description" value="Provides commentary on [[Lesser Dog]]'s attempts to build a snowdog."/>
     <property name="page" value="Snowdin/NPCs#Faun"/>
+    <property name="zh_description" value="對 [[Lesser Dog]] 的創作發表評論。"/>
+    <property name="zh_page" value="雪町/NPC#Faun"/>
    </properties>
    <point/>
   </object>
@@ -840,6 +1128,11 @@ You can put an item inside or take an item out.
 The same box will appear later, so don't worry about coming back.
 Sincerely, a box lover.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">即便是不同的[[次元箱|箱子]]，
+你依然可以把東西隨意地拿進拿出
+...相同的箱子將在後面出現，所以不需要特別回來。
+您誠摯的 愛箱者。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -850,12 +1143,20 @@ WHO COULD HAVE BUILT THIS, YOU PONDER...
 I BET IT WAS THAT VERY FAMOUS ROYAL GUARDSMAN!
 (NOTE: NOT YET A VERY FAMOUS ROYAL GUARDSMAN.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">'''你檢查了這個非常英俊的哨站。'''
+'''你思考著，是誰建造這個哨站。'''
+'''我敢打賭一定是那個非常有名的皇家衛隊成員！'''
+('''附註: 尚未成為非常有名的有名的皇家衛隊成員。''')</property>
+    <property name="zh_name" value="Papyrus 的哨站提示"/>
    </properties>
    <point/>
   </object>
   <object id="18" name="Sign" x="4209.72" y="475.975">
    <properties>
     <property name="description" value="''Absolutely NO MOVING!!!''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="絕對不要動！！！"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -867,6 +1168,12 @@ West: Ice
 East: [[Snowdin|Snowdin Town]]
 (... and ice)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">北方：冰
+南方：冰
+西方：冰
+東方：[[雪町鎮]]
+(... 還有冰)</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -886,6 +1193,20 @@ Weird Smell - Humans
 GREEN Rating
 Destroy at all costs!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">危險氣味分類
+
+雪的氣味 - 雪人
+白色等級
+可變為黃色等級
+
+無可疑氣味 - 小狗
+藍色等級
+翻滾過後的氣味。
+
+奇怪氣味 - 人類
+綠色等級
+不惜一切代價消滅！</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -900,6 +1221,14 @@ Destroy at all costs!</property>
 
 NYEH HEH HEH, PAPYRUS</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">人類！！請享用這份義大利麵。
+(你不知道的是，這份義大利麵是一個陷阱...)
+(設計來吸引你的！！！)
+(你會忙著吃它...)
+(以致於你不會發現自己沒有前進！！)
+(又一次被偉大的 PAPYRUS 徹底戲弄了！！！)
+捏嘿嘿，PAPYRUS</property>
+    <property name="zh_name" value="Papyrus 的筆記"/>
    </properties>
    <point/>
   </object>
@@ -908,18 +1237,27 @@ NYEH HEH HEH, PAPYRUS</property>
     <property name="description">Warning: Dog Marriage
 (Yes, you read that correctly.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">警告：狗狗結婚
+(沒錯，你沒有讀錯。)</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="43" name="Sign" x="7509.03" y="1357.48">
    <properties>
     <property name="description" value="''Turn every X into an O. Then press the switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="將 X 變成 O。然後按下開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="50" name="Sign" x="8106.17" y="1283.79">
    <properties>
     <property name="description" value="''Turn every X into an O. Then press the switch.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="將 X 變成 O。然後按下開關。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -928,12 +1266,18 @@ NYEH HEH HEH, PAPYRUS</property>
     <property name="description">AWARE OF DOG
 pleas pet dog</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">注意狗狗
+請摸狗狗</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="70" name="Sign" x="10610.3" y="1274.53">
    <properties>
     <property name="description" value="''Woof.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="汪"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -942,12 +1286,18 @@ pleas pet dog</property>
     <property name="description">Don't want to walk to the other side of town?
 Try the undersnow tunnels. They're efficiently laid out.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">不想走到小鎮的另一頭嗎？
+試試看雪下隧道吧。它們的配置非常高效。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="141" name="Note on treadmill" x="14417.4" y="620.972">
    <properties>
     <property name="description" value="''the truth is that you got owned, nerd......''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="真相就是你被耍了，傻子..."/>
+    <property name="zh_name" value="跑步機上的紙條"/>
    </properties>
    <point/>
   </object>
@@ -966,6 +1316,12 @@ WHEN YOU WENT MISSING, I GOT WORRIED SICK!!!
 JUST ASK!!! YOU DON'T NEED TO FIGHT ME!!!
 - YOUR HOST, PAPYRUS</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">抱歉，我得把你關在客房裡，直到 UNDYNE 到來。把這當作自己家！！！已提供了茶點與憩所 - 你所需的一切，PAPYRUS 上。 '''[第一次]'''
+
+請在你要逃出去前問一下！！！當你失蹤時我擔心死了！！！- 有點骨噪，PAPYRUS 上。 '''[第二次]'''
+
+如果你只是想找個地方待著...問一下就好了！！！你不需要和我戰鬥！！！- 你的主人，PAPYRUS 上。'''[第三次]'''</property>
+    <property name="zh_name" value="Papyrus 的筆記"/>
    </properties>
    <point/>
   </object>
@@ -977,6 +1333,12 @@ At funerals, we take that dust and spread it on that person's favorite thing.
 Then their essence will live on in that thing...
 Uhhh, am I at the page minimum yet? I'm kinda sick of writing this.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[怪物]]的葬禮，技術上來說，超酷的。
+當怪物年老並咽氣時，他們會變成塵埃。
+在葬禮上，我們會把那些塵埃撒在那個人最喜愛的東西上。
+這樣，他們的本質就會留存在那個東西裡...
+呃，我頁數夠了嗎？我有點寫膩了。</property>
+    <property name="zh_name" value="關於怪物葬禮的學校報告"/>
    </properties>
    <point/>
   </object>
@@ -987,6 +1349,11 @@ Humans, with their physical forms, are far stronger than us.
 But they will never know the joy of expressing themselves through magic.
 They will never get a bullet-pattern birthday card...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">雖然[[怪物]]大多由魔法構成，[[人類]]則主要由水構成。
+人類擁有實體，因此比我們強壯得多。
+但他們永遠無法體會用魔法表達自我的樂趣。
+他們永遠也收不到彈幕圖案的生日卡片...</property>
+    <property name="zh_name" value="關於魔法的書"/>
    </properties>
    <point/>
   </object>
@@ -998,6 +1365,12 @@ They start reading it...!
 
 '''Scarf Lady:''' &quot;Oh, sorry. I'm still writing that one.&quot;</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我在這裡...寫著這本書。
+一個人走進來，拿起書...
+他開始閱讀...！
+
+'''Scarf Lady：'''&quot;啊，抱歉。那本還沒寫完呢。&quot;</property>
+    <property name="zh_name" value="未完成的書"/>
    </properties>
    <point/>
   </object>
@@ -1009,6 +1382,12 @@ And the crueller the intentions of our enemies, the more their attacks will hurt
 Therefore, if a being with a powerful SOUL struck with the desire to kill...
 Um, let's end the chapter here.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">由於怪物是由魔法構成的，他們的身體與他們的[[靈魂]]緊密相連。
+如果一個怪物不想戰鬥，他的防禦力就會變弱。
+而敵人的意圖越殘忍，他們的攻擊對我們造成的傷害就越大。
+因此，如果一個擁有強大靈魂的存在懷著殺意出手的話...
+嗯，我們就先在這裡結束這一章吧。</property>
+    <property name="zh_name" value="關於攻擊的書"/>
    </properties>
    <point/>
   </object>
@@ -1019,7 +1398,14 @@ We braved harsh cold, [[Waterfall|damp swampland]], and [[Hotland|searing heat]]
 Until we reached what we now call our capital.
 &quot;[[New Home|NEW HOME]].&quot;
 Again, our [[Asgore Dreemurr|King]] is really bad at names...?</property>
+    <property name="zh_description">對人類的不斷恐懼後，
+我們搬離了從前的城市，那個&quot;[[居所]]&quot;。
+我們越過[[雪町|嚴寒]]，[[瀑布|潮濕沼澤]]，和[[熱地|熾熱]]...
+直到我們到達所說的新領地，
+&quot;[[新居]]&quot;。
+我們的[[Asgore Dreemurr|國王]]真的很不擅長取名字...？</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_name" value="怪物歷史第四章"/>
    </properties>
    <point/>
   </object>
@@ -1029,21 +1415,20 @@ Again, our [[Asgore Dreemurr|King]] is really bad at names...?</property>
 But the absolute nature of the &quot;SOUL&quot; is unknown.
 After all, [[humans]] have proven their SOULs don't need these things to exist.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">愛、希望、仁慈...這些是人們所說怪物的[[靈魂]]所構成的元素。
+但&quot;靈魂&quot;的真正本質仍是未知數。
+畢竟，[[人類]]已經證明了他們的靈魂不需要這些東西也能存在。</property>
+    <property name="zh_name" value="關於靈魂的書"/>
    </properties>
    <point/>
-  </object>
-  <object id="156" name="Solution to XOXO Puzzle 3" x="9501.52" y="1320.63">
-   <properties>
-    <property name="color" type="color" value="#ff00ff00"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 0.281944,69.6402 208.639,69.6402 208.075,-71.6138 47.6486,-71.6138 48.2125,-50.75 169.449,-51.0319 168.039,28.7583 87.6847,29.0403 88.2486,8.74027 128.285,9.02222 128.149,-10.6354 248.957,-11.2778"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
   <object id="74" name="Snow Poff GOLD" x="10805.4" y="1303.73">
    <properties>
     <property name="description" value="30 [[GOLD]] can be obtained from any snow poff after interacting with all previous snow poffs."/>
+    <property name="zh_description" value="與所有先前的雪堆互動後，任一雪堆中可以獲得 30G。"/>
+    <property name="zh_name" value="金錢"/>
    </properties>
    <point/>
   </object>
@@ -1051,12 +1436,17 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Unlocks the door in the back of the house."/>
     <property name="page" value="Silver Key"/>
+    <property name="zh_description" value="打開房屋的後門"/>
+    <property name="zh_name" value="銀色鑰匙"/>
+    <property name="zh_page" value="銀色鑰匙"/>
    </properties>
    <point/>
   </object>
   <object id="148" name="Couch GOLD" x="14262.3" y="910.943">
    <properties>
     <property name="description" value="The protagonist can pilfer 20 [[GOLD]] from underneath [[Papyrus]]'s couch."/>
+    <property name="zh_description" value="可在沙發中找到 20G。"/>
+    <property name="zh_name" value="金錢"/>
    </properties>
    <point/>
   </object>
@@ -1066,6 +1456,8 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Miniboss battle against Doggo."/>
     <property name="page" value="Doggo"/>
+    <property name="zh_description" value="與 Doggo 戰鬥。"/>
+    <property name="zh_page" value="Doggo"/>
    </properties>
    <point/>
   </object>
@@ -1073,6 +1465,8 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Miniboss battle against the Dogi."/>
     <property name="page" value="Dogamy and Dogaressa"/>
+    <property name="zh_description" value="與 Dogi 戰鬥。"/>
+    <property name="zh_page" value="Dogi"/>
    </properties>
    <point/>
   </object>
@@ -1080,6 +1474,8 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Miniboss battle against Greater Dog."/>
     <property name="page" value="Greater Dog"/>
+    <property name="zh_description" value="與 Greater Dog 戰鬥。"/>
+    <property name="zh_page" value="Greater Dog"/>
    </properties>
    <point/>
   </object>
@@ -1087,6 +1483,10 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Boss battle against Papyrus. He refuses to fight on the [[Genocide Route]] and instead immediately spares them."/>
     <property name="page" value="Papyrus/In Battle"/>
+    <property name="zh_description">與 Papyrus 戰鬥。
+在[[屠殺路線]]中他會立刻寬恕主角。</property>
+    <property name="zh_name" value="Papyrus 最終戰"/>
+    <property name="zh_page" value="Papyrus/戰鬥中"/>
    </properties>
    <point/>
   </object>
@@ -1094,6 +1494,10 @@ After all, [[humans]] have proven their SOULs don't need these things to exist.<
    <properties>
     <property name="description" value="Boss battle against Mad Mew Mew, only available on the Nintendo Switch version of [[Undertale]]."/>
     <property name="page" value="Mad Mew Mew"/>
+    <property name="zh_description">與憤怒喵喵戰鬥。
+僅出現在[[版本差異|Nintendo Switch 版本]]的 ''[[Undertale]]'' 當中。 </property>
+    <property name="zh_name" value="憤怒喵喵"/>
+    <property name="zh_page" value="憤怒喵喵"/>
    </properties>
    <point/>
   </object>
