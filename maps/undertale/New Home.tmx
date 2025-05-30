@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="54">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="新居"/>
  </properties>
  <imagelayer id="2" name="New Home map">
   <image source="images/New Home.png" width="6750" height="4630"/>
@@ -11,6 +12,9 @@
    <properties>
     <property name="description" value="Asgore's home. The story of [[Asriel Dreemurr|Asriel]] and [[Chara|the first human]] ([[Neutral Route]]) and [[Flowey]]'s story ([[Genocide Route]]) begin here."/>
     <property name="page" value="Asgore's Home"/>
+    <property name="zh_description" value="Asgore 的家。在這裡怪物會講解 [[Asriel Dreemurr|Asriel]] 和[[Chara|第一個人類]]的故事([[中立路線]])或是 [[Flowey]] 講解自身的故事([[屠殺路線]])。"/>
+    <property name="zh_name" value="Asgore 的家"/>
+    <property name="zh_page" value="Asgore 的家"/>
    </properties>
    <point/>
   </object>
@@ -23,6 +27,9 @@
    <properties>
     <property name="description" value="A long corridor just before the Throne Room. [[Sans]] conducts his judgement here."/>
     <property name="page" value="Last Corridor"/>
+    <property name="zh_description" value="王座之間前的一條迴廊。 [[Sans]] 在這裡進行審判。"/>
+    <property name="zh_name" value="最後迴廊"/>
+    <property name="zh_page" value="最後迴廊"/>
    </properties>
    <point/>
   </object>
@@ -30,6 +37,9 @@
    <properties>
     <property name="description" value="The magical seal trapping the monsters underneath [[Mount Ebott]]. It can only be destroyed with the power of seven human [[SOUL]]s."/>
     <property name="page" value="Barrier"/>
+    <property name="zh_description" value="困住[[伊波特山]]下方怪物的魔法封印。只有七個人類[[靈魂]]的力量才能摧毀它。"/>
+    <property name="zh_name" value="結界"/>
+    <property name="zh_page" value="結界"/>
    </properties>
    <point/>
   </object>
@@ -37,6 +47,9 @@
    <properties>
     <property name="description" value="The outside world, inhabited by [[humans]]. [[Monsters]] escape to the Surface at the end of the [[True Pacifist Route]]."/>
     <property name="page" value="Surface"/>
+    <property name="zh_description" value="居住著[[人類]]的地表世界。 [[怪物]]在[[完美路線]]的結尾來到了地表。"/>
+    <property name="zh_name" value="地表世界"/>
+    <property name="zh_page" value="地表世界"/>
    </properties>
    <point/>
   </object>
@@ -52,18 +65,24 @@
   <object id="2" name="Elevator to CORE" x="99.9227" y="4506.49">
    <properties>
     <property name="description" value="Elevator leading back down to the [[CORE]]. On the [[True Pacifist Route]], this elevator is blocked off by [[Flowey]]'s vines."/>
+    <property name="zh_description" value="通往[[核心]]的電梯。在[[完美路線]]中被 [[Flowey]] 的藤蔓纏住而無法使用。"/>
+    <property name="zh_name" value="通往核心的電梯"/>
    </properties>
    <point/>
   </object>
   <object id="3" name="Elevator to Last Corridor" x="299.543" y="4290.39">
    <properties>
     <property name="description" value="Elevator leading to the entrance to the [[Last Corridor]]. It only becomes usable after reaching the other side."/>
+    <property name="zh_description" value="通往[[最後迴廊]]的電梯。只有通過 [[Asgore 的家]]後才可使用。"/>
+    <property name="zh_name" value="通往最後迴廊的電梯"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Elevator to entrance" x="4840.15" y="2110.11">
    <properties>
     <property name="description" value="Elevator leading back to the start of New Home."/>
+    <property name="zh_description" value="通往新居一開始的電梯。"/>
+    <property name="zh_name" value="通往入口的電梯"/>
    </properties>
    <point/>
   </object>
@@ -79,6 +98,9 @@
     <property name="description">A long time ago, [[Chara|a human]] fell into the [[Ruins|RUINS]].
 Injured by its fall, the human called out for help.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">很久以前，有個[[Chara|人類]]掉進[[廢墟]]裡。
+因為掉落而受傷的人類尋求幫助。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #1"/>
    </properties>
    <point/>
   </object>
@@ -87,6 +109,9 @@ Injured by its fall, the human called out for help.</property>
     <property name="description">[[Asriel Dreemurr|ASRIEL]], the king's son, heard [[Chara|the human]]'s call.
 He brought the human back to the castle.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">國王的兒子 [[Asriel Dreemurr|ASRIEL]]，聽到[[Chara|人類]]的求救聲。
+他把人類帶回城堡。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #2"/>
    </properties>
    <point/>
   </object>
@@ -96,6 +121,10 @@ He brought the human back to the castle.</property>
 The [[Asgore Dreemurr|King]] and [[Toriel|Queen]] treated the human child as their own.
 The [[underground]] was full of hope.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">那段時間裡，[[Asriel Dreemurr|ASRIEL]] 跟[[Chara|人類]]變得情同手足。
+[[Asgore Dreemurr|國王]]跟[[Toriel|皇后]]也對人類視如己出。
+整個[[地下世界]]洋溢著希望。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #3"/>
    </properties>
    <point/>
   </object>
@@ -104,6 +133,9 @@ The [[underground]] was full of hope.</property>
     <property name="description">Then... One day...
 [[Chara|The human]] became very ill.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">然後...有一天...
+[[Chara|人類]]病得非常重。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #4"/>
    </properties>
    <point/>
   </object>
@@ -113,6 +145,10 @@ The [[underground]] was full of hope.</property>
 To see the flowers from their village.
 But there was nothing we could do.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Chara|病重的人類]]提出一個請求。
+他想看看山谷中盛開的花。
+但我們無法為他做些什麼。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #5"/>
    </properties>
    <point/>
   </object>
@@ -123,6 +159,11 @@ The next day.
 ...
 [[Chara|The human]] died.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">過了一天。
+又過一天。
+...
+[[Chara|人類]]死了。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #6"/>
    </properties>
    <point/>
   </object>
@@ -131,6 +172,9 @@ The next day.
     <property name="description">[[Asriel Dreemurr|ASRIEL]], wracked with grief, absorbed the human's [[SOUL]].
 He transformed into a being with incredible power.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asriel Dreemurr|ASRIEL]] 心中充滿了悲傷，他吸收人類的[[靈魂]]。
+變得擁有令人無法置信的強大力量。 </property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #7"/>
    </properties>
    <point/>
   </object>
@@ -140,6 +184,10 @@ He transformed into a being with incredible power.</property>
 He carried the human's body into the sunset.
 Back to the village of the humans.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">藉著人類的[[靈魂]]， [[Asriel Dreemurr|ASRIEL]] 跨越了[[結界]]。
+他帶著人類的身體走向日落。
+回到人類居住的山谷。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #8"/>
    </properties>
    <point/>
   </object>
@@ -149,6 +197,10 @@ Back to the village of the humans.</property>
 There, he found a bed of [[Golden Flowers|golden flowers]].
 He carried [[Chara|the human]] onto it.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asriel Dreemurr|ASRIEL]] 到達山谷的中央。
+在那裡，他找到滿谷的[[金色花朵]]。
+把[[Chara|人類]]的遺體放置其上。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #9"/>
    </properties>
    <point/>
   </object>
@@ -158,6 +210,10 @@ He carried [[Chara|the human]] onto it.</property>
 The villagers saw [[Asriel Dreemurr|ASRIEL]] holding [[Chara|the human]]'s body.
 They thought that he had killed the child.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">突然之間，出現了尖叫聲。
+山谷裡的人看到 [[Asriel Dreemurr|ASRIEL]] 帶著[[Chara|人類]]的遺體。
+他們認為他殺了那個孩子。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #10"/>
    </properties>
    <point/>
   </object>
@@ -167,6 +223,10 @@ They thought that he had killed the child.</property>
 He was struck with blow after blow.
 [[Asriel Dreemurr|ASRIEL]] had the power to destroy them all.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">人類盡其所能的攻擊他。
+他一次又一次的被擊中
+[[Asriel Dreemurr|ASRIEL]] 有能力將這些人全都消滅。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #11"/>
    </properties>
    <point/>
   </object>
@@ -177,6 +237,10 @@ He was struck with blow after blow.
 Clutching [[Chara|the human]]...
 ASRIEL smiled, and walked away.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">但...
+[[Asriel Dreemurr|ASRIEL]] 沒有反擊。抱著[[Chara|人類]]的遺體...
+ASRIEL 笑著，然後離開。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #12"/>
    </properties>
    <point/>
   </object>
@@ -186,6 +250,10 @@ ASRIEL smiled, and walked away.</property>
 He entered the castle and collapsed.
 His dust spread across the garden.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asriel Dreemurr|ASRIEL]] 滿身是傷，步履蹣跚的走回家。
+進入城堡後就倒下了。
+他化作塵埃，灑落在花園中。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #13"/>
    </properties>
    <point/>
   </object>
@@ -195,6 +263,10 @@ His dust spread across the garden.</property>
 The [[Asgore Dreemurr|king]] and [[Toriel|queen]] had lost two children in one night.
 The humans had once again taken everything from us.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">整個王國都陷入絕望。
+[[Asgore Dreemurr|國王]]跟[[Toriel|皇后]]在一夕之間失去了兩個孩子。
+人類再次從我們這裡奪走了一切。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #14"/>
    </properties>
    <point/>
   </object>
@@ -204,6 +276,10 @@ The humans had once again taken everything from us.</property>
 Every human who falls down here must die.
 With enough [[SOUL|souls]], we can shatter the [[barrier]] forever.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asgore Dreemurr|國王]]下定決心，是時候結束我們的苦難了。
+所有掉到這裡的人類都必須死。
+只要有足夠的[[靈魂]]，我們就能打破[[結界]]。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #15"/>
    </properties>
    <point/>
   </object>
@@ -214,6 +290,11 @@ With enough [[SOUL|souls]], we can shatter the [[barrier]] forever.</property>
 King ASGORE will give us hope.
 King ASGORE will save us all.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">現在已經離那個時刻不遠了。
+[[Asgore Dreemurr|國王 ASGORE]] 會帶我們走。
+國王 ASGORE 會給我們希望。
+國王 ASGORE 會拯救我們所有。</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #16"/>
    </properties>
    <point/>
   </object>
@@ -223,24 +304,35 @@ King ASGORE will save us all.</property>
 Aren't you excited?
 Aren't you happy?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">你也應該露出微笑。
+你不感到興奮嗎？
+你不感到開心嗎？</property>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #17"/>
    </properties>
    <point/>
   </object>
   <object id="33" name="The story of Asriel and the First Human, part 18" x="4619.2" y="2142">
    <properties>
     <property name="description" value="''You're going to be free.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="你也即將獲得自由。"/>
+    <property name="zh_name" value="怪物講解 Asriel 和第一個人類的故事 #18"/>
    </properties>
    <point/>
   </object>
   <object id="37" name="Sans's judgement" x="5378.43" y="2369.58">
    <properties>
     <property name="description" value="[[Sans]] judges the protagonist based on their accumulated [[Stats#EXP|EXP]] and [[Stats#LOVE|LOVE]], revealing that they are acronyms for &quot;Execution Points&quot; and &quot;Level of Violence&quot; respectively. If the protagonist had gained no EXP and repeatedly reloads their [[SAVE]] after the judgement, Sans gives them the key to [[Papyrus and Sans's House#Sans's Room|his room]]."/>
+    <property name="zh_description" value="[[Sans]] 根據主角的 [[遊戲數據#EXP|EXP]] 和 [[遊戲數據#LOVE|LOVE]] 進行審判，表示它們分別是&quot;處決點數(EXecution Points)&quot;和&quot;暴力等級(Level Of ViolencE)&quot;的縮寫。如果主角在審判後沒有獲得 EXP 且反覆讀取[[存檔]]，Sans 會將 [[Papyrus 和 Sans 的家#Sans 的房間|他房間]]的鑰匙交給主角。"/>
+    <property name="zh_name" value="Sans 的審判"/>
    </properties>
    <point/>
   </object>
   <object id="41" name="Coffins" x="6388.54" y="2905.17">
    <properties>
     <property name="description" value="The coffins for the [[Eight Humans#seven fallen humans]] that came before the protagonist. The nearest one is labeled with the name of [[Chara|the first human]]. At the end of the [[True Pacifist Route]], they are open and empty."/>
+    <property name="zh_description" value="在主角到來前的[[八名人類|七個人類]]棺材。第一個棺材上寫著[[Chara|第一個人類]]的名字。在[[完美路線]]的結尾，這些棺材被打開，裡面是空的。"/>
+    <property name="zh_name" value="棺材"/>
    </properties>
    <point/>
   </object>
@@ -248,6 +340,8 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="The protagonist first meets Asgore here as he is watering the [[Golden Flowers]]. On the [[Neutral Route]], he guides them to the [[Barrier]]."/>
     <property name="page" value="Asgore Dreemurr"/>
+    <property name="zh_description" value="主角第一次遇見 Asgore，當時他正在澆灌[[金色花朵]]。在[[中立路線]]中，他引導主角前往[[結界]]。"/>
+    <property name="zh_name" value="第一次遇見 Asgore"/>
    </properties>
    <point/>
   </object>
@@ -255,12 +349,17 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="At the end of the True Pacifist Route, The protagonist's friends gather here and celebrate the destruction of the [[Barrier]]."/>
     <property name="page" value="True Pacifist Route#Epilogue"/>
+    <property name="zh_description" value="在完美路線的終點，主角的朋友們聚集在這裡，慶祝被打破的[[結界]]和迎向的自由。"/>
+    <property name="zh_name" value="完美路線結尾"/>
+    <property name="zh_page" value="完美路線#結局"/>
    </properties>
    <point/>
   </object>
   <object id="48" name="Flowey's corpse" x="6439.78" y="444.3">
    <properties>
     <property name="description" value="After defeating [[Photoshop Flowey]], the protagonist is given the option to finish him off. If they kill him, his corpse is left behind, having turned back into a regular flower."/>
+    <property name="zh_description" value="擊敗 [[Photoshop Flowey]] 後，主角可以選擇殺死他，他會變回一朵普通的花。"/>
+    <property name="zh_name" value="Flowey 的屍體"/>
    </properties>
    <point/>
   </object>
@@ -268,6 +367,9 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="The game ends after leaving the [[Underground]]. [[Sans]] calls the protagonist's phone and explains the state of the [[Underground]] after [[Asgore Dreemurr|Asgore]]'s death."/>
     <property name="page" value="Neutral Route"/>
+    <property name="zh_description" value="離開[[地下世界]]後，[[Sans]] 撥通了主角的電話，解釋了 [[Asgore Dreemurr|Asgore]] 死後[[地下世界]]的狀況。"/>
+    <property name="zh_name" value="中立路線結局"/>
+    <property name="zh_page" value="中立路線"/>
    </properties>
    <point/>
   </object>
@@ -275,6 +377,9 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="The protagonist approaches [[Asgore Dreemurr|Asgore]], who was warned by [[Flowey]] that they would be arriving soon. The protagonist forcibly engages in a battle against Asgore and depletes his HP in a single strike. Flowey finishes him off and begs for his life, but the protagonist kills him as well. [[Chara|The first human]] reveals themself, thanks the protagonist for bringing them back from death, and destroys the game world."/>
     <property name="page" value="Genocide Route"/>
+    <property name="zh_description" value="主角接近[[Asgore Dreemurr|Asgore]]，[[Flowey]] 警告 Asgore 主角的到來。主角強行與 Asgore 交戰，一擊便秒殺了他。之後 Flowey 殺死了 Asgore ，並對主角乞求饒命，但主角也殺死了他。之後[[Chara|第一個人類]]現身，感謝主角將他從死亡中拯救出來，並摧毀整個遊戲世界。"/>
+    <property name="zh_name" value="屠殺路線結局"/>
+    <property name="zh_page" value="屠殺路線"/>
    </properties>
    <point/>
   </object>
@@ -282,6 +387,9 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="The protagonist and their friends watch the sunset. [[Asgore Dreemurr|Asgore]] asks the protagonist to act as the ambassador to the humans, which they can accept or decline. As their friends make their way down the mountain, [[Toriel]] asks the protagonist if they want to stay with her, altering the post-credits scene."/>
     <property name="page" value="True Pacifist Route"/>
+    <property name="zh_description" value="主角和朋友們欣賞日落。 [[Asgore Dreemurr|Asgore]] 請主角擔任人類的大使，主角可以接受或拒絕。當主角的朋友們離開後，[[Toriel]] 詢問主角是否願意留下來陪伴她，這將改變結局的劇情。"/>
+    <property name="zh_name" value="完美路線結局"/>
+    <property name="zh_page" value="完美路線"/>
    </properties>
    <point/>
   </object>
@@ -291,6 +399,9 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="A Dimensional Box outside [[Asgore's Home]], only available on the [[Genocide Route]]."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[Asgore 的家]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -298,6 +409,9 @@ Aren't you happy?</property>
    <properties>
     <property name="description" value="A Dimensional Box in the [[Last Corridor]], only available on the [[Genocide Route]]."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在[[最後迴廊]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -306,36 +420,48 @@ Aren't you happy?</property>
   <object id="1" name="Castle Elevator" x="429.81" y="4548.01">
    <properties>
     <property name="description" value="SAVE Point near the elevator."/>
+    <property name="zh_description" value="位於電梯旁邊的存檔點。"/>
+    <property name="zh_name" value="王宮電梯"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="New Home" x="1680.02" y="3177.91">
    <properties>
     <property name="description" value="SAVE Point outside [[Asgore's Home]]."/>
+    <property name="zh_description" value="新居"/>
+    <property name="zh_name" value="位於[[Asgore 的家]]外面的存檔點。"/>
    </properties>
    <point/>
   </object>
   <object id="35" name="Last Corridor" x="4689.25" y="2380.54">
    <properties>
     <property name="description" value="SAVE Point in the [[Last Corridor]]."/>
+    <property name="zh_description" value="位於[[最後迴廊]]的存檔點。"/>
+    <property name="zh_name" value="最後迴廊"/>
    </properties>
    <point/>
   </object>
   <object id="40" name="Throne Entrance" x="6109.74" y="1790.41">
    <properties>
     <property name="description" value="SAVE Point outside the Throne Room."/>
+    <property name="zh_description" value="位於王座之間外面的存檔點。"/>
+    <property name="zh_name" value="王座之間入口"/>
    </properties>
    <point/>
   </object>
   <object id="42" name="Throne Room" x="6039.66" y="1191.19">
    <properties>
     <property name="description" value="SAVE Point in the Throne Room."/>
+    <property name="zh_description" value="位於王座之間的存檔點。"/>
+    <property name="zh_name" value="王座之間"/>
    </properties>
    <point/>
   </object>
   <object id="44" name="The End" x="6359.79" y="963.217">
    <properties>
     <property name="description" value="SAVE Point outside the [[Barrier]]."/>
+    <property name="zh_description" value="位於[[結界]]前的存檔點。"/>
+    <property name="zh_name" value="盡頭"/>
    </properties>
    <point/>
   </object>
@@ -348,18 +474,28 @@ Aren't you happy?</property>
 If you have anything you need to get off your chest, please don't hesitate to come.
 The keys are in the kitchen and the hallway.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">你好呀！我在花園裡
+如果你有任何話想說，請儘管來找我
+你可以廚房和走廊找到鑰匙。</property>
+    <property name="zh_name" value="在鐵鍊上的紙條"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="Note" x="1298.46" y="2583.12">
    <properties>
     <property name="description" value="''Howdy! Help yourself to anything you want!''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="你好呀！請自取！"/>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
   <object id="39" name="Sign" x="5918.63" y="1760.95">
    <properties>
     <property name="description" value="''Throne Room''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="王座室"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -368,24 +504,32 @@ The keys are in the kitchen and the hallway.</property>
   <object id="10" name="Worn Dagger/Real Knife" x="1917" y="2631.64">
    <properties>
     <property name="description" value="The protagonist can open this present to reveal a [[Worn Dagger]] ([[Neutral Route]]) or the [[Real Knife]] ([[Genocide Route]])."/>
+    <property name="zh_description" value="禮物箱內裝有[[破舊匕首]] ([[中立路線]])或[[真刀]] ([[屠殺路線]])。"/>
+    <property name="zh_name" value="破舊匕首/真刀"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Heart Locket/The Locket" x="2005.39" y="2618.48">
    <properties>
     <property name="description" value="The protagonist can open this present to reveal a [[Heart Locket]] ([[Neutral Route]]) or [[The Locket]] ([[Genocide Route]])."/>
+    <property name="zh_description" value="禮物箱內裝有[[心形墜飾鎖]] ([[中立路線]])或[[墜飾鎖]] ([[屠殺路線]])。"/>
+    <property name="zh_name" value="心形墜飾鎖/墜飾鎖"/>
    </properties>
    <point/>
   </object>
   <object id="12" name="Key" x="2383.78" y="2814.8">
    <properties>
     <property name="description" value="A key in the hallway. It is used to unlock the chain blocking off the stairs."/>
+    <property name="zh_description" value="走廊的鑰匙，可打開樓梯的鎖鏈。"/>
+    <property name="zh_name" value="鑰匙"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Key" x="1326.38" y="2579.91">
    <properties>
     <property name="description" value="A key in the kitchen. It is used to unlock the chain blocking off the stairs."/>
+    <property name="zh_description" value="廚房的鑰匙，可打開樓梯的鎖鏈。"/>
+    <property name="zh_name" value="鑰匙"/>
    </properties>
    <point/>
   </object>
@@ -395,6 +539,9 @@ The keys are in the kitchen and the hallway.</property>
    <properties>
     <property name="description" value="Boss battle against Sans on the [[Genocide Route]]."/>
     <property name="page" value="Sans/In Battle"/>
+    <property name="zh_description" value="在[[屠殺路線]]中和 Sans 戰鬥。"/>
+    <property name="zh_name" value="Sans (屠殺路線)"/>
+    <property name="zh_page" value="Sans/戰鬥中"/>
    </properties>
    <point/>
   </object>
@@ -402,6 +549,8 @@ The keys are in the kitchen and the hallway.</property>
    <properties>
     <property name="description" value="Boss battle against [[Asgore Dreemurr]]. On the [[Neutral Route]], [[Flowey]] finishes him off and absorbs the six human [[SOUL]]s, transforming into [[Photoshop Flowey]]. On the [[True Pacifist Route]], the protagonist's friends interrupt the battle, but Flowey absorbs the human SOULs as well as the SOULs of every monster in the [[Underground]], transforming into [[Asriel Dreemurr]]."/>
     <property name="page" value="Asgore Dreemurr/In Battle"/>
+    <property name="zh_description" value="在[[中立路線]]和 [[Asgore Dreemurr]] 戰鬥，[[Flowey]] 殺死了他並吸收了六個人類[[靈魂]]，變身為 [[Photoshop Flowey]]。在[[完美路線]]中，主角的朋友打斷了戰鬥，但 Flowey 吸收了人類的靈魂以及[[地下世界]]所有怪物的靈魂，變身為 [[Asriel Dreemurr]]。"/>
+    <property name="zh_page" value="Asgore Dreemurr/戰鬥中"/>
    </properties>
    <point/>
   </object>

@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="108" height="66" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="53">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="真正的實驗室"/>
  </properties>
  <imagelayer id="2" name="True Lab map">
   <image source="images/True Lab.png" width="3440" height="2100"/>
@@ -17,12 +18,16 @@
   <object id="38" name="VHS tapes" x="1240.61" y="107.241">
    <properties>
     <property name="description" value="The protagonist can watch six tapes from the VHS player. These tapes detail snippets of the Dreemurr family's lives, but they also detail [[Chara|the first human]]'s plan to break the [[Barrier]] with [[Asriel Dreemurr|Asriel]], as well as their subsequent death."/>
+    <property name="zh_description" value="主角可以從錄影帶播放器中觀看六捲錄影帶。這些錄影帶詳細記錄了 Dreemurr 家族生活的片段，也詳細記錄了[[Chara|第一個人類]]與 [[Asriel Dreemurr|Asriel]] 一起打破[[結界]]的計劃，以及第一個人類的死亡。"/>
+    <property name="zh_name" value="錄影帶"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Power Room" x="618.97" y="650.041">
    <properties>
     <property name="description" value="The protagonist activates the Power Room generator to restore power to the elevator. After doing so, a group of [[Amalgamates]] approach the protagonist, but [[Alphys]] stops them. She explains that she injected [[Determination]] extracted from the human [[SOUL]]s into fallen down monsters so that their SOULs would persist after death. However, since monsters' bodies cannot handle the amount of Determination Alphys was injecting, their bodies began to melt together. Alphys resolves to reveal the truth and bring the Amalgamates back to their families."/>
+    <property name="zh_description" value="主角啟動了動力室的發電機，恢復了電梯的電力。之後，一群[[合成怪物]]接近主角，但 [[Alphys]] 阻止它們。她表示她將從人類[[靈魂]]中提取的[[決心]]注入倒下的怪物體內，以便它們的靈魂在死後得以保留。然而由於怪物的身體無法承受 Alphys 注入的大量決心，它們的身體開始融化在一起。 Alphys 最後決定揭露真相，並將合成怪物帶回它們的家人身邊。"/>
+    <property name="zh_name" value="動力室"/>
    </properties>
    <point/>
   </object>
@@ -31,12 +36,16 @@
   <object id="5" name="True Laboratory" x="1169.91" y="1528.7">
    <properties>
     <property name="description" value="SAVE Point in the lobby."/>
+    <property name="zh_description" value="位於動力室門外面的存檔點。"/>
+    <property name="zh_name" value="真正的實驗室"/>
    </properties>
    <point/>
   </object>
   <object id="20" name="True Lab - Bedroom" x="2244.73" y="594.236">
    <properties>
     <property name="description" value="SAVE Point in the Bedroom"/>
+    <property name="zh_description" value="位於臥室的存檔點。"/>
+    <property name="zh_name" value="真正的實驗室 - 臥室"/>
    </properties>
    <point/>
   </object>
@@ -45,33 +54,46 @@
   <object id="13" name="Red Key" x="137.123" y="1329.73">
    <properties>
     <property name="description" value="The Red Key, dropped by [[Memoryhead]]. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="擊倒 [[Memoryhead]] 後掉落，可開啟動力室的門。"/>
+    <property name="zh_name" value="紅色鑰匙"/>
    </properties>
    <point/>
   </object>
   <object id="22" name="Yellow Key" x="2178.13" y="755.472">
    <properties>
     <property name="description" value="The Yellow Key, uncovered after inspecting the bed. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="在床的被子下，可開啟動力室的門。"/>
+    <property name="zh_name" value="黃色鑰匙"/>
    </properties>
    <point/>
   </object>
   <object id="34" name="Green Key" x="1578.51" y="64.3508">
    <properties>
     <property name="description" value="The Green Key, uncovered by opening the shower curtain."/>
+    <property name="zh_description" value="在浴簾後面，可開啟動力室的門。"/>
+    <property name="zh_name" value="綠色鑰匙"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Blue Key" x="356.411" y="381.724">
    <properties>
     <property name="description" value="The Blue Key, dropped by [[Snowdrake's Mother]]. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="擊倒 [[Snowdrake's Mother]] 後掉落，可開啟動力室的門。"/>
+    <property name="zh_name" value="藍色鑰匙"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="6" name="enemies">
+  <properties>
+   <property name="include" value="Map:Common Data"/>
+   <property name="zh_name" value="真正的實驗室"/>
+  </properties>
   <object id="12" name="Memoryhead" x="73.5526" y="1316.59">
    <properties>
     <property name="description" value="Battle against Memoryhead, triggered by turning on the sinks."/>
     <property name="page" value="Memoryhead"/>
+    <property name="zh_description" value="與 Memoryhead 戰鬥，打開第三個水槽後。"/>
    </properties>
    <point/>
   </object>
@@ -79,6 +101,7 @@
    <properties>
     <property name="description" value="Battle against Endogeny, triggered after turning on the fans."/>
     <property name="page" value="Endogeny"/>
+    <property name="zh_description" value="與 Endogeny 戰鬥，打開風扇後。"/>
    </properties>
    <point/>
   </object>
@@ -86,6 +109,7 @@
    <properties>
     <property name="description" value="Battle against Reaper Bird, initially disguised as a random [[encounter]] indicator."/>
     <property name="page" value="Reaper Bird"/>
+    <property name="zh_description" value="與 Reaper Bird 戰鬥，通過鏡子後觸發[[遭遇戰|遭遇提示]]。"/>
    </properties>
    <point/>
   </object>
@@ -93,6 +117,7 @@
    <properties>
     <property name="description" value="Battle against Lemon Bread, initially disguised as a [[SAVE Point]]."/>
     <property name="page" value="Lemon Bread"/>
+    <property name="zh_description" value="與 Lemon Bread 戰鬥，偽裝成[[存檔|存檔點]]。"/>
    </properties>
    <point/>
   </object>
@@ -100,6 +125,7 @@
    <properties>
     <property name="description" value="Battle against Snowdrake's Mother, initially disguised as a refrigerator."/>
     <property name="page" value="Snowdrake's Mother"/>
+    <property name="zh_description" value="與 Snowdrake's Mother 戰鬥，偽裝成冰箱。"/>
    </properties>
    <point/>
   </object>
@@ -111,6 +137,10 @@
 I will create the power to free us all.
 I will unleash the power of the [[SOUL]].</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">時候到了...是時候去做[[Asgore Dreemurr|國王]]請託的事了。
+我將創造一股解放我們所有怪物的力量。
+我將釋放[[靈魂]]的力量。</property>
+    <property name="zh_name" value="記錄1號"/>
    </properties>
    <point/>
   </object>
@@ -122,6 +152,12 @@ SOUL power can only be derived from what was once living.
 So, to create more, we will have to use what we have now...
 The SOULs of [[monsters]].</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[結界]]被[[靈魂]]的力量保護著..
+不幸的是，這股力量無法被人工重新創造出來。
+靈魂之力只會來源於曾經存活的生物。
+因此，為了創造更多，我們只能利用我們現有的東西...
+[[怪物]]的靈魂。</property>
+    <property name="zh_name" value="記錄2號"/>
    </properties>
    <point/>
   </object>
@@ -133,6 +169,12 @@ And, unlike the persistent SOULs of [[humans]]...
 The SOULs of most monsters disappear immediately upon death.
 If only I could make a monster's SOUL last...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">但是想從一個仍活著的[[怪物]]中抽取出[[靈魂]]將會需要無法想像的力量...
+除了不切實際以外，這樣做還會立即摧毀掉靈魂的主人。
+而且，與[[人類]]的靈魂不同呃的是...
+大多數怪物的靈魂都會在死亡時跟著消失。
+要是我可以讓怪物的靈魂持續存在的話...</property>
+    <property name="zh_name" value="記錄3號"/>
    </properties>
    <point/>
   </object>
@@ -145,6 +187,13 @@ The will to keep living... The resolve to change fate.
 Let's call this power...
 &quot;[[Determination]].&quot;</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">搞定了。
+藉由藍圖，我已經從人類的[[靈魂]]中把它提取出來了。
+我認為就是這種力量讓人類的靈魂在死後仍能留存。
+生存的意志...想要改變命運的恆心。
+那就稱呼這種力量為
+&quot;[[決心]]&quot;吧。</property>
+    <property name="zh_name" value="記錄5號"/>
    </properties>
    <point/>
   </object>
@@ -156,12 +205,21 @@ Let's call this power...
 
 (That's all you could read.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(地上有張紙條... 你只能勉強看懂部分內容。)
+
+&quot;電梯...沒電...進入中間房間...&quot;
+
+(這些就是你能閱讀的內容。)</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
   <object id="7" name="Sign" x="1326.78" y="1410.69">
    <properties>
     <property name="description" value="''POWER ROOM''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="動力室"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -174,6 +232,12 @@ But what happens if I inject &quot;[[determination]]&quot; into them?
 If their [[SOUL]]S persist after they perish, then...
 Freedom might be closer than we all thought.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asgore Dreemurr|ASGORE]] 向城外的人要了那些&quot;倒下&quot;的怪物。
+他們的身體今天送來了。他們還處在昏迷狀態呢...
+不久後，他們將全部化為塵埃。但如果我給他們注入&quot;[[決心]]&quot;的話會發生什麼？
+如果他們死後，[[靈魂]]仍然存在的話，那麼...
+自由可能比我們想像中的更近。</property>
+    <property name="zh_name" value="記錄6號"/>
    </properties>
    <point/>
   </object>
@@ -185,6 +249,12 @@ i told the families that i would give them the dust back for the funerals.
 people are starting to ask me what's happening.
 what do i do?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">研究進展的不太順利。
+沒有任何一具屍體化為塵埃，我也因此拿不到他們的[[靈魂]]。
+我當初卻跟他們的家人說，會把他們的塵埃還給他們去舉辦葬禮。
+大家都開始問我發生甚麼事了。
+我該怎麼辦？</property>
+    <property name="zh_name" value="記錄9號"/>
    </properties>
    <point/>
   </object>
@@ -196,6 +266,12 @@ what do i do?</property>
 
 (That's all you could read.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(地上有張紙條... 你只能勉強看懂部分內容。)
+
+&quot;水槽...掉進去了...&quot;
+
+(這些就是你能閱讀的內容。)</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -205,12 +281,20 @@ what do i do?</property>
 i'll just keep injecting everything with &quot;[[determination]].&quot;
 i want this to work.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">什麼事都沒發生。
+我不知道該做什麼。
+我就繼續幫一切物體注入&quot;[[決心]]&quot;吧。
+希望會有用。</property>
+    <property name="zh_name" value="記錄12號"/>
    </properties>
    <point/>
   </object>
   <object id="19" name="ENTRY NUMBER 13" x="1696.44" y="831">
    <properties>
     <property name="description" value="''one of the bodies opened its eyes.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="其中一具軀體張開眼睛了。"/>
+    <property name="zh_name" value="記錄13號"/>
    </properties>
    <point/>
   </object>
@@ -221,6 +305,11 @@ i want this to work.</property>
 They're all walking around and talking like nothing is wrong.
 I thought they were goners...?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">每個已經倒下的怪物...
+都活過來了。
+他們四處閒晃，好像什麼事都沒發生過一樣。
+他們不是都死透了嗎...？</property>
+    <property name="zh_name" value="記錄14號"/>
    </properties>
    <point/>
   </object>
@@ -232,12 +321,21 @@ I sent the [[SOUL]]S back to [[Asgore Dreemurr|ASGORE]], returned the vessel to 
 And I called all of the families and told them everyone's alive.
 I'll send everyone back tomorrow. :)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">看來這個研究行不通了...
+但至少結局還不錯吧...？
+我把[[靈魂]]和容器送回給 [[Asgore Dreemurr|ASGORE]]。
+我還連絡了所有的家屬，說每個人都活過來了。
+明天我會把每個人都送回家。: )</property>
+    <property name="zh_name" value="記錄15號"/>
    </properties>
    <point/>
   </object>
   <object id="25" name="ENTRY NUMBER 16" x="1896.79" y="351">
    <properties>
     <property name="description" value="''no No NO NO NO NO NO''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="不 不 不 不 不 不"/>
+    <property name="zh_name" value="記錄16號"/>
    </properties>
    <point/>
   </object>
@@ -249,6 +347,12 @@ but i'm afraid if i finish his body, he won't need me anymore...
 then we'll never be friends ever again.
 ... not to mention, every time i try to work on it, i just get really sweaty...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Mettaton]] 現在功成名就了，就不再和我說話了。
+...除了問我什麼時候會完成[[Mettaton EX|他的身體]]。
+但我害怕我一旦完成了他的身體，他就不再需要我了...
+然後我們就不再是朋友了。
+...更何況，每次我嘗試做他的身體時，我都搞得滿身是汗...</property>
+    <property name="zh_name" value="記錄11號"/>
    </properties>
    <point/>
   </object>
@@ -260,6 +364,12 @@ Just as a [[Humans|human]] cannot absorb a human SOUL...
 So then...
 What about something that's neither human nor monster?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我們需要一種容器，到時候才能裝下[[怪物]]的[[靈魂]]。
+畢竟，怪物沒辦法吸收下其他怪物的靈魂，
+就像一個[[人類]]也無法吸收其他人類的靈魂一樣。
+既然如此...
+那某種不是怪物也不是人類的東西呢？</property>
+    <property name="zh_name" value="記錄7號"/>
    </properties>
    <point/>
   </object>
@@ -270,6 +380,11 @@ it doesn't seem to be any different from the control cases.
 whatever. they're a hassle to work with anyway.
 the seeds just stick to you, and won't let go...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">要創造容器的實驗是個大失敗。
+我的實驗成果與對照組根本沒有分別。
+隨便啦，反正它們本來就很麻煩。
+花朵的種子老是黏著你，根本弄不掉...</property>
+    <property name="zh_name" value="記錄10號"/>
    </properties>
    <point/>
   </object>
@@ -281,6 +396,12 @@ the seeds just stick to you, and won't let go...</property>
 
 (That's all you could read.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(地上有張紙條... 你只能勉強看懂部分內容。)
+
+&quot;冷...&quot;
+
+(這些就是你能閱讀的內容。)</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -291,6 +412,13 @@ the seeds just stick to you, and won't let go...</property>
 &quot;under... sheets...&quot;
 
 (That's all you could read.)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(地上有張紙條... 你只能勉強看懂部分內容。)
+
+&quot;被子...下面...&quot;
+
+(這些就是你能閱讀的內容。)</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -301,6 +429,11 @@ I ended up snooping around the castle... And found these weird tapes.
 I don't feel like [[Asgore Dreemurr|ASGORE]]'s watched them...
 I don't think he should.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我一直在研究[[人類]]，看看能不能找到任何關於他們[[靈魂]]的資料。
+最後，我偷偷潛入了城堡... 然後找到了這些奇怪的錄影帶。
+我不覺得 [[Asgore Dreemurr|ASGORE]] 看過它們... 
+我也覺得他不應該看。</property>
+    <property name="zh_name" value="記錄4號"/>
    </properties>
    <point/>
   </object>
@@ -309,6 +442,9 @@ I don't think he should.</property>
     <property name="description">DT EXTRACTION MACHINE
 STATUS: INACTIVE</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">決心提取機
+狀態：停機</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -318,6 +454,10 @@ STATUS: INACTIVE</property>
 what am i supposed to say?
 i don't even answer the phone anymore.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">家屬們一直打來問我什麼時候會讓大家都回去。
+我該怎麼回答？
+我根本不想再接電話了。</property>
+    <property name="zh_name" value="記錄19號"/>
    </properties>
    <point/>
   </object>
@@ -328,6 +468,11 @@ four about everyone being angry
 one about this cute teacup he found that looks like me
 thanks asgore.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">[[Asgore Dreemurr|ASGORE]] 今天留下了五條訊息。
+四條都在說大家有多憤怒。
+最後一條是說他發現了一個長得像我的茶杯。
+謝囉 asgore。</property>
+    <property name="zh_name" value="記錄20號"/>
    </properties>
    <point/>
   </object>
@@ -336,6 +481,9 @@ thanks asgore.</property>
     <property name="description">i spend all my time at the [[Garbage Dump|garbage dump]] now
 it's my element</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我現在都待在[[瀑布#垃圾場|垃圾場]]了。
+根本就變成我的一部分了。</property>
+    <property name="zh_name" value="記錄21號"/>
    </properties>
    <point/>
   </object>
@@ -347,6 +495,12 @@ it's my element</property>
 
 (That's all you could read.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(地上有張紙條... 你只能勉強看懂部分內容。)
+
+&quot;浴簾...&quot;
+
+(這些就是你能閱讀的內容。)</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -361,12 +515,23 @@ It appeared just before the [[Toriel|queen]] left.
 I wonder...
 What happens when something without a [[SOUL]] gains the will to live?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">我已經挑好志願者了。
+不過我還沒告訴 [[Asgore Dreemurr|ASGORE]]，因為我想給他一個驚喜...
+就在他花園的正中心，有個特別的東西——第一朵[[金色花朵|金黃花]]，
+那朵比其他花朵更早生長的花，從[[地表世界|地面]]上而來的花，
+就在[[Toriel|皇后]]正要離開前出現的。
+我在想...若
+一個沒有[[靈魂]]的物體被給予生存的意志的話，會發生什麼事？</property>
+    <property name="zh_name" value="記錄8號"/>
    </properties>
    <point/>
   </object>
   <object id="51" name="ENTRY NUMBER 18" x="944.463" y="1089">
    <properties>
     <property name="description" value="''the flower's gone.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="那朵花不見了。"/>
+    <property name="zh_name" value="記錄18號"/>
    </properties>
    <point/>
   </object>
@@ -376,6 +541,8 @@ What happens when something without a [[SOUL]] gains the will to live?</property
    <properties>
     <property name="description" value="Appears after sleeping in the bed for long enough. It raises the bedsheets and tucks the protagonist in."/>
     <property name="page" value="True Lab/NPCs#Watching Man"/>
+    <property name="zh_description" value="在床上睡一段時間後它會出現。它會幫主角蓋棉被。"/>
+    <property name="zh_page" value="真正的實驗室/NPC#Watching Man"/>
    </properties>
    <point/>
   </object>
@@ -385,6 +552,9 @@ What happens when something without a [[SOUL]] gains the will to live?</property
    <properties>
     <property name="description" value="The protagonist can buy Popato Chisps from this vending machine for 25G."/>
     <property name="page" value="Popato Chisps"/>
+    <property name="zh_description" value="主角可以從這台自動販賣機以25G的價格購買[[薯片]]。"/>
+    <property name="zh_name" value="販賣機"/>
+    <property name="zh_page" value="薯片"/>
    </properties>
    <point/>
   </object>
@@ -393,48 +563,64 @@ What happens when something without a [[SOUL]] gains the will to live?</property
   <object id="9" name="Power Room door" x="1259.48" y="1401.98">
    <properties>
     <property name="description" value="A locked door. The protagonist must locate four keys and insert them into their respective slots to unlock the door."/>
+    <property name="zh_description" value="一扇鎖著的門。主角必須找到四把鑰匙，並將它們分別插入對應的插槽才能打開。"/>
+    <property name="zh_name" value="動力室"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Locked door" x="1399.74" y="1305.92">
    <properties>
     <property name="description" value="The protagonist must locate the Red Key and insert it into its slot to unlock this door."/>
+    <property name="zh_description" value="主角必須找到紅鑰匙並將其插入插槽才能打開這扇門。"/>
+    <property name="zh_name" value="上鎖的門"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Red Key slot" x="201.268" y="1054.79">
    <properties>
     <property name="description" value="The protagonist must insert the Red Key into this slot to unlock the Power Room door and the door leading to the rest of the True Lab."/>
+    <property name="zh_description" value="主角必須將紅色鑰匙插入此插槽才能打開動力室的門和通往真正實驗室其餘部分的門。"/>
+    <property name="zh_name" value="紅色鑰匙插槽"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Fan switch" x="3029.63" y="348.423">
    <properties>
     <property name="description" value="Pressing this switch turns on the fans in the True Lab, clearing the fog from the rooms. The room with the refrigerators becomes traversible with the fog cleared."/>
+    <property name="zh_description" value="按下此開關即可開啟風扇，清除房間內的霧氣。霧氣消散後，冰箱房間即可通行。"/>
+    <property name="zh_name" value="風扇開關"/>
    </properties>
    <point/>
   </object>
   <object id="33" name="Blue Key slot" x="3280.28" y="353.93">
    <properties>
     <property name="description" value="The protagonist must insert the Blue Key into this slot to unlock the Power Room door."/>
+    <property name="zh_description" value="主角必須將藍色鑰匙插入此插槽才能打開動力室的門。"/>
+    <property name="zh_name" value="藍色鑰匙插槽"/>
    </properties>
    <point/>
   </object>
   <object id="36" name="Yellow Key slot" x="1331.05" y="79.3205">
    <properties>
     <property name="description" value="The protagonist must insert the Yellow Key into this slot to unlock the Power Room door."/>
+    <property name="zh_description" value="主角必須將黃色鑰匙插入此插槽才能打開動力室的門。"/>
+    <property name="zh_name" value="黃色鑰匙插槽"/>
    </properties>
    <point/>
   </object>
   <object id="41" name="Foggy room" x="807.158" y="406.555">
    <properties>
     <property name="description" value="This room is initially fogged up, and nothing is visible. The protagonist must turn on the fans to clear the fog."/>
+    <property name="zh_description" value="這個房間最初被霧氣籠罩，導致什麼也看不見。主角必須打開風扇才能驅散霧氣。"/>
+    <property name="zh_name" value="霧氣房間"/>
    </properties>
    <point/>
   </object>
   <object id="48" name="Green Key slot" x="281.168" y="73.0658">
    <properties>
     <property name="description" value="The protagonist must insert the Green Key in this slot to unlock the Power Room door."/>
+    <property name="zh_description" value="主角必須將綠色鑰匙插入此插槽才能打開動力室的門。"/>
+    <property name="zh_name" value="綠色鑰匙插槽"/>
    </properties>
    <point/>
   </object>
@@ -443,6 +629,8 @@ What happens when something without a [[SOUL]] gains the will to live?</property
   <object id="52" name="Phone call" x="1219.13" y="1147.78">
    <properties>
     <property name="description" value="The protagonist receives a phone call from an unknown voice, who refers to them by the name of [[Chara|the first human]]. After the phone call, the doors suddenly close, and the protagonist is thrust into [[New Home]]."/>
+    <property name="zh_description" value="主角接到一個陌生聲音打來的電話，對方將主角稱作[[Chara|第一個人類]]。電話打完後門突然關閉，主角被送到[[新居]]。"/>
+    <property name="zh_name" value="電話"/>
    </properties>
    <point/>
   </object>
