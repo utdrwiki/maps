@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="272" height="229" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="151">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="272" height="229" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="152">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="zh_name" value="熱地"/>
  </properties>
  <imagelayer id="2" name="Hotland map">
   <image source="images/Hotland.png" width="8690" height="7320"/>
@@ -11,6 +12,10 @@
    <properties>
     <property name="description" value="[[Alphys]]'s Lab. Both she and [[Mettaton]] make their first appearances here, but on the [[Genocide Route]], only Mettaton makes an appearance. Contains a secret entrance to the [[True Lab]]."/>
     <property name="page" value="Lab"/>
+    <property name="zh_description">[[Alphys]] 的實驗室。她和 [[Mettaton]] 都在此首次登場，但在[[屠殺路線]]中，只有 Mettaton 出現。
+此處包含通往[[真正的實驗室]]的秘密入口。</property>
+    <property name="zh_name" value="實驗室"/>
+    <property name="zh_page" value="實驗室"/>
    </properties>
    <point/>
   </object>
@@ -53,6 +58,12 @@
    <properties>
     <property name="description" value="Hotel owned by [[Mettaton]]. On the [[Genocide Route]], the resort is evacuated, and no NPCs are present. It directly connects to the [[CORE]]."/>
     <property name="page" value="MTT Resort"/>
+    <property name="zh_description">[[Mettaton]] 品牌的飯店。
+在[[屠殺路線]]中沒有任何 NPC 存在。
+此地直接連接到[[核心]]。
+</property>
+    <property name="zh_name" value="MTT 度假村"/>
+    <property name="zh_page" value="MTT 度假村"/>
    </properties>
    <point/>
   </object>
@@ -67,6 +78,7 @@
    <properties>
     <property name="color" type="color" value="#fffbcd79"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="不可見的道路"/>
    </properties>
    <polyline points="0,0 161.53,0.32306"/>
   </object>
@@ -85,30 +97,47 @@
   <object id="1" name="Third Undyne chase conclusion" x="576.041" y="6943.07">
    <properties>
     <property name="description" value="[[Undyne]] chases the protagonist into Hotland, where she collapses due to excessive heat. The protagonist can pour water on her from the nearby water cooler, which allows her to be befriended at [[Undyne's House|her house]]."/>
+    <property name="zh_description">[[Undyne]] 追著主角進入熱地，結果因為過熱而倒下。
+主角可以從附近的飲水機倒水給她使她恢復，並且可以在[[Undyne 的家|她的家]]與她成為朋友。
+</property>
+    <property name="zh_name" value="Undyne 追逐戰盡頭"/>
    </properties>
    <point/>
   </object>
   <object id="3" name="Water cooler" x="729.923" y="6884.46">
    <properties>
     <property name="description" value="The protagonist can grab a cup of water from the cooler, which evaporates when the protagonist leaves the room. They can dump out the water onto the ground next to the cooler, which forms a puddle that grows in size as more water is dumped out. At the end of the [[True Pacifist Route]], a small tree groes from the puddle if all the water has been dumped out."/>
+    <property name="zh_description">主角可以從飲水機拿一杯水，當主角離開房間時，水會蒸發。
+主角可以將水倒在飲水機旁邊的地板上，這樣就會形成一個水窪，隨著更多的水被倒出，水窪會逐漸增大。
+在[[完美路線]]的結尾，若所有的水都倒完，水窪中會長出一顆小樹。
+</property>
+    <property name="zh_name" value="飲水機"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="First Mettaton encounter (Neutral Route)" x="2213.99" y="6909.65">
    <properties>
     <property name="description" value="[[Mettaton]] bursts through the wall and subjects the protagonist to a quiz show, during which [[Alphys]] helps them answer his questions."/>
+    <property name="zh_description" value="[[Mettaton]] 突然破牆而入，並強迫主角參加一場問答遊戲，期間 [[Alphys]] 會幫助主角回答他的問題。"/>
+    <property name="zh_name" value="第一次遇見 Mettaton (中立路線)"/>
    </properties>
    <point/>
   </object>
   <object id="10" name="First Mettaton encounter (Genocide Route)" x="2122.5" y="6983.35">
    <properties>
     <property name="description" value="[[Mettaton]] is present in the lab. He explains that [[Alphys]] had already evacuated everyone in Hotland to a safe location prior to the protagonist's arrival. He retreats shortly afterward and is only seen again in the [[CORE]]."/>
+    <property name="zh_description">[[Mettaton]] 出現在實驗室中。他表示 [[Alphys]] 在主角到達前已經將熱地所有人撤離到安全地點。
+隨後他很快撤退，並且在[[核心]]再次出現。
+</property>
+    <property name="zh_name" value="第一次遇見 Mettaton (屠殺路線)"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Video feed" x="1828.33" y="6895.8">
    <properties>
     <property name="description" value="A video feed of the protagonist's location. It tracks the protagonist's movements."/>
+    <property name="zh_description" value="主角所在位置的畫面。它會追蹤主角的移動。"/>
+    <property name="zh_name" value="監視器"/>
    </properties>
    <point/>
   </object>
@@ -116,6 +145,9 @@
    <properties>
     <property name="description" value="Alphys upgrades the protagonist's phone to include [[Dimensional Box]] functionalities and adds a second box for the protagonist to use. She then retreats into her &quot;bathroom.&quot;"/>
     <property name="page" value="Alphys"/>
+    <property name="zh_description">Alphys 將主角的手機升級，新增了[[次元箱]]功能和註冊地下網路。隨後她進入了她的&quot;廁所&quot;。
+</property>
+    <property name="zh_page" value="Alphys"/>
    </properties>
    <point/>
   </object>
@@ -123,54 +155,80 @@
    <properties>
     <property name="description" value="Initiially disguised as a bathroom, this door reveals an elevator that leads down into the True Lab. It can only be opened on the [[True Pacifist Route]]."/>
     <property name="page" value="True Lab"/>
+    <property name="zh_description" value="最初偽裝成廁所的門，實際上是一部通往真正的實驗室的電梯。它只有在[[完美路線]]中才能開啟。"/>
+    <property name="zh_name" value="真正的實驗室入口"/>
+    <property name="zh_page" value="真正的實驗室"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Befriending Alphys" x="1342.11" y="6957.46">
    <properties>
     <property name="description" value="After delivering [[Undyne's Letter]] to the [[Lab]] door, [[Alphys]] initiates a date with the protagonist. The date concludes in the [[Garbage Dump]], after which the Lab door unlocks."/>
+    <property name="zh_description">在將 [[Undyne 的信]]塞入[[實驗室]]的門後，[[Alphys]] 開始與主角約會。
+約會結束於[[瀑布#垃圾場|垃圾場]]，之後實驗室的門會解鎖。
+</property>
+    <property name="zh_name" value="和 Alphys 交朋友"/>
    </properties>
    <point/>
   </object>
   <object id="50" name="Second Mettaton encounter (Neutral Route)" x="5665.41" y="3841.77">
    <properties>
     <property name="description" value="[[Mettaton]] subjects the protagonist to a cooking show and asks them to retrieve sugar, milk, and eggs from the counter behind him. He then directs the protagonist to the can on the counter to the right, which rockets upwards. [[Alphys]] activates the jetpack on the protagonist's phone, allowing them to attempt to claim it while Mettaton impedes their progress."/>
+    <property name="zh_description">[[Mettaton]]強迫主角參加一場烹飪節目，並要求主角拿流理臺上糖、牛奶和雞蛋。
+隨後他指示主角去拿右邊的罐頭，但是那個放著罐頭的櫃子會向上延伸。
+[[Alphys]] 啟動了主角手機上的噴射背包，讓主角能夠試圖奪取罐子，同時 [[Mettaton]] 會阻礙主角。</property>
+    <property name="zh_name" value="第二次遇見 Mettaton (中立路線)"/>
    </properties>
    <point/>
   </object>
   <object id="69" name="Genocide Route floor blockage" x="6900.71" y="3125">
    <properties>
     <property name="description" value="On the [[Genocide Route]], the second floor of Hotland is blocked off by force fields, preventing access."/>
+    <property name="zh_description" value="在[[屠殺路線]]中，二樓被力場封鎖無法進入。"/>
+    <property name="zh_name" value="屠殺路線力場"/>
    </properties>
    <point/>
   </object>
   <object id="70" name="Hidden path to the Art Club Room" x="5909.23" y="3061.32">
    <properties>
     <property name="description" value="An invisible pathway to the [[Art Club Room]], made of tiles of magic glass."/>
+    <property name="zh_description" value="通往[[藝術俱樂部]]的隱形道路。"/>
+    <property name="zh_name" value="隱藏的藝術俱樂部"/>
    </properties>
    <point/>
   </object>
   <object id="88" name="Third Mettaton encounter (Neutral Route)" x="4186.84" y="2460.11">
    <properties>
     <property name="description" value="[[Mettaton]] conducts a news report of the area and asks the protagonist to report on one of six available objects. He then reveals that every object was a bomb and tasks the protagonist with defusing them all before the time runs out. [[Alphys]] points out the bomb defusal program on their phone."/>
+    <property name="zh_description">[[Mettaton]] 正在該地區進行新聞報導，並請主角報導六個可選物品之一。
+接著他揭露每個物品其實都是炸彈，並指派主角在時間結束前將它們全部拆除。
+[[Alphys]] 隨即提示手機上的拆彈程式。
+</property>
+    <property name="zh_name" value="第三次遇見 Mettaton (中立路線)"/>
    </properties>
    <point/>
   </object>
   <object id="114" name="Fourth Mettaton encounter (Neutral Route)" x="7262.07" y="957.578">
    <properties>
     <property name="description" value="[[Mettaton]] performs a musical for the protagonist and dropes them down into the room containing the [[Multicolor Tile Puzzle]]."/>
+    <property name="zh_description" value="[[Mettaton]] 為主角表演了一場音樂劇，然後讓主角掉下去。"/>
+    <property name="zh_name" value="第四次遇見 Mettaton (中立路線)"/>
    </properties>
    <point/>
   </object>
   <object id="115" name="Mettaton's dungeon" x="6428.24" y="1272.6">
    <properties>
     <property name="description" value="[[Mettaton]] tasks the protagonist with completing the [[Multicolor Tile Puzzle]] before the time runs out, after which he launches an attack. [[Alphys]] tells the protagonist to press the [[SOUL Modes#Yellow|yellow button]] on their phone, which allows them to counterattack and force Mettaton to retreat."/>
+    <property name="zh_description">[[Mettaton]] 要求主角在時間耗盡前完成[[彩色磚塊謎題]]，之後他發動攻擊。
+[[Alphys]] 告訴主角按下手機上的[[靈魂模式#黃色模式|黃色按鈕]]，這讓主角能夠反擊並迫使 Mettaton 撤退。</property>
+    <property name="zh_name" value="Mettaton 的地牢區域"/>
    </properties>
    <point/>
   </object>
   <object id="122" name="Sans" x="7472.48" y="824.756">
    <properties>
     <property name="description" value="[[Sans]] offers to take the protagonist to the restaurant inside the [[MTT Resort]]. He leads them through a &quot;shortcut,&quot; which teleports them straight there."/>
+    <property name="zh_description" value="[[Sans]] 提議帶主角前往 [[MTT 度假村]]裡的餐廳，並帶主角走&quot;捷徑&quot;進入。"/>
    </properties>
    <point/>
   </object>
@@ -178,18 +236,25 @@
    <properties>
     <property name="description" value="Entrance to the CORE, which leads directly to [[New Home]]."/>
     <property name="page" value="CORE"/>
+    <property name="zh_description" value="通往核心的入口，可通往[[新居]]。"/>
+    <property name="zh_name" value="核心的入口"/>
+    <property name="zh_page" value="核心"/>
    </properties>
    <point/>
   </object>
   <object id="142" name="Hotel door 2" x="8075.69" y="358">
    <properties>
     <property name="description" value="This door can be unlocked by speaking to the Hand Receptionist and paying for a room to stay in."/>
+    <property name="zh_description" value="這扇門可以透過與接待員對話並付費住宿來解鎖。"/>
+    <property name="zh_name" value="客房 #2"/>
    </properties>
    <point/>
   </object>
   <object id="150" name="Genocide Route floor blockage" x="3888.14" y="2116.91">
    <properties>
     <property name="description" value="On the [[Genocide Route]], the second floor of Hotland is blocked off by force fields, preventing access."/>
+    <property name="zh_description" value="在[[屠殺路線]]中，二樓被力場封鎖無法進入。"/>
+    <property name="zh_name" value="屠殺路線力場"/>
    </properties>
    <point/>
   </object>
@@ -199,6 +264,8 @@
    <properties>
     <property name="description" value="Sells hot dogs for 30G. The second hot dog bought is revealed to be a Hot Cat. If the protagonist has a full inventory, Sans stacks up to 30 hot dogs on their head free of charge."/>
     <property name="page" value="Hot Dog...?"/>
+    <property name="zh_description" value="Sans 以30G的價格販售熱狗。第二根熱狗為熱貓。如果主角的背包已滿，Sans 會免費將最多30根熱狗堆疊在他頭上。"/>
+    <property name="zh_page" value="熱狗"/>
    </properties>
    <point/>
   </object>
@@ -206,6 +273,9 @@
    <properties>
     <property name="description" value="The protagonist can buy a Spider Donut for 9999G."/>
     <property name="page" value="Spider Donut"/>
+    <property name="zh_description" value="主角可以以9999G購買一個蜘蛛甜甜圈。"/>
+    <property name="zh_name" value="蜘蛛甜甜圈"/>
+    <property name="zh_page" value="蜘蛛甜甜圈"/>
    </properties>
    <point/>
   </object>
@@ -213,6 +283,9 @@
    <properties>
     <property name="description" value="The protagonist can buy a Spider Cider for 9999G."/>
     <property name="page" value="Spider Cider"/>
+    <property name="zh_description" value="主角可以以9999G購買一個蜘蛛蘋果西打。"/>
+    <property name="zh_name" value="蜘蛛蘋果西打"/>
+    <property name="zh_page" value="蜘蛛蘋果西打"/>
    </properties>
    <point/>
   </object>
@@ -220,6 +293,10 @@
    <properties>
     <property name="description" value="Sells [[Nice Cream]] for 12G if the [[Royal Guards]] were killed. If they were spared, they will have bought out his entire stock, preventing the protagonist from buying any Nice Cream."/>
     <property name="page" value="Nice Cream Guy"/>
+    <property name="zh_description">若 [[Royal Guards]] 被殺害，他會以12G的價格販售[[好棒冰]]。
+若他們被寬恕，則他們會買光他所有的庫存，導致主角無法購買。</property>
+    <property name="zh_name" value="好棒冰店員"/>
+    <property name="zh_page" value="好棒冰店員"/>
    </properties>
    <point/>
   </object>
@@ -227,6 +304,8 @@
    <properties>
     <property name="description" value="The protagonist can buy items from the shop inside the alleyway."/>
     <property name="page" value="Bratty and Catty"/>
+    <property name="zh_description" value="主角可以在小巷裡的商店購買物品。"/>
+    <property name="zh_page" value="Bratty and Catty"/>
    </properties>
    <point/>
   </object>
@@ -234,6 +313,8 @@
    <properties>
     <property name="description" value="The protagonist can buy items inside the MTT Brand Burger Emporium."/>
     <property name="page" value="Burgerpants"/>
+    <property name="zh_description" value="主角可以在 MTT 的漢堡速食店購買物品。"/>
+    <property name="zh_page" value="漢堡褲"/>
    </properties>
    <point/>
   </object>
@@ -243,6 +324,9 @@
    <properties>
     <property name="description" value="A Dimensional Box inside the [[MTT Resort]], only available on the [[Genocide Route]]."/>
     <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[MTT 度假村]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
@@ -252,18 +336,27 @@
    <properties>
     <property name="description" value="The protagonist must unlock this door by solving the puzzles to the left and right. To solve the puzzles, the protagonist must maneuver the boxes so that they can shoot the opposing ship. Here, the protagonist is given two rounds of ammunition for each puzzle. On the [[Genocide Route]], this door is already open."/>
     <property name="page" value="Hotland/Puzzles#Reactivated Door Puzzle"/>
+    <property name="zh_description">主角必須解開左右兩邊的謎題才能打開這扇門。為了解開謎題，主角需要移動方塊，使其擊對方的船隻。每個謎題給予主角兩發子彈。
+在[[屠殺路線]]中，這扇門已經打開。
+</property>
+    <property name="zh_name" value="啟動門謎題 #1"/>
+    <property name="zh_page" value="熱地/謎題#啟動門謎題"/>
    </properties>
    <point/>
   </object>
   <object id="40" name="Left shooting puzzle" x="4399.42" y="4148">
    <properties>
     <property name="description" value="Can be solved by entering ''up'', ''left'', ''down'', and ''left''."/>
+    <property name="zh_description" value="順序為：上、左、下、左。"/>
+    <property name="zh_name" value="左側射擊謎題"/>
    </properties>
    <point/>
   </object>
   <object id="46" name="Right shooting puzzle" x="5279.25" y="4148">
    <properties>
     <property name="description" value="Can be solved by entering either ''up'' or ''down'', then ''left'' or ''right''."/>
+    <property name="zh_description" value="順序為：上/下、左/右。"/>
+    <property name="zh_name" value="右側射擊謎題"/>
    </properties>
    <point/>
   </object>
@@ -271,12 +364,17 @@
    <properties>
     <property name="description" value="To deactivate the force field, the protagonist must press the three switches within three seconds. If the protagonist misses the timing, they must ride the conveyor belt back to the beginning and start again."/>
     <property name="page" value="Hotland/Puzzles#The Conveyor Belt Puzzle"/>
+    <property name="zh_description" value="為了停用力場，主角必須在三秒內按下三個開關。如果主角錯過時機，就必須搭乘傳送帶回到起點並重新開始。"/>
+    <property name="zh_name" value="輸送帶謎題"/>
+    <property name="zh_page" value="熱地/謎題#輸送帶謎題"/>
    </properties>
    <point/>
   </object>
   <object id="77" name="Vent Puzzle" x="4650.1" y="3110.89">
    <properties>
     <property name="description" value="The protagonist must navigate the puzzle by pressing the buttons to reorient the vents."/>
+    <property name="zh_description" value="主角必須透過按下按鈕來重新調整通風口的位置，以解開謎題。"/>
+    <property name="zh_name" value="排氣口謎題"/>
    </properties>
    <point/>
   </object>
@@ -284,6 +382,7 @@
    <properties>
     <property name="color" type="color" value="#ffbae9e9"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="排氣口謎題解決路徑"/>
    </properties>
    <polyline points="-0.118713,-1.42455 -100.463,-1.12041 -99.7162,199.059 -193.293,199.107 -193.587,95.9645 -200.456,95.9815 -199.936,199.11 -208.396,199.11 -207.55,-5.88415 -305.124,-5.9755"/>
   </object>
@@ -291,6 +390,10 @@
    <properties>
     <property name="description" value="The protagonist must solve the puzzles to the north and south in order to unlock this door. They are given only one round of ammunition for each puzzle. On the [[Genocide Route]], this door is already open."/>
     <property name="page" value="Hotland/Puzzles#Reactivated Door Puzzle_2"/>
+    <property name="zh_description">主角必須解開上下兩邊的謎題才能打開這扇門。為了解開謎題，主角需要移動方塊，使其擊對方的船隻。每個謎題給予主角一發子彈。
+在[[屠殺路線]]中，這扇門已經打開。</property>
+    <property name="zh_name" value="重啟動門謎題 #2"/>
+    <property name="zh_page" value="熱地/謎題#重啟動門謎題"/>
    </properties>
    <point/>
   </object>
@@ -298,6 +401,7 @@
    <properties>
     <property name="color" type="color" value="#ffff0133"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="往上的路徑"/>
    </properties>
    <polyline points="0,-9.4506 76.5085,-8.62645 75.1141,-97.0403 186.14,-96.2681 186.189,70.9091 237.424,71.1904 236.937,0.327252 329.492,0.892644 329.473,-158.55 246.762,-158.56 246.686,-244.596"/>
   </object>
@@ -305,20 +409,33 @@
    <properties>
     <property name="color" type="color" value="#ff85cefa"/>
     <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="往下的路徑"/>
    </properties>
    <polyline points="0,0 100.349,0.992743 100.138,-93.1167 161.69,-93.1114 162.412,80.4721 329.091,80.8837 329.112,152.875 246.259,152.128 247.006,255.383"/>
   </object>
   <object id="105" name="Bottom shooting puzzle" x="5559.64" y="1868.99">
    <properties>
     <property name="description" value="The protagonist can solve this puzzle by entering ''left'', ''up'', ''left'', ''left'', ''right''."/>
+    <property name="zh_description" value="順序為：左、上、左、左、右。"/>
+    <property name="zh_name" value="下方射擊謎題"/>
    </properties>
    <point/>
   </object>
   <object id="107" name="Top shooting puzzle" x="4829.67" y="887.809">
    <properties>
     <property name="description" value="The protagonist can solve this puzzle by entering ''left'', ''right''."/>
+    <property name="zh_description" value="順序為：左、右。"/>
+    <property name="zh_name" value="上方射擊謎題"/>
    </properties>
    <point/>
+  </object>
+  <object id="117" name="Solution to Multicolor Tile Puzzle" x="6629.06" y="1390.36">
+   <properties>
+    <property name="color" type="color" value="#ff832c42"/>
+    <property name="thickness" type="float" value="3"/>
+    <property name="zh_name" value="彩色磚塊謎題路徑"/>
+   </properties>
+   <polyline points="0,0 20.8977,0.00669278 20.8178,-21.6921 80.0149,-21.8222 80.0918,-1.15304 121.14,-1.58154 121.223,19.967 242.349,20.0327 242.075,-22.6681 282.551,-22.5314 282.927,19.99 321.62,19.9961 321.389,-1.03107 361.452,-0.989903 361.674,-22.3297 380.95,-22.3881 380.982,19.9581 421.178,19.9945 420.765,-21.0928 442.196,-21.1456 442.438,19.4449 495.29,19.3497 495.145,-25.713 505.415,-25.7156 505.344,19.4977 561.369,19.9123 560.949,-20.678 641.853,-20.4162 641.712,-40.9591 681.226,-40.5995 681.721,20.0177 721.469,19.977 721.027,-40.9919 763.511,-40.8961 763.476,20.0464 811.423,20.0639"/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="saves">
@@ -327,12 +444,19 @@
     <property name="description">Seeing such a strange laboratory in a place like this...
 You're filled with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">看到有這麼奇怪的實驗室座落於此......
+你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 實驗室入口"/>
    </properties>
    <point/>
   </object>
   <object id="22" name="Hotland - Magma Chamber" x="2969.87" y="4947.95">
    <properties>
     <property name="description" value="''The whooshing sound of steam and cogs... it fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">蒸氣與齒輪的嘶嘶聲......
+使你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 熔岩房間"/>
    </properties>
    <point/>
   </object>
@@ -341,6 +465,8 @@ You're filled with determination.</property>
     <property name="description">An [[CORE|ominous structure]] looms in the distance...
 You're filled with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="遠方隱約可看到[[核心|不祥的建築]]......核心"/>
+    <property name="zh_name" value="熱地 - 核心觀覽"/>
    </properties>
    <point/>
   </object>
@@ -349,6 +475,9 @@ You're filled with determination.</property>
     <property name="description">Knowing the mouse might one day hack the computerized safe and get the cheese...
 It fills you with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">知道老鼠總有一天會駭進保險箱的電腦鎖並拿到裡面的起司......
+使你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 壞抉擇區域"/>
    </properties>
    <point/>
   </object>
@@ -357,12 +486,19 @@ It fills you with determination.</property>
     <property name="description">The smell of cobwebs fills the air...
 You're filled with determination.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">空氣中瀰漫著蜘蛛網的味道......
+你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 蜘蛛巢入口"/>
    </properties>
    <point/>
   </object>
   <object id="124" name="Hotland - Hotel Lobby" x="7549.88" y="456.86">
    <properties>
     <property name="description" value="''The relaxing atmosphere of this hotel... it fills you with determination.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">這間旅館的輕鬆氛圍......
+使你充滿了決心。</property>
+    <property name="zh_name" value="熱地 - 旅館大廳"/>
    </properties>
    <point/>
   </object>
@@ -373,6 +509,9 @@ You're filled with determination.</property>
     <property name="description">ALPHYS updated status.
 just realized i didn't watch [[undyne]] fight the human v.v</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+剛剛才發現我沒有看到 [[Undyne]] 跟人類的戰鬥 orz。</property>
+    <property name="zh_name" value="地下網路通知 #1"/>
    </properties>
    <point/>
   </object>
@@ -381,6 +520,10 @@ just realized i didn't watch [[undyne]] fight the human v.v</property>
     <property name="description">ALPHYS updated status.
 well i know she's unbeatable i'll ask her abt it later ^.^</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+沒關係我知道她是無敵的
+等下我會問她 (ﾟ∀ﾟ)</property>
+    <property name="zh_name" value="地下網路通知 #2"/>
    </properties>
    <point/>
   </object>
@@ -389,6 +532,9 @@ well i know she's unbeatable i'll ask her abt it later ^.^</property>
     <property name="description">ALPHYS updated status.
 for now i gotta call up the human and guide them =^.^=</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+現在我要打給人類引導他。=^.^=</property>
+    <property name="zh_name" value="地下網路通知 #3"/>
    </properties>
    <point/>
   </object>
@@ -397,6 +543,9 @@ for now i gotta call up the human and guide them =^.^=</property>
     <property name="description">ALPHYS updated status.
 gonna call them in a minute!!! =^.^=</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+再一分鐘就要打給人類了！！！=^.^=</property>
+    <property name="zh_name" value="地下網路通知 #4"/>
    </properties>
    <point/>
   </object>
@@ -405,6 +554,9 @@ gonna call them in a minute!!! =^.^=</property>
     <property name="description">ALPHYS updated status.
 I HATE USING THE PHONE I DON'T WANT TO DO THIS LMAO ^.^</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+我痛恨用這個電話我不想用 wwww</property>
+    <property name="zh_name" value="地下網路通知 #5"/>
    </properties>
    <point/>
   </object>
@@ -415,18 +567,29 @@ omg ive had my claw over the last digit for 5 minutes
 omg i'm just gonna do it
 i'm just gonna call!!!!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+天啊我的爪子已經在最後一個號碼上停了5分鐘
+天啊我要打了
+我要打電話了！！！</property>
+    <property name="zh_name" value="地下網路通知 #6"/>
    </properties>
    <point/>
   </object>
   <object id="27" name="Phone call 1" x="3228.41" y="4727.92">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and immediately hangs up before they can answer it."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。然而在接聽前就立刻掛斷。"/>
+    <property name="zh_name" value="Alphys 電話 #1"/>
    </properties>
    <point/>
   </object>
   <object id="28" name="Phone call 2" x="3232.94" y="4544.04">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and teaches the protagonist about how to avoid the [[Attack Types#Light Blue Attack|blue]] and [[Attack Types#Orange Attack|orange]] lasers."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。教導主角如何避開[[攻擊類型#橘色攻擊|橘色攻擊]]。"/>
+    <property name="zh_name" value="Alphys 電話 #2"/>
    </properties>
    <point/>
   </object>
@@ -436,6 +599,10 @@ i'm just gonna call!!!!</property>
 OMG I DID IT!!!
 claws haven't shook like that since [[undyne]] called me to ask about the weather... v.v</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+老天我終於做到了！！！
+在 [[Undyne]] 打來問我天氣後我的爪子就沒這麼抖過了... (；´Д`)</property>
+    <property name="zh_name" value="地下網路通知 #7"/>
    </properties>
    <point/>
   </object>
@@ -444,6 +611,9 @@ claws haven't shook like that since [[undyne]] called me to ask about the weathe
     <property name="description">ALPHYS updated status.
 WAIT THERE'S NO WEATHER DOWN HERE WHY DID SHE CALL ME</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+等等地下根本沒有天氣啊她為什麼打給我</property>
+    <property name="zh_name" value="地下網路通知 #8"/>
    </properties>
    <point/>
   </object>
@@ -452,6 +622,9 @@ WAIT THERE'S NO WEATHER DOWN HERE WHY DID SHE CALL ME</property>
     <property name="description">ALPHYS updated status.
 Oh My God i Forgot to Tell THem Where To Go</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+噢我的天啊忘記告訴人類要往哪走</property>
+    <property name="zh_name" value="地下網路通知 #9"/>
    </properties>
    <point/>
   </object>
@@ -462,18 +635,29 @@ CUte PIC OF ME RIGHT NOW ^.^
 
 (It's a photo of a garbage can with several pink, glittery filters over it.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+我可愛的自拍照 (´∀`*)
+
+(一張作了許多粉色亮光效果的垃圾桶照)</property>
+    <property name="zh_name" value="地下網路通知 #10"/>
    </properties>
    <point/>
   </object>
   <object id="34" name="Phone call 3" x="4828.89" y="4388.82">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and warns them of the upcoming puzzles. She directs them to the puzzle on the right."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。警告前方有謎題，並建議主角先從右邊開始。"/>
+    <property name="zh_name" value="Alphys 電話 #3"/>
    </properties>
    <point/>
   </object>
   <object id="36" name="Phone call 4" x="4527.95" y="4350.11">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and notes the blue laser in their way. She deactivates the laser, which allows the protagonist to complete the puzzle."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她注意到道路被水色雷射給阻擋，因此駭進雷射系統關閉雷射。"/>
+    <property name="zh_name" value="Alphys 電話 #4"/>
    </properties>
    <point/>
   </object>
@@ -482,6 +666,9 @@ CUte PIC OF ME RIGHT NOW ^.^
     <property name="description">ALPHYS updated status.
 wonder if it would be unfun if i explained the puzzle...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+在想如果我解釋了謎題是不是就不有趣了...</property>
+    <property name="zh_name" value="地下網路通知 #11"/>
    </properties>
    <point/>
   </object>
@@ -490,18 +677,27 @@ wonder if it would be unfun if i explained the puzzle...</property>
     <property name="description">ALPHYS updated status.
 whatever!!! i'll just explain it!!!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+管他的！！！我要解釋了！！！</property>
+    <property name="zh_name" value="地下網路通知 #12"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Phone call 5" x="4828.65" y="3885.02">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and attempts to explain the puzzle, only to realize that they had already solved it."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她嘗試要解釋謎題，但是主角已經解完。"/>
+    <property name="zh_name" value="Alphys 電話 #5"/>
    </properties>
    <point/>
   </object>
   <object id="52" name="Phone call 6" x="6320.78" y="3845.2">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and explains that the structure in the distance is the [[CORE]], and it contains an elevator that leads straight to [[New Home]]."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。提示遠處的結構是[[核心]]，裡面有一部直達[[新居]]的電梯。"/>
+    <property name="zh_name" value="Alphys 電話 #6"/>
    </properties>
    <point/>
   </object>
@@ -512,6 +708,11 @@ dinner with the girlfriend ;)
 
 (It's a picture of a catgirl figurine next to a bowl of instant noodles.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+跟女朋友一起吃晚餐 (*・∀─)✩
+
+(一張一碗泡麵、旁邊還有貓咪女生模型的照片)</property>
+    <property name="zh_name" value="地下網路通知 #13"/>
    </properties>
    <point/>
   </object>
@@ -524,6 +725,14 @@ ARE WE POSTING HOT &quot;PICS???&quot; HERE IS ME AND MY COOL FRIEND
 (Giant muscular biceps are pasted onto his arms.)
 (The biceps are also wearing sunglasses.)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">CoolSkeleton95 更新了狀態。
+'''我們還沒貼火熱的&quot;圖？？？&quot;'''
+'''這是我跟我酷炫的朋友'''
+(一張 Papyrus 在鏡子前展現肌肉的照片。)
+(他戴著太陽眼鏡。)
+(手臂貼上了巨大的二頭肌。)
+(二頭肌也都戴著太陽眼鏡。)</property>
+    <property name="zh_name" value="地下網路通知 #14"/>
    </properties>
    <point/>
   </object>
@@ -532,6 +741,10 @@ ARE WE POSTING HOT &quot;PICS???&quot; HERE IS ME AND MY COOL FRIEND
     <property name="description">ALPHYS updated status.
 LOL, CoolSkeleton95! ... that's a joke, right?</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+哈哈哈，CoolSkeleton95！
+...你在搞笑，對嗎？</property>
+    <property name="zh_name" value="地下網路通知 #15"/>
    </properties>
    <point/>
   </object>
@@ -540,24 +753,37 @@ LOL, CoolSkeleton95! ... that's a joke, right?</property>
     <property name="description">CoolSkeleton95 updated status.
 THE ONLY JOKE HERE, IS HOW STRONG MY MUSCLES ARE.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">CoolSkeleton95 更新了狀態。
+'''唯一的玩笑是，看我的手臂肌肉有多壯。'''</property>
+    <property name="zh_name" value="地下網路通知 #16"/>
    </properties>
    <point/>
   </object>
   <object id="67" name="UnderNet friend request" x="5908.59" y="3247.38">
    <properties>
     <property name="description" value="NAPSTABLOOK22 sends a friend request to the protagonist, but it is immediately withdrawn before they can accept or reject it."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">NAPSTABLOOK22 寄給你一個好友邀請。
+(他好像自己已經先收回邀請了...)</property>
+    <property name="zh_name" value="UnderNet 交友邀請"/>
    </properties>
    <point/>
   </object>
   <object id="72" name="Phone call 7" x="5470.28" y="3090.57">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and explains the timing-based puzzle. She offers to help the protagonist with the timing."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。表示這是一個限時謎題。她提議幫助主角解決。"/>
+    <property name="zh_name" value="Alphys 電話 #7"/>
    </properties>
    <point/>
   </object>
   <object id="74" name="Phone call 8" x="5198.99" y="3047">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist as they attempt to press the last switch, causing them to miss the timing. Alphys manually deactivates the force field blocking the way."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。在主角試圖按下最後一個開關時打電話過來，導致主角錯過了時機。Alphys 最後只能手動解除阻擋道路的力場。"/>
+    <property name="zh_name" value="Alphys 電話 #8"/>
    </properties>
    <point/>
   </object>
@@ -566,12 +792,18 @@ THE ONLY JOKE HERE, IS HOW STRONG MY MUSCLES ARE.</property>
     <property name="description">ALPHYS updated status.
 that's the last time i try to help with a puzzle lmao</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+這是我最後一次幫忙解謎了 wwww</property>
+    <property name="zh_name" value="地下網路通知 #17"/>
    </properties>
    <point/>
   </object>
   <object id="76" name="Phone call 9" x="4748.11" y="3057.23">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and announces that she has to use the bathroom. She leaves the protagonist to solve the upcoming puzzle without assistance."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她表示自己要去廁所，並請主角自己解決謎題。"/>
+    <property name="zh_name" value="Alphys 電話 #9"/>
    </properties>
    <point/>
   </object>
@@ -581,6 +813,10 @@ that's the last time i try to help with a puzzle lmao</property>
 OMG? ppl think Mew Mew 2 is better than Mew Mew 1?
 LOLLLLL that's a joke right...</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+'''天啊？'''很多人都覺得喵喵2比喵喵1好？
+wwwwww 這是在開玩笑對吧...</property>
+    <property name="zh_name" value="地下網路通知 #18"/>
    </properties>
    <point/>
   </object>
@@ -589,6 +825,9 @@ LOLLLLL that's a joke right...</property>
     <property name="description">ALPHYS updated status.
 omg... DONT THEY GET IT RUINS Mew Mew's ENTIRE CHARACTER ARC</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+老天...他們不覺得喵喵2已經毀了整個喵喵系列的角色塑造嗎</property>
+    <property name="zh_name" value="地下網路通知 #19"/>
    </properties>
    <point/>
   </object>
@@ -598,6 +837,11 @@ omg... DONT THEY GET IT RUINS Mew Mew's ENTIRE CHARACTER ARC</property>
 My Mew Mew 2 Review:
 Mew Mew Kissie Cutie 2 Is Neither Kissy Nor Cutie. It's Trash. 0 stars</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+我的喵喵2感想：
+喵喵親親超可愛2不親親也不可愛。
+垃圾。0分</property>
+    <property name="zh_name" value="地下網路通知 #20"/>
    </properties>
    <point/>
   </object>
@@ -606,6 +850,10 @@ Mew Mew Kissie Cutie 2 Is Neither Kissy Nor Cutie. It's Trash. 0 stars</property
     <property name="description">ALPHYS updated status.
 oopswait how's the human doing</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+啊啊糟了人類現在在做什麼
+</property>
+    <property name="zh_name" value="地下網路通知 #21"/>
    </properties>
    <point/>
   </object>
@@ -614,33 +862,48 @@ oopswait how's the human doing</property>
     <property name="description">ALPHYS updated status.
 Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">ALPHYS 更新了狀態。
+10個讓你忘記去做你那糟糕工作的訣竅
+</property>
+    <property name="zh_name" value="地下網路通知 #22"/>
    </properties>
    <point/>
   </object>
   <object id="89" name="Phone call 10" x="4273.93" y="2110.61">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and notes their silence. She assumes that they are worried about [[Asgore Dreemurr|Asgore]] and reassure them that he is a nice person."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她注意到主角的沉默。她猜測主角可能在擔心 [[Asgore Dreemurr|Asgore]]，並安慰主角說他其實是個很好的人。"/>
+    <property name="zh_name" value="Alphys 電話 #10"/>
    </properties>
    <point/>
   </object>
   <object id="98" name="Phone call 11" x="4551.08" y="1608.77">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and informs them of the puzzles to the north and south. She invites them to send her a message on UnderNet before realizing that the protagonist had been reading her messages since their phone was upgraded."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。她告訴主角北邊和南邊的謎題。她邀請主角在地下網路上給她發訊息，然後才意識到主角自從手機升級後就一直在閱讀她的訊息。"/>
+    <property name="zh_name" value="Alphys 電話 #11"/>
    </properties>
    <point/>
   </object>
   <object id="103" name="Phone call 12" x="5494.42" y="2135.06">
    <properties>
     <property name="description" value="[[Alphys]] calls the protagonist and asks them if they would want to watch anime with her."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="[[Alphys]] 打電話給主角。問主角是否願意和自己一起看動漫。"/>
+    <property name="zh_name" value="Alphys 電話 #12"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="9" name="npcs">
+ <objectgroup id="9" name="npcs" opacity="0.9">
   <object id="2" name="Clam Guy" x="739.437" y="6947.84">
    <properties>
     <property name="description" value="Appears the second time the protagonist enters this room. He explains how he wanted to get a drink from the water cooler."/>
     <property name="page" value="Hotland/NPCs#Clam Guy"/>
+    <property name="zh_description" value="當主角第二次進入此區域時出現。他表示說他想從飲水機拿點喝的。"/>
+    <property name="zh_page" value="熱地/NPC#Clam Guy"/>
    </properties>
    <point/>
   </object>
@@ -648,6 +911,9 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Can ferry the protagonist to either [[Snowdin]] or [[Waterfall]]."/>
     <property name="page" value="River Person"/>
+    <property name="zh_description" value="主角可以到[[雪町]]或[[瀑布]]。"/>
+    <property name="zh_name" value="河流人"/>
+    <property name="zh_page" value="河流人"/>
    </properties>
    <point/>
   </object>
@@ -655,24 +921,29 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="The Royal Guards initially block the way to elevator L1. They explain that they are on watch for any humans that enter the area."/>
     <property name="page" value="Royal Guards"/>
+    <property name="zh_description" value="他們最初封鎖了通往 L1 電梯的路。他們表示正監視任何進入該區域的人類。"/>
+    <property name="zh_page" value="Royal Guards"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="Mettaton EX" x="2095.46" y="6692.34">
    <properties>
     <property name="description" value="[[Mettaton EX]]'s body can be seen on the [[True Pacifist Route]] undergoing repairs."/>
+    <property name="zh_description" value="在[[完美路線]]中 [[Mettaton EX]] 的身體正在維修。"/>
    </properties>
    <point/>
   </object>
   <object id="21" name="Vulkin" x="3009.81" y="5896.72">
    <properties>
     <property name="description" value="A [[Vulkin]] appears after receiving [[Undyne's Letter]]. They comment on how the protagonist's hugs make them feel &quot;spicey.&quot;"/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示主角的擁抱讓他感覺&quot;很辣&quot;。"/>
    </properties>
    <point/>
   </object>
   <object id="25" name="Pyrope" x="3781.7" y="5154.12">
    <properties>
     <property name="description" value="A [[Pyrope]] appears here after receiving [[Undyne's Letter]]. They claim to have set the lava on fire and comment that it is now &quot;spicey.&quot;"/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示點燃岩漿後感覺&quot;很辣&quot;。"/>
    </properties>
    <point/>
   </object>
@@ -680,6 +951,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Is seen loitering behind the laser. She says that she will continue loitering despite the laser being deactivated."/>
     <property name="page" value="Hotland/NPCs#Fuku Fire"/>
+    <property name="zh_description" value="因雷射而被困在這裡。她表示即使雷射解除，她還是決定繼續站在這裡。"/>
+    <property name="zh_page" value="熱地/NPC#Fuku Fire"/>
    </properties>
    <point/>
   </object>
@@ -687,6 +960,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Is seen loitering behind the laser. Expresses relief at the possibility that school would be canceled due to the reactivated puzzles before realizing that school is on break anyway."/>
     <property name="page" value="Hotland/NPCs#Skateboard Girl"/>
+    <property name="zh_description" value="因雷射而被困在這裡。她表示學校會因為雷射而停課，並表示對於學校的不滿。"/>
+    <property name="zh_page" value="熱地/NPC#Skateboard Girl"/>
    </properties>
    <point/>
   </object>
@@ -694,13 +969,17 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Says that they are watching [[Mettaton]]'s show due to the way to work being blocked."/>
     <property name="page" value="Hotland/NPCs#Business Dudes"/>
+    <property name="zh_description" value="他表示因為上班的道路受阻，正在觀看 [[Mettaton]] 的節目。"/>
+    <property name="zh_page" value="熱地/NPC#Business Dudes"/>
    </properties>
    <point/>
   </object>
   <object id="42" name="Business Dude" x="5314.74" y="4395.82">
    <properties>
-    <property name="description" value="Explains that they are a member of [[Mettaton]]'s fan club, which has at least three dozen members."/>
+    <property name="description" value="他表示自己是 [[Mettaton]] 粉絲俱樂部的一員，並提及該俱樂部至少有三十幾名成員。"/>
     <property name="page" value="Hotland/NPCs#Business Dudes"/>
+    <property name="zh_description" value="他們表示因為上班的道路受阻，正在觀看 [[Mettaton]] 的節目。"/>
+    <property name="zh_page" value="熱地/NPC#Business Dudes"/>
    </properties>
    <point/>
   </object>
@@ -708,13 +987,18 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Struggles to complete the puzzle and complains that their co-workers are doing nothing to help."/>
     <property name="page" value="Hotland/NPCs#Fox Head"/>
+    <property name="zh_description" value="他表示自己努力完成謎題，並抱怨同事沒有提供任何幫助。"/>
+    <property name="zh_page" value="熱地/NPC#Fox Head"/>
    </properties>
    <point/>
   </object>
-  <object id="53" name="Gaster Follower 1" x="7053.77" y="3824.13">
+  <object id="53" name="Gaster Follower 2" x="7053.77" y="3824.13">
    <properties>
     <property name="description" value="Has a 20% chance of appearing if the [[Fun Value]] is 61. Mentions how [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], suddenly vanished without a trace, shattering across time and space. They claim to be holding a piece of him and abruptly vanish."/>
     <property name="page" value="Hotland/NPCs#Gaster Follower 2"/>
+    <property name="zh_description">當 [[Fun 值]]為61時有20%的機率出現。
+提及 [[Alphys]] 之前的皇家科學家 [[W. D. Gaster]] 突然消失得無影無蹤，並在表示自己正持有他的一部分後消失。</property>
+    <property name="zh_page" value="熱地/NPC#Gaster 追隨者 2"/>
    </properties>
    <point/>
   </object>
@@ -722,6 +1006,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Asks the protagonist to remember their name."/>
     <property name="page" value="Heats Flamesman"/>
+    <property name="zh_description" value="請主角記住他的名字。"/>
+    <property name="zh_page" value="熱地/NPC#Heats Flamesman"/>
    </properties>
    <point/>
   </object>
@@ -729,6 +1015,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Notes the oddity of snow on the sentry station roof, but writes it off as [[Sans]] being too lazy to clean it off."/>
     <property name="page" value="Hotland/NPCs#Hot Dog Harpy"/>
+    <property name="zh_description" value="注意到哨站屋頂上有積雪，但認為是 [[Sans]] 懶得清理。"/>
+    <property name="zh_page" value="熱地/NPC#Hot Dog Harpy"/>
    </properties>
    <point/>
   </object>
@@ -736,6 +1024,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Is eagerly enjoying its hot dog."/>
     <property name="page" value="Hotland/NPCs#Hot Dog Vulkin"/>
+    <property name="zh_description" value="正在烤熱狗。"/>
+    <property name="zh_page" value="熱地/NPC#Hot Dog Vulkin"/>
    </properties>
    <point/>
   </object>
@@ -743,18 +1033,22 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Appears at the end of the [[True Pacifist Route]] if they were fought."/>
     <property name="page" value="So Sorry"/>
+    <property name="zh_description" value="若曾和他戰鬥過，則會出現在[[完美路線]]的結尾。"/>
+    <property name="zh_page" value="So Sorry"/>
    </properties>
    <point/>
   </object>
   <object id="62" name="Tsunderplane" x="5849.11" y="3089.54">
    <properties>
     <property name="description" value="A [[Tsunderplane]] appears here after receiving [[Undyne's Letter]]. Invites the protagonist to stand closer after initially rebuffing them, referring to the action as &quot;spicey.&quot;"/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。她先拒絕主角，然後邀請主角站得更近一些，並稱這一舉動&quot;很辣&quot;。"/>
    </properties>
    <point/>
   </object>
   <object id="85" name="Pyrope" x="3231.79" y="2728.34">
    <properties>
     <property name="description" value="A [[Pyrope]] appears here after receiving [[Undyne's Letter]]. They invite the protagonist to hang out before claiming that they are too &quot;spicey&quot; to have any friends."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他邀請主角一起出去玩，然而認為自己&quot;很辣&quot;，不會有任何朋友。"/>
    </properties>
    <point/>
   </object>
@@ -762,6 +1056,10 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Has a 50% chance of appearing if the [[Fun Value]] is 63. They mention that the life of [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], was cut short after his experiments went wrong. They then stop talking after implying that he is listening."/>
     <property name="page" value="Hotland/NPCs#Gaster Follower 3"/>
+    <property name="zh_description">當 [[Fun 值]]為63時有50%的機率出現。
+提及 [[Alphys]] 之前的皇家科學家 [[W. D. Gaster]] 因實驗失敗而消逝。並因為暗示他正在傾聽而停止談話。</property>
+    <property name="zh_name" value="Gaster 追隨者 3"/>
+    <property name="zh_page" value="熱地/NPC#Gaster 追隨者 3"/>
    </properties>
    <point/>
   </object>
@@ -769,6 +1067,10 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Has a 50% chance to appear if the [[Fun Value]] is 61. Mentions how [[W.D. Gaster]], the Royal Scientist preceding [[Alphys]], was responsible for constructing the [[CORE]], but his life was cut short after falling into his creation."/>
     <property name="page" value="Hotland/NPCs#Gaster Follower 1"/>
+    <property name="zh_description">當 [[Fun 值]]為61時有50%的機率出現。
+提及 [[Alphys]] 之前的皇家科學家 [[W. D. Gaster]] 建造了[[核心]]，但他在某天掉入自己的創作中。</property>
+    <property name="zh_name" value="Gaster 追隨者 1"/>
+    <property name="zh_page" value="熱地/NPC#Gaster 追隨者 1"/>
    </properties>
    <point/>
   </object>
@@ -776,6 +1078,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Hosts the [[Spider Bake Sale]] in Hotland."/>
     <property name="page" value="Muffet"/>
+    <property name="zh_description" value="主持[[蜘蛛烘焙坊]]。"/>
+    <property name="zh_page" value="Muffet"/>
    </properties>
    <point/>
   </object>
@@ -783,12 +1087,15 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="They were scammed into buying a donut for all of their cash."/>
     <property name="page" value="Hotland/NPCs#Scared Donut Guy"/>
+    <property name="zh_description" value="表示自己因為買了甜甜圈而沒有錢。"/>
+    <property name="zh_page" value="熱地/NPC#Scared Donut Guy"/>
    </properties>
    <point/>
   </object>
   <object id="102" name="Tsunderplane" x="5464.22" y="2099.51">
    <properties>
     <property name="description" value="A [[Tsunderplane]] appears here after receiving [[Undyne's Letter]]. Accuses the protagonist of following it before also accusing them of thinking that it is not &quot;spicey&quot; enough for them."/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。指責主角跟隨它，並指責主角認為這封信對來說不夠&quot;辣&quot;。"/>
    </properties>
    <point/>
   </object>
@@ -796,6 +1103,9 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Appears after clearing the top shooting puzzle. He provides a hint on how to gain ratings during the battle against [[Mettaton EX]]: &quot;when everything looks the baddest, he poses dramatically.&quot;"/>
     <property name="page" value="Hotland/NPCs#Diamond Boys"/>
+    <property name="zh_description">在完成射擊謎題後出現。他會提示如何在 [[Mettaton EX]] 的戰鬥中獲得收視率：
+“當一切看起來都很糟糕時，他會擺出誇張的姿勢。”</property>
+    <property name="zh_page" value="熱地/NPC#Diamond Boys"/>
    </properties>
    <point/>
   </object>
@@ -803,6 +1113,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Appears after clearing the top shooting puzzle. He provides a hint on how to gain ratings during the battle against [[Mettaton EX]]: &quot;beats up the heel-turning villains.&quot;"/>
     <property name="page" value="Hotland/NPCs#Diamond Boys"/>
+    <property name="zh_description" value="在完成最上方的射擊謎題後出現。他會提示如何在與[[Mettaton EX]]的戰鬥中獲得評分：“擊敗那些壞蛋。”"/>
+    <property name="zh_page" value="熱地/NPC#Diamond Boys"/>
    </properties>
    <point/>
   </object>
@@ -810,25 +1122,23 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Appears after [[Mettaton]]'s musical. They wish to have a dress like Mettaton's. Mettaton gives them his dress at the end of the [[True Pacifist Route]]."/>
     <property name="page" value="Hotland/NPCs#Dress Lion"/>
+    <property name="zh_description">在 [[Mettaton]] 的音樂劇後出現。他們希望擁有像 Mettaton 一樣的禮服。
+在[[完美路線]]中 Mettaton 將自己的禮服送給他。</property>
+    <property name="zh_page" value="熱地/NPC#Dress Lion"/>
    </properties>
    <point/>
   </object>
   <object id="116" name="Vulkin" x="6388.98" y="1386.73">
    <properties>
     <property name="description" value="A [[Vulkin]] appears here after receiving [[Undyne's Letter]]. They comment on how the protagonist's encouragements make them feel &quot;spicey.&quot;"/>
+    <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示主角的鼓勵感覺&quot;很辣&quot;。"/>
    </properties>
    <point/>
-  </object>
-  <object id="117" name="Solution to Multicolor Tile Puzzle" x="6629.06" y="1390.36">
-   <properties>
-    <property name="color" type="color" value="#ff832c42"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 20.8977,0.00669278 20.8178,-21.6921 80.0149,-21.8222 80.0918,-1.15304 121.14,-1.58154 121.223,19.967 242.349,20.0327 242.075,-22.6681 282.551,-22.5314 282.927,19.99 321.62,19.9961 321.389,-1.03107 361.452,-0.989903 361.674,-22.3297 380.95,-22.3881 380.982,19.9581 421.178,19.9945 420.765,-21.0928 442.196,-21.1456 442.438,19.4449 495.29,19.3497 495.145,-25.713 505.415,-25.7156 505.344,19.4977 561.369,19.9123 560.949,-20.678 641.853,-20.4162 641.712,-40.9591 681.226,-40.5995 681.721,20.0177 721.469,19.977 721.027,-40.9919 763.511,-40.8961 763.476,20.0464 811.423,20.0639"/>
   </object>
   <object id="119" name="Royal Guards" x="7619.95" y="1090.43">
    <properties>
     <property name="description" value="The [[Royal Guards]] appear here if they were spared, having bought out the [[Nice Cream Guy]]'s entire stock of [[Nice Cream]]. They ask the protagonist not to tell [[Undyne]] whet they are doing."/>
+    <property name="zh_description" value="寬恕 [[Royal Guards]] 後他們會出現在這裡，並且已經買下所有的[[好棒冰]]。他們請求主角不要告訴 [[Undyne]]。」"/>
    </properties>
    <point/>
   </object>
@@ -836,6 +1146,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Asks the protagonist if they remembered their name. They express shock regardless of the protagonist's answer."/>
     <property name="page" value="Heats Flamesman"/>
+    <property name="zh_description" value="詢問主角是否記得他的名字。無論主角的回答是什麼，他都表現出驚訝的樣子。"/>
+    <property name="zh_page" value="熱地/NPC#Heats Flamesman"/>
    </properties>
    <point/>
   </object>
@@ -843,6 +1155,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Welcomes the protagonist to the [[MTT Resort]]."/>
     <property name="page" value="MTT Resort/NPCs#Diamond Receptionist"/>
+    <property name="zh_description" value="向主角介紹 [[MTT 度假村]]。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Diamond Receptionist"/>
    </properties>
    <point/>
   </object>
@@ -850,6 +1164,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Explains that the elevator to the capital has stopped working and that the resort is trying to accomodate everyone trying to access it."/>
     <property name="page" value="MTT Resort/NPCs#Business Manticore"/>
+    <property name="zh_description" value="他表示說通往首都的電梯已經停止運作，而度假村正在努力安置所有試圖前往那裡的人。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Business Manticore"/>
    </properties>
    <point/>
   </object>
@@ -857,6 +1173,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Is calling their family to let them know that they will not be getting home in time since the elevator is out of order."/>
     <property name="page" value="MTT Resort/NPCs#Sad Dragon"/>
+    <property name="zh_description" value="他正在打電話給家人，因為電梯故障自己將無法準時回家。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Sad Dragon"/>
    </properties>
    <point/>
   </object>
@@ -864,6 +1182,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Expresses outrage that the elevator is out of order."/>
     <property name="page" value="MTT Resort/NPCs#Shambling Mass"/>
+    <property name="zh_description" value="他表示身為史萊姆，對於電梯壞掉感到很生氣。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Shambling Mass"/>
    </properties>
    <point/>
   </object>
@@ -871,6 +1191,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Offers a stay at the hotel for 200G."/>
     <property name="page" value="MTT Resort/NPCs#Hand Receptionist"/>
+    <property name="zh_description" value="提供以200G 的價格在此住宿。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Hand Receptionist"/>
    </properties>
    <point/>
   </object>
@@ -878,6 +1200,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Informs the protagonist that they have to reserve a table to eat at the restaurant."/>
     <property name="page" value="MTT Resort/NPCs#Fish Receptionist"/>
+    <property name="zh_description" value="他告訴主角必須預約才能用餐。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Fish Receptionist"/>
    </properties>
    <point/>
   </object>
@@ -885,6 +1209,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="The father of [[Snowdrake]] and a comedian at the [[MTT Resort]]. He explains that since Snowdrake ran away from home after [[Snowdrake's Mother|his mother]] fell down."/>
     <property name="page" value="Snowdrake's Father"/>
+    <property name="zh_description" value="[[Snowdrake]] 的父親，並且是 [[MTT 度假村]]的喜劇演員。他表示在[[Snowdrake's Mother|他的母親]]墜落後，Snowdrake 就離家出走。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Snowdrake's Father"/>
    </properties>
    <point/>
   </object>
@@ -892,6 +1218,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Explains that the [[CORE]] is made up of freely swappable parts, allowing them to change the layout as necessary."/>
     <property name="page" value="MTT Resort/NPCs#Charles"/>
+    <property name="zh_description" value="表示[[核心]]是由可更換的零件組成，使得他們可以根據需要來隨意更改布局。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Charles"/>
    </properties>
    <point/>
   </object>
@@ -899,6 +1227,9 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Complains about the excess of puzzles in the [[Underground]], a tradition originating from when [[monsters]] would construct puzzles to deter attacks from [[humans]]."/>
     <property name="page" value="MTT Resort/NPCs#Oni"/>
+    <property name="zh_description">他抱怨[[地下世界]]的謎題數量太多了，並提及這一傳統源自於[[怪物]]們曾經建造謎題來阻止[[人類]]的攻擊。
+</property>
+    <property name="zh_page" value="MTT 度假村/NPC#Oni"/>
    </properties>
    <point/>
   </object>
@@ -906,6 +1237,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="They forgot to make a reservation to the restaurant, so they stand in the corner licking the nearby ficus so as to not look like they messed up."/>
     <property name="page" value="MTT Resort/NPCs#Ficus Licker"/>
+    <property name="zh_description" value="他忘記預約，所以站在角落裡舔著植株，以防止被人發現。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#Ficus Licker"/>
    </properties>
    <point/>
   </object>
@@ -913,6 +1246,8 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
    <properties>
     <property name="description" value="Is constantly cleaning off the slime drooping from their body."/>
     <property name="page" value="MTT Resort/NPCs#MTT Resort Janitor"/>
+    <property name="zh_description" value="他不斷地清理從身體上垂下來的黏液。"/>
+    <property name="zh_page" value="MTT 度假村/NPC#MTT Resort Janitor"/>
    </properties>
    <point/>
   </object>
@@ -921,19 +1256,30 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
   <object id="39" name="Note" x="4459.17" y="4149.42">
    <properties>
     <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="射擊敵方船隻！移動箱子來完成任務！"/>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
   <object id="45" name="Note" x="5219.31" y="4148.11">
    <properties>
     <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="射擊敵方船隻！移動箱子來完成任務！"/>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
   <object id="71" name="Art Club Room sign" x="5909.65" y="2860.97">
    <properties>
     <property name="description" value="''Art Club: Meet Here! Next meeting: October 10th 8PM''"/>
+    <property name="multiline" type="bool" value="true"/>
     <property name="page" value="Art Club Room"/>
+    <property name="zh_description">藝術俱樂部：在此碰面！
+下次碰面時間：
+十月十日晚上八點</property>
+    <property name="zh_page" value="藝術俱樂部"/>
    </properties>
    <point/>
   </object>
@@ -943,18 +1289,27 @@ Top 10 Shows That Make You Forget To Do Your Frickin Job</property>
 All proceeds go to real spiders.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="Spider Bake Sale"/>
+    <property name="zh_description">蜘蛛烘焙坊
+所有的收益都將捐給真正的蜘蛛。</property>
+    <property name="zh_page" value="蜘蛛烘焙坊"/>
    </properties>
    <point/>
   </object>
   <object id="104" name="Note" x="5599.52" y="1868.85">
    <properties>
     <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="射擊敵方船隻！移動箱子來完成任務！"/>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
   <object id="106" name="Note" x="4889.19" y="888.797">
    <properties>
     <property name="description" value="''Shoot the opposing ship! Move the boxes to complete your mission.''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="射擊敵方船隻！移動箱子來完成任務！"/>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -963,6 +1318,9 @@ All proceeds go to real spiders.</property>
     <property name="description">Hey!
 Go up the creepy alleyway on the right for some great deals!</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">嘿！
+進入右邊這條暗巷來點好料的吧！</property>
+    <property name="zh_name" value="紙條"/>
    </properties>
    <point/>
   </object>
@@ -971,6 +1329,9 @@ Go up the creepy alleyway on the right for some great deals!</property>
     <property name="description">Learning how to draw? Come to the [[Art Club Room|Art Lessons]] on the second floor!
 Located in a similar place.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">想要學如何畫畫？ 
+到二樓來上[[藝術俱樂部|藝術課程]]吧！
+位於類似的地方。</property>
    </properties>
    <point/>
   </object>
@@ -980,6 +1341,9 @@ Located in a similar place.</property>
 Built 201X
 ([[Mettaton]] Added Last Week)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">皇家紀念噴泉
+於 201X 年建造
+([[Mettaton]] 於上星期新增)</property>
    </properties>
    <point/>
   </object>
@@ -989,6 +1353,9 @@ Built 201X
    <properties>
     <property name="description" value="The protagonist can grab a package of Instant Noodles from the fridge."/>
     <property name="page" value="Instant Noodles"/>
+    <property name="zh_description" value="在冰箱內找到。"/>
+    <property name="zh_name" value="泡麵"/>
+    <property name="zh_page" value="泡麵"/>
    </properties>
    <point/>
   </object>
@@ -996,6 +1363,9 @@ Built 201X
    <properties>
     <property name="description" value="The protagonist can pick up the Burnt Pan in this area."/>
     <property name="page" value="Burnt Pan"/>
+    <property name="zh_description" value="在地上找到。"/>
+    <property name="zh_name" value="燒焦平底鍋"/>
+    <property name="zh_page" value="燒焦平底鍋"/>
    </properties>
    <point/>
   </object>
@@ -1003,24 +1373,33 @@ Built 201X
    <properties>
     <property name="description" value="The protagonist can pick up the Stained Apron in this area."/>
     <property name="page" value="Stained Apron"/>
+    <property name="zh_description" value="在地上找到。"/>
+    <property name="zh_name" value="彩繪圍裙"/>
+    <property name="zh_page" value="彩繪圍裙"/>
    </properties>
    <point/>
   </object>
   <object id="141" name="Hotel door 1" x="7999.5" y="358.001">
    <properties>
     <property name="description" value="The protagonist can trade a [[Sea Tea]] for 99G."/>
+    <property name="zh_description" value="給[[海茶]]後可取得99G。"/>
+    <property name="zh_name" value="客房 #1"/>
    </properties>
    <point/>
   </object>
   <object id="143" name="Hotel door 3" x="8149.71" y="358">
    <properties>
     <property name="description" value="The protagonist can trade a [[Cinnamon Bunny]] for 99G."/>
+    <property name="zh_description" value="給[[肉桂兔子]]後可取得99G。"/>
+    <property name="zh_name" value="客房 #3"/>
    </properties>
    <point/>
   </object>
   <object id="144" name="Hotel door 4" x="8223.65" y="358">
    <properties>
     <property name="description" value="The protagonist can trade a [[Hot Dog...?|Hot Dog]] for a [[Hush Puppy]]."/>
+    <property name="zh_description" value="給[[熱狗]]後可取得[[沉默小狗]]。"/>
+    <property name="zh_name" value="客房 #4"/>
    </properties>
    <point/>
   </object>
@@ -1030,6 +1409,8 @@ Built 201X
    <properties>
     <property name="description" value="Scripted encounter against a Vulkin."/>
     <property name="page" value="Vulkin"/>
+    <property name="zh_description" value="與 Vulkin 戰鬥。"/>
+    <property name="zh_page" value="Vulkin"/>
    </properties>
    <point/>
   </object>
@@ -1037,6 +1418,9 @@ Built 201X
    <properties>
     <property name="description" value="Miniboss battle against the Royal Guards on the [[Genocide Route]]."/>
     <property name="page" value="Royal Guards"/>
+    <property name="zh_description" value="與 Royal Guard 戰鬥([[屠殺路線]])。"/>
+    <property name="zh_name" value="Royal Guards (屠殺路線)"/>
+    <property name="zh_page" value="Royal Guards"/>
    </properties>
    <point/>
   </object>
@@ -1044,13 +1428,19 @@ Built 201X
    <properties>
     <property name="description" value="Miniboss battle against the Royal Guards on the [[Neutral Route]]."/>
     <property name="page" value="Royal Guards"/>
+    <property name="zh_description" value="與 Royal Guard 戰鬥([[中立路線]])。"/>
+    <property name="zh_name" value="Royal Guards (中立路線)"/>
+    <property name="zh_page" value="Royal Guards"/>
    </properties>
    <point/>
   </object>
   <object id="111" name="Muffet" x="6286.76" y="1191.68">
    <properties>
-    <property name="description" value="Boss batle against Muffet. Does not fight if the protagonist donated enough money to the [[Spider Bake Sale]]s."/>
+    <property name="description" value="Boss battle against Muffet. Does not fight if the protagonist donated enough money to the [[Spider Bake Sale]]s."/>
     <property name="page" value="Muffet/In Battle"/>
+    <property name="zh_description">和 Muffet 戰鬥。
+若主角向熱地的[[蜘蛛烘焙坊]]購買物品則無需戰鬥。</property>
+    <property name="zh_page" value="Muffet/戰鬥中"/>
    </properties>
    <point/>
   </object>
