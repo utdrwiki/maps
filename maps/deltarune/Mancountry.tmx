@@ -1,12 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="7" nextobjectid="15">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Mancountry map">
   <image source="images/Mancountry.png" width="1280" height="1440"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="npcs"/>
- <objectgroup id="5" name="signs"/>
+ <objectgroup id="3" name="plot">
+  <object id="12" name="Binoculars" x="335.75" y="1322.63">
+   <properties>
+    <property name="description" value="Cannot be used until the Flying Ace above them is spoken to. Interacting with them after the Flying Ace moves out of the way shows a grey, monochrome patch of grass."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Exit" x="1241.33" y="1197.33">
+   <properties>
+    <property name="description" value="Heading east at any point, regardless of if the [[Egg]] has been obtained or not, will fade the screen to white, and return [[Kris]] to the [[Green Room]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="5" name="Flying Ace" x="176" y="1134">
+   <properties>
+    <property name="description" value="Introduces themselves and the other 5 [[Rudinn]]s as the Seven Flying Aces, a group of Aces [[Kris]] made copies of to (unsuccessfully) cheat at cards, before getting lost in the couch and ending up in Mancountry. Interacting with them again has them lampshade the fact that there are only 6 Aces present, telling Kris that they wouldn't have needed to cheat if they could count cards better."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Flying Ace" x="336.333" y="1290">
+   <properties>
+    <property name="description" value="Is using the binoculars when [[Kris]] first visits the area, but gives them up after declaring that it &quot;doesn't look too good.&quot; Interacting again leads to them calling it &quot;lousy real estate&quot; and that they sense nothing but evil from wherever the binoculars are pointing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Flying Ace" x="336.5" y="1103.5">
+   <properties>
+    <property name="description" value="Mentions that [[Man|someone]] was looking for [[Kris]], but they cannot remember who. Further dialogue prompts them to suggest checking behind the tree."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Flying Ace" x="814.5" y="1232">
+   <properties>
+    <property name="description" value="A unique pink Ace who divulges on the nature of copies, stating that they are monochrome, but each one of them was carefully colored in by [[Kris]]. Interacting again causes them to mention how the pink Ace was probably suspicious."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Flying Ace" x="1039" y="1264">
+   <properties>
+    <property name="description" value="Comments on the height discrepancy between themselves and [[Kris]] and asks if they've been working out. If conversed with again, they tell Kris to stop growing up."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="1" name="Flying Ace" x="1039" y="1100.5">
+   <properties>
+    <property name="description" value="Expresses surprise at seeing [[Kris]] and asks if they've arrived to play with them. If interacted with again, the Flying Ace laments that Kris &quot;never wants to play&quot; and asks them to make a photocopy of Kris to play with."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="signs">
+  <object id="11" name="Sign" x="175" y="1229">
+   <properties>
+    <property name="description" value="''NON-MEN ARE A-OK, TOO.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Sign" x="463" y="1134">
+   <properties>
+    <property name="description">WELCOME TO FORGOTTEN ISLAND!
+THIS ISLAND IS A WORLD HERITAGE SITE!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Sign" x="817" y="1103">
+   <properties>
+    <property name="description" value="''IT'S A MAN'S WORLD!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Sign" x="1102" y="1100">
+   <properties>
+    <property name="description" value="''WELCOME TO MANCOUNTRY.''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="items">
+  <object id="13" name="The Man and His Egg" x="974" y="227">
+   <properties>
+    <property name="description" value="Interacting behind the tree initiates a dialogue with the Man, who speaks cryptically both about himself and their current location. He mentions being forgotten, and if at any point the [[player]] implies that they will not remember him, he ends their conversation prematurely. Otherwise, he gifts [[Kris]] an [[egg]] while changing them into their [[Dark World]] attire. Regardless of how their dialogue ends, the Man disappears afterwards and cannot be interacted with again."/>
+    <property name="page" value="Man"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

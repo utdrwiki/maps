@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="623" height="101" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Cyber City map">
+  <image source="images/Cyber City.png" width="24901" height="4006"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="warpdoor"/>
+ <objectgroup id="5" name="vendors"/>
+ <objectgroup id="6" name="puzzles"/>
+ <objectgroup id="7" name="npcs"/>
+ <objectgroup id="8" name="saves"/>
+ <objectgroup id="9" name="signs"/>
+ <objectgroup id="10" name="items"/>
+ <objectgroup id="11" name="enemies"/>
+</map>

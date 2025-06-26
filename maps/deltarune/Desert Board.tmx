@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="48" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Desert Board map">
+  <image source="images/Desert Board.png" width="1920" height="1536"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="vendors"/>
+ <objectgroup id="5" name="puzzles"/>
+ <objectgroup id="6" name="npcs"/>
+ <objectgroup id="7" name="signs"/>
+ <objectgroup id="8" name="items"/>
+ <objectgroup id="9" name="enemies"/>
+</map>
