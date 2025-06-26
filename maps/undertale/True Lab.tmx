@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="108" height="66" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="53">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="真正的實驗室"/>
  </properties>
  <imagelayer id="2" name="True Lab map">

@@ -37,6 +37,7 @@ from datamaps import (
     PolylineOverlay,
     TiledBackground,
 )
+from datamaps.settings import Settings
 
 T = TypeVar('T')
 
@@ -213,6 +214,9 @@ def convert_tiled_to_datamap(
         tileSize=map.tile_size,
         tiles=[],
         name="<default>"))
+    popzoom = get_property(map.properties, 'popzoom', float, language)
+    if popzoom is not None:
+        datamap.settings = Settings(leaflet={'uriPopupZoom': popzoom})
 
     converted_layers: Set[Optional[int]] = set()
     for layer in reversed(map.layers):

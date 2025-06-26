@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="758" height="107" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="180">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="瀑布"/>
  </properties>
  <imagelayer id="2" name="Waterfall map">
@@ -1764,7 +1765,7 @@ Sorry, [[Napstablook|Blooky]]. My dreams can't wait for anyone...</property>
   </object>
   <object id="77" name="Legendary Artifact" x="10171.7" y="152.754">
    <properties>
-    <property name="description" value="The protagonist attempts to claim the artifact, only for the [[Annoying Dog]] to appear in their inventory, preventing them from obtaining it. Deploying the dog causes it to absorb the artifact, leving [[Dog Residue]] behind."/>
+    <property name="description" value="The protagonist attempts to claim the artifact, only for the [[Annoying Dog]] to appear in their inventory, preventing them from obtaining it. Deploying the dog causes it to absorb the artifact, leaving [[Dog Residue]] behind."/>
     <property name="page" value="Artifact Room"/>
     <property name="zh_description" value="當主角嘗試取得時，[[煩人的狗]]會吸收神器，留下[[狗的殘留物]]。"/>
     <property name="zh_name" value="傳說中的神器"/>
