@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1154" height="152" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="141">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1154" height="152" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="152">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="TV World map">
   <image source="images/TV World.png" width="46138" height="6080"/>
  </imagelayer>
- <objectgroup id="7" name="sublocations">
+ <objectgroup id="7" name="sublocations" visible="0">
   <object id="59" x="24431.8" y="4604.27">
    <properties>
     <property name="color" type="color" value="#fffbf236"/>
@@ -47,7 +47,7 @@
    </properties>
    <point/>
   </object>
-  <object id="89" x="38671.3" y="2796.03" width="7466.76" height="528.224">
+  <object id="89" x="38671.3" y="2362.58" width="7466.76" height="961.671">
    <properties>
     <property name="border" type="color" value="#ffc5d3e2"/>
    </properties>
@@ -86,6 +86,20 @@
     <property name="page" value="Green Room#S-Rank Changing Room"/>
    </properties>
    <point/>
+  </object>
+  <object id="145" x="38639.9" y="2950.78">
+   <properties>
+    <property name="color" type="color" value="#ff3d68ad"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0336531,-215.026 2259.89,-215.234"/>
+  </object>
+  <object id="146" x="41865.1" y="2739.98">
+   <properties>
+    <property name="color" type="color" value="#ff3d68ad"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 1445.79,0.0921783 1445.93,346.294"/>
   </object>
  </objectgroup>
  <objectgroup id="3" name="plot">
@@ -149,7 +163,7 @@
   </object>
   <object id="67" name="Fourth Tenna encounter" x="26489.7" y="5297.42">
    <properties>
-    <property name="description" value="Inside the wardrobe is a [[Pipis (item)|Pipis]]. Before [[Kris]] can take it, however, [[Tenna]] arrives to find the Pipis outside the wardrobe. If the [[Dealmaker]] or [[Puppet Scarf]] are in the [[inventory]] on the normal route, [[Spamton]] temporarily leaves the inventory and appears before Tenna, who does not recognize him, after which Tenna takes the Pipis back. Otherwise, a crowd appears and gasps in shock, while Tenna attempts to defend himself. He leaves without the Pipis, allowing Kris to take it."/>
+    <property name="description" value="Inside the wardrobe is a [[Pipis (Item)|Pipis]]. Before [[Kris]] can take it, however, [[Tenna]] arrives to find the Pipis outside the wardrobe. If the [[Dealmaker]] or [[Puppet Scarf]] are in the [[inventory]] on the normal route, [[Spamton]] temporarily leaves the inventory and appears before Tenna, who does not recognize him, after which Tenna takes the Pipis back. Otherwise, a crowd appears and gasps in shock, while Tenna attempts to defend himself. He leaves without the Pipis, allowing Kris to take it."/>
    </properties>
    <point/>
   </object>
@@ -409,6 +423,55 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
+  <object id="142" name="Map of Parental Lock Puzzle 1" x="40491.7" y="3335.31">
+   <properties>
+    <property name="description" value="Map of the first Parental Lock Puzzle, with proper orientation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Map of Parental Lock Puzzle 2" x="42539.5" y="3289.89">
+   <properties>
+    <property name="description" value="Map of the second Parental Lock Puzzle, with proper orientation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Parental Lock Puzzle 3" x="41372.5" y="2696.94">
+   <properties>
+    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr Residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000.&quot;"/>
+    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="Parental Lock Puzzle 3 (TV)" x="41550" y="1720.63">
+   <properties>
+    <property name="description" value="Interacting with the TV transports [[Kris]] to the main puzzle area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Parental Lock Puzzle 3, part 1" x="40811.1" y="1983.46">
+   <properties>
+    <property name="description" value="[[Kris]] must use either their character or [[Susie]]'s to transfer the block to the pressure plate."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="149" name="Parental Lock Puzzle 3, part 2" x="41068.8" y="1959.97">
+   <properties>
+    <property name="description" value="[[Kris]] must use [[Susie]]'s character to construct a bridge across the lake."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="Camera" x="41564" y="2207.14">
+   <properties>
+    <property name="description" value="A [[camera]] that [[Kris]] can use to reveal the passcode to the door."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="Parental Lock Puzzle, part 3" x="41752" y="2033.07">
+   <properties>
+    <property name="description" value="[[Kris]] must take a photo with the [[camera]] anywhere in this area to reveal the passcode."/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="5" name="npcs">
   <object id="1" name="Starwalker" x="180.681" y="1282.52">
@@ -564,7 +627,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
   <object id="104" name="Zapper" x="38421.8" y="2506.23">
    <properties>
-    <property name="description" value="Explains the rewards for attaining each rank and which doors are available to the party. If Z-Rank is attained, the Zapper explains that they have unlocked none of the rooms and reveals a hallway to the east that leads to the Z-Rank changing room. After traversing the greater TV World, the Zapper is replaced with a [[Vending Mavhine]] which trades [[POINT]]s for [[Dark Dollar]]s."/>
+    <property name="description" value="Explains the rewards for attaining each rank and which doors are available to the party. If Z-Rank is attained, the Zapper explains that they have unlocked none of the rooms and reveals a hallway to the east that leads to the Z-Rank changing room. After traversing the greater TV World, the Zapper is replaced with a [[Vending Machine]] which trades [[POINT]]s for [[Dark Dollar]]s."/>
     <property name="page" value="Green Room#ABC-Rank Rewards Room"/>
    </properties>
    <point/>
@@ -841,6 +904,13 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    <properties>
     <property name="description" value="Treasure chest containing 1 POINT."/>
     <property name="page" value="POINT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Odd Controller" x="37737.7" y="397.162">
+   <properties>
+    <property name="description" value="[[Kris]] picks up the Odd Controller from the ground after attempting to start the [[Sword Route]] game for the first time."/>
+    <property name="page" value="Odd Controller"/>
    </properties>
    <point/>
   </object>
