@@ -1,17 +1,276 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="48" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="104" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="39">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Desert Board map">
-  <image source="images/Desert Board.png" width="1920" height="1536"/>
+  <image source="images/Desert Board.png" width="1920" height="3328"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="6" name="npcs"/>
- <objectgroup id="7" name="signs"/>
- <objectgroup id="8" name="items"/>
- <objectgroup id="9" name="enemies"/>
+ <objectgroup id="10" name="hazards">
+  <object id="22" name="Falling rocks" x="959.505" y="2224.29">
+   <properties>
+    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Falling rocks" x="574.656" y="2738.21">
+   <properties>
+    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="37" name="Unlocking the Pyramid" x="959.682" y="1352.92">
+   <properties>
+    <property name="description" value="The objective of the Desert Board is to unlock the entrance to the pyramid and complete a Physical Challenge."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors">
+  <object id="35" name="Tenna" x="1343.55" y="1050.85">
+   <properties>
+    <property name="description" value="Sells [[items]] in his shop."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="8" name="Lancer's predicament" x="687.895" y="1641.59">
+   <properties>
+    <property name="description" value="[[Lancer]] is trapped on top of a cactus. Pressing this button summons pots that can be thrown at the cactus using the [[Power Croissant]]. [[Susie]], however, throws [[Ralsei]] at the cactus, slightly damaging him but freeing Lancer."/>
+    <property name="page" value="Desert Board#Giant Cactus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Sphinx-Tenna" x="1343.52" y="1577.92">
+   <properties>
+    <property name="description" value="A [[Tenna]] Sphinx, who requests two [[Q]]s from the Quiz Vortexes. After collecting the Qs, the Sphinx challenges the [[party]] with another quiz before detatching his nose and unblocking the western pathway."/>
+    <property name="page" value="Desert Board#Sphinx-Tenna"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Oasis" x="959.755" y="1929.56">
+   <properties>
+    <property name="description" value="The [[party]] can drain the oasis either by drinking from it eight times (which heals the party) or having [[Lancer]] dig out the key in the westernmost area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Quiz Vortex" x="1343.61" y="1911.09">
+   <properties>
+    <property name="description" value="Chases the [[party]] and transports them to the quiz room if it catches up."/>
+    <property name="page" value="Desert Board#Quiz Area"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Oasis resevoir" x="223.465" y="1946.89">
+   <properties>
+    <property name="description" value="The resevoir for the oasis. Bringing [[Lancer]] here causes him to leave the board inventory and dig out a [[Key (The Legend of Tenna|key]], clogging up the resevoir in the process."/>
+    <property name="page" value="Desert Board#Giant Cactus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Block Puzzle" x="560.258" y="2176.25">
+   <properties>
+    <property name="description" value="[[Kris]] must push the block along the marked tiles onto the pressure plate to unblock the paths to the south and east."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Quiz Vortex" x="446.936" y="2484.46">
+   <properties>
+    <property name="description" value="Chases the [[party]] and transports them to the quiz room if it catches up."/>
+    <property name="page" value="Desert Board#Cacti"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Block Puzzle" x="1359.59" y="2476.97">
+   <properties>
+    <property name="description" value="The pathways leading out of this area become blocked upon entering this area. [[Kris]] must push the blocks along the marked tiles onto the pressure plates to unblock the pathways. Initially, the puzzle cannot be solved due to trees blocking the way, but [[Ralsei]] transforms into a block in order to help Kris finish the puzzle."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Pyramid" x="911.402" y="2737.34">
+   <properties>
+    <property name="description" value="Pushing this pyramid aside reveals a stairwell that allows access into the Secret Mailroom."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="sublocations">
+  <object id="28" name="Secret Mailroom" x="959.196" y="2953.71">
+   <properties>
+    <property name="description" value="A mailroom, used to store [[Tenna]]'s fan mail. When Tenna discovers it is empty, he cuts the room from the board."/>
+    <property name="page" value="Desert Board#Secret Mailroom"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" x="1104.74" y="2637.17">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.041923,658.839 -145.405,658.866"/>
+  </object>
+  <object id="32" x="1088.88" y="1392.82">
+   <properties>
+    <property name="color" type="color" value="#ffff75d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 256.486,-0.0571408 256.535,-158.94"/>
+  </object>
+  <object id="38" name="Inside the Pyramid" x="962.165" y="633.926">
+   <properties>
+    <property name="description" value="Contains a doorway leading to the board's Physical Challenge, the [[Cooking Challenge]]."/>
+    <property name="page" value="Desert Board#Pyramid"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="npcs">
+  <object id="9" name="Pippins" x="814.879" y="1733.06">
+   <properties>
+    <property name="description" value="Explains that there are four [[Key (The Legend of Tenna)|keys]] on the board, but only three are required to unlock the pyramid."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Tenna" x="847.392" y="1376.64">
+   <properties>
+    <property name="description" value="Explains that the pyramid is locked by three [[Key (The Legend of Tenna)|keys]] and the [[Mooncloud Stone]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Lanino" x="881.069" y="1914">
+   <properties>
+    <property name="description" value="Is seen admiring the oasis with Elnina. Attacks the [[party]] once the oasis is drained."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Elnina" x="1039.12" y="1914">
+   <properties>
+    <property name="description" value="Is seen admiring the oasis with Lanino. Attacks the [[party]] once the oasis is drained."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Pippins" x="494.981" y="1991.26">
+   <properties>
+    <property name="description" value="Explains the bar on the [[TP]] meter in battle and how it increases the rank attained if TP reaches that level at the end."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Pippins" x="1455.45" y="1863.88">
+   <properties>
+    <property name="description" value="Explains that [[Kris]] can push the flirtatious cactus in the cacti fields to obtain a [[Key (The Legend of Tenna)|key]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Pippins" x="334.765" y="1862.69">
+   <properties>
+    <property name="description" value="Comments on the state of the oasis and remarks that there is a [[Mooncloud Stone|secret stone]] inside."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Rouxls Kaard" x="960.05" y="888.82">
+   <properties>
+    <property name="description" value="Waiting until [[Tenna]] mentions a smaller pyramid in the previous room unlocks a pathway to the south of the landing room, which contains [[Rouxls Kaard]] and a smaller pyramid. Tenna cuts Rouxls Kaard from the board out of confusion."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="4" name="Key" x="1071.9" y="1741.93">
+   <properties>
+    <property name="description" value="A Key used to unlock the pyramid. obtaining this key removes the trees to the left."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="POINTs" x="815.717" y="1871">
+   <properties>
+    <property name="description" value="The [[party]] can obtain 10 POINTs from this coin."/>
+    <property name="page" value="POINT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="POINTs" x="1103.81" y="1871">
+   <properties>
+    <property name="description" value="The [[party]] can pick up 10 POINTs from this coin."/>
+    <property name="page" value="POINT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Lancer" x="550.042" y="1588.1">
+   <properties>
+    <property name="description" value="[[Lancer]] enters the board inventory after freeing him from the cactus. He can be used to dig up a [[Key (The Legend of Tenna)|key]] and drain the oasis."/>
+    <property name="page" value="Lancer (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Power Croissant" x="1427.72" y="2127.79">
+   <properties>
+    <property name="description" value="Allows [[Susie]] to pick up objects and pull up grass for [[POINT]]s"/>
+    <property name="page" value="Power Croissant"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Hidden Key" x="975.772" y="2413.77">
+   <properties>
+    <property name="description" value="[[Kris]] can push this cactus aside to reveal a key hidden underneath."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="POINTs" x="1343.22" y="2703.68">
+   <properties>
+    <property name="description" value="A total of 18 POINTs can be obtained in this area."/>
+    <property name="page" value="POINT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Secret Key" x="174.983" y="2690.9">
+   <properties>
+    <property name="description" value="A secret key, only obtainable if the player has a completed [[Chapter 3]] SAVE file. It is the last item [[Susie]] pulls up after pulling up bombs from the patches of grass."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Key" x="1264.06" y="1166">
+   <properties>
+    <property name="description" value="An item available in [[Tenna]]'s shop for 250 [[POINT]]s."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="TV Dinner" x="1423.68" y="1166">
+   <properties>
+    <property name="description" value="An item available in [[Tenna]]'s shop. Initially costs 10 [[POINT]]s, but the price increases the further along the [[party]] is on the board progression."/>
+    <property name="page" value="TV Dinner"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="enemies">
+  <object id="1" name="Shadowguy" x="560.093" y="1897.05">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two Shadowguys."/>
+    <property name="page" value="Shadowguy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Shadowguy" x="1359.9" y="2406.47">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of three Shadowguys."/>
+    <property name="page" value="Shadowguy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Lanino and Elnina" x="959.85" y="1888.47">
+   <properties>
+    <property name="description" value="Miniboss battle against Lanino and Elnina, triggered by draining the oasis."/>
+    <property name="page" value="Lanino and Elnina"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
