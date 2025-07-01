@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="96" height="72" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="55">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Desert Board (Sword Route) map">
+  <image source="images/Desert Board (Sword Route).png" width="3072" height="2304"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot">
+  <object id="46" name="Empty room" x="961.871" y="122">
+   <properties>
+    <property name="description">An empty room, what used to be [[Tenna]]'s shop on the [[Desert Board]]. It displays text depending on the game state.
+
+'''Has the [[Sword (Sword Route)|Sword]]:''' BECOME STRONGER
+
+'''LV 3:''' BECAME STRONGER
+
+'''LV MAX (black text):''' Having fun?</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="items">
+  <object id="47" name="Sword" x="958.319" y="1918.7">
+   <properties>
+    <property name="description" value="A Sword in what used to be the Secret Mailroom on the [[Desert Board]]. Allows Little Kris to kill the monsters on the board to become stronger."/>
+    <property name="page" value="Sword (Sword Route)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Ice Key" x="1679.78" y="1036.34">
+   <properties>
+    <property name="description" value="Treasure chest in the out-of-bounds area containing the Ice Key."/>
+    <property name="page" value="Ice Key"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="enemies">
+  <object id="1" name="Blue Fish" x="526.253" y="649.325">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Purple Monster" x="430.752" y="714.057">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Purple Monster" x="1070.86" y="650.516">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Yellow Monster" x="1326.37" y="590">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Flower" x="1296.48" y="590">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Flower" x="1359.13" y="590">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Flower" x="1391.48" y="590">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Purple Monster" x="591.244" y="907.912">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Flower" x="463.971" y="878.313">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Blue Fish" x="942.836" y="944.906">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Yellow Monster" x="1454.79" y="874.852">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Yellow Monster" x="1422.87" y="907.59">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Flower" x="1455.74" y="1071.34">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Purple Monster" x="1294.89" y="1099.44">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Purple Monster" x="974.948" y="1196.47">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Purple Monster" x="655.116" y="1100.08">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Purple Monster" x="623.077" y="1196.83">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Purple Monster" x="462.881" y="1196.83">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Yellow Monster" x="494.709" y="1099.66">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Purple Monster" x="495.053" y="1418.94">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Purple Monster" x="719.083" y="1322.79">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Yellow Monster" x="654.894" y="1420.56">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Purple Monster" x="878.776" y="1323.81">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Purple Monster" x="1006.89" y="1420.58">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Purple Monster" x="1390.91" y="1419.27">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Purple Monster" x="1231.12" y="1645.03">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Blue Fish" x="1358.82" y="1708.35">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Flower" x="2095.52" y="1389.98">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Flower" x="2159.35" y="1420.7">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Purple Monster" x="2223.19" y="1355.05">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Blue Bird" x="2255.4" y="1740.62">
+   <properties>
+    <property name="description" value="A Blue Bird. Flies around, landing on top of the trees, but can be forced to land on the ground by destroying them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Flower" x="2351.51" y="1644.88">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Yellow Monster" x="2414.47" y="1355.92">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Yellow Monster" x="2542.94" y="1451.67">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Purple Monster" x="2414.47" y="1739.88">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Flower" x="2575.18" y="1740.85">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Purple Monster" x="2798.27" y="1741.26">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Purple Monster" x="2958.19" y="1738.47">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Purple Monster" x="3023.03" y="1676.41">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Yellow Monster" x="2879.42" y="1387.2">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Yellow Monster" x="2735.01" y="1323.55">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Yellow Monster" x="3022.64" y="1322.75">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Purple Monster" x="2878.63" y="1097.98">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="npcs">
+  <object id="44" name="FRIEND eyes" x="576.006" y="122">
+   <properties>
+    <property name="description" value="A pair of pink and yellow eyes, constituting one half of the FRIEND's face. They appear when walking towards the bottom-left tile of the room."/>
+    <property name="page" value="FRIEND"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="FRIEND mouth" x="1344.32" y="122">
+   <properties>
+    <property name="description" value="A mouth, constituting one half of the FRIEND's face. It appears when walking toward the top-right tile of the room."/>
+    <property name="page" value="FRIEND"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Shadow Mantle Holder" x="191.692" y="1397.23">
+   <properties>
+    <property name="description" value="Sits in the center of the room. Flies away when approached, leaving behind black text that reads &quot;See you soon.&quot;"/>
+    <property name="page" value="Shadow Mantle Holder"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="sublocations">
+  <object id="51" name="Secret Stairs" x="174.873" y="1668.2">
+   <properties>
+    <property name="description" value="A room with many stairwells, all of which lead to the room with the [[Shadow Mantle Holder]]. They disappear upon leaving the secret room, preventing re-entry."/>
+    <property name="page" value="Desert Board (Sword Route)#Secret Stairs"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Cold Area" x="2687" y="1531.78">
+   <properties>
+    <property name="description" value="A cold area, initially blocked off and inaccessible on the previous [[Desert Board]]."/>
+    <property name="page" value="Desert Board (Sword Route)#Cold Area"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Out of Bounds" x="1705.31" y="1271.08">
+   <properties>
+    <property name="description" value="An infinitely looping room full of trees. Passing into this area prevents re-entry into the main map, and Little Kris must continue in any direction until they find the [[Ice Key]]."/>
+    <property name="page" value="Desert Board (Sword Route)#Out of Bounds"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" x="1104.38" y="1611.76">
+   <properties>
+    <property name="color" type="color" value="#ffcbc83d"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="1.17836,0.117836 1.26215,662.628 -147.551,662.695"/>
+  </object>
+ </objectgroup>
+</map>
