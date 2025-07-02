@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="29">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Island Board (Sword Route) map">
+  <image source="images/Island Board (Sword Route).png" width="4224" height="4096"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot">
+  <object id="12" name="GO TO NORTHERNLIGHT" x="2495.18" y="3459.49">
+   <properties>
+    <property name="description" value="Little Kris enters this room from any of the former cave entrances once they have killed all the enemies on the board. A message that displays upon entering this room directs Little Kris to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="THE KEY WAS FORGOTTEN" x="2496.07" y="3202.71">
+   <properties>
+    <property name="description" value="Little Kris enters this room from any of the former cave entrances if they failed to retrieve the [[Ice Key]] on the [[Desert Board (Sword Route)|Desert Board]]. A message displays telling them that they have forgotten it."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="npcs">
+  <object id="15" name="Tenna" x="3403.54" y="2929.06">
+   <properties>
+    <property name="description" value="Is seen in an unreachable part of the room. He desperately wonders if they are doing the right thing by basing his games on the [[Sword Route]] boards. He flees once Little Kris attempts to approach."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="enemies">
+  <object id="3" name="Purple Monster" x="1422.91" y="2953.88">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Purple Monster" x="1423.03" y="3179.21">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="1" name="Purple Monster" x="1358.42" y="3211.52">
+   <properties>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Blue Fish" x="1727.51" y="3660.76">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Blue Fish" x="1727.03" y="3469.12">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Blue Fish" x="2095.62" y="3436.26">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Blue Fish" x="2126.75" y="3211.51">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Yellow Lizard" x="1648.65" y="2922.61">
+   <properties>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Yellow Lizard" x="1810.44" y="2953.11">
+   <properties>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Flower" x="2256.07" y="3276.83">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="11" name="Sword" x="2879.11" y="3419.73">
+   <properties>
+    <property name="description" value="A sword in what used to be the [[camera]] room. Allows Little Kris to kill the enemies on the board."/>
+    <property name="page" value="Sword (Sword Route)"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="sublocations">
+  <object id="14" name="Tropic of Love" x="3264.67" y="3965.98">
+   <properties>
+    <property name="description" value="A heart-shaped island. Contains an entrance to a secret room containing [[Tenna]]."/>
+    <property name="page" value="Island Board (Sword Route)#Tropic of Love"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Ice Palace" x="1343.87" y="104.599">
+   <properties>
+    <property name="description" value="A dungeon on the Island Board. Requires the [[Ice Key]] to enter, which is retrieved on the [[Desert Board (Sword Route)|Desert Board]]."/>
+    <property name="page" value="Ice Palace"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" x="2253.98" y="3146.17">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 64.08,0.0659938 63.4209,415.799 240.938,415.82"/>
+  </object>
+  <object id="19" x="1630.93" y="3147.07">
+   <properties>
+    <property name="color" type="color" value="#ff5023d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.282181,417.873 1245.4,418.02"/>
+  </object>
+  <object id="21" x="1422.91" y="3760.14">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 1071.92,-0.118002 1072.04,-198.157 1072.02,-125.019 193.967,-124.973"/>
+  </object>
+  <object id="25" x="1071.04" y="2925.54">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.14645,969.664 1423.71,969.512 1423.86,636.428 1423.62,897.458 132.764,897.598 132.764,836.108"/>
+  </object>
+  <object id="26" x="205.811" y="3147.7">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.101263,861.985 2288.86,861.977 2288.91,414.218"/>
+  </object>
+  <object id="27" x="3311.27" y="3950.6">
+   <properties>
+    <property name="color" type="color" value="#ffff75d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0805615,-671.669 -66.1931,-671.618"/>
+  </object>
+  <object id="28" x="2110.68" y="2862.26">
+   <properties>
+    <property name="color" type="color" value="#ff78a347"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0760056,-699.115 1970.15,-699.197"/>
+  </object>
+ </objectgroup>
+</map>
