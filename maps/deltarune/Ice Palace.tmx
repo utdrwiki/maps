@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="84" height="48" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="42">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Ice Palace map">
+  <image source="images/Ice Palace.png" width="2688" height="1536"/>
+ </imagelayer>
+ <objectgroup id="3" name="enemies">
+  <object id="1" name="Flower" x="431.449" y="1165">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Flower" x="527.092" y="1068.93">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Flower" x="719.643" y="1165">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Blue Bird" x="655.396" y="875.488">
+   <properties>
+    <property name="description" value="A Blue Bird monster. Blocks the way to the maze and must be frozen by the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Yellow Lizard" x="337.382" y="909.74">
+   <properties>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Yellow Lizard" x="47.6304" y="940.7">
+   <properties>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Yellow Lizard" x="302.453" y="394.538">
+   <properties>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Blue Fish" x="270.699" y="589.029">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Blue Fish" x="239.786" y="685.198">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Blue Fish" x="110.516" y="590.757">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Blue Fish" x="46.2157" y="687.877">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Blue Fish" x="495.096" y="462.687">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Blue Fish" x="655.437" y="431.13">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Blue Fish" x="686.994" y="304.051">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Blue Fish" x="430.704" y="365.032">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Flower" x="431.983" y="45">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Flower" x="495.953" y="45">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Flower" x="623.881" y="45">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Flower" x="463.539" y="77.6119">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Gray Monster" x="462.607" y="202.042">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Gray Monster" x="494.593" y="618">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Gray Monster" x="655.066" y="618">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Gray Monster" x="943" y="41.2045">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Gray Monster" x="1006.69" y="105.834">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Gray Monster" x="943" y="202.918">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Gray Monster" x="1262.93" y="138.157">
+   <properties>
+    <property name="description" value="A Gray Monster. Is impervious to standard attacks and must be frozen using the [[White Cloak]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Yellow Monster" x="846.557" y="552.684">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Yellow Monster" x="1039.22" y="587.023">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Yellow Monster" x="943.069" y="716">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Yellow Monster" x="1071.03" y="716">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attacks by shooting red arrows at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="White Monster" x="1439.25" y="634.229">
+   <properties>
+    <property name="description" value="A White Monster. Walks around in random directions, harming Little Kris when touched."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="plot">
+  <object id="33" name="FOLLOW THE WHITE CLOAK" x="191.883" y="377.651">
+   <properties>
+    <property name="description" value="Text that displays upon entering the room. Directs Little Kris to the [[White Cloak]] and hints at how to solve the upcoming maze."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="THE FORBIDDEN PATH BEGAN WITH ICE MAGIC" x="1342.85" y="641.858">
+   <properties>
+    <property name="description" value="Text that displays upon entering this room. Alludes to the [[Weird Route]] and how it is initiated using [[Noelle]]'s ice magic."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Locked Door" x="2493.94" y="331.233">
+   <properties>
+    <property name="description" value="Little Kris unlocks the door using the [[Ice Key]], which is &quot;used up&quot; and disappears from their inventory. The [[White Cloak]] is also &quot;used up&quot; and disappears."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="YOU WERE USED UP" x="2495.56" y="238.326">
+   <properties>
+    <property name="description" value="The [[Shadow Mantle Holder]] speaks to [[Kris]] directly and congratulates them for finding their hiding place. After retrieving the [[Shelter Key]], the game states that Kris was &quot;used up&quot; and shuts off."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="npcs">
+  <object id="35" name="White Cloak" x="1424.14" y="363.207">
+   <properties>
+    <property name="description" value="A figure in a white cloak. Upon leaving the room, the figure begins to follow Little Kris throughout the dungeon."/>
+    <property name="page" value="White Cloak"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="White Cloak" x="1806.32" y="105.955">
+   <properties>
+    <property name="description" value="A figure in a white cloak. Upon leaving the room, the figure begins to follow Little Kris throughout the dungeon."/>
+    <property name="page" value="White Cloak"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="puzzles">
+  <object id="37" name="Ice Block Puzzles" x="1154.1" y="129.82">
+   <properties>
+    <property name="description" value="Little Kris must use the [[White Cloak]] to freeze the Gray Monsters and push them onto the pressure plates. For rooms that do not have enough monsters. Little Kris must push the last pressure plate themselves."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Maze" x="1728.97" y="901.48">
+   <properties>
+    <property name="description" value="Little Kris is presented with a single looping room. They must navigate the maze in the direction the [[White Cloak]] follows them. The White Cloak freezes in place in front of incorrect pathways."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="items">
+  <object id="40" name="Shelter Key" x="2496.36" y="125.222">
+   <properties>
+    <property name="description" value="A key used to unlock the Shelter in the [[City Board (Sword Route)|City Board]]'s Manhole Dungeon."/>
+    <property name="page" value="Shelter Key"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

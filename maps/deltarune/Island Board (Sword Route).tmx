@@ -7,7 +7,7 @@
   <image source="images/Island Board (Sword Route).png" width="4224" height="4096"/>
  </imagelayer>
  <objectgroup id="3" name="plot">
-  <object id="12" name="GO TO NORTHERNLIGHT" x="2495.18" y="3459.49">
+  <object id="12" name="GO TO NORTHERN LIGHT" x="2495.18" y="3459.49">
    <properties>
     <property name="description" value="Little Kris enters this room from any of the former cave entrances once they have killed all the enemies on the board. A message that displays upon entering this room directs Little Kris to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
    </properties>
