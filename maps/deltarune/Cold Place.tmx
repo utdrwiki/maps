@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="186" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="18">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Cold Place map">
+  <image source="images/Cold Place.png" width="7418" height="2424"/>
+ </imagelayer>
+ <objectgroup id="3" name="puzzles">
+  <object id="1" name="Parental Lock Puzzle 1" x="1830.45" y="2016.83">
+   <properties>
+    <property name="description" value="[[Kris]] must reveal the passcode to unlock the door to the next room. Here, the passcode is &quot;213.&quot;"/>
+    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Map of Parental Lock Puzzle 1" x="1775.75" y="2223.34">
+   <properties>
+    <property name="description" value="Map of the first Parental Lock Puzzle, with proper orientation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Parental Lock Puzzle 2" x="3854.8" y="2019.59">
+   <properties>
+    <property name="description" value="[[Kris]] must maneuver their way around the room and unlock the door leading to the passcode. Here, the passcode is &quot;1225.&quot;"/>
+    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Map of Parental Lock Puzzle 2" x="3873.52" y="2221.98">
+   <properties>
+    <property name="description" value="Map of the second Parental Lock Puzzle, with proper orientation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Parental Lock Puzzle 3" x="2651.3" y="1579.77">
+   <properties>
+    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr Residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000.&quot;"/>
+    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Parental Lock Puzzle 3 - TV" x="2830.78" y="602.841">
+   <properties>
+    <property name="description" value="Interacting with the TV transports [[Kris]] to the main puzzle area."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Parental Lock Puzzle 3, part 1" x="2090" y="875">
+   <properties>
+    <property name="description" value="[[Kris]] must use either their character or [[Susie]]'s to transfer the block to the pressure plate."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="PArental Lock Puzzle 3, part 2" x="2475.11" y="875">
+   <properties>
+    <property name="description" value="[[Kris]] must use [[Susie]]'s character to construct a bridge across the lake."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Parental Lock Puzzle 3, part 3" x="3054.47" y="875">
+   <properties>
+    <property name="description" value="[[Kris]] must take a photo with the [[camera]] anywhere in this area to reveal the passcode."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Cold Place" x="4678.82" y="1904.52">
+   <properties>
+    <property name="description">'''First visit:''' A draft blows, and you feel the cold night's presence.
+Still, this never bothered you. In fact...
+
+'''Second visit, pre-[[Tenna]] battle:''' The wind blows fiercely, as if it fears the night itself.
+The final act draws near.
+
+'''Post-Tenna battle:''' Your hand lingers in the bright light.
+The light, which only you can see...
+A strange calm washes over you.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="items">
+  <object id="10" name="Camera" x="2843.08" y="1094.96">
+   <properties>
+    <property name="description" value="A camera that [[Kris]] can use to reveal the passcode to the door."/>
+    <property name="page" value="Camera"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="sublocations">
+  <object id="17" name="Green Room" x="41.417" y="2027.67">
+   <properties>
+    <property name="description" value="Doorway back to the Green Room, the main hub of the TV World."/>
+    <property name="page" value="Green Room"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="enemies">
+  <object id="13" name="Final Tenna encounter" x="6114.96" y="1858.92">
+   <properties>
+    <property name="description" value="Boss battle against Tenna on the second visit to the Cold Place."/>
+    <property name="page" value="Tenna#Cold Place Encounter"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="plot">
+  <object id="3" name="Puzzle intermission" x="2508.67" y="2075.06">
+   <properties>
+    <property name="description" value="[[Ralsei]] stops [[Kris]] while [[Susie]] walks ahead and requests that they ask Susie how she is doing. Kris can comply, ask Ralsei how he is doing, or not speak at all."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Toriel captured" x="6707.56" y="1943.02">
+   <properties>
+    <property name="description" value="On their first visit to the Cold Place, the [[party]] notices [[Toriel]] trapped in a gachapon ball. Before they can rescue her, [[Tenna]] suddenly arrives and notices them. He then forces them into another round of [[TV Time]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="The final battle" x="6828.25" y="2033.04">
+   <properties>
+    <property name="description" value="[[Tenna]] frees [[Toriel]] from her imprisonment, but as soon as he does so, the [[Knight]] attacks him and slices his arms off. The [[party]] confronts the Knight, only to be defeated. The Knight attempts to capture Toriel, but [[Undyne]] appears and attacks the Knight. The Knight captures Undyne and escapes the TV World."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Roaring Knight" x="7363.47" y="1878.71">
+   <properties>
+    <property name="description" value="Boss battle against the Roaring Knight. Drops a [[Shadow Crystal]] and a [[Black Shard]] upon defeat."/>
+    <property name="page" value="Knight#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
