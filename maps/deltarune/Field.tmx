@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="165" height="41" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="165" height="41" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="78">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,13 +7,438 @@
  <imagelayer id="2" name="Field map">
   <image source="images/Field.png" width="6565" height="1602"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="warpdoor"/>
- <objectgroup id="5" name="vendors"/>
- <objectgroup id="6" name="puzzles"/>
- <objectgroup id="7" name="npcs"/>
- <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="signs"/>
- <objectgroup id="10" name="items"/>
- <objectgroup id="11" name="enemies"/>
+ <objectgroup id="3" name="plot">
+  <object id="2" name="The Great Door" x="160" y="127.667">
+   <properties>
+    <property name="description" value="After [[Ralsei]] explains how to get through battles to [[Kris]], they enter through The Great Door to commence their adventure."/>
+    <property name="page" value="Castle Town"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="The Field of Hopes and Dreams" x="525" y="679.667">
+   <properties>
+    <property name="description" value="When entering this room, an indicator that the song &quot;The Field of Hopes and Dreams&quot; is currently playing will appear."/>
+    <property name="page" value="Field of Hopes and Dreams"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Lancer's warning" x="1770" y="1026">
+   <properties>
+    <property name="description" value="[[Lancer]] warns the [[party]] that proceeding further will have his troops attack."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Susie joins the party" x="4894" y="1411.33">
+   <properties>
+    <property name="description" value="When [[Kris]] and [[Ralsei]] walk towards [[Susie]], they will find her complaining about the door not opening. Ralsei tells Susie that in order to progress, she will have to help them solve the puzzle in the previous room. This will cause Susie to join the [[party]], with a long fanfare playing in the background. When the fanfare ends, Susie will walk away to follow at a distance at which she doesn't seem to be associated, which cause the fanfare to play again but slower."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Ralsei explains heroism to Susie" x="4898" y="1213.5">
+   <properties>
+    <property name="description" value="[[Ralsei]] tries to explain to [[Susie]] that as heroes, they can go by through battles peacefully, explaining how they can make enemies tired to PACIFY them. Susie dismisses Ralsei's words, and instead makes fun of him. Ralsei then whispers to [[Kris]] how they should WARN enemies of her attacks."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Great Board" x="6226.33" y="937.667">
+   <properties>
+    <property name="description" value="Walking to the right progresses the story into the Great Board."/>
+    <property name="page" value="Great Board"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="warpdoor">
+  <object id="63" name="Field Warp Door" x="5235" y="1118.33">
+   <properties>
+    <property name="description">Reaching the Forest Warp Door will activate this Warp Door. It can be used to travel to the following locations:
+* Forest
+* Bake Sale
+* Castle</property>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="vendors">
+  <object id="50" name="Seam's Shop" x="4896.67" y="1138.67">
+   <properties>
+    <property name="description">Seam runs a shop here that they call a &quot;Seap&quot;. Inside this shop, they sell the following items:
+* [[Dark Dollar]]
+* [[Darkburger]]
+* [[Amber Card]]
+* [[Spookysword]]
+
+Seam can also be talked to about the Strange Prisoner in the basement of [[Card Castle]], and will give [[Broken Key A]] to start the process of unlocking his cell, as well as giving a hint for [[Broken Key B]].</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="Seam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Donation Hole" x="4574.73" y="1130.73">
+   <properties>
+    <property name="description" value="The Donation Hole allows [[Kris]] to insert money into it. Upon inserting 1 [[Dark Dollar]], the donation whole will become &quot;Full.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="26" name="Timed Puzzle" x="3152.25" y="912">
+   <properties>
+    <property name="description" value="The path ahead is blocked by spikes. [[Kris]] and [[Ralsei]] must press the buttons in the right order before the time runs out to proceed. Kris has to press the button on the right, followed by both it and the upper button with the help of Ralsei, followed by pressing both lower buttons together."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Timed Puzzle" x="4499.25" y="1352.25">
+   <properties>
+    <property name="description" value="This is another timed puzzle where the [[party]] must step on the right tiles in the right order within the time provided. Solving the puzzle unlocks the door in the next room. However, the final step of the puzzle requires three tiles to be pressed, which is impossible with just [[Kris]] and [[Ralsei]]. If they keep failing at it, Ralsei will tell Kris that they might be missing something, and ask you to continue to the next room. [[Susie]] can temporarily join the party there to aid with this puzzle so she can also get through. The puzzle requires pressing the tile to the right first, the two tiles on the top, and finally all three tiles on the right."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Box Puzzle" x="5702.67" y="1180.67">
+   <properties>
+    <property name="description" value="Upon walking into this room, [[Ralsei]] exclaims his excitement for another puzzle, with [[Susie]] expressing the opposite reaction. Ralsei tries to read the instructions, but they were vandalized by someone signing with [[Rouxls Kaard|RK]]. In order to solve the puzzle, Kris needs to move the boxes onto the two opposite upper corners by using the Confirm button."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Four Slot Card Suit Puzzle" x="6289" y="640">
+   <properties>
+    <property name="description" value="To lower the spikes to the right of the puzzle, Kris must enther the suites in the same oreder as the suits represented by the rooms in [[Card Castle]], from bottom to top. This order is Diamond, Heart, Club, and Spade. The in game order would be Diamond, Swap, Diamond, Spade, Swap and finally Spade."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="npcs">
+  <object id="9" name="Lancer" x="1594" y="970">
+   <properties>
+    <property name="description" value="[[Lancer]] tells [[Ralsei]] and [[Kris]] that [[Susie]] beat him up, so he fled. Interacting again causes him to tell them that Susie went to the right. If Kris interacts with him after his warning, Ralsei will ask him for his troops not to fight him, to which Lancer will reply that &quot;thrashing is what makes their relationship work.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Top Chef" x="2384.25" y="1013.5">
+   <properties>
+    <property name="description" value="Top Chef warns [[Kris]] and [[Ralsei]] about how [[Susie]] ravaged his cake, informing the heroes on the direction she went. Interacting with him later with Susie will have him scared of her, to which she responds by asking him if he would like her to spit the cake out."/>
+    <property name="page" value="Top Chef"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Jigsawry" x="3888.25" y="1055.75">
+   <properties>
+    <property name="description" value="A Jigsawry that has been clobbered, presumably by Susie."/>
+    <property name="page" value="Jigsawry"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Treasure Chest" x="3513.88" y="1114.75">
+   <properties>
+    <property name="description" value="The treasure chest contains a White Ribbon. Since this is the first ARMOR in the game, [[Ralsei]] explains that [[Kris]] can wear it through the [[Equipment|EQUIPMENT]] menu. He has special dialogue if Kris gives the ribbon to him."/>
+    <property name="page" value="White Ribbon"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Jigsawry" x="4082.25" y="1233.5">
+   <properties>
+    <property name="description" value="The Jigsawry warns [[Kris]] and [[Ralsei]] that [[Susie]] has been going around clobbering every enemy. They tells them that they do not enjoy fighting, and that they only do since the [[King]] forces them to."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Lancer" x="4234.19" y="1427.92">
+   <properties>
+    <property name="description" value="After the battle with the [[Hathy]]s ends, Lancer runs away. However, Lancer chooses not go very far, and interacting with him here causes him to tell the [[party]] that he has finished running away.."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Jigsaw Joe" x="4803.75" y="1182.25">
+   <properties>
+    <property name="description" value="Jigsaw Joe asks if [[Kris]] wants to purchase a tutorial for 50 Dark Dollars. If Kris does not have enough, he still offers to aid the party. If Kris repeatedly declines, Jigsaw Joe lowers the price to 1D$, and [[Ralsei]] offers to pay instead. Regardless of outcome, he leads them to the next room."/>
+    <property name="page" value="Jigsaw Joe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Jigsaw Joe" x="4636.5" y="1125">
+   <properties>
+    <property name="description" value="Jigsaw Joe explains that the Jigsaw pieces usually make puzzle, but when the [[King]] took hold, he replaced them with [[Rouxls Kaard]]. The Jigsaws are now forced to make tutorials to make money."/>
+    <property name="page" value="Jigsaw Joe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="TP Master" x="4642.67" y="1221">
+   <properties>
+    <property name="description">TP Master will give [[Kris]] tutorials on [[TP]]. They can provide information on the following topics:
+* '''What's TP''': TP Master will tell Kris that TP allows for casting spells and that it stands for &quot;Toilet Paper.&quot; [[Ralsei]] corrects them by explaining that it stands for Tension Points.
+* '''Gaining TP''': TP Master explains how the party can earnt TP by DEFENDing or by grazing bullets.
+* '''Secret''': TP Master tells Kris that TP only lasts in battle, and as such, it is useless to save up TP for after the battle. Ralsei then points out that leftover TP will award extra [[Dark Dollars]].</property>
+    <property name="page" value="Field/NPCs#TP_Master"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Ralsei Master" x="4602.36" y="1237">
+   <properties>
+    <property name="description">Ralsei Master gives [[Kris]] tutorials on [[Ralsei]]. They can provide information on the following topics:
+* '''Pacify''': Ralsei Master jokingly suggests that Pacify should be used to put babies to sleep before they cry. Ralsei corrects them and states that pacify should be used on TIRED enemies to [[SPARE]] them.
+* '''Healing''': Ralsei Master mentions that Ralsei has a healing spell, but is confused on its utility. Ralsei explains that the spell can be used to avoid consuming items in battle.
+* '''Fact''': Ralsei Master claims that Ralsei loves when Kris donates to them, and that he will hug them if they do. Ralsei objects, noting that money is not necessary for him to give hugs.</property>
+    <property name="page" value="Field/NPCs#Ralsei Master"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Susie Master" x="4552.44" y="1237">
+   <properties>
+    <property name="description">Susie Master gives [[Kris]] tutorials on [[Susie]]. They can provide information on the following topics:
+* '''Warning''': Susie Master explains that Kris's WARNING ACT will prevent Susie from damaging enemies. Susie intergects that this means there is no reason to use the ACT. If Susie is absent, they instead mention that &quot;WARNing is obsolete.&quot; Once Susie listens in battle, Susie Master comments that WARNing is no longer necessary.
+* '''Attack''': Susie Master Informs Kris that Susie automatically attacks the topmost enemy during an encounter. If Susie is not in the party, they instead acknowledge her absence. Once Susie joins the party &quot;for real,&quot; they state that Susie's Rude Buster deals more damage when pressing the CONFIRM key.
+* '''Fact''': Susie Master suggests that Susie wants the party to donate to the Donation Hole. She disagrees. If Susie is absent, Susie Master wonders if the two can &quot;pick up the slackts.&quot; Once Susie listens in battle, Susie Master is impressed by her personal growth.</property>
+    <property name="page" value="Field/NPCs#Susie Mster"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Kris Master" x="4507.75" y="1221">
+   <properties>
+    <property name="description">Kris Master Gives [[Kris]] tutorials on Kris. They can provide information on the following topics:
+* '''Reviving''': Kris Master explains that Healing Items and Spells can revive downed party members, and that the [[Revive Mint]] can fully heal a downed party member.
+* '''Acting''': Kris Master explains how only Kris can ACT, whereas other party members cannot. Ralsei interjects that he can SPARE or Pacify an opponent on the same turn that Kris ACTs, if that ACT makes the enemy Sparable or Tired.
+* '''Fact''': Kris Master encourages the party to donate to the &quot;Donation Hole.&quot; They also mention that they used to have a box for donations, though it was stolen.</property>
+    <property name="page" value="Field/NPCs#Kris Master"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Ralsei" x="5736.21" y="1099.43">
+   <properties>
+    <property name="description" value="[[Ralsei]] directs [[Kris]] to the puzzle and tells them that they should push the blocks onto the pressure plates."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Susie" x="5921.28" y="1098.01">
+   <properties>
+    <property name="description" value="[[Susie]] tells [[Kris]] that puzzles are their job to solve."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves">
+  <object id="1" name="Field - Great Door" x="160" y="300.125">
+   <properties>
+    <property name="description">With the door closed behind you, your adventure will truly begin...
+The power of adventures shines within you.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Field - Maze of Death" x="3493.82" y="934.182">
+   <properties>
+    <property name="description" value="SAVE Point in the Maze of Death"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Field - Seam's Shop" x="4995.43" y="1150.61">
+   <properties>
+    <property name="description">Susie, the violet tormentor, is now your ally.
+The power of mean girls shines within you.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="signs">
+  <object id="3" name="Sign" x="616" y="646">
+   <properties>
+    <property name="description">(Enemies ahead! You're gonna die!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Sign" x="1316.55" y="647.273">
+   <properties>
+    <property name="description">(If you're reading this... I guess you're dead.)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Sign" x="1556.18" y="948.909">
+   <properties>
+    <property name="description">(Hey, don't read this sign!
+It's a work in progress!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Sign" x="1531" y="1289">
+   <properties>
+    <property name="description">(These types of trees DON'T contain an item that can heal you.)
+(Whatever you do, DON'T check the tree and use [Menu Key] to open your menu!)
+(You got it!?)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Sign" x="3093" y="912.333">
+   <properties>
+    <property name="description">Check the clock.
+In order to solve this puzzle, you'll have to hurry.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Sign" x="3553.88" y="928.125">
+   <properties>
+    <property name="description">(Behold, the Maze of Death!
+(Prepare to GET LOST, clowns!!!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Sign" x="3804.06" y="990.063">
+   <properties>
+    <property name="description">(Feeling lost yet!? You must be UTTERLY HELPLESS among these twists and turns!)
+(Your sense of direction won't save you now!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Sign" x="3654.13" y="1209">
+   <properties>
+    <property name="description">(Hey, wait!! Where am I!? Help! Somebody help! I'm lost!!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Sign" x="3654" y="1429.36">
+   <properties>
+    <property name="description">(Hey, don't look! This sign's private!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Sign" x="3914.06" y="1429">
+   <properties>
+    <property name="description">(Oh, it's just this way.)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Sign" x="4936.09" y="1459">
+   <properties>
+    <property name="description">(Heheheheh!!! I sneaked by and made a sign!!)
+(SIGNED, LANCER)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Sign" x="4535.03" y="1128">
+   <properties>
+    <property name="description">&quot;Hole Goals&quot;
+$1 - Monthly tutorial, weekly.
+$10 - Weekly tutorial, monthly.
+$100 - Stop making tutorials.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Sign" x="6194" y="666">
+   <properties>
+    <property name="description">(From the bottom, the order of our rooms in Card Castle.)
+(Of course, if you haven't been there, you won't know it.)
+
+(Really emphasizing that it's impossible if you haven't been there...)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="items">
+  <object id="11" name="Dark Candy tree" x="1477" y="1267">
+   <properties>
+    <property name="description" value="Tree that gives a [[Dark Candy]] when interacted with. It can be interacted with again to get another one."/>
+    <property name="page" value="Dark Candy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Broken Cake" x="2423.75" y="954.25">
+   <properties>
+    <property name="description" value="Interacting with the Broken Cake will allow [[Kris]] to take a piece of it."/>
+    <property name="page" value="Broken Cake"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Dark Candy tree" x="2940" y="964.727">
+   <properties>
+    <property name="description" value="Tree that gives a [[Dark Candy]] when interacted with. It can be interacted with again to get another one."/>
+    <property name="page" value="Dark Candy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Treasure Chest" x="6499.33" y="701.333">
+   <properties>
+    <property name="description" value="The treasure chest contains Broken Key C."/>
+    <property name="page" value="Broken Key C"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="enemies">
+  <object id="7" name="Rudinn" x="1003.09" y="664.909">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of a Rudinn."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Rudinn" x="1971.55" y="1007.27">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two Rudinns."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Rudinn" x="2762.18" y="1010.73">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of a Rudinn and [[Hathy]]."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Lancer Encounter" x="3996.83" y="1466.67">
+   <properties>
+    <property name="description" value="Lancer turns to face towards [[Kris]] and [[Ralsei]] and congratulates them on finishing the maze. He then challenges the team to fight against a team consisting of three [[Hathy]]s. Lancer is confused on why his team's attack did not work, to which Ralsei informs him that Hathy is purely a support enemy."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="C. Round" x="4803.64" y="1456.18">
+   <properties>
+    <property name="description" value="C. Round was intended to act as a tutorial boss fight for [[Susie]], with Ralsei intending to teach her how to ACT. However, if [[Kris]] attempts to involve Susie in ACTing, she will immediately attack the enemy, making them flee."/>
+    <property name="page" value="C. Round"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Lancer Encounter" x="5502" y="1175.25">
+   <properties>
+    <property name="description" value="Lancer turns to face towards the [[party]] and tells them that he has prepared a new battle team since the last time they faced him. Lancer laughs, which causes [[Susie]] to make fun of his evil laugh and threaten him. Lancer takes what he learned from Susie's threatening to thank her and run off with his new evil laugh, while deploying his team of [[Jigsawry]]s."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Rudinn" x="6008.75" y="912.25">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two Rudinns and [[Hathy]]."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Smorgasboard" x="6031.86" y="708.726">
+   <properties>
+    <property name="description" value="An enemy encounter against [[Rudinn]], [[Hathy]], and [[Jigsawry]]"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

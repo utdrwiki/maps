@@ -65,10 +65,10 @@
    </properties>
    <point/>
   </object>
-  <object id="20" name="Oasis resevoir" x="223.465" y="1946.89">
+  <object id="20" name="Oasis reservoir" x="223.465" y="1946.89">
    <properties>
-    <property name="description" value="The resevoir for the oasis. Bringing [[Lancer]] here causes him to leave the board inventory and dig out a [[Key (The Legend of Tenna|key]], clogging up the resevoir in the process."/>
-    <property name="page" value="Desert Board#Giant Cactus"/>
+    <property name="description" value="The reservoir for the oasis. Bringing [[Lancer]] here causes him to leave the board inventory and dig out a [[Key (The Legend of Tenna)|key]], clogging up the reservoir in the process."/>
+    <property name="page" value="Desert Board#Oasis Reservoir"/>
    </properties>
    <point/>
   </object>
