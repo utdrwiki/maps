@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="156" height="56" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="50">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+ </properties>
+ <imagelayer id="2" name="Manhole Dungeon map">
+  <image source="images/Manhole Dungeon.png" width="4992" height="1792"/>
+ </imagelayer>
+ <objectgroup id="4" name="sublocations">
+  <object id="46" name="Shelter" x="4032.65" y="1427.57">
+   <properties>
+    <property name="description" value="A replica of the [[Shelter]] from [[Hometown]]. Contains the [[Shadow Mantle Holder]]."/>
+    <property name="page" value="Manhole Dungeon#Shelter"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="npcs">
+  <object id="45" name="Tenna" x="2127.53" y="880.882">
+   <properties>
+    <property name="description" value="[[Tenna]] explains how his partnership with [[Spamton]] fell apart and laments the fact that [[Kris]] brought the laptop to their house. Upon noticing Kris, Tenna tells them that he had done what they asked him to do and asks them not to turn him off again. Little Kris kills Tenna's character to continue forward."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="49" name="Exit point" x="4977.76" y="1164.17">
+   <properties>
+    <property name="description" value="Little Kris exits the game screen from this point, leaving [[Kris]] to pick up the [[Shadow Mantle]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="puzzles">
+  <object id="39" name="Black Monster" x="1424.48" y="331.325">
+   <properties>
+    <property name="description" value="A Black Monster. Follows Little Kris's movements and must be guided to the bottom-right pressure plate to solve the puzzle. Once the pressure plate is pressed, [[Kris]] takes control of the monster and must take it to Little Kris, after which Little Kris automatically kills it."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="48" name="Shadow Mantle" x="4671.15" y="1103.73">
+   <properties>
+    <property name="description" value="Treasure chest containing the Shadow Mantle."/>
+    <property name="page" value="Shadow Mantle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="hazards">
+  <object id="40" name="Fire Bar" x="574.836" y="895.259">
+   <properties>
+    <property name="description" value="A fire bar that rotates in a circle. Cannot be destroyed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Fire Bar" x="937.176" y="904.921">
+   <properties>
+    <property name="description" value="A fire bar that rotates in a circle. Cannot be destroyed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Fire Bar" x="1040.45" y="945.462">
+   <properties>
+    <property name="description" value="A fire bar that rotates in a circle. Cannot be destroyed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Fire Bar" x="528.675" y="689">
+   <properties>
+    <property name="description" value="A fire bar that rotates in a circle. Cannot be destroyed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Fire Bar" x="625.113" y="689">
+   <properties>
+    <property name="description" value="A fire bar that rotates in a circle. Cannot be destroyed."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="enemies">
+  <object id="1" name="Orange Monster" x="687.096" y="840.802">
+   <properties>
+    <property name="description" value="An Orange Monster. Attacks by shooting fireballs at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Orange Monster" x="687.257" y="937.329">
+   <properties>
+    <property name="description" value="An Orange Monster. Attacks by shooting fireballs at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Blue Fish" x="943.712" y="973.665">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Blue Fish" x="1103.01" y="813.397">
+   <properties>
+    <property name="description" value="A Blue Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Silent Cat" x="816" y="558">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Silent Cat" x="880" y="558">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Silent Cat" x="1040" y="558">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Silent Cat" x="1104" y="558">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Silent Cat" x="816" y="717">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Silent Cat" x="880" y="717">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Silent Cat" x="1040" y="717">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Silent Cat" x="1104" y="717">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Silent Cat" x="720" y="205">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Silent Cat" x="720" y="45">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Silent Cat" x="432" y="205">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Silent Cat" x="432" y="45">
+   <properties>
+    <property name="description" value="A Silent Cat monster. Once the Singing Cats have been defeated, it wakes up and dives toward Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="White Monster" x="1345.07" y="639.215">
+   <properties>
+    <property name="description" value="A total of 30 White Monsters. They remain stationary and do not attack."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Flower" x="1039.58" y="365">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Flower" x="879.468" y="365">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Flower" x="304" y="557">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Flower" x="79.9673" y="557">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Flower" x="304" y="717">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Flower" x="207.671" y="717">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Flower" x="111.658" y="717">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Flower" x="48" y="619.812">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Flower" x="48" y="651.395">
+   <properties>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Blue Lizard" x="431.903" y="712.457">
+   <properties>
+    <property name="description" value="A Blue Lizard monster. Attacks by jumping to a pretermined spot at a fast pace."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Blue Lizard" x="495.693" y="648.058">
+   <properties>
+    <property name="description" value="A Blue Lizard monster. Attacks by jumping to a pretermined spot at a fast pace."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Green Lizard" x="944.573" y="326">
+   <properties>
+    <property name="description" value="A Green Lizard monster. Attacks by jumping to a predetermined spot, shooting lightning at the apex of its jump."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Green Lizard" x="976.923" y="326">
+   <properties>
+    <property name="description" value="A Green Lizard monster. Attacks by jumping to a predetermined spot, shooting lightning at the apex of its jump."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Gray Fish" x="110.583" y="428.575">
+   <properties>
+    <property name="description" value="A Gray Fish monster. Attacks by lunging at Little Kris if they travel within its line of sight."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Yellow Lizard" x="47" y="452">
+   <properties>
+    <property name="description" value="A stationary Yellow Lizard monster. Attacks by shooting projectiles at Little Kris. It is automatically killed once the Gray Fish has been defeated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Yellow Lizard" x="47" y="292">
+   <properties>
+    <property name="description" value="A stationary Yellow Lizard monster. Attacks by shooting projectiles at Little Kris. It is automatically killed once the Gray Fish has been defeated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Yellow Lizard" x="272" y="292">
+   <properties>
+    <property name="description" value="A stationary Yellow Lizard monster. Attacks by shooting projectiles at Little Kris. It is automatically killed once the Gray Fish has been defeated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Yellow Lizard" x="272" y="452">
+   <properties>
+    <property name="description" value="A stationary Yellow Lizard monster. Attacks by shooting projectiles at Little Kris. It is automatically killed once the Gray Fish has been defeated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Yellow Monster" x="175.135" y="553.076">
+   <properties>
+    <property name="description" value="A Yellow Monster. Attack by shooting red arrows at Little Kris. Begins to chase Little Kris once the Flowers in the room have been defeated."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Singing Cat" x="495.805" y="336.026">
+   <properties>
+    <property name="description" value="A Singing Cat monster. Attacks by shooting music notes in random directions."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Singing Cat" x="559.324" y="80.5756">
+   <properties>
+    <property name="description" value="A Singing Cat monster. Attacks by shooting music notes in random directions."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Shadow Mantle Holder" x="4799.47" y="1405.76">
+   <properties>
+    <property name="description" value="Boss battle against the Shadow Mantle Holder."/>
+    <property name="page" value="Shadow Mantle Holder"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
