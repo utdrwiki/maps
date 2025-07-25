@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1029" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="154">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="TV World map">
   <image source="images/TV World.png" width="41160" height="5760"/>
@@ -107,10 +108,10 @@
    </properties>
    <point/>
   </object>
-  <object id="73" name="Cooking Challenge" x="34390" y="3938.78">
+  <object id="73" name="Cooking Show" x="34390" y="3938.78">
    <properties>
-    <property name="description" value="The set for the Cooking Challenge, played during the first round of [[TV Time]]. Many [[Shadowguy]]s and [[Pippins]] are crowding behind the counter."/>
-    <property name="page" value="Cooking Challenge"/>
+    <property name="description" value="The set for the Cooking Show minigame, played during the first round of [[TV Time]]. Many [[Shadowguy]]s and [[Pippins]] are crowding behind the counter."/>
+    <property name="page" value="Cooking Show"/>
    </properties>
    <point/>
   </object>
@@ -259,7 +260,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
   <object id="80" name="Stealth Zone 4" x="39380.5" y="5052.96">
    <properties>
-    <property name="description" value="An optional Stealth Zone with a slow-moving searchlight. Passing into the searchlight summons a [[Zapper]], who asks if [[Kris]] is a cheater. If Kris admits they are a cheater, the Zapper asks where they are going. If Kris answers &quot;Where I came from,&quot; the Zapper transports them to the previous room. If Fris answers &quot;Nowhere,&quot; the Zapper transports them to an isolated area, which is part of the [[Egg]] sidequest."/>
+    <property name="description" value="An optional Stealth Zone with a slow-moving searchlight. Passing into the searchlight summons a [[Zapper]], who asks if [[Kris]] is a cheater. If Kris admits they are a cheater, the Zapper asks where they are going. If Kris answers &quot;Where I came from,&quot; the Zapper transports them to the previous room. If Kris answers &quot;Nowhere,&quot; the Zapper transports them to an isolated area, which is part of the [[Egg]] sidequest."/>
    </properties>
    <point/>
   </object>

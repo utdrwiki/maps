@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="63">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,11 +7,417 @@
  <imagelayer id="2" name="Island Board map">
   <image source="images/Island Board.png" width="4224" height="4096"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="6" name="npcs"/>
- <objectgroup id="8" name="signs"/>
- <objectgroup id="9" name="items"/>
- <objectgroup id="10" name="enemies"/>
+ <objectgroup id="12" name="sublocations">
+  <object id="2" name="Kodakoda Shrine" x="3262.62" y="1923.27">
+   <properties>
+    <property name="description" value="Houses three pedestals that hold three [[Grand Photo]]s, which are used to unlock the raft that can take the [[party]] to the ocean."/>
+    <property name="page" value="Island Board#Kodakoda Shrine"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Tropic of Love" x="3697.05" y="3947.65">
+   <properties>
+    <property name="description" value="A heart-shaped island. Upon interacting with the red tree, the trees flash a rainbow color and fly upwards."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" x="1619.74" y="3631.76">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.146239,447.501 -659.601,447.643"/>
+  </object>
+  <object id="46" x="1199.8" y="3695.38">
+   <properties>
+    <property name="color" type="color" value="#ffe6ad42"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.151934,382.49 -912.09,382.309"/>
+  </object>
+  <object id="47" x="1424.18" y="3761.07">
+   <properties>
+    <property name="color" type="color" value="#ff5023d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.166492,326.938 -849.449,327.128"/>
+  </object>
+  <object id="48" x="45.9485" y="3889.58">
+   <properties>
+    <property name="color" type="color" value="#ff78a347"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0601429,-352.05 865.728,-352.272"/>
+  </object>
+  <object id="49" x="2262.19" y="3153.48">
+   <properties>
+    <property name="color" type="color" value="#ff0078fc"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.521443,934.61 1003.93,935.386"/>
+  </object>
+  <object id="50" x="2543.48" y="3537.21">
+   <properties>
+    <property name="color" type="color" value="#ff3d791e"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.113982,544.04 1492.34,544.326"/>
+  </object>
+  <object id="54" name="Atlantis Stadium" x="1344.8" y="2177.24">
+   <properties>
+    <property name="description" value="Entering this pyramid transports the [[party]] to the Rock Video set."/>
+    <property name="page" value="Rock Video"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Ice Region" x="959.124" y="394.213">
+   <properties>
+    <property name="description" value="A leftover from the [[Original Game]]. Can only be accessed if [[Tenna]] is away from the game room. Upon entering this area, [[Susie]] and [[Ralsei]] provide commentary on the area."/>
+    <property name="page" value="Island Board#North"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" x="1630.18" y="3148.8">
+   <properties>
+    <property name="color" type="color" value="#ffce6951"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.00705318,-566.491 1631.9,-567.017 1631.94,-1138.2"/>
+  </object>
+  <object id="58" x="1631.09" y="3148.12">
+   <properties>
+    <property name="color" type="color" value="#ff83bc19"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="193.414,-1.22414 193.289,-533.764 725.168,-534.749 725.654,-1161.64"/>
+  </object>
+  <object id="61" x="2256.2" y="2960.01">
+   <properties>
+    <property name="color" type="color" value="#ffd37a01"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.1536,-1632.99 -292.202,-1632.89"/>
+  </object>
+  <object id="62" x="2386.22" y="3027.46">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.379355,-1632.44 -38.6954,-1632.58"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="30" name="Tenna's phone call" x="2415.45" y="3537.88">
+   <properties>
+    <property name="description" value="As the [[party]] enters this area, [[Tenna]] receives a phone call and leaves the game room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Switching controllers" x="3023.92" y="3425.34">
+   <properties>
+    <property name="description" value="After the enemy encounter, [[Susie]] switches her and [[Ralsei]]'s controller ports, causing Susie to take control of [[HERO_SCARF]] and Ralsei to take control of [[HERO_SWORD]]. Ralsei asks Kris if they want to return to normal or leave the arrangement as is for now."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Bomb button" x="2639.8" y="1485.67">
+   <properties>
+    <property name="description" value="Upon pressing this button, many bombs are revealed. If the controllers are switched, [[Susie]] changes them back to normal. Susie automatically triggers the bombs, opening the exits to the south and west."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Tenna returns" x="2223.27" y="1427.62">
+   <properties>
+    <property name="description" value="Upon entering this room from the east, [[Tenna]] returns to the game room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Unused leftover" x="958.844" y="609.07">
+   <properties>
+    <property name="description" value="[[Tenna]] repeatedly attempts to direct the [[party]] away from this area. Upon reaching the area, he abruptly transports the party back to the entrance to the [[Shuttah]] cave and blocks the way back up."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Rainbow Bridge" x="1727.2" y="2514.49">
+   <properties>
+    <property name="description" value="Upon entering this area with [[Elnina (The Legend of Tenna)|Elnina]]/[[Lanino (The Legend of Tenna)|Lanino]], it is revealed that [[Rouxls Kaard]] has paired up with [[Lanino]]/[[Elnina]] in the other's absence. The three agree to form a &quot;throuple&quot; and construct the rainbow bridge to the Atlantis Stadium."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="hazards">
+  <object id="10" name="Shadowguy" x="1648.33" y="3467.76">
+   <properties>
+    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs. After five pictures are taken, the Shadowguy is replaced with a bunny-eared Shadowguy that awards 25 POINTs if a picture is taken of it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Shadowguy" x="1648.72" y="2987.75">
+   <properties>
+    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="vendors">
+  <object id="14" name="Pippins" x="958.707" y="3877.75">
+   <properties>
+    <property name="description" value="Sells [[items]] in their shop. Taking a picture of them rewards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Key" x="879.854" y="3980">
+   <properties>
+    <property name="description" value="An item available in the [[Pippins]]'s shop for 250 [[POINT]]s. Since keys have no function on the Island Board, it is immediately discarded on purchase, after which the Pippins flees."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="TV Dinner" x="1039.64" y="3980">
+   <properties>
+    <property name="description" value="An [[item]] available in the [[Pippins]]'s shop for 400 [[POINT]]s. If the [[Key (The Legend of Tenna)|Key]] is bought, this item is available for free."/>
+    <property name="page" value="TV Dinner"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Rouxls Kaard" x="575.589" y="3859.06">
+   <properties>
+    <property name="description" value="Sells the [[Rouxls Block]] in his shop. Taking a picture of him deducts 1 [[POINT]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Rouxls Block" x="495.509" y="3980">
+   <properties>
+    <property name="description" value="An [[item]] available in [[Rouxls Kaard]]'s shop for 1 [[POINT]]."/>
+    <property name="page" value="Rouxls Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Binoculars" x="1391.91" y="2901.91">
+   <properties>
+    <property name="description" value="Offers a view of the Atlantis Stadium for 10 [[POINT]]s. After taking a look, [[Susie]] throws the binoculars into the water."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Pippins" x="2111.09" y="3621.88">
+   <properties>
+    <property name="description" value="Sells [[Lancer]] in their shop. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Pippins" x="3262.81" y="3877.34">
+   <properties>
+    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] in their shop."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Pippins" x="4030.81" y="3879.08">
+   <properties>
+    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] and the [[Pizza Deodorant (For Nerds)]] in their shop."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="20" name="Lawnmower Minigame" x="186.638" y="3191.78">
+   <properties>
+    <property name="description" value="A minigame involving pushing a lawnmower over grass tiles to gain [[POINT]]s."/>
+    <property name="page" value="Island Board#Lawnmower Minigame"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Bridge Puzzle 1" x="1968.35" y="3517.79">
+   <properties>
+    <property name="description" value="A puzzle that [[Susie]] solves automatically."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Camera indicator" x="1999.9" y="3247.42">
+   <properties>
+    <property name="description" value="A [[camera]] roadblock that can be removed by taking a picture of it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Bridge Puzzle 2" x="2352.05" y="3281.64">
+   <properties>
+    <property name="description" value="A puzzle involving constructing a bridge across the lake. Upon entering this room, [[Susie]] switches out her and [[Kris]]'s controller ports, allowing Kris to solve the puzzle using [[HERO_AXE]]."/>
+    <property name="page" value="Island Board#Water Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Bridge Puzzle 3" x="2512.49" y="2927.95">
+   <properties>
+    <property name="description" value="A puzzle that [[Susie]] solves automatically if she is controlling [[HERO_AXE]]."/>
+    <property name="page" value="Island Board#Water Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="npcs">
+  <object id="1" name="Tenna" x="1583.59" y="3247.15">
+   <properties>
+    <property name="description" value="Directs the [[party]] to [[Island Board#Kodakoda Shrine|Kodakoda Shrine]]. Taking a picture of him using the [[camera]] awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Pippins" x="2926.49" y="1862">
+   <properties>
+    <property name="description" value="Provides a hint on the [[Grand Photo]] that can be obtained from the cactus on the western part of the island. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Pippins" x="2830.48" y="1862">
+   <properties>
+    <property name="description" value="Provides a hint on the [[Grand Photo]] that can be obtained by having [[Lancer]] dig up the green geyser. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Pippins" x="2735" y="1862">
+   <properties>
+    <property name="description" value="Provides a hint on the [[Grand Photo]] that can be obtained from the torn flower on the eastern part of the island. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Pippins" x="2735" y="1925.86">
+   <properties>
+    <property name="description" value="Provides a hint on the [[Grand Photo]] that can be obtained from the red antlion in one of the caves. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Pippins" x="2479.96" y="3956.69">
+   <properties>
+    <property name="description" value="A pair of [[Pippins]]. They offer the [[party]] to play a money-making game, to [[Tenna]]'s objection. They flee shortly afterward."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Antlions" x="2479.96" y="1701.86">
+   <properties>
+    <property name="description" value="A total of four blue antlions. Taking a picture of them rewards 10 [[POINT]]s each."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Elnina" x="1709.31" y="2430">
+   <properties>
+    <property name="description" value="If [[Elnina]] was favored during her battle, she appears here, searching for her lost lover."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Lanino" x="1744.26" y="2430">
+   <properties>
+    <property name="description" value="If [[Lanino]] was favored during his battle, he appears here, searching for his lost lover."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="items">
+  <object id="3" name="Camera" x="3263.13" y="1646.1">
+   <properties>
+    <property name="description" value="A camera on a [[Shuttah]] pedestal. Can be used to take photos throughout the board."/>
+    <property name="page" value="Camera"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Grand Photo" x="2511.3" y="1966.2">
+   <properties>
+    <property name="description" value="Upon bringing [[Lancer]] to this location, he can dig out the green geyser and unlock a pathway to the west. Lancer serves as one of the four Grand Photos."/>
+    <property name="page" value="Grand Photo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="POINTs" x="2117.78" y="1919.71">
+   <properties>
+    <property name="description" value="A total of 180 POINTs can be collected from this room."/>
+    <property name="page" value="POINT"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Grand Photo" x="1487.36" y="3433.24">
+   <properties>
+    <property name="description" value="Taking a picture of this cactus awards a Grand Photo."/>
+    <property name="page" value="Grand Photo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Lanino" x="1230.74" y="3448">
+   <properties>
+    <property name="description" value="If [[Elnina]] was favored in their battle, Lanino appears here and can be collected as an item to be taken to [[Island Board#Lover's Peak|Lover's Peak]]. Taking a picture of him awards 10 [[POINT]]s."/>
+    <property name="page" value="Lanino (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Elnina" x="1263.87" y="3448">
+   <properties>
+    <property name="description" value="If [[Lanino]] was favored in their battle, Elnina appears here and can be collected as an item to be taken to [[Island Board#Lover's Peak|Lover's Peak]]. Taking a picture of her awards 10 [[POINT]]s."/>
+    <property name="page" value="Elnina (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Lancer" x="2112.39" y="3735.91">
+   <properties>
+    <property name="description" value="Lancer is available as an [[item]] for 999 [[POINT]]s. By taking a picture of the rug, the price can be lowered to 9 POINTs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Ribbon" x="3950.91" y="3982">
+   <properties>
+    <property name="description" value="A cosmetic item that [[Kris]] can equip to [[HERO_AXE]], to [[Susie]]'s objection."/>
+    <property name="page" value="Ribbon (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Pizza Deodorant (For Nerds)" x="4112.15" y="3982">
+   <properties>
+    <property name="description" value="A cosmetic item that [[Kris]] can equip to [[HERO_AXE]], to [[Susie]]'s objection. If Kris idles for long enough, Susie, controlling [[HERO_SWORD]], can make [[Ralsei]] equip the item to [[HERO_SCARF]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Grand Photo" x="3214.75" y="3274.04">
+   <properties>
+    <property name="description" value="Taking a picture of the torn flower rewards a Grand Photo. [[Ralsei]] takes this photo automatically if he is controlling [[HERO_SWORD]]."/>
+    <property name="page" value="Grand Photo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Grand Photo" x="2479.64" y="1646.46">
+   <properties>
+    <property name="description" value="Taking a picture of the red antlion rewards a Grand Photo."/>
+    <property name="page" value="Grand Photo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Moss" x="2275.08" y="1435.59">
+   <properties>
+    <property name="description" value="Moss on the wall. [[Kris]] automatically consumes the moss."/>
+    <property name="page" value="Moss"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Ribbon" x="3263.16" y="3982.69">
+   <properties>
+    <property name="description" value="A cosmetic [[item]] that [[Kris]] can equip to [[HERO_SWORD]]."/>
+    <property name="page" value="Ribbon (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="enemies">
+  <object id="12" name="Pippins" x="1408.02" y="3193.62">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two [[Pippins]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Shuttah" x="191.92" y="3967.29">
+   <properties>
+    <property name="description" value="Attacks the party after obtaining [[Elnina (The Legend of Tenna)|Elnina]]/[[Lanino (The Legend of Tenna)|Lanino]]."/>
+    <property name="page" value="Shuttah"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Pippins" x="2927.9" y="3495.28">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of three [[Pippins]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

@@ -3,19 +3,19 @@
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
- <imagelayer id="2" name="Island Board (Sword Route) map">
-  <image source="images/Island Board (Sword Route).png" width="4224" height="4096"/>
+ <imagelayer id="2" name="Island Board (Original Game) map">
+  <image source="images/Island Board (Original Game).png" width="4224" height="4096"/>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="12" name="GO TO NORTHERN LIGHT" x="2495.18" y="3459.49">
    <properties>
-    <property name="description" value="Little Kris enters this room from any of the former cave entrances once they have killed all the enemies on the board. A message that displays upon entering this room directs Little Kris to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
+    <property name="description" value="[[HERO_SWORD]] enters this room from any of the former cave entrances once they have killed all the enemies on the board. A message that displays upon entering this room directs HERO_SWORD to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
    </properties>
    <point/>
   </object>
   <object id="13" name="THE KEY WAS FORGOTTEN" x="2496.07" y="3202.71">
    <properties>
-    <property name="description" value="Little Kris enters this room from any of the former cave entrances if they failed to retrieve the [[Ice Key]] on the [[Desert Board (Sword Route)|Desert Board]]. A message displays telling them that they have forgotten it."/>
+    <property name="description" value="[[HERO_SWORD]] enters this room from any of the former cave entrances if they failed to retrieve the [[Ice Key]] on the [[Desert Board (Original Game)|Desert Board]]. A message displays telling them that they have forgotten it."/>
    </properties>
    <point/>
   </object>
@@ -23,7 +23,7 @@
  <objectgroup id="7" name="npcs">
   <object id="15" name="Tenna" x="3403.54" y="2929.06">
    <properties>
-    <property name="description" value="Is seen in an unreachable part of the room. He desperately wonders if they are doing the right thing by basing his games on the [[Sword Route]] boards. He flees once Little Kris attempts to approach."/>
+    <property name="description" value="Is seen in an unreachable part of the room. He desperately wonders if he is doing the right thing by basing his games on the [[Sword Route]] boards. He flees once [[HERO_SWORD]] attempts to approach."/>
    </properties>
    <point/>
   </object>
@@ -31,61 +31,61 @@
  <objectgroup id="4" name="enemies">
   <object id="3" name="Purple Monster" x="1422.91" y="2953.88">
    <properties>
-    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming [[HERO_SWORD]] when touched."/>
    </properties>
    <point/>
   </object>
   <object id="2" name="Purple Monster" x="1423.03" y="3179.21">
    <properties>
-    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming [[HERO_SWORD]] when touched."/>
    </properties>
    <point/>
   </object>
   <object id="1" name="Purple Monster" x="1358.42" y="3211.52">
    <properties>
-    <property name="description" value="A Purple Monster. Walks around in random directions, harming Little Kris when touched."/>
+    <property name="description" value="A Purple Monster. Walks around in random directions, harming [[HERO_SWORD]] when touched."/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Blue Fish" x="1727.51" y="3660.76">
    <properties>
-    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at [[HERO_SWORD]] when approached."/>
    </properties>
    <point/>
   </object>
   <object id="5" name="Blue Fish" x="1727.03" y="3469.12">
    <properties>
-    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at [[HERO_SWORD]] when approached."/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Blue Fish" x="2095.62" y="3436.26">
    <properties>
-    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at [[HERO_SWORD]] when approached."/>
    </properties>
    <point/>
   </object>
   <object id="7" name="Blue Fish" x="2126.75" y="3211.51">
    <properties>
-    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at Little Kris when approached."/>
+    <property name="description" value="A Blue Fish monster. Swims in the water, but lunges at [[HERO_SWORD]] when approached."/>
    </properties>
    <point/>
   </object>
   <object id="8" name="Yellow Lizard" x="1648.65" y="2922.61">
    <properties>
-    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at [[HERO_SWORD]]. Occasionally jumps to a predetermined spot in the area."/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Yellow Lizard" x="1810.44" y="2953.11">
    <properties>
-    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at Little Kris. Occasionally jumps to a predetermined spot in the area."/>
+    <property name="description" value="A Yellow Lizard. Attacks by shooting projectiles at [[HERO_SWORD]]. Occasionally jumps to a predetermined spot in the area."/>
    </properties>
    <point/>
   </object>
   <object id="10" name="Flower" x="2256.07" y="3276.83">
    <properties>
-    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at Little Kris."/>
+    <property name="description" value="A stationary Flower. Attacks by shooting flashing projectiles at [[HERO_SWORD]]."/>
    </properties>
    <point/>
   </object>
@@ -93,8 +93,8 @@
  <objectgroup id="5" name="items">
   <object id="11" name="Sword" x="2879.11" y="3419.73">
    <properties>
-    <property name="description" value="A sword in what used to be the [[camera]] room. Allows Little Kris to kill the enemies on the board."/>
-    <property name="page" value="Sword (Sword Route)"/>
+    <property name="description" value="A sword in what used to be the [[camera]] room. Allows [[HERO_SWORD]] to kill the enemies on the board."/>
+    <property name="page" value="Sword (Original Game)"/>
    </properties>
    <point/>
   </object>
@@ -103,13 +103,13 @@
   <object id="14" name="Tropic of Love" x="3264.67" y="3965.98">
    <properties>
     <property name="description" value="A heart-shaped island. Contains an entrance to a secret room containing [[Tenna]]."/>
-    <property name="page" value="Island Board (Sword Route)#Tropic of Love"/>
+    <property name="page" value="Island Board (Original Game)#Tropic of Love"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Ice Palace" x="1343.87" y="104.599">
    <properties>
-    <property name="description" value="A dungeon on the Island Board. Requires the [[Ice Key]] to enter, which is retrieved on the [[Desert Board (Sword Route)|Desert Board]]."/>
+    <property name="description" value="A dungeon on the Island Board. Requires the [[Ice Key]] to enter, which is retrieved on the [[Desert Board (Original Game)|Desert Board]]."/>
     <property name="page" value="Ice Palace"/>
    </properties>
    <point/>
