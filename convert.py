@@ -41,6 +41,8 @@ from datamaps.settings import Settings
 
 T = TypeVar('T')
 
+# We have some huge maps
+Image.MAX_IMAGE_PIXELS = None
 
 def get_property(
     properties: Optional[tiled.Properties],
