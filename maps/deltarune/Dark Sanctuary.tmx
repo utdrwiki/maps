@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1000" height="600" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Dark Sanctuary map">
+  <image source="images/Dark Sanctuary.png" width="20000" height="12000"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="vendors"/>
+ <objectgroup id="5" name="puzzles"/>
+ <objectgroup id="6" name="saves"/>
+ <objectgroup id="7" name="hazards"/>
+ <objectgroup id="8" name="npcs"/>
+ <objectgroup id="9" name="signs"/>
+ <objectgroup id="10" name="items"/>
+ <objectgroup id="11" name="enemies"/>
+</map>
