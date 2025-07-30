@@ -11,3 +11,5 @@ tiled.extendMenu('File', [
         action: 'PublishToWiki'
     }
 ]);
+
+export default {};
