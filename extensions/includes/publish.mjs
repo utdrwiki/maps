@@ -9,20 +9,28 @@ import { getStringProperty } from "./util.mjs";
  */
 function openUrl(url) {
     const process = new Process();
+    let successful = false;
     switch (tiled.platform) {
         case 'windows':
-            process.start('start', ['', url]);
+            successful = process.start('cmd.exe', ['/c', 'start', '', url]);
             break;
         case 'macos':
-            process.start('open', [url]);
+            successful = process.start('open', [url]);
             break;
         case 'linux':
-            process.start('xdg-open', [url]);
+            successful = process.start('xdg-open', [url]);
             break;
         default:
-            tiled.log('Unsupported platform for opening URLs! Please visit:');
-            tiled.log(url);
+            successful = false;
             return;
+    }
+    if (!successful) {
+        tiled.alert(`Failed to open URL in browser. Please copy and paste this URL directly into your browser:
+
+${url}.
+
+If that does not work for you, you can also copy the URL from the console instead.`);
+        tiled.log(url);
     }
 }
 
