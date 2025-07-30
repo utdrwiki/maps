@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="483" height="269" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="116">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="2nd Sanctuary map">
+  <image source="images/2nd Sanctuary.png" width="19320" height="10756"/>
+ </imagelayer>
+ <objectgroup id="3" name="sublocations">
+  <object id="2" x="5770.67" y="7690.67">
+   <properties>
+    <property name="color" type="color" value="#ff4f318a"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.125,1040 705.333,1040"/>
+  </object>
+  <object id="3" x="7916" y="8497.33">
+   <properties>
+    <property name="color" type="color" value="#ff4f318a"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 720.203,0.200758 720.364,-724.606"/>
+  </object>
+  <object id="30" x="15338.7" y="5154.67">
+   <properties>
+    <property name="color" type="color" value="#ff6d473e"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0289855,-138.957 -607.942,-138.928 -608,-284"/>
+  </object>
+  <object id="43" x="16797.3" y="1736">
+   <properties>
+    <property name="color" type="color" value="#ffa48eff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.181818,-820.788 -7451.88,-820.848"/>
+  </object>
+  <object id="53" name="Therapy Room" x="18254" y="1706">
+   <properties>
+    <property name="description" value="A room hidden in between the egg window entryway and the &quot;ROOTS&quot; room. This room is where [[Kris]] receives an [[Egg]]."/>
+    <property name="page" value="2nd Sanctuary#Therapy Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" x="9320" y="1440">
+   <properties>
+    <property name="color" type="color" value="#ff624574"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.375,740.375 1520,744 1519.5,4567.5 936,4568"/>
+  </object>
+  <object id="100" name="Study" x="6518" y="2413">
+   <properties>
+    <property name="description" value="A messy room that used to be [[Gerson Boom]]'s Study in the original [[Dark Sanctuary]]."/>
+    <property name="page" value="Study"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" x="87.8788" y="1272.73">
+   <properties>
+    <property name="color" type="color" value="#ff2f1d40"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.162879,9207.19 661.455,9207.27"/>
+  </object>
+  <object id="115" x="17638.7" y="511.333">
+   <properties>
+    <property name="color" type="color" value="#ff232d60"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.003125,-65.0988 87.791,-65.0583"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="vendors">
+  <object id="101" name="Rhapsotea" x="6522" y="2622">
+   <properties>
+    <property name="description" value="[[Kris]] and [[Susie]] can obtain [[Rhapsotea]]s from the teacup and leave 100 [[Dark Dollar]]s in exchange."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="plot">
+  <object id="15" name="Susie's Dark World" x="5480" y="7692">
+   <properties>
+    <property name="description" value="[[Susie]] remarks on the different atmosphere of her Dark World compared to the original [[Dark Sanctuary]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="The Three Heroes" x="9024" y="7778.67">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy window depicting the three heroes and expresses disbelief that she is a part of the prophecy."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="The Prince" x="12461" y="8496">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy window depicting the third hero and concludes that it is depicting [[Ralsei]]. She suggests that there are separate prophecies for her, Ralsei, and [[Kris]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="The Cage" x="13333.3" y="5846">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy window depicting the first hero and concludes that it is depicting [[Kris]]. She then suggests alternate depictions of Kris that better represent their character."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="And last, at last" x="14238" y="5024">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy window and concludes that her prophecy is next to be listed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="The Girl" x="15732" y="4863.33">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy window depicting the second hero and concludes that it is depicting her. She then wonders if there are any other prophecies depicting the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="The Rotating Tower" x="16140" y="4629.5">
+   <properties>
+    <property name="description" value="While climbing the tower, [[Susie]] explains what being depicted in the prophecy means to her. She explains that, because of her adventures with the rest of the [[party]], she now has &quot;hope crossed on her heart.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Love finds its way" x="15715.3" y="1866">
+   <properties>
+    <property name="description" value="[[Susie]] notices another prophecy window depicting the second hero and runs off, looking for more."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Egg window" x="17638.8" y="544">
+   <properties>
+    <property name="description" value="A hidden entryway among a group of windows. Repeatedly walking between this entryway transports [[Kris]] to the [[2nd Sanctuary#Therapy Room|Therapy Room]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="First Sound of Justice encounter" x="9678" y="1370">
+   <properties>
+    <property name="description" value="The [[Sound of Justice]] appears and destroys the prophecy windows before [[Susie]] can finish reading. Susie and [[Kris]] chase after the Sound of Justice and fall through a cracked floor."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="The Dark Climb" x="10262" y="5823">
+   <properties>
+    <property name="description" value="The floor suddenly collapses, and a horde of dark eyeballs appears. [[Kris]] and [[Susie]] begin climbing up the wall to avoid the dark eyeball horde."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Kris falls" x="9640.67" y="2729.33">
+   <properties>
+    <property name="description" value="As [[Kris]] attempts to climb to the top, the footholds crumble away, causing them to fall and be saved by [[Susie]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Susie and the Old Man" x="6520" y="1958">
+   <properties>
+    <property name="description" value="[[Susie]] asks [[Kris]] if the [[Gerson Boom|Old Man]] would want to come to their [[Castle Town]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="Second Sound of Justice encounter" x="5000" y="1410">
+   <properties>
+    <property name="description" value="[[Susie]] notices the [[Sound of Justice]] walking away and urges [[Kris]] to go after it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Ralsei comes to the rescue" x="1102" y="10474">
+   <properties>
+    <property name="description" value="[[Ralsei]] appears and destroys the [[Sound of Justice]]. He explains that Darkners formed from the dust of deceased monsters can only exist in specific Dark Worlds. He then goes on to explain that he knows everything about the prophecy, including how it ends. [[Susie]] reassures Ralsei that they are still a team."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Staircase conversation 1" x="2768" y="10092">
+   <properties>
+    <property name="description" value="[[Susie]] asks [[Ralsei]] if he knows any codes to any doors, which he denies."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="Staircase conversation 2" x="4064" y="9328">
+   <properties>
+    <property name="description" value="[[Susie]] asks [[Ralsei]] about [[Noelle]]. Ralsei says that he knows what items she can equip, but he also says that Susie is supposed to equip ribbons."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Obtaining the code" x="4720" y="8966">
+   <properties>
+    <property name="description" value="The [[Fire Extinguisher]] explains that they know the code to the door, which is &quot;2202.&quot; [[Kris]] and [[Susie]] then head back to the [[Dark Fountain]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" x="11072" y="8000">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="22" name="Rhapsotea" x="12740" y="5149.25">
+   <properties>
+    <property name="description" value="Treasure chest containing a Rhapsotea."/>
+    <property name="page" value="Rhapsotea"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Donation item" x="14880" y="5603.75">
+   <properties>
+    <property name="description">Treasure chest containing an item that varies depending on how much money was donated to the fountain in the original [[Dark Sanctuary]]
+* No donation: Nothing
+* 1-99 D$: [[Darker Candy]]
+* 100-499 D$: [[Scarlixir]]
+* 500-1999 D$: [[Revive Mint]]
+* 2000-9998 D$: [[Bitter Tear]]
+* 9999+ D$: [[Gold Widow]]</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Moss" x="18505.3" y="790">
+   <properties>
+    <property name="description" value="Sacred moss, which [[Kris]] is given the option to consume. If they have previously consumed the moss in the previous [[chapter]]s, they are given the &quot;Moss Most&quot; title."/>
+    <property name="page" value="Moss"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Egg canvas" x="18158" y="1400">
+   <properties>
+    <property name="description" value="Appears after interacting with the [[Man]]. Interacting with the canvas triggers a scene in which [[Kriss]] attempts and fails to draw the Man and receives the Egg."/>
+    <property name="page" value="Egg"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Dark Dollars" x="11818.3" y="1728.33">
+   <properties>
+    <property name="description" value="Treasure chest containing 500 Dark Dollars."/>
+    <property name="page" value="Dark Dollar"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Power Band" x="11767" y="6484">
+   <properties>
+    <property name="description" value="If the [[Mystic Band]] was not collected from this treasure chest in the original [[Dark Sanctuary]], the chest can be opened here to reveal a Power Band."/>
+    <property name="page" value="Power Band"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="4" name="Prophecy window" x="9022.67" y="7628">
+   <properties>
+    <property name="description">BUT LO, ON HOPES AND DREAMS THEY SEND.
+THREE HEROES AT THE WORLD'S END.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Prophecy window" x="9857" y="7934">
+   <properties>
+    <property name="description">THE LIGHT AND DARK, BOTH BURNING DIRE.
+A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Prophecy window" x="11453.3" y="8549.33">
+   <properties>
+    <property name="description">IF FOUNTAINS FREED, THE ROARING CRIES.
+AND TITANS SHAPE FROM DARKENED EYES.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Pophecy window" x="12464.7" y="8288">
+   <properties>
+    <property name="description">THE THIRD HERO.
+THE PRINCE, ALONE IN DEEPEST DARK</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Prophecy window" x="13980" y="7258">
+   <properties>
+    <property name="description">THE LORD OF SCREENS
+CLEAVED RED BY BLADE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Prophecy window" x="13330.7" y="5695.33">
+   <properties>
+    <property name="description">THE FIRST HERO.
+THE CAGE, WITH HUMAN SOUL AND PARTS!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Prophecy window" x="14245.5" y="4853">
+   <properties>
+    <property name="description">AND LAST, WAS THE GIRL.
+AT LAST, WAS THE GIRL.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Sign" x="15159.5" y="5396.25">
+   <properties>
+    <property name="description" value=".ecnarbmemer ruoy wohs lliw noitanod taerg a ,edis rehto eht ot ssap uoy nehW"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Prophecy window" x="15723.3" y="4690">
+   <properties>
+    <property name="description">THE SECOND HERO.
+THE GIRL, WITH HOPE CROSSED ON HER HEART.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Prophecy window" x="15701.3" y="1688.67">
+   <properties>
+    <property name="description" value="''LOVE FINDS ITS WAY TO THE GIRL.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Prophecy window" x="18378" y="114">
+   <properties>
+    <property name="description" value="''ROOTS''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Peculiar book" x="17553.5" y="175.5">
+   <properties>
+    <property name="description">And so wept the fallen star, making rivers with its tears.
+Then, slowly, from the bitter water, something grew.
+It looked like glass.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Prophecy window" x="14963" y="1650">
+   <properties>
+    <property name="description" value="''THE GIRL''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Prophecy window" x="14405" y="1580">
+   <properties>
+    <property name="description" value="''THE GIRL''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Sign" x="12879.5" y="1771">
+   <properties>
+    <property name="description" value="''The Gallery of Ancient Faces''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Prophecy window" x="12040" y="1456">
+   <properties>
+    <property name="description" value="''GALLERY''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Prophecy windows" x="10479" y="1270.5">
+   <properties>
+    <property name="description">THE LAST PROPHECY.
+THE STORY'S END.
+
+TO SAVE THE WORLDS,
+THERE IS ONLY ONE WAY.</property>
+    <property name="multiline" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="hazards">
+  <object id="36" name="Bullet" x="15460.8" y="2809">
+   <properties>
+    <property name="description" value="Bullet that damages [[Kris]] if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Bullet" x="15381" y="2809">
+   <properties>
+    <property name="description" value="Bullet that damages [[Kris]] if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Bullet" x="15460.5" y="2409">
+   <properties>
+    <property name="description" value="Bullet that damages [[Kris]] if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Bullet" x="16141" y="2809">
+   <properties>
+    <property name="description" value="Bullet that damages [[Kris]] if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Bullet" x="16220.5" y="2809">
+   <properties>
+    <property name="description" value="Bullet that damages [[Kris]] if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Dark Eyeball" x="9980" y="5375">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Dark Eyeball" x="10060" y="5293.5">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Dark Eyeball" x="9821" y="5295.5">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Dark Eyeball" x="9778.5" y="5170">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Dark Eyeball" x="9861.5" y="5170">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Dark Eyeball spawner" x="9981" y="4860">
+   <properties>
+    <property name="description" value="Opening that continuously spawns Dark Eyeballs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Dark Eyeball spawner" x="10180.5" y="4860">
+   <properties>
+    <property name="description" value="Opening that continuously spawns Dark Eyeballs."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Dark Eyeball spawner" x="10100" y="4578">
+   <properties>
+    <property name="description" value="Opening that continuously spawns Dark Eyeballs from all directions."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="Dark Eyeball" x="9979.33" y="4733.33">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Dark Eyeball" x="10219" y="3945">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Dark Eyeball" x="10300" y="3895">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Dark Eyeball" x="9900" y="3533.33">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Dark Eyeball" x="9900" y="3410.67">
+   <properties>
+    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="puzzles">
+  <object id="13" name="Moving Piano Puzzle" x="13358.7" y="8226.67">
+   <properties>
+    <property name="description" value="A puzzle initially presented as another piano puzzle akin to those in the original [[Dark Sanctuary]]. However, upon playing a note, the piano itself starts moving with the directional inputs instead. The piano can be used to destroy the bookshelves and reveal the way forward."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="enemies">
+  <object id="6" name="Winglade" x="10657.9" y="8179">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two Winglades."/>
+    <property name="page" value="Winglade"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Organikk" x="13516" y="5036">
+   <properties>
+    <property name="description" value="Enemy encounter consisting of two Organikks."/>
+    <property name="page" value="Organikk"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Wicabel" x="14111" y="1694">
+   <properties>
+    <property name="description" value="A Wicabel pops out of one of the bells and attacks [[Kris]]."/>
+    <property name="page" value="Wicabel"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Sign" x="11962" y="1807">
+   <properties>
+    <property name="description" value="A statue stand with [[Kris]]'s name on it. Triggers an enemy encounter against [[Organikk]] and [[Wicabel]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Organikk" x="7470" y="2458">
+   <properties>
+    <property name="description" value="Enemy encounter against an [[Organikk]] and [[Wicabel]]. Only appears after re-entering the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Final Sound of Justice encounter" x="2002.67" y="1264">
+   <properties>
+    <property name="description" value="Boss battle against the Sound of Justice."/>
+    <property name="page" value="Sound of Justice#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Organikk" x="11956" y="6402">
+   <properties>
+    <property name="description" value="Enemy encounter against two Organikks. If defeated non-violently, the Organikk becomes an NPC who explains that they were trying to protect their petrified ancestors."/>
+    <property name="page" value="Organikk"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="npcs">
+  <object id="9" name="Philosopher" x="13079.3" y="8406.75">
+   <properties>
+    <property name="description" value="Explains the state of [[Susie]]'s Dark World as another side of the Dark World she attempted to return to."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Philosopher" x="13115" y="7925.5">
+   <properties>
+    <property name="description" value="Claims to know and understand everything."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Philosopher" x="14059" y="7633">
+   <properties>
+    <property name="description" value="Claims to know and understand nothing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Philosopher" x="13958" y="5631.67">
+   <properties>
+    <property name="description" value="Expresses confusion as to the possibility of there being something inside an acorn and admits that they do not know what an acorn is."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Philosopher" x="13716.3" y="5804">
+   <properties>
+    <property name="description" value="Asks whose dream this is and lists [[Kris]], [[Susie]], the [[Knight]] or themselves as possible answers."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Philosopher" x="13594.7" y="5804">
+   <properties>
+    <property name="description" value="Asks whose dream this is."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Philosopher" x="13394" y="5036">
+   <properties>
+    <property name="description" value="Asks whose dream this is."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Organikk" x="15276" y="5550">
+   <properties>
+    <property name="description" value="Reacts to how much money was donated to the fountain in the original [[Dark Sanctuary]]. If no money was donated, the Organikk is hostile and attacks the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Philosopher" x="16687.5" y="4775.5">
+   <properties>
+    <property name="description" value="Asks [[Kris]] if they have heard of &quot;Hyperlink Blocked,&quot; to which Kris can respond with &quot;Yes&quot; or &quot;No.'"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Philosopher" x="10999.3" y="670">
+   <properties>
+    <property name="description" value="Wonders what to call a man with one eye."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Philosopher" x="13522.3" y="670">
+   <properties>
+    <property name="description" value="Asks why the angel makes its cry."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Philosopher" x="14366" y="670">
+   <properties>
+    <property name="description" value="Asks who will call the girl who snows."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Philosopher" x="16037" y="670">
+   <properties>
+    <property name="description" value="Only exclaims &quot;I don't know.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Philosopher" x="18695" y="179">
+   <properties>
+    <property name="description" value="States that there is a room in between the entryway. They then recite a scambled message, reading &quot;Lost where the forest would grow, the children followed the pointed tail.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Flying Ace" x="18556" y="1657">
+   <properties>
+    <property name="description" value="A [[Rudinn]], implied to be one of the Seven [[Flying Aces]]. They explain that [[Kris]]'s appointment is ready."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Tree" x="17750" y="1400">
+   <properties>
+    <property name="description" value="A hidden tree, behind which the [[Man]] resides."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Forgotten Man" x="17750" y="1220">
+   <properties>
+    <property name="description" value="A Man behind the tree. He directs [[Kris]] to the canvas to the bottom-right."/>
+    <property name="page" value="Man"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Art Club member" x="18158" y="1220">
+   <properties>
+    <property name="description" value="A member of the Art Club. Asks [[Kris]] if they are there for Art Club as well."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Sink" x="18035" y="1101">
+   <properties>
+    <property name="description" value="A hidden sink. [[Kris]] can wash their hands after receiving the [[Egg]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Philosopher" x="12801" y="1718.5">
+   <properties>
+    <property name="description" value="Welcomes [[Kris]] to &quot;Club Apatheia,&quot; an archaeological exhibit."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Philosopher" x="12554.5" y="1819">
+   <properties>
+    <property name="description" value="Is seen admiring a petrified [[Wafer]], referring to them as their ancestor. They declare that they should be more like the Wafer."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Philosopher" x="12401.5" y="1346.5">
+   <properties>
+    <property name="description" value="Is seen admiring the petrified [[Balthizard]]. They speculate on what could have been under its shell."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Philosopher" x="12481.3" y="2176">
+   <properties>
+    <property name="description" value="Is seen admiring the [[Starwalker]] statue."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Starwalker" x="12561" y="2213">
+   <properties>
+    <property name="description" value="A petrified Starwalker stands here if he was found during [[Chapter 1]]."/>
+    <property name="page" value="Starwalker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Philosopher" x="12253.5" y="2181.5">
+   <properties>
+    <property name="description" value="Is seen admiring the [[Watercooler]] statue, calling it the peak of beauty."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Philosopher" x="12219.5" y="1836.5">
+   <properties>
+    <property name="description" value="Is seen admiring the stack of petrified [[Cuptains]]. They declare that lessons could be learned from their formation."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Philosopher" x="12112" y="1745.5">
+   <properties>
+    <property name="description" value="Is waiting to turn into a statue."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Philosopher" x="11826" y="2170">
+   <properties>
+    <property name="description" value="Is seen admiring the petrified [[Organikk]], which they call an overachiever."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Philosopher" x="11513" y="1838">
+   <properties>
+    <property name="description" value="Is seen admiring the petrified [[Bibliox]]. They state that the Bibliox's writing system was better than their own."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Philosopher" x="11761.5" y="1378.5">
+   <properties>
+    <property name="description" value="Is seen expressing relief at the [[Guei]]'s petrified state."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Fire Extinguisher" x="3441.33" y="9612">
+   <properties>
+    <property name="description" value="Claims to know something important, but [[Susie]] does not want to hear it."/>
+    <property name="page" value="Fire Extinguisher"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="saves">
+  <object id="1" name="2nd Sanctuary - Atrium" x="5479.45" y="7770.55">
+   <properties>
+    <property name="description" value="''The lighting has changed.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="2nd Sanctuary - Floor" x="15039.5" y="4954.5">
+   <properties>
+    <property name="description">The lighting has changed.
+But the power that fills you, has not.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="2nd Sanctuary - Study" x="10259" y="6177.67">
+   <properties>
+    <property name="description" value="SAVE Point below the [[Study]]"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
