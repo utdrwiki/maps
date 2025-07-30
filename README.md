@@ -1,34 +1,21 @@
 # tiled-datamaps
 
-Converts [Tiled](https://mapeditor.org/) maps into maps recognized by the
-[DataMaps](https://support.wiki.gg/wiki/DataMaps) MediaWiki extension, to the
-best of its ability. Currently still in WIP, but suitable for use on the
+[Tiled](https://mapeditor.org/) extension to allow converting Tiled maps into
+maps recognized by the [DataMaps](https://support.wiki.gg/wiki/DataMaps)
+MediaWiki extension, to the best of its ability. Currently in use on
+[Undertale Wiki](https://undertale.wiki/),
+[Deltarune Wiki](https://deltarune.wiki/), and the
 [Undertale Yellow Wiki](https://undertaleyellow.wiki.gg/).
 
 ## Setup
 ### Prerequisites
 
-- [Git](https://git-scm.com/)
-- [Git LFS](https://git-lfs.com/)
-- [Python](https://www.python.org/)
-- [Tiled](https://www.mapeditor.org/)
-
 On the wiki that you are editing, you need to have the
-[DataMaps](https://www.mediawiki.org/wiki/Extension:DataMaps) extension
-installed.
+[DataMaps](https://www.mediawiki.org/wiki/Extension:DataMaps) and
+[OAuth](https://www.mediawiki.org/wiki/Extension:OAuth) extensions installed.
 
-### Set up repository
-
-```bash
-git clone https://github.com/KockaAdmiralac/tiled-datamaps.git
-git lfs pull
-cd tiled-datamaps
-python -m venv .venv
-source .venv/bin/activate
-# Or the Windows equivalent:
-# .venv\Scripts\activate.bat
-pip install -r requirements.txt
-```
+If cloning using Git, you need Git LFS installed in order to pull the map
+images.
 
 ## Usage
 ### Map editor
@@ -58,19 +45,34 @@ in Tiled:
 - Custom project properties are used to tell the script where to publish the
   maps:
     - `wiki` (string): Wiki URL
-        - For example, `undertaleyellow.wiki.gg`
+        - For example, `undertale.wiki`
     - `scriptPath` (string): Wiki's script path
+    - `languageWiki` (string): URL to language wikis, with $1 left as the
+      language code.
+        - For example, `$1.undertale.wiki`
+    - `oauthClientId` (string): OAuth client ID for the application used to
+      authenticate users to the wiki.
+        - To obtain this, visit `Special:OAuthConsumerRegistration/propose` on
+          the wiki you are editing, set the client to non-confidential, allow
+          the application to "edit existing pages" and "create, edit and move
+          pages", and as a callback URL you can use
+          `https://maps.undertale.wiki`, which displays the page you can find
+          under `auth/index.html` in this repository.
 - Custom map properties are used for map-wide configuration:
     - `disclaimer` (string): Disclaimer displayed below the legend in DataMaps
     - `include` (string): Newline-separated list of strings that describe which
       pages should be included as fragments
         - This is intended for including map fragments that define the groups
           and categories used in the map
+    - `popzoom` (float): Default map zoom level used when the map is embedded
+      in a page and set to open a specific marker.
 - Custom point properties are used for marker information:
     - `description` (string): Description of the marker
     - `page` (string): Where should the "Read more" link lead
     - `plain` (boolean): Whether the description should *not* be interpreted as
       wikitext
+    - `multiline` (boolean): Wraps the description in a `<poem>`, to allow
+      newlines to directly map to newlines in the rendered wikitext.
 - Custom rectangle properties:
     - `fill` (color): Rectangle fill color
     - `border` (color): Rectangle border color
@@ -80,19 +82,12 @@ in Tiled:
 
 ### Conversion
 
-To convert all maps in the project and publish them to the wiki, you can run
-`convert.py`. It takes three optional arguments:
+To convert the map, use File > Publish to wiki or use the keybind Ctrl+Shift+U.
+It will prompt you to log in for the first time, and after every hour of using
+the editor. Follow the prompts to log in.
 
-- `--project`: Folder name of the project in the `maps` directory. If there is
-  only one directory, you don't need to specify this.
-- `--map`: Which map in the project do you want to publish. If you leave this
-  out, all maps in the project are published.
-- `--log_level`: `info`, `error`, `debug`, all the standard Python logging
-  levels.
+## License
 
-On the first run, the script will ask you for three pieces of information to log
-you in. You need to go to Special:BotPasswords on the wiki you want to edit,
-grant it the ability for high-volume editing as well as editing existent pages,
-and the page will tell you your username is `Username@BotPasswordName` and your
-token is `Token`. In the script, you will input these separately: first
-`Username`, then `BotPasswordName`, and finally `Token`.
+Licensed under the MIT license. The file under `extensions/wiki.svg` is borrowed
+from [Wikipedia](https://en.wikipedia.org/wiki/File:Wiki_letter_w.svg) and
+licensed under GFDL and CC-BY-SA 3.0.

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Tiled DataMaps authentication</title>
+    <style>
+        body {
+            text-align: center;
+            width: 100%;
+        }
+        #code {
+            word-break: break-all
+        }
+        #copy {
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1>Your Code Is</h1>
+    <div id="code">Not available! Did you arrive here by accident?</div>
+    <button id="copy">Copy code</button>
+    <div>After copying, go back to the map editor and paste the code into the popup.</div>
+    <script>
+        const queryParams = new URLSearchParams(window.location.search);
+        const code = queryParams.get('code');
+        if (code) {
+            document.getElementById('code').textContent = code;
+        }
+        const copyButton = document.getElementById('copy');
+        copyButton.addEventListener('click', () => {
+            navigator.clipboard.writeText(code).then(() => {
+                copyButton.textContent = 'Copied!';
+            }).catch(err => {
+                copyButton.textContent = 'Failed to copy! Is your browser ancient?';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+    "include": [
+        "*.mjs",
+		"**/*.mjs",
+        "types/*.d.ts",
+		"node_modules/@mapeditor/tiled-api/*.d.ts"
+	],
+	"compilerOptions": {
+		"module": "CommonJS",
+		"moduleResolution": "Node",
+		"target": "ES2016",
+		"lib": [
+            "ES2016",
+			"DOM"
+        ],
+		"baseUrl": "extensions",
+		"typeRoots": [
+			"./types",
+			"./node_modules/@mapeditor/tiled-api"
+		],
+		"allowJs": true,
+		"checkJs": true,
+		"noEmit": true,
+		"strict": true,
+		"esModuleInterop": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitReturns": true,
+		"newLine": "lf",
+		"forceConsistentCasingInFileNames": true,
+		"pretty": true
+	}
+}

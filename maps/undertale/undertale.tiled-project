@@ -1,27 +1,6 @@
 {
     "automappingRulesFile": "",
-    "commands": [
-        {
-            "arguments": "convert.py --mappath %mapfile",
-            "command": ".venv/bin/python",
-            "enabled": true,
-            "name": "Publish current map",
-            "saveBeforeExecute": true,
-            "shortcut": "Ctrl+Shift+P",
-            "showOutput": true,
-            "workingDirectory": "%projectpath/../.."
-        },
-        {
-            "arguments": "convert.py --mappath %mapfile --language zh",
-            "command": ".venv/bin/python",
-            "enabled": true,
-            "name": "Publish current map (Chinese)",
-            "saveBeforeExecute": true,
-            "shortcut": "Ctrl+Shift+Z",
-            "showOutput": true,
-            "workingDirectory": "%projectpath/../.."
-        }
-    ],
+    "commands": [],
     "compatibilityVersion": 1100,
     "extensionsPath": "extensions",
     "folders": [
@@ -45,6 +24,18 @@
             "propertytype": "",
             "type": "string",
             "value": "undertale.wiki"
+        },
+        {
+            "name": "oauthClientId",
+            "propertytype": "",
+            "type": "string",
+            "value": "68e40ad6df0d30b5b60b097d83f2d3af"
+        },
+        {
+            "name": "languages",
+            "propertytype": "",
+            "type": "string",
+            "value": "en,zh"
         }
     ],
     "propertyTypes": [

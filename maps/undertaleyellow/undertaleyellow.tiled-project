@@ -1,17 +1,6 @@
 {
     "automappingRulesFile": "",
-    "commands": [
-        {
-            "arguments": "convert.py --mappath %mapfile",
-            "command": ".venv/bin/python",
-            "enabled": true,
-            "name": "Publish current map",
-            "saveBeforeExecute": true,
-            "shortcut": "Ctrl+Shift+P",
-            "showOutput": true,
-            "workingDirectory": "%projectpath/../.."
-        }
-    ],
+    "commands": [],
     "compatibilityVersion": 1100,
     "extensionsPath": "extensions",
     "folders": [
@@ -35,6 +24,12 @@
             "propertytype": "",
             "type": "string",
             "value": "undertaleyellow.wiki.gg/$1"
+        },
+        {
+            "name": "oauthClientId",
+            "propertytype": "",
+            "type": "string",
+            "value": "820f1dd04301efe4f4458a389549bd05"
         }
     ],
     "propertyTypes": [

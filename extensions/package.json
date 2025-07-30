@@ -1,0 +1,25 @@
+{
+    "name": "tiled-datamaps",
+    "version": "1.0.0",
+    "description": "Converts Tiled maps into DataMaps format for use in MediaWiki wikis.",
+    "keywords": [
+        "tiled",
+        "mediawiki",
+        "datamaps"
+    ],
+    "license": "MIT",
+    "author": {
+        "name": "KockaAdmiralac",
+        "email": "git@kocka.tech",
+        "url": "https://kocka.tech"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/utdrwiki.maps",
+        "directory": "extensions"
+    },
+    "dependencies": {
+        "@mapeditor/tiled-api": "1.11.0"
+    },
+    "private": true
+}
