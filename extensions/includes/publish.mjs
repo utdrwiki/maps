@@ -12,7 +12,12 @@ function openUrl(url) {
     let successful = false;
     switch (tiled.platform) {
         case 'windows':
-            successful = process.start('cmd.exe', ['/c', 'start', '', url]);
+            successful = process.start('cmd.exe', [
+                '/c',
+                'start',
+                '',
+                url.replace(/&/g, '^&')
+            ]);
             break;
         case 'macos':
             successful = process.start('open', [url]);
