@@ -40,27 +40,26 @@ If that does not work for you, you can also copy the URL from the console instea
 }
 
 /**
- * Displays a dialog for picking a language.
- * @returns {Promise<string|undefined>} Selected language code
+ * Displays a dialog for picking the language of the wiki to publish to, and the
+ * edit summary to use.
+ * @returns {Promise<[string, string]>} Selected language code
  */
-function pickLanguage() {
+function getEditInfo() {
     const languagesStr = getStringProperty(tiled.project, 'languages') || 'en';
     const languages = languagesStr.split(',').map(lang => lang.trim());
-    if (languages.length < 2) {
-        return new Promise(resolve => resolve(languages[0]));
-    }
     const dialog = new Dialog('Select wiki language');
-    dialog.addLabel('Please select the language of the wiki you want to publish to:');
+    dialog.minimumWidth = 600;
+    const languageSelect = dialog.addComboBox('Wiki language:', languages);
     dialog.addNewRow();
-    const languageSelect = dialog.addComboBox('language', languages);
+    const summary = dialog.addTextInput('Edit summary:', 'Published with Tiled DataMaps extension');
     dialog.addNewRow();
-    return new Promise(resolve => {
+    return new Promise((resolve, reject) => {
         dialog.addButton('OK').clicked.connect(() => {
-            resolve(languages[languageSelect.currentIndex]);
+            resolve([languages[languageSelect.currentIndex], summary.text]);
             dialog.done(Dialog.Accepted);
         });
         dialog.addButton('Cancel').clicked.connect(() => {
-            resolve(undefined);
+            reject(true);
             dialog.done(Dialog.Rejected);
         });
         dialog.show();
@@ -70,23 +69,23 @@ function pickLanguage() {
 /**
  * Interactively retrieves the user's access token.
  * @param {string} language Wiki language
- * @returns {Promise<[string, string]>|undefined} Access token if login is successful
+ * @returns {Promise<string>} Access token if login is successful
  */
 function performLogin(language) {
     const codeChallenge = generateCodeChallenge();
     openUrl(generateOAuthUrl(codeChallenge, language));
     const code = tiled.prompt('Follow the authorization flow on the web page that just opened, then paste the code you received here:');
     if (!code) {
-        return;
+        return Promise.reject(true);
     }
     try {
         return getAccessToken(code, codeChallenge, language).then(token => {
             storeToken(token);
-            return [language, token];
+            return token;
         });
     } catch (error) {
         tiled.alert('Failed to retrieve access token! Have you copied the code correctly?');
-        return;
+        return Promise.reject(true);
     }
 }
 
@@ -94,7 +93,7 @@ function performLogin(language) {
  * Gets the user's access token from storage, or performs login if not available
  * or invalid.
  * @param {string} language Wiki language
- * @returns {Promise<[string, string]|undefined>} Access token for the user
+ * @returns {Promise<string>} Access token for the user
  */
 function getToken(language) {
     const accessToken = getStoredToken();
@@ -102,7 +101,7 @@ function getToken(language) {
         return getLoggedInUser(accessToken, language).then(currentUser => {
             if (currentUser) {
                 tiled.log(`Logged in as ${currentUser}.`);
-                return [language, accessToken];
+                return accessToken;
             } else {
                 tiled.log('Access token invalid, initiating login again.');
                 return performLogin(language);
@@ -110,23 +109,24 @@ function getToken(language) {
         });
     }
     tiled.log('No access token found, initiating login.');
-    return new Promise(resolve => resolve(performLogin(language)));
+    return Promise.resolve(performLogin(language));
 }
 
 /**
  * Publishes the map to the wiki.
  * @param {string} accessToken User's access token
+ * @param {string} summary Edit summary
  * @param {TileMap} map Current map being published
  * @param {string} language Wiki language
  * @returns {Promise<void>} Response after publishing the map
  */
-function publishMap(accessToken, map, language) {
+function publishMap(accessToken, summary, map, language) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(map.fileName));
     const datamap = convertMap(map, mapName, language);
     return edit(
         `Map:${mapName}`,
         JSON.stringify(datamap),
-        'Published with Tiled DataMaps extension',
+        summary,
         accessToken,
         language
     );
@@ -141,11 +141,17 @@ export default function run() {
         return;
     }
     const /** @type {TileMap} */ map = tiled.activeAsset;
-    pickLanguage()
-        .then(language => language && getToken(language))
-        .then(params => params[1] && publishMap(params[1], map, params[0]))
-        .then(result => result && tiled.alert(`Map published successfully!`))
+    getEditInfo()
+        .then(([language, summary]) =>
+            getToken(language).then(token => [language, summary, token]))
+        .then(([language, summary, token]) =>
+            publishMap(token, summary, map, language))
+        .then(() => tiled.alert(`Map published successfully!`))
         .catch(error => {
+            if (error === true) {
+                // User cancelled the operation.
+                return;
+            }
             tiled.alert('Failed to publish! Please check the console for details.');
             tiled.log(`Error details: ${error.message || error}`)
         });
