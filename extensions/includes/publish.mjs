@@ -124,7 +124,7 @@ function publishMap(accessToken, summary, map, language) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(map.fileName));
     const datamap = convertMap(map, mapName, language);
     return edit(
-        `Map:${mapName}`,
+        `Map:${datamap.custom?.mapName}`,
         JSON.stringify(datamap),
         summary,
         accessToken,
