@@ -47,7 +47,7 @@ If that does not work for you, you can also copy the URL from the console instea
 function getEditInfo() {
     const languagesStr = getStringProperty(tiled.project, 'languages') || 'en';
     const languages = languagesStr.split(',').map(lang => lang.trim());
-    const dialog = new Dialog('Select wiki language');
+    const dialog = new Dialog('Publishing map to the wiki');
     dialog.minimumWidth = 600;
     const languageSelect = dialog.addComboBox('Wiki language:', languages);
     dialog.addNewRow();
