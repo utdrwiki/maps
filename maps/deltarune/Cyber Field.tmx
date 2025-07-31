@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="239" height="199" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="239" height="199" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="29">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -10,10 +10,90 @@
  <objectgroup id="3" name="plot"/>
  <objectgroup id="4" name="warpdoor"/>
  <objectgroup id="5" name="vendors"/>
- <objectgroup id="6" name="puzzles"/>
+ <objectgroup id="6" name="puzzles">
+  <object id="4" name="&quot;APPLE&quot; Keyboard Puzzle" x="5314.33" y="6501">
+   <point/>
+  </object>
+  <object id="7" name="&quot;AGREE2ALL&quot; Keyboard Puzzle" x="6917.75" y="6879.25">
+   <point/>
+  </object>
+  <object id="12" name="&quot;GIASFELFEBREHBER&quot; Keyboard Puzzle" x="6463" y="5126.5">
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="7" name="npcs"/>
  <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="signs"/>
- <objectgroup id="10" name="items"/>
- <objectgroup id="11" name="enemies"/>
+ <objectgroup id="9" name="signs">
+  <object id="28" x="4837" y="6528.5">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="items">
+  <object id="21" x="3484" y="7700">
+   <point/>
+  </object>
+  <object id="22" x="5647.5" y="6601.5">
+   <point/>
+  </object>
+  <object id="23" x="6610" y="7421">
+   <point/>
+  </object>
+  <object id="24" x="6700.25" y="5398.75">
+   <point/>
+  </object>
+  <object id="25" x="7323" y="5079.5">
+   <point/>
+  </object>
+  <object id="26" x="8317.75" y="848">
+   <point/>
+  </object>
+  <object id="27" x="6440.67" y="4757">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="enemies">
+  <object id="13" x="1920.67" y="6438.67">
+   <point/>
+  </object>
+  <object id="14" x="3451.33" y="7586">
+   <point/>
+  </object>
+  <object id="15" x="4929" y="6954">
+   <point/>
+  </object>
+  <object id="16" x="6298" y="7359">
+   <point/>
+  </object>
+  <object id="17" x="6582.67" y="6966.67">
+   <point/>
+  </object>
+  <object id="18" x="6084" y="4545">
+   <point/>
+  </object>
+  <object id="19" x="8205.33" y="5661.33">
+   <point/>
+  </object>
+  <object id="20" x="9361" y="771">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="annotations">
+  <object id="8" name="Solution to &quot;APPLE&quot; Keyboard Puzzle" x="5292.83" y="6554.58">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 68,-1 68.25,41 108.5,41 108,-1.25"/>
+  </object>
+  <object id="9" name="Solution to &quot;AGREE2ALL&quot; Keyboard Puzzle" x="6854.33" y="6954.33">
+   <properties>
+    <property name="color" type="color" value="#ff00ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 42.6667,0 44,-23.3333 50.6667,-22.6667 50.6667,-5.66667 127.833,-6.58333 128,1.58333 87,1.66667 87.3333,35 63.6667,35 63.697,41.9697 131.182,42.4848 130.636,33.5758 106.333,34"/>
+  </object>
+  <object id="11" name="Solution to &quot;GIASFELFEBREHBER&quot; Keyboard Puzzle" x="6376.75" y="5171">
+   <polyline points="-0.333333,-1.66667 24.75,-1.75 23.5,60.25 43.25,59.875 44,39 63.25,39 63.125,57.5 121.5,56.875 121.875,37.625 103.5,37.75 103,62.75 85,63 85.2273,41.3864"/>
+  </object>
+ </objectgroup>
 </map>
