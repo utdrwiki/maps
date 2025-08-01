@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="165" height="41" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="78">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="165" height="41" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="79">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -149,6 +149,14 @@ In order to solve this puzzle, you'll have to hurry.</property>
 $1 - Monthly tutorial, weekly.
 $10 - Weekly tutorial, monthly.
 $100 - Stop making tutorials.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Sign" x="5738.5" y="1093.5">
+   <properties>
+    <property name="description">(The puzzle description has been smashed and graffiti'd.)
+(... but the graffiti is written in overwrought gothic calligraphy...)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
@@ -347,14 +355,14 @@ The power of mean girls does not shine within you.</property>
    </properties>
    <point/>
   </object>
-  <object id="75" name="Ralsei" x="5736" y="1099.5">
+  <object id="75" name="Ralsei" x="5735.5" y="1097">
    <properties>
     <property name="description" value="Ralsei directs [[Kris]] to the puzzle and tells them that they should push the blocks onto the pressure plates."/>
     <property name="page" value="Ralsei"/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="Susie" x="5921" y="1098">
+  <object id="76" name="Susie" x="5922.5" y="1094">
    <properties>
     <property name="description" value="Susie tells [[Kris]] that puzzles are their job to solve."/>
     <property name="page" value="Susie"/>
