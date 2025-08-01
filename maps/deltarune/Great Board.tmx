@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="151" height="6" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="16">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="151" height="6" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="18">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,103 +7,122 @@
  <imagelayer id="2" name="Great Board map">
   <image source="images/Great Board.png" width="6027" height="240"/>
  </imagelayer>
- <objectgroup id="3" name="plot">
-  <object id="15" name="Susie defects" x="5999" y="145">
+ <objectgroup id="10" name="sublocations">
+  <object id="16" name="Field" x="16.5" y="150">
    <properties>
-    <property name="description" value="[[Ralsei]] chastises [[Susie]] for her aggressive behavior towards [[K. Round]] and the other Darkners the group previously encountered, telling her to start acting more like a hero. Susie decides to team up with [[Lancer]] instead, no longer being in the [[Party]] until the protagonists complete the [[Forest]] area."/>
+    <property name="description" value="Walking to the left will let the [[party]] backtrack into the Field."/>
+    <property name="page" value="Field"/>
    </properties>
    <point/>
   </object>
-  <object id="13" name="Lancer's Warning" x="5776" y="128">
+  <object id="17" name="Forest" x="6013" y="150">
    <properties>
-    <property name="description" value="[[Lancer]] warns that something extremely dangerous is blocking the way out for both him and the [[party]], which is later revealed to be [[C. Round]] before it turns into its powered up form."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="3" name="Naming the Party" x="3081" y="138">
-   <properties>
-    <property name="description" value="[[Lancer]] confronts the heroes, threatening them and brandishing a bucket to put their blood in. He asks [[Susie]] for her thoughts on his attempts at being scary before admitting that in the excitement he forgot to bring any enemies to attack them with. After everyone realizes that the group doesn't actually have a title, they hold a vote to determine their official name before Lancer departs."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="9" name="puzzles">
-  <object id="9" name="Diagonal Light Path Puzzle" x="3473.67" y="146">
-   <properties>
-    <property name="description" value="The final light path puzzle featuring diagonal columns which move from right to left."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="8" name="Light Path Puzzle 2" x="2128.67" y="128">
-   <properties>
-    <property name="description" value="A harder light path with only two rows to move on, forcing the protagonists to alternate between them while the path is inactive in order to make it through."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="7" name="Light Path Puzzle 1" x="224" y="130.667">
-   <properties>
-    <property name="description" value="A light path moves down the board one row at a time before cycling back to the top. Touching the light path at any time will send the party back to the beginning of the room."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="4" name="npcs">
-  <object id="11" name="Mr Society" x="5381.5" y="110.5">
-   <properties>
-    <property name="description" value="Clarifies that he and Mr. Elegance have higher faculty than the [[Ponman|Ponmen]], and that he would not bow down to the [[King]]'s whims unless asked. If interacted with again he will assure that everyone will express their support over the [[Party]]'s desire to take on the King, as long as he does not need to participate."/>
-    <property name="page" value="Mr. Society"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="10" name="Mr. Elegance" x="5279" y="111">
-   <properties>
-    <property name="description" value="Tells the party that despite their appearance, the [[Ponmen]] are simply following the [[King]]'s orders, and that the Board used to have its own boss before they were forced to serve the King. Interacting again will have them properly introduce himself, and clarify that their &quot;eyes&quot; are actually nostrils (which they can still see out of)."/>
-    <property name="page" value="Mr. Elegance"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="saves">
-  <object id="5" name="Field - Great Board" x="3012" y="109">
-   <properties>
-    <property name="description" value="The power of The $!$? Squad/The Lancer Fan Club/The Fun Gang shines within you."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="12" name="Field - Great Board 2" x="5335" y="109">
-   <properties>
-    <property name="description" value="SAVE point just before the [[K. Round]] fight."/>
+    <property name="description" value="Walking to the right progresses the story into the Forest."/>
+    <property name="page" value="Forest"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="6" name="signs">
-  <object id="1" name="Sign" x="89.3333" y="90.6667">
+  <object id="1" name="Sign" x="90" y="83">
    <properties>
-    <property name="description" value="(When you step into the light, you'll return to where you were before.)"/>
+    <property name="description" value="''(When you step into the light, you'll return to where you were before.)''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="saves">
+  <object id="5" name="Field - Great Board" x="3012.5" y="101.5">
+   <properties>
+    <property name="description" value="''The power of [The $!$? Squad/The Lancer Fan Club/The Fun Gang] shines within you.''"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Field - Great Board 2" x="5335" y="107">
+   <properties>
+    <property name="description" value="SAVE Point just before the [[K. Round]] fight."/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="puzzles">
+  <object id="7" name="Light path puzzle 1" x="224" y="130.5">
+   <properties>
+    <property name="description" value="A light path moves down the board one row at a time before cycling back to the top. Touching the light path at any time will send the [[party]] back to the beginning of the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Light path puzzle 2" x="2128.5" y="130">
+   <properties>
+    <property name="description" value="A harder light path with only two rows to move on, forcing the protagonists to alternate between them while the path is inactive in order to make it through."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Diagonal light path puzzle" x="3474" y="149.5">
+   <properties>
+    <property name="description" value="The final light path puzzle featuring diagonal columns which move from right to left."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="3" name="Naming the party" x="3081.5" y="125.5">
+   <properties>
+    <property name="description" value="[[Lancer]] confronts the heroes, threatening them and brandishing a bucket to put their blood in. He asks [[Susie]] for her thoughts on his attempts at being scary before admitting that in the excitement he forgot to bring any enemies to attack them with. After everyone realizes that the group does not actually have a title, they hold a vote to determine their official name before Lancer departs."/>
+    <property name="page" value="Party#Naming"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Lancer's warning" x="5775.5" y="115.5">
+   <properties>
+    <property name="description" value="[[Lancer]] warns that something extremely dangerous is blocking the way out for both him and the [[party]], which is later revealed to be [[C. Round]] before it turns into its powered-up form."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Susie defects" x="5999" y="150">
+   <properties>
+    <property name="description" value="[[Ralsei]] chastises [[Susie]] for her aggressive behavior towards [[K. Round]] and the other [[Darkners]] the group previously encountered, telling her to start acting more like a hero. Susie decides to team up with [[Lancer]] instead, no longer being in the [[party]] until the protagonists complete the [[Forest]] area."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="npcs">
+  <object id="10" name="Mr. Elegance" x="5280" y="105.5">
+   <properties>
+    <property name="description" value="Tells the [[party]] that despite their appearance, the [[Ponmen]] are simply following [[King]]'s orders, and that the Board used to have its own boss before they were forced to serve King. Interacting again will have him properly introduce himself, and clarify that his &quot;eyes&quot; are actually nostrils (which he can still see out of)."/>
+    <property name="page" value="Mr. Elegance"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Mr Society" x="5380" y="95.5">
+   <properties>
+    <property name="description" value="Clarifies that he and Mr. Elegance have higher faculty than the [[Ponman|Ponmen]], and that he would not bow down to [[King]]'s whims unless asked. If interacted with again, he will assure that everyone will express their support over the [[party]]'s desire to take on King, as long as he does not need to participate."/>
+    <property name="page" value="Mr. Society"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="8" name="enemies">
-  <object id="14" name="K. Round" x="5952" y="103">
+  <object id="2" name="Ponman" x="1397.5" y="47.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against two Ponmen."/>
+    <property name="page" value="Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Ponman" x="4461.5" y="47.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against three Ponmen."/>
+    <property name="page" value="Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="K. Round" x="5952" y="92.5">
    <properties>
     <property name="description" value="Miniboss battle against K. Round."/>
     <property name="page" value="K. Round"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="6" name="Ponman" x="4461" y="46.5">
-   <properties>
-    <property name="description" value="Battle [[Encounter]]  with three Ponmen."/>
-    <property name="page" value="Ponman"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="2" name="Ponman" x="1396.67" y="50">
-   <properties>
-    <property name="description" value="Battle [[Encounter]]  with two Ponmen."/>
-    <property name="page" value="Ponman"/>
    </properties>
    <point/>
   </object>

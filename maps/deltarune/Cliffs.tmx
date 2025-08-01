@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="431" height="79" tilewidth="20" tileheight="20" infinite="0" nextlayerid="9" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="431" height="79" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="30">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="name" value="??????"/>
@@ -7,9 +7,139 @@
  <imagelayer id="3" name="?????? map">
   <image source="images/Cliffs.png" width="8608" height="1580"/>
  </imagelayer>
- <objectgroup id="4" name="plot"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="6" name="saves"/>
- <objectgroup id="7" name="signs"/>
- <objectgroup id="8" name="items"/>
+ <objectgroup id="11" name="sublocations">
+  <object id="28" name="Castle Town" x="8450.5" y="1577.5">
+   <properties>
+    <property name="description" value="The cliff leading to Castle Town."/>
+    <property name="page" value="Castle Town"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="signs">
+  <object id="27" name="Sign" x="4075" y="424">
+   <properties>
+    <property name="description" value="''In this land, only eyes blinded by darkness can see the way...''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="saves">
+  <object id="2" name="??????" x="470.5" y="78">
+   <properties>
+    <property name="description">At times, you see it flickering. The light only you can see.
+By second nature, you reach out, and...</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Eye Puzzle" x="3994.5" y="440">
+   <properties>
+    <property name="description">'''Full health:''' You bathed your body in the light.
+A power shines within you, breaking through the darkness.
+Any pain you may have had melted away... (HP fully restored.)
+
+'''Take damage:''' You bathed your body in the light.
+A power shines within you, breaking through the darkness.
+The pain you had melted away... (HP fully restored.)
+
+'''HP less than 30:''' For some reason, you punished yourself with the spores.
+The light relieves you... (HP fully restored.)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="26" name="Eye Puzzle" x="4235.5" y="390">
+   <properties>
+    <property name="description" value="Interact once with the 2nd eye and then once with the 3rd eye."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="plot">
+  <object id="5" name="Lancer silhouette" x="1924.5" y="202">
+   <point/>
+  </object>
+  <object id="17" name="Lancer silhouette" x="2675" y="203">
+   <point/>
+  </object>
+  <object id="21" name="Susie silhouette" x="4880" y="690">
+   <point/>
+  </object>
+  <object id="22" name="Susie silhouette" x="4999" y="705">
+   <point/>
+  </object>
+  <object id="23" name="Someone up there" x="6120" y="850.5">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="npcs">
+  <object id="12" name="Dust Pile" x="4714.5" y="681">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Dust Pile" x="4854.5" y="701">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Dust Pile" x="5013.5" y="640">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Dust Pile" x="5133.5" y="700">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Dust Pile with Susie in it" x="5257.5" y="661">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="4" name="Wrist Protector" x="147.5" y="89">
+   <properties>
+    <property name="description" value="An item used for exhausting dialogue. This is only available in the 2018 demo."/>
+    <property name="page" value="Wrist Protector"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Glowshard" x="2890.5" y="736">
+   <properties>
+    <property name="page" value="Glowshard"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="hazards">
+  <object id="6" name="Wobbly Thing" x="3402" y="346">
+   <point/>
+  </object>
+  <object id="7" name="Wobbly Thing" x="3600" y="346">
+   <point/>
+  </object>
+  <object id="8" name="Wobbly Thing" x="3701" y="346">
+   <point/>
+  </object>
+  <object id="9" name="Lancer bullets" x="6177.5" y="605">
+   <properties>
+    <property name="description" value="Lancer appears, sending bullets to [[Kris]] and [[Susie]]."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>

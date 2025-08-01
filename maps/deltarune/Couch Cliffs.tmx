@@ -1,122 +1,180 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="382" height="270" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="18">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="382" height="270" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="27">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Couch Cliffs map">
   <image source="images/Couch Cliffs.png" width="15280" height="10800"/>
  </imagelayer>
+ <objectgroup id="5" name="saves">
+  <object id="3" name="Dark World" x="1559" y="237">
+   <properties>
+    <property name="description">A stale wind... you stifle a sneeze.
+You are filled with the power of not sneezing.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="puzzles">
+  <object id="7" name="Eye puzzle" x="6280" y="3647.5">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Ralsei]] occupy the left and right switches respectively. [[Kris]] must press the middle switch to unlock the way forward."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Clock puzzle" x="8099" y="4484">
+   <properties>
+    <property name="description" value="The [[party]] must simultaneously step on the highlighted pressure plates to unlock the way forward. Here, the order of appearance is ''right'', ''bottom and left'', ''bottom and right''."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="3" name="plot">
-  <object id="2" name="Waking up" x="1040.9" y="298.674">
+  <object id="2" name="Waking up" x="1040" y="298.5">
    <properties>
     <property name="description" value="After [[Kris]] creates a [[Dark Fountain]] in the [[Dreemurr Residence]] living room, they and [[Susie]] wake up in the Couch Cliffs. Susie declares this to be another adventure, and the two continue forward."/>
    </properties>
    <point/>
   </object>
-  <object id="4" name="Ralsei rejoins the party" x="3916.8" y="1173.08">
+  <object id="19" name="Sneeze" x="148.5" y="283">
    <properties>
-    <property name="description" value="[[Ralsei]] reunites with [[Kris]] and [[Susie]] adter sensing the [[Dark World]]'s creation. The three pose together and continue forward."/>
+    <property name="description" value="Wait for about 10 seconds to see and hear &lt;code&gt;[[zapper]]_outline&lt;/code&gt; sneeze once."/>
    </properties>
    <point/>
   </object>
-  <object id="5" name="Talk with Ralsei, part 1" x="6398.21" y="1454.79">
+  <object id="4" name="Ralsei rejoins the party" x="3961" y="1175.5">
    <properties>
-    <property name="description" value="[[Susie]] tells [[Ralsei]] about some of the movies she watched on TV. Ralsei admits that he had never watched a movie before."/>
+    <property name="description" value="[[Ralsei]] reunites with [[Kris]] and [[Susie]] after sensing the [[Dark World]]'s creation. The three pose together and continue forward."/>
    </properties>
    <point/>
   </object>
-  <object id="6" name="Talk with Ralsei, part 2" x="6799.53" y="3013.8">
+  <object id="5" name="Talk with Ralsei, part 1" x="6342.5" y="1457.5">
+   <properties>
+    <property name="description" value="[[Susie]] tells [[Ralsei]] about some of the movies she watched on TV. Ralsei admits that he has never watched a movie before."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Talk with Ralsei, part 2" x="6738" y="3016">
    <properties>
     <property name="description" value="[[Susie]] asks [[Ralsei]] if he would want to watch movies with her and [[Kris]]. Ralsei hesitantly agrees that it would be nice."/>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Talk with Ralsei, part 3" x="7739.64" y="4001.04">
+  <object id="9" name="Talk with Ralsei, part 3" x="7739.5" y="3910">
    <properties>
-    <property name="description" value="[[Susie]] suggests that [[Ralsei]] come to school with her and [[Kris]] so that he could do their homework. Ralsei appreciates the offer."/>
+    <property name="description" value="[[Susie]] suggests that [[Ralsei]] come to [[school]] with her and [[Kris]] so that he could do their homework. Ralsei appreciates the offer."/>
    </properties>
    <point/>
   </object>
-  <object id="11" name="Talk with Ralsei, part 4" x="9580.85" y="4906.63">
+  <object id="11" name="Talk with Ralsei, part 4" x="9579" y="5000">
    <properties>
-    <property name="description" value="[[Susie]] suggests that [[Ralsei]] should go to the Festival with her and [[Kris]]. Ralsei says that he would love to go."/>
+    <property name="description" value="[[Susie]] suggests that [[Ralsei]] should go to the Festival with her and [[Kris]]."/>
    </properties>
    <point/>
   </object>
-  <object id="13" name="Talk with Ralsei, part 5" x="11698.8" y="9972.92">
+  <object id="12" name="Say cheese" x="9879" y="7973.5">
    <properties>
-    <property name="description" value="[[Ralsei]] explains that he is appreciative of [[Susie]]'s offers. He begins to say something else, but he is hesitant."/>
+    <property name="description" value="A [[Shuttah]] hand plays a camera sound effect when the [[party]] slides past."/>
    </properties>
    <point/>
   </object>
-  <object id="14" name="Talk with Ralsei, part 6" x="12740" y="10535.8">
+  <object id="18" name="Talk with Ralsei, part 5" x="10577.5" y="9529">
    <properties>
-    <property name="description" value="[[Ralsei]] explains that, due to the nature of being a [[Darkner]], he cannot enter the Light World with [[Kris]] and [[Susie]]. He explains that Darkners are simply inanimate objects given form by the [[Dark Fountains]], and the [[Dark Worlds]] are illusions brought about by removing light. Susie objects to Ralsei's claim that Darkners are not real, reaffirming their friendship."/>
+    <property name="description" value="[[Ralsei]] says that he would love to go to the Festival."/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="Tenna's introduction" x="14552.5" y="10344.5">
+  <object id="13" name="Talk with Ralsei, part 6" x="11699" y="10000">
+   <properties>
+    <property name="description" value="[[Ralsei]] explains that he is appreciative of [[Susie]]'s offer. He starts saying something else, but is hesitant to continue."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Talk with Ralsei, part 7" x="12818" y="10538">
+   <properties>
+    <property name="description" value="[[Ralsei]] explains that, due to the nature of being a [[Darkner]], he cannot enter the [[Light World]] with [[Kris]] and [[Susie]]. He explains that Darkners are simply inanimate objects given form by the [[Dark Fountains]], and the [[Dark Worlds]] are illusions brought about by removing light. Susie objects to Ralsei's claim that Darkners are not real, reaffirming their friendship."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Tenna's introduction" x="14553" y="10319.5">
    <properties>
     <property name="description" value="[[Tenna]] interrupts [[Susie]] and [[Ralsei]]'s conversation and introduces himself as a game show host. He declares his desire to subject the [[party]] to his games."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="4" name="puzzles">
-  <object id="7" name="Eye Puzzle" x="6281.03" y="3660.15">
+ <objectgroup id="7" name="npcs">
+  <object id="1" name="Couch" x="1040" y="135">
    <properties>
-    <property name="description" value="[[Susie]] and [[Ralsei]] occupy the left and right switches respectively. [[Kris]] must press the middle switch to unlock the way forward."/>
+    <property name="description" value="A sleeping couch. If [[Kris]] and [[Susie]] walk past the couch and come back, the couch wakes up and walks to the left. If the [[player]] has a completed [[Chapter 3]] SAVE file, Kris can sleep on the couch; this progresses the plot directly to the first round of ''[[The Legend of Tenna]]''."/>
+    <property name="page" value="Couch"/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Clock Puzzle" x="8097.66" y="4494.28">
+  <object id="20" name="Dust Pile" x="4384" y="1060">
    <properties>
-    <property name="description" value="The party must simultaneously step on the highlighted pressure plates to unlock the way forward. Here, the order of appearance is ''right'', ''bottom and left'', ''bottom and right''."/>
+    <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
- </objectgroup>
- <objectgroup id="5" name="saves">
-  <object id="3" name="Dark World" x="1561.35" y="248.523">
+  <object id="21" name="Dust Pile" x="4517" y="1122">
    <properties>
-    <property name="description">A stale wind... you stifle a sneeze.
-You are filled with the power of not sneezing.</property>
-    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Dust Pile" x="5910" y="4170">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Dust Pile" x="6000" y="4001">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Dust Pile" x="6053" y="4132">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Dust Pile" x="6166" y="3973">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Dust Pile" x="6165" y="4170">
+   <properties>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Susie" x="6143" y="3623">
+   <properties>
+    <property name="description" value="Susie puts forth the idea that [[Ralsei]] could do any puzzles that she and [[Kris]] may find in the [[Light World]]."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Ralsei" x="6438.5" y="3632">
+   <properties>
+    <property name="description" value="Ralsei directs [[Kris]] to the switch in the middle and advises them to press it."/>
+    <property name="page" value="Ralsei"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="6" name="items">
-  <object id="8" name="POINTs" x="6172.37" y="4211.84">
+  <object id="8" name="10 POINTs" x="6172.5" y="4199.5">
    <properties>
-    <property name="description" value="Treasure chest containing 10 POINTs"/>
+    <property name="description" value="Treasure chest containing 10 POINTs."/>
     <property name="page" value="POINT"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="7" name="npcs">
-  <object id="1" name="Couch" x="1039.79" y="202.831">
-   <properties>
-    <property name="description" value="A sleeping couch. If [[Kris]] and [[Susie]] walk past the couch and come back, the couch wakes up and walks to the left. If the player has a completed [[Chapter 3]] SAVE file, Kris can sleep on the couch, which walks them directly to the first round of ''[[The Legend of Tenna]]''."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="12" name="Shuttah" x="9878.95" y="7990.69">
-   <properties>
-    <property name="description" value="A [[Shuttah]] hand plays a camera sound effect when the [[party]] slides past."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="16" name="Susie" x="6143.09" y="3632.29">
-   <properties>
-    <property name="description" value="[[Susie]] proposes the idea that [[Ralsei]] could do any puzzles that she and [[Kris]] may find in the Light World."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="17" name="Ralsei" x="6438.39" y="3640.15">
-   <properties>
-    <property name="description" value="[[Ralsei]] directs [[Kris]] to the switch in the middle and advises them to press it."/>
    </properties>
    <point/>
   </object>
