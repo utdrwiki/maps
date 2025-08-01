@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="186" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="18">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Cold Place map">
   <image source="images/Cold Place.png" width="7418" height="2424"/>
@@ -89,15 +90,6 @@ A strange calm washes over you.</property>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="6" name="sublocations">
-  <object id="17" name="Green Room" x="41.417" y="2027.67">
-   <properties>
-    <property name="description" value="Doorway back to the Green Room, the main hub of the TV World."/>
-    <property name="page" value="Green Room"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="4" name="enemies">
   <object id="13" name="Final Tenna encounter" x="6114.96" y="1858.92">
    <properties>
@@ -130,6 +122,13 @@ A strange calm washes over you.</property>
    <properties>
     <property name="description" value="Boss battle against the Roaring Knight. Drops a [[Shadow Crystal]] and a [[Black Shard]] upon defeat."/>
     <property name="page" value="Knight#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Green Room" x="41.417" y="2027.67">
+   <properties>
+    <property name="description" value="Doorway back to the Green Room, the main hub of the TV World."/>
+    <property name="page" value="Green Room"/>
    </properties>
    <point/>
   </object>

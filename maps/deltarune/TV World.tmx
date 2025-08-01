@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1029" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="154">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1114" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="172">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="TV World map">
-  <image source="images/TV World.png" width="41160" height="5760"/>
+  <image source="images/TV World.png" width="44560" height="5760"/>
  </imagelayer>
  <objectgroup id="7" name="sublocations">
-  <object id="59" x="24431.8" y="4273.34">
+  <object id="59" x="27836.4" y="4278.47">
    <properties>
     <property name="color" type="color" value="#fffbf236"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 -150.403,1.0494 -150.466,917.459 11.3815,917.528"/>
   </object>
-  <object id="60" x="26470.5" y="4400.21">
+  <object id="60" x="29881.5" y="4380.51">
    <properties>
     <property name="color" type="color" value="#ffd7cec8"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 462.481,0.160676 462.889,-1147.11 1.49365,-1147.12"/>
   </object>
-  <object id="82" x="39380.8" y="5054">
+  <object id="82" x="42706.3" y="5073.45">
    <properties>
     <property name="color" type="color" value="#ff4ebbc3"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 -0.00892254,549.357"/>
   </object>
-  <object id="86" name="Green Room" x="38498.3" y="3958.34">
+  <object id="86" name="Green Room" x="41900.3" y="3969.79">
    <properties>
     <property name="description" value="The main hub area of the TV World. The [[party]] is transported here after each round of [[TV Time]]."/>
     <property name="page" value="Green Room"/>
@@ -38,98 +38,99 @@
   </object>
  </objectgroup>
  <objectgroup id="3" name="plot">
-  <object id="2" name="Escaping capture" x="845.301" y="1030.95">
+  <object id="2" name="Escaping capture" x="4251.25" y="993.246">
    <properties>
     <property name="description" value="The [[party]] ends up here after escaping [[Tenna]]'s capture. From there, they make their way back to the [[Green Room]] while evading Tenna and his employees."/>
    </properties>
    <point/>
   </object>
-  <object id="5" name="Cowboy Minigame 1" x="3803.2" y="937.998">
+  <object id="5" name="Cowboy Minigame 1" x="7202.14" y="967.83">
    <properties>
     <property name="description" value="An unseen NPC transfers the [[party]] to a Wild West setting, where they must clear a round of the Cowboy Minigame to continue."/>
     <property name="page" value="Cowboy Minigame"/>
    </properties>
    <point/>
   </object>
-  <object id="16" name="Monster Movie set" x="7940.47" y="2861.95">
+  <object id="16" name="Monster Movie set" x="11346.8" y="2902.83">
    <properties>
     <property name="description" value="The Monster Movie set. The [[party]] can play this minigame in the [[Green Room]] after round 1 and round 2 of [[TV Time]]."/>
     <property name="page" value="Monster Movie"/>
    </properties>
    <point/>
   </object>
-  <object id="43" name="Cowboy Minigame 2" x="16324.2" y="3051.67">
+  <object id="43" name="Cowboy Minigame 2" x="19721.7" y="3074">
    <properties>
     <property name="description" value="An unseen NPC transfers the [[party]] to a Wild West setting, where they must clear a round of the Cowboy Minigame to continue."/>
     <property name="page" value="Cowboy Minigame"/>
    </properties>
    <point/>
   </object>
-  <object id="44" name="Freeing the Shadowguys" x="18758.3" y="3085.64">
+  <object id="44" name="Freeing the Shadowguys" x="22157.6" y="3079.06">
    <properties>
     <property name="description" value="Kris can occupy this console and push the lawnmower, destroying the [[Shadowguy]]s' contracts and freeing them from their jobs. This action adds 20 [[recruits]] to the Shadowguy recruit count if no Shadowguys have been LOST."/>
    </properties>
    <point/>
   </object>
-  <object id="51" name="First Tenna encounter" x="6798.07" y="3095.84">
+  <object id="51" name="First Tenna encounter" x="10139.1" y="3101.5">
    <properties>
     <property name="description" value="[[Tenna]] is seen ordering his employees to return to work and capture the [[party]], despite their complaints that they do not want to fight. Tenna reminds them of their work contracts before leaving."/>
    </properties>
    <point/>
   </object>
-  <object id="53" name="Second Tenna encounter" x="20356" y="3072.58">
+  <object id="53" name="Second Tenna encounter" x="23381.5" y="3115.89">
    <properties>
     <property name="description" value="[[Tenna]] is seen calling [[Ramb]] about [[Toriel]]'s state. Ramb quits over the phone, and Tenna leaves in frustration."/>
    </properties>
    <point/>
   </object>
-  <object id="55" name="Rock Video" x="21280.9" y="2889.57">
+  <object id="55" name="Rock Video" x="24678.5" y="2892.87">
    <properties>
     <property name="description" value="The set for the Rock Video, which is played during the second round of [[TV Time]]. This set is repurposed into a &quot;Darkners Live&quot; concert with [[Shadowguy]]s playing if they have been fully [[Recruits|recruited]]."/>
     <property name="page" value="Rock Video"/>
    </properties>
    <point/>
   </object>
-  <object id="66" name="Third Tenna encounter" x="25833.6" y="5038.71">
+  <object id="66" name="Third Tenna encounter" x="29234.3" y="5026.82">
    <properties>
     <property name="description" value="[[Tenna]] appears while the [[Pippins]] are raiding the treasure chests for [[POINT]]s. The Pippins then steal the items scattered throughout the room, despite Tenna's protests. Tenna mentions having a secret item before leaving."/>
    </properties>
    <point/>
   </object>
-  <object id="67" name="Fourth Tenna encounter" x="26489.7" y="4977.39">
+  <object id="67" name="Fourth Tenna encounter" x="29890.7" y="4951.84">
    <properties>
     <property name="description" value="Inside the wardrobe is a [[Pipis (Item)|Pipis]]. Before [[Kris]] can take it, however, [[Tenna]] arrives to find the Pipis outside the wardrobe. If the [[Dealmaker]] or [[Puppet Scarf]] are in the [[inventory]] on the normal route, [[Spamton]] temporarily leaves the inventory and appears before Tenna, who does not recognize him, after which Tenna takes the Pipis back. Otherwise, a crowd appears and gasps in shock, while Tenna attempts to defend himself. He leaves without the Pipis, allowing Kris to take it."/>
    </properties>
    <point/>
   </object>
-  <object id="68" name="A moral choice" x="26480.9" y="3016.65">
-   <properties>
-    <property name="description" value="[[Kris]] is presented with a choice to make the [[Goulden Sam]] and [[Suilver Sam]] love or hate each other. If many enemies are defeated violently, &quot;Hate&quot; is automatically chosen."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="73" name="Cooking Show" x="34390" y="3938.78">
+  <object id="73" name="Cooking Show" x="37800.5" y="3875.89">
    <properties>
     <property name="description" value="The set for the Cooking Show minigame, played during the first round of [[TV Time]]. Many [[Shadowguy]]s and [[Pippins]] are crowding behind the counter."/>
     <property name="page" value="Cooking Show"/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="Fifth Tenna encounter" x="36859.8" y="4181.91">
+  <object id="76" name="Fifth Tenna encounter" x="40399.3" y="4204.93">
    <properties>
     <property name="description" value="[[Tenna]] desperately attempts to keep his employees as they begin to quit their jobs. He blames his failure on [[Spamton]], his former partner."/>
    </properties>
    <point/>
   </object>
-  <object id="77" name="Sixth Tenna encounter" x="37690.6" y="4407.47">
+  <object id="77" name="Sixth Tenna encounter" x="41239.3" y="4452.34">
    <properties>
     <property name="description" value="[[Lanino and Elnina]] quit their jobs in frot of [[Tenna]]. As Tenna mocks their decision, [[Mike]] announces his departure as well."/>
    </properties>
    <point/>
   </object>
+  <object id="171" name="Dust Pile" x="41094.7" y="4401.17">
+   <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="4" name="puzzles">
-  <object id="11" name="Quiz 1" x="6192" y="2703.51">
+  <object id="11" name="Quiz 1" x="9598.61" y="2691.68">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
 
@@ -141,7 +142,7 @@ WHO RUNS THE [[Green Room|GREEN ROOM]] CONCESSIONS? (Answer: RAMB)</property>
    </properties>
    <point/>
   </object>
-  <object id="13" name="Quiz 2" x="6192" y="3104.83">
+  <object id="13" name="Quiz 2" x="9600.84" y="3096.64">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
 
@@ -153,47 +154,47 @@ WHAT WAS YOUR RANK ON [[TV Time#Round 1|BOARD 1]]!? (Answer: The player's rank o
    </properties>
    <point/>
   </object>
-  <object id="14" name="Revive Mint Puzzle" x="5103.33" y="3140.21">
+  <object id="14" name="Revive Mint Puzzle" x="8503.27" y="3140.05">
    <properties>
     <property name="description" value="A video game puzzle in which [[Kris]] takes control. They must use a [[Lancer Controller]] to dig up spots marked with &quot;X&quot; until all spots have been dug out. They then must push the box that appears onto a pressure plate and use [[Ralsei]]'s character to transform into a box on top of the other. To get the [[Egg]], they must use [[Susie]]'s character to throw the box across the lake."/>
     <property name="page" value="TV World#Revive Mint Puzzle"/>
    </properties>
    <point/>
   </object>
-  <object id="25" name="Stealth Zone 1" x="10328" y="3081.96">
+  <object id="25" name="Stealth Zone 1" x="13734.7" y="3094.17">
    <properties>
     <property name="description" value="The first of the Stealth Zones, in which the [[party]] must avoid being spotted by the searchlights that line the floor. If they are caught, they are sent back to the [[Goulden Sam]] cage. The party initially attempt to sneak by slowly, but when [[Susie]] suggests going faster, the party now moves at a much faster pace."/>
     <property name="page" value="TV World#First Stealth Zone"/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="Stealth Zone switch" x="11286.3" y="3123.16">
+  <object id="26" name="Stealth Zone switch" x="14683.2" y="3121.96">
    <properties>
     <property name="description" value="Pressing the switch in this trash can unlocks the door to the next room."/>
    </properties>
    <point/>
   </object>
-  <object id="31" name="Stealth Zone 2" x="11541.7" y="2639.27">
+  <object id="31" name="Stealth Zone 2" x="14945.6" y="2658.71">
    <properties>
     <property name="description" value="The second Stealth Zone, split into two parts by an intersecting doorway. The party must avoid constantly-moving columns of searchlights. If they are caught, they are sent to the beginning of the room."/>
     <property name="page" value="TV World#Second Stealth Zone and Watercooler Room"/>
    </properties>
    <point/>
   </object>
-  <object id="37" name="Maze path" x="14476" y="2767.93">
+  <object id="37" name="Maze path" x="17874.5" y="2769.59">
    <properties>
     <property name="color" type="color" value="#ffded5b1"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 3.91753,416.624 -316.95,416.678 -317.012,171.846 -317.012,416.667 3.91301,416.628 1.6548,174.993 405.681,174.984 407.25,-82.3917 405.651,174.973 160.637,174.973 162.547,416.576 474.684,416.615"/>
   </object>
-  <object id="49" name="Susie Bridge Puzzle" x="16779.6" y="2660.68">
+  <object id="49" name="Susie Bridge Puzzle" x="20178.2" y="2659.3">
    <properties>
     <property name="description" value="A video game puzzle, in which [[Kris]] takes control. Kris must use [[Susie]]'s character to construct a bridge across the river. Pressing the switch at the end retracts the spikes."/>
    </properties>
    <point/>
   </object>
-  <object id="61" name="Quiz 3" x="24396.4" y="4060.02">
+  <object id="61" name="Quiz 3" x="27799.8" y="4058.84">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
 
@@ -206,7 +207,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
-  <object id="62" name="Quiz 4" x="25078.3" y="3829.24">
+  <object id="62" name="Quiz 4" x="28480.5" y="3820.77">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
 
@@ -219,7 +220,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
-  <object id="63" name="Quiz 5" x="25756.1" y="4424.4">
+  <object id="63" name="Quiz 5" x="29159.5" y="4423.03">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
 
@@ -232,7 +233,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
-  <object id="64" name="Quiz 6" x="26434.8" y="4176.54">
+  <object id="64" name="Quiz 6" x="29840.5" y="4182.57">
    <properties>
     <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
 
@@ -245,33 +246,33 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
-  <object id="69" name="Stealth Zone 3" x="27467.2" y="4156.64">
+  <object id="69" name="Stealth Zone 3" x="30867.3" y="4173.31">
    <properties>
     <property name="description" value="The third and final Stealth Zone, stretching across a long hallway. The [[party]] must avoid the constantly-moving searchlights. While traveling across, [[Pippins]] and [[Shadowguy]]s begin following the party. If they are caught, they are transported to the beginning of the room, behind a [[Goulden Son]] cage."/>
     <property name="page" value="TV World#Third Stealth Zone"/>
    </properties>
    <point/>
   </object>
-  <object id="70" name="Stealth Zone 3 end" x="32302.1" y="4208.89">
+  <object id="70" name="Stealth Zone 3 end" x="35792.4" y="4189.69">
    <properties>
     <property name="description" value="The [[party]] passes through a stationary searchlight, which summons a [[Zapper]] who does not capture them."/>
    </properties>
    <point/>
   </object>
-  <object id="80" name="Stealth Zone 4" x="39380.5" y="5052.96">
+  <object id="80" name="Stealth Zone 4" x="42705.6" y="5013.4">
    <properties>
     <property name="description" value="An optional Stealth Zone with a slow-moving searchlight. Passing into the searchlight summons a [[Zapper]], who asks if [[Kris]] is a cheater. If Kris admits they are a cheater, the Zapper asks where they are going. If Kris answers &quot;Where I came from,&quot; the Zapper transports them to the previous room. If Kris answers &quot;Nowhere,&quot; the Zapper transports them to an isolated area, which is part of the [[Egg]] sidequest."/>
    </properties>
    <point/>
   </object>
-  <object id="84" name="Revive Mint Puzzle continuation" x="40118.4" y="5622.24">
+  <object id="84" name="Revive Mint Puzzle continuation" x="43518.9" y="5620.7">
    <properties>
     <property name="description" value="The continuation of the [[TV World#Revive Mint Puzzle|Revive Mint Puzzle]]. If [[Kris]] had used [[Susie]]'s character to throw the block to the other side of the river, they can then push the block onto the pressure plate to reveal a bridge allowing passage across the lake. The switch on the other side unlocks the way forward."/>
     <property name="page" value="TV World#Nowhere"/>
    </properties>
    <point/>
   </object>
-  <object id="85" name="Trip Ticket Puzle" x="40859.7" y="5542.17">
+  <object id="85" name="Trip Ticket Puzle" x="44259.4" y="5542.82">
    <properties>
     <property name="description" value="[[Kris]] must speak to the [[Bibliox]] through the video game screen and exhaust its dialogue. They then must walk into the next room and return to reveal a wardrobe. Opening the wardrobe reveals it is empty, but speaking to the Bibliox again reveals that the [[Trip Ticket]] has been in the [[inventory]] the whole time they were exploring. The Trip Ticket then appears in the inventory."/>
     <property name="page" value="TV World#Nowhere"/>
@@ -280,164 +281,253 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
  </objectgroup>
  <objectgroup id="5" name="npcs">
-  <object id="1" name="Starwalker" x="178.769" y="966.456">
+  <object id="1" name="Starwalker" x="3578.93" y="933.537">
    <properties>
     <property name="description" value="If found during [[Chapter 1]], Starwalker can be found here after defeating [[Rouxls Kaard]]. He claims that he was the &quot;star&quot; before appending &quot;walker.&quot;"/>
     <property name="page" value="Starwalker"/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Lancer" x="5626.52" y="287">
+  <object id="10" name="Lancer" x="9027.24" y="287">
    <properties>
     <property name="description" value="[[Lancer]] occupies a console. He explains his job to the [[party]], and he can take back any [[Lancer Controller]]s in their [[inventory]]. He turns to stone after reaching the [[Green Room]]."/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="Pippins" x="9178.75" y="3049.13">
+  <object id="19" name="Pippins" x="12579.1" y="3050.85">
    <properties>
     <property name="description" value="Describes the security system in the TV World. If spoken to again, they tell [[Kris]] that they should clean up the place."/>
    </properties>
    <point/>
   </object>
-  <object id="20" name="Goulden Sam" x="9255.73" y="3072.84">
+  <object id="20" name="Goulden Sam" x="12656.6" y="3066.93">
    <properties>
     <property name="description" value="Explains that on their first day, they were taken and sent here, and they lament that they have not met another of their kind. If the party gets caught in first Stealth Zone, they are transported to this cage."/>
    </properties>
    <point/>
   </object>
-  <object id="21" name="Shadowguy" x="9338.54" y="3035.74">
+  <object id="21" name="Shadowguy" x="12740.7" y="3026.12">
    <properties>
     <property name="description" value="Plays saxophone noises when spoken to."/>
    </properties>
    <point/>
   </object>
-  <object id="24" name="Starwalker" x="9763.36" y="3043.98">
+  <object id="24" name="Starwalker" x="13163.8" y="3040.14">
    <properties>
     <property name="description" value="If found during [[Chapter 1]], Starwalker appears here and expresses frustration at the state of the jails."/>
     <property name="page" value="Starwalker"/>
    </properties>
    <point/>
   </object>
-  <object id="40" name="Suilver Sam" x="15329.4" y="3110.3">
+  <object id="40" name="Suilver Sam" x="18729.8" y="3103.77">
    <properties>
     <property name="description" value="A silver-colored [[Goulden Sam]] cage. They explain that they are the only one of their kind, making them original."/>
     <property name="page" value="Suilver Sam"/>
    </properties>
    <point/>
   </object>
-  <object id="41" name="Pippins" x="15409.2" y="3085.78">
+  <object id="41" name="Pippins" x="18810.3" y="3082.47">
    <properties>
     <property name="description" value="Explains that this room is known as &quot;Punishment Cage B.&quot; They claim that it is better than Cage A, but not by much."/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="Zapper" x="15803.8" y="3155.83">
+  <object id="42" name="Zapper" x="19204.8" y="3144.68">
    <properties>
     <property name="description" value="Is standing guard and wathing for cheaters. If the [[party]] admits they are cheaters, the Zapper sends them to the Suilver Sam cage, which fails to keep them trapped. The Zapper then admits defeat."/>
    </properties>
    <point/>
   </object>
-  <object id="45" name="Haystack" x="17122.7" y="3076.65">
+  <object id="45" name="Haystack" x="20520.8" y="3073.58">
    <properties>
     <property name="description" value="If [[moss]] has been eaten with [[Susie]] in [[Chapter 2]], she notices some spinach in the haystack, which she and [[Kris]] eat together. If the [[Dealmaker]] is equipped, the narration when inspecting the haystack quotes a line from [[Spamton]]'s introductory dialogue."/>
    </properties>
    <point/>
   </object>
-  <object id="46" name="Pippins" x="19005.6" y="3066.16">
+  <object id="46" name="Pippins" x="22403.9" y="3061.94">
    <properties>
     <property name="description" value="Comments on the state of the [[Shadowguy]]s working at the video game consoles."/>
    </properties>
    <point/>
   </object>
-  <object id="47" name="Serious Trashy" x="18316.2" y="2486.5">
+  <object id="47" name="Serious Trashy" x="21716" y="2471.18">
    <properties>
     <property name="description" value="A serious variant of [[Trashy]], who refuses to come to [[Kris]]'s [[Castle Town]]. If any enemy is defeated violently, they admonish Kris."/>
     <property name="page" value="Serious Trashy"/>
    </properties>
    <point/>
   </object>
-  <object id="48" name="Ribbick" x="18241.9" y="2548.64">
+  <object id="48" name="Ribbick" x="21642" y="2550.7">
    <properties>
     <property name="description" value="Is seen admiring [[Serious Trashy]]'s serious vibes. Disappears if any [[Ribbick]] is defeated violently."/>
    </properties>
    <point/>
   </object>
-  <object id="71" name="Goulden Son" x="27354.2" y="4111.8">
+  <object id="71" name="Goulden Son" x="30757.8" y="4111.96">
    <properties>
     <property name="description" value="A miniature [[Goulden Sam]] cage. Transports the party to the other side of the hallway."/>
     <property name="page" value="Goulden Son"/>
    </properties>
    <point/>
   </object>
-  <object id="72" name="Goulden Son" x="33204.9" y="4151.35">
+  <object id="72" name="Goulden Son" x="36605.1" y="4150.01">
    <properties>
     <property name="description" value="A miniature [[Goulden Sam]] cage. Transports the party to the other side of the hallway."/>
     <property name="page" value="Goulden Son"/>
    </properties>
    <point/>
   </object>
-  <object id="78" name="Shuttah" x="39407.3" y="4559.48">
+  <object id="78" name="Shuttah" x="42806" y="4560.81">
    <properties>
     <property name="description" value="A [[Shuttah]] explains the state of the [[Dark World]] before [[Tenna]]'s arrival. They explain that those who did not sign Tenna's contract left and went somewhere else."/>
    </properties>
    <point/>
   </object>
-  <object id="81" name="Zapper" x="39211.3" y="5509.31">
+  <object id="81" name="Zapper" x="42610.8" y="5481.35">
    <properties>
     <property name="description" value="A [[Zapper]] that transports [[Kris]] out of the area back to where they came from."/>
    </properties>
    <point/>
   </object>
-  <object id="83" name="Bibliox" x="40980.3" y="5508.48">
+  <object id="83" name="Bibliox" x="44381.9" y="5498.91">
    <properties>
     <property name="description" value="A [[Bibliox]] occupying a console, who only speaks in incoherent mumblings."/>
    </properties>
    <point/>
   </object>
+  <object id="68" name="A moral choice" x="29878.5" y="3013.89">
+   <properties>
+    <property name="description" value="[[Kris]] is presented with a choice to make the [[Goulden Sam]] and [[Suilver Sam]] love or hate each other. If many enemies are defeated violently, &quot;Hate&quot; is automatically chosen."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="Starwalker" x="76.3912" y="958.691">
+   <properties>
+    <property name="description" value="Starwalker appears here after walking past this point and returning, and only if he was found in [[Chapter 1]]. He declares that he will be the &quot;Star Walker.&quot; using [[Tenna]]'s &quot;STAR&quot; speech graphic."/>
+    <property name="page" value="Starwalker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="Shadowguy" x="2034.05" y="923">
+   <properties>
+    <property name="description" value="Plays saxophone noises when spoken to."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="158" name="Shadowguy" x="2155.65" y="923">
+   <properties>
+    <property name="description" value="Asks for an autograph. If [[Kris]] responds &quot;Sign,&quot; they faint in shock."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="161" name="Shuttah" x="2465.41" y="961.406">
+   <properties>
+    <property name="description" value="Snaps a picture of the [[party]] when spoken to."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="162" name="Zapper" x="2604.87" y="878.178">
+   <properties>
+    <property name="description" value="Explains the ranking system based on the [[party]]'s performance in [[Tenna]]'s games. He also mentions a [[Green Room#S-Rank Changing Room|secret room]] that can be accessed by achieving S-Rank."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="163" name="Lanino and Elnina" x="2780.59" y="936.601">
+   <properties>
+    <property name="description" value="Lanino and Elnina explain that they will be the [[party]]'s boss encounter. When spoken to subsequent times, they provide random weather forecasts."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="164" name="Ramb" x="2952.21" y="967.182">
+   <properties>
+    <property name="description" value="Asks [[Kris]] to talk to him in the [[Green Room]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="165" name="Rouxls Kaard" x="3062.3" y="913.411">
+   <properties>
+    <property name="description" value="Asks the [[party]] how he can be [[Tenna]]'s second-in-command."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="166" name="Tenna" x="3222.41" y="839.006">
+   <properties>
+    <property name="description" value="Asks the [[party]] if they are prepared. If they answer yes, he transports them to the game room, where they play the first round of [[TV Time]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="167" name="Dust Pile" x="39392.5" y="4361.36">
+   <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="168" name="Dust Pile" x="39841.6" y="4532.35">
+   <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="169" name="Dust Pile" x="40117.2" y="4375.69">
+   <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="170" name="Dust Pile" x="40258.1" y="4168.8">
+   <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
+    <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="enemies">
-  <object id="6" name="Shadowguys" x="5743.52" y="1188.84">
+  <object id="6" name="Shadowguys" x="9140.82" y="1185.4">
    <properties>
     <property name="description" value="Shadowguys roaming the area engage the [[party]] in battle when approached."/>
    </properties>
    <point/>
   </object>
-  <object id="17" name="Shadowguys" x="7958.09" y="3094.29">
+  <object id="17" name="Shadowguys" x="11360" y="3085.82">
    <properties>
     <property name="description" value="Shadowguys drop from the ceiling and engage the [[party]] in battle when approached."/>
     <property name="page" value="Shadowguy"/>
    </properties>
    <point/>
   </object>
-  <object id="29" name="Ribbick" x="10788.6" y="2682.31">
+  <object id="29" name="Ribbick" x="14188.7" y="2684.93">
    <properties>
     <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
   </object>
-  <object id="32" name="Watercooler" x="12658.4" y="2174.81">
+  <object id="32" name="Watercooler" x="16059.6" y="2175.47">
    <properties>
     <property name="description" value="Static encounter against the Watercooler. If the party attempts to leave this room, they are blocked off my more Watercoolers that gradually converge on them as they leave and re-enter."/>
     <property name="page" value="Watercooler"/>
    </properties>
    <point/>
   </object>
-  <object id="36" name="Ribbick" x="14733" y="2691.49">
+  <object id="36" name="Ribbick" x="18132.7" y="2689.43">
    <properties>
     <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
   </object>
-  <object id="75" name="Rouxls Kaard" x="34419.6" y="4077.93">
+  <object id="75" name="Rouxls Kaard" x="37819.1" y="4080.83">
    <properties>
     <property name="description" value="Boss battle against Rouxls Kaard."/>
     <property name="page" value="Rouxls Kaard#Chapter 3_2"/>
    </properties>
    <point/>
   </object>
-  <object id="57" name="Zappers" x="22641.3" y="3387.01">
+  <object id="57" name="Zappers" x="26038.5" y="3384.4">
    <properties>
     <property name="description" value="Zappers jump into the room and roam around, engaging the [[party]] in battle if approached."/>
     <property name="page" value="Zapper"/>
@@ -446,113 +536,119 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
  </objectgroup>
  <objectgroup id="8" name="vendors">
-  <object id="22" name="Pippins" x="9425.02" y="3045.13">
+  <object id="22" name="Pippins" x="12823.9" y="3046.95">
    <properties>
     <property name="description" value="Sells one [[TV Dinner]] for 300 [[Dark Dollar]]s and three TV Dinners for $800."/>
    </properties>
    <point/>
   </object>
+  <object id="159" name="Pippins" x="2284.9" y="950.685">
+   <properties>
+    <property name="description" value="Explains that [[TV World]] takes [[POINT]]s as currency instead of [[Dark Dollar]]s. They offer to sell [[TV Dinner]]s for 250 Dark Dollars each."/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="9" name="items">
-  <object id="7" name="Lancer Controller" x="6603.7" y="287">
+  <object id="7" name="Lancer Controller" x="10004" y="287">
    <properties>
     <property name="description" value="The [[party]] can pick up a Lancer Controller from this console."/>
     <property name="page" value="Lancer Controller"/>
    </properties>
    <point/>
   </object>
-  <object id="8" name="Lancer Controller" x="6282.29" y="287">
+  <object id="8" name="Lancer Controller" x="9684.76" y="287">
    <properties>
     <property name="description" value="The [[party]] can pick up a Lancer Controller from this console."/>
     <property name="page" value="Lancer Controller"/>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Lancer Controller" x="5962.31" y="287">
+  <object id="9" name="Lancer Controller" x="9363.05" y="287">
    <properties>
     <property name="description" value="The [[party]] can pick up a Lancer Controller from this console."/>
     <property name="page" value="Lancer Controller"/>
    </properties>
    <point/>
   </object>
-  <object id="12" name="TV Dinner" x="5059.65" y="1595.01">
+  <object id="12" name="TV Dinner" x="8459.51" y="1580.33">
    <properties>
     <property name="description" value="Treasure chest containing a TV Dinner."/>
     <property name="page" value="TV Dinner"/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="Revive Mint" x="4880.39" y="3189.46">
+  <object id="15" name="Revive Mint" x="8279.96" y="3182.17">
    <properties>
     <property name="description" value="Treasure chest containing a Revive Mint."/>
     <property name="page" value="Revive Mint"/>
    </properties>
    <point/>
   </object>
-  <object id="28" name="TV Slop" x="10442.9" y="2710.07">
+  <object id="28" name="TV Slop" x="13843.5" y="2720.4">
    <properties>
     <property name="description" value="The [[party]] can obtain a TV Slop from inside this trash can."/>
     <property name="page" value="TV Slop"/>
    </properties>
    <point/>
   </object>
-  <object id="27" name="Trash can POINTs" x="10179.8" y="2672.11">
+  <object id="27" name="Trash can POINTs" x="13580.3" y="2669.34">
    <properties>
     <property name="description" value="The [[party]] can obtain 10 POINTs from inside this trash can."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="30" name="Trash can POINTs" x="10896.1" y="2588.32">
+  <object id="30" name="Trash can POINTs" x="14297.3" y="2591.1">
    <properties>
     <property name="description" value="The [[party]] can obtain 2 POINTs from inside this trash can."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="33" name="POINTs" x="12419.9" y="2221.59">
+  <object id="33" name="POINTs" x="15819.3" y="2212.02">
    <properties>
     <property name="description" value="Treasure chest containing a [[Watercooler]] as well as 500 POINTs. If the static Watercooler was not fought, the Watercooler in the chest attacks instead."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Trash can POINTs" x="14960.1" y="2671.19">
+  <object id="38" name="Trash can POINTs" x="18359" y="2674.02">
    <properties>
     <property name="description" value="The [[party]] can obtain 120 POINTs from inside this trash can"/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="39" name="Trash can POINTs" x="14159" y="2876.56">
+  <object id="39" name="Trash can POINTs" x="17558.5" y="2875.7">
    <properties>
     <property name="description" value="The [[party]] can obtain 50 POINTs from inside this trash can."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="50" name="POINTs" x="16500" y="2734.4">
+  <object id="50" name="POINTs" x="19899.7" y="2722.19">
    <properties>
     <property name="description" value="Treasure chest containing 300 POINTs."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="65" name="POINTs" x="24536.4" y="5032.17">
+  <object id="65" name="POINTs" x="27890.6" y="5033.34">
    <properties>
     <property name="description" value="A total of 34 POINTs can be collected from the ground and the small treasure chests in this area."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="79" name="POINT" x="39579.7" y="5065.34">
+  <object id="79" name="POINT" x="42979.7" y="5046.93">
    <properties>
     <property name="description" value="Treasure chest containing 1 POINT."/>
     <property name="page" value="POINT"/>
    </properties>
    <point/>
   </object>
-  <object id="153" name="Deluxe Dinner" x="18376" y="2519.86">
+  <object id="153" name="Deluxe Dinner" x="21776.1" y="2509.24">
    <properties>
     <property name="description" value="Treasure chest containing a Deluxe Dinner."/>
     <property name="page" value="Deluxe Dinner"/>
@@ -561,22 +657,32 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
  </objectgroup>
  <objectgroup id="10" name="signs">
-  <object id="34" name="Curtain NPC" x="12660" y="2085.61">
+  <object id="34" name="Curtain NPC" x="16058.1" y="2046.71">
    <properties>
     <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
+    <property name="page" value="Curtain NPC"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Ralsei's reminder manual" x="1898.96" y="962.599">
+   <properties>
+    <property name="description">SPARE enemies whose names become YELLOW!
+Use PACIFY on TIRED enemies whose names are BLUE!
+And... remember [[Susie]] and [[Ralsei]]'s S-Action and R-Action, too!</property>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="11" name="warpdoor">
-  <object id="4" name="Warp Door" x="3250.94" y="967.984">
+  <object id="4" name="Warp Door" x="6649.06" y="876.245">
    <properties>
     <property name="description" value="Warp Door in the TV World Entrance. Unlocks after reaching the [[Green Room]]."/>
     <property name="page" value="Warp Door"/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Warp Door" x="9667.65" y="3046.13">
+  <object id="23" name="Warp Door" x="13067" y="2990.76">
    <properties>
     <property name="description" value="Warp Door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]."/>
     <property name="page" value="Warp Door"/>
@@ -585,13 +691,13 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
  </objectgroup>
  <objectgroup id="12" name="saves">
-  <object id="3" name="TV World - Entrance" x="3084.57" y="1015.22">
+  <object id="3" name="TV World - Entrance" x="6484.07" y="975.425">
    <properties>
     <property name="description" value="SAVE Point in the TV World Entrance."/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="TV World - Goulden Sam" x="9080.29" y="3113.41">
+  <object id="18" name="TV World - Goulden Sam" x="12481.5" y="3111.71">
    <properties>
     <property name="description">You are greeted by yet another prisonlike location.
 You question why your adventures feature so many of these.</property>
@@ -599,7 +705,7 @@ You question why your adventures feature so many of these.</property>
    </properties>
    <point/>
   </object>
-  <object id="56" name="TV World - Concert" x="21739.9" y="3127.99">
+  <object id="56" name="TV World - Concert" x="25139.7" y="3127.57">
    <properties>
     <property name="description">'''Shadowguy recruited:''' You hear a jazz concert only consisting of saxophones.
 You are filled with the power of everyone playing solo at once.
@@ -613,10 +719,18 @@ You question if a concert can be a concert if no one is there.</property>
    </properties>
    <point/>
   </object>
-  <object id="74" name="TV World - Cooking Show" x="33986.1" y="4129.01">
+  <object id="74" name="TV World - Cooking Show" x="37386" y="4127.25">
    <properties>
     <property name="description">The incense of hot snacks and spicy flavors assaults you.
 You are filled with the power of the primal invention of fire.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="160" name="TV World - Before the Show" x="2375.17" y="1006.76">
+   <properties>
+    <property name="description">You hear the audience whispering in awe at your presence.
+You are filled with the power of undeserved fame.</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>

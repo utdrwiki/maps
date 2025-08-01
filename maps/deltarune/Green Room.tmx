@@ -42,13 +42,6 @@
    </properties>
    <point/>
   </object>
-  <object id="43" name="Cold Place" x="2655.39" y="3000.34">
-   <properties>
-    <property name="description" value="Doorway to the Cold Place, a cold area at the edge of the TV World."/>
-    <property name="page" value="Cold Place"/>
-   </properties>
-   <point/>
-  </object>
   <object id="44" x="1724.42" y="2586.12">
    <properties>
     <property name="color" type="color" value="#fff45e4b"/>
@@ -133,6 +126,13 @@
    </properties>
    <point/>
   </object>
+  <object id="43" name="Cold Place" x="2655.39" y="3000.34">
+   <properties>
+    <property name="description" value="Doorway to the Cold Place, a cold area at the edge of the TV World."/>
+    <property name="page" value="Cold Place"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="npcs">
   <object id="4" name="Zapper" x="2240.43" y="3433.33">
@@ -211,6 +211,7 @@
   <object id="37" name="Curtain NPC" x="3260.75" y="633.69">
    <properties>
     <property name="description" value="An unseen NPC behind the curtain. Gives [[Kris]] a [[Saber10]] after the first round of [[TV Time]]."/>
+    <property name="page" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
@@ -332,6 +333,7 @@ You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
   <object id="1" name="Curtain NPC" x="1518.87" y="4049.03">
    <properties>
     <property name="description" value="An unseen NPC stands here after round 1 of [[TV Time]]. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
+    <property name="page" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
