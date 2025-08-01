@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="126">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="153">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -8,221 +8,667 @@
   <image source="images/Card Castle.png" width="3223" height="5683"/>
  </imagelayer>
  <objectgroup id="5" name="vendors">
-  <object id="57" name="Rouxls Kaard's shop" x="834.685" y="1715.79">
+  <object id="57" name="Rouxls Kaard's shop" x="835" y="1716.5">
    <properties>
-    <property name="description">Rouxls owns this shop. He sells the following:
+    <property name="description">[[Rouxls Kaard]] owns this shop. He sells the following:
 
-* [[RouxlsRoux]]
+* [[Rouxls Roux]]
 * [[Brave Ax]]
 * [[Dainty Scarf]]
 * [[Amber Card]]
 
 Rouxls can also talk about himself, explain why he is selling to the [[party]], and about [[King]] and [[Lancer]].</property>
-    <property name="page" value="Rouxls Kaard"/>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="sublocations">
+  <object id="125" name="Forest" x="462" y="5377">
+   <properties>
+    <property name="description" value="This path leads to the front of the castle, where the [[party]] can return to the Forest. The nearby [[Warp Door]] now functions."/>
+    <property name="page" value="Forest"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="9" name="signs">
-  <object id="43" name="Bed Inspector" x="977.454" y="2897.28">
+  <object id="126" name="Cracked wall" x="1400.5" y="4560">
    <properties>
-    <property name="description" value="The Bed Inspector [[title]] is awarded if [[Kris Dreemurr|Kris]] inspects all four beds. This transfers via [[Completion FILE]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="37" name="Sign" x="845.32" y="4144.66">
-   <properties>
-    <property name="description"> (Castle Bathroom &quot;Royal Flush&quot;)
-(Currently occupied.)</property>
+    <property name="description">'''First interaction:''' (There's a crack in the wall...) (What could be inside...?)
+(... it's more wall.)
+
+'''Subsequent interactions:''' (Nothing here except for poor architectural engineering.)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
-  <object id="30" name="Sign" x="589.61" y="4664.94">
+  <object id="127" name="Metal door" x="1401" y="4698">
+   <properties>
+    <property name="description">'''First interaction:''' (It's a metal door.) (You rattle the bars...)
+(It's no use...)
+
+'''Subsequent interactions:''': (It's a metal door.) (It's locked.)
+
+'''After [[Susie]] rejoins the party:''' (There's a conspicuous absence of a metal door here.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Sign" x="730" y="4884.5">
+   <properties>
+    <property name="description">(Elevator to Prison.)
+(Formerly known as Elevator to Basement, Which Just Happened to Have A Lot Of Cages.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Sign" x="590" y="4664.5">
    <properties>
     <property name="description">'''Initial:''' (Elevator to Top Floor.)
 (Currently stuck at the top floor until someone rides it down.)
+
 '''Upon reaching 5F:''' (Elevator to Top Floor.)
 (No longer stuck at the top floor.)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
-  <object id="31" name="Sign" x="109.957" y="4805.19">
+  <object id="31" name="Sign" x="110" y="4804.5">
    <properties>
-    <property name="description">([[Rudinn]]'s Room.)
+    <property name="description">(Rudinn's Room.)
 (Yes, that's a door!)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
-  <object id="29" name="Sign" x="729.87" y="4884.85">
+  <object id="135" name="Riches" x="157" y="4441.5">
    <properties>
-    <property name="description">(Elevator to Prison.)
- (Formerly known as Elevator to Basement, Which Just Happened to Have A Lot Of Cages.)</property>
+    <property name="description" value="''(Normal everyday riches, acquired from a legitimate source.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Photograph" x="160.5" y="4384.5">
+   <properties>
+    <property name="description" value="''(Looks like a family photograph.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Sign" x="845.5" y="4147">
+   <properties>
+    <property name="description" value="''(Castle Bathroom &quot;Royal Flush&quot;) (Currently occupied.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Bed" x="872.5" y="2906">
+   <properties>
+    <property name="description">(Looks like a bed.) (Will you rest here?)
+(... No, you won't.) (It's not your bed.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Bed" x="907.5" y="2906">
+   <properties>
+    <property name="description">(Looks like a bed.) (Will you rest here?)
+(... No, you won't.) (It's not your bed.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="Bed" x="942.5" y="2906">
+   <properties>
+    <property name="description">(Looks like a bed.) (Will you rest here?)
+(... No, you won't.) (It's not your bed.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Bed" x="977.5" y="2906">
+   <properties>
+    <property name="description">(Looks like a bed.) (Will you rest here?)
+(... No, you won't.) (It's not your bed.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Bed" x="640" y="2660">
+   <properties>
+    <property name="description" value="''(It's a bed for three people, or one three-headed person.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="Trees" x="791.5" y="2766">
+   <properties>
+    <property name="description" value="''(It's a tree.) (For parties.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Boombox" x="811" y="2668.5">
+   <properties>
+    <property name="description" value="''(It's a boombox.) (It's playing clubs music.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Soccer balls" x="802.5" y="2637.5">
+   <properties>
+    <property name="description">'''First interaction:''' (It's a giant baseball.) (For parties.)
+
+'''Subsequent interactions:''' (Actually, seems the giant baseball is a soccer ball that's been painted over.)
+(It would be easier to draw that way.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" name="Hole" x="398" y="1666.5">
+   <properties>
+    <property name="description">(You found 20 Rupys in the hole!)
+(Unfortunately, that's not a useful currency here...)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" name="Hole" x="438" y="1661.5">
+   <properties>
+    <property name="description" value="''(It's a hole made recreationally.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="Hole" x="463" y="1641.5">
+   <properties>
+    <property name="description" value="''(It's a hole. Presumably dug for fun.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Hole" x="488" y="1671.5">
+   <properties>
+    <property name="description" value="''(There's salsa buried in the ground here.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="149" name="Spade" x="509" y="1641">
+   <properties>
+    <property name="description" value="''(It's some kind of digging implement.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="Music player" x="497.5" y="1613.5">
+   <properties>
+    <property name="description">(It's a music player.) (Listen to the contents?)
+
+'''Listen:''' (...)
+(It's full of cartoon splat noises.)
+
+'''Do Not:''' (You did not listen.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="Bed" x="410" y="1594.5">
+   <properties>
+    <property name="description" value="''(A bicycle is lovingly tucked into bed.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="152" name="Crown" x="1287" y="1305.5">
+   <properties>
+    <property name="description">'''First interaction:''' (Thar she blows...)
+
+'''Subsequent interactions:''' (It's going off to live a better life now...)</property>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="8" name="saves">
-  <object id="26" name="Card Castle - ???" x="2671.05" y="5586.75">
-   <properties>
-    <property name="description" value="SAVE Point in ??????."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="61" name="Card Castle - Throne" x="1341.41" y="1038.19">
-   <properties>
-    <property name="description" value="SAVE Point at [[King]]'s throne. Disappears in the epilogue."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="56" name="Card Castle - 5F" x="694.059" y="1894.15">
-   <properties>
-    <property name="description" value="SAVE Point on 5F."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="13" name="Card Castle - Prison" x="2081.9" y="5001.6">
+  <object id="13" name="Card Castle - Prison" x="2081.5" y="5002.5">
    <properties>
     <property name="description" value="SAVE Point in Prison B1."/>
+    <property name="page" value="SAVE Point"/>
    </properties>
    <point/>
   </object>
-  <object id="25" name="Card Castle - 1F" x="847.438" y="4945.17">
+  <object id="26" name="Card Castle - ???" x="2671.5" y="5590">
+   <properties>
+    <property name="description" value="SAVE Point in ??????."/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Card Castle - 1F" x="847.5" y="4948">
    <properties>
     <property name="description" value="SAVE Point in 1F."/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Card Castle - 5F" x="693.5" y="1895">
+   <properties>
+    <property name="description" value="SAVE Point on 5F."/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Card Castle - Throne" x="1341.5" y="1038">
+   <properties>
+    <property name="description" value="SAVE Point at [[King]]'s throne. Disappears in the epilogue."/>
+    <property name="page" value="SAVE Point"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="6" name="puzzles">
-  <object id="9" name="Card Suits Puzzle 2" x="1340.98" y="4892.01">
-   <properties>
-    <property name="description" value="The second Card Suits Puzzle that [[Susie]] solves on her own. [[Kris Dreemurr|Kris]] can inspect it to listen to [[Ralsei]] and Susie's reactions."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="5" name="Card Suits Puzzle" x="1220.42" y="4630.91">
+  <object id="5" name="Card suits puzzle" x="1221" y="4631">
    <properties>
     <property name="description" value="[[Susie]] needs help with this puzzle to free [[Kris Dreemurr|Kris]] and [[Ralsei]]. The in-game order is Add Spade, Add Diamond, Swap, Add Spade."/>
    </properties>
    <point/>
   </object>
- </objectgroup>
- <objectgroup id="3" name="plot">
-  <object id="125" name="Returning to the Forest" x="462.124" y="5376.95">
+  <object id="9" name="Card suits puzzle 2" x="1341.5" y="4892">
    <properties>
-    <property name="description" value="This path leads to the front of the castle, where the [[party]] can return to the [[Forest]]. The nearby [[Warp Door]] now functions."/>
+    <property name="description" value="The second card suits puzzle that [[Susie]] solves on her own. [[Kris Dreemurr|Kris]] can inspect it to listen to [[Ralsei]] and Susie's reactions."/>
    </properties>
    <point/>
   </object>
-  <object id="124" name="Quest for the Door Key" x="2788.61" y="5519.58">
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="3" name="Trapped in prison" x="1431" y="4625">
+   <properties>
+    <property name="description" value="[[Kris Dreemurr|Kris]] and [[Ralsei]] wake up in this cell and listen to a [[Rudinn]]. Ralsei then asks Kris to find a way to escape. The story can progress by inspecting the metal door and conversing with Ralsei."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Susie hears Lancer" x="1181" y="4967.5">
+   <properties>
+    <property name="description" value="[[Susie]] wonders which way to go, but goes to a dead end. She hears [[Lancer]], and solves the second card suits puzzle on her own."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Susie's intimidation" x="1491" y="4972.5">
+   <properties>
+    <property name="description" value="[[Susie]] menaces [[Lancer]] after he admits to wanting to have the [[party]] locked in the cells. She refuses to listen to him, and insists that he moves aside. Post battle, Susie tries to make a promise to Lancer that they will not attack [[King]] and try to reason with him."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Susie asks for Kris and Ralsei's help" x="2082" y="4736">
+   <properties>
+    <property name="description" value="[[Ralsei]] presses the button, and [[Susie]] asks for Ralsei and [[Kris Dreemurr|Kris]]'s help on how to [[ACT]]. Once Ralsei exits, she promises to listen to Kris."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Quest for the Door Key" x="2788.5" y="5519.5">
    <properties>
     <property name="description" value="[[Jevil]] explains that he was locked away, and asks the [[party]] to talk to [[Seam]] to obtain the [[Broken Keys]]."/>
     <property name="page" value="Broken Keys"/>
    </properties>
    <point/>
   </object>
-  <object id="123" name="Sealing the Dark Fountain" x="2819.62" y="171.69">
-   <properties>
-    <property name="description" value="As [[Kris Dreemurr|Kris]] and [[Susie]] approach the [[Dark Fountains|Dark Fountain]], she muses that this whole event is important, but they must return to the [[Light World]]. Kris then approaches the Fountain and seals it with the [[SOUL]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="122" name="Ralsei's goodbye" x="2631.48" y="658.501">
-   <properties>
-    <property name="description">Ralsei removes his hat while he states that he hopes to see [[Kris Dreemurr|Kris]] and [[Susie]] again soon. He offers to bake cakes for them next time.
-
-This occurs if enemies were not defeated via violence, and after Kris and Susie spoke with [[Lancer]]. </property>
-   </properties>
-   <point/>
-  </object>
-  <object id="97" name="Saying goodbye" x="2819.69" y="400.223">
-   <properties>
-    <property name="description" value="[[Susie]] stops [[Kris Dreemurr|Kris]] here if no enemies were defeated via violence. Either option causes Susie to insist they should return to say goodbye to [[Lancer]]. This can also occur by going to the left immediately instead."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="96" name="King's facade" x="2119.69" y="650.127">
-   <properties>
-    <property name="description">Post battle, [[King]] surrenders, and claims to not want to wage war anymore. [[Ralsei]] heals him in response, and he instantly attacks the [[party]] after being healed. 
-
-The end of this scene varies depending whether or not any enemies were defeated via violence, with pacifism having more scenes.</property>
-   </properties>
-   <point/>
-  </object>
-  <object id="95" name="King's threat" x="1667.8" y="662.297">
-   <properties>
-    <property name="description" value="The [[party]] watches [[Lancer]] try to reason with [[King]], and tries to introduce themselves. Instead, King threatens to drop Lancer from the rooftop, though Lancer attacks and returns to the castle. The party then battles versus King."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="59" name="Rouxls's Control Crown" x="978.846" y="1276.54">
-   <properties>
-    <property name="description" value="[[Rouxls Kaard]] summons [[K. Round]] to [[encounter]] the [[party]]. Post battle, Rouxls wishes them luck and flees from them."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="48" name="Rouxls's second puzzle" x="1272.61" y="2216.81">
-   <properties>
-    <property name="description" value="[[Rouxls Kaard]] appears again to impede the [[party]] with his second block-pushing puzzle. Once it has been completed, Rouxls claims it was not his best puzzle, though flees when [[Ralsei]] asks if they can see it. The stairs to 5F becomes accessible."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="45" name="Hathy forgiving" x="971.426" y="2946.17">
-   <properties>
-    <property name="description" value="[[Hathy]] forgives [[Kris Dreemurr|Kris]] for their sins. Alternatively, If the [[party]] has defeated a Hathy via [[FIGHT]]ing, [[Ralsei]] can apologize to this Hathy. This can lead to the peaceful ending."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="94" name="Rouxls's introduction" x="1266.22" y="3900.95">
-   <properties>
-    <property name="description" value="[[Rouxls Kaard]] introduces himself to the [[party]] and challenges them with a block pushing puzzle. He curses and floats away once it has been completed, and 3F's staircase can be used."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="44" name="Choco Diamond or apology" x="220.559" y="4478.99">
+  <object id="44" name="Choco Diamond or apology" x="214.5" y="4482.5">
    <properties>
     <property name="description" value="[[Rudinn]] gives [[Kris Dreemurr|Kris]] a [[Choco Diamond]] if no Rudinns were defeated via [[FIGHT]]ing, and if their [[inventory]] is not full. Otherwise, this Rudinn can be apologized to if one was defeated, which can lead to the peaceful ending."/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Susie asks for Kris and Ralsei's help" x="2081.95" y="4736.05">
+  <object id="94" name="Rouxls's introduction" x="1266.5" y="3900.5">
    <properties>
-    <property name="description" value="[[Ralsei]] presses the button, and [[Susie]] asks for Ralsei and [[Kris Dreemurr|Kris]]'s help on how to [[ACT]]. Once Ralsei exits, she promises to listen to Kris."/>
+    <property name="description" value="[[Rouxls Kaard]] introduces himself to the [[party]] and challenges them with a block-pushing puzzle. He curses and floats away once it has been completed, and 3F's staircase can be used."/>
    </properties>
    <point/>
   </object>
-  <object id="11" name="Susie's intimidation" x="1490.86" y="4975.42">
+  <object id="45" name="Hathy forgiving" x="973.5" y="2947.5">
    <properties>
-    <property name="description" value="[[Susie]] menaces [[Lancer]] after he admits to wanting to have the [[party]] locked in the cells. She refuses to listen to him, and insists that he moves aside. Post battle, Susie tries to make a promise to Lancer that they will not attack [[King]] and try to reason with him."/>
+    <property name="description" value="[[Hathy]] forgives [[Kris Dreemurr|Kris]] for their sins. Alternatively, If the [[party]] has defeated a Hathy via [[FIGHT]]ing, [[Ralsei]] can apologize to this Hathy. This can lead to the peaceful ending."/>
    </properties>
    <point/>
   </object>
-  <object id="8" name="Susie hears Lancer" x="1181.1" y="4967.44">
+  <object id="43" name="Bed Inspector" x="924" y="2947">
    <properties>
-    <property name="description" value="[[Susie]] wonders which way to go, but goes to a dead end. She hears [[Lancer]], and solves the second Card Suits Puzzle on her own."/>
+    <property name="description" value="The &quot;Bed Inspector&quot; [[title]] is awarded if [[Kris Dreemurr|Kris]] inspects all four beds. This transfers via [[Completion FILE]]."/>
    </properties>
    <point/>
   </object>
-  <object id="3" name="Trapped in prison" x="1427.91" y="4622.53">
+  <object id="48" name="Rouxls's second puzzle" x="1273" y="2217">
    <properties>
-    <property name="description" value="[[Kris Dreemurr|Kris]] and [[Ralsei]] wake up in this cell and listen to a [[Rudinn]]. Ralsei then asks Kris to find a way to escape. The story can progress by inspecting the metal door and conversing with Ralsei."/>
+    <property name="description" value="[[Rouxls Kaard]] appears again to impede the [[party]] with his second block-pushing puzzle. Once it has been completed, Rouxls claims it was not his best puzzle, though flees when [[Ralsei]] asks if they can see it. The stairs to 5F becomes accessible."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Rouxls's Control Crown" x="979" y="1286">
+   <properties>
+    <property name="description" value="[[Rouxls Kaard]] summons [[K. Round]] to [[encounter]] the [[party]]. Post battle, Rouxls wishes them luck and flees from them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="King's threat" x="1666" y="662">
+   <properties>
+    <property name="description" value="The [[party]] watches [[Lancer]] try to reason with [[King]], and tries to introduce themselves. Instead, King threatens to drop Lancer from the rooftop, though Lancer attacks and returns to the castle. The party then battles versus King."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Dead pixel" x="2004.5" y="648">
+   <properties>
+    <property name="description" value="A single black pixel resides on the ground in the battle against [[King]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="King's facade" x="2118" y="650">
+   <properties>
+    <property name="description">Post battle, [[King]] surrenders, and claims to not want to wage war anymore. [[Ralsei]] heals him in response, and he instantly attacks the [[party]] after being healed.
+
+The end of this scene varies depending whether or not any enemies were defeated via violence, with pacifism having more scenes.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Saying goodbye" x="2819.5" y="400">
+   <properties>
+    <property name="description" value="[[Susie]] stops [[Kris Dreemurr|Kris]] here if no enemies were defeated via violence. Either option causes Susie to insist they should return to say goodbye to [[Lancer]]. This can also occur by going to the left immediately instead."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="122" name="Ralsei's goodbye" x="2632" y="662">
+   <properties>
+    <property name="description">[[Ralsei]] removes his hat while he states that he hopes to see [[Kris Dreemurr|Kris]] and [[Susie]] again soon. He offers to bake cakes for them next time.
+
+This occurs if enemies were not defeated via violence, and after Kris and Susie spoke with [[Lancer]].</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Sealing the Dark Fountain" x="2819.5" y="171.5">
+   <properties>
+    <property name="description" value="As [[Kris Dreemurr|Kris]] and [[Susie]] approach the [[Dark Fountains|Dark Fountain]], she muses that this whole event is important, but they must return to the [[Light World]]. Kris then approaches the Fountain and seals it with the [[SOUL]]."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="npcs">
-  <object id="119" name="C. Round" x="1249.66" y="1117.49">
+  <object id="4" name="Ralsei" x="1332.5" y="4604">
    <properties>
-    <property name="description" value="C. Round shrunk down out of respect for the [[party]]. C. Round also blocks the path, thus the other floors are inaccessible."/>
+    <property name="description" value="He asks [[Kris Dreemurr|Kris]] to look around the prison. Once the metal door has been inspected, the story progresses to helping [[Susie]] with the puzzle, then Ralsei asking Kris to close their eyes and think about Susie. Ralsei can also acknowledge Kris's other options."/>
+    <property name="page" value="Ralsei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Pair of Eyes" x="1021.5" y="4931">
+   <properties>
+    <property name="description" value="Expresses disbelief about being trapped in a cell."/>
+    <property name="page" value="Pair of Eyes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Trash Can Rudinn" x="1113" y="4662">
+   <properties>
+    <property name="description" value="The [[Rudinn]] that [[Susie]] &quot;invited&quot; to the trash can so she can get the prison keys and free the [[party]]."/>
+    <property name="page" value="Trash Can Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Goulden Sam" x="2418" y="4908">
+   <properties>
+    <property name="description" value="Is surprised that [[Kris Dreemurr|Kris]] talks with them."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Former Kings" x="2468" y="4888">
+   <properties>
+    <property name="description" value="The King of Diamonds explain the three kings' plight and the [[Knight]]'s appearance."/>
+    <property name="page" value="Former Kings"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Goulden Sam" x="2540.5" y="4908">
+   <properties>
+    <property name="description" value="Asks if [[Kris Dreemurr|Kris]] is enjoying the show."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Jigsawry" x="2590" y="4888">
+   <properties>
+    <property name="description" value="Ashamed for making a word search puzzle without a license."/>
+    <property name="page" value="Jigsawry"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Goulden Sam" x="2662.5" y="4908">
+   <properties>
+    <property name="description" value="States their name."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Rudinn" x="2712" y="4888">
+   <properties>
+    <property name="description" value="Admits to refusing to fight the [[party]], despite [[King]]'s command."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Goulden Sam" x="2784.5" y="4908">
+   <properties>
+    <property name="description" value="Laments the difficulty of being the fourth cage."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Circus Animals" x="2834" y="4888">
+   <properties>
+    <property name="description" value="Want to be alone instead of with others."/>
+    <property name="page" value="Circus Animals"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Starwalker" x="2880.5" y="4963.5">
+   <properties>
+    <property name="description" value="Appears if he was found in the [[Forest]]. He expresses anger towards the prison."/>
+    <property name="page" value="Starwalker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Rudinn" x="114.5" y="4480.5">
+   <properties>
+    <property name="description" value="A Rudinn that is glad to have sold beds in exchange for treasure."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Rouxls Kaard" x="1266.5" y="3817.5">
+   <properties>
+    <property name="description" value="He jeers the [[party]] for not being able to solve the puzzle."/>
+    <property name="page" value="Rouxls Kaard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Rudinn" x="1306" y="3863">
+   <properties>
+    <property name="description" value="Appears after [[Rouxls Kaard]] leaves, and praises Rouxls's puzzlemaking."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Hathy" x="875.5" y="2947.5">
+   <properties>
+    <property name="description" value="A Hathy that is proud to have sold gems in exchange for beds."/>
+    <property name="page" value="Hathy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Rudinn" x="634.5" y="2701.5">
+   <properties>
+    <property name="description" value="The first party member of [[Clover]]'s party, who is responsible for ''[[April 2012]]'' playing."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Clover" x="693.5" y="2632">
+   <properties>
+    <property name="description" value="Greets the [[party]] and somewhat invites them to participate."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Hathy" x="832.394" y="2701.75">
+   <properties>
+    <property name="description" value="Hathy states it is the second party member. Hathy also mentions that a [[Top Cake]] was commissioned for [[Clover]]'s birthday, but it was destroyed in the [[Field]]."/>
+    <property name="page" value="Hathy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Rouxls Kaard" x="1271.5" y="2133.5">
+   <properties>
+    <property name="description" value="He continues to taunt the [[party]] for not being able to solve the puzzle."/>
+    <property name="page" value="Rouxls Kaard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Rudinn" x="1310.5" y="2179">
+   <properties>
+    <property name="description" value="Acknowledges [[Rouxls Kaard]] was here, and apologizes for sighing due to lack of sleep."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="C. Round" x="1003.5" y="1214.5">
+   <properties>
+    <property name="description" value="C. Round appears after returning to this room, and has become peaceful."/>
     <property name="page" value="C. Round"/>
    </properties>
    <point/>
   </object>
-  <object id="118" name="Top Chef" x="1354.67" y="943.241">
+  <object id="98" name="Ralsei" x="2468.5" y="594">
+   <properties>
+    <property name="description" value="Ralsei is surprised that [[Kris Dreemurr|Kris]] and [[Susie]] returned. He informs that the others wish to say goodbye as well, and asks to let him know when they are leaving."/>
+    <property name="page" value="Ralsei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Jigsaw Joe" x="2284.5" y="606.5">
+   <properties>
+    <property name="description" value="Praises the [[party]] and encourages them to do their best. He appears with a clean shave and top hat if [[Kris Dreemurr|Kris]] donated a [[Dark Dollar]] in the [[Field]]."/>
+    <property name="page" value="Jigsaw Joe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="B Block" x="2182" y="582.5">
+   <properties>
+    <property name="description" value="Claims the [[party]] is the best."/>
+    <property name="page" value="Blue Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="O Block" x="2142.5" y="582.5">
+   <properties>
+    <property name="description" value="States that they owe the [[party]]."/>
+    <property name="page" value="Blue Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="O Block" x="2082" y="582.5">
+   <properties>
+    <property name="description" value="Praises the [[party]]."/>
+    <property name="page" value="Blue Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="103" name="B Block" x="2042.5" y="582.5">
+   <properties>
+    <property name="description" value="Praises the [[party]]'s efforts."/>
+    <property name="page" value="Blue Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Little Ball" x="2137.5" y="676">
+   <properties>
+    <property name="description" value="Expresses thank you to the [[party]]."/>
+    <property name="page" value="Little Ball"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Royal Coat Rack" x="2093" y="657">
+   <properties>
+    <property name="description" value="Expresses gratitude, and mentions inviting [[Seam]] as well, though they were not interested."/>
+    <property name="page" value="Royal Coat Rack"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Mr. Elegance" x="1931.5" y="610.5">
+   <properties>
+    <property name="description" value="Is thankful for the [[party]]'s efforts."/>
+    <property name="page" value="Mr. Elegance"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Mr. Society" x="1870.5" y="598.5">
+   <properties>
+    <property name="description" value="Is glad [[King]] has been defeated, and wants to take some credit for this unless King returns."/>
+    <property name="page" value="Mr. Society"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Rouxls Kaard" x="1800.5" y="582.5">
+   <properties>
+    <property name="description" value="Rouxls praises the [[party]] for defeating [[King]], and also considers himself apart of their tale. [[Susie]] points out that he tried to kill them, though Rouxls offers a plate of worms in exchange for not letting others know."/>
+    <property name="page" value="Rouxls Kaard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="109" name="Rudinn" x="1518.5" y="616.5">
+   <properties>
+    <property name="description" value="Admits to being the [[party]]'s enemies, but was cheering for them the entire time due to disliking the job."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="110" name="Clover" x="1417.5" y="586.5">
+   <properties>
+    <property name="description" value="Mostly speaks positively of [[Card Kingdom]]'s future, and expresses gratitude. Also invites the [[party]] to one of her future birthdays."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Hathy" x="1346.5" y="606.5">
+   <properties>
+    <property name="description" value="Looks proudly at [[Kris Dreemurr|Kris]] and gives a kiss."/>
+    <property name="page" value="Hathy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="112" name="Rudinn" x="1268.5" y="616.5">
+   <properties>
+    <property name="description" value="Is confused about what happened due to sleeping through everything."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Goulden Sam" x="1132" y="865.5">
+   <properties>
+    <property name="description" value="States that the show is over, and that everyone should go home."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Former Kings" x="1182" y="844">
+   <properties>
+    <property name="description" value="The King of Diamonds asks if they will return to power. However, upon seeing his treasure, he is content."/>
+    <property name="page" value="Former Kings"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="114" name="Goulden Sam" x="1274.5" y="865.5">
+   <properties>
+    <property name="description" value="Notices there are fewer people in cages."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Circus Animals" x="1324" y="844">
+   <properties>
+    <property name="description" value="The animals state they are fine with the [[Former Kings]] in cages, but claim they must wear animal ears and noses."/>
+    <property name="page" value="Circus Animals"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Top Chef" x="1354.5" y="943.5">
    <properties>
     <property name="description">Top Chef's dialogue varies depending if the [[Broken Cake]] was repaired and returned to him.
 
@@ -232,314 +678,70 @@ The end of this scene varies depending whether or not any enemies were defeated 
    </properties>
    <point/>
   </object>
-  <object id="117" name="Rudinn" x="1177.89" y="955.658">
+  <object id="117" name="Rudinn" x="1174.5" y="957.5">
    <properties>
     <property name="description" value="Rudinn admits that everyone was unsure about who should be the new king, but believes [[Lancer]] will be a good king. Rudinn also mentions Lancer's salsa production mandate."/>
     <property name="page" value="Rudinn"/>
    </properties>
    <point/>
   </object>
-  <object id="120" name="Lancer" x="1246.71" y="947.871">
+  <object id="119" name="C. Round" x="1249.5" y="1117.5">
+   <properties>
+    <property name="description" value="C. Round shrunk down out of respect for the [[party]]. C. Round also blocks the path, thus the other floors are inaccessible."/>
+    <property name="page" value="C. Round"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Lancer" x="1246.5" y="948">
    <properties>
     <property name="description" value="He is glad to see [[Susie]] and [[Kris Dreemurr|Kris]]. Lancer talks with Susie about the kingdom's future and [[King]] being in prison."/>
     <property name="page" value="Lancer"/>
    </properties>
    <point/>
   </object>
-  <object id="116" name="Goulden Sam" x="1131.17" y="865.374">
-   <properties>
-    <property name="description" value="States that the show is over, and that everyone should go home."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="115" name="Former Kings" x="1181.89" y="842.435">
-   <properties>
-    <property name="description" value="The King of Diamonds asks if they will return to power. However, upon seeing his treasure, he is content."/>
-    <property name="page" value="Former Kings"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="113" name="Circus Animals" x="1324.37" y="842.435">
-   <properties>
-    <property name="description" value="The animals state they are fine with the [[Former Kings]] in cages, but claim they must wear animal ears and noses."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="114" name="Goulden Sam" x="1273.23" y="865.585">
-   <properties>
-    <property name="description" value="Notices there are fewer people in cages."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="112" name="Rudinn" x="1273.86" y="613.044">
-   <properties>
-    <property name="description" value="Is confused about what happened due to sleeping through everything."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="111" name="Hathy" x="1344.99" y="603.573">
-   <properties>
-    <property name="description" value="Looks proudly at [[Kris Dreemurr|Kris]] and gives a kiss."/>
-    <property name="page" value="Hathy"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="110" name="Clover" x="1426.02" y="588.631">
-   <properties>
-    <property name="description" value="Mostly speaks positively of [[Card Kingdom]]'s future, and expresses gratitude. Also invites the [[party]] to one of her future birthdays."/>
-    <property name="page" value="Clover"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="109" name="Rudinn" x="1524.51" y="613.254">
-   <properties>
-    <property name="description" value="Admits to being the [[party]]'s enemies, but was cheering for them the entire time due to disliking the job."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="108" name="Rouxls Kaard" x="1800.41" y="581.266">
-   <properties>
-    <property name="description" value="Rouxls praises the [[party]] for defeating [[King]], and also considers himself apart of their tale. [[Susie]] points out that he tried to kill them, though Rouxls offers a plate of worms in exchange for not letting others know."/>
-    <property name="page" value="Rouxls Kaard"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="107" name="Mr. Society" x="1870.49" y="598.523">
-   <properties>
-    <property name="description" value="Is glad [[King]] has been defeated, and wants to take some credit for this unless King returns."/>
-    <property name="page" value="Mr. Society"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="106" name="Mr. Elegance" x="1931.52" y="609.466">
-   <properties>
-    <property name="description" value="Is thankful for the [[party]]'s efforts."/>
-    <property name="page" value="Mr. Elegance"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="105" name="Royal Coat Rack" x="2093.78" y="649.873">
-   <properties>
-    <property name="description" value="Expresses gratitude, and mentions inviting [[Seam]] as well, though they were not interested."/>
-    <property name="page" value="Royal Coat Rack"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="104" name="Little Ball" x="2137.76" y="675.969">
-   <properties>
-    <property name="description" value="Expresses thank you to the [[party]]."/>
-    <property name="page" value="Little Ball"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="103" name="B Block" x="2042.01" y="582.318">
-   <properties>
-    <property name="description" value="Praises the [[party]]'s efforts."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="102" name="O Block" x="2081.36" y="582.739">
-   <properties>
-    <property name="description" value="Praises the [[party]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="101" name="O Block" x="2142.6" y="582.739">
-   <properties>
-    <property name="description" value="States that they owe the [[party]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="100" name="B Block" x="2182.59" y="582.739">
-   <properties>
-    <property name="description" value="Claims the [[party]] is the best."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="99" name="Jigsaw Joe" x="2284.02" y="606.309">
-   <properties>
-    <property name="description" value="Praises the [[party]] and encourages them to do their best. He appears with a clean shave and top hat if [[Kris Dreemurr|Kris]] donated a [[Dark Dollar]] in the [[Field]]."/>
-    <property name="page" value="Jigsaw Joe"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="98" name="Ralsei" x="2467.96" y="592.209">
-   <properties>
-    <property name="description" value="Ralsei is surprised that [[Kris Dreemurr|Kris]] and [[Susie]] returned.  He informs that the others wish to say goodbye as well, and asks to let him know when they are leaving."/>
-    <property name="page" value="Ralsei"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="60" name="C. Round" x="1003.53" y="1214.57">
-   <properties>
-    <property name="description" value="C. Round appears after returning to this room, and has become peaceful."/>
-    <property name="page" value="C. Round"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="55" name="Hathy" x="830.769" y="2697.44">
-   <properties>
-    <property name="description" value="Hathy states it is the second party member. Hathy also mentions that a [[Top Cake]] was commissioned for [[Clover]]'s birthday, but it was destroyed in the [[Field]]."/>
-    <property name="page" value="Hathy"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="54" name="Clover" x="702.262" y="2632.48">
-   <properties>
-    <property name="description" value="Greets the [[party]] and somewhat invites them to participate."/>
-    <property name="page" value="Clover"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="53" name="Rudinn" x="639.517" y="2699.85">
-   <properties>
-    <property name="description" value="The first party member of [[Clover]]'s party, who is responsible for ''[[April 2012]]'' playing."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="50" name="Rudinn" x="1310.86" y="2181.39">
-   <properties>
-    <property name="description" value="Acknowledges [[Rouxls Kaard]] was here, and apologizes for sighing due to lack of sleep."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="49" name="Rouxls Kaard" x="1271.89" y="2133.82">
-   <properties>
-    <property name="description" value="He continues to taunt the party for not being able to solve the puzzle."/>
-    <property name="page" value="Rouxls Kaard"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="42" name="Hathy" x="876.8" y="2946.8">
-   <properties>
-    <property name="description" value="A Hathy that is proud to have sold gems in exchange for beds."/>
-    <property name="page" value="Hathy"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="47" name="Rudinn" x="1306.03" y="3863.15">
-   <properties>
-    <property name="description" value="Appears after [[Rouxls Kaard]] leaves, and praises Rouxls's puzzlemaking."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="38" name="Rouxls Kaard" x="1266.24" y="3816.75">
-   <properties>
-    <property name="description" value="He jeers the [[party]] for not being able to solve the puzzle."/>
-    <property name="page" value="Rouxls Kaard"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="33" name="Rudinn" x="119.791" y="4478.83">
-   <properties>
-    <property name="description" value="A Rudinn that is glad to have sold beds in exchange for treasure."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="22" name="Starwalker" x="2881.09" y="4963.56">
-   <properties>
-    <property name="description" value="Appears if he was found in the [[Forest]]. He expresses anger towards the prison."/>
-    <property name="page" value="Starwalker"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="21" name="Circus Animals" x="2834.24" y="4885.99">
-   <properties>
-    <property name="description" value="The [[Circus Animals]] want to be alone instead of with others."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="20" name="Goulden Sam" x="2783.74" y="4907.33">
-   <properties>
-    <property name="description" value="Laments the difficulty of being the fourth cage."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="19" name="Rudinn" x="2711.37" y="4885.99">
-   <properties>
-    <property name="description" value="A Rudinn who admits to refusing to fight the [[party]], despite [[King]]'s command."/>
-    <property name="page" value="Rudinn"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="18" name="Goulden Sam" x="2661.91" y="4906.81">
-   <properties>
-    <property name="description" value="States the name."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="17" name="Jigsawry" x="2589.55" y="4885.46">
-   <properties>
-    <property name="description" value="A Jigawry ashamed for making a word search puzzle without a license."/>
-    <property name="page" value="Jigsawry"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="16" name="Goulden Sam" x="2540.09" y="4908.89">
-   <properties>
-    <property name="description" value="Asks if [[Kris Dreemurr|Kris]] is enjoying the show."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="15" name="Former Kings" x="2468.24" y="4888.07">
-   <properties>
-    <property name="description" value="The King of Diamonds explain the three king's plight and the [[Knight]]'s appearance."/>
-    <property name="page" value="Former Kings"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="14" name="Goulden Sam" x="2418.26" y="4908.37">
-   <properties>
-    <property name="description" value="Is surprised that [[Kris Dreemurr|Kris]] talks with it."/>
-    <property name="page" value="Goulden Sam"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="12" name="Pair of Eyes" x="1021.69" y="4931.08">
-   <properties>
-    <property name="description" value="A [[Card Castle/NPCs#Pair of Eyes|Pair of Eyes]] expresses disbelief about being trapped in a cell."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="6" name="Trash Can Rudinn" x="1112.76" y="4661.85">
-   <properties>
-    <property name="description" value="The [[Trash Can Rudinn]] that [[Susie]] &quot;invited&quot; to the trash can so she can get the prison keys and free the [[party]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="4" name="Ralsei" x="1331.31" y="4601.9">
-   <properties>
-    <property name="description" value="He asks [[Kris Dreemurr|Kris]] to look around the prison. Once the metal door has been inspected, the story progresses to helping [[Susie]] with the puzzle, then Ralsei asking Kris to close their eyes and think about Susie. Ralsei can also acknowledge Kris's other options."/>
-    <property name="page" value="Ralsei"/>
-   </properties>
-   <point/>
-  </object>
  </objectgroup>
  <objectgroup id="4" name="lines">
-  <object id="68" name="Stairs to 5F and first level" x="778.11" y="1506.34">
+  <object id="83" name="Kris and Ralsei's cell" x="1780.78" y="4871.36">
    <properties>
-    <property name="color" type="color" value="#ff004a79"/>
+    <property name="color" type="color" value="#ff2f5545"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -1.42511,-257.945"/>
+   <polyline points="0,0 1.06315,-28.7051 -374.229,-28.7051"/>
   </object>
-  <object id="70" name="Lancer's room" x="454.545" y="1764.29">
+  <object id="92" name="Elevator to Prison B1, ??????, and 1F" x="2081.55" y="4676.19">
    <properties>
-    <property name="color" type="color" value="#ff3b5d84"/>
+    <property name="color" type="color" value="#ff007ddf"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 258.903,0"/>
+   <polyline points="0.149346,470.869 894.921,470.869 889.692,4.20216 0,0 -1.78571,-174.405 -1311.9,-172.619 -1311.9,195.238"/>
+  </object>
+  <object id="81" name="Rudinn's room" x="170.22" y="4817.24">
+   <properties>
+    <property name="color" type="color" value="#ff35ac92"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.895897,-236.517"/>
+  </object>
+  <object id="65" name="Stairs to 1F and 2F" x="393.33" y="4675.79">
+   <properties>
+    <property name="color" type="color" value="#ffe30f59"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-793.787"/>
+  </object>
+  <object id="76" name="Stairs to 2F and 3F" x="728.718" y="3590.59">
+   <properties>
+    <property name="color" type="color" value="#ff135ac6"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -3.31236,-384.233"/>
+  </object>
+  <object id="79" name="Stairs to 3F and 4F" x="521.696" y="3133.49">
+   <properties>
+    <property name="color" type="color" value="#ff9491cc"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -190.46,0 -193.773,-937.396 0,-935.74"/>
   </object>
   <object id="75" name="Clover's room" x="732.029" y="2440.72">
    <properties>
@@ -555,33 +757,12 @@ The end of this scene varies depending whether or not any enemies were defeated 
    </properties>
    <polyline points="0,0 614.912,1.9216 622.598,563.028 11.5296,559.185"/>
   </object>
-  <object id="79" name="Stiars to 3F and 4F" x="521.696" y="3133.49">
+  <object id="70" name="Lancer's room" x="454.545" y="1764.29">
    <properties>
-    <property name="color" type="color" value="#ff9491cc"/>
+    <property name="color" type="color" value="#ff3b5d84"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -190.46,0 -193.773,-937.396 0,-935.74"/>
-  </object>
-  <object id="76" name="Stairs to 2F and 3F" x="728.718" y="3590.59">
-   <properties>
-    <property name="color" type="color" value="#ff135ac6"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -3.31236,-384.233"/>
-  </object>
-  <object id="65" name="Stairs to 1F and 2F" x="393.33" y="4675.79">
-   <properties>
-    <property name="color" type="color" value="#ffe30f59"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 0,-793.787"/>
-  </object>
-  <object id="81" name="Rudinn's room" x="170.22" y="4817.24">
-   <properties>
-    <property name="color" type="color" value="#ff35ac92"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.895897,-236.517"/>
+   <polyline points="0,0 258.903,0"/>
   </object>
   <object id="64" name="Elevator to 5F and 1F" x="552.943" y="4479.12">
    <properties>
@@ -590,110 +771,148 @@ The end of this scene varies depending whether or not any enemies were defeated 
    </properties>
    <polyline points="0,0 970.5,2.85022 969.075,-2843.1 220.892,-2843.1"/>
   </object>
-  <object id="83" name="Kris and Ralsei's cell" x="1780.78" y="4871.36">
+  <object id="68" name="Stairs to 5F and first level" x="778.11" y="1506.34">
    <properties>
-    <property name="color" type="color" value="#ff2f5545"/>
+    <property name="color" type="color" value="#ff004a79"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 1.06315,-28.7051 -374.229,-28.7051"/>
-  </object>
-  <object id="92" name="Elevator to Prison B1, ?????? and 1F" x="2081.55" y="4676.19">
-   <properties>
-    <property name="color" type="color" value="#ff007ddf"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0.149346,470.869 894.921,470.869 889.692,4.20216 0,0 -1.78571,-174.405 -1311.9,-172.619 -1311.9,195.238"/>
+   <polyline points="0,0 -1.42511,-257.945"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
-  <object id="52" name="Revive Mint" x="676.379" y="2484.6">
-   <properties>
-    <property name="description" value="A Treasure Chest containing [[Revive Mint]] can be found here once all three of the [[Lancer]] portraits have been inspected."/>
-    <property name="page" value="Revive Mint"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="36" name="Clubswich" x="587.033" y="4210.48">
-   <properties>
-    <property name="description" value="A Treasure Chest that contains Clubswich."/>
-    <property name="page" value="Clubswich"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="27" name="Treasure Chest" x="2730.74" y="5585.28">
-   <properties>
-    <property name="description" value="This Treasure Chest appears if [[Jevil]] was defeated and [[Kris Dreemurr|Kris]]'s [[inventory]] is full. It contains either the [[Jevilstail]] or [[Devilsknife]], depending if Jevil was defeated via [[ACT]]ing or [[FIGHT]]ing."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="2" name="Iron Shackle" x="1350.04" y="4561.6">
-   <properties>
-    <property name="description" value="[[Kris Dreemurr|Kris]] can inspect it at any time to collect this [[armor]]."/>
-    <property name="page" value="Iron Shackle"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="1" name="Moss" x="1455.48" y="4599.96">
+  <object id="1" name="Moss" x="1455.5" y="4601">
    <properties>
     <property name="description" value="The moss only can be consumed when [[Kris Dreemurr|Kris]] and [[Ralsei]] are locked in this cell. Choosing to do so fully heals Kris's [[HP]]. This choice transfers via [[Completion FILE]]."/>
     <property name="page" value="Moss"/>
    </properties>
    <point/>
   </object>
- </objectgroup>
- <objectgroup id="12" name="hazards">
-  <object id="46" name="Scissor Dancers" x="792.553" y="2197.8">
+  <object id="2" name="Iron Shackle" x="1349.5" y="4562">
    <properties>
-    <property name="description" value="[[Scissor Dancer]]s cause the [[SOUL]] to be visible, and deals 15 damage to each [[Party|party member]] if the SOUL gets hit. They travel clockwise."/>
+    <property name="description" value="[[Kris Dreemurr|Kris]] can inspect it at any time to collect this [[armor]]."/>
+    <property name="page" value="Iron Shackle"/>
    </properties>
    <point/>
   </object>
-  <object id="35" name="Dark Ponmen" x="726.825" y="3917.89">
+  <object id="27" name="Jevilstail or Devilsknife" x="2732" y="5586.5">
    <properties>
-    <property name="description" value="[[Dark Ponman|Dark Ponmen]] causes the [[SOUL]] to be visible, and does 16 damage to each [[Party|party member]] if the SOUL gets hit."/>
+    <property name="description" value="This treasure chest appears if [[Jevil]] was defeated and [[Kris Dreemurr|Kris]]'s [[inventory]] is full. It contains either the [[Jevilstail]] or [[Devilsknife]], depending if Jevil was defeated via [[ACT]]ing or [[FIGHT]]ing."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Clubs Sandwich" x="587" y="4213.5">
+   <properties>
+    <property name="description" value="A treasure chest that contains a Clubs Sandwich."/>
+    <property name="page" value="Clubs Sandwich"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Revive Mint" x="681" y="2491">
+   <properties>
+    <property name="description" value="A treasure chest containing a Revive Mint can be found here once all three of the [[Lancer]] portraits have been inspected."/>
+    <property name="page" value="Revive Mint"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="hazards">
+  <object id="35" name="Dark Ponman" x="658.5" y="3860">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible, and does 16 damage to each [[Party|party member]] if the SOUL gets hit."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Dark Ponman" x="658.5" y="3960">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible, and does 16 damage to each [[Party|party member]] if the SOUL gets hit."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Dark Ponman" x="796.5" y="3960">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible, and does 16 damage to each [[Party|party member]] if the SOUL gets hit."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Dark Ponman" x="796.5" y="3860">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible, and does 16 damage to each [[Party|party member]] if the SOUL gets hit."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Scissor Dancer" x="672" y="2235.5">
+   <properties>
+    <property name="description" value="Scissor Dancer causes the [[SOUL]] to be visible, and deals 15 damage to each [[Party|party member]] if the SOUL gets hit. They travel clockwise."/>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Scissor Dancer" x="792.5" y="2156.5">
+   <properties>
+    <property name="description" value="Scissor Dancer causes the [[SOUL]] to be visible, and deals 15 damage to each [[Party|party member]] if the SOUL gets hit. They travel clockwise."/>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Scissor Dancer" x="912" y="2235.5">
+   <properties>
+    <property name="description" value="Scissor Dancer causes the [[SOUL]] to be visible, and deals 15 damage to each [[Party|party member]] if the SOUL gets hit. They travel clockwise."/>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Scissor Dancer" x="792.5" y="2317">
+   <properties>
+    <property name="description" value="Scissor Dancer causes the [[SOUL]] to be visible, and deals 15 damage to each [[Party|party member]] if the SOUL gets hit. They travel clockwise."/>
+    <property name="page" value="Scissor Dancer"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="11" name="enemies">
-  <object id="28" name="Jevil" x="3153.25" y="5560.17">
+  <object id="10" name="Lancer" x="1635" y="4943">
+   <properties>
+    <property name="description" value="A cinematic [[encounter]] versus Lancer. [[Susie]] attacks Lancer to force him to move aside."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Jevil" x="3153" y="5560">
    <properties>
     <property name="description" value="A battle versus Jevil. Drops a [[Shadow Crystal]] and either [[Jevilstail]] or [[Devilsknife]]. See [[Jevil#In Battle|In Battle]] for attacks and strategy."/>
     <property name="page" value="Jevil"/>
    </properties>
    <point/>
   </object>
-  <object id="93" name="King" x="2218.25" y="581.356">
-   <properties>
-    <property name="description" value="The boss battle versus King at the rooftop."/>
-    <property name="page" value="King#In Battle"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="58" name="K. Round" x="1049.23" y="1236.9">
-   <properties>
-    <property name="description" value="A miniboss [[encounter]] versus K. Round."/>
-    <property name="page" value="K. Round#In Battle"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="40" name="Head Hathy" x="725.393" y="3298.19">
-   <properties>
-    <property name="description" value="An [[encounter]] versus three Head Hathys. Post battle, both Head Hathys do not approach to start an encounter."/>
-    <property name="page" value="Head Hathy"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="32" name="Rudinn Ranger" x="332.468" y="4924.68">
+  <object id="32" name="Rudinn Ranger" x="332.5" y="4925.5">
    <properties>
     <property name="description" value="An [[encounter]] versus two Rudinn Rangers. Post battle, it does not approach the [[party]] to begin an encounter."/>
     <property name="page" value="Rudinn Ranger"/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Lancer" x="1634.91" y="4942.52">
+  <object id="40" name="Head Hathy" x="725.5" y="3298">
    <properties>
-    <property name="description" value="A miniboss [[encounter]] versus [[Lancer]]. [[Susie]] attacks [[Lancer]] to force him to move aside."/>
+    <property name="description" value="An [[encounter]] versus three Head Hathys. Post battle, both Head Hathys do not approach to start an encounter."/>
+    <property name="page" value="Head Hathy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="K. Round" x="1048" y="1249.5">
+   <properties>
+    <property name="description" value="A miniboss [[encounter]] versus K. Round."/>
+    <property name="page" value="K. Round#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="King" x="2218.5" y="581.5">
+   <properties>
+    <property name="description" value="The boss battle versus King at the rooftop."/>
+    <property name="page" value="King#In Battle"/>
    </properties>
    <point/>
   </object>
