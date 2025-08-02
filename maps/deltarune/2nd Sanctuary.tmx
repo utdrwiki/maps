@@ -189,9 +189,6 @@
    </properties>
    <point/>
   </object>
-  <object id="112" x="11072" y="8000">
-   <point/>
-  </object>
  </objectgroup>
  <objectgroup id="5" name="items">
   <object id="22" name="Rhapsotea" x="12740" y="5149.25">
