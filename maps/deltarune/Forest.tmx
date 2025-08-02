@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="349" height="165" tilewidth="40" tileheight="40" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="349" height="165" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="159">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,13 +7,913 @@
  <imagelayer id="2" name="Forest map">
   <image source="images/Forest.png" width="13949" height="6593"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="warpdoor"/>
- <objectgroup id="5" name="vendors"/>
- <objectgroup id="6" name="puzzles"/>
- <objectgroup id="7" name="npcs"/>
- <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="signs"/>
- <objectgroup id="10" name="items"/>
- <objectgroup id="11" name="enemies"/>
+ <objectgroup id="4" name="warpdoor">
+  <object id="125" name="Forest Warp Door" x="159.5" y="5919.5">
+   <properties>
+    <property name="description">This Warp Door is activated when it is reached. It can be used to travel to the:
+* [[Field]]
+* Bake Sale
+* [[Card Castle|Castle]]</property>
+    <property name="page" value="Warp Door"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Bake Sale Warp Door" x="3304.5" y="5716">
+   <properties>
+    <property name="description">This Warp Door is activated when it is reached. It can be used to travel to the:
+* [[Field]]
+* Forest
+* [[Card Castle|Castle]]</property>
+    <property name="page" value="Warp Door"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="127" name="Castle Warp Door" x="8712.5" y="1909.5">
+   <properties>
+    <property name="description">This Warp Door is activated after reaching [[Card Castle]]. It can be used to travel to the:
+* [[Field]]
+* Forest
+* Bake Sale</property>
+    <property name="page" value="Warp Door"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="vendors">
+  <object id="122" name="Rudinn" x="3606" y="5667">
+   <properties>
+    <property name="description" value="[[Choco Diamond]] sold by [[Rudinn]] for [[D$]]40."/>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Hathy" x="3676.5" y="5667">
+   <properties>
+    <property name="description" value="[[Hearts Donut]] sold by [[Hathy]] for [[D$]]40."/>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="124" name="Susie and Lancer" x="3775" y="5667">
+   <properties>
+    <property name="description" value="[[Lancer Cookie]] sold by [[Susie]] and [[Lancer]] for [[D$]]40."/>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="sublocations">
+  <object id="120" name="Great Board" x="11" y="6012.5">
+   <properties>
+    <property name="description" value="The entrance to the Great Board."/>
+    <property name="page" value="Great Board"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Card Castle" x="13788" y="309.5">
+   <properties>
+    <property name="description" value="The entrance to the Card Castle."/>
+    <property name="page" value="Card Castle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="signs">
+  <object id="83" name="Salsa stump" x="1321.5" y="6292.5">
+   <properties>
+    <property name="description" value="''(It's a stump with some kind of dinner hole in it.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Sign" x="2194" y="6054.5">
+   <properties>
+    <property name="description">(Enter the password!)
+(Note: Due to everyone forgetting the password, it's written at the top.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Vandalized puzzle solution" x="3436" y="6013.5">
+   <properties>
+    <property name="description">(It looks like it's supposed to be the solution to a puzzle...)
+(But, it's been vandalized with a calligraphy pen.)
+(Looks like the order of symbols was RED-BLACK-RED.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Sign" x="7151" y="5895">
+   <properties>
+    <property name="description">(Revolve around the center, and look carefully.)
+(The darker it gets, the more you can see.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Tree" x="7834" y="5953">
+   <properties>
+    <property name="description">(There's a tree blocking the way.)
+(Might look like you can walk around it, but that's definitely not the case.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Tree" x="7064" y="5552">
+   <properties>
+    <property name="description">'''Before the [[man]] has been interacted with:''' (He is behind the tree.)
+
+'''After the man has been interacted with''': (It is a tree.)</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves">
+  <object id="103" name="Forest - Entrance" x="159.5" y="6038.5">
+   <properties>
+    <property name="description">The blocky foliage grows thick above your head...
+The power of the forest shines within you.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Forest - Bake Sale" x="3505.5" y="5714.5">
+   <properties>
+    <property name="description">In the heart of the woods, a bake sale stands quietly.
+The power of reoccurring bake sales shines within you.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Forest - Before Maze" x="8038.5" y="5996">
+   <properties>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Forest - After Maze" x="8061.5" y="1948">
+   <properties>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Forest - Thrashing Room" x="8552.5" y="1928">
+   <properties>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="98" name="Card suit puzzle 1" x="2264" y="5982">
+   <properties>
+    <property name="description" value="To lower the spikes to the right, [[Kris]] must copy the symbols at the top to the bottom. The in-game order is spade, diamond, spade, swap."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Card suit puzzle 2" x="2585" y="6022">
+   <properties>
+    <property name="description" value="To lower the spikes blocking the northern room, [[Kris]] must copy the symbols near the paths below. The in-game order is spade, diamond, swap, spade, swap."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="100" name="Card suit puzzle 3" x="3506.5" y="6112">
+   <properties>
+    <property name="description" value="To lower the spikes to the north, [[Kris]] must find the code using [[Clover]]'s clues and the vandalized sign. The symbols are heart, spade, diamond. The in-game order is diamond, swap, spade, diamond."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="Hidden path" x="4837" y="6270">
+   <properties>
+    <property name="description" value="The stars that surround the area while near [[Scissor Dancer]]s do not cover this path, indicating that it is walkable. This is hinted at by [[Seam]] when they say to &quot;''walk where the stars don't shine''&quot; after the [[party]] talks to them about [[Jevil]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Block Tree puzzle" x="7496" y="5719">
+   <properties>
+    <property name="description" value="Interacting with this causes a switch to be discovered in it and be flipped, removing the tree blocking the right room. If [[Kris]] did not go around the center of the room before interacting with this, [[Ralsei]] will express amazement at them."/>
+    <property name="page" value="Block Tree"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="Maze puzzle 1" x="8062" y="5818">
+   <properties>
+    <property name="description" value="There are two paths at the top of each room. The path that [[Lancer]] goes on is incorrect, and the correct path is the opposite one."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Maze puzzle 2" x="8062" y="4108">
+   <properties>
+    <property name="description" value="There are three paths at the top of each room. The paths that [[Lancer]] and [[Susie]] go on are incorrect, and the correct path is the one neither of them go on."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="82" name="Dark party" x="913" y="6019">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Lancer]] introduce their team and team name, the latter being the same as what [[Kris]] chose earlier but with &quot;''DARK''&quot; as a prefix. After [[Ralsei]] asks what their evil plan will be, Susie says that they have only done their intro, and Lancer tells him to have some patience. They then say that they will work ceaselessly on their evil plan, after Ralsei says that he cannot wait to see what it will be."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="Susie and Lancer leave with their blueprint" x="2306.5" y="6102">
+   <properties>
+    <property name="description" value="After [[Kris]] completes the puzzle, [[Susie]] and [[Lancer]] leave. She sarcastically thanks them for doing the puzzle for them. Lancer also says thanks due to them having trouble. They quickly come back and leave again to take the blueprint with them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Create a machine to Thrash Your own Ass" x="5579" y="5948">
+   <properties>
+    <property name="description" value="[[Lancer]], disguised as a &quot;''sweet young boy'',&quot; asks [[Kris]] and [[Ralsei]] to help him with something to impress [[Susie]]. Ralsei decides to help him out for the sake of his and Susie's friendship. The [[party]] can then choose what head, body, and shoes the Thrash Machine should have, along with the colors of each part. After the party finishes designing the Thrash Machine, Susie comes out from the bush, comments on the machine, and praises Lancer for tricking them into designing the machine for them, as long as it is not a duck."/>
+    <property name="page" value="Thrash Machine#Chapter 1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Susie bush" x="5626" y="5885.5">
+   <properties>
+    <property name="description" value="[[Ralsei]] is pleased that [[Susie]] finally found a place she fits in, and that she is also getting along with [[Lancer]]. When Susie rejoins the [[party]], she asks if Ralsei and Kris messed with her hideout. Ralsei questions if &quot;hideout&quot; is an overstatement, but Susie reaffirms she now owns it since she previously took a nap inside of it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Beware the forest maze" x="8062" y="5884">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Lancer]] warn the [[party]] that they will likely get lost in the forest maze."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="86" name="Don't follow Susie either" x="8059" y="4255">
+   <properties>
+    <property name="description" value="[[Susie]] questions [[Lancer]]'s whereabouts and is concerned for him being lost. [[Ralsei]] apologizes for worrying Susie, though she denies being worried and goes to look for Lancer. Ralsei hints that she does not know the correct path either."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Fake Thrash Machine" x="8479.5" y="2000.5">
+   <properties>
+    <property name="description" value="[[Ralsei]] sees the silhouette of the fake [[Thrash Machine]], though upon seeing it in full, he says it is not that good. [[Susie]] and [[Lancer]] then blow it up, saying that the [[party]]'s design sucked, so they blew it up. Instead of their plan, Susie states she and Lancer will fight the party and the losers will join the winner's side."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Legion of various guys" x="9105" y="2001">
+   <properties>
+    <property name="description" value="[[Lancer]] says that he has never been on such a large team before, though [[Ralsei]] is confused because he can command a legion of various guys. Lancer elaborates that [[King]] made them listen to him, so they do not actually like him. [[Susie]] tells Lancer that he does not need them anymore, as he has the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Hungry" x="9559" y="2001">
+   <properties>
+    <property name="description" value="[[Susie]] comments that she is still hungry, as if nothing she has eaten in the [[Dark World]] matters. [[Ralsei]] offers to bake her a cake under the condition that she stops making fun of him, though she does not accept."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Stool Forme" x="9803" y="2021">
+   <properties>
+    <property name="description" value="[[Lancer]] sees a [[Dark Candy|candy]] tree, though [[Susie]] cannot reach the last piece. To help her reach it, Lancer puts his hands on the floor and volunteers as a stool for her. Susie then gets the candy, but she gives it to Lancer upon learning that he has never had Dark Candy before."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Tastes like friendship" x="10216.5" y="2001">
+   <properties>
+    <property name="description" value="[[Susie]] asks [[Lancer]] what the [[Dark Candy]] tastes like, and he says that it tastes like friendship. Upon inquiry as to what that tastes like, he says that it tastes like his teeth are disintegrating. After a short laugh, Susie remarks that that is not good, to which Lancer agrees. He then thanks her for being a good friend, but she is not sure what to say, so she just says &quot;''you too''.&quot;"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Fulfillment" x="10560" y="2021">
+   <properties>
+    <property name="description" value="[[Lancer]] comments that walking next to the [[party]] feels nice, like he is doing something important. [[Ralsei]] explains that is because he is walking with [[Lightner]]s and [[Darkner]]s' purpose is to serve them as the only way they can feel fulfilled. Lancer feels worried upon learning this, as [[King|his dad]] wants to kill the Lightners. Ralsei asks if his dad seems happy, and Lancer is not sure."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Boost from the juice" x="10781.5" y="2021">
+   <properties>
+    <property name="description" value="[[Susie]] asks to stop talking about people's purpose and says that [[Lancer]] is probably just glad he ate a weird berry. He agrees, stating that he still has a boost from the juice. Susie elaborates by saying that she is a [[Lightner]] but still feels happy right now, though she denies feeling happy when [[Ralsei]] asks."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="Maybe" x="10973" y="2001">
+   <properties>
+    <property name="description" value="[[Susie]] amends her earlier statement that she is not happy by saying that maybe she is happy."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="The Fountain" x="11496" y="2001">
+   <properties>
+    <property name="description" value="[[Ralsei]] comments that the [[party]] can see [[Card Castle]]. [[Lancer]] points out that is where he and [[King|his dad]] live. Ralsei informs [[Susie]] that that is where the [[Dark Fountain]] is located, meaning she and [[Kris]] will be able to go home. She is relieved to hear this, though Lancer is uneasy."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Lancer flees" x="11941.5" y="2001">
+   <properties>
+    <property name="description" value="[[Lancer]] questions if there is another way for [[Susie]] and [[Kris]] to return home, as the [[Dark Fountain]] is being guarded and he doe not want anyone to get hurt. He then says he needs to go. Susie asks when he will be back, and he replies that he will not be back. Afterwards, Lancer runs to the right. Susie follows him, and [[Ralsei]] follows her."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Jailed" x="13789" y="588">
+   <properties>
+    <property name="description" value="The [[party]] runs after [[Lancer]], though they are unsuccessful in reaching him before [[Card Castle]]'s doors close. [[Rudinn Ranger]]s surround them and knock out the party, sending them to the jail in Card Castle."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="npcs">
+  <object id="42" name="Jigsaw Joe" x="97" y="5929.5">
+   <properties>
+    <property name="description" value="Only appears if the [[party]] talked to him earlier. Tells the party that he, along with [[Mr. Elegance]] and [[Mr. Society]], managed to fix the [[Warp Door]], and that it should be able to take them to and from here and the [[Field]] but that they will keep working on fixing it. Interacting again will have him question where the door may have come from."/>
+    <property name="page" value="Jigsaw Joe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Mr. Elegance" x="214" y="5933">
+   <properties>
+    <property name="description" value="If the [[party]] did not talk to [[Jigsaw Joe]], Mr. Elegance informs them that he and [[Mr. Society]] fixed the [[Warp Door]]; however, it might break because it was just the two of them. If the party talked to Jigsaw Joe, then he informs them that it should work fine because the three of them worked on it. Regardless, upon repeat interactions, he tells the party to not tell anyone that Mr. Society helped because he does not want the attention."/>
+    <property name="page" value="Mr. Elegance"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Rudinn" x="1264.5" y="6060">
+   <properties>
+    <property name="description" value="Asks the [[party]] for help on getting something for [[Clover]]'s birthday and informs them that her only interests are sports, cute boys, and trees before giving up and saying that it will simply give her a card. Upon repeat interactions, it says that it might put money in the card before disregarding the idea due to needing the money."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Susie" x="1288" y="6271.5">
+   <properties>
+    <property name="description">[[Ralsei]] inquires as to what Susie and [[Lancer]] are doing. Susie explains that they got bored and are having a snack, as they did not have a lot for breakfast. Ralsei further questions as to what the snack is and Lancer asks him to taste it himself. Ralsei offers for [[Kris]] to try it, with the following options available:
+* '''Make Ralsei try it:''' Ralsei finds that in the stump is a honeypot of salsa. Lancer says it is a snack from him to Ralsei, though Ralsei just pretends to eat it.
+* '''Decline:''' Susie tries it and assumes that the salsa is blood, before Lancer corrects her.
+* '''Try it:''' Kris finds that there is a honeypot of salsa inside the stump and eats some.
+All further interactions result in Susie saying that she is weakened by hunger, but that &quot;you really shouldn't of&quot; annoyed her. Ralsei corrects her wording, though Lancer and Susie disregard him.</property>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Lancer" x="1364.5" y="6283.5">
+   <properties>
+    <property name="description">[[Ralsei]] inquires as to what [[Susie]] and Lancer are doing. Susie explains that they got bored and are having a snack, as they did not have a lot for breakfast. Ralsei further questions as to what the snack is and Lancer asks him to taste it himself. Ralsei offers for [[Kris]] to try it, with the following options available:
+* '''Make Ralsei try it:''' Ralsei finds that in the stump is a honeypot of salsa. Lancer says it is a snack from him to Ralsei, though Ralsei just pretends to eat it.
+* '''Decline:''' Susie tries it and assumes that the salsa is blood, before Lancer corrects her.
+* '''Try it:''' Kris finds that there is a honeypot of salsa inside the stump and eats some.
+All further interactions result in Lancer asking if everyone has had enough and Susie replying &quot;Constantly.&quot;</property>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Royal Coat Rack" x="1449" y="5743">
+   <properties>
+    <property name="description" value="Tells the [[party]] to take the [[Ragger]] from the treasure chest and defeat [[King]], as it does not fit him anymore. Upon further interaction, he states he was the royal coat rack at [[Card Castle]] before he was fired."/>
+    <property name="page" value="Royal Coat Rack"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Little Ball" x="1543" y="5763.5">
+   <properties>
+    <property name="description" value="They state they are just a little ball and do not want to discuss anything."/>
+    <property name="page" value="Little Ball"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Susie" x="2343" y="6042.5">
+   <properties>
+    <property name="description" value="Susie and [[Lancer]] scheme their plan, though when [[Ralsei]] asks how the plan is going, she tells her to not look because of spoilers."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Lancer" x="2379" y="6050">
+   <properties>
+    <property name="description" value="Lancer greets the [[party]] kindly, though [[Susie]] tells him to watch his language. He explains that she has been trying to get him to swear more."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Bow-Bow" x="2640" y="5736">
+   <properties>
+    <property name="description" value="Tells the [[party]] to open the treasure chest for a [[Dice Brace|Bracelet]], which will boost their defense. Upon further interaction, she says bracelets are her favorite."/>
+    <property name="page" value="Bow-Bow"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="O Block" x="2720" y="5736">
+   <properties>
+    <property name="description" value="Informs the [[party]] that [[King]] wants to eliminate [[Lightner]]s, but they and the other blocks disagreed, so all of them except the two here were arrested. Upon further interaction, states that [[Bow-Bow]] talks a lot."/>
+    <property name="page" value="Blue Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Happy Clover head" x="3338" y="6155.5">
+   <properties>
+    <property name="description" value="Informs the [[party]] that [[Rouxls Kaard]] vandalized the puzzle, but she knows the answer and the first symbol is a heart. Upon further interaction, she repeats the clue."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Shy Clover head" x="3699" y="6155.5">
+   <properties>
+    <property name="description" value="Informs the [[party]] that all the symbols in the puzzle were different and you can still see the colors."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Mad Clover head" x="3802.5" y="6057">
+   <properties>
+    <property name="description" value="Expresses frustration towards the puzzle due to none of the symbols being clubs."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Malius" x="3426" y="5447">
+   <properties>
+    <property name="description" value="Malius offers to fix the [[party]] or any [[item]]s they have. Fixing the party restores everyone's [[HP]]. Fixing items will repair the [[Broken Key]] pieces into the [[Door Key]] or repair the [[Broken Cake]] into the [[Top Cake]]."/>
+    <property name="page" value="Malius"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Susie and Lancer" x="3672.5" y="5755.5">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Lancer]] enjoy a purchased [[Hearts Donut]] together after receiving the funds from [[Kris]], who purchased a [[Lancer Cookie]] from them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Worm" x="4028" y="5501">
+   <properties>
+    <property name="description" value="States that before [[King]] was in power, they ate leaves from the tree. In fact, they still do, as &quot;''such is the way of the worm...''&quot;"/>
+    <property name="page" value="Worm"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Starwalker" x="5912" y="5898">
+   <properties>
+    <property name="description" value="Only spawns in after ringing the bell on the other side of the room and coming back. He says that the birds are annoying him and that he is the &quot;''original''&quot; Starwalker."/>
+    <property name="page" value="Starwalker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Starwalker" x="6859" y="5898">
+   <properties>
+    <property name="description" value="Only appears here after entering the room from the right, ringing the bell on the other side of the room, and coming back. He says that the birds are annoying him and that he is the &quot;''original''&quot; Starwalker."/>
+    <property name="page" value="Starwalker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Rudinn" x="8014.5" y="5893">
+   <properties>
+    <property name="description" value="Expresses fear at the fact that [[Lancer]]'s made friends with a [[Lightner]] and says that someone should tell [[King]] immediately, although it will not be the one to tell him. Upon further interaction, it tells [[Kris]] to not look at it to do it."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Lancer" x="8133" y="5971">
+   <properties>
+    <property name="description" value="[[Ralsei]] asks how the [[Thrash Machine]] is going, and [[Susie]] states that they will work on it at the last minute, to which Ralsei suggests that they work on it sooner. Upon repeated interaction, Lancer comments that being a bad guy is relaxing, and Susie invites [[Kris]] to join if they are jealous. Ralsei states that Kris is not, but if they are, he would be willing to fan them."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Rudinn" x="8188.5" y="5968">
+   <properties>
+    <property name="description" value="Expresses annoyance that [[King]] makes them take care of [[Lancer]] and comments that, even though he is not a bad kid, the obligation means that nobody truly likes him. Upon subsequent interactions, it reflects that since nobody wanted to be his friend, he made friends with [[Susie]], who is rude, and that they should have been a better influence on him."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Rudinn" x="8189" y="5898">
+   <properties>
+    <property name="description" value="Asks the [[party]] to get [[Susie]] under control and make her stop forcing it to fan her, assuming that she and the party are together. Susie corrects it and states that they separated. Rudinn pleas for help, stating that it does not want to fan forever. Upon repeated interactions, it just repeats its pleas for help."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Susie" x="8131.5" y="5901">
+   <properties>
+    <property name="description" value="[[Ralsei]] asks if Susie is ready to be good guy, but she says that being evil is more fun and that [[Lancer]] appreciates what she does. He then recounts how Susie ate a pinecone earlier and admires her for it. Upon further interactions, she asks Ralsei to stop blocking her &quot;''reverse-tan''.&quot;"/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Lancer" x="8325.5" y="5352.5">
+   <properties>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Lancer" x="8325.5" y="4670">
+   <properties>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Lancer" x="7743.5" y="4329">
+   <properties>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Susie" x="7739" y="3538">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Susie" x="8381" y="3538">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Susie" x="7498" y="3097">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Susie" x="7820" y="3097">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Susie" x="8381" y="2657">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Susie" x="8702" y="2657">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Susie" x="7839" y="2216">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Susie" x="8281" y="2216">
+   <properties>
+    <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Lancer" x="8351.5" y="1990">
+   <properties>
+    <property name="description" value="Only appears after defeating him and [[Susie]]. [[Ralsei]] tells him that he can follow the rest of the [[party]], which he acknowledges. Upon further interactions, Ralsei notices that Lancer is not following the rest of the party, which Lancer acknowledges."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Lancer" x="8640.5" y="1910">
+   <properties>
+    <property name="description" value="Only appears after defeating him and [[Susie]], and then reloading the room. [[Ralsei]] tells him that he can follow the rest of the [[party]], which he acknowledges. Upon further interactions, Ralsei notices that Lancer is not following the rest of the party, which Lancer acknowledges."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="lines">
+  <object id="137" name="Invisible path" x="4177" y="5632" width="140" height="40">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+  </object>
+  <object id="153" name="Invisible path" x="4357" y="5672">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polygon points="0,0 140,0 140,-120 100,-120 100,-40 0,-40"/>
+  </object>
+  <object id="142" name="Invisible path" x="4818" y="6189" width="40" height="163">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+  </object>
+  <object id="149" name="Walkable area" x="7041" y="5671">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polygon points="0,0 0,-62 -120,-62 -120,-240 160,-240 160,-62 40,-62 40,0"/>
+  </object>
+  <object id="132" name="Entrance to Egg room" x="7061" y="5952">
+   <properties>
+    <property name="color" type="color" value="#ff35ac92"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="6,0 0,0 0,-312"/>
+  </object>
+  <object id="152" x="7052" y="5651">
+   <properties>
+    <property name="color" type="color" value="#ff35ac92"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 9,-11 18,0"/>
+  </object>
+  <object id="135" name="Exit from Egg room" x="7055" y="5640">
+   <properties>
+    <property name="color" type="color" value="#ff007ddf"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-6,22 -6,80 -1595,80 -1595,-280 -3175,-280 -3175,132 -3218,132"/>
+  </object>
+  <object id="145" x="3849" y="5782">
+   <properties>
+    <property name="color" type="color" value="#ff007ddf"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-1,-1 -12,-10 -1,-19"/>
+  </object>
+  <object id="158" name="Path to Broken Key B" x="5127" y="6357">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,6 0,-4 181,-4 181,-15"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="items">
+  <object id="30" name="Ragger" x="1503" y="5746">
+   <properties>
+    <property name="description" value="A treasure chest that contains the Ragger."/>
+    <property name="page" value="Ragger"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Dice Brace" x="2685" y="5791">
+   <properties>
+    <property name="description" value="A treasure chest that contains the Dice Brace."/>
+    <property name="page" value="Dice Brace"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="40 Dark Dollars" x="4477" y="5496">
+   <properties>
+    <property name="description" value="A treasure chest that contains 40 Dark Dollars."/>
+    <property name="page" value="Dark Dollar"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Revive Mint" x="4658" y="6106">
+   <properties>
+    <property name="description" value="A treasure chest that contains a Revive Mint."/>
+    <property name="page" value="Revive Mint"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Broken Key B" x="5308" y="6116">
+   <properties>
+    <property name="description" value="A treasure chest that contains Broken Key B."/>
+    <property name="page" value="Broken Key B"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="40 Dark Dollars" x="7023" y="5950">
+   <properties>
+    <property name="description" value="If the room is entered from the right side and the bell on the left side of the room is activated to remove the wings from the [[Starwalker Bird]], Starwalker Bird walks to the right side of the screen. Run and catch up to Starwalker Bird and interact with them to obtain 40 Dark Dollars. This is repeatable."/>
+    <property name="page" value="Dark Dollar"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Egg" x="7070" y="5506">
+   <properties>
+    <property name="description" value="The narrator states there is a [[man]] here, and he offers [[Kris]] something. If they accept, they get the Egg. Either way, he disappears afterwards."/>
+    <property name="page" value="Egg"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="hazards">
+  <object id="10" name="Dark Ponman" x="1672.5" y="6309">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates counterclockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Dark Ponman" x="1672.5" y="6089">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates counterclockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Dark Ponman" x="1892.5" y="6309">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates clockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Dark Ponman" x="1892.5" y="6089">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates clockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Scissor Dancers" x="4850" y="5803">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This loop moves clockwise.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Scissor Dancers" x="5157" y="5951">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This loop moves counterclockwise.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Scissor Dancers" x="4836" y="6109">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This loop moves clockwise.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Starwalker Bird" x="5958" y="5860">
+   <properties>
+    <property name="description" value="The Starwalker Bird flies and shoots three star-shaped bullets that deal 15 damage to every party member."/>
+    <property name="page" value="Starwalker Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Starwalker Bird" x="6842" y="5860">
+   <properties>
+    <property name="description" value="The Starwalker Bird spawns here if the room is entered from the right. They fly and shoot three star-shaped bullets that deal 15 damage to every party member."/>
+    <property name="page" value="Starwalker Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Dark Ponman" x="7490.5" y="5942.5">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates counterclockwise. Every quarter turn, the surroundings darken while the [[Block Tree]] becomes more visible."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Scissor Dancers" x="8008" y="5325">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This line moves right to left.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Dark Ponman" x="8002" y="4612.5">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and does 16 damage per hit to everyone. This one rotates counterclockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Scissor Dancers" x="8061" y="3944">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This line moves right to left.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Scissor Dancers" x="8061" y="3864.5">
+   <properties>
+    <property name="description">Scissor Dancers cause the [[SOUL]] to be visible and do 15 damage per hit to everyone. This line moves right to left.
+
+Interacting with a Scissor Dancer will produce a unique sound effect with no dialogue.</property>
+    <property name="page" value="Scissor Dancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Starwalker Bird" x="8014" y="3096">
+   <properties>
+    <property name="description" value="The Starwalker Bird flies on the left side and shoots three star-shaped bullets that deal 15 damage to every party member. It cannot shoot bullets when near the top three paths."/>
+    <property name="page" value="Starwalker Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Starwalker Bird" x="8269" y="3096">
+   <properties>
+    <property name="description" value="The Starwalker Bird flies on the right side and shoots three star-shaped bullets that deal 15 damage to every party member. It cannot shoot bullets when near the top three paths."/>
+    <property name="page" value="Starwalker Bird"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Dark Ponman" x="8013.5" y="2558">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and do 16 damage per hit to everyone. This one rotates counterclockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Dark Ponman" x="8112.5" y="2558">
+   <properties>
+    <property name="description" value="Dark Ponman causes the [[SOUL]] to be visible and do 16 damage per hit to everyone. This one rotates clockwise."/>
+    <property name="page" value="Dark Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Rudinn Ranger bullets" x="12186" y="2000">
+   <properties>
+    <property name="description" value="Rudinn Rangers notice the [[party]] approaching the [[Card Castle|castle]] and begin their attack. Diamond-shaped bullets approach from the right, going diagonally across the screen and dealing 9 damage."/>
+    <property name="page" value="Rudinn Ranger"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Rudinn Ranger bullets" x="13789" y="2004">
+   <properties>
+    <property name="description" value="Rudinn Rangers notice the [[party]] approaching the [[Card Castle|castle]] and begin their attack. Diamond-shaped bullets approach from the bottom of the screen in waves that cover either the left or the right half of the field and deal 9 damage."/>
+    <property name="page" value="Rudinn Ranger"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="enemies">
+  <object id="1" name="Rabbick" x="532.5" y="6047.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with a Rabbick."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="2" name="Rabbick" x="841" y="6228.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with two Rabbicks."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Bloxer" x="3080" y="6088">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with a Bloxer."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Clover" x="3499.5" y="5981.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with Clover."/>
+    <property name="page" value="Clover#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Bloxer" x="4246.5" y="5650.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with two Bloxers. Post-battle, the Bloxers will not approach to start an encounter."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Rabbick" x="5171" y="6509">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with three Rabbicks."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Rabbick" x="8076" y="4932.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with two Rabbicks."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Bloxer" x="8073" y="3440">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] with a Bloxer."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Susie and Lancer" x="8624" y="1955.5">
+   <properties>
+    <property name="description" value="Boss [[encounter]] with [[Susie]] and [[Lancer]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
