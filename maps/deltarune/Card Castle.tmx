@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="153">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="168">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -701,82 +701,82 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
   </object>
  </objectgroup>
  <objectgroup id="4" name="lines">
-  <object id="83" name="Kris and Ralsei's cell" x="1780.78" y="4871.36">
+  <object id="153" name="Kris and Ralsei's cell" x="1781" y="4871">
    <properties>
     <property name="color" type="color" value="#ff2f5545"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 1.06315,-28.7051 -374.229,-28.7051"/>
+   <polyline points="0,2 0,-26 -381,-26"/>
   </object>
-  <object id="92" name="Elevator to Prison B1, ??????, and 1F" x="2081.55" y="4676.19">
+  <object id="155" name="Elevator to Prison B1, ??????, and 1F" x="2082" y="5147">
    <properties>
     <property name="color" type="color" value="#ff007ddf"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0.149346,470.869 894.921,470.869 889.692,4.20216 0,0 -1.78571,-174.405 -1311.9,-172.619 -1311.9,195.238"/>
+   <polyline points="0,0 895,0 895,-467 0,-467 0,-645 -1312,-645 -1312,-274"/>
   </object>
-  <object id="81" name="Rudinn's room" x="170.22" y="4817.24">
+  <object id="158" name="Rudinn's room" x="170" y="4817">
    <properties>
     <property name="color" type="color" value="#ff35ac92"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -0.895897,-236.517"/>
+   <polyline points="0,0 0,-232"/>
   </object>
-  <object id="65" name="Stairs to 1F and 2F" x="393.33" y="4675.79">
+  <object id="159" name="Stairs to 1F and 2F" x="389" y="4676">
    <properties>
     <property name="color" type="color" value="#ffe30f59"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 0,-793.787"/>
+   <polyline points="0,0 0,-794"/>
   </object>
-  <object id="76" name="Stairs to 2F and 3F" x="728.718" y="3590.59">
+  <object id="161" name="Stairs to 2F and 3F" x="726" y="3594">
    <properties>
     <property name="color" type="color" value="#ff135ac6"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -3.31236,-384.233"/>
+   <polyline points="0,0 0,-374"/>
   </object>
-  <object id="79" name="Stairs to 3F and 4F" x="521.696" y="3133.49">
+  <object id="164" name="Stairs to 3F and 4F" x="523" y="3133">
    <properties>
     <property name="color" type="color" value="#ff9491cc"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -190.46,0 -193.773,-937.396 0,-935.74"/>
+   <polyline points="0,0 -196,0 -196,-937 0,-937"/>
   </object>
-  <object id="75" name="Clover's room" x="732.029" y="2440.72">
+  <object id="163" name="Clover's room" x="733" y="2452" visible="0">
    <properties>
     <property name="color" type="color" value="#ff3f48cc"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -213.587,-1.88182 -210.764,370.719 2.82273,371.66"/>
+   <polyline points="-1,0 -214,0 -214,361 -1,361"/>
   </object>
-  <object id="71" name="Stairs to 4F and 5F" x="857.033" y="1888.93">
+  <object id="165" name="Stairs to 4F and 5F" x="861" y="2450">
    <properties>
     <property name="color" type="color" value="#ff85294d"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 614.912,1.9216 622.598,563.028 11.5296,559.185"/>
+   <polyline points="0,0 619,0 619,-554 0,-554"/>
   </object>
-  <object id="70" name="Lancer's room" x="454.545" y="1764.29">
+  <object id="166" name="Lancer's room" x="714" y="1761">
    <properties>
     <property name="color" type="color" value="#ff3b5d84"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 258.903,0"/>
+   <polyline points="0,-1 -261,-1"/>
   </object>
-  <object id="64" name="Elevator to 5F and 1F" x="552.943" y="4479.12">
+  <object id="167" name="Elevator to 5F and 1F" x="774" y="1607">
    <properties>
     <property name="color" type="color" value="#ff0f0062"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 970.5,2.85022 969.075,-2843.1 220.892,-2843.1"/>
+   <polyline points="0,1 746,1 746,2832 -224,2832"/>
   </object>
-  <object id="68" name="Stairs to 5F and first level" x="778.11" y="1506.34">
+  <object id="68" name="Stairs to 5F and first level" x="778" y="1506">
    <properties>
     <property name="color" type="color" value="#ff004a79"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -1.42511,-257.945"/>
+   <polyline points="-5,3 -5,-251"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
