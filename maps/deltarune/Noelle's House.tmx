@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="66" height="45" tilewidth="20" tileheight="20" infinite="0" nextlayerid="8" nextobjectid="1">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Noelle's House map">
+  <image source="images/Noelle's House.png" width="1320" height="894"/>
+ </imagelayer>
+ <objectgroup id="3" name="plot"/>
+ <objectgroup id="4" name="saves"/>
+ <objectgroup id="5" name="npcs"/>
+ <objectgroup id="6" name="signs"/>
+ <objectgroup id="7" name="items"/>
+</map>
