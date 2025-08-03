@@ -1,24 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="85" height="134" tilewidth="32" tileheight="32" infinite="0" nextlayerid="15" nextobjectid="211">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="168" height="214" tilewidth="20" tileheight="20" infinite="0" nextlayerid="18" nextobjectid="211">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="12" name="Hometown map (Chapter 2)">
-  <image source="images/Hometown 2.png" width="2760" height="4267"/>
+ <imagelayer id="17" name="Chapter 4 night" offsetx="600" offsety="0">
+  <image source="images/Hometown 4 night.png" width="2760" height="4267"/>
+  <properties>
+   <property name="image" value="Hometown map Chapter 4 night.png"/>
+  </properties>
  </imagelayer>
- <imagelayer id="2" name="Hometown map">
+ <imagelayer id="16" name="Chapter 4 evening" offsetx="600" offsety="0">
+  <image source="images/Hometown 4 evening.png" width="2760" height="4267"/>
+  <properties>
+   <property name="image" value="Hometown map Chapter 4 evening.png"/>
+  </properties>
+ </imagelayer>
+ <imagelayer id="15" name="Chapter 4">
+  <image source="images/Hometown 4.png" width="3360" height="4267"/>
+  <properties>
+   <property name="image" value="Hometown map Chapter 4.png"/>
+  </properties>
+ </imagelayer>
+ <imagelayer id="12" name="Chapter 2" offsetx="600" offsety="0">
+  <image source="images/Hometown 2.png" width="2760" height="4267"/>
+  <properties>
+   <property name="image" value="Hometown map (Chapter 2).png"/>
+  </properties>
+ </imagelayer>
+ <imagelayer id="2" name="Chapter 1" offsetx="600" offsety="0">
   <image source="images/Hometown.png" width="2760" height="4267"/>
+  <properties>
+   <property name="image" value="Hometown map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="6" name="sublocations">
-  <object id="2" name="School" x="2149.6" y="2026.75">
+  <object id="2" name="School" x="2749.6" y="2026.75">
    <properties>
     <property name="description" value="School is one of the most important locations in Hometown. [[Kris]]'s classmates are introduced,  and it contains the [[Closet Dark World]] and [[Card Kingdom]], with the former being a recurring location in later [[Chapter]]s. "/>
     <property name="page" value="School"/>
    </properties>
    <point/>
   </object>
-  <object id="3" name="Dreemurr Residence" x="513.898" y="427.119">
+  <object id="3" name="Dreemurr Residence" x="1113.9" y="427.119">
    <properties>
     <property name="description" value="Dreemurr Residence is the home of [[Kris]], [[Toriel]], [[Asriel]] and formerly [[Asgore]]."/>
     <property name="page" value="Dreemurr Residence"/>
@@ -26,322 +50,321 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="14" name="Object Layer 8"/>
  <objectgroup id="5" name="npcs">
-  <object id="25" name="Toriel" x="678.26" y="379.065">
+  <object id="25" name="Toriel" x="1278.26" y="379.065">
    <properties>
     <property name="description" value="[[Kris]] can have her recall her memories of their childhood, or offer the [[Bouquet]] to her if they visited the [[Flower King]]. This interaction transfers to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default."/>
     <property name="page" value="Toriel"/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="Catty" x="942.419" y="959.163">
+  <object id="26" name="Catty" x="1542.42" y="959.163">
    <properties>
     <property name="description" value="Catty appears in front of her house in [[Chapter 1]] and talks to [[Kris]] about her sister, [[Catti]], [[Asriel]], and [[Bratty]]."/>
     <property name="page" value="Catty"/>
    </properties>
    <point/>
   </object>
-  <object id="27" name="Dad Cat" x="1047.53" y="942.663">
+  <object id="27" name="Dad Cat" x="1647.53" y="942.663">
    <properties>
     <property name="description" value="Dad Cat appears in front of his family house in [[Chapter 1]]. He talks about how [[Asriel]], who he named &quot;Doug,&quot; did not like his wife's cooking, and that [[Kris]], who he names &quot;Douglas,&quot; does not like frozen cat food. Interacting again causes him to hope that Asriel remembers his neighbors."/>
     <property name="page" value="Dad Cat"/>
    </properties>
    <point/>
   </object>
-  <object id="102" name="Royal Guards" x="2282.09" y="961.735">
+  <object id="102" name="Royal Guards" x="2882.09" y="961.735">
    <properties>
     <property name="description" value="These two are enjoying the scenery. The rabbit Royal Guard is enthusiastic, while the dragon Royal Guard agrees with a laconic temperament."/>
     <property name="page" value="Royal Guards"/>
    </properties>
    <point/>
   </object>
-  <object id="155" name="Asgore dialogue 2" x="1746.86" y="616.327">
+  <object id="155" name="Asgore dialogue 2" x="2346.86" y="616.327">
    <properties>
     <property name="description" value="He appears at the opposite staircase of [[Kris]]. When interacted with, Asgore ackowledges the seven flowers are difficult to tend to due to the climate. Asgore also comments if Kris inspects the air matress and refrigerator."/>
     <property name="page" value="Asgore Dreemurr"/>
    </properties>
    <point/>
   </object>
-  <object id="29" name="Asgore dialogue 1" x="1627.28" y="684.834">
+  <object id="29" name="Asgore dialogue 1" x="2227.28" y="684.834">
    <properties>
     <property name="description" value="He suggests to [[Kris]] that when [[Asriel]] returns, they can all go to [[QC's Diner]]. He thinks of possibly driving them around town."/>
     <property name="page" value="Asgore Dreemurr"/>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Nobody" x="1472.52" y="958.273">
+  <object id="38" name="Nobody" x="2072.52" y="958.273">
    <properties>
     <property name="description" value="This NPC, whose verbal quirks are similar to those of ''[[ut:Undertale]]''&lt;nowiki /&gt;'s [[ut:Mettaton|Mettaton]], doe not let [[Kris]] into their house. Second interaction causes them to be surprised that Kris wants to talk to them, though they describe themselves as a &quot;nobody.&quot;"/>
     <property name="page" value="Nobody"/>
    </properties>
    <point/>
   </object>
-  <object id="28" name="Bratty" x="1290.11" y="950.678">
+  <object id="28" name="Bratty" x="1890.11" y="950.678">
    <properties>
     <property name="description" value="Bratty can express disdain for [[Catty]], remember playing truth or dare with [[Asriel]], or recall when [[Kris]] wanted to be friends with her."/>
     <property name="page" value="Bratty"/>
    </properties>
    <point/>
   </object>
-  <object id="148" name="Alphys" x="1973.33" y="1218.24">
+  <object id="148" name="Alphys" x="2573.33" y="1218.24">
    <properties>
     <property name="description" value="Alphys can explain where the flowers are from, that the milk saucer is for [[MewMew]], or forgives [Kris]] for not getting the chalk. She encourages Kris to visit any time."/>
     <property name="page" value="Alphys"/>
    </properties>
    <point/>
   </object>
-  <object id="145" name="Snowy" x="2127.11" y="1459.12">
+  <object id="145" name="Snowy" x="2727.11" y="1459.12">
    <properties>
     <property name="description" value="Snowy is jealous of [[Kris]] for skipping [[Alphys]]'s class for today, and comments that [[Snowy's Father|his dad]] would scold him."/>
     <property name="page" value="Snowy"/>
    </properties>
    <point/>
   </object>
-  <object id="146" name="Snowy's Father" x="2089.87" y="1427.28">
+  <object id="146" name="Snowy's Father" x="2689.87" y="1427.28">
    <properties>
     <property name="description" value="He assumes [[Snowy]] is knocking hard on the door, and tells Snowy to stop as it would hurt."/>
     <property name="page" value="Snowy's Father"/>
    </properties>
    <point/>
   </object>
-  <object id="144" name="Monster Kid" x="2042.41" y="1459.72">
+  <object id="144" name="Monster Kid" x="2642.41" y="1459.72">
    <properties>
     <property name="description" value="Monster Kid is glad to see [[Kris]] has survived [[Susie]]. He recalls playing handball with [[Snowy]] and [[Jockington]], and Susie had watched them play, and also caused [[Undyne]] to trounce them in handball. Interacting again causes Monster Kid to notice Kris looks annoyed."/>
     <property name="page" value="Monster Kid"/>
    </properties>
    <point/>
   </object>
-  <object id="143" name="Door knocker enthusiast" x="1870.01" y="1426.08">
+  <object id="143" name="Door knocker enthusiast" x="2470.01" y="1426.08">
    <properties>
     <property name="description" value="Acknowledges that [[Kris]] has beginner knocking skills, and asks them to come back later when they have improved."/>
    </properties>
    <point/>
   </object>
-  <object id="142" name="Innkeeper's Child" x="1730.04" y="1425.48">
+  <object id="142" name="Innkeeper's Child" x="2330.04" y="1425.48">
    <properties>
     <property name="description" value="If [[Kris]] knocks on this door, the child asks Kris if it hurts to be made out of blood."/>
     <property name="page" value="Innkeeper's Child"/>
    </properties>
    <point/>
   </object>
-  <object id="105" name="Pizzapants" x="311.768" y="1409.86">
+  <object id="105" name="Pizzapants" x="911.768" y="1409.86">
    <properties>
     <property name="description" value="Pizzapants takes off his [[ICE-E]]'s mascot costume to greet [[Kris]] amicably. He expresses disdain at his co-workers and his job at [[Hometown#ICE-E's P&quot;e&quot;zza|ICE-E's P&quot;e&quot;zza]], and how he aspires to go to the same college as [[Asriel]]. If Kris decides not to converse, Pizzapants understands, and tells them to enjoy &quot;freedom&quot; while they still can."/>
     <property name="page" value="Pizzapants"/>
    </properties>
    <point/>
   </object>
-  <object id="104" name="Blue Ears" x="430.108" y="1454.92">
+  <object id="104" name="Blue Ears" x="1030.11" y="1454.92">
    <properties>
     <property name="description" value="Advertises some of the &quot;24 Pezza Flavors.&quot; If [[Kris]] interacts again, Blue Ears admits he mistook the [[ICE-E's P&quot;e&quot;zza]] for an ice cream shop, but enjoys the job and his co-workers."/>
     <property name="page" value="Blue Ears"/>
    </properties>
    <point/>
   </object>
-  <object id="103" name="Purple Guy" x="660.78" y="1449.51">
+  <object id="103" name="Purple Guy" x="1260.78" y="1449.51">
    <properties>
     <property name="description" value="He is enthusiastic about his job."/>
     <property name="page" value="Purple Guy"/>
    </properties>
    <point/>
   </object>
-  <object id="90" name="Hat Monster" x="843.805" y="1231.75">
+  <object id="90" name="Hat Monster" x="1443.8" y="1231.75">
    <properties>
     <property name="description" value="Compliments their look, but immediately admits to putting leftover pancakes in their hat. Interacting again causes them to admit to loving pancakes."/>
     <property name="page" value="Hat Monster"/>
    </properties>
    <point/>
   </object>
-  <object id="87" name="Dad Dragon" x="692.596" y="1285.48">
+  <object id="87" name="Dad Dragon" x="1292.6" y="1285.48">
    <properties>
     <property name="description" value="He asks for edible glitter, as his youngest child only consumes food that looks like treasure. The second time causes Dad Dragon to admits sprinkles is also acceptable."/>
     <property name="page" value="Dad Dragon"/>
    </properties>
    <point/>
   </object>
-  <object id="88" name="Catti working" x="751.926" y="1302.38">
+  <object id="88" name="Catti working" x="1351.93" y="1302.38">
    <properties>
     <property name="description" value="She is glad to see that [[Kris]] survived [[Susie]], then admits she is working. Interacting again causes her to admit the uniform is mandatory for [[QC's Diner]]."/>
     <property name="page" value="Catti"/>
    </properties>
    <point/>
   </object>
-  <object id="91" name="Ice Wolf" x="912.612" y="1233.98">
+  <object id="91" name="Ice Wolf" x="1512.61" y="1233.98">
    <properties>
     <property name="description" value="Admits to preferring ice as the drink. Interacting with Ice Wolf again causes them to admit to liking [[ICE-E|ice-themed mascots]]."/>
     <property name="page" value="Ice Wolf"/>
    </properties>
    <point/>
   </object>
-  <object id="92" name="Tentacled Monster" x="935.685" y="1284.25">
+  <object id="92" name="Tentacled Monster" x="1535.68" y="1284.25">
    <properties>
     <property name="description" value="This monster, resembling the [[ut:Skateboard Girl|Skateboard Girl]] from ''[[ut:Undertale|Undertale]]'', reminisces about skipping the first hour of [[Gerson]]'s class to eat crepes at the diner. This almost made her fail her year, but she attributes passing to her bringing the leftovers to Gerson."/>
     <property name="page" value="Tentacled Monster"/>
    </properties>
    <point/>
   </object>
-  <object id="93" name="Fire Elemental" x="910.964" y="1284.66">
+  <object id="93" name="Fire Elemental" x="1510.96" y="1284.66">
    <properties>
     <property name="description" value="This NPC, resembling ''[[ut:Undertale|Undertale]]''&lt;nowiki /&gt;'s [[ut:Fuku Fire|Fuku Fire]], likes the vibe of QC's. She considers signing up for waitstaff, worries that she would melt all ice in drinks if she gets nervous."/>
     <property name="page" value="Fire Elemental"/>
    </properties>
    <point/>
   </object>
-  <object id="86" name="Waitress Lion" x="871.41" y="1292.49">
+  <object id="86" name="Waitress Lion" x="1471.41" y="1292.49">
    <properties>
     <property name="description" value="Is taking the orders for [[Fire Elemental]] and [[Tentacled Monster]]. Interacting again causes Waitress Lion to ask how the firewood will be done."/>
     <property name="page" value="Waitress Lion"/>
    </properties>
    <point/>
   </object>
-  <object id="44" name="Father Alvin" x="900.057" y="2681.99">
+  <object id="44" name="Father Alvin" x="1500.06" y="2681.99">
    <properties>
     <property name="description" value="Father Alvin stands in front of the [[Church]]. He is surprised to see [[Kris]] visiting on a [[School]] day. If Kris mentions &quot;Fruit Juice,&quot; Father Alvin suggests that Kris partakes in service, and possibly sing in the choir like [[Asriel|their brother]] used to."/>
     <property name="page" value="Father Alvin"/>
    </properties>
    <point/>
   </object>
-  <object id="80" name="Politics Bear" x="1558.24" y="2463.43">
+  <object id="80" name="Politics Bear" x="2158.24" y="2463.43">
    <properties>
     <property name="description" value="Explains the [[Mayor]]'s diligence, though admits she lacks charisma. Interacting again causes Politics Bear to state that she sets the AC to be extremely cold."/>
     <property name="page" value="Politics Bear"/>
    </properties>
    <point/>
   </object>
-  <object id="79" name="Hand Receptionist" x="1477.07" y="2437.06">
+  <object id="79" name="Hand Receptionist" x="2077.07" y="2437.06">
    <properties>
     <property name="description" value="Apologizes to [[Kris]] and states that the [[Mayor]] is busy. Interacting again causes Hand Receptionist to apologize and comment on [[Alphys]] getting hired for [[School]] thanks to [[Toriel]]."/>
     <property name="page" value="Hand Receptionist"/>
    </properties>
    <point/>
   </object>
-  <object id="78" name="Briefcase Dude" x="1386.43" y="2480.74">
+  <object id="78" name="Briefcase Dude" x="1986.43" y="2480.74">
    <properties>
     <property name="description" value="He calls [[Kris]] &quot;short-stuff&quot; and questions them for wanting to visit the [[Mayor]], then suggests that they go to the police instead. Interacting again implies Kris does not want to be called a &quot;kid,&quot; and Briefcase Dude still recommends they go to the police."/>
     <property name="page" value="Briefcase Dude"/>
    </properties>
    <point/>
   </object>
-  <object id="41" name="Napstablook" x="439.167" y="2208.47">
+  <object id="41" name="Napstablook" x="1039.17" y="2208.47">
    <properties>
     <property name="description" value="Napstablook has become a police officer by accident, but cannot quit due to their cousins relying on them. In [[Chapter 1]], if [[Kris]] knocks on the Police Station's door, Napstablook simply closes the blinds."/>
     <property name="page" value="Napstablook"/>
    </properties>
    <point/>
   </object>
-  <object id="132" name="Rudolph Holiday" x="656.575" y="1636.33">
+  <object id="132" name="Rudolph Holiday" x="1256.58" y="1636.33">
    <properties>
     <property name="description" value="He greets [[Kris]] and asks if [[Toriel]] made them visit. Either option prompts a different reaction from him. Kris can converse with Rudy about [[Noelle Holiday|Noelle]], his illness, and reminisces about some memories he had of [[Asgore Dreemurr|Asgore]], [[Toriel]], and Kris's mischief. He also comments on the objects Kris inspects."/>
     <property name="page" value="Rudolph Holiday"/>
    </properties>
    <point/>
   </object>
-  <object id="82" name="The Warrior" x="873.882" y="1634.87">
+  <object id="82" name="The Warrior" x="1473.88" y="1634.87">
    <properties>
     <property name="description" value="Explains that the hospital employees brought him here. However, he wants to &quot;BATTLE!!!&quot;"/>
     <property name="page" value="The Warrior"/>
    </properties>
    <point/>
   </object>
-  <object id="81" name="Red Big Mouth" x="813.832" y="1969.37">
+  <object id="81" name="Red Big Mouth" x="1413.83" y="1969.37">
    <properties>
     <property name="description" value="Asks [[Kris]] if they are visiting to play the piano, and that they enjoy it. Interacting again causes Red Big Mouth to mention [[Undyne]] occasionally playing as well. If Kris has played the hospital piano, Red Big Mouth ackowledges their piano playing is off, and that Kris appears to look a little sick."/>
     <property name="name" value="Red Big Mouth"/>
    </properties>
    <point/>
   </object>
-  <object id="77" name="Scared Donut Guy" x="869.762" y="2305.63">
+  <object id="77" name="Scared Donut Guy" x="1469.76" y="2305.63">
    <properties>
     <property name="description" value="Scared Donut Guy laments that he is unable to get around [[Undyne]]. He considers that perhaps running away may be the ideal option."/>
     <property name="page" value="Scared Donut Guy"/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="Undyne" x="910.394" y="2289.61">
+  <object id="42" name="Undyne" x="1510.39" y="2289.61">
    <properties>
     <property name="description" value="In [[Chapter 1]]'s epilogue, Undyne is on the street, and directing traffic by yelling at everyone to get out of her way. However, she pauses to talk with &quot;[[Asgore Dreemurr|Asgore]]'s kid.&quot; She appears to not recognize [[Alphys]]'s name. Kris can also try to inform her of the [[Dark World]] in [[School]], though Undyne claims that is a job for the school board."/>
     <property name="page" value="Undyne"/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="Snail Guy" x="957.109" y="2306.04">
+  <object id="76" name="Snail Guy" x="1557.11" y="2306.04">
    <properties>
     <property name="description" value="Snail Guy explains to [[Kris]] what [[Undyne]] has been doing to direct traffic. He claims to feel directed by her method."/>
     <property name="page" value="Snail Guy"/>
    </properties>
    <point/>
   </object>
-  <object id="101" name="Striped Bird" x="1264.49" y="1960.71">
+  <object id="101" name="Striped Bird" x="1864.49" y="1960.71">
    <properties>
     <property name="description" value="Striped Bird expresses excitement for the books upstairs, and recommends that [[Kris]] should read them. However, Striped Bird blocks the staircase to the second floor. The second floor becomes partially accesible in [[Chapter 2]]."/>
     <property name="page" value="Striped Bird"/>
    </properties>
    <point/>
   </object>
-  <object id="74" name="Temmie studying" x="1315.15" y="2077.79">
+  <object id="74" name="Temmie studying" x="1915.15" y="2077.79">
    <properties>
     <property name="description" value="She insists on wanting to study hard for college. However, Temmie reads comic books on &quot;hot demon guys&quot; instead. "/>
     <property name="page" value="Temmie"/>
    </properties>
    <point/>
   </object>
-  <object id="73" name="Jockington studying" x="1238.1" y="2074.08">
+  <object id="73" name="Jockington studying" x="1838.1" y="2074.08">
    <properties>
     <property name="description" value="He happily greets [[Kris]] and explains that [[Catti]] is at work, and that he is working on their project in advance. His papers have a soccer ball drawn 73 times. Interacting again causes him to make a related pun."/>
     <property name="page" value="Jockington"/>
    </properties>
    <point/>
   </object>
-  <object id="43" name="Berdly working" x="1129.03" y="2072.4">
+  <object id="43" name="Berdly working" x="1729.03" y="2072.4">
    <properties>
     <property name="description" value="Berdly works as a volunteer assistant at [[library]]'s desk. He is surprised that [[Kris]] has survived [[Susie]], and mocks Kris for not returning ''How to Draw Dragons'' for 2583 days. Interacting with Berdly again causes him to describe the book's cover. If Kris overheard [[Rudolph Holiday|rudy]] and [[Noelle Holiday|Noelle]], they suggest that Berdly should go to the [[Hospital]] window."/>
     <property name="page" value="Berdly"/>
    </properties>
    <point/>
   </object>
-  <object id="195" name="Jockington" x="1818.21" y="1933.29">
+  <object id="195" name="Jockington" x="2418.21" y="1933.29">
    <properties>
     <property name="description" value="Reminds [[Kris]] that he is always partners with [[Catti]] ever since gym class. He also claims he and Catti are similar as they can both unhinge jaws and breathe."/>
     <property name="page" value="Jockington"/>
    </properties>
    <point/>
   </object>
-  <object id="194" name="Snowy" x="1951" y="1932.03">
+  <object id="194" name="Snowy" x="2551" y="1932.03">
    <properties>
     <property name="page" value="Snowy"/>
    </properties>
    <point/>
   </object>
-  <object id="192" name="Catti" x="1810.94" y="1902.94">
+  <object id="192" name="Catti" x="2410.94" y="1902.94">
    <properties>
     <property name="description" value="Is texting on her phone. She states she is taken."/>
     <property name="page" value="Catti"/>
    </properties>
    <point/>
   </object>
-  <object id="193" name="Monster Kid" x="1947.83" y="1902.62">
+  <object id="193" name="Monster Kid" x="2547.83" y="1902.62">
    <properties>
     <property name="description" value="Suggests that [[Kris]] should come to [[School]] sooner next time, and they state they would rather be partnerless than be with [[Snowy]]"/>
     <property name="page" value="Monster Kid"/>
    </properties>
    <point/>
   </object>
-  <object id="190" name="Berdly" x="1881.13" y="1868.48">
+  <object id="190" name="Berdly" x="2481.13" y="1868.48">
    <properties>
     <property name="description" value="Turns his head towards [[Kris]] and states he is partners with [[Noelle Holiday|Noelle]], who he considers the &quot;2nd smartest student.&quot; Berdly also mocks Kris, and would rather get an &quot;A&quot; on the project."/>
     <property name="page" value="Berdly"/>
    </properties>
    <point/>
   </object>
-  <object id="191" name="Temmie" x="1946.25" y="1869.43">
+  <object id="191" name="Temmie" x="2546.25" y="1869.43">
    <properties>
     <property name="description" value="She apologizes to [[Kris]] and brings out her partner, EG."/>
     <property name="page" value="Temmie"/>
    </properties>
    <point/>
   </object>
-  <object id="199" name="Alphys" x="1787.54" y="1804.93">
+  <object id="199" name="Alphys" x="2387.54" y="1804.93">
    <properties>
     <property name="description" value="[[Kris]] asks what she is watching on her phone, which is implied to Mew Mew anime. Alphys changes the topic by asking if Kris found a partner. After [[Susie]] appears, she tells Kris to go outside."/>
     <property name="page" value="Alphys"/>
@@ -350,7 +373,7 @@
   </object>
  </objectgroup>
  <objectgroup id="4" name="signs" class="Computer desk">
-  <object id="153" name="West ICE-E ad" x="486.574" y="1442.9">
+  <object id="153" name="West ICE-E ad" x="1086.57" y="1442.9">
    <properties>
     <property name="description">(Here at ICE-E'S PEZZA, You're Family.)
 (... Is Going to Love it!)</property>
@@ -358,7 +381,7 @@
    </properties>
    <point/>
   </object>
-  <object id="152" name="ICE-E door" x="532.228" y="1434.49">
+  <object id="152" name="ICE-E door" x="1132.23" y="1434.49">
    <properties>
     <property name="description">(The entrance is locked.)
 (No one's inside.)
@@ -367,13 +390,13 @@
    </properties>
    <point/>
   </object>
-  <object id="150" name="East ICE-E ad" x="589.295" y="1442.3">
+  <object id="150" name="East ICE-E ad" x="1189.3" y="1442.3">
    <properties>
     <property name="description" value="(Ice E's P&quot;E&quot;ZZA, You're number &quot;1&quot; Spot for a piping hot pe&quot;E&quot;ce of PEZZA.)"/>
    </properties>
    <point/>
   </object>
-  <object id="208" name="Police tape" x="234.408" y="2296.73">
+  <object id="208" name="Police tape" x="834.408" y="2296.73">
    <properties>
     <property name="description">(Police tape is blocking the way.)
 (The tape simply reads &quot;NGAHHHHH!!!&quot;)</property>
@@ -381,7 +404,7 @@
    </properties>
    <point/>
   </object>
-  <object id="207" name="ICE-E pain scale" x="818.772" y="1625.7">
+  <object id="207" name="ICE-E pain scale" x="1418.77" y="1625.7">
    <properties>
     <property name="description">(It's a classic 1-to-10 pain scale, using [[ICE-E]] as a model.)
 (At 0 pain, he's happy.)
@@ -390,31 +413,31 @@
    </properties>
    <point/>
   </object>
-  <object id="206" name="Diagram" x="728.797" y="1819.39">
+  <object id="206" name="Diagram" x="1328.8" y="1819.39">
    <properties>
     <property name="description" value="(It's a diagram showing a bunch of lines and a circle.)"/>
    </properties>
    <point/>
   </object>
-  <object id="135" name="Red Roses" x="719.649" y="1645.34">
+  <object id="135" name="Red Roses" x="1319.65" y="1645.34">
    <properties>
     <property name="description" value="[[Asgore Dreemurr|Asgore]] gave [[Rudolph Holiday|Rudy]] these roses. However, Rudy jokes about it being nonsensical."/>
    </properties>
    <point/>
   </object>
-  <object id="136" name="Get Well Soon card" x="727.458" y="1672.97">
+  <object id="136" name="Get Well Soon card" x="1327.46" y="1672.97">
    <properties>
     <property name="description" value="A card bought by [[Toriel]], with the inside signed by [[Kris]]. When inspected, [[Rudolph Holiday|Rudy]] jokingly questions why Kris is looking at their own penmanship as if they have never seen it before."/>
    </properties>
    <point/>
   </object>
-  <object id="140" name="Rudy's patient card" x="609.719" y="1623.72">
+  <object id="140" name="Rudy's patient card" x="1209.72" y="1623.72">
    <properties>
     <property name="description" value="This card displays [[Rudolph Holiday|Rudy]]'s full name. If [[Kris]] inspects this, Rudy jokes that they do not remember their name. Inspecting it again causes him to joke that they are jealous."/>
    </properties>
    <point/>
   </object>
-  <object id="124" name="Bead Maze" x="747.883" y="2073.05">
+  <object id="124" name="Bead Maze" x="1347.88" y="2073.05">
    <properties>
     <property name="description">(It's one of those sliding bead toys that naturally spawns inside doctors' offices.)
 (The beads march grimly along their set path.)</property>
@@ -422,13 +445,13 @@
    </properties>
    <point/>
   </object>
-  <object id="125" name="Hospital Piano" x="880.639" y="1973.33">
+  <object id="125" name="Hospital Piano" x="1480.64" y="1973.33">
    <properties>
     <property name="description" value="[[Kris]] can choose to play this piano. If played, [[Red Big Mouth]] comments on this. Choosing not to causes their hands linger on the keys."/>
    </properties>
    <point/>
   </object>
-  <object id="47" name="Gerson Boom Memorial Bench" x="48.6177" y="2662.44">
+  <object id="47" name="Gerson Boom Memorial Bench" x="648.618" y="2662.44">
    <properties>
     <property name="description">([[Gerson Boom]] Memorial Bench)\n
 &quot;Throughout my career, some of my best ideas came from dreams.&quot;\n
@@ -437,7 +460,7 @@
    </properties>
    <point/>
   </object>
-  <object id="48" name="Gerson's tombstone" x="117.012" y="2654.2">
+  <object id="48" name="Gerson's tombstone" x="717.012" y="2654.2">
    <properties>
     <property name="description">[[Gerson Boom|GERSON]]
 RENOWNED HISTORIAN, AUTHOR, AND TEACHER</property>
@@ -445,7 +468,7 @@ RENOWNED HISTORIAN, AUTHOR, AND TEACHER</property>
    </properties>
    <point/>
   </object>
-  <object id="49" name="Crystal's tombstone" x="177.166" y="2648.43">
+  <object id="49" name="Crystal's tombstone" x="777.166" y="2648.43">
    <properties>
     <property name="description">[[CRYSTAL]]
 A SNOWY GEMSTONE FOR A PROUD MOTHER</property>
@@ -453,7 +476,7 @@ A SNOWY GEMSTONE FOR A PROUD MOTHER</property>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Muttler's tombstone" x="259.157" y="2657.08">
+  <object id="50" name="Muttler's tombstone" x="859.157" y="2657.08">
    <properties>
     <property name="description">[[MUTTLER]]
 A BIG BONE FOR THE LEADER OF THE PACK</property>
@@ -461,7 +484,7 @@ A BIG BONE FOR THE LEADER OF THE PACK</property>
    </properties>
    <point/>
   </object>
-  <object id="51" name="Shyra's tombstone" x="321.783" y="2648.02">
+  <object id="51" name="Shyra's tombstone" x="921.783" y="2648.02">
    <properties>
     <property name="description">[[SHYRA]]
 A KARAOKE MICROPHONE FOR A BRAVE SINGER</property>
@@ -469,7 +492,7 @@ A KARAOKE MICROPHONE FOR A BRAVE SINGER</property>
    </properties>
    <point/>
   </object>
-  <object id="72" name="Lord of the Hammer" x="1099.25" y="1940.18">
+  <object id="72" name="Lord of the Hammer" x="1699.25" y="1940.18">
    <properties>
     <property name="description">&quot;Lord of the Hammer&quot;
 (First in the award-winning fiction series by lauded historian [[Gerson Boom]].)</property>
@@ -477,14 +500,14 @@ A KARAOKE MICROPHONE FOR A BRAVE SINGER</property>
    </properties>
    <point/>
   </object>
-  <object id="71" name="Hots Fireguy's book" x="1135.92" y="1940.59">
+  <object id="71" name="Hots Fireguy's book" x="1735.92" y="1940.59">
    <properties>
     <property name="description">&quot;Please remember my name. Please. I wrote a book to help you remember.&quot;
 (By [[Hots Fireguy]])</property>
    </properties>
    <point/>
   </object>
-  <object id="70" name="Napstablook's journal" x="1099.67" y="2006.92">
+  <object id="70" name="Napstablook's journal" x="1699.67" y="2006.92">
    <properties>
     <property name="description">(It's an unlabelled book. You look inside...)
 oh.... i accidentally returned my personal journal instead of my book...
@@ -494,7 +517,7 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="67" name="Computer Lab door" x="1199.37" y="1949.64">
+  <object id="67" name="Computer Lab door" x="1799.37" y="1949.64">
    <properties>
     <property name="description">(You looked through the window to the computer lab...)
 (There seems to be [[Annoying Dog|a dog]] inside working at a computer...)
@@ -509,13 +532,13 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="107" name="Teen'z Corner" x="1295.13" y="2032.8">
+  <object id="107" name="Teen'z Corner" x="1895.13" y="2032.8">
    <properties>
     <property name="description" value="[[Kris]] can choose to read &quot;[[Alphys|The Anonymous Yellow Lizard]]'s review of Mew Mew Kissy Cutie 2, where she also expresses her disdain for the prequel and Mew Mew's characterization in it."/>
    </properties>
    <point/>
   </object>
-  <object id="123" name="ICE-E poster" x="1254.88" y="2032.8">
+  <object id="123" name="ICE-E poster" x="1854.88" y="2032.8">
    <properties>
     <property name="description">(There's a crude drawing of an [[ICE-E|ice-cube]] wearing a headband.)
 (&quot;The TeenZone: Where Teen's Can Be Kid's.&quot;)
@@ -524,13 +547,13 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="53" name="Stacked chairs" x="2548.72" y="1934.41">
+  <object id="53" name="Stacked chairs" x="3148.72" y="1934.41">
    <properties>
     <property name="description" value="(The Throne of the Gods.)"/>
    </properties>
    <point/>
   </object>
-  <object id="58" name="Stacked blocks" x="2336.12" y="1926.99">
+  <object id="58" name="Stacked blocks" x="2936.12" y="1926.99">
    <properties>
     <property name="description">(Some kind of primitive sculpture.)
 (Who knows what it represents?)</property>
@@ -538,13 +561,13 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="55" name="Art of Toriel" x="2545.84" y="1804.21">
+  <object id="55" name="Art of Toriel" x="3145.84" y="1804.21">
    <properties>
     <property name="description" value="(It's a primitive drawing of [[Toriel|your mom]].)"/>
    </properties>
    <point/>
   </object>
-  <object id="59" name="Children's books" x="2519.88" y="1790.2">
+  <object id="59" name="Children's books" x="3119.88" y="1790.2">
    <properties>
     <property name="description">(Kids' books.)
 (Some of them used to be [[Kris|yours]].)</property>
@@ -552,7 +575,7 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="57" name="Shapes poster" x="2492.27" y="1779.08">
+  <object id="57" name="Shapes poster" x="3092.27" y="1779.08">
    <properties>
     <property name="description">(It's a poster of several basic shapes.)
 (Circle, Oval, Square...)
@@ -561,13 +584,13 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="52" name="Apple" x="2484.03" y="1825.22">
+  <object id="52" name="Apple" x="3084.03" y="1825.22">
    <properties>
     <property name="description" value="(Some kind of teacher food.)"/>
    </properties>
    <point/>
   </object>
-  <object id="54" name="Toriel's computer" x="2424.29" y="1810.39">
+  <object id="54" name="Toriel's computer" x="3024.29" y="1810.39">
    <properties>
     <property name="description">(It's a computer.)
 (Its desktop wallpaper is [[Kris|you]] and [[Asriel|your brother]] dressed up for Halloween 8 years ago.)</property>
@@ -575,7 +598,7 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="56" name="Ms Toriel" x="2405.75" y="1781.55">
+  <object id="56" name="Ms Toriel" x="3005.75" y="1781.55">
    <properties>
     <property name="description">(&quot;Ms. [[Toriel]]&quot; is written in cursive on the dry-erase board.)
 (Seems like it hasn't been erased in a very long time.)</property>
@@ -583,7 +606,7 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="62" name="Kris's locker" x="2470.85" y="1977.26">
+  <object id="62" name="Kris's locker" x="3070.85" y="1977.26">
    <properties>
     <property name="description">(It's [[Kris|your]] locker.)
 (It's empty.)</property>
@@ -591,13 +614,13 @@ oh no... i have to take it out every time i want to write a new entry...</proper
    </properties>
    <point/>
   </object>
-  <object id="63" name="Asriel's old locker" x="2450.66" y="1977.26">
+  <object id="63" name="Asriel's old locker" x="3050.66" y="1977.26">
    <properties>
     <property name="description" value="(This used to be [[Asriel|your brother]]'s locker.)"/>
    </properties>
    <point/>
   </object>
-  <object id="64" name="East bulletin board" x="2314.28" y="1977.26">
+  <object id="64" name="East bulletin board" x="2914.28" y="1977.26">
    <properties>
     <property name="description">Do you like, breathing? Moving fast, with or without, legs?
 But usually, with legs?
@@ -606,13 +629,13 @@ Join the Cross Country Team with [[Jockington]], and [[Noelle Holiday|Noelle]]!<
    </properties>
    <point/>
   </object>
-  <object id="34" name="Unknown door" x="1941.62" y="1644.44">
+  <object id="34" name="Unknown door" x="2541.62" y="1644.44">
    <properties>
     <property name="description" value="The door is locked."/>
    </properties>
    <point/>
   </object>
-  <object id="117" name="Father Alvin's drawing" x="2465.31" y="1515.59">
+  <object id="117" name="Father Alvin's drawing" x="3065.31" y="1515.59">
    <properties>
     <property name="description">(It's a yellowed, poorly-drawn picture of a [[Gerson Boom|green turtle]].)
 (It's signed '[[Father Alvin|Alvin]].')</property>
@@ -620,20 +643,20 @@ Join the Cross Country Team with [[Jockington]], and [[Noelle Holiday|Noelle]]!<
    </properties>
    <point/>
   </object>
-  <object id="120" name="Playing cards" x="2438.88" y="1524.6">
+  <object id="120" name="Playing cards" x="3038.88" y="1524.6">
    <properties>
     <property name="description" value="(Playing cards spill out of a deck in the closet.)"/>
    </properties>
    <point/>
   </object>
-  <object id="118" name="Seam's Light World form" x="2323.54" y="1539.02">
+  <object id="118" name="Seam's Light World form" x="2923.54" y="1539.02">
    <properties>
     <property name="description" value="(It's a worn-down stuffed animal.)"/>
     <property name="page" value="Seam"/>
    </properties>
    <point/>
   </object>
-  <object id="65" name="West bulletin board" x="2006.92" y="1978.49">
+  <object id="65" name="West bulletin board" x="2606.92" y="1978.49">
    <properties>
     <property name="description">(Are you ready for the Sadie Hawkman's dance?)
 (At this dance, all the chaperones wear giant hawk heads...)
@@ -642,13 +665,13 @@ Join the Cross Country Team with [[Jockington]], and [[Noelle Holiday|Noelle]]!<
    </properties>
    <point/>
   </object>
-  <object id="66" name="Jockington's locker" x="1930.29" y="1977.67">
+  <object id="66" name="Jockington's locker" x="2530.29" y="1977.67">
    <properties>
     <property name="description" value="(The locker is covered in [[Jockington]] memorabilia.)"/>
    </properties>
    <point/>
   </object>
-  <object id="186" name="EG" x="1963.93" y="1870.55">
+  <object id="186" name="EG" x="2563.93" y="1870.55">
    <properties>
     <property name="description">(It's a black-and-white hardboiled egg.)
 (Sadly, seems like it already has a partner.)
@@ -659,7 +682,7 @@ Join the Cross Country Team with [[Jockington]], and [[Noelle Holiday|Noelle]]!<
    </properties>
    <point/>
   </object>
-  <object id="188" name="Alphys's Computer" x="1898.8" y="1811.29">
+  <object id="188" name="Alphys's Computer" x="2498.8" y="1811.29">
    <properties>
     <property name="description">(The computer's wallpaper is a rotating slideshow of nature images.)
 (... and, rarely, an image of two buff superheroes embracing, blushing.)
@@ -670,13 +693,13 @@ Join the Cross Country Team with [[Jockington]], and [[Noelle Holiday|Noelle]]!<
    </properties>
    <point/>
   </object>
-  <object id="21" name="Book" x="812.637" y="455.734">
+  <object id="21" name="Book" x="1412.64" y="455.734">
    <properties>
     <property name="description" value="It's a book of hymns."/>
    </properties>
    <point/>
   </object>
-  <object id="20" name="TV" x="723.787" y="361.064">
+  <object id="20" name="TV" x="1323.79" y="361.064">
    <properties>
     <property name="description">It's the TV.
 Doesn't seem to even be plugged in anymore.</property>
@@ -684,13 +707,13 @@ Doesn't seem to even be plugged in anymore.</property>
    </properties>
    <point/>
   </object>
-  <object id="19" name="Landline phone" x="613.468" y="385.876">
+  <object id="19" name="Landline phone" x="1213.47" y="385.876">
    <properties>
     <property name="description" value="It's a landline phone. But you already have a [[Cell Phone|cell phone]]."/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="Trashcan" x="580.375" y="402.11">
+  <object id="18" name="Trashcan" x="1180.38" y="402.11">
    <properties>
     <property name="description">It's a trashcan.
 Somehow, it's emitting a pleasant floral scent.
@@ -701,7 +724,7 @@ Somehow, its floral scent has increased.
    </properties>
    <point/>
   </object>
-  <object id="17" name="Stovetop" x="511.38" y="361.525">
+  <object id="17" name="Stovetop" x="1111.38" y="361.525">
    <properties>
     <property name="description">There's some cinnamony batter caked on the stovetop.
 '''After returning from the [[Closet Dark World]]:''' (It's a butterscotch-cinnamon pie.) (It's still cooling.)</property>
@@ -709,20 +732,20 @@ Somehow, its floral scent has increased.
    </properties>
    <point/>
   </object>
-  <object id="16" name="Kitchen sink" x="473.291" y="359.027">
+  <object id="16" name="Kitchen sink" x="1073.29" y="359.027">
    <properties>
     <property name="description" value="There is some white fur stuck in the drain."/>
     <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
-  <object id="24" name="Fridge" x="443.607" y="362.202">
+  <object id="24" name="Fridge" x="1043.61" y="362.202">
    <properties>
     <property name="description" value="There's a photo on the fridge. It's of [[Kris|you]], [[Toriel|your mother]], and [[Asriel|your brother]]."/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="Shower" x="169.597" y="390.479">
+  <object id="22" name="Shower" x="769.597" y="390.479">
    <properties>
     <property name="description">On the shower ledge, there's a small container of apple-scented shampoo.
 ... and a gallon-sized container of pet shampoo.
@@ -732,13 +755,13 @@ Somehow, its floral scent has increased.
    </properties>
    <point/>
   </object>
-  <object id="4" name="Toilet" x="219.667" y="408.485">
+  <object id="4" name="Toilet" x="819.667" y="408.485">
    <properties>
     <property name="description" value="Interacting with this toilet several times leads to additional flavor text."/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Sink cupboard" x="247.26" y="402.301">
+  <object id="23" name="Sink cupboard" x="847.26" y="402.301">
    <properties>
     <property name="description">You looked inside the sink cupboard. There's...
 A can of [[ICE-E|Ice-E]]'s Cool Boys Body Spray &quot;Spray For The Boys,&quot; Flamin' Hot Pizza Flavor.
@@ -748,7 +771,7 @@ It seems to be almost entirely full.
    </properties>
    <point/>
   </object>
-  <object id="13" name="Bookshelf" x="304.04" y="226.156">
+  <object id="13" name="Bookshelf" x="904.04" y="226.156">
    <properties>
     <property name="description">'''Chapter 1:'''
 There are many books.
@@ -761,19 +784,19 @@ And a signed copy of The History of Humans and Monsters, by [[Gerson Boom]].
    </properties>
    <point/>
   </object>
-  <object id="11" name="Toriel's room" x="41.9374" y="240.461">
+  <object id="11" name="Toriel's room" x="641.937" y="240.461">
    <properties>
     <property name="description" value="The door is locked."/>
    </properties>
    <point/>
   </object>
-  <object id="161" name="Mirror" x="88.3042" y="226.467">
+  <object id="161" name="Mirror" x="688.304" y="226.467">
    <properties>
     <property name="description" value="It's only you."/>
    </properties>
    <point/>
   </object>
-  <object id="12" name="Hallway drawer" x="143.371" y="247.236">
+  <object id="12" name="Hallway drawer" x="743.371" y="247.236">
    <properties>
     <property name="description">'''Chapter 1:'''
 There are crayons in the drawer. Their labels have long faded, and there's no green.
@@ -782,7 +805,7 @@ There are crayons in the drawer. Their labels have long faded, and there's no gr
    </properties>
    <point/>
   </object>
-  <object id="162" name="Cactus" x="189.824" y="234.276">
+  <object id="162" name="Cactus" x="789.824" y="234.276">
    <properties>
     <property name="description">A cactus.
 There's not much to say about it.</property>
@@ -790,7 +813,7 @@ There's not much to say about it.</property>
    </properties>
    <point/>
   </object>
-  <object id="5" name="Computer desk" x="141.818" y="134.16">
+  <object id="5" name="Computer desk" x="741.818" y="134.16">
    <properties>
     <property name="description">It's a computer desk.
 There are many boxes under it filled with old books.</property>
@@ -798,7 +821,7 @@ There are many boxes under it filled with old books.</property>
    </properties>
    <point/>
   </object>
-  <object id="7" name="Asriel's bed" x="142.386" y="52.4743">
+  <object id="7" name="Asriel's bed" x="742.386" y="52.4743">
    <properties>
     <property name="description">'''[[Chapter 1]]:'''
 There are CDs under the bed.
@@ -809,7 +832,7 @@ It has one normal controller, and one knock-off one.</property>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Asriel's drawer" x="190.741" y="53.0917">
+  <object id="9" name="Asriel's drawer" x="790.741" y="53.0917">
    <properties>
     <property name="description">'''[[Chapter 1]]:'''
 The drawer is mostly empty, except for...
@@ -823,7 +846,7 @@ All the coupons expired before the book's print date.
    </properties>
    <point/>
   </object>
-  <object id="164" name="Birdcage" x="333.393" y="127.35">
+  <object id="164" name="Birdcage" x="933.393" y="127.35">
    <properties>
     <property name="description">It's a red wagon with a rusty birdcage in it.
 Looks like it's seen quite a few crashes.</property>
@@ -833,14 +856,14 @@ Looks like it's seen quite a few crashes.</property>
   </object>
  </objectgroup>
  <objectgroup id="3" name="items">
-  <object id="154" name="Asgore's Bouquet for Toriel" x="1629.72" y="867.424">
+  <object id="154" name="Asgore's Bouquet for Toriel" x="2229.72" y="867.424">
    <properties>
     <property name="description" value="If [[Kris]] enters [[Flower King]], [[Asgore Dreemurr|Asgore]] gives them a [[Bouquet]] meant for [[Toriel]] when they exit the shop. Giving it to Toriel can transfer to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. This is not an option Kris does by default."/>
     <property name="page" value="Bouquet"/>
    </properties>
    <point/>
   </object>
-  <object id="89" name="QC offers Hot Chocolate" x="791.48" y="1218.74">
+  <object id="89" name="QC offers Hot Chocolate" x="1391.48" y="1218.74">
    <properties>
     <property name="description" value="QC gives [[Kris]] a cup of [[Hot Chocolate]] for free after reminiscing about Kris's family visiting after [[Church]] service. This interaction transfers to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default. "/>
     <property name="page" value="QC (Diner Shopkeeper)"/>
@@ -849,7 +872,7 @@ Looks like it's seen quite a few crashes.</property>
   </object>
  </objectgroup>
  <objectgroup id="9" name="darkworld">
-  <object id="33" name="Closet Dark World" x="2150.58" y="1645.49">
+  <object id="33" name="Closet Dark World" x="2750.58" y="1645.49">
    <properties>
     <property name="description" value="When [[Kris]] and [[Susie]] first enter the [[School]]'s Supply Closet, the [[Closet Dark World]] becomes the primary [[Dark World]] setting in [[Chapter 1]]."/>
     <property name="page" value="Closet Dark World"/>
@@ -858,159 +881,159 @@ Looks like it's seen quite a few crashes.</property>
   </object>
  </objectgroup>
  <objectgroup id="7" name="plot">
-  <object id="14" name="Chapter 1 ending cutscene" x="238.065" y="108.211">
+  <object id="14" name="Chapter 1 ending cutscene" x="838.065" y="108.211">
    <properties>
     <property name="description" value="During the [[Chapter 1]] ending cutscene, [[Kris]] rips their [[SOUL]] out in this location, throws it in the cage, and pulls out a knife. The SOUL can be moved slightly while it is in the cage."/>
    </properties>
    <point/>
   </object>
-  <object id="160" name="Toriel welcomes Kris" x="830.18" y="424.1">
+  <object id="160" name="Toriel welcomes Kris" x="1430.18" y="424.1">
    <properties>
     <property name="description" value="[[Toriel]] welcomes [[Kris]], and informs them that the pie will cool down when they wake up, and insists that they do not eat it all."/>
    </properties>
    <point/>
   </object>
-  <object id="106" name="Noelle at the gate" x="592.299" y="1027.21">
+  <object id="106" name="Noelle at the gate" x="1192.3" y="1027.21">
    <properties>
     <property name="description" value="When [[Kris]] interacts Noelle, they can mention [[Susie]]. This causes Noelle to give Susie a [[Light Candy|lunchbox of chalk]] in [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default. "/>
     <property name="page" value="Noelle Holiday"/>
    </properties>
    <point/>
   </object>
-  <object id="37" name="Gate to Noelle's house" x="565.998" y="1009.14">
+  <object id="37" name="Gate to Noelle's house" x="1166" y="1009.14">
    <properties>
     <property name="description" value="In [[Chapter 1]]'s epilogue, [[Noelle Holiday|Noelle]] can be found waiting here after [[Kris]] visits [[Rudolph Holiday]] in the [[hospital]]."/>
    </properties>
    <point/>
   </object>
-  <object id="158" name="Onion" x="2620.29" y="964.138">
+  <object id="158" name="Onion" x="3220.29" y="964.138">
    <properties>
     <property name="description" value="Onion appears if [[Kris]] idles long enough at the edge. They ask Kris if they can be friends. Choosing to be friends or being impolite to Onion transfers to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default."/>
     <property name="page" value="Onion"/>
    </properties>
   </object>
-  <object id="157" name="Asgore's fridge" x="1709.13" y="481.017">
+  <object id="157" name="Asgore's fridge" x="2309.13" y="481.017">
    <properties>
     <property name="description" value="[[Kris]] can inspect [[Asgore Dreemurr|Asgore]] and [[Toriel]]'s wedding photo. If Kris opens the fridge and found an [[Egg]] in the [[Closet Dark World]], they put in without a prompt. Opening the fridge reveals that the Egg became two Eggs."/>
    </properties>
    <point/>
   </object>
-  <object id="147" name="Alphys notices Kris" x="1982.94" y="1317.35">
+  <object id="147" name="Alphys notices Kris" x="2582.94" y="1317.35">
    <properties>
     <property name="description" value="[[Alphys]] is glad to see [[Kris]] is fine. She tells them to not worry about skipping class, and that they are not in trouble. Alphys encourages Kris to talk with her. This interaction transfers to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. This is also the only option Kris does by default in the epilogue."/>
    </properties>
    <point/>
   </object>
-  <object id="141" name="Sans" x="1311.35" y="1446.51">
+  <object id="141" name="Sans" x="1911.35" y="1446.51">
    <properties>
     <property name="description" value="He greets [[Kris]] and introduces himself. This interaction causes Sans to ask Kris to spend time with his younger brother, which transfers to [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default. If Kris asks to be friends with Sans, he offers a [[Cell Phone]] number that Kris can call in Chapter 1."/>
     <property name="page" value="Sans"/>
    </properties>
    <point/>
   </object>
-  <object id="134" name="Angel Doll" x="569.472" y="1695.2">
+  <object id="134" name="Angel Doll" x="1169.47" y="1695.2">
    <properties>
     <property name="description" value="An angel doll with no face. It was made by [[Noelle Holiday|Noelle]] and [[Dess Holiday|Dess]] in their youth group. [[Rudolph Holiday|Rudy]] keeps it as a good luck charm, and reminisces when Kris and [[Asriel]] tried to make one as well."/>
    </properties>
    <point/>
   </object>
-  <object id="137" name="Sink inspector, Chapter 1" x="568.871" y="1731.84">
+  <object id="137" name="Sink inspector, Chapter 1" x="1168.87" y="1731.84">
    <properties>
     <property name="description" value="If [[Kris]] inspects this sink before or after interacting with [[Rudolph Holiday|Rudy]], Rudy acknowledges this and makes a joke out of it. This inspection carries over into [[Chapter 2]] via [[Chapter 1]]'s [[SAVE]] Completion file. Kris does not do this option by default. "/>
    </properties>
    <point/>
   </object>
-  <object id="131" name="Noelle and Rudy" x="658.978" y="1778.7">
+  <object id="131" name="Noelle and Rudy" x="1258.98" y="1778.7">
    <properties>
     <property name="description" value="Upon entering, [[Kris]] overhears [[Noelle Holiday|Noelle]] and [[Rudolph Holiday|Rudy]]'s conversation about her mother, Dragon Blazers III, and [[Berdly]]. As Noelle exits, she is surprised to see Kris visiting."/>
    </properties>
    <point/>
   </object>
-  <object id="36" name="Mysterious Bunker" x="1039.59" y="4144.7">
+  <object id="36" name="Mysterious Bunker" x="1639.59" y="4144.7">
    <properties>
     <property name="description" value="Near this bunker, the sound &lt;code&gt;mus_smile&lt;/code&gt; can be heard. This sound is associated with ''[[ut:Undertale|Undertale]]''&lt;nowiki /&gt;'s [[W.D. Gaster]]."/>
    </properties>
    <point/>
   </object>
-  <object id="46" name="Cell Phone call at School door" x="2151.95" y="2164.72">
+  <object id="46" name="Cell Phone call at School door" x="2751.95" y="2164.72">
    <properties>
     <property name="description" value="In the [[Chapter 1]] epilogue, if [[Kris]] does not use their [[Cell Phone]] to call [[Toriel]], this call is scripted to occur near the [[School]]'s front door. Toriel expresses her worry, and Kris informs that they spent time with &quot;a friend.&quot; Pleased, Toriel relents, but then states that Kris must sleep early when they return to the [[Dreemurr Residence]]."/>
    </properties>
    <point/>
   </object>
-  <object id="121" name="Susie's friendship" x="2360.79" y="1686.19">
+  <object id="121" name="Susie's friendship" x="2960.79" y="1686.19">
    <properties>
     <property name="description" value="When [[Kris]] exits the [[School]]'s Unused Classroom, [[Susie]] notices the sun has already set. The two go the front of the Supply Closet, and Susie suggests to Kris that they both should return to the [[Closet Dark World]] tomorrow. [[Chapter 1]]'s epilogue begins."/>
    </properties>
    <point/>
   </object>
-  <object id="35" name="Unused Classroom" x="2367.34" y="1566.35">
+  <object id="35" name="Unused Classroom" x="2967.34" y="1566.35">
    <properties>
     <property name="description" value="After [[Kris]] and [[Susie]]'s adventure in [[Card Kingdom]], they return to [[Light World]] and appear in the [[School]]'s Unused Classroom. It appears to contain real world representations of [[Darkners]] from that [[Dark World]]."/>
    </properties>
    <point/>
   </object>
-  <object id="205" name="Into the Supply Closet 4" x="1697.12" y="1684.16">
+  <object id="205" name="Into the Supply Closet 4" x="2297.12" y="1684.16">
    <properties>
     <property name="description" value="[[Susie]] tells [[Kris]] that the Supply Closet is &quot;broken,&quot; and reasons that [[Alphys]] can get the chalk herself. The two try to leave the Supply Closet, only for the door to abruptly close. Suddenly, the papers below them fall, and they descent into [[??????]]. "/>
    </properties>
    <point/>
   </object>
-  <object id="204" name="Into the Supply Closet 3" x="1505.22" y="1685.11">
+  <object id="204" name="Into the Supply Closet 3" x="2105.22" y="1685.11">
    <properties>
     <property name="description" value="[[Susie]] is confused that the Supply Closet is unusually large and continues further."/>
    </properties>
    <point/>
   </object>
-  <object id="203" name="Into the Supply Closet 2" x="1343.66" y="1683.84">
+  <object id="203" name="Into the Supply Closet 2" x="1943.66" y="1683.84">
    <properties>
     <property name="description" value="[[Susie]] is confused she cannot find the switch and goes further inside."/>
    </properties>
    <point/>
   </object>
-  <object id="202" name="Into the Supply Closet" x="1176.41" y="1685.74">
+  <object id="202" name="Into the Supply Closet" x="1776.41" y="1685.74">
    <properties>
     <property name="description" value="[[Susie]] notices ths old papers on the floor. She tries to progress further to find the lightswitch. If [[Kris]] tries to exit, Susie calls out to them, which makes them stop."/>
    </properties>
    <point/>
   </object>
-  <object id="201" name="Discovering the darkness" x="2151.44" y="1711.35">
+  <object id="201" name="Discovering the darkness" x="2751.44" y="1711.35">
    <properties>
     <property name="description" value="[[Susie]] acknowledges that the Supply Closet is unusually dark, and is discomforted. She insists [[Kris]] should go first, only to notice they step away. She reasons that she and [[Kris]] should enter the Supply Closet at the same time."/>
    </properties>
    <point/>
   </object>
-  <object id="200" name="Susie waits for Kris" x="2144.48" y="1892.19">
+  <object id="200" name="Susie waits for Kris" x="2744.48" y="1892.19">
    <properties>
     <property name="description" value="[[Susie]] waits for [[Kris]] at the [[School]]'s entrance hall. If Kris chooses to progress, she comments if Kris walks or outpaces her. If Kris explores, she mocks and informs them that they are going the wrong direction, or comments on them using the water fountain."/>
    </properties>
    <point/>
   </object>
-  <object id="130" name="Susie gets caught eating chalk" x="1800.42" y="2041.56">
+  <object id="130" name="Susie gets caught eating chalk" x="2400.42" y="2041.56">
    <properties>
     <property name="description" value="When [[Kris]] exits [[Alphys]]'s Classroom, they find [[Susie]] eating chalk. Susie notices Kris, and menaces them by pushing them onto the lockers. However, she considers [[Toriel]], and states that Kris will do the entire project. Kris can then partially explore the [[School]]."/>
    </properties>
    <point/>
   </object>
-  <object id="128" name="Noelle Holiday" x="1810.22" y="1866.37">
+  <object id="128" name="Noelle Holiday" x="2410.22" y="1866.37">
    <properties>
     <property name="description" value="[[Kris]] can have [[Noelle Holiday|Noelle]] ask [[Alphys]] to let them be partners with her and [[Berdly]], to which he disagrees. [[Susie]] arrives shortly after, and Alphys assigns Kris and Susie as partners. After partially listening to Noelle, Alphys asks Kris and Susie to get chalk from the Supply Closet. Afterwards, Noelle reassures Kris if they interact with her. Kris can also interact with the other students twice for their opinions."/>
    </properties>
    <point/>
   </object>
-  <object id="198" name="Group project" x="1975.02" y="1828.96">
+  <object id="198" name="Group project" x="2575.02" y="1828.96">
    <properties>
     <property name="description" value="[[Alphys]] ackowledges [[Kris]]'s tardiness, and states they must find a partner for the group project. Kris can then interact with the other students."/>
    </properties>
    <point/>
   </object>
-  <object id="129" name="The drive to School" x="830.78" y="387.457">
+  <object id="129" name="The drive to School" x="1430.78" y="387.457">
    <properties>
     <property name="description" value="At the start of [[Chapter 1]], exiting the house causes the driving cutscene to begin. [[Toriel]] reminises about [[Asriel]] and drives [[Kris]] to [[School]]. Along the way, various [[Hometown]] residents greet them."/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Kris's bed" x="332.212" y="57.3123">
+  <object id="10" name="Kris's bed" x="932.212" y="57.3123">
    <properties>
     <property name="description" value="In the [[Chapter 1]] epilogue, [[Kris]] can end the [[Chapter]] by going to sleep. After completing the Chapter, interacting with this bed allows Kris to immediately enter the [[Dark World]] and [[??????]]. This skips the introduction cutscenes and [[School]] sequence."/>
    </properties>
@@ -1018,49 +1041,49 @@ Looks like it's seen quite a few crashes.</property>
   </object>
  </objectgroup>
  <objectgroup id="8" name="annotations">
-  <object id="169" name="Dreemurr Residence" x="0.37059" y="0.37059" width="939.075" height="781.018"/>
-  <object id="110" name="Entrance to Dreemurr Residence" x="788.731" y="646.363">
+  <object id="169" name="Dreemurr Residence" x="600.371" y="0.37059" width="939.075" height="781.018"/>
+  <object id="110" name="Entrance to Dreemurr Residence" x="1388.73" y="646.363">
    <properties>
     <property name="color" type="color" value="#ff3c1e17"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 0.600709,60.6716 173.004,58.8695 171.202,-231.273 42.6503,-230.071"/>
   </object>
-  <object id="209" name="Hometown 1" x="1029.69" y="1602.81">
+  <object id="209" name="Hometown 1" x="1629.69" y="1602.81">
    <polyline points="0,0 0.8741,544.856"/>
   </object>
-  <object id="210" name="Hometown 2" x="1029.69" y="1124.97">
+  <object id="210" name="Hometown 2" x="1629.69" y="1124.97">
    <polyline points="0,0 1.7482,242.417"/>
   </object>
-  <object id="30" name="Entrance to Town Hall" x="1180.22" y="2519.04">
+  <object id="30" name="Entrance to Town Hall" x="1780.22" y="2519.04">
    <properties>
     <property name="color" type="color" value="#ff0000ff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 -1.81605,98.8964 299.648,106.504 297.832,57.0557"/>
   </object>
-  <object id="1" name="Entrance to School" x="1879.21" y="2166.81">
+  <object id="1" name="Entrance to School" x="2479.21" y="2166.81">
    <properties>
     <property name="color" type="color" value="#ffff0000"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 0.575209,-47.1671 175.439,-47.1671 176.014,98.9359 277.251,97.7854 275.525,33.3621"/>
   </object>
-  <object id="111" name="Entrance to Toriel's Classroom" x="2346.97" y="1793.72">
+  <object id="111" name="Entrance to Toriel's Classroom" x="2946.97" y="1793.72">
    <properties>
     <property name="color" type="color" value="#ff49274a"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 0,-52.2617 238.481,-51.661 240.284,198.234 176.608,198.835"/>
   </object>
-  <object id="112" name="Entrance to Alphys's Classroom" x="1974.53" y="1800.32">
+  <object id="112" name="Entrance to Alphys's Classroom" x="2574.53" y="1800.32">
    <properties>
     <property name="color" type="color" value="#ff675118"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 0,-41.4489 -236.679,-40.2475 -234.276,174.206 -174.206,174.206"/>
   </object>
-  <object id="109" name="Entrance to Supply Closet" x="2151.14" y="1659.76">
+  <object id="109" name="Entrance to Supply Closet" x="2751.14" y="1659.76">
    <properties>
     <property name="color" type="color" value="#ff321f0f"/>
     <property name="thickness" type="float" value="3"/>
