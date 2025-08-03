@@ -57,11 +57,21 @@ function convertLayer(layer, datamap, convertedLayers, language) {
     }
     const /** @type {Overlay[]} */ overlays = [];
     if (layer.isImageLayer) {
+        const /** @type {ImageLayer} */ imageLayer = layer;
         const /** @type {ImageBackground} */ bg = {
-            image: `${layer.name}.png`,
+            at: [
+                [
+                    layer.offset.x + offset.x,
+                    layer.offset.y + offset.y
+                ],
+                [
+                    layer.offset.x + offset.x + imageLayer.image.width,
+                    layer.offset.y + offset.y + imageLayer.image.height
+                ]
+            ],
+            image: getStringProperty(layer, 'image', language) || `${layer.name}.png`,
             name: layer.name
         };
-        const /** @type {ImageLayer} */ imageLayer = layer;
         if (datamap.backgrounds[0].name === '<default>') {
             bg.overlays = datamap.backgrounds[0].overlays;
             datamap.backgrounds[0] = bg;
@@ -74,6 +84,12 @@ function convertLayer(layer, datamap, convertedLayers, language) {
             ];
         } else {
             datamap.backgrounds.push(bg);
+            if (imageLayer.image.width > datamap.crs.bottomRight[0]) {
+                datamap.crs.bottomRight[0] = imageLayer.image.width;
+            }
+            if (imageLayer.image.height > datamap.crs.bottomRight[1]) {
+                datamap.crs.bottomRight[1] = imageLayer.image.height;
+            }
         }
     } else if (layer.isObjectLayer) {
         const /** @type {Marker[]} */ markers = [];
