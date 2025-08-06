@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="483" height="269" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="117">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="481" height="269" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="117">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="2nd Sanctuary map">
-  <image source="images/2nd Sanctuary.png" width="19320" height="10756"/>
+  <image source="images/2nd Sanctuary.png" width="19240" height="10756"/>
  </imagelayer>
  <objectgroup id="3" name="sublocations">
   <object id="2" x="5770.67" y="7690.67">
@@ -63,13 +63,6 @@
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 0.162879,9207.19 661.455,9207.27"/>
-  </object>
-  <object id="115" x="17638.7" y="511.333">
-   <properties>
-    <property name="color" type="color" value="#ff232d60"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 0.003125,-65.0988 87.791,-65.0583"/>
   </object>
  </objectgroup>
  <objectgroup id="12" name="vendors">
@@ -316,13 +309,13 @@ THE GIRL, WITH HOPE CROSSED ON HER HEART.</property>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Prophecy window" x="18378" y="114">
+  <object id="50" name="Prophecy window" x="18300" y="114">
    <properties>
     <property name="description" value="''ROOTS''"/>
    </properties>
    <point/>
   </object>
-  <object id="51" name="Peculiar book" x="17553.5" y="175.5">
+  <object id="51" name="Peculiar book" x="17480" y="174.5">
    <properties>
     <property name="description">And so wept the fallen star, making rivers with its tears.
 Then, slowly, from the bitter water, something grew.
@@ -613,7 +606,7 @@ THERE IS ONLY ONE WAY.</property>
    </properties>
    <point/>
   </object>
-  <object id="52" name="Philosopher" x="18695" y="179">
+  <object id="52" name="Philosopher" x="18615" y="179">
    <properties>
     <property name="description" value="States that there is a room in between the entryway. They then recite a scambled message, reading &quot;Lost where the forest would grow, the children followed the pointed tail.&quot;"/>
    </properties>

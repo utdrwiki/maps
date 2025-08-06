@@ -250,7 +250,7 @@ IS LOST FOR THE TALE</property>
    <properties>
     <property name="description">TO SAVE THE WORLDS,
 THERE IS ONLY ONE WAY.</property>
-    <property name="multiline" value="true"/>
+    <property name="multiline" type="bool" value="true"/>
    </properties>
    <point/>
   </object>
@@ -459,7 +459,7 @@ WILL THE WORLDS BE SAVED.</property>
    </properties>
    <point/>
   </object>
-  <object id="56" name="Dark Eyeball spawner" x="3165.7" y="2746.62">
+  <object id="56" name="Dark Eyeball spawners" x="3165.7" y="2746.62">
    <properties>
     <property name="description" value="Openings that continuously spawn Dark Eyeballs."/>
    </properties>
