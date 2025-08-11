@@ -222,6 +222,13 @@
    </properties>
    <point/>
   </object>
+  <object id="1" name="Curtain NPC" x="1518.87" y="4049.03">
+   <properties>
+    <property name="description" value="An unseen NPC stands here after round 1 of [[TV Time]]. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
+    <property name="page" value="Curtain NPC"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="7" name="enemies">
   <object id="22" name="Watercooler" x="2418.1" y="2073.35">
@@ -330,13 +337,6 @@ You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
   </object>
  </objectgroup>
  <objectgroup id="11" name="saves">
-  <object id="1" name="Curtain NPC" x="1518.87" y="4049.03">
-   <properties>
-    <property name="description" value="An unseen NPC stands here after round 1 of [[TV Time]]. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
-    <property name="page" value="Curtain NPC"/>
-   </properties>
-   <point/>
-  </object>
   <object id="7" name="Green Room" x="1704.39" y="3253.58">
    <properties>
     <property name="description">'''Initial:''' Stars ripple on the walls like soft music.
