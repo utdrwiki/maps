@@ -62,22 +62,6 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="13" name="sublocations">
-  <object id="120" name="Great Board" x="11" y="6012.5">
-   <properties>
-    <property name="description" value="The entrance to the Great Board."/>
-    <property name="page" value="Great Board"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="121" name="Card Castle" x="13788" y="309.5">
-   <properties>
-    <property name="description" value="The entrance to the Card Castle."/>
-    <property name="page" value="Card Castle"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="9" name="signs">
   <object id="83" name="Salsa stump" x="1321.5" y="6292.5">
    <properties>
@@ -604,6 +588,13 @@ All further interactions result in Lancer asking if everyone has had enough and 
     <property name="thickness" type="float" value="3"/>
    </properties>
   </object>
+  <object id="158" name="Path to Broken Key B" x="5127" y="6357">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,6 0,-4 181,-4 181,-15"/>
+  </object>
   <object id="149" name="Walkable area" x="7041" y="5671">
    <properties>
     <property name="color" type="color" value="#ffffffff"/>
@@ -638,13 +629,6 @@ All further interactions result in Lancer asking if everyone has had enough and 
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="-1,-1 -12,-10 -1,-19"/>
-  </object>
-  <object id="158" name="Path to Broken Key B" x="5127" y="6357">
-   <properties>
-    <property name="color" type="color" value="#ffffff7f"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,6 0,-4 181,-4 181,-15"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
@@ -912,6 +896,22 @@ Interacting with a Scissor Dancer will produce a unique sound effect with no dia
   <object id="9" name="Susie and Lancer" x="8624" y="1955.5">
    <properties>
     <property name="description" value="Boss [[encounter]] with [[Susie]] and [[Lancer]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="connections">
+  <object id="120" name="Great Board" x="11" y="6012.5">
+   <properties>
+    <property name="description" value="The entrance to the Great Board."/>
+    <property name="page" value="Great Board"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Card Castle" x="13788" y="309.5">
+   <properties>
+    <property name="description" value="The entrance to the Card Castle."/>
+    <property name="page" value="Card Castle"/>
    </properties>
    <point/>
   </object>

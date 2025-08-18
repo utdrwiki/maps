@@ -40,15 +40,6 @@ Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement 
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="12" name="sublocations">
-  <object id="73" name="Great Board" x="6226" y="937.5">
-   <properties>
-    <property name="description" value="Walking to the right progresses the story into the Great Board."/>
-    <property name="page" value="Great Board"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="9" name="signs">
   <object id="3" name="Sign" x="616" y="642">
    <properties>
@@ -460,6 +451,15 @@ The power of mean girls does not shine within you.</property>
   <object id="77" name="Smorgasboard" x="6031.5" y="704.5">
    <properties>
     <property name="description" value="Enemy [[encounter]] against [[Rudinn]], [[Hathy]], and [[Jigsawry]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="connections">
+  <object id="73" name="Great Board" x="6226" y="937.5">
+   <properties>
+    <property name="description" value="Walking to the right progresses the story into the Great Board."/>
+    <property name="page" value="Great Board"/>
    </properties>
    <point/>
   </object>

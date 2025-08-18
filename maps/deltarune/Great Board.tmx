@@ -7,22 +7,6 @@
  <imagelayer id="2" name="Great Board map">
   <image source="images/Great Board.png" width="6027" height="240"/>
  </imagelayer>
- <objectgroup id="10" name="sublocations">
-  <object id="16" name="Field" x="16.5" y="150">
-   <properties>
-    <property name="description" value="Walking to the left will let the [[party]] backtrack into the Field."/>
-    <property name="page" value="Field"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="17" name="Forest" x="6013" y="150">
-   <properties>
-    <property name="description" value="Walking to the right progresses the story into the Forest."/>
-    <property name="page" value="Forest"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="6" name="signs">
   <object id="1" name="Sign" x="90" y="83">
    <properties>
@@ -123,6 +107,22 @@
    <properties>
     <property name="description" value="Miniboss battle against K. Round."/>
     <property name="page" value="K. Round"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="connections">
+  <object id="16" name="Field" x="16.5" y="150">
+   <properties>
+    <property name="description" value="Walking to the left will let the [[party]] backtrack into the Field."/>
+    <property name="page" value="Field"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Forest" x="6013" y="150">
+   <properties>
+    <property name="description" value="Walking to the right progresses the story into the Forest."/>
+    <property name="page" value="Forest"/>
    </properties>
    <point/>
   </object>
