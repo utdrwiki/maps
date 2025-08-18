@@ -115,42 +115,49 @@ You are filled with the power of not sneezing.</property>
   </object>
   <object id="20" name="Dust Pile" x="4384" y="1060">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="21" name="Dust Pile" x="4517" y="1122">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="22" name="Dust Pile" x="5910" y="4170">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="23" name="Dust Pile" x="6000" y="4001">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="24" name="Dust Pile" x="6053" y="4132">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="25" name="Dust Pile" x="6166" y="3973">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="26" name="Dust Pile" x="6165" y="4170">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>

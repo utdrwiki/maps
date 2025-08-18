@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="168">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="81" height="143" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="168">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -19,15 +19,6 @@
 
 Rouxls can also talk about himself, explain why he is selling to the [[party]], and about [[King]] and [[Lancer]].</property>
     <property name="page" value="Vendors"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="13" name="sublocations">
-  <object id="125" name="Forest" x="462" y="5377">
-   <properties>
-    <property name="description" value="This path leads to the front of the castle, where the [[party]] can return to the Forest. The nearby [[Warp Door]] now functions."/>
-    <property name="page" value="Forest"/>
    </properties>
    <point/>
   </object>
@@ -913,6 +904,15 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
    <properties>
     <property name="description" value="The boss battle versus King at the rooftop."/>
     <property name="page" value="King#In Battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="connections">
+  <object id="125" name="Forest" x="462" y="5377">
+   <properties>
+    <property name="description" value="This path leads to the front of the castle, where the [[party]] can return to the Forest. The nearby [[Warp Door]] now functions."/>
+    <property name="page" value="Forest"/>
    </properties>
    <point/>
   </object>

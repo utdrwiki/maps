@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="186" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="8" nextobjectid="18">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="186" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="9" nextobjectid="19">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -81,24 +81,6 @@ A strange calm washes over you.</property>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="7" name="items">
-  <object id="10" name="Camera" x="2843.08" y="1094.96">
-   <properties>
-    <property name="description" value="A camera that [[Kris]] can use to reveal the passcode to the door."/>
-    <property name="page" value="Camera"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="4" name="enemies">
-  <object id="13" name="Final Tenna encounter" x="6114.96" y="1858.92">
-   <properties>
-    <property name="description" value="Boss battle against Tenna on the second visit to the Cold Place."/>
-    <property name="page" value="Tenna#Cold Place Encounter"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="5" name="plot">
   <object id="3" name="Puzzle intermission" x="2508.67" y="2075.06">
    <properties>
@@ -125,7 +107,34 @@ A strange calm washes over you.</property>
    </properties>
    <point/>
   </object>
+ </objectgroup>
+ <objectgroup id="7" name="items">
+  <object id="10" name="Camera" x="2843.08" y="1094.96">
+   <properties>
+    <property name="description" value="A camera that [[Kris]] can use to reveal the passcode to the door."/>
+    <property name="page" value="Camera"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="enemies">
+  <object id="13" name="Final Tenna encounter" x="6114.96" y="1858.92">
+   <properties>
+    <property name="description" value="Boss battle against Tenna on the second visit to the Cold Place."/>
+    <property name="page" value="Tenna#Cold Place Encounter"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="connections">
   <object id="17" name="Green Room" x="41.417" y="2027.67">
+   <properties>
+    <property name="description" value="Doorway back to the Green Room, the main hub of the TV World."/>
+    <property name="page" value="Green Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Green Room" x="41.417" y="2027.67">
    <properties>
     <property name="description" value="Doorway back to the Green Room, the main hub of the TV World."/>
     <property name="page" value="Green Room"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="15">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="40" height="45" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="15">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,15 +7,6 @@
  <imagelayer id="2" name="Mancountry map">
   <image source="images/Mancountry.png" width="1280" height="1440"/>
  </imagelayer>
- <objectgroup id="7" name="sublocations">
-  <object id="14" name="Green Room" x="1248" y="1201">
-   <properties>
-    <property name="description" value="Heading east at any point, regardless of if the [[Egg]] has been obtained or not, will fade the screen to white, and return [[Kris]] to the Green Room."/>
-    <property name="page" value="Green Room"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="5" name="signs">
   <object id="8" name="Sign" x="1103.5" y="1094">
    <properties>
@@ -101,6 +92,15 @@ THIS ISLAND IS A WORLD HERITAGE SITE!</property>
    <properties>
     <property name="description" value="Interacting behind the tree initiates a dialogue with the [[Man]], who speaks cryptically both about himself and their current location. He mentions being forgotten, and if at any point the [[player]] implies that they will not remember him, he ends their conversation prematurely. Otherwise, he gifts [[Kris]] an Egg while changing them into their [[Dark World]] attire. Regardless of how their dialogue ends, the Man disappears afterwards and cannot be interacted with again."/>
     <property name="page" value="Egg"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="connections">
+  <object id="14" name="Green Room" x="1248" y="1201">
+   <properties>
+    <property name="description" value="Heading east at any point, regardless of if the [[Egg]] has been obtained or not, will fade the screen to white, and return [[Kris]] to the Green Room."/>
+    <property name="page" value="Green Room"/>
    </properties>
    <point/>
   </object>

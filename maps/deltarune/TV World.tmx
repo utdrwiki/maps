@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1114" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="172">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1114" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="172">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,32 +7,240 @@
  <imagelayer id="2" name="TV World map">
   <image source="images/TV World.png" width="44560" height="5760"/>
  </imagelayer>
- <objectgroup id="7" name="sublocations">
-  <object id="59" x="27836.4" y="4278.47">
+ <objectgroup id="11" name="warpdoor">
+  <object id="4" name="Warp Door" x="6649.06" y="876.245">
    <properties>
-    <property name="color" type="color" value="#fffbf236"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="Warp Door in the TV World Entrance. Unlocks after reaching the [[Green Room]]."/>
+    <property name="page" value="Warp Door"/>
    </properties>
-   <polyline points="0,0 -150.403,1.0494 -150.466,917.459 11.3815,917.528"/>
+   <point/>
   </object>
-  <object id="60" x="29881.5" y="4380.51">
+  <object id="23" name="Warp Door" x="13067" y="2990.76">
    <properties>
-    <property name="color" type="color" value="#ffd7cec8"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="Warp Door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]."/>
+    <property name="page" value="Warp Door"/>
    </properties>
-   <polyline points="0,0 462.481,0.160676 462.889,-1147.11 1.49365,-1147.12"/>
+   <point/>
   </object>
-  <object id="82" x="42706.3" y="5073.45">
+ </objectgroup>
+ <objectgroup id="8" name="vendors">
+  <object id="22" name="Pippins" x="12823.9" y="3046.95">
    <properties>
-    <property name="color" type="color" value="#ff4ebbc3"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="Sells one [[TV Dinner]] for 300 [[Dark Dollar]]s and three TV Dinners for $800."/>
    </properties>
-   <polyline points="0,0 -0.00892254,549.357"/>
+   <point/>
   </object>
-  <object id="86" name="Green Room" x="41900.3" y="3969.79">
+  <object id="159" name="Pippins" x="2284.9" y="950.685">
    <properties>
-    <property name="description" value="The main hub area of the TV World. The [[party]] is transported here after each round of [[TV Time]]."/>
-    <property name="page" value="Green Room"/>
+    <property name="description" value="Explains that [[TV World]] takes [[POINT]]s as currency instead of [[Dark Dollar]]s. They offer to sell [[TV Dinner]]s for 250 Dark Dollars each."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="signs">
+  <object id="34" name="Curtain NPC" x="16058.1" y="2046.71">
+   <properties>
+    <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
+    <property name="page" value="Curtain NPC"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Ralsei's reminder manual" x="1898.96" y="962.599">
+   <properties>
+    <property name="description">SPARE enemies whose names become YELLOW!
+Use PACIFY on TIRED enemies whose names are BLUE!
+And... remember [[Susie]] and [[Ralsei]]'s S-Action and R-Action, too!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="saves">
+  <object id="3" name="TV World - Entrance" x="6484.07" y="975.425">
+   <properties>
+    <property name="description" value="SAVE Point in the TV World Entrance."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="TV World - Goulden Sam" x="12481.5" y="3111.71">
+   <properties>
+    <property name="description">You are greeted by yet another prisonlike location.
+You question why your adventures feature so many of these.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="TV World - Concert" x="25139.7" y="3127.57">
+   <properties>
+    <property name="description">'''Shadowguy recruited:''' You hear a jazz concert only consisting of saxophones.
+You are filled with the power of everyone playing solo at once.
+
+'''Shadowguy not recruited:''' It's a concert, but no one is here to play.
+You are filled with the power of a crowd cheering for noone.
+
+'''Shadowguy LOST:''' It's a concert, but no one has shown up.
+You question if a concert can be a concert if no one is there.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="TV World - Cooking Show" x="37386" y="4127.25">
+   <properties>
+    <property name="description">The incense of hot snacks and spicy flavors assaults you.
+You are filled with the power of the primal invention of fire.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="160" name="TV World - Before the Show" x="2375.17" y="1006.76">
+   <properties>
+    <property name="description">You hear the audience whispering in awe at your presence.
+You are filled with the power of undeserved fame.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="puzzles">
+  <object id="11" name="Quiz 1" x="9598.61" y="2691.68">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
+
+WHAT'S THE REWARD FOR C-RANK? (Answer: [[Watercooler|COOLER]])
+
+WHO RUNS THE [[Green Room|GREEN ROOM]] CONCESSIONS? (Answer: RAMB)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#First Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Quiz 2" x="9600.84" y="3096.64">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
+
+[[Kris|KRIS]]'S LAST NAME!? (Answer: DREEMURR)
+
+WHAT WAS YOUR RANK ON [[TV Time#Round 1|BOARD 1]]!? (Answer: The player's rank on the first round of [[TV Time]])</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#First Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Revive Mint Puzzle" x="8503.27" y="3140.05">
+   <properties>
+    <property name="description" value="A video game puzzle in which [[Kris]] takes control. They must use a [[Lancer Controller]] to dig up spots marked with &quot;X&quot; until all spots have been dug out. They then must push the box that appears onto a pressure plate and use [[Ralsei]]'s character to transform into a box on top of the other. To get the [[Egg]], they must use [[Susie]]'s character to throw the box across the lake."/>
+    <property name="page" value="TV World#Revive Mint Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Stealth Zone 1" x="13734.7" y="3094.17">
+   <properties>
+    <property name="description" value="The first of the Stealth Zones, in which the [[party]] must avoid being spotted by the searchlights that line the floor. If they are caught, they are sent back to the [[Goulden Sam]] cage. The party initially attempt to sneak by slowly, but when [[Susie]] suggests going faster, the party now moves at a much faster pace."/>
+    <property name="page" value="TV World#First Stealth Zone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Stealth Zone switch" x="14683.2" y="3121.96">
+   <properties>
+    <property name="description" value="Pressing the switch in this trash can unlocks the door to the next room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Stealth Zone 2" x="14945.6" y="2658.71">
+   <properties>
+    <property name="description" value="The second Stealth Zone, split into two parts by an intersecting doorway. The party must avoid constantly-moving columns of searchlights. If they are caught, they are sent to the beginning of the room."/>
+    <property name="page" value="TV World#Second Stealth Zone and Watercooler Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Susie Bridge Puzzle" x="20178.2" y="2659.3">
+   <properties>
+    <property name="description" value="A video game puzzle, in which [[Kris]] takes control. Kris must use [[Susie]]'s character to construct a bridge across the river. Pressing the switch at the end retracts the spikes."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Quiz 3" x="27799.8" y="4058.84">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
+
+WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
+WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
+
+CHOOSE [A/B]! (Answer: A or B depending on request)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#Second Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Quiz 4" x="28480.5" y="3820.77">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
+
+WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
+WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
+
+CHOOSE [A/B]! (Answer: A or B depending on request)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#Second Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Quiz 5" x="29159.5" y="4423.03">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
+
+WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
+WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
+
+CHOOSE [A/B]! (Answer: A or B depending on request)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#Second Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Quiz 6" x="29840.5" y="4182.57">
+   <properties>
+    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
+
+WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
+WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
+
+CHOOSE [A/B]! (Answer: A or B depending on request)</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="TV World#Second Quiz Room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Stealth Zone 3" x="30867.3" y="4173.31">
+   <properties>
+    <property name="description" value="The third and final Stealth Zone, stretching across a long hallway. The [[party]] must avoid the constantly-moving searchlights. While traveling across, [[Pippins]] and [[Shadowguy]]s begin following the party. If they are caught, they are transported to the beginning of the room, behind a [[Goulden Son]] cage."/>
+    <property name="page" value="TV World#Third Stealth Zone"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Stealth Zone 3 end" x="35792.4" y="4189.69">
+   <properties>
+    <property name="description" value="The [[party]] passes through a stationary searchlight, which summons a [[Zapper]] who does not capture them."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Stealth Zone 4" x="42705.6" y="5013.4">
+   <properties>
+    <property name="description" value="An optional Stealth Zone with a slow-moving searchlight. Passing into the searchlight summons a [[Zapper]], who asks if [[Kris]] is a cheater. If Kris admits they are a cheater, the Zapper asks where they are going. If Kris answers &quot;Where I came from,&quot; the Zapper transports them to the previous room. If Kris answers &quot;Nowhere,&quot; the Zapper transports them to an isolated area, which is part of the [[Egg]] sidequest."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Revive Mint Puzzle continuation" x="43518.9" y="5620.7">
+   <properties>
+    <property name="description" value="The continuation of the [[TV World#Revive Mint Puzzle|Revive Mint Puzzle]]. If [[Kris]] had used [[Susie]]'s character to throw the block to the other side of the river, they can then push the block onto the pressure plate to reveal a bridge allowing passage across the lake. The switch on the other side unlocks the way forward."/>
+    <property name="page" value="TV World#Nowhere"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="85" name="Trip Ticket Puzle" x="44259.4" y="5542.82">
+   <properties>
+    <property name="description" value="[[Kris]] must speak to the [[Bibliox]] through the video game screen and exhaust its dialogue. They then must walk into the next room and return to reveal a wardrobe. Opening the wardrobe reveals it is empty, but speaking to the Bibliox again reveals that the [[Trip Ticket]] has been in the [[inventory]] the whole time they were exploring. The Trip Ticket then appears in the inventory."/>
+    <property name="page" value="TV World#Nowhere"/>
    </properties>
    <point/>
   </object>
@@ -125,157 +333,6 @@
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="4" name="puzzles">
-  <object id="11" name="Quiz 1" x="9598.61" y="2691.68">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
-
-WHAT'S THE REWARD FOR C-RANK? (Answer: [[Watercooler|COOLER]])
-
-WHO RUNS THE [[Green Room|GREEN ROOM]] CONCESSIONS? (Answer: RAMB)</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#First Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="13" name="Quiz 2" x="9600.84" y="3096.64">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
-
-[[Kris|KRIS]]'S LAST NAME!? (Answer: DREEMURR)
-
-WHAT WAS YOUR RANK ON [[TV Time#Round 1|BOARD 1]]!? (Answer: The player's rank on the first round of [[TV Time]])</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#First Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="14" name="Revive Mint Puzzle" x="8503.27" y="3140.05">
-   <properties>
-    <property name="description" value="A video game puzzle in which [[Kris]] takes control. They must use a [[Lancer Controller]] to dig up spots marked with &quot;X&quot; until all spots have been dug out. They then must push the box that appears onto a pressure plate and use [[Ralsei]]'s character to transform into a box on top of the other. To get the [[Egg]], they must use [[Susie]]'s character to throw the box across the lake."/>
-    <property name="page" value="TV World#Revive Mint Puzzle"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="25" name="Stealth Zone 1" x="13734.7" y="3094.17">
-   <properties>
-    <property name="description" value="The first of the Stealth Zones, in which the [[party]] must avoid being spotted by the searchlights that line the floor. If they are caught, they are sent back to the [[Goulden Sam]] cage. The party initially attempt to sneak by slowly, but when [[Susie]] suggests going faster, the party now moves at a much faster pace."/>
-    <property name="page" value="TV World#First Stealth Zone"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="26" name="Stealth Zone switch" x="14683.2" y="3121.96">
-   <properties>
-    <property name="description" value="Pressing the switch in this trash can unlocks the door to the next room."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="31" name="Stealth Zone 2" x="14945.6" y="2658.71">
-   <properties>
-    <property name="description" value="The second Stealth Zone, split into two parts by an intersecting doorway. The party must avoid constantly-moving columns of searchlights. If they are caught, they are sent to the beginning of the room."/>
-    <property name="page" value="TV World#Second Stealth Zone and Watercooler Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="37" name="Maze path" x="17874.5" y="2769.59">
-   <properties>
-    <property name="color" type="color" value="#ffded5b1"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 3.91753,416.624 -316.95,416.678 -317.012,171.846 -317.012,416.667 3.91301,416.628 1.6548,174.993 405.681,174.984 407.25,-82.3917 405.651,174.973 160.637,174.973 162.547,416.576 474.684,416.615"/>
-  </object>
-  <object id="49" name="Susie Bridge Puzzle" x="20178.2" y="2659.3">
-   <properties>
-    <property name="description" value="A video game puzzle, in which [[Kris]] takes control. Kris must use [[Susie]]'s character to construct a bridge across the river. Pressing the switch at the end retracts the spikes."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="61" name="Quiz 3" x="27799.8" y="4058.84">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
-
-WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
-WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
-
-CHOOSE [A/B]! (Answer: A or B depending on request)</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#Second Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="62" name="Quiz 4" x="28480.5" y="3820.77">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
-
-WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
-WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
-
-CHOOSE [A/B]! (Answer: A or B depending on request)</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#Second Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="63" name="Quiz 5" x="29159.5" y="4423.03">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
-
-WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
-WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
-
-CHOOSE [A/B]! (Answer: A or B depending on request)</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#Second Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="64" name="Quiz 6" x="29840.5" y="4182.57">
-   <properties>
-    <property name="description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions can be any of the following:
-
-WHICH NUMBER IS [BIGGER/SMALLER]? (Answer: whichever number is bigger or smaller)
-WHAT LETTER DOES [ABSORB/BANANA/APPLEBABABA/BANANABABABA] [BEGIN/END] WITH? (Answer: A or B depending on word and condition)
-
-CHOOSE [A/B]! (Answer: A or B depending on request)</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="page" value="TV World#Second Quiz Room"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="69" name="Stealth Zone 3" x="30867.3" y="4173.31">
-   <properties>
-    <property name="description" value="The third and final Stealth Zone, stretching across a long hallway. The [[party]] must avoid the constantly-moving searchlights. While traveling across, [[Pippins]] and [[Shadowguy]]s begin following the party. If they are caught, they are transported to the beginning of the room, behind a [[Goulden Son]] cage."/>
-    <property name="page" value="TV World#Third Stealth Zone"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="70" name="Stealth Zone 3 end" x="35792.4" y="4189.69">
-   <properties>
-    <property name="description" value="The [[party]] passes through a stationary searchlight, which summons a [[Zapper]] who does not capture them."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="80" name="Stealth Zone 4" x="42705.6" y="5013.4">
-   <properties>
-    <property name="description" value="An optional Stealth Zone with a slow-moving searchlight. Passing into the searchlight summons a [[Zapper]], who asks if [[Kris]] is a cheater. If Kris admits they are a cheater, the Zapper asks where they are going. If Kris answers &quot;Where I came from,&quot; the Zapper transports them to the previous room. If Kris answers &quot;Nowhere,&quot; the Zapper transports them to an isolated area, which is part of the [[Egg]] sidequest."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="84" name="Revive Mint Puzzle continuation" x="43518.9" y="5620.7">
-   <properties>
-    <property name="description" value="The continuation of the [[TV World#Revive Mint Puzzle|Revive Mint Puzzle]]. If [[Kris]] had used [[Susie]]'s character to throw the block to the other side of the river, they can then push the block onto the pressure plate to reveal a bridge allowing passage across the lake. The switch on the other side unlocks the way forward."/>
-    <property name="page" value="TV World#Nowhere"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="85" name="Trip Ticket Puzle" x="44259.4" y="5542.82">
-   <properties>
-    <property name="description" value="[[Kris]] must speak to the [[Bibliox]] through the video game screen and exhaust its dialogue. They then must walk into the next room and return to reveal a wardrobe. Opening the wardrobe reveals it is empty, but speaking to the Bibliox again reveals that the [[Trip Ticket]] has been in the [[inventory]] the whole time they were exploring. The Trip Ticket then appears in the inventory."/>
-    <property name="page" value="TV World#Nowhere"/>
    </properties>
    <point/>
   </object>
@@ -485,68 +542,34 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="6" name="enemies">
-  <object id="6" name="Shadowguys" x="9140.82" y="1185.4">
+ <objectgroup id="14" name="lines">
+  <object id="60" x="29881.5" y="4380.51">
    <properties>
-    <property name="description" value="Shadowguys roaming the area engage the [[party]] in battle when approached."/>
+    <property name="color" type="color" value="#ffd7cec8"/>
+    <property name="thickness" type="float" value="3"/>
    </properties>
-   <point/>
+   <polyline points="0,0 462.481,0.160676 462.889,-1147.11 1.49365,-1147.12"/>
   </object>
-  <object id="17" name="Shadowguys" x="11360" y="3085.82">
+  <object id="59" x="27836.4" y="4278.47">
    <properties>
-    <property name="description" value="Shadowguys drop from the ceiling and engage the [[party]] in battle when approached."/>
-    <property name="page" value="Shadowguy"/>
+    <property name="color" type="color" value="#fffbf236"/>
+    <property name="thickness" type="float" value="3"/>
    </properties>
-   <point/>
+   <polyline points="0,0 -150.403,1.0494 -150.466,917.459 11.3815,917.528"/>
   </object>
-  <object id="29" name="Ribbick" x="14188.7" y="2684.93">
+  <object id="37" name="Maze path" x="17874.5" y="2769.59">
    <properties>
-    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
-    <property name="page" value="Ribbick"/>
+    <property name="color" type="color" value="#ffded5b1"/>
+    <property name="thickness" type="float" value="3"/>
    </properties>
-   <point/>
+   <polyline points="0,0 3.91753,416.624 -316.95,416.678 -317.012,171.846 -317.012,416.667 3.91301,416.628 1.6548,174.993 405.681,174.984 407.25,-82.3917 405.651,174.973 160.637,174.973 162.547,416.576 474.684,416.615"/>
   </object>
-  <object id="32" name="Watercooler" x="16059.6" y="2175.47">
+  <object id="82" x="42706.3" y="5073.45">
    <properties>
-    <property name="description" value="Static encounter against the Watercooler. If the party attempts to leave this room, they are blocked off my more Watercoolers that gradually converge on them as they leave and re-enter."/>
-    <property name="page" value="Watercooler"/>
+    <property name="color" type="color" value="#ff4ebbc3"/>
+    <property name="thickness" type="float" value="3"/>
    </properties>
-   <point/>
-  </object>
-  <object id="36" name="Ribbick" x="18132.7" y="2689.43">
-   <properties>
-    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
-    <property name="page" value="Ribbick"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="75" name="Rouxls Kaard" x="37819.1" y="4080.83">
-   <properties>
-    <property name="description" value="Boss battle against Rouxls Kaard."/>
-    <property name="page" value="Rouxls Kaard#Chapter 3_2"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="57" name="Zappers" x="26038.5" y="3384.4">
-   <properties>
-    <property name="description" value="Zappers jump into the room and roam around, engaging the [[party]] in battle if approached."/>
-    <property name="page" value="Zapper"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="8" name="vendors">
-  <object id="22" name="Pippins" x="12823.9" y="3046.95">
-   <properties>
-    <property name="description" value="Sells one [[TV Dinner]] for 300 [[Dark Dollar]]s and three TV Dinners for $800."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="159" name="Pippins" x="2284.9" y="950.685">
-   <properties>
-    <property name="description" value="Explains that [[TV World]] takes [[POINT]]s as currency instead of [[Dark Dollar]]s. They offer to sell [[TV Dinner]]s for 250 Dark Dollars each."/>
-   </properties>
-   <point/>
+   <polyline points="0,0 -0.00892254,549.357"/>
   </object>
  </objectgroup>
  <objectgroup id="9" name="items">
@@ -656,82 +679,61 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="10" name="signs">
-  <object id="34" name="Curtain NPC" x="16058.1" y="2046.71">
+ <objectgroup id="6" name="enemies">
+  <object id="6" name="Shadowguys" x="9140.82" y="1185.4">
    <properties>
-    <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
-    <property name="page" value="Curtain NPC"/>
+    <property name="description" value="Shadowguys roaming the area engage the [[party]] in battle when approached."/>
    </properties>
    <point/>
   </object>
-  <object id="155" name="Ralsei's reminder manual" x="1898.96" y="962.599">
+  <object id="17" name="Shadowguys" x="11360" y="3085.82">
    <properties>
-    <property name="description">SPARE enemies whose names become YELLOW!
-Use PACIFY on TIRED enemies whose names are BLUE!
-And... remember [[Susie]] and [[Ralsei]]'s S-Action and R-Action, too!</property>
-    <property name="multiline" type="bool" value="true"/>
+    <property name="description" value="Shadowguys drop from the ceiling and engage the [[party]] in battle when approached."/>
+    <property name="page" value="Shadowguy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Ribbick" x="14188.7" y="2684.93">
+   <properties>
+    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
+    <property name="page" value="Ribbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Watercooler" x="16059.6" y="2175.47">
+   <properties>
+    <property name="description" value="Static encounter against the Watercooler. If the party attempts to leave this room, they are blocked off my more Watercoolers that gradually converge on them as they leave and re-enter."/>
+    <property name="page" value="Watercooler"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Ribbick" x="18132.7" y="2689.43">
+   <properties>
+    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
+    <property name="page" value="Ribbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Rouxls Kaard" x="37819.1" y="4080.83">
+   <properties>
+    <property name="description" value="Boss battle against Rouxls Kaard."/>
+    <property name="page" value="Rouxls Kaard#Chapter 3_2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Zappers" x="26038.5" y="3384.4">
+   <properties>
+    <property name="description" value="Zappers jump into the room and roam around, engaging the [[party]] in battle if approached."/>
+    <property name="page" value="Zapper"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="11" name="warpdoor">
-  <object id="4" name="Warp Door" x="6649.06" y="876.245">
+ <objectgroup id="13" name="connections">
+  <object id="86" name="Green Room" x="41900.3" y="3969.79">
    <properties>
-    <property name="description" value="Warp Door in the TV World Entrance. Unlocks after reaching the [[Green Room]]."/>
-    <property name="page" value="Warp Door"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="23" name="Warp Door" x="13067" y="2990.76">
-   <properties>
-    <property name="description" value="Warp Door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]."/>
-    <property name="page" value="Warp Door"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="12" name="saves">
-  <object id="3" name="TV World - Entrance" x="6484.07" y="975.425">
-   <properties>
-    <property name="description" value="SAVE Point in the TV World Entrance."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="18" name="TV World - Goulden Sam" x="12481.5" y="3111.71">
-   <properties>
-    <property name="description">You are greeted by yet another prisonlike location.
-You question why your adventures feature so many of these.</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="56" name="TV World - Concert" x="25139.7" y="3127.57">
-   <properties>
-    <property name="description">'''Shadowguy recruited:''' You hear a jazz concert only consisting of saxophones.
-You are filled with the power of everyone playing solo at once.
-
-'''Shadowguy not recruited:''' It's a concert, but no one is here to play.
-You are filled with the power of a crowd cheering for noone.
-
-'''Shadowguy LOST:''' It's a concert, but no one has shown up.
-You question if a concert can be a concert if no one is there.</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="74" name="TV World - Cooking Show" x="37386" y="4127.25">
-   <properties>
-    <property name="description">The incense of hot snacks and spicy flavors assaults you.
-You are filled with the power of the primal invention of fire.</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="160" name="TV World - Before the Show" x="2375.17" y="1006.76">
-   <properties>
-    <property name="description">You hear the audience whispering in awe at your presence.
-You are filled with the power of undeserved fame.</property>
-    <property name="multiline" type="bool" value="true"/>
+    <property name="description" value="The main hub area of the TV World. The [[party]] is transported here after each round of [[TV Time]]."/>
+    <property name="page" value="Green Room"/>
    </properties>
    <point/>
   </object>

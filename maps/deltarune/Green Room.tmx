@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="90" height="107" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="49">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="90" height="107" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="50">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="3" name="Green Room map">
   <image source="images/Green Room.png" width="3574" height="4280"/>
  </imagelayer>
+ <objectgroup id="9" name="warpdoor">
+  <object id="3" name="Warp Door" x="1758.59" y="3470.35">
+   <properties>
+    <property name="description" value="Warp Door in the Green Room. Can transport the [[party]] to previous areas of the TV World."/>
+    <property name="page" value="Warp Door"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="vendors">
+  <object id="2" name="Pippins" x="2499.05" y="3837.32">
+   <properties>
+    <property name="description" value="A [[Pippins]] appears here if the [[party]] achieved a rank lower than S on the previous round of [[TV Time]]. They offer to sell an S-Rank bypass for 1500 [[POINT]]s"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Vending Machine" x="2474" y="3468.72">
+   <properties>
+    <property name="description" value="Offers [[weapons]] to the [[party]] to buy for [[POINT]]s."/>
+    <property name="page" value="Vending Machine"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Vending Machine" x="1710.51" y="2937.49">
+   <properties>
+    <property name="description" value="Offers [[armor]] and other [[items]] to the [[party]] to buy for [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Vending Machine" x="2217.61" y="2545.71">
+   <properties>
+    <property name="description" value="Allows the [[party]] to sell their [[items]] for [[Dark Dollar]]s."/>
+    <property name="page" value="Vending Machine"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Ball Machine" x="1929.26" y="2028.26">
+   <properties>
+    <property name="description" value="Interacting with the [[Vending Machine]] allows the [[party]] to insert [[POINT]]s into the Ball Machine for a chance to win certain prizes."/>
+    <property name="page" value="Ball Machine"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Pippins" x="473.417" y="2068.41">
+   <properties>
+    <property name="description" value="A [[Pippins]] blocks the doorway and offers to unlock the door in exchange for 500 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Vending Machine" x="2164.88" y="625">
+   <properties>
+    <property name="description" value="Offers to exchange [[Dark Dollar]]s for [[POINT]]s as well as some [[TV Slop]] to buy for POINTs"/>
+    <property name="page" value="Vending Machine"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="4" name="sublocations">
   <object id="13" name="The Legend of Tenna" x="321.101" y="3014.33">
    <properties>
@@ -78,6 +135,50 @@
    <polyline points="0,0 2.39327,-1180.89 549.589,-1179.34 549.195,-1779.05 -588.387,-1778.95"/>
   </object>
  </objectgroup>
+ <objectgroup id="10" name="signs">
+  <object id="20" name="T-Rank book" x="471.26" y="2618.02">
+   <properties>
+    <property name="description" value="After attaining a T-Rank on any round of [[TV Time]], the [[party]] can read a page from this book."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Sign" x="1625.9" y="2224.36">
+   <properties>
+    <property name="description">Welcome to [[Ball Machine|BALL MACHINE]]. Insert [[POINT|points]] to gain PRIZES.
+The minimum is 100 POINTs. MORE POINTs increases GOLD CHANCE.
+Even if you miss GOLD PRIZE, nextime GOLD CHANCE increases faster!
+HIT the GOLD PRIZE, GOLD CHANCE will reset... etc.
+You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
+
+... is, all part of what it said on the sign.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Note" x="2271.55" y="308.912">
+   <properties>
+    <property name="description">'''After board 1:''' (ACT 1 SCHEDULE).&quot; (Various names and times are written on it.)
+(&quot;ACT 2 SCHEDULE&quot; is scrawled underneath in red pen...)
+
+'''After board 2:''' It's the back of a paper. &quot;ACT 3&quot; is scrawled in red at the top.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="saves">
+  <object id="7" name="Green Room" x="1704.39" y="3253.58">
+   <properties>
+    <property name="description">'''Initial:''' Stars ripple on the walls like soft music.
+You're filled with the power of relaxation.
+
+'''Post-TV World:''' After a performance, when all the actors have gone home...
+You feel a sense of emptiness.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="5" name="plot">
   <object id="12" name="TV Time (interstitial period)" x="960.789" y="3014.96">
    <properties>
@@ -123,13 +224,6 @@
    <properties>
     <property name="description" value="An alternate route that must be initiated in between rounds 1 and 2 of [[TV Time]]. Completion of the route grants the [[Shadow Mantle]]."/>
     <property name="page" value="Sword Route"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="43" name="Cold Place" x="2655.39" y="3000.34">
-   <properties>
-    <property name="description" value="Doorway to the Cold Place, a cold area at the edge of the TV World."/>
-    <property name="page" value="Cold Place"/>
    </properties>
    <point/>
   </object>
@@ -230,103 +324,6 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="7" name="enemies">
-  <object id="22" name="Watercooler" x="2418.1" y="2073.35">
-   <properties>
-    <property name="description" value="Static encounter agaist a [[Watercooler]]. Awards 200 [[POINT]]s upon defeat."/>
-    <property name="page" value="Watercooler"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="8" name="vendors">
-  <object id="2" name="Pippins" x="2499.05" y="3837.32">
-   <properties>
-    <property name="description" value="A [[Pippins]] appears here if the [[party]] achieved a rank lower than S on the previous round of [[TV Time]]. They offer to sell an S-Rank bypass for 1500 [[POINT]]s"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="6" name="Vending Machine" x="2474" y="3468.72">
-   <properties>
-    <property name="description" value="Offers [[weapons]] to the [[party]] to buy for [[POINT]]s."/>
-    <property name="page" value="Vending Machine"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="11" name="Vending Machine" x="1710.51" y="2937.49">
-   <properties>
-    <property name="description" value="Offers [[armor]] and other [[items]] to the [[party]] to buy for [[POINT]]s."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="18" name="Vending Machine" x="2217.61" y="2545.71">
-   <properties>
-    <property name="description" value="Allows the [[party]] to sell their [[items]] for [[Dark Dollar]]s."/>
-    <property name="page" value="Vending Machine"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="25" name="Ball Machine" x="1929.26" y="2028.26">
-   <properties>
-    <property name="description" value="Interacting with the [[Vending Machine]] allows the [[party]] to insert [[POINT]]s into the Ball Machine for a chance to win certain prizes."/>
-    <property name="page" value="Ball Machine"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="30" name="Pippins" x="473.417" y="2068.41">
-   <properties>
-    <property name="description" value="A [[Pippins]] blocks the doorway and offers to unlock the door in exchange for 500 [[POINT]]s."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="38" name="Vending Machine" x="2164.88" y="625">
-   <properties>
-    <property name="description" value="Offers to exchange [[Dark Dollar]]s for [[POINT]]s as well as some [[TV Slop]] to buy for POINTs"/>
-    <property name="page" value="Vending Machine"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="9" name="warpdoor">
-  <object id="3" name="Warp Door" x="1758.59" y="3470.35">
-   <properties>
-    <property name="description" value="Warp Door in the Green Room. Can transport the [[party]] to previous areas of the TV World."/>
-    <property name="page" value="Warp Door"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="10" name="signs">
-  <object id="20" name="T-Rank book" x="471.26" y="2618.02">
-   <properties>
-    <property name="description" value="After attaining a T-Rank on any round of [[TV Time]], the [[party]] can read a page from this book."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="27" name="Sign" x="1625.9" y="2224.36">
-   <properties>
-    <property name="description">Welcome to [[Ball Machine|BALL MACHINE]]. Insert [[POINT|points]] to gain PRIZES.
-The minimum is 100 POINTs. MORE POINTs increases GOLD CHANCE.
-Even if you miss GOLD PRIZE, nextime GOLD CHANCE increases faster!
-HIT the GOLD PRIZE, GOLD CHANCE will reset... etc.
-You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
-
-... is, all part of what it said on the sign.</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="40" name="Note" x="2271.55" y="308.912">
-   <properties>
-    <property name="description">'''After board 1:''' (ACT 1 SCHEDULE).&quot; (Various names and times are written on it.)
-(&quot;ACT 2 SCHEDULE&quot; is scrawled underneath in red pen...)
-
-'''After board 2:''' It's the back of a paper. &quot;ACT 3&quot; is scrawled in red at the top.</property>
-    <property name="multiline" type="bool" value="true"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="12" name="items">
   <object id="41" name="Odd Controller" x="1784.25" y="391.937">
    <properties>
@@ -336,15 +333,27 @@ You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="11" name="saves">
-  <object id="7" name="Green Room" x="1704.39" y="3253.58">
+ <objectgroup id="7" name="enemies">
+  <object id="22" name="Watercooler" x="2418.1" y="2073.35">
    <properties>
-    <property name="description">'''Initial:''' Stars ripple on the walls like soft music.
-You're filled with the power of relaxation.
-
-'''Post-TV World:''' After a performance, when all the actors have gone home...
-You feel a sense of emptiness.</property>
-    <property name="multiline" type="bool" value="true"/>
+    <property name="description" value="Static encounter agaist a [[Watercooler]]. Awards 200 [[POINT]]s upon defeat."/>
+    <property name="page" value="Watercooler"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="connections">
+  <object id="43" name="Cold Place" x="2655.39" y="3000.34">
+   <properties>
+    <property name="description" value="Doorway to the Cold Place, a cold area at the edge of the TV World."/>
+    <property name="page" value="Cold Place"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="TV World" x="2500.55" y="4173.95">
+   <properties>
+    <property name="description" value="Pathway to the greater TV World area, blocked off in between Round 1 and Round 2 of ''[[TV Time]]''."/>
+    <property name="page" value="TV World"/>
    </properties>
    <point/>
   </object>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="431" height="79" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="30">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="431" height="79" tilewidth="20" tileheight="20" infinite="0" nextlayerid="14" nextobjectid="30">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="name" value="??????"/>
@@ -7,15 +7,6 @@
  <imagelayer id="3" name="?????? map">
   <image source="images/Cliffs.png" width="8608" height="1580"/>
  </imagelayer>
- <objectgroup id="11" name="sublocations">
-  <object id="28" name="Castle Town" x="8450.5" y="1577.5">
-   <properties>
-    <property name="description" value="The cliff leading to Castle Town."/>
-    <property name="page" value="Castle Town"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="7" name="signs">
   <object id="27" name="Sign" x="4075" y="424">
    <properties>
@@ -62,48 +53,68 @@ The light relieves you... (HP fully restored.)</property>
  </objectgroup>
  <objectgroup id="4" name="plot">
   <object id="5" name="Lancer silhouette" x="1924.5" y="202">
+   <properties>
+    <property name="description" value="[[Kris]] can cee [[Lancer]]'s silhouette retreating to an unreachable location."/>
+   </properties>
    <point/>
   </object>
   <object id="17" name="Lancer silhouette" x="2675" y="203">
+   <properties>
+    <property name="description" value="[[Kris]] can cee [[Lancer]]'s silhouette retreating to an unreachable location."/>
+   </properties>
    <point/>
   </object>
   <object id="21" name="Susie silhouette" x="4880" y="690">
+   <properties>
+    <property name="description" value="[[Kris]] sees [[Susie]]'s silhouette attempting to hide behind the dust piles."/>
+   </properties>
    <point/>
   </object>
   <object id="22" name="Susie silhouette" x="4999" y="705">
+   <properties>
+    <property name="description" value="[[Kris]] sees [[Susie]]'s silhouette attempting to hide behind the dust piles."/>
+   </properties>
    <point/>
   </object>
   <object id="23" name="Someone up there" x="6120" y="850.5">
+   <properties>
+    <property name="description" value="[[Susie]] notices [[Lancer]]'s silhouette on a raised platform. After Lancer attacks her, she urges Kris to run."/>
+   </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="npcs">
   <object id="12" name="Dust Pile" x="4714.5" y="681">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Dust Pile" x="4854.5" y="701">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="Dust Pile" x="5013.5" y="640">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Dust Pile" x="5133.5" y="700">
    <properties>
+    <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
   </object>
   <object id="16" name="Dust Pile with Susie in it" x="5257.5" y="661">
    <properties>
+    <property name="description" value="A dust pile blocking the way forward. [[Kris]] destroys the dust pile, revealing [[Susie]] hiding in it. Susie decides to follow Kris."/>
     <property name="page" value="Dust Pile"/>
    </properties>
    <point/>
@@ -119,6 +130,7 @@ The light relieves you... (HP fully restored.)</property>
   </object>
   <object id="10" name="Glowshard" x="2890.5" y="736">
    <properties>
+    <property name="description" value="[[Kris]] can pick up a Glowshard from this hole."/>
     <property name="page" value="Glowshard"/>
    </properties>
    <point/>
@@ -126,18 +138,36 @@ The light relieves you... (HP fully restored.)</property>
  </objectgroup>
  <objectgroup id="9" name="hazards">
   <object id="6" name="Wobbly Thing" x="3402" y="346">
+   <properties>
+    <property name="description" value="Shoots three bullets at [[Kris]] as they walk by."/>
+   </properties>
    <point/>
   </object>
   <object id="7" name="Wobbly Thing" x="3600" y="346">
+   <properties>
+    <property name="description" value="Shoots three bullets at [[Kris]] as they walk by."/>
+   </properties>
    <point/>
   </object>
   <object id="8" name="Wobbly Thing" x="3701" y="346">
+   <properties>
+    <property name="description" value="Shoots three bullets at [[Kris]] as they walk by."/>
+   </properties>
    <point/>
   </object>
   <object id="9" name="Lancer bullets" x="6177.5" y="605">
    <properties>
     <property name="description" value="Lancer appears, sending bullets to [[Kris]] and [[Susie]]."/>
     <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="connections">
+  <object id="28" name="Castle Town" x="8450.5" y="1577.5">
+   <properties>
+    <property name="description" value="The cliff leading to Castle Town."/>
+    <property name="page" value="Castle Town"/>
    </properties>
    <point/>
   </object>
