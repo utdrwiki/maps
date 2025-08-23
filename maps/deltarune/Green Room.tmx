@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="90" height="107" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="50">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="90" height="107" tilewidth="40" tileheight="40" infinite="0" nextlayerid="14" nextobjectid="54">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -227,6 +227,26 @@ You feel a sense of emptiness.</property>
    </properties>
    <point/>
   </object>
+  <object id="50" name="Clipboard" x="2541.8" y="2924.24">
+   <properties>
+    <property name="description">A list of [[Tenna]]'s remaining employees, appearing after traversing the greater TV World. It serves to remind the [[party]] about enemies they have not yet [[Recruits|recruited]].
+* '''Recruited everyone:''' ''Looks like you've recruited everyone.''
+* '''Missing recruits:''' ''Looks like you haven't recruited all of them yet.''
+* '''LOST recruits:''' ''Looks like some people resigned due to getting hurt on the job. Seems you'll never recruit everyone.''</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Hidden entrance to Ramb's bar" x="2012.9" y="768.244">
+   <properties>
+    <property name="description" value="Entryway that unlocks after progressing the [[Sword Route]] past the [[Ice Palace]] and traversing the greater TV World. The entryway leads to the area behind [[Ramb]]'s bar, from which [[Kris]] can witness [[Susie]] and [[Ralsei]] playing video games together."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" x="1974.17" y="759.715" width="80.9118" height="199.557">
+   <properties>
+    <property name="border" type="color" value="#ffafc7a7"/>
+   </properties>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="npcs">
   <object id="4" name="Zapper" x="2240.43" y="3433.33">
@@ -320,6 +340,12 @@ You feel a sense of emptiness.</property>
    <properties>
     <property name="description" value="An unseen NPC stands here after round 1 of [[TV Time]]. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
     <property name="page" value="Curtain NPC"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Zapper" x="2418.36" y="1039.33">
+   <properties>
+    <property name="description" value="Blocks the doorway to the S-Rank room. Allows [[Kris]] to pass through if they received or bought an S-Rank or higher during the first two rounds of [[TV Time]]. Disappears after traversing the greater TV World."/>
    </properties>
    <point/>
   </object>

@@ -1,134 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="464" height="634" tilewidth="20" tileheight="20" infinite="0" nextlayerid="17" nextobjectid="81">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="464" height="624" tilewidth="40" tileheight="40" infinite="0" nextlayerid="17" nextobjectid="85">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="3" name="3rd Sanctuary map">
-  <image source="images/3rd Sanctuary.png" width="9270" height="12680"/>
+  <image source="images/3rd Sanctuary.png" width="18540" height="24960"/>
  </imagelayer>
  <objectgroup id="14" name="lines">
-  <object id="19" x="2618.89" y="10087.4">
+  <object id="19" x="5240.81" y="19826.6">
    <properties>
     <property name="color" type="color" value="#ff464e78"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -0.0365271,-198.442 -650.996,-198.483"/>
+   <polyline points="0,0 -0.0731447,-449.311 -1303.6,-449.404"/>
   </object>
-  <object id="14" x="2630.13" y="11415.2">
+  <object id="14" x="5257.95" y="22442.8">
    <properties>
     <property name="color" type="color" value="#ff123c7f"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -0.00264282,34.1756 896.202,34.1861 896.192,-80.8705"/>
+   <polyline points="0,-24.7431 -0.00537443,34.1756 1822.52,34.1861 1822.8,-170.024"/>
   </object>
-  <object id="17" x="3890.17" y="11288.6">
+  <object id="17" x="7783.77" y="22177.2">
    <properties>
     <property name="color" type="color" value="#ff4d4b8f"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 -0.0607007,285.654 -1842.36,285.698 -1842.34,44.1818"/>
+   <polyline points="0,0 -0.121007,394.829 -3674.31,394.89 -3674.13,114.195"/>
   </object>
-  <object id="29" x="2770.02" y="9996.04">
+  <object id="29" x="5538.58" y="19611.1">
    <properties>
     <property name="color" type="color" value="#fff6ff00"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,0 0.00052279,-183.37 609.84,-183.59 609.841,-244.53"/>
+   <polyline points="0,0 0.00105631,-371.135 1232.19,-371.58 1232.19,-494.921"/>
   </object>
  </objectgroup>
  <objectgroup id="5" name="plot">
-  <object id="4" name="The Church bell rings" x="758.482" y="11641.4">
+  <object id="4" name="The Church bell rings" x="1517" y="22883">
    <properties>
     <property name="description" value="The [[party]] hears the church bells ringing, and they notice the [[Dark Fountain]] in the distance."/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Entryway to Egg hallway" x="1110.3" y="9798.62">
-   <properties>
-    <property name="description" value="Answering no to the NPC on the left causes them to open a doorway to the [[2nd Sanctuary#Windows and ROOTS Room|windoed hallway]] from the [[2nd Sanctuary]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="25" name="The Angel" x="2588.98" y="9839.76">
+  <object id="25" name="The Angel" x="5180" y="19300">
    <properties>
     <property name="description" value="The [[party]] notices the prophecy window depicting the Angel. Despite being obscured to the [[player]], the party is able to view the image in full."/>
    </properties>
    <point/>
   </object>
-  <object id="36" name="Bell of Judgment" x="3670.45" y="7044.06">
+  <object id="36" name="Bell of Judgment" x="7341" y="14080">
    <properties>
-    <property name="description" value="Serves to remind the [[party]] about enemies they have not yet [[Recruits|recruited]]."/>
+    <property name="description">Serves to remind the [[party]] about enemies they have not yet [[Recruits|recruited]].
+* '''Recruited everyone:''' ''It seems you have spared everyone you could.''
+* '''Missing recruits:''' ''But, you haven't spared everyone you could yet. Should you go forward? The bell leaves it up to you.''
+* '''Missing [[Miss Mizzle]]:''' ''But, there is a foe you haven't met and spared yet. It might not matter. The bell leaves it up to you.''
+* '''LOST recruits:''' ''... but the bell rung hollow.''</property>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Climbing the tower" x="3559.23" y="6223.57">
+  <object id="38" name="Climbing the tower" x="7120" y="12445">
    <properties>
     <property name="description" value="[[Jackenstein]] helps the [[party]] climb the tower, but the [[Knight]] destroys it before they can reach the top. If enough enemies were recruited, they catch Jackenstein as he falls and boost the party to the top. Otherwise, the party witnesses Jackenstein fall to his presumed death and climb the tower without him."/>
    </properties>
    <point/>
   </object>
-  <object id="39" name="The dark hallway" x="5338.62" y="4956.29">
+  <object id="39" name="The dark hallway" x="10718" y="9920">
    <properties>
     <property name="description" value="The hallway gets progressively darker as the [[party]] continues forward. [[Kris]]'s [[SOUL]] begins to light up, allowing the party to continue walking as the [[Knight]] attempts to impede their progress."/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="Confronting the Knight" x="5486.48" y="1580.22">
+  <object id="42" name="Confronting the Knight" x="10973" y="3160">
    <properties>
     <property name="description" value="The [[party]] confronts the [[Knight]] in front of the [[Dark Fountain]]. As [[Susie]] claims that they are powerless in the Light World, the Knight creates a Dark Fountain in the center of the room, which transforms into the [[Titan (Chapter 4)|Titan]]."/>
    </properties>
    <point/>
   </object>
-  <object id="43" name="The Crumbling Tower, part 1" x="1846.41" y="6733.98">
+  <object id="43" name="The Crumbling Tower, part 1" x="3680" y="13320">
    <properties>
     <property name="description" value="[[Kris]] must climb the [[Titan (Chapter 4)|Titan]]'s tower while avoiding hazards."/>
    </properties>
    <point/>
   </object>
-  <object id="53" name="Safe, for now" x="1781.68" y="4085.83">
+  <object id="53" name="Safe, for now" x="3540" y="8180">
    <properties>
     <property name="description" value="[[Ralsei]] explains the nature of the [[Titans]] to [[Kris]] and [[Susie]] while taking a break from climbing. When the Titan notices them, they run to the right and are ambushed by [[Titan Spawn]]."/>
    </properties>
    <point/>
   </object>
-  <object id="55" name="The Crumbling Tower, part 2" x="3127.64" y="3468.37">
+  <object id="55" name="The Crumbling Tower, part 2" x="6240" y="7000">
    <properties>
     <property name="description" value="[[Kris]] must climb the [[Titan (Chapter 4)|Titan]]'s tower while avoiding hazards and the darkness from below."/>
    </properties>
    <point/>
   </object>
-  <object id="59" name="Attacking the eye" x="1870.58" y="4372.74">
+  <object id="59" name="Attacking the eye" x="3740" y="8500">
    <properties>
     <property name="description" value="[[Kris]] must jump from their spot to attack the eye three times."/>
    </properties>
    <point/>
   </object>
-  <object id="62" name="Susie's catch" x="3216.68" y="324.787">
+  <object id="62" name="Susie's catch" x="6430" y="641">
    <properties>
     <property name="description" value="[[Susie]] catches [[Kris]] as they jump toward her, and she throws them upwards."/>
    </properties>
    <point/>
   </object>
-  <object id="70" name="Talk with Ralsei" x="5810.68" y="989.702">
+  <object id="70" name="Talk with Ralsei" x="11620" y="1980">
    <properties>
     <property name="description" value="[[Ralsei]] expresses relief that the [[party]] was able to defeat the [[Titan (Chapter 4)|Titan]]. However, when he notices [[Susie]] missing, he panics and runs forward."/>
    </properties>
    <point/>
   </object>
-  <object id="72" name="The Last Prophecy" x="5957.97" y="731.05">
+  <object id="72" name="The Last Prophecy" x="11954" y="1460">
    <properties>
     <property name="description" value="[[Ralsei]] notices the prophecy window mentioning the Last Prophecy and attempts to catch [[Susie]] before she can read it in full."/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="The Story's End" x="7709.74" y="467.8">
+  <object id="76" name="The Story's End" x="15440" y="960">
    <properties>
     <property name="description" value="[[Susie]] smashes the prophecy window before [[Kris]] can view it. She reassures [[Ralsei]] that they will not allow the prophecy to come to pass. She walks to the [[Dark Fountain]]."/>
    </properties>
    <point/>
   </object>
-  <object id="79" name="Sealing the Dark Fountain" x="9109.34" y="142.382">
+  <object id="79" name="Sealing the Dark Fountain" x="18220" y="320">
    <properties>
     <property name="description" value="[[Susie]] tells [[Kris]] of her hope that things can go back to the way they were before. Kris then seals the [[Dark Fountain]]."/>
    </properties>
@@ -136,7 +134,7 @@
   </object>
  </objectgroup>
  <objectgroup id="12" name="saves">
-  <object id="2" name="3rd Sanctuary" x="159.946" y="11868.9">
+  <object id="2" name="3rd Sanctuary" x="319" y="23333">
    <properties>
     <property name="description">All around you, blue glass glitters like crystals.
 As you approach it, the glowing light shines through them...
@@ -145,13 +143,13 @@ As you approach it, the glowing light shines through them...
    </properties>
    <point/>
   </object>
-  <object id="35" name="3rd Sanctuary - Stairs" x="3529.65" y="7067.77">
+  <object id="35" name="3rd Sanctuary - Stairs" x="7059" y="14130">
    <properties>
     <property name="description" value="SAVE Point in the Stairs area."/>
    </properties>
    <point/>
   </object>
-  <object id="41" name="3rd Sanctuary - Last Chamber" x="5489.6" y="3047.86">
+  <object id="41" name="3rd Sanctuary - Last Chamber" x="10979" y="6090">
    <properties>
     <property name="description" value="SAVE Point in the Last Chamber."/>
    </properties>
@@ -159,25 +157,25 @@ As you approach it, the glowing light shines through them...
   </object>
  </objectgroup>
  <objectgroup id="6" name="signs">
-  <object id="7" name="Prophecy window" x="2152.21" y="11236">
+  <object id="7" name="Prophecy window" x="4306" y="22070">
    <properties>
     <property name="description" value="''THEY'LL HEAR THE RING OF HEAVEN'S CALL.''"/>
    </properties>
    <point/>
   </object>
-  <object id="11" name="Prophecy window" x="3260.67" y="11229.7">
+  <object id="11" name="Prophecy window" x="6518" y="22063">
    <properties>
     <property name="description" value="''THEY'LL SEE THE TAIL OF HELL TAKE CRAWL.''"/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="Prophecy window" x="3645.68" y="11231.3">
+  <object id="15" name="Prophecy window" x="7293" y="22066">
    <properties>
     <property name="description" value="''JOCKINGTON GROWS THE BEARD.''"/>
    </properties>
    <point/>
   </object>
-  <object id="21" name="Prophecy window" x="1336.53" y="9742.04">
+  <object id="21" name="Prophecy window" x="2672" y="19088">
    <properties>
     <property name="description">THE FLOWER MAN,
 TRAPPED IN ASYLUM.</property>
@@ -185,7 +183,7 @@ TRAPPED IN ASYLUM.</property>
    </properties>
    <point/>
   </object>
-  <object id="24" name="Obscured prophecy window" x="2591.45" y="9752.84">
+  <object id="24" name="Obscured prophecy window" x="5180" y="19100">
    <properties>
     <property name="description">THE ANGEL, BANISHED, WILL
 FINALLY MEET WITH ITS DESIRE.</property>
@@ -193,7 +191,7 @@ FINALLY MEET WITH ITS DESIRE.</property>
    </properties>
    <point/>
   </object>
-  <object id="63" name="Prophecy window" x="3840.87" y="68">
+  <object id="63" name="Prophecy window" x="7682" y="114">
    <properties>
     <property name="description">A WORLD BASKED IN PUREST LIGHT.
 BENEATH IT, GREW ETERNAL NIGHT.</property>
@@ -201,7 +199,7 @@ BENEATH IT, GREW ETERNAL NIGHT.</property>
    </properties>
    <point/>
   </object>
-  <object id="64" name="Prophecy window" x="4126.94" y="68">
+  <object id="64" name="Prophecy window" x="8243" y="114">
    <properties>
     <property name="description">THE LIGHT AND DARK, BOTH BURNING DIRE.
 A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
@@ -209,7 +207,7 @@ A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
    </properties>
    <point/>
   </object>
-  <object id="65" name="Prophecy window" x="4399.27" y="68">
+  <object id="65" name="Prophecy window" x="8800" y="114">
    <properties>
     <property name="description">IF FOUNTAINS FREED, THE ROARING CRIES.
 AND TITANS SHAPE FROM DARKENED EYES.</property>
@@ -217,7 +215,7 @@ AND TITANS SHAPE FROM DARKENED EYES.</property>
    </properties>
    <point/>
   </object>
-  <object id="71" name="Prophecy window" x="5956.77" y="653.814">
+  <object id="71" name="Prophecy window" x="11954" y="1300">
    <properties>
     <property name="description">THE LAST PROPHECY.
 THE STORY'S END.</property>
@@ -225,7 +223,7 @@ THE STORY'S END.</property>
    </properties>
    <point/>
   </object>
-  <object id="73" name="Prophecy window" x="6509.56" y="550.715">
+  <object id="73" name="Prophecy window" x="13018" y="1094">
    <properties>
     <property name="description">AND THEN. WHEN ALL HOPE
 IS LOST FOR THE TALE</property>
@@ -233,13 +231,13 @@ IS LOST FOR THE TALE</property>
    </properties>
    <point/>
   </object>
-  <object id="74" name="Prophecy window" x="6990.79" y="450.034">
+  <object id="74" name="Prophecy window" x="13982" y="894">
    <properties>
     <property name="description" value="''THE FINAL TRAGEDY UNVEILS.''"/>
    </properties>
    <point/>
   </object>
-  <object id="75" name="Prophecy window" x="7371.08" y="390">
+  <object id="75" name="Prophecy window" x="14742" y="778">
    <properties>
     <property name="description">TO SAVE THE WORLDS,
 THERE IS ONLY ONE WAY.</property>
@@ -247,7 +245,7 @@ THERE IS ONLY ONE WAY.</property>
    </properties>
    <point/>
   </object>
-  <object id="78" name="Prophecy window" x="8429.83" y="390">
+  <object id="78" name="Prophecy window" x="16858" y="778">
    <properties>
     <property name="description">ONLY THEN,
 WILL THE WORLDS BE SAVED.</property>
@@ -257,28 +255,28 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="13" name="items">
-  <object id="13" name="Princess Ribbon" x="3399.84" y="11332.1">
+  <object id="13" name="Princess Ribbon" x="6800" y="22262">
    <properties>
     <property name="description" value="Treasure chest containing a [[Princess Ribbon]]."/>
     <property name="page" value="Princess Ribbon"/>
    </properties>
    <point/>
   </object>
-  <object id="30" name="Waferguard" x="3020.09" y="9692.19">
+  <object id="30" name="Waferguard" x="6040" y="18980">
    <properties>
     <property name="description" value="Treasure chest containing a Waferguard"/>
     <property name="page" value="Waferguard"/>
    </properties>
    <point/>
   </object>
-  <object id="67" name="Scarlixir" x="4609.9" y="105">
+  <object id="67" name="Scarlixir" x="9220" y="203">
    <properties>
     <property name="description" value="Treasure chest containing a Scarlixir."/>
     <property name="page" value="Scarlixir"/>
    </properties>
    <point/>
   </object>
-  <object id="68" name="Rhapsotea" x="4589.9" y="105">
+  <object id="68" name="Rhapsotea" x="9180" y="203">
    <properties>
     <property name="description" value="Treasure chest containing a Rhapsotea."/>
     <property name="page" value="Rhapsotea"/>
@@ -287,31 +285,31 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="7" name="npcs">
-  <object id="16" name="Philosopher" x="3768.51" y="11275.7">
+  <object id="16" name="Philosopher" x="7536" y="22155">
    <properties>
     <property name="description" value="Claims that a serpentine &quot;shadow&quot; will grow before the clock strikes midnight."/>
    </properties>
    <point/>
   </object>
-  <object id="22" name="Philosopher" x="1051.6" y="9798.2">
+  <object id="22" name="Philosopher" x="2104" y="19200">
    <properties>
     <property name="description" value="Asks the [[party]] if they have missed anything. Answering no causes them to open a doorway to the [[2nd Sanctuary#Windows and ROOTS Room|windoed hallway]] from the [[2nd Sanctuary]]."/>
    </properties>
    <point/>
   </object>
-  <object id="69" name="Cuptain" x="4629.62" y="102.016">
+  <object id="69" name="Cuptain" x="9260" y="197">
    <properties>
     <property name="description" value="Provides [[items]] to the [[party]] if they lose to the [[Titan (Chapter 4)|Titan]] twice."/>
    </properties>
    <point/>
   </object>
-  <object id="77" name="Ralsei" x="7672.68" y="450.18">
+  <object id="77" name="Ralsei" x="15345" y="890">
    <properties>
     <property name="description" value="[[Ralsei]] laments that the [[party]]'s fate is already decided. He attempts to reassure [[Kris]] that he is smiling, to which Kris can respond with &quot;It's okay not to smile&quot; or &quot;Good. Keep smiling.&quot; Ralsei, inspired by [[Susie]]'s hope, resolves to believe that things can change."/>
    </properties>
    <point/>
   </object>
-  <object id="80" name="FRIEND" x="3333.49" y="9680.81">
+  <object id="80" name="FRIEND" x="6668" y="18960">
    <properties>
     <property name="description" value="Appears after stepping on the pressure plate. Can be seen if the [[party]] follows the ripples to the beginning of the room."/>
     <property name="page" value="FRIEND"/>
@@ -320,25 +318,25 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="8" name="warpdoor">
-  <object id="3" name="Guei flame" x="210.779" y="11847.5">
+  <object id="3" name="Guei flame" x="420" y="23296">
    <properties>
     <property name="description" value="Guei flame in the 3rd Sanctuary entrance. Unlocks after reaching the Stairs area."/>
    </properties>
    <point/>
   </object>
-  <object id="33" name="Guei flame" x="3627.9" y="7045">
+  <object id="33" name="Guei flame" x="7256" y="14088">
    <properties>
     <property name="description" value="Guei flame in the Stairs area. Can transport the [[party]] back to the 3rd Sanctuary entrance."/>
    </properties>
    <point/>
   </object>
-  <object id="34" name="Guei flame" x="3496.49" y="7045">
+  <object id="34" name="Guei flame" x="6994" y="14088">
    <properties>
     <property name="description" value="Guei flame in the Stairs area. Unlocks after reaching the Last Chamber."/>
    </properties>
    <point/>
   </object>
-  <object id="40" name="Guei flame" x="5390.63" y="3104.46">
+  <object id="40" name="Guei flame" x="10782" y="6208">
    <properties>
     <property name="description" value="Guei flame in the Last Chamber. Can transport the party back to the Stairs area."/>
    </properties>
@@ -346,7 +344,7 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="15" name="vendors">
-  <object id="37" name="Spring" x="3449.82" y="7057.14">
+  <object id="37" name="Spring" x="6900" y="14110">
    <properties>
     <property name="description" value="Allows the party to make [[Scarlixir]]s for 500 [[Dark Dollar]]s each and [[Rhapsotea]]s for 300 Dark Dollars each."/>
    </properties>
@@ -354,129 +352,153 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="9" name="puzzles">
-  <object id="8" name="Timing puzzle" x="2389.98" y="11331">
+  <object id="8" name="Timing puzzle" x="4780" y="22243">
    <properties>
     <property name="description" value="After activating this switch, [[Kris]] must make their way across the gaps without getting caught by the water that flows downward."/>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Secret area" x="2629.68" y="11331">
+  <object id="9" name="Secret area" x="5261" y="22254">
    <properties>
     <property name="description" value="Intentionally falling from this tile leads the [[party]] to a secret area."/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Lift" x="3010" y="11269.5">
+  <object id="10" name="Lift" x="6019" y="22131">
    <properties>
     <property name="description" value="Lift that transports the [[party]] back to the beginning."/>
    </properties>
    <point/>
   </object>
-  <object id="31" name="Piano puzzle hint" x="3729.88" y="9529">
+  <object id="31" name="Piano puzzle hint" x="7460" y="18924">
    <properties>
     <property name="description" value="Pressing this switch reveals a hint on how to navigate the piano puzzle: ''down'', ''left'', ''up''."/>
    </properties>
    <point/>
   </object>
-  <object id="32" name="Piano puzzle" x="3659.61" y="9336.86">
+  <object id="32" name="Piano puzzle" x="7320" y="18550">
    <properties>
     <property name="description" value="The [[party]] must navigate the puzzle by inputting directions on the piano while avoiding the darkness that creeps upward."/>
    </properties>
    <point/>
   </object>
+  <object id="81" name="Moon switch" x="5960" y="20278">
+   <properties>
+    <property name="description" value="Pressing this switch darkens the room and causes the corresponding sun switch to take its place."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Moon switch" x="7000" y="20200">
+   <properties>
+    <property name="description" value="Pressing this switch darkens the room and causes the corresponding sun switch to take its place."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Sun switch" x="5880" y="20278">
+   <properties>
+    <property name="description" value="Pressing this switch brightens up the room and causes the corresponding moon switch to appear in its place."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Sun switch" x="7000" y="20112">
+   <properties>
+    <property name="description" value="Pressing this switch brightens up the room and causes the corresponding moon switch to appear in its place."/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="10" name="hazards">
-  <object id="6" name="Bibliox flames" x="1359.26" y="11331">
+  <object id="6" name="Bibliox flames" x="2719" y="22267">
    <properties>
     <property name="description" value="After clearing the [[Bibliox]] encounter, the remaining books shoot flames at the [[party]]."/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="Dark Eyeball maze" x="1513.12" y="10713.2">
+  <object id="18" name="Dark Eyeball maze" x="3020" y="21000">
    <properties>
     <property name="description" value="The [[party]] must navigate the area while avoiding the Dark Eyeballs, which periodically appear in various formations."/>
    </properties>
    <point/>
   </object>
-  <object id="44" name="Dark Eyeballs" x="1979.76" y="6274.25">
+  <object id="44" name="Dark Eyeballs" x="3960" y="12560">
    <properties>
     <property name="description" value="Dark Eyeballs that damages [[Kris]] if touched. Can be destroyed by jumping into them while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="45" name="Dark Eyeballs" x="1897.82" y="5834.44">
+  <object id="45" name="Dark Eyeballs" x="3800" y="11680">
    <properties>
     <property name="description" value="Dark Eyeballs that damages [[Kris]] if touched. Can be destroyed by jumping into them while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="46" name="Crying Eyes" x="1747.2" y="6006.75">
+  <object id="46" name="Crying Eyes" x="3480" y="12020">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="47" name="Crying Eyes" x="1639.96" y="5640.44">
+  <object id="47" name="Crying Eyes" x="3280" y="11280">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="48" name="Crying Eyes" x="1849.62" y="5137.97">
+  <object id="48" name="Crying Eyes" x="3700" y="10280">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="49" name="Crying Eyes" x="1649.93" y="4718.9">
+  <object id="49" name="Crying Eyes" x="3300" y="9440">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Dark Eyeballs" x="1876.08" y="5000.72">
+  <object id="50" name="Dark Eyeballs" x="3740" y="10000">
    <properties>
     <property name="description" value="Dark Eyeballs that damages [[Kris]] if touched. Can be destroyed by jumping into them while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="51" name="Bullets" x="1789.37" y="5418.49">
+  <object id="51" name="Bullets" x="3560" y="10840">
    <properties>
     <property name="description" value="Bullets that damage [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="52" name="Bullets" x="1709.77" y="4598.62">
+  <object id="52" name="Bullets" x="3420" y="9170">
    <properties>
     <property name="description" value="Groups of bullets that damage [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="56" name="Dark Eyeball spawners" x="3165.7" y="2746.62">
+  <object id="56" name="Dark Eyeball spawners" x="6360" y="5480">
    <properties>
     <property name="description" value="Openings that continuously spawn Dark Eyeballs."/>
    </properties>
    <point/>
   </object>
-  <object id="57" name="Crying Eyes" x="3169.19" y="2061.03">
+  <object id="57" name="Crying Eyes" x="6340" y="4120">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="58" name="Bullets" x="3169.66" y="1909.27">
+  <object id="58" name="Bullets" x="6340" y="3820">
    <properties>
     <property name="description" value="Groups of bullets that damage [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="60" name="Bullets" x="3170.9" y="1580.21">
+  <object id="60" name="Bullets" x="6300" y="3080">
    <properties>
     <property name="description" value="Groups of bullets that damage [[Kris]] if touched."/>
    </properties>
    <point/>
   </object>
-  <object id="61" name="Crying Eyes" x="3272.58" y="1799.86">
+  <object id="61" name="Crying Eyes" x="6540" y="3600">
    <properties>
     <property name="description" value="Eyes that cry black liquid that damages [[Kris]] if touched."/>
    </properties>
@@ -484,44 +506,44 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="11" name="enemies">
-  <object id="5" name="Bibliox" x="1140.32" y="11524">
+  <object id="5" name="Bibliox" x="2275" y="22658">
    <properties>
     <property name="description" value="Enemy encounter against a [[Bibliox]] and [[Winglade]]."/>
    </properties>
    <point/>
   </object>
-  <object id="20" name="Balthizard" x="1769.92" y="9805.58">
+  <object id="20" name="Balthizard" x="3538" y="19209">
    <properties>
     <property name="description" value="Enemy encounter against a [[Balthizard]], [[Mizzle]], and [[Guei]]"/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="Organikk" x="2850.52" y="10198.2">
+  <object id="26" name="Organikk" x="5700" y="20000">
    <properties>
     <property name="description" value="Enemy encounter against two [[Organikk]]s and a [[Wicabel]]."/>
    </properties>
    <point/>
   </object>
-  <object id="27" name="Organikk" x="3344.98" y="10042.8">
+  <object id="27" name="Organikk" x="6688" y="19688">
    <properties>
     <property name="description" value="Enemy encounter against two [[Organikk]]s and a [[Wicabel]]."/>
    </properties>
    <point/>
   </object>
-  <object id="28" name="Organikk" x="3309.38" y="10294.3">
+  <object id="28" name="Organikk" x="6620" y="20190">
    <properties>
     <property name="description" value="Enemy encounter against two [[Organikk]]s and a [[Wicabel]]."/>
    </properties>
    <point/>
   </object>
-  <object id="54" name="Titan Spawn" x="3199.9" y="3855.44">
+  <object id="54" name="Titan Spawn" x="6400" y="7720">
    <properties>
     <property name="description" value="Enemy encounter against two Titan Spawn."/>
     <property name="page" value="Titan Spawn"/>
    </properties>
    <point/>
   </object>
-  <object id="66" name="Titan" x="5060.7" y="127.248">
+  <object id="66" name="Titan" x="10110" y="160">
    <properties>
     <property name="description" value="Boss battle against the Titan."/>
     <property name="page" value="Titan (Chapter 4)#In Battle"/>
@@ -530,10 +552,17 @@ WILL THE WORLDS BE SAVED.</property>
   </object>
  </objectgroup>
  <objectgroup id="16" name="connections">
-  <object id="1" name="Dark Sanctuary" x="159.966" y="12672.1">
+  <object id="1" name="Dark Sanctuary" x="318.737" y="24940.4">
    <properties>
     <property name="description" value="Pathway to the first Dark Sanctuary"/>
     <property name="page" value="Dark Sanctuary"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Entryway to Egg hallway" x="2219" y="19200">
+   <properties>
+    <property name="description" value="Answering no to the NPC on the left causes them to open a doorway to the [[2nd Sanctuary#Windows and ROOTS Room|windoed hallway]] from the [[2nd Sanctuary]]."/>
+    <property name="page" value="2nd Sanctuary#Windows and ROOTS Room"/>
    </properties>
    <point/>
   </object>
