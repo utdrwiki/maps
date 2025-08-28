@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="239" height="199" tilewidth="40" tileheight="40" infinite="0" nextlayerid="13" nextobjectid="29">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="239" height="199" tilewidth="40" tileheight="40" infinite="0" nextlayerid="16" nextobjectid="371">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,93 +7,1373 @@
  <imagelayer id="2" name="Cyber Field map">
   <image source="images/Cyber Field.png" width="9532" height="7953"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="warpdoor"/>
- <objectgroup id="5" name="vendors"/>
- <objectgroup id="6" name="puzzles">
-  <object id="4" name="&quot;APPLE&quot; Keyboard Puzzle" x="5314.33" y="6501">
-   <point/>
-  </object>
-  <object id="7" name="&quot;AGREE2ALL&quot; Keyboard Puzzle" x="6917.75" y="6879.25">
-   <point/>
-  </object>
-  <object id="12" name="&quot;GIASFELFEBREHBER&quot; Keyboard Puzzle" x="6463" y="5126.5">
+ <objectgroup id="4" name="warpdoor">
+  <object id="230" name="Cyber Field Warp Door" x="5756" y="6879">
+   <properties>
+    <property name="page" value="Warp Door"/>
+   </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="7" name="npcs"/>
- <objectgroup id="8" name="saves"/>
- <objectgroup id="9" name="signs">
-  <object id="28" x="4837" y="6528.5">
+ <objectgroup id="5" name="vendors">
+  <object id="235" name="Cap'n" x="5628" y="6894">
+   <properties>
+    <property name="page" value="Vendors"/>
+   </properties>
    <point/>
+  </object>
+  <object id="236" name="K_K" x="5709" y="6883">
+   <properties>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="295" name="Junk Shop" x="5625" y="4632">
+   <properties>
+    <property name="page" value="Vendors"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="signs">
+  <object id="214" name="Forcefield" x="5478" y="6562">
+   <properties>
+    <property name="description" value="''(It appears to be some kind of forcefield.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="215" name="Forcefield" x="5208" y="6963">
+   <properties>
+    <property name="description" value="''(It appears to be some kind of forcefield.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="216" name="Forcefield" x="5488" y="6963">
+   <properties>
+    <property name="description" value="''(It appears to be some kind of forcefield.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="223" name="Side of arcade machine" x="5349.5" y="6889">
+   <properties>
+    <property name="description" value="''(You can't pro game while facing this direction.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="225" name="Broken arcade machine" x="5349.5" y="6955">
+   <properties>
+    <property name="description" value="''(Looks like this Gamer's Paradise has become a Gamer's Hell.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="227" name="Forcefield" x="5669" y="6900">
+   <properties>
+    <property name="description" value="''(It appears to be some kind of forcefield.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="255" name="&quot;STUPId&quot; screen" x="6231" y="7158">
+   <properties>
+    <property name="description" value="''(It seems to be stupid.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="268" name="Tasque stuck in &quot;STUPId&quot; screen" x="6231" y="7172">
+   <properties>
+    <property name="description" value="''(It seems to be stuck.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="275" name="Forcefield" x="6371" y="6893">
+   <properties>
+    <property name="description" value="''(It appears to be some kind of forcefield.)''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Broken camera" x="6923" y="7797">
+   <properties>
+    <property name="description" value="''(The camera must be broken.)''"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves">
+  <object id="30" name="Dark World?" x="550.5" y="5925.5">
+   <properties>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Cyber Field - Entrance" x="2753.5" y="7431.5">
+   <properties>
+    <property name="description">'''Beginning:''' A green field extends before you... And, in the distance, a city shines brightly.
+You are filled with the power of a new adventure.
+
+'''Backtracking via [[Warp Door]]:''' A green field extends before you... You've seen this already.
+You are filled with the power of pointless backtracking.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Cyber Field - Arcade Machine" x="5451.5" y="6929.5">
+   <properties>
+    <property name="description" value="''The game is wrecked. You are filled with the power of videogame violence.''"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Cyber Field - Music Shop" x="5724.5" y="4603.5">
+   <properties>
+    <property name="description">Crash! Boom! Bang! There's a terrific noise coming from the building nearby...
+You are filled with the power of noise music.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="puzzles">
+  <object id="88" name="Teacups 1" x="3619" y="7729">
+   <properties>
+    <property name="description">The first set of teacups serves as a tutorial and thus does not have the innate property of slowly rising on its own until it is ridden at least once without leaving the room.
+
+Spin counterclockwise (hold right) while collecting 5 teacup bullets to go upwards.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Teacups 2" x="4431" y="7440">
+   <properties>
+    <property name="description" value="Spin counterclockwise (hold right) while collecting 7 teacup bullets."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Teacups 3" x="3901" y="7070">
+   <properties>
+    <property name="description" value="Spin clockwise (hold left) while collecting 11 teacup bullets."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="&quot;APPLE&quot; keyboard puzzle" x="5318.5" y="6476">
+   <point/>
+  </object>
+  <object id="7" name="&quot;AGREE2ALL&quot; keyboard puzzle" x="6920" y="6857">
+   <point/>
+  </object>
+  <object id="278" name="Teacups 4" x="6461" y="6618">
+   <properties>
+    <property name="description" value="All 10 teacup bullets must be collected in order to progress."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="&quot;GIASFELFEBREHBER&quot; keyboard puzzle" x="6439.5" y="5104.5">
+   <point/>
+  </object>
+  <object id="287" name="Teacups 5" x="6701" y="6618">
+   <properties>
+    <property name="description" value="All 16 teacup bullets must be collected in order to progress."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="288" name="Teacups 6" x="6941" y="6618">
+   <properties>
+    <property name="description" value="All 6 teacup bullets must be collected in order to progress."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="316" name="Treasure chest screen" x="7291" y="5122">
+   <point/>
+  </object>
+  <object id="356" name="Treasure chest screen appears (boundary)" x="7276" y="5062">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="317" name="Key screen" x="7591" y="4766">
+   <point/>
+  </object>
+  <object id="359" name="Key screen appears (bottom boundary)" x="7427" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 40,32"/>
+  </object>
+  <object id="360" name="Key screen appears (top boundary)" x="7516" y="4683">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="318" name="Teacups 7-12" x="7111" y="4337">
+   <properties>
+    <property name="description" value="A gauntlet of six different sets of teacups in a row. While it is not required to collect any of the teacup bullets, collecting all 70 reveals a treasure chest containing [[Ragger 2]]. It is possible to collect as low as 1 teacup bullet."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="29" name="Arrival" x="203" y="5961">
+   <point/>
+  </object>
+  <object id="64" name="Queen's introduction" x="1765" y="6444">
+   <point/>
+  </object>
+  <object id="70" name="Ralsei rejoins the party" x="1845" y="6432">
+   <point/>
+  </object>
+  <object id="97" name="Sweet's introduction" x="2419" y="6492">
+   <point/>
+  </object>
+  <object id="72" name="&quot;CYBER WORLD&quot; screen appears" x="3175.5" y="7377">
+   <point/>
+  </object>
+  <object id="173" name="&quot;CYBER WORLD&quot; screen appears (left boundary)" x="2986" y="7449">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,29"/>
+  </object>
+  <object id="174" name="&quot;CYBER WORLD&quot; screen appears (right boundary)" x="3153" y="7449">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,29"/>
+  </object>
+  <object id="73" name="Queen screen appears" x="2995" y="7588">
+   <point/>
+  </object>
+  <object id="245" name="Queen screen appears (right boundary)" x="3119" y="7589">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,29 1,30"/>
+  </object>
+  <object id="205" name="Queen screen appears (bottom boundary)" x="3090" y="7670">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-29"/>
+  </object>
+  <object id="74" name="&quot;QUEEN RULES&quot; screen appears" x="2995" y="7788">
+   <point/>
+  </object>
+  <object id="177" name="&quot;QUEEN RULES&quot; screen appears (boundary)" x="3066" y="7789">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,29"/>
+  </object>
+  <object id="100" name="Sweet flies away" x="3917" y="7457">
+   <point/>
+  </object>
+  <object id="28" name="CYBERPEDIA" x="4837.5" y="6522.5">
+   <point/>
+  </object>
+  <object id="126" name="Tasque screen 1 appears" x="4747" y="6512">
+   <point/>
+  </object>
+  <object id="178" name="Tasque screen 1 appears (left boundary)" x="4630" y="6569">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 23,29"/>
+  </object>
+  <object id="180" name="Tasque screen 1 appears (bottom boundary)" x="4792" y="6612">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="197" name="Tasque screen 1 appears (right boundary)" x="4840" y="6598">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 22,-29"/>
+  </object>
+  <object id="137" name="Tasque screen 2 appears" x="4697" y="6728">
+   <point/>
+  </object>
+  <object id="170" name="Tasque screen 2 appears (top boundary)" x="4792" y="6684">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,28"/>
+  </object>
+  <object id="198" name="Tasque screen 2 appears (bottom boundary)" x="4732" y="6827">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="171" name="Tasque screen 2 appears (right boundary)" x="4822" y="6729">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,31"/>
+  </object>
+  <object id="196" name="Tasque screen 3 appears" x="4807" y="6788">
+   <point/>
+  </object>
+  <object id="199" name="Tasque screen 3 appears (top boundary)" x="4792" y="6727">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="200" name="Tasque screen 3 appears (bottom boundary)" x="4852" y="6888">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-2"/>
+  </object>
+  <object id="158" name="Tasque screen 4 appears" x="4667" y="6928">
+   <point/>
+  </object>
+  <object id="206" name="Tasque screen 4 appears (right boundary)" x="4788" y="6978">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-1,3 6,-29"/>
+  </object>
+  <object id="190" name="Tasque screen 4 appears (top boundary)" x="4732" y="6872">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 31,6"/>
+  </object>
+  <object id="161" name="Tasque screen 5 appears" x="4917" y="6892">
+   <point/>
+  </object>
+  <object id="195" name="Tasque screen 5 appears (left boundary)" x="4744" y="6878">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 18,-38"/>
+  </object>
+  <object id="194" name="Tasque screen 5 appears (top-left boundary)" x="4852" y="6782">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="193" name="Tasque screen 5 appears (top-right boundary)" x="4951" y="6783">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 31,0"/>
+  </object>
+  <object id="207" name="Tasque screen 5 appears (right boundary)" x="5075" y="6981">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 11,-32"/>
+  </object>
+  <object id="261" name="Tasque appears" x="4917" y="6908">
+   <point/>
+  </object>
+  <object id="262" name="Tasque appears (top-left boundary)" x="4852" y="6932">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="263" name="Tasque appears (top-right boundary)" x="4952" y="6932">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="264" name="Tasque appears (right boundary)" x="5033" y="6949">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,32"/>
+  </object>
+  <object id="160" name="Tasque screen 6 appears" x="5027" y="6664">
+   <point/>
+  </object>
+  <object id="202" name="Tasque screen 6 appears (top-left boundary)" x="4951" y="6603">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="203" name="Tasque screen 6 appears (top-right boundary)" x="5071" y="6603">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="204" name="Tasque screen 6 appears (bottom boundary)" x="4951" y="6763">
+   <properties>
+    <property name="color" type="color" value="#ffffff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 152,0"/>
+  </object>
+  <object id="213" name="Nubert screen" x="5575" y="6546">
+   <point/>
+  </object>
+  <object id="218" name="Peon release form" x="5231" y="6963">
+   <point/>
+  </object>
+  <object id="219" name="Giant arcade machine" x="5349.5" y="6933">
+   <point/>
+  </object>
+  <object id="249" name="&quot;STUPId&quot; screen appears" x="6171" y="7145">
+   <point/>
+  </object>
+  <object id="248" name="Tasque screen 7 appears" x="6232" y="7258">
+   <point/>
+  </object>
+  <object id="246" name="Tasque screen 7 appears (boundary)" x="6156" y="7200">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="298" name="Tasque appears" x="6232" y="7273">
+   <point/>
+  </object>
+  <object id="299" name="Tasque appears (left boundary)" x="6156" y="7294">
+   <properties>
+    <property name="color" type="color" value="#ff000000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,2"/>
+  </object>
+  <object id="300" name="Tasque appears (right boundary)" x="6276" y="7294">
+   <properties>
+    <property name="color" type="color" value="#ff000000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,3"/>
+  </object>
+  <object id="253" name="Tasque screen 8 appears" x="6351" y="7259">
+   <point/>
+  </object>
+  <object id="252" name="Tasque screen 8 appears (top boundary)" x="6230" y="7241">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 20,-31"/>
+  </object>
+  <object id="256" name="Tasque screen 8 appears (left boundary)" x="6231" y="7310">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 18,31"/>
+  </object>
+  <object id="265" name="Tasque screen 8 appears (bottom-left boundary)" x="6276" y="7357">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="257" name="Tasque screen 8 appears (bottom-right boundary)" x="6396" y="7356">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,0"/>
+  </object>
+  <object id="250" name="Tasque screen 9 appears" x="6230" y="7359">
+   <point/>
+  </object>
+  <object id="251" name="Tasque screen 9 appears (left boundary)" x="6156" y="7303">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+   </properties>
+   <polyline points="0,0 30,-3"/>
+  </object>
+  <object id="254" name="Tasque screen 9 appears (right boundary)" x="6276" y="7297">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+   </properties>
+   <polyline points="0,0 30,3"/>
+  </object>
+  <object id="258" name="Tasque screen 10 appears" x="6352" y="7359">
+   <point/>
+  </object>
+  <object id="271" name="Tasque screen 10 appears (top boundary)" x="6276" y="7301">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-2"/>
+  </object>
+  <object id="272" name="Tasque screen 10 appears (left-top boundary)" x="6229" y="7341">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 20,-31"/>
+  </object>
+  <object id="274" name="Tasque screen 10 appears (left-bottom boundary)" x="6232" y="7410">
+   <properties>
+    <property name="color" type="color" value="#ffff0000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 18,31"/>
+  </object>
+  <object id="281" name="Tasque appears" x="6352" y="7374">
+   <point/>
+  </object>
+  <object id="280" name="Tasque appears (left boundary)" x="6242" y="7410">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 8,31"/>
+  </object>
+  <object id="282" name="Tasque appears (top-left boundary)" x="6276" y="7393">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-1"/>
+  </object>
+  <object id="283" name="Tasque appears (top-right boundary)" x="6396" y="7398">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-4"/>
+  </object>
+  <object id="259" name="Tasque screen 11 appears" x="6471" y="7359">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="266" name="Tasque screen 11 appears (top boundary)" x="6349" y="7341">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 23,-31"/>
+  </object>
+  <object id="267" name="Tasque screen 11 appears (bottom boundary)" x="6349" y="7410">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 20,31"/>
+  </object>
+  <object id="289" name="Almost to the guys" x="7344" y="5705">
+   <point/>
+  </object>
+  <object id="292" name="Sweet Cap'n Cakes's introduction" x="8141" y="5705">
+   <point/>
+  </object>
+  <object id="301" name="Sweet Cap'n Cakes fly away" x="8296" y="7233">
+   <point/>
+  </object>
+  <object id="293" name="Fireworks" x="7961.5" y="7863">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Ralsei]] take a moment to enjoy the fireworks display."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="286" name="Magical glass" x="6923" y="7770">
+   <properties>
+    <property name="description" value="[https://www.reddit.com/r/Undertale/comments/3yi699/magical_glass/cydniv6/ Magical glass] that appears when your [[Party|party members]] step on it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="303" name="Forcefield" x="7002" y="4662">
+   <point/>
+  </object>
+  <object id="304" name="Forcefield" x="7110" y="4570">
+   <point/>
+  </object>
+  <object id="320" name="Roller coaster" x="8784" y="808">
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="npcs">
+  <object id="45" name="Plugboy" x="780" y="6076.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Plugboy" x="1203" y="6421.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Plugboy" x="1625" y="6406.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Plugboy" x="1685" y="6446.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Plugboy" x="4403" y="6745.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="208" name="Plugboy" x="4666" y="6772">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="209" name="Plugboy" x="5139" y="6660.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="210" name="Nubert" x="5649" y="6512">
+   <properties>
+    <property name="description" value="my man"/>
+    <property name="page" value="Nubert"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="211" name="Ralsei" x="5223" y="6506">
+   <properties>
+    <property name="page" value="Ralsei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="212" name="Susie" x="5251" y="6501">
+   <properties>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="220" name="Ralsei" x="5326.5" y="6982">
+   <properties>
+    <property name="page" value="Ralsei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="221" name="Susie" x="5374.5" y="6977">
+   <properties>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="222" name="Queen" x="5427" y="6915">
+   <properties>
+    <property name="page" value="Queen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="226" name="Swatchling" x="5375" y="6925">
+   <properties>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="228" name="Plugboy" x="5596" y="6981.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="229" name="Plugboy" x="5737" y="6984.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="237" name="Hacker" x="6029" y="6695">
+   <properties>
+    <property name="page" value="Hacker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="276" name="Susie" x="6827.5" y="7000">
+   <properties>
+    <property name="page" value="Susie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="277" name="Ralsei" x="6856.5" y="7004">
+   <properties>
+    <property name="page" value="Ralsei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="322" name="Cap'n" x="6581" y="6639">
+   <properties>
+    <property name="page" value="Cap'n"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="323" name="K_K" x="6819" y="6627">
+   <properties>
+    <property name="page" value="K_K"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="294" name="Plugboy" x="5712" y="4682.5">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="296" name="Plugboy" x="6143" y="4625">
+   <properties>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="297" name="Fommt" x="6299" y="4635.5">
+   <properties>
+    <property name="page" value="Fommt"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="324" name="City Werewire" x="8505" y="839">
+   <properties>
+    <property name="page" value="City Werewire"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="lines">
+  <object id="75" name="Teacups 1 path" x="3619" y="7790">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,8 0,-328 157,-328"/>
+  </object>
+  <object id="87" name="Teacups 2 path" x="4329" y="7454">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-2,0 102,0 102,-352 -22,-352"/>
+  </object>
+  <object id="98" name="Teacups 3 path" x="4010" y="7093">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -109,0 -109,-510 15,-510"/>
+  </object>
+  <object id="232" name="Warp Door room to Fireworks room" x="5669" y="7043">
+   <properties>
+    <property name="color" type="color" value="#ff00ff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,505 1162,504 1162,687"/>
+  </object>
+  <object id="260" name="Tasque travel path" x="4728" y="6963">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 444,0"/>
+  </object>
+  <object id="55" name="Solution to &quot;APPLE&quot; keyboard puzzle" x="5298" y="6553">
+   <properties>
+    <property name="color" type="color" value="#ffff00ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-3,0 60,0 60,40 101,40 101,0"/>
+  </object>
+  <object id="57" name="Solution to &quot;AGREE2ALL&quot; keyboard puzzle" x="6865" y="6952">
+   <properties>
+    <property name="color" type="color" value="#ffff00ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="-9,-3 32,-3 32,-19 40,-19 40,-3 116,-3 116,5 76,5 76,37 56,37 56,45 116,45 116,37 96,37"/>
+  </object>
+  <object id="58" name="Solution to &quot;GIASFELFEBREHBER&quot; keyboard puzzle" x="6378" y="5170">
+   <properties>
+    <property name="color" type="color" value="#ffff00ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,1 23,1 23,65 43,65 43,41 63,41 63,65 123,65 123,41 103,41 103,57 83,57 83,41"/>
+  </object>
+  <object id="269" name="Tasque travel path" x="6156" y="7324">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 240,0"/>
+  </object>
+  <object id="270" name="Tasque travel path" x="6187" y="7425">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 290,0"/>
+  </object>
+  <object id="279" name="Teacups 4 path" x="6461" y="6695">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,2 0,-1228"/>
+  </object>
+  <object id="284" name="Teacups 5 path" x="6701" y="6697">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-1230"/>
+  </object>
+  <object id="285" name="Teacups 6 path" x="6941" y="6697">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-973"/>
+  </object>
+  <object id="290" name="Platform path" x="7344" y="5705">
+   <properties>
+    <property name="color" type="color" value="#ff00aaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 641,0"/>
+  </object>
+  <object id="302" name="Sweet Cap'n Cakes encounter room to Fireworks room" x="8192" y="5794">
+   <properties>
+    <property name="color" type="color" value="#ff00ff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,4 0,798"/>
+  </object>
+  <object id="41" name="Warp Door room to Junk Shop room" x="5668" y="6833">
+   <properties>
+    <property name="color" type="color" value="#ff00ff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="1,0 1,-93 92,-93 92,-451 1,-451 1,-2067"/>
+  </object>
+  <object id="319" name="Teacups 7-12 path" x="7111" y="4415">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-1358 200,-1358 200,-2258 400,-2258 400,-2818 620,-2818 620,-3118 799,-3118 799,-3398 1000,-3398 1000,-3513 1191,-3513"/>
+  </object>
+  <object id="321" name="Final Teacup room to Virovirokun Bullets room" x="8431" y="896">
+   <properties>
+    <property name="color" type="color" value="#ff00ff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,112 0,3604 -1140,3604 -1140,3802"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
-  <object id="21" x="3484" y="7700">
+  <object id="21" name="Glow Wrist" x="3485" y="7695">
+   <properties>
+    <property name="page" value="Glow Wrist"/>
+   </properties>
    <point/>
   </object>
-  <object id="22" x="5647.5" y="6601.5">
+  <object id="22" name="Fiber Scarf" x="5648" y="6596">
+   <properties>
+    <property name="page" value="Fiber Scarf"/>
+   </properties>
    <point/>
   </object>
-  <object id="23" x="6610" y="7421">
+  <object id="23" name="Glow Wrist and blue checkmark" x="6611" y="7416">
+   <properties>
+    <property name="description" value="A treasure chest containing a [[Glow Wrist]] and a [[blue checkmark]]."/>
+   </properties>
    <point/>
   </object>
-  <object id="24" x="6700.25" y="5398.75">
+  <object id="31" name="Blue checkmark" x="6547" y="5104.5">
+   <properties>
+    <property name="page" value="Blue Checkmark"/>
+   </properties>
    <point/>
   </object>
-  <object id="25" x="7323" y="5079.5">
+  <object id="24" name="Blue checkmark" x="6701" y="5396">
+   <properties>
+    <property name="page" value="Blue Checkmark"/>
+   </properties>
    <point/>
   </object>
-  <object id="26" x="8317.75" y="848">
+  <object id="27" name="Tension Bit" x="6440" y="4754">
+   <properties>
+    <property name="page" value="Tension Bit"/>
+   </properties>
    <point/>
   </object>
-  <object id="27" x="6440.67" y="4757">
+  <object id="25" name="Revive Mint" x="7323" y="5077">
+   <properties>
+    <property name="page" value="Revive Mint"/>
+   </properties>
    <point/>
+  </object>
+  <object id="26" name="Ragger 2" x="8319" y="846">
+   <properties>
+    <property name="page" value="Ragger 2"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="hazards">
+  <object id="46" name="Hanging plug" x="912" y="6146">
+   <point/>
+  </object>
+  <object id="47" name="Hanging plug" x="972" y="6186">
+   <point/>
+  </object>
+  <object id="48" name="Hanging plug" x="1072" y="6146">
+   <point/>
+  </object>
+  <object id="49" name="Hanging plug" x="1152" y="6186">
+   <point/>
+  </object>
+  <object id="71" name="Beat bullets" x="2239" y="6698">
+   <point/>
+  </object>
+  <object id="82" name="Beat bullets" x="2269" y="6698">
+   <point/>
+  </object>
+  <object id="83" name="Beat bullets" x="2299" y="6698">
+   <point/>
+  </object>
+  <object id="84" name="Beat bullets" x="2327" y="6698">
+   <point/>
+  </object>
+  <object id="76" name="Beat bullets" x="4091" y="7342">
+   <point/>
+  </object>
+  <object id="77" name="Beat bullets" x="4122" y="7342">
+   <point/>
+  </object>
+  <object id="78" name="Beat bullets" x="4151" y="7342">
+   <point/>
+  </object>
+  <object id="79" name="Beat bullets" x="4181" y="7342">
+   <point/>
+  </object>
+  <object id="80" name="Beat bullets" x="4211" y="7342">
+   <point/>
+  </object>
+  <object id="81" name="Beat bullets" x="4241" y="7342">
+   <point/>
+  </object>
+  <object id="91" name="Beat bullets" x="4241" y="6987">
+   <point/>
+  </object>
+  <object id="92" name="Beat bullets" x="4211" y="6987">
+   <point/>
+  </object>
+  <object id="93" name="Beat bullets" x="4181" y="6987">
+   <point/>
+  </object>
+  <object id="94" name="Beat bullets" x="4151" y="6987">
+   <point/>
+  </object>
+  <object id="95" name="Beat bullets" x="4122" y="6987">
+   <point/>
+  </object>
+  <object id="96" name="Beat bullets" x="4091" y="6987">
+   <point/>
+  </object>
+  <object id="101" name="Beat bullets" x="4091" y="6473">
+   <point/>
+  </object>
+  <object id="102" name="Beat bullets" x="4122" y="6473">
+   <point/>
+  </object>
+  <object id="103" name="Beat bullets" x="4151" y="6473">
+   <point/>
+  </object>
+  <object id="104" name="Beat bullets" x="4181" y="6473">
+   <point/>
+  </object>
+  <object id="105" name="Beat bullets" x="4211" y="6473">
+   <point/>
+  </object>
+  <object id="106" name="Beat bullets" x="4241" y="6473">
+   <point/>
+  </object>
+  <object id="240" name="Beat bullets" x="6052" y="6862">
+   <point/>
+  </object>
+  <object id="238" name="Beat bullets" x="6091" y="6862">
+   <point/>
+  </object>
+  <object id="241" name="Beat bullets" x="6130" y="6862">
+   <point/>
+  </object>
+  <object id="242" name="Beat bullets" x="6211" y="6862">
+   <point/>
+  </object>
+  <object id="243" name="Beat bullets" x="6251" y="6862">
+   <point/>
+  </object>
+  <object id="244" name="Beat bullets" x="6290" y="6862">
+   <point/>
+  </object>
+  <object id="66" name="Virovirokun" x="7129" y="4668">
+   <properties>
+    <property name="page" value="Virovirokun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Virovirokun" x="7289" y="4929">
+   <properties>
+    <property name="page" value="Virovirokun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Virovirokun" x="7449" y="4668">
+   <properties>
+    <property name="page" value="Virovirokun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="305" name="Bomb screen 1" x="7051" y="4826">
+   <point/>
+  </object>
+  <object id="325" name="Bomb screen 1 appears (left boundary)" x="7036" y="4770">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-4"/>
+  </object>
+  <object id="326" name="Bomb screen 1 appears (right boundary)" x="7137" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 25,32"/>
+  </object>
+  <object id="327" name="Bomb screen 1 appears (bottom boundary)" x="7116" y="4925">
+   <properties>
+    <property name="color" type="color" value="#ff0000ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-18"/>
+  </object>
+  <object id="307" name="Bomb screen 2" x="7230" y="4818">
+   <point/>
+  </object>
+  <object id="329" name="Bomb screen 2 appears (left boundary)" x="7109" y="4798">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,1 21,-31"/>
+  </object>
+  <object id="328" name="Bomb screen 2 appears (top boundary)" x="7196" y="4758">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,2"/>
+  </object>
+  <object id="330" name="Bomb screen 2 appears (right boundary)" x="7335" y="4898">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,1 18,-31"/>
+  </object>
+  <object id="331" name="Bomb screen 2 appears (bottom boundary)" x="7116" y="4891">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="110,28 80,18 30,18 0,0"/>
+  </object>
+  <object id="313" name="Dance screen 1" x="7291" y="4818">
+   <point/>
+  </object>
+  <object id="333" name="Dance screen 1 appears (left boundary)" x="7170" y="4798">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,1 20,-31"/>
+  </object>
+  <object id="332" name="Dance screen 1 appears (top-left boundary)" x="7196" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-7"/>
+  </object>
+  <object id="334" name="Dance screen 1 appears (top-right boundary)" x="7356" y="4762">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-5"/>
+  </object>
+  <object id="335" name="Dance screen 1 appears (right boundary)" x="7390" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 15,32"/>
+  </object>
+  <object id="336" name="Dance screen 1 appears (bottom-right boundary)" x="7356" y="4915">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-9"/>
+  </object>
+  <object id="337" name="Dance screen 1 appears (bottom-left boundary)" x="7196" y="4907">
+   <properties>
+    <property name="color" type="color" value="#ff005500"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,11"/>
+  </object>
+  <object id="308" name="Bomb screen 3" x="7351" y="4818">
+   <point/>
+  </object>
+  <object id="340" name="Bomb screen 3 appears (left boundary)" x="7228" y="4867">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 21,32"/>
+  </object>
+  <object id="338" name="Bomb screen 3 appears (top boundary)" x="7356" y="4761">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,7"/>
+  </object>
+  <object id="339" name="Bomb screen 3 appears (right boundary)" x="7451" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 17,32"/>
+  </object>
+  <object id="353" name="Bomb screen 3 appears (bottom boundary)" x="7356" y="4916">
+   <properties>
+    <property name="color" type="color" value="#ffffaa00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 26,5 42,4 54,4 80,-2 110,-27"/>
+  </object>
+  <object id="306" name="Bomb screen 4" x="7155" y="5006">
+   <point/>
+  </object>
+  <object id="354" name="Bomb screen 4 appears (top boundary)" x="7196" y="4946">
+   <properties>
+    <property name="color" type="color" value="#ff55ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,1"/>
+  </object>
+  <object id="355" name="Bomb screen 4 appears (bottom boundary)" x="7276" y="5059">
+   <properties>
+    <property name="color" type="color" value="#ff55ff00"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 6,-32"/>
+  </object>
+  <object id="309" name="Bomb screen 5" x="7426" y="5006">
+   <point/>
+  </object>
+  <object id="357" name="Bomb screen 5 appears (bottom boundary)" x="7300" y="5027">
+   <properties>
+    <property name="color" type="color" value="#ff550000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 6,32"/>
+  </object>
+  <object id="358" name="Bomb screen 5 appears (top boundary)" x="7356" y="4949">
+   <properties>
+    <property name="color" type="color" value="#ff550000"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-4"/>
+  </object>
+  <object id="310" name="Bomb screen 6" x="7591" y="4686">
+   <point/>
+  </object>
+  <object id="361" name="Bomb screen 6 appears (bottom boundary)" x="7494" y="4767">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 52,18"/>
+  </object>
+  <object id="362" name="Bomb screen 6 appears (top boundary)" x="7495" y="4639">
+   <properties>
+    <property name="color" type="color" value="#ffffaaff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 51,-14"/>
+  </object>
+  <object id="314" name="Dance screen 2" x="7591" y="4606">
+   <point/>
+  </object>
+  <object id="363" name="Dance screen 2 appears (bottom boundary)" x="7516" y="4707">
+   <properties>
+    <property name="color" type="color" value="#ffaaaa7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,2"/>
+  </object>
+  <object id="364" name="Dance screen 2 appears (top boundary)" x="7463" y="4639">
+   <properties>
+    <property name="color" type="color" value="#ffaaaa7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 1,-32"/>
+  </object>
+  <object id="311" name="Bomb screen 7" x="7451" y="4546">
+   <point/>
+  </object>
+  <object id="366" name="Bomb screen 7 appears (right boundary)" x="7516" y="4647">
+   <properties>
+    <property name="color" type="color" value="#ffaa007f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-8"/>
+  </object>
+  <object id="365" name="Bomb screen 7 appears (left boundary)" x="7356" y="4638">
+   <properties>
+    <property name="color" type="color" value="#ffaa007f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,6"/>
+  </object>
+  <object id="312" name="Bomb screen 8" x="7291" y="4626">
+   <point/>
+  </object>
+  <object id="370" name="Bomb screen 8 appears (top-right boundary)" x="7410" y="4607">
+   <properties>
+    <property name="color" type="color" value="#ffaaffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 9,32"/>
+  </object>
+  <object id="369" name="Bomb screen 8 appears (bottom-right boundary)" x="7356" y="4726">
+   <properties>
+    <property name="color" type="color" value="#ffaaffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,-10"/>
+  </object>
+  <object id="368" name="Bomb screen 8 appears (top-left boundary)" x="7165" y="4641">
+   <properties>
+    <property name="color" type="color" value="#ffaaffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,-2 6,-34"/>
+  </object>
+  <object id="367" name="Bomb screen 8 appears (bottom-left boundary)" x="7196" y="4718">
+   <properties>
+    <property name="color" type="color" value="#ffaaffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 30,8"/>
   </object>
  </objectgroup>
  <objectgroup id="11" name="enemies">
-  <object id="13" x="1920.67" y="6438.67">
-   <point/>
-  </object>
-  <object id="14" x="3451.33" y="7586">
-   <point/>
-  </object>
-  <object id="15" x="4929" y="6954">
-   <point/>
-  </object>
-  <object id="16" x="6298" y="7359">
-   <point/>
-  </object>
-  <object id="17" x="6582.67" y="6966.67">
-   <point/>
-  </object>
-  <object id="18" x="6084" y="4545">
-   <point/>
-  </object>
-  <object id="19" x="8205.33" y="5661.33">
-   <point/>
-  </object>
-  <object id="20" x="9361" y="771">
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="12" name="annotations">
-  <object id="8" name="Solution to &quot;APPLE&quot; Keyboard Puzzle" x="5292.83" y="6554.58">
+  <object id="13" name="Werewire" x="1993" y="6391">
    <properties>
-    <property name="color" type="color" value="#ff00ff00"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="Enemy [[encounter]] against two Werewires."/>
+    <property name="page" value="Werewire"/>
    </properties>
-   <polyline points="0,0 68,-1 68.25,41 108.5,41 108,-1.25"/>
+   <point/>
   </object>
-  <object id="9" name="Solution to &quot;AGREE2ALL&quot; Keyboard Puzzle" x="6854.33" y="6954.33">
+  <object id="14" name="Werewire" x="3452.5" y="7541.5">
    <properties>
-    <property name="color" type="color" value="#ff00ff00"/>
-    <property name="thickness" type="float" value="3"/>
+    <property name="description" value="Enemy [[encounter]] against two Werewires."/>
+    <property name="page" value="Werewire"/>
    </properties>
-   <polyline points="0,0 42.6667,0 44,-23.3333 50.6667,-22.6667 50.6667,-5.66667 127.833,-6.58333 128,1.58333 87,1.66667 87.3333,35 63.6667,35 63.697,41.9697 131.182,42.4848 130.636,33.5758 106.333,34"/>
+   <point/>
   </object>
-  <object id="11" name="Solution to &quot;GIASFELFEBREHBER&quot; Keyboard Puzzle" x="6376.75" y="5171">
-   <polyline points="-0.333333,-1.66667 24.75,-1.75 23.5,60.25 43.25,59.875 44,39 63.25,39 63.125,57.5 121.5,56.875 121.875,37.625 103.5,37.75 103,62.75 85,63 85.2273,41.3864"/>
+  <object id="15" name="Tasque" x="4917.5" y="6936.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against two Tasques."/>
+    <property name="page" value="Tasque"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Tasque" x="6291" y="7354">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against two Tasques."/>
+    <property name="page" value="Tasque"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Virovirokun" x="6580" y="6948">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against two Virovirokuns."/>
+    <property name="page" value="Virovirokun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Sweet Cap'n Cakes" x="8205" y="5661">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against Sweet, Cap'n, and K_K."/>
+    <property name="page" value="Sweet Cap'n Cakes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Smorgasbord 2" x="6087.5" y="4530.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against Werewire, [[Tasque]], and [[Virovirokun]]."/>
+    <property name="page" value="Werewire"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Berdly" x="9365.5" y="751.5">
+   <properties>
+    <property name="description" value="Enemy [[encounter]] against Berdly."/>
+    <property name="page" value="Berdly"/>
+   </properties>
+   <point/>
   </object>
  </objectgroup>
 </map>
