@@ -38,13 +38,6 @@
   </object>
  </objectgroup>
  <objectgroup id="10" name="signs">
-  <object id="34" name="Curtain NPC" x="16058.1" y="2046.71">
-   <properties>
-    <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
-    <property name="page" value="Curtain NPC"/>
-   </properties>
-   <point/>
-  </object>
   <object id="155" name="Ralsei's reminder manual" x="1898.96" y="962.599">
    <properties>
     <property name="description">SPARE enemies whose names become YELLOW!
@@ -538,6 +531,13 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Curtain NPC" x="16058.1" y="2046.71">
+   <properties>
+    <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
+    <property name="page" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
