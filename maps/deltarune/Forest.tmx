@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="349" height="165" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="159">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="349" height="165" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="188">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -476,23 +476,30 @@ All further interactions result in Lancer asking if everyone has had enough and 
    </properties>
    <point/>
   </object>
-  <object id="66" name="Lancer" x="8325.5" y="5352.5">
+  <object id="66" name="Lancer" x="8325.5" y="5352">
    <properties>
-    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the party which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="169" name="Lancer" x="7743.5" y="5011">
+   <properties>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the party which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
     <property name="page" value="Lancer"/>
    </properties>
    <point/>
   </object>
   <object id="67" name="Lancer" x="8325.5" y="4670">
    <properties>
-    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the party which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
     <property name="page" value="Lancer"/>
    </properties>
    <point/>
   </object>
   <object id="68" name="Lancer" x="7743.5" y="4329">
    <properties>
-    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the [[party]] which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
+    <property name="description" value="The first time the [[party]] ends up in this room, Lancer asks the party which way they are going next, though [[Ralsei]] tells him that they were following him, to which Lancer asks why because he does not know the correct path. Ralsei tells [[Kris]] to go where Lancer does not go. Upon repeated interaction, Lancer says that he was following the party but &quot;''in reverse''.&quot; If the party comes in here another time, Ralsei reminds Kris to not follow Lancer."/>
     <property name="page" value="Lancer"/>
    </properties>
    <point/>
@@ -518,35 +525,35 @@ All further interactions result in Lancer asking if everyone has had enough and 
    </properties>
    <point/>
   </object>
-  <object id="72" name="Susie" x="7820" y="3097">
+  <object id="72" name="Susie" x="7819" y="3097">
    <properties>
     <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
     <property name="page" value="Susie"/>
    </properties>
    <point/>
   </object>
-  <object id="73" name="Susie" x="8381" y="2657">
+  <object id="73" name="Susie" x="8381" y="2656">
    <properties>
     <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
     <property name="page" value="Susie"/>
    </properties>
    <point/>
   </object>
-  <object id="74" name="Susie" x="8702" y="2657">
+  <object id="74" name="Susie" x="8702" y="2656">
    <properties>
     <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
     <property name="page" value="Susie"/>
    </properties>
    <point/>
   </object>
-  <object id="75" name="Susie" x="7839" y="2216">
+  <object id="75" name="Susie" x="7839" y="2215">
    <properties>
     <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
     <property name="page" value="Susie"/>
    </properties>
    <point/>
   </object>
-  <object id="76" name="Susie" x="8281" y="2216">
+  <object id="76" name="Susie" x="8281" y="2215">
    <properties>
     <property name="description" value="The first time the [[party]] enters the room, Susie expresses confidence that [[Lancer]] was here, though she denies looking for him when [[Ralsei]] asks. She still asks the party to tell her if they see Lancer, however. Ralsei tells [[Kris]] to not go where Susie or Lancer go and that they can help them out after they finish the maze. Any further times the party enters the room, Susie looks for Lancer, and Ralsei reminds Kris to not follow either of them."/>
     <property name="page" value="Susie"/>
@@ -569,38 +576,40 @@ All further interactions result in Lancer asking if everyone has had enough and 
   </object>
  </objectgroup>
  <objectgroup id="14" name="lines">
-  <object id="137" name="Invisible path" x="4177" y="5632" width="140" height="40">
+  <object id="163" name="Invisible path" x="4177" y="5672">
    <properties>
     <property name="color" type="color" value="#ffffffff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
+   <polyline points="0,0 140,0 140,-40 0,-40 0,0"/>
   </object>
-  <object id="153" name="Invisible path" x="4357" y="5672">
+  <object id="162" name="Invisible path" x="4357" y="5672">
    <properties>
     <property name="color" type="color" value="#ffffffff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polygon points="0,0 140,0 140,-120 100,-120 100,-40 0,-40"/>
+   <polyline points="0,0 140,0 140,-120 100,-120 100,-40 0,-40 0,0"/>
   </object>
-  <object id="142" name="Invisible path" x="4818" y="6189" width="40" height="163">
+  <object id="164" name="Invisible path" x="4818" y="6189">
    <properties>
     <property name="color" type="color" value="#ffffffff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
+   <polyline points="0,0 0,163 40,163 40,0 0,0"/>
   </object>
   <object id="158" name="Path to Broken Key B" x="5127" y="6357">
    <properties>
     <property name="color" type="color" value="#ffffff7f"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polyline points="0,6 0,-4 181,-4 181,-15"/>
+   <polyline points="0,20 0,-4 181,-4 181,-29"/>
   </object>
-  <object id="149" name="Walkable area" x="7041" y="5671">
+  <object id="165" name="Walkable area" x="7041" y="5671">
    <properties>
     <property name="color" type="color" value="#ffffffff"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
-   <polygon points="0,0 0,-62 -120,-62 -120,-240 160,-240 160,-62 40,-62 40,0"/>
+   <polyline points="0,0 40,0 40,-62 160,-62 160,-240 -120,-240 -120,-62 0,-62 0,0"/>
   </object>
   <object id="132" name="Entrance to Egg room" x="7061" y="5952">
    <properties>
@@ -629,6 +638,104 @@ All further interactions result in Lancer asking if everyone has had enough and 
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="-1,-1 -12,-10 -1,-19"/>
+  </object>
+  <object id="168" name="Dead-end" x="8122" y="5504">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 201,-13 201,-27"/>
+  </object>
+  <object id="170" name="Dead-end" x="7942" y="5163">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 -201,-13 -201,-27"/>
+  </object>
+  <object id="171" name="Dead-end" x="8122" y="4822">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 201,-13 201,-27"/>
+  </object>
+  <object id="172" name="Dead-end" x="7942" y="4481">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 -201,-13 -201,-27"/>
+  </object>
+  <object id="174" name="Dead-end" x="7982" y="3699">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 -241,-13 -241,-27"/>
+  </object>
+  <object id="175" name="Dead-end" x="8142" y="3699">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 241,-13 241,-27"/>
+  </object>
+  <object id="176" name="Dead-end" x="7982" y="3258">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 -482,-13 -482,-27"/>
+  </object>
+  <object id="177" name="Dead-end" x="8062" y="3258">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-14 -241,-14 -241,-27"/>
+  </object>
+  <object id="178" name="Dead-end" x="8142" y="2817">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-14 241,-14 241,-27"/>
+  </object>
+  <object id="179" name="Dead-end" x="8222" y="2817">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 482,-13 482,-27"/>
+  </object>
+  <object id="180" name="Dead-end" x="7982" y="2376">
+   <properties>
+    <property name="color" type="color" value="#ff5555ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 -141,-13 -141,-27"/>
+  </object>
+  <object id="181" name="Dead-end" x="8142" y="2376">
+   <properties>
+    <property name="color" type="color" value="#ffaa55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-13 141,-13 141,-27"/>
+  </object>
+  <object id="182" name="Maze end" x="8062" y="2376">
+   <properties>
+    <property name="color" type="color" value="#ffffff7f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-279"/>
+  </object>
+  <object id="183" name="Maze-completed skip" x="8050" y="2097">
+   <properties>
+    <property name="color" type="color" value="#ffff55ff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0,24 -742,24 -742,3543 -149,3543 -149,3734 12,3734 12,3781"/>
   </object>
  </objectgroup>
  <objectgroup id="10" name="items">
@@ -839,63 +946,63 @@ Interacting with a Scissor Dancer will produce a unique sound effect with no dia
  <objectgroup id="11" name="enemies">
   <object id="1" name="Rabbick" x="532.5" y="6047.5">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with a Rabbick."/>
+    <property name="description" value="Enemy [[encounter]] against a Rabbick."/>
     <property name="page" value="Rabbick"/>
    </properties>
    <point/>
   </object>
   <object id="2" name="Rabbick" x="841" y="6228.5">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with two Rabbicks."/>
+    <property name="description" value="Enemy [[encounter]] against two Rabbicks."/>
     <property name="page" value="Rabbick"/>
    </properties>
    <point/>
   </object>
   <object id="3" name="Bloxer" x="3080" y="6088">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with a Bloxer."/>
+    <property name="description" value="Enemy [[encounter]] against a Bloxer."/>
     <property name="page" value="Bloxer"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Clover" x="3499.5" y="5981.5">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with Clover."/>
+    <property name="description" value="Enemy [[encounter]] against Clover."/>
     <property name="page" value="Clover#In Battle"/>
    </properties>
    <point/>
   </object>
   <object id="5" name="Bloxer" x="4246.5" y="5650.5">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with two Bloxers. Post-battle, the Bloxers will not approach to start an encounter."/>
+    <property name="description" value="Enemy [[encounter]] against two Bloxers. Post-battle, the Bloxers will not approach to start an encounter."/>
     <property name="page" value="Bloxer"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Rabbick" x="5171" y="6509">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with three Rabbicks."/>
+    <property name="description" value="Enemy [[encounter]] against three Rabbicks."/>
     <property name="page" value="Rabbick"/>
    </properties>
    <point/>
   </object>
   <object id="7" name="Rabbick" x="8076" y="4932.5">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with two Rabbicks."/>
+    <property name="description" value="Enemy [[encounter]] against two Rabbicks."/>
     <property name="page" value="Rabbick"/>
    </properties>
    <point/>
   </object>
   <object id="8" name="Bloxer" x="8073" y="3440">
    <properties>
-    <property name="description" value="Enemy [[encounter]] with a Bloxer."/>
+    <property name="description" value="Enemy [[encounter]] against a Bloxer."/>
     <property name="page" value="Bloxer"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Susie and Lancer" x="8624" y="1955.5">
    <properties>
-    <property name="description" value="Boss [[encounter]] with [[Susie]] and [[Lancer]]."/>
+    <property name="description" value="Boss [[encounter]] against [[Susie]] and [[Lancer]]."/>
    </properties>
    <point/>
   </object>
