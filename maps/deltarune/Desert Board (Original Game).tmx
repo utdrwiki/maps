@@ -6,6 +6,36 @@
  <imagelayer id="2" name="Desert Board (Original Game) map">
   <image source="images/Desert Board (Original Game).png" width="3072" height="2304"/>
  </imagelayer>
+ <objectgroup id="7" name="sublocations">
+  <object id="51" name="Secret Stairs" x="174.873" y="1668.2">
+   <properties>
+    <property name="description" value="A room with many stairwells, all of which lead to the room with the [[Shadow Mantle Holder]]. They disappear upon leaving the secret room, preventing re-entry."/>
+    <property name="page" value="Desert Board (Original Game)#Secret Stairs"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Cold Area" x="2687" y="1531.78">
+   <properties>
+    <property name="description" value="A cold area, initially blocked off and inaccessible on the previous [[Desert Board]]."/>
+    <property name="page" value="Desert Board (Original Game)#Cold Area"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Out of Bounds" x="1705.31" y="1271.08">
+   <properties>
+    <property name="description" value="An infinitely looping room full of trees. Passing into this area prevents re-entry into the main map, and [[HERO_SWORD]] must continue in any direction until they find the [[Ice Key]]."/>
+    <property name="page" value="Desert Board (Original Game)#Out of Bounds"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" x="1104.38" y="1611.76">
+   <properties>
+    <property name="color" type="color" value="#ffcbc83d"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="1.17836,0.117836 1.26215,662.628 -147.551,662.695"/>
+  </object>
+ </objectgroup>
  <objectgroup id="3" name="plot">
   <object id="46" name="Empty room" x="961.871" y="122">
    <properties>
@@ -13,6 +43,29 @@
 * '''Has the [[Sword (Original Game)|Sword]]:''' ''BECOME STRONGER''
 * '''LV 3:''' ''BECAME STRONGER''
 * '''LV MAX (black text):''' ''Having fun?''</property>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="npcs">
+  <object id="44" name="FRIEND eyes" x="576.006" y="122">
+   <properties>
+    <property name="description" value="A pair of pink and yellow eyes, constituting one half of the FRIEND's face. They appear when walking towards the bottom-left tile of the room."/>
+    <property name="page" value="FRIEND"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="FRIEND mouth" x="1344.32" y="122">
+   <properties>
+    <property name="description" value="A mouth, constituting one half of the FRIEND's face. It appears when walking toward the top-right tile of the room."/>
+    <property name="page" value="FRIEND"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Shadow Mantle Holder" x="191.692" y="1397.23">
+   <properties>
+    <property name="description" value="Sits in the center of the room. Flies away when approached, leaving behind black text that reads &quot;See you soon.&quot;"/>
+    <property name="page" value="Shadow Mantle Holder"/>
    </properties>
    <point/>
   </object>
@@ -291,59 +344,6 @@
     <property name="description" value="A Purple Monster. Walks around in random directions, harming [[HERO_SWORD]] when touched."/>
    </properties>
    <point/>
-  </object>
- </objectgroup>
- <objectgroup id="6" name="npcs">
-  <object id="44" name="FRIEND eyes" x="576.006" y="122">
-   <properties>
-    <property name="description" value="A pair of pink and yellow eyes, constituting one half of the FRIEND's face. They appear when walking towards the bottom-left tile of the room."/>
-    <property name="page" value="FRIEND"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="45" name="FRIEND mouth" x="1344.32" y="122">
-   <properties>
-    <property name="description" value="A mouth, constituting one half of the FRIEND's face. It appears when walking toward the top-right tile of the room."/>
-    <property name="page" value="FRIEND"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="50" name="Shadow Mantle Holder" x="191.692" y="1397.23">
-   <properties>
-    <property name="description" value="Sits in the center of the room. Flies away when approached, leaving behind black text that reads &quot;See you soon.&quot;"/>
-    <property name="page" value="Shadow Mantle Holder"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="7" name="sublocations">
-  <object id="51" name="Secret Stairs" x="174.873" y="1668.2">
-   <properties>
-    <property name="description" value="A room with many stairwells, all of which lead to the room with the [[Shadow Mantle Holder]]. They disappear upon leaving the secret room, preventing re-entry."/>
-    <property name="page" value="Desert Board (Original Game)#Secret Stairs"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="52" name="Cold Area" x="2687" y="1531.78">
-   <properties>
-    <property name="description" value="A cold area, initially blocked off and inaccessible on the previous [[Desert Board]]."/>
-    <property name="page" value="Desert Board (Original Game)#Cold Area"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="53" name="Out of Bounds" x="1705.31" y="1271.08">
-   <properties>
-    <property name="description" value="An infinitely looping room full of trees. Passing into this area prevents re-entry into the main map, and [[HERO_SWORD]] must continue in any direction until they find the [[Ice Key]]."/>
-    <property name="page" value="Desert Board (Original Game)#Out of Bounds"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="54" x="1104.38" y="1611.76">
-   <properties>
-    <property name="color" type="color" value="#ffcbc83d"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="1.17836,0.117836 1.26215,662.628 -147.551,662.695"/>
   </object>
  </objectgroup>
 </map>

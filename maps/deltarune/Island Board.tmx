@@ -7,6 +7,65 @@
  <imagelayer id="2" name="Island Board map">
   <image source="images/Island Board.png" width="4224" height="4096"/>
  </imagelayer>
+ <objectgroup id="4" name="vendors">
+  <object id="14" name="Pippins" x="958.707" y="3877.75">
+   <properties>
+    <property name="description" value="Sells [[items]] in their shop. Taking a picture of them rewards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Key" x="879.854" y="3980">
+   <properties>
+    <property name="description" value="An item available in the [[Pippins]]'s shop for 250 [[POINT]]s. Since keys have no function on the Island Board, it is immediately discarded on purchase, after which the Pippins flees."/>
+    <property name="page" value="Key (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="TV Dinner" x="1039.64" y="3980">
+   <properties>
+    <property name="description" value="An [[item]] available in the [[Pippins]]'s shop for 400 [[POINT]]s. If the [[Key (The Legend of Tenna)|Key]] is bought, this item is available for free."/>
+    <property name="page" value="TV Dinner"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Rouxls Kaard" x="575.589" y="3859.06">
+   <properties>
+    <property name="description" value="Sells the [[Rouxls Block]] in his shop. Taking a picture of him deducts 1 [[POINT]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Rouxls Block" x="495.509" y="3980">
+   <properties>
+    <property name="description" value="An [[item]] available in [[Rouxls Kaard]]'s shop for 1 [[POINT]]."/>
+    <property name="page" value="Rouxls Block"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Binoculars" x="1391.91" y="2901.91">
+   <properties>
+    <property name="description" value="Offers a view of the Atlantis Stadium for 10 [[POINT]]s. After taking a look, [[Susie]] throws the binoculars into the water."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Pippins" x="2111.09" y="3621.88">
+   <properties>
+    <property name="description" value="Sells [[Lancer]] in their shop. Taking a picture of them awards 10 [[POINT]]s."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Pippins" x="3262.81" y="3877.34">
+   <properties>
+    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] in their shop."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Pippins" x="4030.81" y="3879.08">
+   <properties>
+    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] and the [[Pizza Deodorant (For Nerds)]] in their shop."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="12" name="sublocations">
   <object id="2" name="Kodakoda Shrine" x="3262.62" y="1923.27">
    <properties>
@@ -106,6 +165,41 @@
    <polyline points="0,0 -0.379355,-1632.44 -38.6954,-1632.58"/>
   </object>
  </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="20" name="Lawnmower Minigame" x="186.638" y="3191.78">
+   <properties>
+    <property name="description" value="A minigame involving pushing a lawnmower over grass tiles to gain [[POINT]]s."/>
+    <property name="page" value="Island Board#Lawnmower Minigame"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Bridge Puzzle 1" x="1968.35" y="3517.79">
+   <properties>
+    <property name="description" value="A puzzle that [[Susie]] solves automatically."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Camera indicator" x="1999.9" y="3247.42">
+   <properties>
+    <property name="description" value="A [[camera]] roadblock that can be removed by taking a picture of it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Bridge Puzzle 2" x="2352.05" y="3281.64">
+   <properties>
+    <property name="description" value="A puzzle involving constructing a bridge across the lake. Upon entering this room, [[Susie]] switches out her and [[Kris]]'s controller ports, allowing Kris to solve the puzzle using [[HERO_AXE]]."/>
+    <property name="page" value="Island Board#Water Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Bridge Puzzle 3" x="2512.49" y="2927.95">
+   <properties>
+    <property name="description" value="A puzzle that [[Susie]] solves automatically if she is controlling [[HERO_AXE]]."/>
+    <property name="page" value="Island Board#Water Puzzle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="3" name="plot">
   <object id="30" name="Tenna's phone call" x="2415.45" y="3537.88">
    <properties>
@@ -140,114 +234,6 @@
   <object id="57" name="Rainbow Bridge" x="1727.2" y="2514.49">
    <properties>
     <property name="description" value="Upon entering this area with [[Elnina (The Legend of Tenna)|Elnina]]/[[Lanino (The Legend of Tenna)|Lanino]], it is revealed that [[Rouxls Kaard]] has paired up with [[Lanino]]/[[Elnina]] in the other's absence. The three agree to form a &quot;throuple&quot; and construct the rainbow bridge to the Atlantis Stadium."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="11" name="hazards">
-  <object id="10" name="Shadowguy" x="1648.33" y="3467.76">
-   <properties>
-    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs. After five pictures are taken, the Shadowguy is replaced with a bunny-eared Shadowguy that awards 25 POINTs if a picture is taken of it."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="11" name="Shadowguy" x="1648.72" y="2987.75">
-   <properties>
-    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="4" name="vendors">
-  <object id="14" name="Pippins" x="958.707" y="3877.75">
-   <properties>
-    <property name="description" value="Sells [[items]] in their shop. Taking a picture of them rewards 10 [[POINT]]s."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="15" name="Key" x="879.854" y="3980">
-   <properties>
-    <property name="description" value="An item available in the [[Pippins]]'s shop for 250 [[POINT]]s. Since keys have no function on the Island Board, it is immediately discarded on purchase, after which the Pippins flees."/>
-    <property name="page" value="Key (The Legend of Tenna)"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="16" name="TV Dinner" x="1039.64" y="3980">
-   <properties>
-    <property name="description" value="An [[item]] available in the [[Pippins]]'s shop for 400 [[POINT]]s. If the [[Key (The Legend of Tenna)|Key]] is bought, this item is available for free."/>
-    <property name="page" value="TV Dinner"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="17" name="Rouxls Kaard" x="575.589" y="3859.06">
-   <properties>
-    <property name="description" value="Sells the [[Rouxls Block]] in his shop. Taking a picture of him deducts 1 [[POINT]]."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="18" name="Rouxls Block" x="495.509" y="3980">
-   <properties>
-    <property name="description" value="An [[item]] available in [[Rouxls Kaard]]'s shop for 1 [[POINT]]."/>
-    <property name="page" value="Rouxls Block"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="23" name="Binoculars" x="1391.91" y="2901.91">
-   <properties>
-    <property name="description" value="Offers a view of the Atlantis Stadium for 10 [[POINT]]s. After taking a look, [[Susie]] throws the binoculars into the water."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="24" name="Pippins" x="2111.09" y="3621.88">
-   <properties>
-    <property name="description" value="Sells [[Lancer]] in their shop. Taking a picture of them awards 10 [[POINT]]s."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="28" name="Pippins" x="3262.81" y="3877.34">
-   <properties>
-    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] in their shop."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="32" name="Pippins" x="4030.81" y="3879.08">
-   <properties>
-    <property name="description" value="Gives away a [[Ribbon (The Legend of Tenna)|ribbon]] and the [[Pizza Deodorant (For Nerds)]] in their shop."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="puzzles">
-  <object id="20" name="Lawnmower Minigame" x="186.638" y="3191.78">
-   <properties>
-    <property name="description" value="A minigame involving pushing a lawnmower over grass tiles to gain [[POINT]]s."/>
-    <property name="page" value="Island Board#Lawnmower Minigame"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="26" name="Bridge Puzzle 1" x="1968.35" y="3517.79">
-   <properties>
-    <property name="description" value="A puzzle that [[Susie]] solves automatically."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="27" name="Camera indicator" x="1999.9" y="3247.42">
-   <properties>
-    <property name="description" value="A [[camera]] roadblock that can be removed by taking a picture of it."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="31" name="Bridge Puzzle 2" x="2352.05" y="3281.64">
-   <properties>
-    <property name="description" value="A puzzle involving constructing a bridge across the lake. Upon entering this room, [[Susie]] switches out her and [[Kris]]'s controller ports, allowing Kris to solve the puzzle using [[HERO_AXE]]."/>
-    <property name="page" value="Island Board#Water Puzzle"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="40" name="Bridge Puzzle 3" x="2512.49" y="2927.95">
-   <properties>
-    <property name="description" value="A puzzle that [[Susie]] solves automatically if she is controlling [[HERO_AXE]]."/>
-    <property name="page" value="Island Board#Water Puzzle"/>
    </properties>
    <point/>
   </object>
@@ -395,6 +381,20 @@
    <properties>
     <property name="description" value="A cosmetic [[item]] that [[Kris]] can equip to [[HERO_SWORD]]."/>
     <property name="page" value="Ribbon (The Legend of Tenna)"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="hazards">
+  <object id="10" name="Shadowguy" x="1648.33" y="3467.76">
+   <properties>
+    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs. After five pictures are taken, the Shadowguy is replaced with a bunny-eared Shadowguy that awards 25 POINTs if a picture is taken of it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Shadowguy" x="1648.72" y="2987.75">
+   <properties>
+    <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs."/>
    </properties>
    <point/>
   </object>

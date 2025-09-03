@@ -1,11 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="29">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="29">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
  <imagelayer id="2" name="Island Board (Original Game) map">
   <image source="images/Island Board (Original Game).png" width="4224" height="4096"/>
  </imagelayer>
+ <objectgroup id="6" name="sublocations">
+  <object id="14" name="Tropic of Love" x="3264.67" y="3965.98">
+   <properties>
+    <property name="description" value="A heart-shaped island. Contains an entrance to a secret room containing [[Tenna]]."/>
+    <property name="page" value="Island Board (Original Game)#Tropic of Love"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" x="2253.98" y="3146.17">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 64.08,0.0659938 63.4209,415.799 240.938,415.82"/>
+  </object>
+  <object id="19" x="1630.93" y="3147.07">
+   <properties>
+    <property name="color" type="color" value="#ff5023d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.282181,417.873 1245.4,418.02"/>
+  </object>
+  <object id="21" x="1422.91" y="3760.14">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 1071.92,-0.118002 1072.04,-198.157 1072.02,-125.019 193.967,-124.973"/>
+  </object>
+  <object id="25" x="1071.04" y="2925.54">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.14645,969.664 1423.71,969.512 1423.86,636.428 1423.62,897.458 132.764,897.598 132.764,836.108"/>
+  </object>
+  <object id="26" x="205.811" y="3147.7">
+   <properties>
+    <property name="color" type="color" value="#ff632323"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.101263,861.985 2288.86,861.977 2288.91,414.218"/>
+  </object>
+  <object id="27" x="3311.27" y="3950.6">
+   <properties>
+    <property name="color" type="color" value="#ffff75d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0805615,-671.669 -66.1931,-671.618"/>
+  </object>
+  <object id="28" x="2110.68" y="2862.26">
+   <properties>
+    <property name="color" type="color" value="#ff78a347"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0760056,-699.115 1970.15,-699.197"/>
+  </object>
+ </objectgroup>
  <objectgroup id="3" name="plot">
   <object id="12" name="GO TO NORTHERN LIGHT" x="2495.18" y="3459.49">
    <properties>
@@ -24,6 +82,15 @@
   <object id="15" name="Tenna" x="3403.54" y="2929.06">
    <properties>
     <property name="description" value="Is seen in an unreachable part of the room. He desperately wonders if he is doing the right thing by basing his games on the [[Sword Route]] boards. He flees once [[HERO_SWORD]] attempts to approach."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="11" name="Sword" x="2879.11" y="3419.73">
+   <properties>
+    <property name="description" value="A sword in what used to be the [[camera]] room. Allows [[HERO_SWORD]] to kill the enemies on the board."/>
+    <property name="page" value="Sword (Original Game)"/>
    </properties>
    <point/>
   </object>
@@ -90,78 +157,13 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="5" name="items">
-  <object id="11" name="Sword" x="2879.11" y="3419.73">
-   <properties>
-    <property name="description" value="A sword in what used to be the [[camera]] room. Allows [[HERO_SWORD]] to kill the enemies on the board."/>
-    <property name="page" value="Sword (Original Game)"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="6" name="sublocations">
-  <object id="14" name="Tropic of Love" x="3264.67" y="3965.98">
-   <properties>
-    <property name="description" value="A heart-shaped island. Contains an entrance to a secret room containing [[Tenna]]."/>
-    <property name="page" value="Island Board (Original Game)#Tropic of Love"/>
-   </properties>
-   <point/>
-  </object>
+ <objectgroup id="8" name="connections">
   <object id="16" name="Ice Palace" x="1343.87" y="104.599">
    <properties>
     <property name="description" value="A dungeon on the Island Board. Requires the [[Ice Key]] to enter, which is retrieved on the [[Desert Board (Original Game)|Desert Board]]."/>
     <property name="page" value="Ice Palace"/>
    </properties>
    <point/>
-  </object>
-  <object id="18" x="2253.98" y="3146.17">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 64.08,0.0659938 63.4209,415.799 240.938,415.82"/>
-  </object>
-  <object id="19" x="1630.93" y="3147.07">
-   <properties>
-    <property name="color" type="color" value="#ff5023d3"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.282181,417.873 1245.4,418.02"/>
-  </object>
-  <object id="21" x="1422.91" y="3760.14">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 1071.92,-0.118002 1072.04,-198.157 1072.02,-125.019 193.967,-124.973"/>
-  </object>
-  <object id="25" x="1071.04" y="2925.54">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.14645,969.664 1423.71,969.512 1423.86,636.428 1423.62,897.458 132.764,897.598 132.764,836.108"/>
-  </object>
-  <object id="26" x="205.811" y="3147.7">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.101263,861.985 2288.86,861.977 2288.91,414.218"/>
-  </object>
-  <object id="27" x="3311.27" y="3950.6">
-   <properties>
-    <property name="color" type="color" value="#ffff75d3"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.0805615,-671.669 -66.1931,-671.618"/>
-  </object>
-  <object id="28" x="2110.68" y="2862.26">
-   <properties>
-    <property name="color" type="color" value="#ff78a347"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 0.0760056,-699.115 1970.15,-699.197"/>
   </object>
  </objectgroup>
 </map>

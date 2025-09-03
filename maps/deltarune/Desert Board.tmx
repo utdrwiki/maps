@@ -7,32 +7,40 @@
  <imagelayer id="2" name="Desert Board map">
   <image source="images/Desert Board.png" width="1920" height="3328"/>
  </imagelayer>
- <objectgroup id="10" name="hazards">
-  <object id="22" name="Falling rocks" x="959.505" y="2224.29">
-   <properties>
-    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
-   </properties>
-   <point/>
-  </object>
-  <object id="29" name="Falling rocks" x="574.656" y="2738.21">
-   <properties>
-    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="3" name="plot">
-  <object id="37" name="Unlocking the Pyramid" x="959.682" y="1352.92">
-   <properties>
-    <property name="description" value="The objective of the Desert Board is to unlock the entrance to the pyramid and complete a Physical Challenge."/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
  <objectgroup id="4" name="vendors">
   <object id="35" name="Tenna" x="1343.55" y="1050.85">
    <properties>
     <property name="description" value="Sells [[items]] in his shop."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="sublocations">
+  <object id="28" name="Secret Mailroom" x="959.196" y="2953.71">
+   <properties>
+    <property name="description" value="A mailroom, used to store [[Tenna]]'s fan mail. When Tenna discovers it is empty, he cuts the room from the board."/>
+    <property name="page" value="Desert Board#Secret Mailroom"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" x="1104.74" y="2637.17">
+   <properties>
+    <property name="color" type="color" value="#ffffffff"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.041923,658.839 -145.405,658.866"/>
+  </object>
+  <object id="32" x="1088.88" y="1392.82">
+   <properties>
+    <property name="color" type="color" value="#ffff75d3"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 256.486,-0.0571408 256.535,-158.94"/>
+  </object>
+  <object id="38" name="Inside the Pyramid" x="962.165" y="633.926">
+   <properties>
+    <property name="description" value="Contains a doorway leading to the board's Physical Challenge, the [[Cooking Show]]."/>
+    <property name="page" value="Desert Board#Pyramid"/>
    </properties>
    <point/>
   </object>
@@ -98,32 +106,10 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="11" name="sublocations">
-  <object id="28" name="Secret Mailroom" x="959.196" y="2953.71">
+ <objectgroup id="3" name="plot">
+  <object id="37" name="Unlocking the Pyramid" x="959.682" y="1352.92">
    <properties>
-    <property name="description" value="A mailroom, used to store [[Tenna]]'s fan mail. When Tenna discovers it is empty, he cuts the room from the board."/>
-    <property name="page" value="Desert Board#Secret Mailroom"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="31" x="1104.74" y="2637.17">
-   <properties>
-    <property name="color" type="color" value="#ffffffff"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.041923,658.839 -145.405,658.866"/>
-  </object>
-  <object id="32" x="1088.88" y="1392.82">
-   <properties>
-    <property name="color" type="color" value="#ffff75d3"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 256.486,-0.0571408 256.535,-158.94"/>
-  </object>
-  <object id="38" name="Inside the Pyramid" x="962.165" y="633.926">
-   <properties>
-    <property name="description" value="Contains a doorway leading to the board's Physical Challenge, the [[Cooking Challenge]]."/>
-    <property name="page" value="Desert Board#Pyramid"/>
+    <property name="description" value="The objective of the Desert Board is to unlock the entrance to the pyramid and complete a Physical Challenge."/>
    </properties>
    <point/>
   </object>
@@ -246,6 +232,20 @@
    <properties>
     <property name="description" value="An item available in [[Tenna]]'s shop. Initially costs 10 [[POINT]]s, but the price increases the further along the [[party]] is on the board progression."/>
     <property name="page" value="TV Dinner"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="hazards">
+  <object id="22" name="Falling rocks" x="959.505" y="2224.29">
+   <properties>
+    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Falling rocks" x="574.656" y="2738.21">
+   <properties>
+    <property name="description" value="While crossing the bridge, boulders continuously fall and damage the [[party]] if they get hit."/>
    </properties>
    <point/>
   </object>
