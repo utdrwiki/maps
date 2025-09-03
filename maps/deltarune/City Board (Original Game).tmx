@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="96" height="32" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="4">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="96" height="32" tilewidth="32" tileheight="32" infinite="0" nextlayerid="8" nextobjectid="5">
  <properties>
   <property name="include" value="Map:Common Data"/>
  </properties>
@@ -7,27 +7,35 @@
   <image source="images/City Board (Original Game).png" width="3072" height="1024"/>
  </imagelayer>
  <objectgroup id="3" name="plot">
-  <object id="2" name="HERO_SWORD's party" x="959.843" y="128.041">
+  <object id="2" name="HERO_SWORD's party" x="960" y="128">
    <properties>
     <property name="description" value="Unlike the previous boards on the [[Sword Route]], [[HERO_SWORD]] begins the game with [[HERO_AXE]] and [[HERO_SCARF]] following them. Once they get the [[Sword (Original Game)|sword]], however, they must be killed in order for HERO_SWORD to become strong enough to continue into the [[Manhole Dungeon]]."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="4" name="sublocations">
-  <object id="3" name="Manhole Dungeon" x="2960.89" y="401.698">
+ <objectgroup id="5" name="items">
+  <object id="1" name="Sword" x="2111" y="597">
    <properties>
-    <property name="description" value="Manhole leading into an underground dungeon."/>
-    <property name="page" value="Manhole Dungeon"/>
+    <property name="description" value="A sword in an underground chamber. Allows [[HERO_SWORD]] to kill their party members and enemies in the [[Manhole Dungeon]]."/>
+    <property name="page" value="Sword (Original Game)"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="5" name="items">
-  <object id="1" name="Sword" x="2110.81" y="600.65">
+ <objectgroup id="6" name="hazards">
+  <object id="4" name="Cactus" x="576" y="113">
    <properties>
-    <property name="description" value="A sword in an underground chamber. Allows [[HERO_SWORD]] to kill their party members and enemies in the [[Manhole Dungeon]]."/>
-    <property name="page" value="Sword (Original Game)"/>
+    <property name="description" value="The cactus can be used to kill [[HERO_SWORD]] if the [[player]] wishes to exit the scenario without killing their party members."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="connections">
+  <object id="3" name="Manhole Dungeon" x="2960" y="400">
+   <properties>
+    <property name="description" value="Manhole providing a one-way connection to an underground dungeon."/>
+    <property name="page" value="Manhole Dungeon"/>
    </properties>
    <point/>
   </object>
