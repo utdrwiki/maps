@@ -1,5 +1,7 @@
 import { getStringProperty, getWikiUrl } from './util.mjs';
 
+const USER_AGENT = `tiled-datamaps/1.0 (https://github.com/utdrwiki/maps; admin@undertale.wiki) tiled/${tiled.version}`;
+
 /**
  * Retrieves the URL to the wiki's Action API from project properties.
  * @param {string} language Language code for the wiki
@@ -57,6 +59,7 @@ export function httpGet(baseUrl, params = {}, accessToken = null) {
             xhr.setRequestHeader('Authorization', `Bearer ${accessToken}`);
         }
         xhr.onreadystatechange = readyStateChange(xhr, resolve, reject);
+        xhr.setRequestHeader('User-Agent', USER_AGENT);
         xhr.send();
     });
 }
@@ -77,6 +80,7 @@ export function httpPost(baseUrl, params = {}, accessToken = null) {
         }
         xhr.onreadystatechange = readyStateChange(xhr, resolve, reject);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.setRequestHeader('User-Agent', USER_AGENT);
         xhr.send(new URLSearchParams(params).toString());
     });
 }
