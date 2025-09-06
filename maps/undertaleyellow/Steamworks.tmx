@@ -144,7 +144,7 @@ This is skipped in the [[Genocide Route]].</property>
   </object>
   <object id="136" name="Mr. Screen encounter 3" x="6191.67" y="1928">
    <properties>
-    <property name="description" value="Mr. Screen loudly interrupts [[Ceroba]] when she is hiding from [[Axis]]. She kills her"/>
+    <property name="description" value="Mr. Screen loudly interrupts [[Ceroba]] when she is hiding from [[Axis]]. She shatters his screen mid-word."/>
     <property name="page" value="Mr. Screen"/>
    </properties>
    <point/>
