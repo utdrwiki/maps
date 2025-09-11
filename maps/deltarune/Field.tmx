@@ -8,6 +8,9 @@
   <image source="images/Field.png" width="6565" height="1602"/>
  </imagelayer>
  <objectgroup id="4" name="warpdoor">
+  <properties>
+   <property name="zh_name" value="平原"/>
+  </properties>
   <object id="63" name="Field Warp Door" x="5235" y="1118">
    <properties>
     <property name="description">Reaching the Forest Warp Door will activate this Warp Door. It can be used to travel to the following locations:
@@ -15,6 +18,12 @@
 * Bake Sale
 * Castle</property>
     <property name="page" value="Warp Door"/>
+    <property name="zh_description">到達位於森林的傳送門即可啟動此傳送門。它可用於前往以下地點：
+* 森林
+* 森林烘焙坊
+* 卡片城堡</property>
+    <property name="zh_name" value="傳送門"/>
+    <property name="zh_page" value="傳送門"/>
    </properties>
    <point/>
   </object>
@@ -30,12 +39,23 @@
 
 Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement of [[Card Castle]], and will give [[Broken Key A]] to start the process of unlocking his cell, as well as giving a hint for [[Broken Key B]].</property>
     <property name="page" value="Vendors"/>
+    <property name="zh_description">[[Seam]] 在這裡經營著一家名為&quot;Seap&quot;的商店。店內販售以下商品：
+* [[黑暗糖果]]
+* [[黑暗漢堡]]
+* [[防身卡片]]
+* [[嚇人的劍]]
+
+可以與 Seam 談論[[卡片城堡]]地下室裡的[[Jevil|奇怪的囚犯]]，他會給小隊[[損壞鑰匙 A]] 來解鎖他的牢房，同時也會給出[[損壞鑰匙 B]] 的提示。</property>
+    <property name="zh_name" value="Seam 的商店"/>
+    <property name="zh_page" value=":Category:商店"/>
    </properties>
    <point/>
   </object>
   <object id="57" name="Donation Hole" x="4575" y="1130">
    <properties>
     <property name="description" value="The Donation Hole allows [[Kris]] to insert money into it. Upon inserting 1 [[Dark Dollar]], the Donation Hole will become &quot;Full.&quot;"/>
+    <property name="zh_description" value="贊助洞允許 [[Kris]] 投入金錢。投入一塊[[黑暗幣]]後，贊助洞將&quot;滿出來&quot;。"/>
+    <property name="zh_name" value="贊助洞"/>
    </properties>
    <point/>
   </object>
@@ -46,6 +66,9 @@ Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement 
     <property name="description">(Enemies ahead! You're gonna die!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(前方有敵人！你們受死吧！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -54,6 +77,9 @@ Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement 
     <property name="description">(If you're reading this... I guess you're dead.)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(如果你在讀這個...我猜你應該已經死了。)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -63,6 +89,9 @@ Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement 
 It's a work in progress!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(喂，別看這塊牌子！還沒完工呢！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -73,6 +102,11 @@ It's a work in progress!)
 (You got it!?)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(這種樹上&quot;沒有&quot;可以治療你的物品。)
+(不管你做什麼，別檢查這棵樹然後按[(選單)]打開你的選單！)
+(你明白了嗎！？)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -81,6 +115,9 @@ It's a work in progress!)
     <property name="description">Check the clock.
 In order to solve this puzzle, you'll have to hurry.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">檢查時鐘。
+要解決這個謎題，你必須要儘快。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -90,6 +127,9 @@ In order to solve this puzzle, you'll have to hurry.</property>
 (Prepare to GET LOST, clowns!!!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(看吧，這就是死亡迷宮！準備好迷失吧，小鬼們！！！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -99,6 +139,10 @@ In order to solve this puzzle, you'll have to hurry.</property>
 (Your sense of direction won't save you now!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(是不是已經迷路了！？面對這些七彎八拐你們只會感到無比的絕望！)
+(你們的方向感已經不再起效了！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -107,6 +151,9 @@ In order to solve this puzzle, you'll have to hurry.</property>
     <property name="description">(Hey, wait!! Where am I!? Help! Somebody help! I'm lost!!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(嘿，等下！！我在哪！？救命！誰來救救我！！我迷路啦！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -115,6 +162,9 @@ In order to solve this puzzle, you'll have to hurry.</property>
     <property name="description">(Hey, don't look! This sign's private!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(嘿，別看！這可是私人告示！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -123,6 +173,9 @@ In order to solve this puzzle, you'll have to hurry.</property>
     <property name="description">(Oh, it's just this way.)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(哦，就是這條路呀。)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -131,6 +184,9 @@ In order to solve this puzzle, you'll have to hurry.</property>
     <property name="description">(Heheheheh!!! I sneaked by and made a sign!!)
 (SIGNED, LANCER)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(呵呵呵呵！我偷偷溜過來立了這塊告示牌！！)
+(Lancer 留)</property>
+    <property name="zh_name" value="Lancer 的告示牌"/>
    </properties>
    <point/>
   </object>
@@ -141,6 +197,11 @@ $1 - Monthly tutorial, weekly.
 $10 - Weekly tutorial, monthly.
 $100 - Stop making tutorials.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">贊助目標
+$1 - 每月教學，一週一次。
+$10 - 每週教學，一月一次。
+$100 - 停止做教學。</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -149,6 +210,9 @@ $100 - Stop making tutorials.</property>
     <property name="description">(The puzzle description has been smashed and graffiti'd.)
 (... but the graffiti is written in overwrought gothic calligraphy...)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(謎題描述不但被砸碎還遭到了塗鴉。)
+(...但是塗鴉是用一種粗獷的哥德式筆跡寫的...)</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -159,6 +223,11 @@ $100 - Stop making tutorials.</property>
 
 (Really emphasizing that it's impossible if you haven't been there...)</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(卡片城堡房間從下往上的順序。)
+(你要是沒有去過肯定不知道。)
+
+(必須強調，沒有去過的人是絕對不可能知道的...)</property>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -173,6 +242,11 @@ The power of adventures shines within you.
 The power of backtracking shines within you.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description">'''一開始：'''當那扇門在你身後關上時，你的冒險就真正開始了...冒險的力量在你內心閃耀著。
+
+'''Susie 回到小隊：'''門依舊緊閉著。原路返回的力量在你內心閃耀著。</property>
+    <property name="zh_name" value="平原 — 大門"/>
+    <property name="zh_page" value="存檔點列表"/>
    </properties>
    <point/>
   </object>
@@ -180,6 +254,9 @@ The power of backtracking shines within you.</property>
    <properties>
     <property name="description" value="SAVE Point in the Maze of Death."/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description" value="死亡迷宮的存檔點"/>
+    <property name="zh_name" value="平原 — 死亡迷宮"/>
+    <property name="zh_page" value="存檔點列表"/>
    </properties>
    <point/>
   </object>
@@ -192,6 +269,12 @@ The power of mean girls shines within you.
 The power of mean girls does not shine within you.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description">'''一開始：'''Susie，紫色的暴力者，現在是你的同伴了。壞女孩的力量在你的內心閃耀。
+
+
+'''Susie 離開小隊：'''Susie，紫色的暴力者，又馬上離開了你的隊伍。壞女孩的力量沒有在你的內心閃耀。</property>
+    <property name="zh_name" value="平原 — Seam 的商店"/>
+    <property name="zh_page" value="存檔點列表"/>
    </properties>
    <point/>
   </object>
@@ -200,24 +283,36 @@ The power of mean girls does not shine within you.</property>
   <object id="26" name="Timed puzzle" x="3152.5" y="903">
    <properties>
     <property name="description" value="The path ahead is blocked by spikes. [[Kris]] and [[Ralsei]] must press the buttons in the right order before the time runs out to proceed. Kris has to press the button on the right, followed by both it and the upper button with the help of Ralsei, followed by pressing both lower buttons together."/>
+    <property name="zh_description">前方道路被尖刺擋住。 [[Kris]] 和 [[Ralsei]] 必須在時間耗盡前按正確順序按下按鈕才能前進。
+
+Kris 必須先按下右側的按鈕，然後在 Ralsei 的幫助下按下右側和上方的按鈕，最後同時按下下方的兩個按鈕。</property>
+    <property name="zh_name" value="時間謎題一"/>
    </properties>
    <point/>
   </object>
   <object id="43" name="Timed puzzle" x="4499.5" y="1343">
    <properties>
     <property name="description" value="This is another timed puzzle where the [[party]] must step on the right tiles in the right order within the time provided. Solving the puzzle unlocks the door in the next room. However, the final step of the puzzle requires three tiles to be pressed, which is impossible with just [[Kris]] and [[Ralsei]]. If they keep failing at it, Ralsei will tell Kris that they might be missing something, and ask you to continue to the next room. [[Susie]] can temporarily join the party there to aid with this puzzle so she can also get through. The puzzle requires pressing the tile to the right first, the two tiles on the top, and finally all three tiles on the right."/>
+    <property name="zh_description">這是另一個限時謎題，[[小隊]] 必須在規定時間內以正確順序踩到正確的方塊。解開謎題後，下一個房間的門就會打開。然而，謎題的最後一步需要踩下三塊方塊，而僅靠 [[Kris]] 和 [[Ralsei]] 是無法完成的。
+
+若一直失敗，Ralsei 會告訴 Kris 可能漏掉了什麼東西，並建議繼續前往下一個房間。 [[Susie]] 可以暫時加入隊伍，協助解謎，這樣她自己也能順利通過。這個謎題需要先踩下右邊的方塊，然後是頂部的兩塊方塊，最後是右邊的所有三塊方塊。</property>
+    <property name="zh_name" value="時間謎題二"/>
    </properties>
    <point/>
   </object>
   <object id="66" name="Box puzzle" x="5827.5" y="1185.5">
    <properties>
     <property name="description" value="Upon walking into this room, [[Ralsei]] exclaims his excitement for another puzzle, with [[Susie]] expressing the opposite reaction. Ralsei tries to read the instructions, but they were vandalized by someone signing with [[Rouxls Kaard|RK]]. In order to solve the puzzle, [[Kris]] needs to move the boxes onto the two opposite upper corners by using the Confirm button."/>
+    <property name="zh_description" value="走進這個房間後，[[Ralsei]] 興奮地喊道下一個謎題，而[[Susie]] 的反應卻截然相反。當 Ralsei 試著閱讀說明，但說明被一個用 [[Rouxls Kaard|RK]] 簽名的人破壞了。為了解開謎題，[[Kris]] 需要按下[(確認)]按鈕，將盒子移到兩個相對的上角。"/>
+    <property name="zh_name" value="箱子謎題"/>
    </properties>
    <point/>
   </object>
   <object id="72" name="Four-slot card suit puzzle" x="6289" y="630">
    <properties>
     <property name="description" value="To lower the spikes to the right of the puzzle, [[Kris]] must enter the suits in the same order as the suits represented by the rooms in [[Card Castle]], from bottom to top. This order is Diamond, Heart, Club, and Spade. The in game order would be Diamond, Swap, Diamond, Spade, Swap, and finally Spade."/>
+    <property name="zh_description" value="要放下謎題右側的尖刺，[[Kris]] 必須按照[[卡片城堡]]中房間所代表的花色順序，從下到上依次輸入花色。此順序為♦️、♥️、♣️、♠️。遊戲中的按壓順序為♦️、⇄、♦️、♠️、⇄，最後是♠️。"/>
+    <property name="zh_name" value="四張花色謎題"/>
    </properties>
    <point/>
   </object>
@@ -227,6 +322,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="After [[Ralsei]] explains how to get through battles to [[Kris]], they enter through the [[Great Door]] to commence their adventure."/>
     <property name="page" value="Castle Town"/>
+    <property name="zh_description" value="在 [[Ralsei]] 向 [[Kris]] 解釋瞭如何[[遭遇戰|戰鬥]]後，他們穿過[[大門]]開始他們的冒險。"/>
+    <property name="zh_name" value="大門"/>
+    <property name="zh_page" value="城堡小鎮"/>
    </properties>
    <point/>
   </object>
@@ -234,24 +332,33 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="When entering this room, an indicator that the song &quot;''The Field of Hopes and Dreams''&quot; is currently playing will appear."/>
     <property name="page" value="Field of Hopes and Dreams"/>
+    <property name="zh_description" value="第一次進入這個區域時，會出現正在播放歌曲&quot;充滿夢想與希望的平原&quot;的字樣。"/>
+    <property name="zh_name" value="充滿夢想與希望的平原"/>
+    <property name="zh_page" value="充滿夢想與希望的平原"/>
    </properties>
    <point/>
   </object>
   <object id="19" name="Lancer's warning" x="1770" y="1026">
    <properties>
     <property name="description" value="[[Lancer]] warns the [[party]] that proceeding further will have his troops attack."/>
+    <property name="zh_description" value="[[Lancer]] 警告[[小隊]]繼續前進將會遭到他的手下攻擊。"/>
+    <property name="zh_name" value="Lancer 的警告"/>
    </properties>
    <point/>
   </object>
   <object id="44" name="Susie joins the party" x="4894" y="1407">
    <properties>
     <property name="description" value="When [[Kris]] and [[Ralsei]] walk towards [[Susie]], they will find her complaining about the door not opening. Ralsei tells Susie that in order to progress, she will have to help them solve the puzzle in the previous room. This will cause Susie to join the [[party]], with a [[Fanfare (from Rose of Winter)|long fanfare]] playing in the background. When the fanfare ends, Susie will walk away to follow at a distance at which she does not seem to be associated, which cause the fanfare to play again but slower."/>
+    <property name="zh_description" value="當 [[Kris]] 和 [[Ralsei]] 走向 [[Susie]] 時，他們會發現她正在抱怨門打不開。Ralsei 告訴 Susie 必須幫助他們解決上一個房間的謎題才能繼續前進，這會促使Susie 加入[[小隊]]，背景中會響起一段[[大張旗鼓 (來自 Rose of Winter)|長號角聲]]。當長號角結束後，Susie 會感到尷尬並離開，這會導致長號角再次響起，但速度較慢。"/>
+    <property name="zh_name" value="Susie 加入了隊伍"/>
    </properties>
    <point/>
   </object>
   <object id="49" name="Ralsei explains heroism to Susie" x="4898" y="1213.5">
    <properties>
     <property name="description" value="[[Ralsei]] tries to explain to [[Susie]] that as heroes, they can go by through battles peacefully, explaining how they can make enemies tired to PACIFY them. Susie dismisses Ralsei's words, and instead makes fun of him. Ralsei then whispers to [[Kris]] how they should WARN enemies of her attacks."/>
+    <property name="zh_description" value="[[Ralsei]] 試圖向 [[Susie]] 解釋作為英雄，他們可以和平地度過戰鬥，並解釋瞭如何讓敵人疲憊不堪，從而安撫他們。Susie 則對此不以為然，反而嘲笑他。Ralsei 隨後低聲對 [[Kris]] 說，他們應該警告敵人她的攻擊。"/>
+    <property name="zh_name" value="Ralsei 試圖勸說 Susie"/>
    </properties>
    <point/>
   </object>
@@ -261,6 +368,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Lancer tells [[Ralsei]] and [[Kris]] that [[Susie]] beat him up, so he fled. Interacting again causes him to tell them that Susie went to the right. If Kris interacts with him after his warning, Ralsei will ask him for his troops not to fight him, to which Lancer will reply that &quot;thrashing is what makes their relationship work.&quot;"/>
     <property name="page" value="Lancer"/>
+    <property name="zh_description" value="Lancer 告訴 [[Ralsei]] 和 [[Kris]] 說 [[Susie]] 把他打了一頓，所以他逃走了。再次互動時，他會告訴他們 Susie 往右邊走了。如果 Kris 在 Lancer 警告後再次與他互動，Ralsei 會請求 Lancer 的部下不要攻擊他們，Lancer 則回答&quot;揍人就是他們維繫關係的方式&quot;。"/>
+    <property name="zh_name" value="Lancer"/>
+    <property name="zh_page" value="Lancer"/>
    </properties>
    <point/>
   </object>
@@ -268,6 +378,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Top Chef warns [[Kris]] and [[Ralsei]] about how [[Susie]] ravaged his cake, informing the heroes on the direction she went. Interacting with him later with Susie will have him scared of her, to which she responds by asking him if he would like her to spit the cake out."/>
     <property name="page" value="Top Chef"/>
+    <property name="zh_description" value="Top Chef 警告 [[Kris]] 和 [[Ralsei]] 說 [[Susie]] 毀了他的蛋糕，並告訴英雄們她離開的方向。之後帶著 Susie 再與他互動，他會害怕地躲開，而 Susie 則會問他是不是想讓她把蛋糕吐出來。"/>
+    <property name="zh_name" value="Top Chef"/>
+    <property name="zh_page" value="Top Chef"/>
    </properties>
    <point/>
   </object>
@@ -275,6 +388,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="A Jigsawry that has been clobbered, presumably by [[Susie]]."/>
     <property name="page" value="Jigsawry"/>
+    <property name="zh_description" value="一個被痛扁過一頓的 [[Jigsawry]]。"/>
+    <property name="zh_name" value="Jigsawry"/>
+    <property name="zh_page" value="Jigsawry"/>
    </properties>
    <point/>
   </object>
@@ -282,6 +398,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="The Jigsawry warns [[Kris]] and [[Ralsei]] that [[Susie]] has been going around clobbering every enemy. It tells them that it does not enjoy fighting, and that it only does so since [[King]] forces it to."/>
     <property name="page" value="Jigsawry"/>
+    <property name="zh_description" value="這個 [[Jigsawry]] 警告 [[Kris]] 和 [[Ralsei]] 說 [[Susie]] 一直在四處痛扁每個敵人。它告訴他們自己並不喜歡戰鬥，只是因為 [[King]] 強迫它這麼做。"/>
+    <property name="zh_name" value="Jigsawry"/>
+    <property name="zh_page" value="Jigsawry"/>
    </properties>
    <point/>
   </object>
@@ -289,6 +408,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="After the battle with the [[Hathy]]s ends, Lancer runs away. However, Lancer chooses not go very far, and interacting with him here causes him to tell the [[party]] that he has finished running away."/>
     <property name="page" value="Lancer"/>
+    <property name="zh_description" value=""/>
+    <property name="zh_name" value="Lancer"/>
+    <property name="zh_page" value="Lancer"/>
    </properties>
    <point/>
   </object>
@@ -296,6 +418,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Jigsaw Joe asks if [[Kris]] wants to purchase a tutorial for 50 [[Dark Dollar]]s. If Kris does not have enough, he still offers to aid the [[party]]. If Kris repeatedly declines, Jigsaw Joe lowers the price to D$1, and [[Ralsei]] offers to pay instead. Regardless of outcome, he leads them to the next room."/>
     <property name="page" value="Jigsaw Joe"/>
+    <property name="zh_description" value="Jigsaw Joe 問 [[Kris]] 是否想花費50[[黑暗幣]]購買教學。如果 [[Kris]] 的錢不夠，他仍然會主動幫忙。如果 [[Kris]] 再三拒絕，Jigsaw Joe 會把價格降到1黑暗幣，而 [[Ralsei]] 會主動提議幫忙付錢。無論結果如何，他都會帶他們到下一個房間。"/>
+    <property name="zh_name" value="Jigsaw Joe"/>
+    <property name="zh_page" value="Jigsaw Joe"/>
    </properties>
    <point/>
   </object>
@@ -303,6 +428,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Jigsaw Joe explains that the Jigsaw pieces usually make puzzle, but when [[King]] took hold, he replaced them with [[Rouxls Kaard]]. The Jigsaws are now forced to make tutorials to make money."/>
     <property name="page" value="Jigsaw Joe"/>
+    <property name="zh_description" value="Jigsaw Joe 解釋說，Jigsaw 們通常會做謎題，但自從 [[King]] 掌權後，他用 [[Rouxls Kaard]] 取代了他們。Jigsaw 們現在被迫製作教學來賺錢。"/>
+    <property name="zh_name" value="Jigsaw Joe"/>
+    <property name="zh_page" value="Jigsaw Joe"/>
    </properties>
    <point/>
   </object>
@@ -313,6 +441,12 @@ The power of mean girls does not shine within you.</property>
 * '''Gaining TP''': TP Master explains how the party can earn TP by DEFENDing or by grazing bullets.
 * '''Secret''': TP Master tells Kris that TP only lasts in battle, and as such, it is useless to save up TP for after the battle. Ralsei then points out that leftover TP will award extra [[Dark Dollar]]s.</property>
     <property name="page" value="TP Master"/>
+    <property name="zh_description">TP 大師會為 [[Kris]] 提供關於 [[TP]] 的教學。他會提供以下資訊：
+* '''什麼是 TP？'''：TP 是緊迫點數(Tension Points)的縮寫，可以用於魔法上。
+* '''獲得 TP'''：TP 可以透過防禦或擦彈來獲得，並可以用於魔法上。
+* '''秘密'''：TP 僅會戰鬥中保留，戰鬥結束後就會清零，但是剩餘的 TP 會變成額外的金錢。</property>
+    <property name="zh_name" value="TP 大師"/>
+    <property name="zh_page" value="TP 大師"/>
    </properties>
    <point/>
   </object>
@@ -323,6 +457,12 @@ The power of mean girls does not shine within you.</property>
 * '''Healing''': Ralsei Master mentions that Ralsei has a healing spell, but is confused on its utility. Ralsei explains that the spell can be used to avoid consuming items in battle.
 * '''Fact''': Ralsei Master claims that Ralsei loves when Kris donates to them, and that he will hug them if they do. Ralsei objects, noting that money is not necessary for him to give hugs.</property>
     <property name="page" value="Ralsei Master"/>
+    <property name="zh_description">Ralsei 大師會為 [[Kris]] 提供關於 [[Ralsei]] 的教學。他會提供以下資訊：
+* '''安撫'''：對於&quot;疲倦&quot;的敵人可以使用安撫來保護他們。
+* '''治癒'''：Ralsei 的治療法術可以在不消耗物品的狀態下治癒小隊。
+* '''小知識'''：Ralsei 大師鼓勵小隊在它們的洞裡捐款。這樣可以得到 Ralsei 愛的抱抱，但 Ralsei 立刻反駁並表示他不需要透過金錢來擁抱。</property>
+    <property name="zh_name" value="Ralsei 大師"/>
+    <property name="zh_page" value="Ralsei 大師"/>
    </properties>
    <point/>
   </object>
@@ -333,6 +473,12 @@ The power of mean girls does not shine within you.</property>
 * '''Attack''': Susie Master informs Kris that Susie automatically attacks the topmost enemy during an encounter. If Susie is not in the [[party]], they instead acknowledge her absence. Once Susie joins the party &quot;for real,&quot; they state that Susie's Rude Buster deals more damage when pressing the CONFIRM key.
 * '''Fact''': Susie Master suggests that Susie wants the party to donate to the Donation Hole. She disagrees. If Susie is absent, Susie Master wonders if the two can &quot;pick up the slackts.&quot; Once Susie listens in battle, Susie Master is impressed by her personal growth.</property>
     <property name="page" value="Susie Master"/>
+    <property name="zh_description">Susie 大師會為 [[Kris]] 提供關於 [[Susie]] 的教學。他會提供以下資訊：
+* '''警告'''：警告敵人會使 Susie 攻擊全部失誤。當 Susie 真正加入小隊時，Susie 大師會表示不再需要警告。
+* '''攻擊'''：按下[(確定)]可以使得 Susie 的粗魯剋星傷害更大。
+* '''小知識'''：Susie 大師鼓勵小隊在它們的洞裡捐款。當 Susie 真正加入小隊時，Susie 大師會表示對她的成長印象深刻。</property>
+    <property name="zh_name" value="Susie 大師"/>
+    <property name="zh_page" value="Susie 大師"/>
    </properties>
    <point/>
   </object>
@@ -343,6 +489,12 @@ The power of mean girls does not shine within you.</property>
 * '''Acting''': Kris Master explains how only Kris can [[ACT]], whereas other party members cannot. [[Ralsei]] interjects that he can SPARE or Pacify an opponent on the same turn that Kris ACTs, if that ACT makes the enemy Sparable or Tired.
 * '''Fact''': Kris Master encourages the party to donate to the &quot;Donation Hole.&quot; They also mention that they used to have a box for donations, though it was stolen.</property>
     <property name="page" value="Kris Master"/>
+    <property name="zh_description">Kris 大師會為 [[Kris]] 提供關於 Kris 的教學。他會提供以下資訊：
+* '''復活'''：道具和魔法可以復活倒下的成員，[[復活薄荷]]則可以復活並完全治癒倒下的隊員。
+* '''行動'''：只有 Kris 可以使用行動，其他人則無法使用。如果事先知道這次&quot;行動&quot;會讓敵人變得友好或疲倦，就可讓其他人在同一個回合內寬恕敵人或是安撫敵人。
+* '''小知識'''：Kris 大師鼓勵小隊在它們的洞裡捐款，並提到以前曾經有一個盒子，但是被偷了。</property>
+    <property name="zh_name" value="Kris 大師"/>
+    <property name="zh_page" value="Kris 大師"/>
    </properties>
    <point/>
   </object>
@@ -350,6 +502,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Ralsei directs [[Kris]] to the puzzle and tells them that they should push the blocks onto the pressure plates."/>
     <property name="page" value="Ralsei"/>
+    <property name="zh_description" value="Ralsei 指導 [[Kris]] 來到謎題前，告訴他應該把箱子推到壓力板上。"/>
+    <property name="zh_name" value="Ralsei"/>
+    <property name="zh_page" value="Ralsei"/>
    </properties>
    <point/>
   </object>
@@ -357,6 +512,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Susie tells [[Kris]] that puzzles are their job to solve."/>
     <property name="page" value="Susie"/>
+    <property name="zh_description" value="Susie 告訴 [[Kris]]，解謎是他的責任。"/>
+    <property name="zh_name" value="Susie"/>
+    <property name="zh_page" value="Susie"/>
    </properties>
    <point/>
   </object>
@@ -366,6 +524,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Tree that gives a Dark Candy when interacted with. It can be interacted with again to get another one."/>
     <property name="page" value="Dark Candy"/>
+    <property name="zh_description" value="檢查這棵樹會得到一顆黑暗糖果。可以再次檢查以獲得另一顆。"/>
+    <property name="zh_name" value="黑暗糖果"/>
+    <property name="zh_page" value="黑暗糖果"/>
    </properties>
    <point/>
   </object>
@@ -373,6 +534,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Interacting with the Broken Cake will allow [[Kris]] to take a piece of it."/>
     <property name="page" value="Broken Cake"/>
+    <property name="zh_description" value="與損壞蛋糕互動，[[Kris]] 可以拿走一塊。"/>
+    <property name="zh_name" value="損壞蛋糕"/>
+    <property name="zh_page" value="損壞蛋糕"/>
    </properties>
    <point/>
   </object>
@@ -380,6 +544,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Tree that gives a Dark Candy when interacted with. It can be interacted with again to get another one."/>
     <property name="page" value="Dark Candy"/>
+    <property name="zh_description" value="檢查這棵樹會得到一顆黑暗糖果。可以再次檢查以獲得另一顆。"/>
+    <property name="zh_name" value="黑暗糖果"/>
+    <property name="zh_page" value="黑暗糖果"/>
    </properties>
    <point/>
   </object>
@@ -387,6 +554,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="The treasure chest contains a White Ribbon. Since this is the first [[Armor|ARMOR]] in the game, [[Ralsei]] explains that [[Kris]] can wear it through the [[Equipment|EQUIPMENT]] menu. He has special dialogue if Kris gives the ribbon to him."/>
     <property name="page" value="White Ribbon"/>
+    <property name="zh_description" value="這個寶箱裡有一條白色絲帶。由於這是遊戲中第一件[[:Category:裝備|裝備]]，[[Ralsei]] 解釋說 [[Kris]] 可以透過[[遊戲數據|裝備]]選單穿戴它。如果 Kris 把絲帶給 Ralsei 裝備，他會說一些特別的台詞。"/>
+    <property name="zh_name" value="白色絲帶"/>
+    <property name="zh_page" value="白色絲帶"/>
    </properties>
    <point/>
   </object>
@@ -394,6 +564,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="The treasure chest contains Broken Key C."/>
     <property name="page" value="Broken Key C"/>
+    <property name="zh_description" value="這個寶箱裡有損壞鑰匙 C。"/>
+    <property name="zh_name" value="損壞鑰匙 C"/>
+    <property name="zh_page" value="損壞鑰匙"/>
    </properties>
    <point/>
   </object>
@@ -403,6 +576,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Enemy [[encounter]] against a Rudinn."/>
     <property name="page" value="Rudinn"/>
+    <property name="zh_description" value="與一隻 Rudinn 的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Rudinn"/>
+    <property name="zh_page" value="Rudinn"/>
    </properties>
    <point/>
   </object>
@@ -410,6 +586,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Enemy [[encounter]] against two Rudinns."/>
     <property name="page" value="Rudinn"/>
+    <property name="zh_description" value="與兩隻 Rudinn 的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Rudinn"/>
+    <property name="zh_page" value="Rudinn"/>
    </properties>
    <point/>
   </object>
@@ -417,6 +596,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Enemy [[encounter]] against a Rudinn and [[Hathy]]."/>
     <property name="page" value="Rudinn"/>
+    <property name="zh_description" value="與兩隻 Rudinn 和一隻 [[Hathy]] 的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Rudinn"/>
+    <property name="zh_page" value="Rudinn"/>
    </properties>
    <point/>
   </object>
@@ -424,6 +606,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Lancer turns to face towards [[Kris]] and [[Ralsei]] and congratulates them on finishing the maze. He then challenges the team to fight against a team consisting of three [[Hathy]]s. Unless the [[player]] intentionally takes damage, Lancer is confused on why his team's attack did not work, to which Ralsei informs him that Hathy is purely a support enemy."/>
     <property name="page" value="Lancer"/>
+    <property name="zh_description" value="Lancer 轉向 [[Kris]] 和 [[Ralsei]]，恭喜他們完成了迷宮。他接著向小隊發起挑戰，要他們對抗一支由三隻 [[Hathy]] 組成的隊伍。除非[[玩家]]故意受到傷害，否則 Lancer 會感到困惑，不明白為什麼他的部下攻擊沒有效果，而 Ralsei 則告訴他 Hathy 是純粹輔助型的敵人。"/>
+    <property name="zh_name" value="Lancer"/>
+    <property name="zh_page" value="Lancer"/>
    </properties>
    <point/>
   </object>
@@ -431,6 +616,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="C. Round was intended to act as a tutorial boss fight for [[Susie]], with Ralsei intending to teach her how to ACT. However, if [[Kris]] attempts to involve Susie in ACTing, she will immediately attack the enemy, making them flee."/>
     <property name="page" value="C. Round"/>
+    <property name="zh_description" value="C. Round 本來是要作為 [[Susie]] 的教學戰的頭目，Ralsei 打算教她如何&quot;行動。然而若 [[Kris]] 試圖讓 Susie 參與行動，她會立刻攻擊敵人，讓敵人逃跑。"/>
+    <property name="zh_name" value="C. Round"/>
+    <property name="zh_page" value="C. Round"/>
    </properties>
    <point/>
   </object>
@@ -438,6 +626,11 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Lancer turns to face towards the [[party]] and tells them that he has prepared a new battle team since the last time they faced him. Lancer laughs, which causes [[Susie]] to make fun of his evil laugh and threaten him. Lancer takes what he learned from Susie's threatening to thank her and run off with his new evil laugh, while deploying his team of [[Jigsawry]]s."/>
     <property name="page" value="Lancer"/>
+    <property name="zh_description">Lancer 轉向[[小隊]]，告訴他們自從上次見面後，他已經準備好一支新的戰鬥隊伍。
+
+Lancer 大笑，這讓 [[Susie]] 嘲笑他的邪惡笑聲並威脅他。Lancer 藉著從 Susie 的威脅學到的東西，向她道謝並帶著他的新邪惡笑聲跑掉，同時部署了他的 [[Jigsawry]] 部下。</property>
+    <property name="zh_name" value="Lancer"/>
+    <property name="zh_page" value="Lancer"/>
    </properties>
    <point/>
   </object>
@@ -445,12 +638,17 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Enemy [[encounter]] against two Rudinns and [[Hathy]]."/>
     <property name="page" value="Rudinn"/>
+    <property name="zh_description" value="與兩隻 Rudinn 和一隻 [[Hathy]] 的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Rudinn"/>
+    <property name="zh_page" value="Rudinn"/>
    </properties>
    <point/>
   </object>
   <object id="77" name="Smorgasboard" x="6031.5" y="704.5">
    <properties>
     <property name="description" value="Enemy [[encounter]] against [[Rudinn]], [[Hathy]], and [[Jigsawry]]."/>
+    <property name="zh_description" value="與一隻 [[Rudinn]]、一隻 [[Hathy]] 和一隻 [[Jigsawry]] 的[[遭遇戰]]。"/>
+    <property name="zh_name" value="自助餐戰"/>
    </properties>
    <point/>
   </object>
@@ -460,6 +658,9 @@ The power of mean girls does not shine within you.</property>
    <properties>
     <property name="description" value="Walking to the right progresses the story into the Great Board."/>
     <property name="page" value="Great Board"/>
+    <property name="zh_description" value="往右邊走，故事將進入大棋盤。"/>
+    <property name="zh_name" value="大棋盤"/>
+    <property name="zh_page" value="大棋盤"/>
    </properties>
    <point/>
   </object>

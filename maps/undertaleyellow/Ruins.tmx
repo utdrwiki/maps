@@ -10,6 +10,8 @@
   <object id="1" name="Golden flowers" x="151.667" y="1498.33">
    <properties>
     <property name="description" value="The spot where [[Clover]] enters the Underground. In ''[[ut:Undertale|Undertale]]'', this is also the location where [[ut:Frisk|Frisk]] first falls and where [[ut:Chara|Chara]] is implied to be buried."/>
+    <property name="zh_description" value="[[Clover]] 進入地底世界的地點。在 ''[[ut:Undertale|Undertale]]'' 中，這裡也是[[ut:Frisk|主角]]首次墜落的地點，同時也是[[ut:Chara|第一位人類]]的埋葬地點。"/>
+    <property name="zh_name" value="金色花朵"/>
    </properties>
    <point/>
   </object>
@@ -17,6 +19,9 @@
    <properties>
     <property name="description" value="This switch is meant to be the wrong switch for the puzzle. [[Clover]] pulls it after the puzzle fails to complete, sending them into the Dark Ruins."/>
     <property name="page" value="Dark Ruins"/>
+    <property name="zh_description" value="這個開關原本就是解謎中錯誤的選項。當謎題無法完成時，[[Clover]] 拉下了它，結果他掉入了黑暗廢墟中。"/>
+    <property name="zh_name" value="黑暗廢墟"/>
+    <property name="zh_page" value="黑暗廢墟"/>
    </properties>
    <point/>
   </object>
@@ -24,6 +29,8 @@
    <properties>
     <property name="description" value="Toriel interrupts the battle between [[Clover]] and the [[Froggit]]. She guides them through the the [[Ruins]] up until they fall into the [[Dark Ruins]]."/>
     <property name="page" value="Toriel"/>
+    <property name="zh_description" value="Toriel 打斷了 [[Clover]] 與 [[Froggit]] 之間的戰鬥。她引導 Clover 穿越 [[廢墟]]，直到 Clover 掉到[[黑暗廢墟]]為止。"/>
+    <property name="zh_page" value="Toriel"/>
    </properties>
    <point/>
   </object>
@@ -32,12 +39,18 @@
   <object id="8" name="Middle road puzzle" x="666.5" y="288.5">
    <properties>
     <property name="description" value="This puzzle is solved by pressing the four switches on the darker section of the floor. [[Toriel]] solves this for [[Clover]]."/>
+    <property name="zh_description">通往下一個房間的門會在踩在未標記路徑上的開關後，再拉下拉桿時解鎖。
+
+[[Toriel]] 會自動解開這個謎題。</property>
+    <property name="zh_name" value="中路謎題"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Switch puzzle" x="846.5" y="151">
    <properties>
     <property name="description" value="This puzzle is meant to be solved by pressing the levers on the path to lower the spikes. [[Toriel]] made it easier by adding arrows pointing to the correct switches. She encourages [[Clover]] to solve it themself but attempts to help them when the path does not open after the puzzle is completed."/>
+    <property name="zh_description" value="必須拉下兩個開關才能解鎖通往下一個房間的門。[[Toriel]] 在 [[Clover]] 抵達前已經標記了正確的開關。但當謎題完成後路徑仍未開啟，Toriel 試圖協助 Clover 拉下另一個開關。"/>
+    <property name="zh_name" value="開關房間"/>
    </properties>
    <point/>
   </object>
@@ -49,39 +62,62 @@
 Brave ones, foolish ones.
 Both walk not the middle road.&quot;</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="只有無懼的人才能前進。勇敢的人，愚蠢的人都不走中間的路。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Sign" x="596.5" y="119.75">
    <properties>
     <property name="description" value="Tells Clover to press the confirm key to read signs."/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="按下([確定])來閱讀！"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="5" name="Sign" x="566" y="39.25">
    <properties>
     <property name="description" value="&quot;Stay on the road.&quot;"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="跟著道路走。"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Instructions" x="821.455" y="59.4545">
    <properties>
     <property name="description" value="&quot;Press this switch, please! -Toriel&quot;"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">請按下這個按鈕。
+
+- TORIEL</property>
+    <property name="zh_name" value="提示"/>
    </properties>
    <point/>
   </object>
   <object id="7" name="Instructions" x="1021.63" y="59.75">
    <properties>
     <property name="description" value="&quot;Also press this switch, please! -Toriel&quot;"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">也請同樣按下這個按鈕。
+
+- TORIEL</property>
+    <property name="zh_name" value="提示"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="6" name="encounters">
+  <properties>
+   <property name="zh_name" value="廢墟"/>
+  </properties>
   <object id="2" name="Froggit" x="614.5" y="1223.5">
    <properties>
     <property name="description" value="Scripted encounter with Froggit."/>
     <property name="page" value="Froggit"/>
+    <property name="zh_description" value="與 Froggit 的戰鬥。"/>
+    <property name="zh_page" value="Froggit"/>
    </properties>
    <point/>
   </object>
