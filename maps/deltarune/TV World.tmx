@@ -318,7 +318,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
   <object id="77" name="Sixth Tenna encounter" x="41239.3" y="4452.34">
    <properties>
-    <property name="description" value="[[Lanino and Elnina]] quit their jobs in frot of [[Tenna]]. As Tenna mocks their decision, [[Mike]] announces his departure as well."/>
+    <property name="description" value="[[Lanino and Elnina]] quit their jobs in front of [[Tenna]]. As Tenna mocks their decision, [[Mike]] announces his departure as well."/>
    </properties>
    <point/>
   </object>
