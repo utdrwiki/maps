@@ -32,7 +32,7 @@ export function getNumberProperty(object, property, language = 'en') {
  */
 export function getStringProperty(object, property, language = 'en') {
     const value = getProperty(object, property, language);
-    return typeof value === 'string' ? value : undefined;
+    return typeof value === 'string' && value.length > 0 ? value : undefined;
 }
 
 /**
