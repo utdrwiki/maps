@@ -116,6 +116,24 @@ function getCsrfToken(accessToken, language = 'en') {
 }
 
 /**
+ * Custom error class for errors returned from the MediaWiki API.
+ */
+export class APIError extends Error {
+    /**
+     * Constructs an error object from the MediaWiki API error response.
+     * @param {object} error Error object from the MediaWiki API
+     * @param {string} error.code Error code
+     * @param {string} error.info Error information
+     */
+    constructor(error) {
+        super(`API error: ${error.info}`);
+        this.name = 'APIError';
+        this.code = error.code;
+        this.info = error.info;
+    }
+}
+
+/**
  * Edits a wiki page.
  * @param {string} title Wiki page title
  * @param {string} text Wiki page content
@@ -135,7 +153,7 @@ export function edit(title, text, summary, accessToken, language = 'en') {
             token
         }, accessToken).then(response => {
             if (response.error) {
-                throw new Error(`Edit failed: ${response.error.info}`);
+                throw new APIError(response.error);
             }
             return response;
         })

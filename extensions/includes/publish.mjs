@@ -1,4 +1,4 @@
-import { edit, getLoggedInUser } from "./api.mjs";
+import { APIError, edit, getLoggedInUser } from "./api.mjs";
 import { generateCodeChallenge, generateOAuthUrl, getAccessToken, getStoredToken, storeToken } from "./auth.mjs";
 import { convertMap } from "./format.mjs";
 import { getStringProperty } from "./util.mjs";
@@ -133,6 +133,40 @@ function publishMap(accessToken, summary, map, language) {
 }
 
 /**
+ * Handles errors that occur during publishing of the map to the wiki.
+ * @param {any} error Error returned during publishing
+ */
+function handlePublishError(error) {
+    if (error === true) {
+        // User cancelled the operation.
+        return;
+    }
+    if (error instanceof APIError) {
+        if (error.code === 'datamap-validate-constraint-requiredfile') {
+            const regex = /\[\S+ ([^\]]+)\]/g;
+            const files = [];
+            while (true) {
+                const match = regex.exec(error.info);
+                if (!match) {
+                    break;
+                }
+                files.push(match[1]);
+            }
+            tiled.alert(`The following files are missing from the wiki: ${files.join(', ')}. Please upload them and try publishing again.`);
+            return;
+        }
+        if (error.code === 'datamap-validate-constraint-groupexists') {
+            tiled.alert(`${error.info}\n\nDid you forget to add the "include" property to the map? Click Map > Map Properties, then add a "include" custom property with the type string, and put "Map:Common Data" as the value. If the map fragment defining marker groups is called differently on your wiki, change "Common Data" to whatever it is called.`);
+            return;
+        }
+        tiled.alert(`Failed to publish! API returned error: ${error.info} (code: ${error.code})`);
+        return;
+    }
+    tiled.alert('Failed to publish! Please check the console for details.');
+    tiled.log(`Error details: ${error.message || error}`);
+}
+
+/**
  * Publishes the current map to the wiki.
  */
 export default function run() {
@@ -147,12 +181,5 @@ export default function run() {
         .then(([language, summary, token]) =>
             publishMap(token, summary, map, language))
         .then(() => tiled.alert(`Map published successfully!`))
-        .catch(error => {
-            if (error === true) {
-                // User cancelled the operation.
-                return;
-            }
-            tiled.alert('Failed to publish! Please check the console for details.');
-            tiled.log(`Error details: ${error.message || error}`)
-        });
+        .catch(handlePublishError);
 }
