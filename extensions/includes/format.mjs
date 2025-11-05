@@ -108,6 +108,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
                     id,
                     name: name.length === 0 ? undefined : name,
                     description,
+                    image: getStringProperty(obj, 'image', language),
                     isWikitext: !getBoolProperty(obj, 'plain', language),
                     x,
                     y
