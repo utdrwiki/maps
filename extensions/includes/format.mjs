@@ -57,7 +57,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
     }
     const /** @type {Overlay[]} */ overlays = [];
     if (layer.isImageLayer) {
-        const /** @type {ImageLayer} */ imageLayer = layer;
+        const imageLayer = /** @type {ImageLayer} */ (layer);
         const /** @type {ImageBackground} */ bg = {
             at: [
                 [
@@ -84,16 +84,17 @@ function convertLayer(layer, datamap, convertedLayers, language) {
             ];
         } else {
             datamap.backgrounds.push(bg);
-            if (imageLayer.image.width > datamap.crs.bottomRight[0]) {
-                datamap.crs.bottomRight[0] = imageLayer.image.width;
+            const mapSize = /** @type {[number, number]} */ (datamap.crs.bottomRight);
+            if (imageLayer.image.width > mapSize[0]) {
+                mapSize[0] = imageLayer.image.width;
             }
-            if (imageLayer.image.height > datamap.crs.bottomRight[1]) {
-                datamap.crs.bottomRight[1] = imageLayer.image.height;
+            if (imageLayer.image.height > mapSize[1]) {
+                mapSize[1] = imageLayer.image.height;
             }
         }
     } else if (layer.isObjectLayer) {
         const /** @type {Marker[]} */ markers = [];
-        const /** @type {ObjectGroup} */ objectLayer = layer;
+        const objectLayer = /** @type {ObjectGroup} */ (layer);
         for (const obj of objectLayer.objects) {
             const {x, y} = addPoints(obj.pos, offset);
             const name = getStringProperty(obj, 'name', language) || obj.name;
@@ -142,7 +143,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
             datamap.markers[layerAssociationId] = markers;
         }
     } else if (layer.isGroupLayer) {
-        const /** @type {GroupLayer} */ groupLayer = layer;
+        const groupLayer = /** @type {GroupLayer} */ (layer);
         for (const childLayer of groupLayer.layers || []) {
             convertLayer(childLayer, datamap, convertedLayers, language);
         }

@@ -27,6 +27,7 @@
 		"noUnusedParameters": true,
 		"noImplicitReturns": true,
 		"newLine": "lf",
+		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"pretty": true
 	}

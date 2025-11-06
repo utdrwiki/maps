@@ -174,7 +174,7 @@ export default function run() {
         tiled.alert('Please open the map you want to publish first.');
         return;
     }
-    const /** @type {TileMap} */ map = tiled.activeAsset;
+    const map = /** @type {TileMap} */ (tiled.activeAsset);
     getEditInfo()
         .then(([language, summary]) =>
             getToken(language).then(token => [language, summary, token]))

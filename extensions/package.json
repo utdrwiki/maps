@@ -18,8 +18,15 @@
         "url": "https://github.com/utdrwiki.maps",
         "directory": "extensions"
     },
+    "scripts": {
+        "typecheck": "tsc -p ."
+    },
     "dependencies": {
         "@mapeditor/tiled-api": "1.11.0"
     },
+    "devDependencies": {
+        "typescript": "5.9.3"
+    },
+    "packageManager": "npm@11.6.2",
     "private": true
 }
