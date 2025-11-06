@@ -147,7 +147,7 @@ function polygonPopupHandler(object, dialog) {
         updateLanguage: language => {
             const name = getStringProperty(object, 'name', language) || object.name;
             const color = object.property('color');
-            const thickness = object.property('thickness');
+            const thickness = object.property('thickness') || 3.0;
             if (name) {
                 nameInput.text = name;
             }
