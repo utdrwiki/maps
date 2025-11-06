@@ -2,46 +2,6 @@ import { getRestUrl, httpPost } from './api.mjs';
 import { getStringProperty } from './util.mjs';
 
 /**
- * Retrieves the path to the Tiled session file.
- * @returns {string} Path to the Tiled session file
- */
-function getSessionFilePath() {
-    return tiled.projectFilePath.replace('.tiled-project', '.tiled-session');
-}
-
-/**
- * Retrieves wiki access token from the Tiled session file.
- * @returns {string|undefined} Wiki access token, if found
- */
-export function getStoredToken() {
-    try {
-        const sessionFile = new TextFile(getSessionFilePath(), TextFile.ReadOnly);
-        const data = JSON.parse(sessionFile.readAll());
-        sessionFile.close();
-        return data.wikiAccessToken;
-    } catch (error) {
-        return;
-    }
-}
-
-/**
- * Writes wiki access token to the Tiled session file.
- * @param {string} token Wiki access token
- */
-export function storeToken(token) {
-    try {
-        const sessionFile = new TextFile(getSessionFilePath(), TextFile.ReadWrite);
-        const data = JSON.parse(sessionFile.readAll());
-        data.wikiAccessToken = token;
-        sessionFile.truncate();
-        sessionFile.write(JSON.stringify(data, null, 4));
-        sessionFile.commit();
-    } catch (error) {
-        tiled.log('Failed to write access token!');
-    }
-}
-
-/**
  * Generates a code challenge.
  *
  * This is the most insecure thing ever, but the Tiled environment doesn't

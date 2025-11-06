@@ -1,3 +1,4 @@
+import { getLanguageNames, selectLanguage } from './language.mjs';
 import { getBoolProperty, getStringProperty } from './util.mjs';
 
 /**
@@ -193,24 +194,23 @@ export default function selectedObjectsChanged(objects) {
         tiled.alert('This object cannot be converted to DataMaps on the wiki!');
         return;
     }
-    const languagesStr = getStringProperty(tiled.project, 'languages') || 'en';
-    const languages = languagesStr.split(',').map(lang => lang.trim());
     const dialog = new Dialog('Editing map marker');
     dialog.minimumWidth = 600;
-    const languageSelect = dialog.addComboBox('Wiki language:', languages);
-    languageSelect.visible = languages.length > 1;
+    const languageNames = getLanguageNames();
+    const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
+    languageSelect.visible = languageNames.length > 1;
     dialog.addNewRow();
     const handler = handlerFunc(object, dialog);
     languageSelect.currentIndexChanged.connect(index => {
-        handler.updateLanguage(languages[index]);
+        handler.updateLanguage(selectLanguage(index));
     });
     dialog.addButton('OK').clicked.connect(() => {
-        handler.performChanges(languages[languageSelect.currentIndex]);
+        handler.performChanges(selectLanguage(languageSelect.currentIndex));
         dialog.done(Dialog.Accepted);
     });
     dialog.addButton('Cancel').clicked.connect(() => {
         dialog.done(Dialog.Rejected);
     });
-    handler.updateLanguage(languages[languageSelect.currentIndex]);
+    handler.updateLanguage(selectLanguage(languageSelect.currentIndex));
     dialog.show();
 }

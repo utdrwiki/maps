@@ -1,7 +1,12 @@
-import { APIError, edit, getLoggedInUser } from "./api.mjs";
-import { generateCodeChallenge, generateOAuthUrl, getAccessToken, getStoredToken, storeToken } from "./auth.mjs";
-import { convertMap } from "./format.mjs";
-import { getStringProperty } from "./util.mjs";
+import { APIError, edit, getLoggedInUser } from './api.mjs';
+import {
+    generateCodeChallenge,
+    generateOAuthUrl,
+    getAccessToken
+} from './auth.mjs';
+import { convertMap } from './format.mjs';
+import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
+import { getStoredToken, storeToken } from './session.mjs';
 
 /**
  * Opens a URL in the user's default web browser.
@@ -45,17 +50,18 @@ If that does not work for you, you can also copy the URL from the console instea
  * @returns {Promise<[string, string]>} Selected language code
  */
 function getEditInfo() {
-    const languagesStr = getStringProperty(tiled.project, 'languages') || 'en';
-    const languages = languagesStr.split(',').map(lang => lang.trim());
     const dialog = new Dialog('Publishing map to the wiki');
     dialog.minimumWidth = 600;
-    const languageSelect = dialog.addComboBox('Wiki language:', languages);
+    const languageNames = getLanguageNames();
+    const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
+    languageSelect.currentIndex = getDefaultLanguageIndex();
+    languageSelect.visible = languageNames.length > 1;
     dialog.addNewRow();
     const summary = dialog.addTextInput('Edit summary:', 'Published with Tiled DataMaps extension');
     dialog.addNewRow();
     return new Promise((resolve, reject) => {
         dialog.addButton('OK').clicked.connect(() => {
-            resolve([languages[languageSelect.currentIndex], summary.text]);
+            resolve([selectLanguage(languageSelect.currentIndex), summary.text]);
             dialog.done(Dialog.Accepted);
         });
         dialog.addButton('Cancel').clicked.connect(() => {
