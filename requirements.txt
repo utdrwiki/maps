@@ -1,5 +1,0 @@
-dataclasses-json
-mwcleric
-python-slugify
-pytiled-parser>=2.2.7
-Pillow
