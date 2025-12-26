@@ -429,7 +429,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
   <object id="78" name="Shuttah" x="42806" y="4560.81">
    <properties>
-    <property name="description" value="A [[Shuttah]] explains the state of the [[Dark World]] before [[Tenna]]'s arrival. They explain that those who did not sign Tenna's contract left and went somewhere else."/>
+    <property name="description" value="A [[Shuttah]] explains the state of the [[Dark World]] before [[Tenna]]'s arrival. They explain that those who did not sign Tenna's contract left and went somewhere else. They also explain that [[Watercooler]]s are [[Mizzle]]s trapped inside by Tenna."/>
    </properties>
    <point/>
   </object>
@@ -680,22 +680,22 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
  </objectgroup>
  <objectgroup id="6" name="enemies">
-  <object id="6" name="Shadowguys" x="9140.82" y="1185.4">
+  <object id="6" name="Roaming Shadowguys" x="9140.82" y="1185.4">
    <properties>
-    <property name="description" value="Shadowguys roaming the area engage the [[party]] in battle when approached."/>
+    <property name="description" value="Enemy encounter against [[Shadowguy]] and [[Shuttah]]."/>
    </properties>
    <point/>
   </object>
-  <object id="17" name="Shadowguys" x="11360" y="3085.82">
+  <object id="17" name="Dangling Shadowguys" x="11360" y="3085.82">
    <properties>
-    <property name="description" value="Shadowguys drop from the ceiling and engage the [[party]] in battle when approached."/>
+    <property name="description" value="Enemy encounter against [[Shadowguy]] and two [[Pippins]]."/>
     <property name="page" value="Shadowguy"/>
    </properties>
    <point/>
   </object>
   <object id="29" name="Ribbick" x="14188.7" y="2684.93">
    <properties>
-    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
+    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]. In subsequent encounters, the party battles against three Ribbicks."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
@@ -709,7 +709,7 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
   </object>
   <object id="36" name="Ribbick" x="18132.7" y="2689.43">
    <properties>
-    <property name="description" value="A Ribbick emerges from the tipped-over trash can, which chases after and attacks the [[party]]."/>
+    <property name="description" value="Enemy encounter against three Ribbicks."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
@@ -721,10 +721,9 @@ CHOOSE [A/B]! (Answer: A or B depending on request)</property>
    </properties>
    <point/>
   </object>
-  <object id="57" name="Zappers" x="26038.5" y="3384.4">
+  <object id="57" name="Roaming Zappers" x="26038.5" y="3384.4">
    <properties>
-    <property name="description" value="Zappers jump into the room and roam around, engaging the [[party]] in battle if approached."/>
-    <property name="page" value="Zapper"/>
+    <property name="description" value="Enemy encounter against [[Zapper]] and [[Shuttah]]. If the [[party]] did not battle the Zapper in the [[Green Room]], the battle consists of two Zappers."/>
    </properties>
    <point/>
   </object>
