@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="186" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="19">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="202" height="62" tilewidth="40" tileheight="40" infinite="0" nextlayerid="10" nextobjectid="24">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Cold Place map">
-  <image source="images/Cold Place.png" width="7418" height="2424"/>
+  <image source="images/Cold Place.png" width="8058" height="2456"/>
  </imagelayer>
  <objectgroup id="9" name="saves">
-  <object id="12" name="Cold Place" x="4678.82" y="1904.52">
+  <object id="12" name="Cold Place" x="4678.41" y="1936.42">
    <properties>
     <property name="description">'''First visit:''' A draft blows, and you feel the cold night's presence.
 Still, this never bothered you. In fact...
@@ -25,23 +25,23 @@ A strange calm washes over you.</property>
   </object>
  </objectgroup>
  <objectgroup id="3" name="puzzles">
-  <object id="1" name="Parental Lock Puzzle 1" x="1830.45" y="2016.83">
+  <object id="1" name="Parental Lock Puzzle 1" x="1829.8" y="2046.49">
    <properties>
-    <property name="description" value="[[Kris]] must reveal the passcode to unlock the door to the next room. Here, the passcode is &quot;213.&quot;"/>
-    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+    <property name="description" value="[[Kris]] must reveal the passcode to unlock the door to the next room. Here, the passcode is &quot;213&quot;."/>
+    <property name="page" value="TV World/Puzzles#The first parental lock puzzle"/>
    </properties>
    <point/>
   </object>
-  <object id="2" name="Map of Parental Lock Puzzle 1" x="1775.75" y="2223.34">
+  <object id="2" name="Map of Parental Lock Puzzle 1" x="1762.16" y="2265.92">
    <properties>
     <property name="description" value="Map of the first Parental Lock Puzzle, with proper orientation."/>
    </properties>
    <point/>
   </object>
-  <object id="4" name="Parental Lock Puzzle 2" x="3854.8" y="2019.59">
+  <object id="4" name="Parental Lock Puzzle 2" x="3856.84" y="2048.83">
    <properties>
-    <property name="description" value="[[Kris]] must maneuver their way around the room and unlock the door leading to the passcode. Here, the passcode is &quot;1225.&quot;"/>
-    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+    <property name="description" value="[[Kris]] must maneuver their way around the room and unlock the door leading to the passcode. Here, the passcode is &quot;1225&quot;."/>
+    <property name="page" value="TV World/Puzzles#The second parental lock puzzle"/>
    </properties>
    <point/>
   </object>
@@ -51,14 +51,14 @@ A strange calm washes over you.</property>
    </properties>
    <point/>
   </object>
-  <object id="6" name="Parental Lock Puzzle 3" x="2651.3" y="1579.77">
+  <object id="6" name="Parental Lock Puzzle 3" x="2651.62" y="1604.28">
    <properties>
-    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr Residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000.&quot;"/>
-    <property name="page" value="Cold Place#Parental Lock Rooms"/>
+    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr Residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000&quot;. If the [[Sword Route]] is completed, the TV does not turn on, and the door is automatically unlocked."/>
+    <property name="page" value="TV World/Puzzles#The third parental lock puzzle"/>
    </properties>
    <point/>
   </object>
-  <object id="7" name="Parental Lock Puzzle 3 - TV" x="2830.78" y="602.841">
+  <object id="7" name="Parental Lock Puzzle 3 - TV" x="2830.45" y="610.316">
    <properties>
     <property name="description" value="Interacting with the TV transports [[Kris]] to the main puzzle area."/>
    </properties>
@@ -70,7 +70,7 @@ A strange calm washes over you.</property>
    </properties>
    <point/>
   </object>
-  <object id="9" name="PArental Lock Puzzle 3, part 2" x="2475.11" y="875">
+  <object id="9" name="Parental Lock Puzzle 3, part 2" x="2475.11" y="875">
    <properties>
     <property name="description" value="[[Kris]] must use [[Susie]]'s character to construct a bridge across the lake."/>
    </properties>
@@ -82,29 +82,55 @@ A strange calm washes over you.</property>
    </properties>
    <point/>
   </object>
+  <object id="22" x="36.5864" y="1979.92">
+   <properties>
+    <property name="color" type="color" value="#ff2a487c"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0203912,-361.305 2056.01,-361.402"/>
+  </object>
+  <object id="23" x="3212.53" y="1604.5">
+   <properties>
+    <property name="color" type="color" value="#ff2a487c"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 1312.44,-0.0726836 1312.46,351.865"/>
+  </object>
  </objectgroup>
  <objectgroup id="5" name="plot">
-  <object id="3" name="Puzzle intermission" x="2508.67" y="2075.06">
+  <object id="3" name="Puzzle intermission" x="2502.52" y="2106.77">
    <properties>
     <property name="description" value="[[Ralsei]] stops [[Kris]] while [[Susie]] walks ahead and requests that they ask Susie how she is doing. Kris can comply, ask Ralsei how he is doing, or not speak at all."/>
    </properties>
    <point/>
   </object>
-  <object id="14" name="Toriel captured" x="6707.56" y="1943.02">
+  <object id="14" name="Toriel captured" x="6365.58" y="1905.59">
    <properties>
     <property name="description" value="On their first visit to the Cold Place, the [[party]] notices [[Toriel]] trapped in a gachapon ball. Before they can rescue her, [[Tenna]] suddenly arrives and notices them. He then forces them into another round of [[TV Time]]."/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="The final battle" x="6828.25" y="2033.04">
+  <object id="19" name="The final battle" x="6618.92" y="1985.09">
    <properties>
-    <property name="description" value="[[Tenna]] frees [[Toriel]] from her imprisonment, but as soon as he does so, the [[Knight]] attacks him and slices his arms off. The [[party]] confronts the Knight, only to be defeated. The Knight attempts to capture Toriel, but [[Undyne]] appears and attacks the Knight. The Knight captures Undyne and escapes the TV World."/>
+    <property name="description" value="As [[Tenna]] releases [[Toriel]] from her gachapon capsule, the [[Knight]] stikes him down and initiates a battle against the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Undyne's arrival" x="7468.21" y="1931.74">
+   <properties>
+    <property name="description" value="After the battle against the [[Knight]], [[Undyne]] arrives and attacks it. The Knight then captures Undyne and escapes into the Light World."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="The Great Door" x="7852.65" y="1825.03">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Kris]] discover a [[Great Door]] that leads into the Light World, outside the [[Dreemurr residence]]."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="items">
-  <object id="10" name="Camera" x="2843.08" y="1094.96">
+  <object id="10" name="Camera" x="2844.1" y="1120">
    <properties>
     <property name="description" value="A camera that [[Kris]] can use to reveal the passcode to the door."/>
     <property name="page" value="Camera"/>
@@ -113,17 +139,17 @@ A strange calm washes over you.</property>
   </object>
  </objectgroup>
  <objectgroup id="4" name="enemies">
-  <object id="13" name="Final Tenna encounter" x="6114.96" y="1858.92">
+  <object id="13" name="Final Tenna encounter" x="6017.27" y="1808.11">
    <properties>
     <property name="description" value="Boss battle against Tenna on the second visit to the Cold Place."/>
     <property name="page" value="Tenna#Cold Place Encounter"/>
    </properties>
    <point/>
   </object>
-  <object id="16" name="Roaring Knight" x="7363.47" y="1878.71">
+  <object id="16" name="Roaring Knight" x="7089.94" y="1910.99">
    <properties>
     <property name="description" value="Boss battle against the Roaring Knight. Drops a [[Shadow Crystal]] and a [[Black Shard]] upon defeat."/>
-    <property name="page" value="Knight#In Battle"/>
+    <property name="page" value="Knight#In battle"/>
    </properties>
    <point/>
   </object>
