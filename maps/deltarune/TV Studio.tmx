@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="158" height="61" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="33">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="TV Studio map">
+  <image source="images/TV Studio.png" width="6308" height="2440"/>
+ </imagelayer>
+ <objectgroup id="9" name="sublocations">
+  <object id="5" name="Rhythm minigame room" x="1105" y="1772">
+   <properties>
+    <property name="description" value="A minigame room in which the [[party]] can play the [[Rock Video]] minigame. Only available if all [[TV World]] Darkners were [[recruit]]ed."/>
+    <property name="page" value="TV Studio#Rhythm minigame room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Mike's room" x="2468" y="1280">
+   <properties>
+    <property name="description" value="[[Mike]]'s secret room in the TV Studio, available if [[Shadowguy]], [[Zapper]], and [[Pippins]] are [[recruit]]ed."/>
+    <property name="page" value="TV Studio#Mike's room"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Mike minigame room" x="320" y="2360">
+   <properties>
+    <property name="description" value="A minigame room, unlocked after defeating the [[Mike]]s. Inserting any of the Mikes in the Mike slot initiates a minigame."/>
+    <property name="page" value="Mike minigames"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="2" name="Note" x="961.5" y="2171">
+   <properties>
+    <property name="description" value="''The PASSWORD is 6453! Don't forget it...!''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Poster" x="1108" y="1600">
+   <properties>
+    <property name="description">RHYTHM GAME! Press the buttons in time with the notes to get a high score!
+Ask PIPPINS and SHADOWGUY for more details!</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Microphone" x="2290" y="740">
+   <properties>
+    <property name="description" value="Allows the player to adjust their device's microphone sensitivity. On Nintendo Switch 2, it instead allows the player to adjust their mouse sensitivity."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Microphone" x="132" y="2266">
+   <properties>
+    <property name="description" value="Allows the player to adjust their device's microphone sensitivity. On Nintendo Switch 2, it instead allows the player to adjust their mouse sensitivity."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="saves">
+  <object id="3" name="Castle Town - TV Building" x="759.524" y="2228.24">
+   <properties>
+    <property name="description" value="SAVE point in the TV Studio lobby."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="MIKE ZONE" x="2638" y="806">
+   <properties>
+    <property name="description" value="SAVE point near the entrance to the battle room."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="puzzles">
+  <object id="17" name="Locked door" x="868" y="2182">
+   <properties>
+    <property name="description" value="A locked door. Is unlocked by inputting the code 6453."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Mike door" x="2467.85" y="690.81">
+   <properties>
+    <property name="description" value="The door to the battle room. Must be unlocked by speaking loud enough into the device's microphone. On Nintendo Switch 2, the door must be opened by pushing both sections in opposite directions."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="plot">
+  <object id="9" name="Raise Up Your Bat" x="916.243" y="1624">
+   <properties>
+    <property name="description" value="A door for the [[Rock Video]] minigame cover of ''[[Raise Up Your Bat]]''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="It's TV Time" x="656" y="1624">
+   <properties>
+    <property name="description" value="A door for the [[Rock Video]] minigame cover of ''[It's TV Time]]''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Knock You Down!!" x="396" y="1624">
+   <properties>
+    <property name="description" value="A door for the [[Rock Video]] minigame cover of ''[[Knock You Down!! (Rhythm Ver.)]]''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Ralsei's question" x="1138" y="1280">
+   <properties>
+    <property name="description" value="[[Ralsei]] questions if they should be in Mike's room. [[Susie]] asks whether he is curious on who [[Mike]] is."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="npcs">
+  <object id="1" name="Zapper" x="1360" y="2090">
+   <properties>
+    <property name="description" value="Welcomes the [[party]] to the TV Studio and explains the available facilities."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Plugboy" x="1503" y="1716">
+   <properties>
+    <property name="description" value="Explains that the [[Shadowguy]] manning the desk enjoys his job."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="Shadowguy" x="1401" y="1612">
+   <properties>
+    <property name="description" value="Makes unintelligible saxophone noises when asked for help."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="8" name="Pippins" x="1287" y="1633">
+   <properties>
+    <property name="description" value="Explains hints on how to achieve a high score in the minigames."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Short cat statue" x="2098" y="1206">
+   <properties>
+    <property name="description" value="A small cat statue blocking the way forward. It must be removed by interacting with it and choosing to pet it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Short cat statue" x="3698" y="1164">
+   <properties>
+    <property name="description" value="A small cat statue blocking the way forward. It must be removed by interacting with it and choosing to pet it."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Maus" x="3732" y="1298">
+   <properties>
+    <property name="description" value="Is seen cowering in front of the cat statue. Removing the statue causes the Mause to transform into a hand controlled by the mouse/controller. On the Nintendo Switch 2 version, there are two Maice which transform into two hands controlled by the Joy-Con 2's mouse controls."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Tall cat statues" x="2468" y="876">
+   <properties>
+    <property name="description" value="Tall cat statues block the way forward. They must be removed using the Maus. On the Nintendo Switch 2, there are two pairs of cat statues that must be removed using the corresponding colored Maus."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Hats" x="3366" y="1094">
+   <properties>
+    <property name="description" value="Hats on top of high shelves. Can be picked up using the Maus."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Drawer" x="3188" y="1126">
+   <properties>
+    <property name="description" value="Drewer that can be opened to reveal a hat inside."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Microphone" x="6038" y="124">
+   <properties>
+    <property name="description" value="A photorealistic microphone, revealed after waiting long enough at the end of the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Michaelbomb" x="556" y="2350">
+   <properties>
+    <property name="description" value="Resets all minigame scores."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Small Mike" x="172" y="2138">
+   <properties>
+    <property name="description" value="Hosts the [[Battat]] minigame, or the [[Pluey]] minigame on Nintendo Switch 2."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Cowboy Hat Mike" x="292" y="2054">
+   <properties>
+    <property name="description" value="Hosts the [[Jongler]] minigame, or the [[Air Waves]] minigame on Nintendo Switch 2."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Cat Mike" x="454" y="2108">
+   <properties>
+    <property name="description" value="Hosts the [[Pluey]] minigame, or the [[Main Performance]] minigame on Nintendo Switch 2."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="items">
+  <object id="16" name="Hidden TV Dinner" x="2898" y="1102">
+   <properties>
+    <property name="description" value="Removing this cat statue using the Maus reveals a treasure chest containing a TV Dinner."/>
+    <property name="page" value="TV Dinner"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="enemies">
+  <object id="25" name="Impostor Mikes" x="2470" y="126">
+   <properties>
+    <property name="description" value="Boss battle against the three impostor Mikes."/>
+    <property name="page" value="Mike#In battle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
