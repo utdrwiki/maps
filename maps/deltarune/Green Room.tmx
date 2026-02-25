@@ -7,94 +7,105 @@
   <image source="images/Green Room.png" width="3574" height="4280"/>
  </imagelayer>
  <objectgroup id="9" name="warpdoor">
-  <object id="3" name="Warp Door" x="1758.59" y="3470.35">
+  <object id="3" name="Shortcut door" x="1760" y="3440">
    <properties>
-    <property name="description" value="Warp Door in the Green Room. Can transport the [[party]] to previous areas of the TV World."/>
-    <property name="page" value="Warp Door"/>
+    <property name="description">Shortcut door in the Green Room. Can transport the [[party]] to previous areas of the TV World:
+* TV World Entrance
+* Goulden Sam</property>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="8" name="vendors">
-  <object id="2" name="Pippins" x="2499.05" y="3837.32">
+  <object id="2" name="Pippins" x="2499" y="3820">
    <properties>
-    <property name="description" value="A [[Pippins]] appears here if the [[party]] achieved a rank lower than S on the previous round of [[TV Time]]. They offer to sell an S-Rank bypass for 1500 [[POINT]]s"/>
+    <property name="description" value="A [[Pippins]] appears here if the [[party]] achieved a rank lower than S on the previous round of ''[[TV Time]]''. They offer to sell an S-Rank bypass for 1500 [[POINT]]s."/>
    </properties>
    <point/>
   </object>
-  <object id="6" name="Vending Machine" x="2474" y="3468.72">
+  <object id="6" name="Vending machine" x="2474" y="3452">
    <properties>
-    <property name="description" value="Offers [[weapons]] to the [[party]] to buy for [[POINT]]s."/>
-    <property name="page" value="Vending Machine"/>
+    <property name="description">Offers [[weapons]] to the [[party]] to buy for [[POINT]]s. It sells the following:
+* [[Toxic Axe]]
+* [[Saber 10]]
+* [[Flex Scarf]]
+* [[TV Slop]]</property>
+    <property name="page" value="Vending machine"/>
    </properties>
    <point/>
   </object>
-  <object id="11" name="Vending Machine" x="1710.51" y="2937.49">
+  <object id="11" name="Vending machine" x="1711" y="2922">
    <properties>
-    <property name="description" value="Offers [[armor]] and other [[items]] to the [[party]] to buy for [[POINT]]s."/>
+    <property name="description">Offers [[armor]] and other [[item]]s to the [[party]] to buy, for [[POINT]]s in between Round 1 and 2 of ''TV Time'', and for [[Dark Dollar]]s at the end of the [[Chapter]]. It sells the following items:
+* [[TV Dinner]]
+* [[Deluxe Dinner]]
+* [[Lode Stone]]
+* [[Ginger Guard]]</property>
+    <property name="page" value="Vending machine"/>
    </properties>
    <point/>
   </object>
-  <object id="18" name="Vending Machine" x="2217.61" y="2545.71">
+  <object id="18" name="Vending machine" x="2220" y="2532">
    <properties>
-    <property name="description" value="Allows the [[party]] to sell their [[items]] for [[Dark Dollar]]s."/>
-    <property name="page" value="Vending Machine"/>
+    <property name="description" value="Allows the [[party]] to sell their [[item]]s for [[Dark Dollar]]s."/>
+    <property name="page" value="Vending machine"/>
    </properties>
    <point/>
   </object>
-  <object id="25" name="Ball Machine" x="1929.26" y="2028.26">
+  <object id="25" name="Ball Machine" x="1930" y="2014">
    <properties>
-    <property name="description" value="Interacting with the [[Vending Machine]] allows the [[party]] to insert [[POINT]]s into the Ball Machine for a chance to win certain prizes."/>
+    <property name="description" value="Interacting with the [[vending machine]] allows the [[party]] to insert [[POINT]]s into the Ball Machine for a chance to win certain prizes."/>
     <property name="page" value="Ball Machine"/>
    </properties>
    <point/>
   </object>
-  <object id="30" name="Pippins" x="473.417" y="2068.41">
+  <object id="30" name="Pippins" x="473" y="2056">
    <properties>
     <property name="description" value="A [[Pippins]] blocks the doorway and offers to unlock the door in exchange for 500 [[POINT]]s."/>
    </properties>
    <point/>
   </object>
-  <object id="38" name="Vending Machine" x="2164.88" y="625">
+  <object id="38" name="Vending machine" x="2163" y="610">
    <properties>
-    <property name="description" value="Offers to exchange [[Dark Dollar]]s for [[POINT]]s as well as some [[TV Slop]] to buy for POINTs"/>
-    <property name="page" value="Vending Machine"/>
+    <property name="description" value="Offers to exchange [[Dark Dollar]]s for [[POINT]]s as well as some [[TV Slop]] to buy for POINTs."/>
+    <property name="page" value="Vending machine"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="4" name="sublocations">
-  <object id="13" name="The Legend of Tenna" x="321.101" y="3014.33">
+  <object id="13" name="The Legend of Tenna" x="320" y="3000">
    <properties>
     <property name="description" value="The location that houses the boards played in ''The Legend of Tenna''."/>
     <property name="page" value="The Legend of Tenna"/>
    </properties>
    <point/>
   </object>
-  <object id="16" name="ABC-Rank Rewards Room" x="1997.07" y="2670.57">
+  <object id="16" name="ABC-Rank Rewards Room" x="2000" y="2680">
    <properties>
-    <property name="description" value="A hallway containing doors that unlock after receiving at least a certain rank on the previous round of [[TV Time]]. Extra pathways unlock if Z-Rank or T-Rank was attained."/>
+    <property name="description" value="A hallway containing doors that unlock after receiving at least a certain rank on the previous round of ''[[TV Time]]''. Extra pathways unlock if Z-Rank or T-Rank was attained."/>
     <property name="page" value="Green Room#ABC-Rank Rewards Room"/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="T-Rank Room" x="991.51" y="2674.35">
+  <object id="19" name="T-Rank Room" x="1000" y="2680">
    <properties>
-    <property name="description" value="A hallway unlocked after receiving a T-Rank on the previous round of [[TV Time]]. Contains a book at the end of the hallway."/>
+    <property name="description" value="A hallway unlocked after receiving a T-Rank on the previous round of ''[[TV Time]]''. Contains a book at the end of the hallway."/>
     <property name="page" value="Green Room#T-Rank Room"/>
    </properties>
    <point/>
   </object>
-  <object id="21" name="Z-Rank Changing Room" x="3095.61" y="2161.93">
+  <object id="21" name="Z-Rank Changing Room" x="3080" y="2160">
    <properties>
-    <property name="description" value="A changing room that [[Kris]] enters alone, only accessible after receiving a Z-Rank on any round of [[TV Time]]. Contains a manhole that leads to the [[Backstage]] area of the Green Room, allowing Kris to start or continue the [[Sword Route]]."/>
+    <property name="description" value="A changing room that [[Kris]] enters alone, only accessible after receiving a Z-Rank on any round of ''[[TV Time]]''. Contains a manhole that leads to the [[Backstage]] area of the Green Room, allowing Kris to start or continue the [[Sword Route]]."/>
     <property name="page" value="Green Room#Z-Rank Changing Room"/>
    </properties>
    <point/>
   </object>
-  <object id="32" name="S-Rank Changing Room" x="2417.68" y="729.936">
+  <object id="32" name="S-Rank Changing Room" x="2440" y="720">
    <properties>
-    <property name="description" value="A changing room that [[Kris]] enters alone, only accessible after receiving at least an S-Rank on any round of [[TV Time]]. Has a door leading to the [[Backstage]] area of the Green Room, allowing Kris to start or continue the [[Sword Route]]."/>
+    <property name="description" value="A changing room that [[Kris]] enters alone, only accessible after receiving at least an S-Rank on any round of ''[[TV Time]]''. Has a door leading to the [[Backstage]] area of the Green Room, allowing Kris to start or continue the [[Sword Route]]."/>
     <property name="page" value="Green Room#S-Rank Changing Room"/>
    </properties>
    <point/>
@@ -136,13 +147,13 @@
   </object>
  </objectgroup>
  <objectgroup id="10" name="signs">
-  <object id="20" name="T-Rank book" x="471.26" y="2618.02">
+  <object id="20" name="T-Rank book" x="471" y="2612">
    <properties>
-    <property name="description" value="After attaining a T-Rank on any round of [[TV Time]], the [[party]] can read a page from this book."/>
+    <property name="description" value="After attaining a T-Rank on any round of ''[[TV Time]]'', the [[party]] can read a page from this book."/>
    </properties>
    <point/>
   </object>
-  <object id="27" name="Sign" x="1625.9" y="2224.36">
+  <object id="27" name="Sign" x="1626" y="2214">
    <properties>
     <property name="description">Welcome to [[Ball Machine|BALL MACHINE]]. Insert [[POINT|points]] to gain PRIZES.
 The minimum is 100 POINTs. MORE POINTs increases GOLD CHANCE.
@@ -155,7 +166,7 @@ You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
    </properties>
    <point/>
   </object>
-  <object id="40" name="Note" x="2271.55" y="308.912">
+  <object id="40" name="Note" x="2270" y="294">
    <properties>
     <property name="description">'''After board 1:''' (ACT 1 SCHEDULE).&quot; (Various names and times are written on it.)
 (&quot;ACT 2 SCHEDULE&quot; is scrawled underneath in red pen...)
@@ -167,10 +178,13 @@ You turned to the camera and thanked [[Tenna]] tor a great toy! Thanks, Tenna!
   </object>
  </objectgroup>
  <objectgroup id="11" name="saves">
-  <object id="7" name="Green Room" x="1704.39" y="3253.58">
+  <object id="7" name="Green Room" x="1704" y="3243">
    <properties>
     <property name="description">'''Initial:''' Stars ripple on the walls like soft music.
 You're filled with the power of relaxation.
+
+'''Post-Island Board:''' The star pattern scrolls in an endless pattern...
+You're filled with the power of tessellation.
 
 '''Post-TV World:''' After a performance, when all the actors have gone home...
 You feel a sense of emptiness.</property>
@@ -180,63 +194,63 @@ You feel a sense of emptiness.</property>
   </object>
  </objectgroup>
  <objectgroup id="5" name="plot">
-  <object id="12" name="TV Time (interstitial period)" x="960.789" y="3014.96">
+  <object id="12" name="''TV Time'' (interstitial period)" x="960" y="3000">
    <properties>
-    <property name="description" value="In between [[TV Time]] rounds, the [[party]] meet here to discuss what to do next. In between rounds 1 and 2, [[Susie]] goes into the TV Time room alone to speak with [[Tenna]]. In between rounds 2 and 3, Susie grows suspicious of Tenna's actions."/>
+    <property name="description" value="In between ''[[TV Time]]'' rounds, the [[party]] meet here to discuss what to do next. In between rounds 1 and 2, [[Susie]] goes into the ''TV Time'' room alone to speak with [[Tenna]]. In between rounds 2 and 3, Susie grows suspicious of Tenna's actions."/>
    </properties>
    <point/>
   </object>
-  <object id="15" name="TV Time intermission" x="322.358" y="3235.52">
+  <object id="15" name="''TV Time'' intermission" x="320" y="3200">
    <properties>
     <property name="description" value="[[Tenna]] holds phone calls in between rounds before hastily hanging up whenever the [[party]] approaches. This eventually causes [[Susie]] to grow suspicious of Tenna's true motivations."/>
    </properties>
    <point/>
   </object>
-  <object id="26" name="gacharoom_unknown" x="1782.01" y="2150.59">
+  <object id="26" name="gacharoom_unknown" x="1780" y="2140">
    <properties>
     <property name="description" value="Inputting &quot;[[1225]]&quot; into the [[Ball Machine]] transports [[Kris]] to gacharoom_unknown, which is a large, open room that poses as a maze. Interacting with the blue Ball Machine within the room transports Kris back to the B-Rank room, and for the large Ball Machine to permanently disappear."/>
     <property name="page" value="gacharoom_unknown"/>
    </properties>
    <point/>
   </object>
-  <object id="28" name="Rock Video" x="1134.14" y="2075">
+  <object id="28" name="Rock Video" x="1134" y="2040">
    <properties>
     <property name="description" value="The [[party]] can replay the Rock Video minigame through this door after unlocking it."/>
     <property name="page" value="Rock Video"/>
    </properties>
    <point/>
   </object>
-  <object id="29" name="Cooking Challenge" x="803.495" y="2075">
+  <object id="29" name="Cooking Show" x="804" y="2040">
    <properties>
-    <property name="description" value="The [[party]] can replay the Cooking Challenge minigame through this door."/>
-    <property name="page" value="Cooking Challenge"/>
+    <property name="description" value="The [[party]] can replay the Cooking Show minigame through this door."/>
+    <property name="page" value="Cooking Show"/>
    </properties>
    <point/>
   </object>
-  <object id="31" name="Monster Movie" x="472.846" y="2035.29">
+  <object id="31" name="Monster Movie" x="474" y="2026">
    <properties>
     <property name="description" value="The [[party]] can play the Monster Movie minigame through this door after unlocking it."/>
     <property name="page" value="Monster Movie"/>
    </properties>
    <point/>
   </object>
-  <object id="42" name="Sword Route" x="1201.94" y="312.306">
+  <object id="42" name="Sword Route" x="1202" y="300">
    <properties>
-    <property name="description" value="An alternate route that must be initiated in between rounds 1 and 2 of [[TV Time]]. Completion of the route grants the [[Shadow Mantle]]."/>
+    <property name="description" value="An alternate route that must be initiated in between rounds 1 and 2 of ''[[TV Time]]''. Completion of the route grants the [[Shadow Mantle]]."/>
     <property name="page" value="Sword Route"/>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Clipboard" x="2541.8" y="2924.24">
+  <object id="50" name="Clipboard" x="2542" y="2924">
    <properties>
-    <property name="description">A list of [[Tenna]]'s remaining employees, appearing after traversing the greater TV World. It serves to remind the [[party]] about enemies they have not yet [[Recruits|recruited]].
+    <property name="description">A list of [[Tenna]]'s remaining employees, appearing after traversing the greater TV World. It serves to remind the [[party]] about which [[route]] they are on.
 * '''Recruited everyone:''' ''Looks like you've recruited everyone.''
 * '''Missing recruits:''' ''Looks like you haven't recruited all of them yet.''
 * '''LOST recruits:''' ''Looks like some people resigned due to getting hurt on the job. Seems you'll never recruit everyone.''</property>
    </properties>
    <point/>
   </object>
-  <object id="52" name="Hidden entrance to Ramb's bar" x="2012.9" y="768.244">
+  <object id="52" name="Hidden entrance to Ramb's bar" x="2015" y="760">
    <properties>
     <property name="description" value="Entryway that unlocks after progressing the [[Sword Route]] past the [[Ice Palace]] and traversing the greater TV World. The entryway leads to the area behind [[Ramb]]'s bar, from which [[Kris]] can witness [[Susie]] and [[Ralsei]] playing video games together."/>
    </properties>
@@ -249,118 +263,118 @@ You feel a sense of emptiness.</property>
   </object>
  </objectgroup>
  <objectgroup id="6" name="npcs">
-  <object id="4" name="Zapper" x="2240.43" y="3433.33">
+  <object id="4" name="Zapper" x="2239" y="3396">
    <properties>
-    <property name="description" value="Is friends with the [[Pippins]] next to it. Turns to stone after traversing the greater TV World."/>
+    <property name="description" value="Is friends with the [[Pippins]] next to him. Turns to stone after traversing the greater TV World."/>
    </properties>
    <point/>
   </object>
-  <object id="5" name="Pippins" x="2346.6" y="3480.15">
+  <object id="5" name="Pippins" x="2347" y="3466">
    <properties>
     <property name="description" value="Is friends with the [[Zapper]] next to it. After traversing the greater TV World, it laments that the Zapper turned to stone and urges the [[party]] to seal the [[Dark Fountain]]."/>
    </properties>
    <point/>
   </object>
-  <object id="8" name="Zapper" x="2600.19" y="2931.3">
+  <object id="8" name="Zapper" x="2599" y="2900">
    <properties>
-    <property name="description" value="Blocks the way to the [[Cold Place]] under [[Tenna]]'s orders. After round 2 of [[TV Time]], the [[party]] can provoke him into attacking by selecting &quot;Do nothing&quot; when talked to. If &quot;Push his buttons&quot; is selected twice, he allows the party through without conflict."/>
+    <property name="description" value="Blocks the way to the [[Cold Place]] under [[Tenna]]'s orders. After round 2 of ''[[TV Time]]'', the [[party]] can provoke him into attacking by selecting &quot;Do nothing&quot; when talked to. If &quot;Push his buttons&quot; is selected twice, he allows the party through without conflict."/>
    </properties>
    <point/>
   </object>
-  <object id="9" name="Ramb" x="2018.41" y="2928.21">
+  <object id="9" name="Ramb" x="2019" y="2912">
    <properties>
-    <property name="description" value="Gives the [[party]] an [[item]] depending on how they performed during each round of [[TV Time]]."/>
+    <property name="description" value="Gives the [[party]] an [[item]] depending on how they performed during each round of ''[[TV Time]]''."/>
     <property name="page" value="Ramb"/>
    </properties>
    <point/>
   </object>
-  <object id="10" name="Pippins" x="1787.87" y="2946">
+  <object id="10" name="Pippins" x="1789" y="2932">
    <properties>
     <property name="description" value="Explains to [[Kris]] that they and [[Asriel]] took them home from [[School]] and how the [[Rudinn]]s they also took with them got lost."/>
    </properties>
    <point/>
   </object>
-  <object id="17" name="Zapper" x="2423.16" y="2515.07">
+  <object id="17" name="Zapper" x="2421" y="2488">
    <properties>
-    <property name="description" value="Explains the rewards for attaining each rank and which doors are available to the party. If Z-Rank is attained, the Zapper explains that they have unlocked none of the rooms and reveals a hallway to the east that leads to the Z-Rank changing room. After traversing the greater TV World, the Zapper is replaced with a [[Vending Machine]] which trades [[POINT]]s for [[Dark Dollar]]s."/>
+    <property name="description" value="Explains the rewards for attaining each rank and which doors are available to the party. If Z-Rank is attained, the Zapper explains that they have unlocked none of the rooms and reveals a hallway to the east that leads to the Z-Rank changing room. After traversing the greater TV World, the Zapper is replaced with a [[vending machine]] which trades [[POINT]]s for [[Dark Dollar]]s."/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Zapper" x="2534.17" y="2025">
+  <object id="23" name="Zapper" x="2535" y="2000">
    <properties>
     <property name="description" value="Is drinking water from the nearby [[Watercooler]]. If spoken to after defeating it, he mentions drinking water from an oasis eight times, which is a hint on a way to drain the oasis on the [[Desert Board]]."/>
    </properties>
    <point/>
   </object>
-  <object id="24" name="Zapper" x="2310.28" y="2025">
+  <object id="24" name="Zapper" x="2311" y="2000">
    <properties>
     <property name="description" value="Is drinking water from the nearby [[Watercooler]]. If spoken to after defeating it, he remarks on how wars will be fought over the absence of water."/>
    </properties>
    <point/>
   </object>
-  <object id="33" name="Pippins" x="2595.47" y="633">
+  <object id="33" name="Pippins" x="2597" y="622">
    <properties>
     <property name="description" value="Explains how [[Susie]]'s Rude Buster deals more damage by timing [CONFIRM] to the hit."/>
    </properties>
    <point/>
   </object>
-  <object id="34" name="Shadowguy" x="2818.33" y="633">
+  <object id="34" name="Shadowguy" x="2818" y="633">
    <properties>
     <property name="description" value="A [[Shadowguy]] behind the curtain, changing his socks. When revealed, he screams, and the curtain is pulled back."/>
    </properties>
    <point/>
   </object>
-  <object id="35" name="Rouxls Kaard" x="3037.44" y="605">
+  <object id="35" name="Rouxls Kaard" x="3039" y="590">
    <properties>
-    <property name="description" value="Is seen doing his makeup in preparation for round 2 of [[TV Time]]."/>
+    <property name="description" value="Is seen doing his makeup in preparation for round 2 of ''[[TV Time]]''."/>
    </properties>
    <point/>
   </object>
-  <object id="36" name="Rabbick" x="3104.93" y="687.678">
+  <object id="36" name="Rabbick" x="3105" y="686">
    <properties>
     <property name="description" value="Explains that it got stuck to [[Kris]]'s clothes and expects to return to [[Castle]] town soon."/>
    </properties>
    <point/>
   </object>
-  <object id="37" name="Curtain NPC" x="3260.75" y="633.69">
+  <object id="37" name="Curtain NPC" x="3261" y="633">
    <properties>
-    <property name="description" value="An unseen NPC behind the curtain. Gives [[Kris]] a [[Saber10]] after the first round of [[TV Time]]."/>
+    <property name="description" value="An unseen NPC behind the curtain. Gives [[Kris]] a [[Saber 10]] after the first round of ''[[TV Time]]''."/>
     <property name="page" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
-  <object id="39" name="Ramb" x="2019.66" y="653.858">
+  <object id="39" name="Ramb" x="2020" y="642">
    <properties>
     <property name="description" value="Explains that the boards [[Kris]] has been playing had been modified by [[Tenna]] for his own purposes. After each board, he allows Kris to play the &quot;original&quot; versions of those boards."/>
     <property name="page" value="Ramb"/>
    </properties>
    <point/>
   </object>
-  <object id="1" name="Curtain NPC" x="1518.87" y="4049.03">
+  <object id="1" name="Curtain NPC" x="1520" y="4000">
    <properties>
-    <property name="description" value="An unseen NPC stands here after round 1 of [[TV Time]]. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
+    <property name="description" value="An unseen NPC stands here after round 1 of ''[[TV Time]]''. After round 2, the NPC is replaced with a [[Shuttah]], and after traversing the greater TV World, the NPC disappears."/>
     <property name="page" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
-  <object id="51" name="Zapper" x="2418.36" y="1039.33">
+  <object id="51" name="Zapper" x="2419" y="1022">
    <properties>
-    <property name="description" value="Blocks the doorway to the S-Rank room. Allows [[Kris]] to pass through if they received or bought an S-Rank or higher during the first two rounds of [[TV Time]]. Disappears after traversing the greater TV World."/>
+    <property name="description" value="Blocks the doorway to the S-Rank room. Allows [[Kris]] to pass through if they received or bought an S-Rank or higher during the first two rounds of ''[[TV Time]]''. Disappears after traversing the greater TV World."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="12" name="items">
-  <object id="41" name="Odd Controller" x="1784.25" y="391.937">
+  <object id="41" name="Odd Controller" x="1800" y="400">
    <properties>
-    <property name="description" value="[[Kris]] picks up the Odd Controller from the ground after attempting to start the [[Sword Route]] game for the first time."/>
+    <property name="description" value="[[Kris]] picks up the Odd Controller from the ground after attempting to start the [[Original Game]] for the first time."/>
     <property name="page" value="Odd Controller"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="7" name="enemies">
-  <object id="22" name="Watercooler" x="2418.1" y="2073.35">
+  <object id="22" name="Watercooler" x="2419" y="2054">
    <properties>
     <property name="description" value="Static encounter agaist a [[Watercooler]]. Awards 200 [[POINT]]s upon defeat."/>
     <property name="page" value="Watercooler"/>
@@ -369,16 +383,16 @@ You feel a sense of emptiness.</property>
   </object>
  </objectgroup>
  <objectgroup id="13" name="connections">
-  <object id="43" name="Cold Place" x="2655.39" y="3000.34">
+  <object id="43" name="Cold Place" x="2640" y="3000">
    <properties>
     <property name="description" value="Doorway to the Cold Place, a cold area at the edge of the TV World."/>
     <property name="page" value="Cold Place"/>
    </properties>
    <point/>
   </object>
-  <object id="49" name="TV World" x="2500.55" y="4173.95">
+  <object id="49" name="TV World" x="2500" y="4160">
    <properties>
-    <property name="description" value="Pathway to the greater TV World area, blocked off in between Round 1 and Round 2 of ''[[TV Time]]''."/>
+    <property name="description" value="Pathway to the greater TV World area, blocked off in between Round 1 and Round 2 of ''''[[TV Time]]''''."/>
     <property name="page" value="TV World"/>
    </properties>
    <point/>
