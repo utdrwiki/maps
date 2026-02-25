@@ -271,7 +271,7 @@ You feel a sense of emptiness.</property>
   </object>
   <object id="5" name="Pippins" x="2347" y="3466">
    <properties>
-    <property name="description" value="Is friends with the [[Zapper]] next to it. After traversing the greater TV World, it laments that the Zapper turned to stone and urges the [[party]] to seal the [[Dark Fountain]]."/>
+    <property name="description" value="Is friends with the [[Zapper]] next to him. After traversing the greater TV World, it laments that the Zapper turned to stone and urges the [[party]] to seal the [[Dark Fountain]]."/>
    </properties>
    <point/>
   </object>
