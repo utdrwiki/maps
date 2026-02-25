@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="105" height="137" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="75">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="name" value="Castle Town (Chapter 4 start)"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Castle Town map Chapter 4 start">
+  <image source="images/Castle Town 4 start.png" width="4200" height="5480"/>
+ </imagelayer>
+ <objectgroup id="9" name="vendors">
+  <object id="33" name="Seam" x="978.967" y="3927">
+   <properties>
+    <property name="description" value="Sells [[item]]s to the [[party]]. Also accepts the [[Knight]]'s [[Shadow Crystal]] if they received it."/>
+    <property name="page" value="Seam"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="sublocations">
+  <object id="3" name="Ralsei's castle" x="1401" y="2080">
+   <properties>
+    <property name="description" value="[[Ralsei]]'s home. [[Kris]], [[Susie]], [[Lancer]], [[Queen]], and [[Tenna]] have individual rooms, while [[King]] is imprisoned in the basement."/>
+    <property name="page" value="Ralsei's castle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Top Bakery" x="2480" y="3760">
+   <properties>
+    <property name="description" value="A restaurant where the [[party]] can fuse their [[item]]s and obtain a [[Spin Cake]]."/>
+    <property name="page" value="Top Bakery"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Cafe" x="2600" y="4160">
+   <properties>
+    <property name="description" value="The Cat Cafe. Allows the party to place their current [[recruit]]s at each table."/>
+    <property name="page" value="Cafe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Party Dojo" x="325" y="4140">
+   <properties>
+    <property name="description" value="The Newly-rebranded Love Dojo. Allows the [[party]] to battle lovers."/>
+    <property name="page" value="Party Dojo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" x="2038.76" y="699.215">
+   <properties>
+    <property name="color" type="color" value="#ff414185"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 1094.17,0.0120553 1094.21,964.181 0.174991,964.161"/>
+  </object>
+  <object id="74" name="TV Studio" x="1629" y="3927">
+   <properties>
+    <property name="description" value="A building that allows the [[party]] to replay the [[Rock Video]] minigame and access [[Mike's room]]."/>
+    <property name="page" value="TV Studio"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="signs">
+  <object id="10" name="Sign" x="1904" y="3963">
+   <properties>
+    <property name="description">Mama Miba! Welcome to TOP Bakery!
+Our special chefs spin baked goods at the TOP of their class!</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="1" name="Manual" x="1305" y="3673">
+   <properties>
+    <property name="description" value="Contains topics regarding [[recruit]]s, [[item]] storage, and the game's [[Config#Controls|controls]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Sign" x="1180" y="2134">
+   <properties>
+    <property name="description" value="''2F : LIVING QUARTERS''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Sign" x="1780" y="2134">
+   <properties>
+    <property name="description" value="BF : LIVING QUARTERS FOR BAD GUYS"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="saves">
+  <object id="2" name="My Castle Town" x="1492" y="3703">
+   <properties>
+    <property name="description">'''Incomplete recruits:''' Once again you find yourself in a familiar town.
+ You are filled with the power of conspicuously normal music.
+'''Complete recruits:''' Funky music emerges from the cafe and fills the town.
+You are filled with the power of funky town.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="plot">
+  <object id="22" name="Arrival" x="1400" y="4720">
+   <properties>
+    <property name="description" value="Ralsei greets [[Kris]] and [[Susie]] with a group hug. Susie explains the current situation regarding the [[Knight]] and [[Undyne]] to Ralsei, and Ralsei reassures Susie."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Tea party" x="1405" y="1206">
+   <properties>
+    <property name="description" value="[[Susie]] and [[Kris]] enter their rooms and notice that they have merged. [[Ralsei]] offers a tea partywith cake to the [[party]], and the three reminisce about their adventure."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Ralsei's room" x="460" y="380">
+   <properties>
+    <property name="description" value="[[Ralsei]] attempts to prevent [[Susie]] from seeing the state of his room. When Susie sees how empty it is, she resolves to find furniture for him. Ralsei asks [[Kris]] if [[Darkner]]s like him should have feelings of their own since he believes that he does not deserve his own room."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="npcs">
+  <object id="7" name="Malius" x="2555" y="3519">
+   <properties>
+    <property name="description" value="Malius offers to [[fuse]] certain [[items]] together to make new ones."/>
+    <property name="page" value="Malius"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Hacker" x="440.002" y="4622">
+   <properties>
+    <property name="description" value="Is playing a children's game using a modified controller."/>
+    <property name="page" value="Hacker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Pippins" x="517" y="4626">
+   <properties>
+    <property name="description" value="Is attempting to scam [[Hacker]] using a children's game."/>
+    <property name="page" value="Pippins"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Worm" x="2720" y="4610">
+   <properties>
+    <property name="description" value="Is eating a leaf."/>
+    <property name="page" value="Worm"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Shadowguy" x="2800" y="4486">
+   <properties>
+    <property name="description" value="Makes saxophone noises when interacted with."/>
+    <property name="page" value="Shadowguy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Swatchling" x="2720" y="4382">
+   <properties>
+    <property name="description" value="Is practicing fanning out of servitude to [[Queen]]."/>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Rudinn" x="2596" y="4460">
+   <properties>
+    <property name="description" value="Is instructing the Fan Club members on proper fanning tehnique."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Addisons" x="2960" y="4480">
+   <properties>
+    <property name="description" value="Randomly-colored Addisons advertise various products."/>
+    <property name="page" value="Addison"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Dummy" x="3104" y="4517">
+   <properties>
+    <property name="description" value="[[Susie]] compliments [[Ralsei]]'s outfit, while Ralsei protests."/>
+    <property name="page" value="Dummy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Little ball" x="3639" y="4615">
+   <properties>
+    <property name="description" value="Comments on being well-rounded due to being supported by friends."/>
+    <property name="page" value="Little ball"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Bloxer" x="3805" y="4664">
+   <properties>
+    <property name="description" value="Explains that they have been training too hard, to the point where their legs have gained independence."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Bloxer's legs" x="3723" y="4567">
+   <properties>
+    <property name="description" value="Reacts to [[Kris]]'s presence."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Nubert" x="1221" y="4570">
+   <properties>
+    <property name="description" value="Commends the [[party]] for recruiting all possible [[Darkner]]s."/>
+    <property name="page" value="Nubert"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Lancer" x="1759" y="4458">
+   <properties>
+    <property name="description" value="Stands on top of the ramparts. When approaching him, he jumps on top of [[Susie]]'s back and travels with the [[party]] throughout the town square."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Sleepy Rudinn" x="1281" y="4160">
+   <properties>
+    <property name="description" value="Explains the state of the town due to the [[party]]'s previous actions."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="26" name="Rudinn" x="888" y="4090">
+   <properties>
+    <property name="description" value="Expresses annoyance of the [[Rudinn Ranger]] chatting up the [[Watercooler]]."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Watercooler" x="977" y="4079">
+   <properties>
+    <property name="description" value="The narration states that it seems agitated."/>
+    <property name="page" value="Watercooler"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Rudinn Ranger" x="1079" y="4092">
+   <properties>
+    <property name="description" value="Compliments the water from the [[Watercooler]]."/>
+    <property name="page" value="Rudinn Ranger"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Ribbick" x="1654" y="4172">
+   <properties>
+    <property name="description" value="Is supporting the [[Zapper]] next to it."/>
+    <property name="page" value="Ribbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Zapper" x="1718" y="4042">
+   <properties>
+    <property name="description" value="Criticizes the [[Swatchling]] and calls for his retirement."/>
+    <property name="page" value="Zapper"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Swatchling" x="1841" y="4064">
+   <properties>
+    <property name="description" value="Criticizes the [[Zapper]] and calls for his retirement."/>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Rabbick" x="1924" y="4174">
+   <properties>
+    <property name="description" value="Is cheering on the [[Swatchling]] next to it."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Swatch" x="2920" y="3950">
+   <properties>
+    <property name="description" value="Comments on the Cafe having become a &quot;Cat Cafe&quot;."/>
+    <property name="page" value="Swatch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Love Master" x="165" y="4010">
+   <properties>
+    <property name="description" value="Offers information about &quot;LOVE's&quot;."/>
+    <property name="page" value="Love Master"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Pippins" x="389" y="4030">
+   <properties>
+    <property name="description" value="Comments on how the [[party]] met the other Pippins."/>
+    <property name="page" value="Pippins"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Clover" x="430" y="4186">
+   <properties>
+    <property name="description" value="Comments on [[Cap'n]]'s song playing in the background."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Cap'n" x="515" y="4152">
+   <properties>
+    <property name="description" value="Explains that they have replaced the song playing in the Dojo."/>
+    <property name="page" value="Cap'n"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Bloxer" x="479" y="4006">
+   <properties>
+    <property name="description" value="Comments on the difficulty of the new dojo style and states that it may take years to master their &quot;lovely&quot; formation."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Shuttah" x="1258" y="2809">
+   <properties>
+    <property name="description" value="Explains that it is doing a wildlife fashion shoot and offers to take a picture of the [[party]]."/>
+    <property name="page" value="Shuttah"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Maus" x="1515" y="2835">
+   <properties>
+    <property name="description" value="Makes squeaking noises when interacted with"/>
+    <property name="page" value="Maus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="C. Round" x="1560" y="2868">
+   <properties>
+    <property name="description" value="Makes squeaking noises when interacted with."/>
+    <property name="page" value="C. Round"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Poppup" x="1640" y="2826">
+   <properties>
+    <property name="description" value="Makes electronic noises when interacted with."/>
+    <property name="page" value="Poppup"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Tasque" x="1563" y="2744">
+   <properties>
+    <property name="description" value="Makes meowing noises when interacted with."/>
+    <property name="page" value="Tasque"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="C. Round" x="2111" y="2182">
+   <properties>
+    <property name="description" value="Is sleeping in front of the jails. The narration states that it is doing &quot;an absolutely reprehensible job&quot; of protecting the jail."/>
+    <property name="page" value="C. Round"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Goulden Sam" x="2120" y="2047">
+   <properties>
+    <property name="description" value="Expresses their desire of leaving with the rest of the escaped prisoners."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Former King" x="2217" y="2041">
+   <properties>
+    <property name="description" value="Remains behind bars despite everyone else leaving."/>
+    <property name="page" value="Former Kings"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Goulden Sam" x="2400" y="2047">
+   <properties>
+    <property name="description" value="Explains that the kings and animals left to seek fortune."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="King" x="3280" y="2090">
+   <properties>
+    <property name="description" value="King inquires about the [[party]]'s experience with the [[Knight]]. If [[Tenna]] is in the town, King accepts him as a jester."/>
+    <property name="page" value="King"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Lancer" x="2687" y="1054">
+   <properties>
+    <property name="description" value="Is expanding and rennovating his room with the help of the other [[Darkner]]s in search of buried treasure."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Maus" x="2785" y="1130">
+   <properties>
+    <property name="description" value="Makes squeaking noises when interacted with."/>
+    <property name="page" value="Maus"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Mr. Elegance" x="2751" y="1058">
+   <properties>
+    <property name="description" value="Is helping [[Lancer]] build &quot;enrichment enclosures&quot; for the other townsfolk."/>
+    <property name="page" value="Mr. Elegance"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Bulldozer" x="2838" y="1009">
+   <properties>
+    <property name="description" value="Is receiving enrichment from its surroundings."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="57" name="Hacker" x="2644" y="1228">
+   <properties>
+    <property name="description" value="is gathering greens as part of a &quot;Life's Hack&quot;."/>
+    <property name="page" value="Hacker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Ponman" x="2554" y="1230">
+   <properties>
+    <property name="description" value="Is receiving enrichment from tamping the soil."/>
+    <property name="page" value="Ponman"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Swatchling" x="2566" y="1030">
+   <properties>
+    <property name="description" value="Is gathering worms from the ground. Secretly wishes to work for [[Rouxls Kaard]]."/>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Rouxls Kaard" x="1594" y="277">
+   <properties>
+    <property name="description" value="Is disguised as a lamp to impress [[Queen]]."/>
+    <property name="page" value="Rouxls Kaard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Queen" x="1744" y="95">
+   <properties>
+    <property name="description" value="Is drinking battery acid and enjoying her new room. She offers the [[party]] some acid, but [[Susie]] declines on their behalf."/>
+    <property name="page" value="Queen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Werewerewire" x="2448" y="284">
+   <properties>
+    <property name="description" value="Is engaging with a computer dating app."/>
+    <property name="page" value="Werewerewire"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Head Hathy" x="2188" y="304">
+   <properties>
+    <property name="description" value="Is engaging with a computer dating app."/>
+    <property name="page" value="Head Hathy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Rabbick" x="2283" y="197.003">
+   <properties>
+    <property name="description" value="Is cleaning the streets from on top of the [[Electro-Dasher]]."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="63" name="Shadowguys" x="2218" y="82">
+   <properties>
+    <property name="description" value="Are part of a touring band that only does the touring."/>
+    <property name="page" value="Shadowguy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Rouxls Kaard" x="923" y="269">
+   <properties>
+    <property name="description" value="Is disguised as a lamp to impress [[Tenna]]. He objects when Tenna insults his rear."/>
+    <property name="page" value="Rouxls Kaard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Tenna" x="1226" y="263">
+   <properties>
+    <property name="description" value="Compliments his new room but hopes for a permanent home to live in."/>
+    <property name="page" value="Tenna"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Elnina" x="908" y="127.002">
+   <properties>
+    <property name="description" value="Expresses her love for [[Lanino]], but comments on [[Rouxls Kaard]] having caressed her hair."/>
+    <property name="page" value="Elnina"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Lanino" x="1017" y="116">
+   <properties>
+    <property name="description" value="Expresses his love for [[Elnina]], but comments on [[Rouxls Kaard]] having put his hand on his."/>
+    <property name="page" value="Lanino"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Royal Coat Rack" x="1221" y="113">
+   <properties>
+    <property name="description" value="Shows [[Ralsei]] the hats he has racked, but states that he has lost Ralsei's original hat."/>
+    <property name="page" value="Royal Coat Rack"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="8" name="Lancer Cookie" x="2480" y="3559">
+   <properties>
+    <property name="description" value="Lancer offers a Lancer Cookie if the [[party]] does not already have one."/>
+    <property name="page" value="Lancer Cookie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Spin Cake" x="2420" y="3642">
+   <properties>
+    <property name="description" value="Top Chef offers to replenish the [[party]]'s Spin Cake if they do not already have one."/>
+    <property name="page" value="Spin Cake"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="connections">
+  <object id="73" name="Light World" x="1400" y="5320">
+   <properties>
+    <property name="description" value="Going into the light takes the [[party]] back to the School."/>
+    <property name="page" value="School"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

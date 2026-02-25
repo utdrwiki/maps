@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="83" height="41" tilewidth="40" tileheight="40" infinite="0" nextlayerid="7" nextobjectid="7">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="name" value="Castle Town (Chapter 2 initial)"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="2" name="Castle Town map Chapter 2 initial">
+  <image source="images/Castle Town 2 initial.png" width="3320" height="1640"/>
+ </imagelayer>
+ <objectgroup id="3" name="saves">
+  <object id="4" name="Castle Town" x="957" y="296">
+   <properties>
+    <property name="description">You look upon the castle you first saw yesterday...
+You are filled with the power of immediate nostalgia.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="plot">
+  <object id="6" name="Reuniting with Ralsei" x="960" y="960">
+   <properties>
+    <property name="description" value="[[Ralsei]] greets [[Kris]] and [[Susie]] again. He directs Kris to the [[school]]'s unused classroom to retrieve [[Card Kingdom]]'s [[Darkner]]s."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="npcs">
+  <object id="2" name="Ralsei" x="940" y="520">
+   <properties>
+    <property name="description" value="[[Ralsei]] tells [[Kris]] to bring [[Card Kingdom]]'s [[Darkner]]s from the [[school]]'s unused classroom to Castle Town."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="3" name="Susie" x="1052" y="547">
+   <properties>
+    <property name="description" value="[[Susie]] waits for [[Kris]] to return to the Dark World. She comments on [[Ralsei]]'s appearance and whether Kris hugged the [[Dummy]] in the next room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Dummy" x="2075" y="812">
+   <properties>
+    <property name="description" value="[[Kris]] is given the option to hug the [[Dummy]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="connections">
+  <object id="1" name="Light World" x="960" y="1480">
+   <properties>
+    <property name="description" value="Going into the light takes the [[party]] back to the School."/>
+    <property name="page" value="School"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>

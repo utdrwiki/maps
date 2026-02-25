@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="105" height="113" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="56">
+ <properties>
+  <property name="include" value="Map:Common Data"/>
+  <property name="name" value="Castle Town (Chapter 2 end)"/>
+  <property name="popzoom" type="float" value="5"/>
+ </properties>
+ <imagelayer id="3" name="Castle Town map Chapter 2 end">
+  <image source="images/Castle Town 2 end.png" width="4200" height="4520"/>
+ </imagelayer>
+ <objectgroup id="8" name="vendors">
+  <object id="14" name="Sweet Cap'n Cakes" x="2840" y="3378">
+   <properties>
+    <property name="description" value="Offers to play various tracks from the game's [[:Category:Music|soundtrack]]."/>
+    <property name="page" value="Sweet Cap'n Cakes"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Seam" x="1214" y="2968">
+   <properties>
+    <property name="description" value="Sells items to the [[party]]. Also accepts [[Spamton NEO]]'s [[Shadow Crystal]] if they received it. "/>
+    <property name="page" value="Seam"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="sublocations">
+  <object id="27" name="Party Dojo" x="325" y="3060">
+   <properties>
+    <property name="description" value="The [[party]] can train their battle skills here through various challenges."/>
+    <property name="page" value="Party Dojo"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Top Bakery" x="2480" y="3160">
+   <properties>
+    <property name="description" value="A restaurant where the [[party]] can fuse their [[item]]s and obtain a [[Spin Cake]]."/>
+    <property name="page" value="Top Bakery"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Cafe" x="2360" y="2600">
+   <properties>
+    <property name="description" value="Allows the party to place their current [[recruit]]s at each table."/>
+    <property name="page" value="Cafe"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Ralsei's castle" x="1401" y="1120">
+   <properties>
+    <property name="description" value="[[Ralsei]]'s home. [[Kris]], [[Susie]], and [[Lancer]] have individual rooms, while [[King]] is imprisoned in the basement."/>
+    <property name="page" value="Ralsei's castle"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="signs">
+  <object id="2" name="Manual" x="1305" y="2713">
+   <properties>
+    <property name="description" value="Contains topics regarding [[recruit]]s, [[item]] storage, and the game's [[Config#Controls|controls]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Sign" x="1729" y="3250">
+   <properties>
+    <property name="description">Mama Miba! Welcome to TOP Bakery!
+Our special chefs spin baked goods at the TOP of their class!</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="5" name="Sign" x="1180" y="1174">
+   <properties>
+    <property name="description" value="''2F : LIVING QUARTERS''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="Sign" x="1780" y="1174">
+   <properties>
+    <property name="description" value="BF : LIVING QUARTERS FOR BAD GUYS"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="saves">
+  <object id="3" name="My Castle Town" x="1492" y="2743">
+   <properties>
+    <property name="description">'''First time after returning from [[Cyber World]]'''
+You touched the light...
+You thought about how you can't go back to the Cyber World anymore.
+You considered this carefully!
+'''Subsequent interactions'''
+After a long day, the town has grown once again.
+You are filled with a certain power...
+'''Weird Route'''
+After a long day, you have returned to the castle town.
+But, you still feel the power in your hands...</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="plot">
+  <object id="26" name="Queen's arrival" x="1400" y="4160">
+   <properties>
+    <property name="description" value="[[Queen]] appears at the entrance and comments on the state of the town. Her dialogue varies depending on whether the [[party]] recruited all possible [[Darkner]]s, recruited some, or recruited none."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="npcs">
+  <object id="9" name="Hacker" x="440" y="3541">
+   <properties>
+    <property name="description" value="Compares Castle Town to the one he made in Minecrap."/>
+    <property name="page" value="Hacker"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Mr. Elegance" x="2620" y="3370">
+   <properties>
+    <property name="description" value="Is building up the area to resemble the [[Great Board]]."/>
+    <property name="page" value="Mr. Elegance"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Worm" x="2910" y="3486">
+   <properties>
+    <property name="description" value="States that they do not understand taxes and values due to being a worm."/>
+    <property name="page" value="Worm"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Dummy" x="2956" y="3466">
+   <properties>
+    <property name="description" value="Had its clothes removed. [[Ralsei]] demands someone fix it, while [[Susie]] thinks about what [[Noelle]] would dress it up with."/>
+    <property name="page" value="Dummy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="Addison" x="3103" y="3448">
+   <properties>
+    <property name="description" value="Comments on the new customers and advertises a free sample of the mannequin's clothes for $4.99."/>
+    <property name="page" value="Addison"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="Bloxer" x="3700" y="3469">
+   <properties>
+    <property name="description" value="Comments that they have been training and asks if [[Kris]] is impressed."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="16" name="Electro-Dasher" x="3960" y="3640">
+   <properties>
+    <property name="description" value="Circles around the room and makes yelping noises when interacted with."/>
+    <property name="page" value="Electro-Dasher"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Rudinn" x="908" y="3368">
+   <properties>
+    <property name="description" value="Reminisces about battling the [[party]] and states that they have never met the &quot;horned girl&quot;."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="18" name="Virovirokun" x="1024" y="3348">
+   <properties>
+    <property name="description" value="Reminisces about battling [[Kris]] and wonders if they will meet [[Noelle]] again."/>
+    <property name="page" value="Virovirokun"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Rudinn" x="1213" y="3227">
+   <properties>
+    <property name="description" value="Comments on the state of [PLAYER]Town."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="20" name="Hathy" x="1890" y="3322">
+   <properties>
+    <property name="description" value="Expresses joy at seeing new faces."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Plugboy" x="1498" y="3123">
+   <properties>
+    <property name="description" value="Thanks [[Kris]] for the new town, but refuses to enter the restaurant."/>
+    <property name="page" value="Plugboy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Werewire" x="915" y="3064">
+   <properties>
+    <property name="description" value="Thanks [[Kris]] for getting rid of [[Queen]], and states that they are keeping their new form."/>
+    <property name="page" value="Werewire"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Swatchling" x="1797" y="2972">
+   <properties>
+    <property name="description" value="Thanks the [[party]] for a wider space to clean and comments on the people's clean hearts."/>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Rabbick" x="1915" y="3080">
+   <properties>
+    <property name="description" value="Expresses how nice it is to have friends that like &quot;good clean fun&quot;."/>
+    <property name="page" value="Rabbick"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Battle's Master" x="165" y="2918">
+   <properties>
+    <property name="description" value="Offers advice on battles, including grazing and hitbox size."/>
+    <property name="page" value="Battle's Master"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Clover" x="430" y="3106">
+   <properties>
+    <property name="description" value="Comments on the [[Werewerewire]] nearby."/>
+    <property name="page" value="Clover"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Werewerewire" x="484" y="3044">
+   <properties>
+    <property name="description" value="Refuses to forgive the [[party]] for sparing it unless they can beat it in a fight."/>
+    <property name="page" value="Werewerewire"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Bloxer" x="527" y="2926">
+   <properties>
+    <property name="description" value="Laments how their &quot;power level&quot; is falling behind the others."/>
+    <property name="page" value="Bloxer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Malius" x="2555" y="2919">
+   <properties>
+    <property name="description" value="Malius offers to [[fuse]] certain [[items]] together to make new ones."/>
+    <property name="page" value="Malius"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Swatchling" x="2711" y="2519">
+   <properties>
+    <property name="description" value="Serves as a waiter for the Cafe."/>
+    <property name="page" value="Swatchling"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Swatch" x="2623" y="2392">
+   <properties>
+    <property name="description" value="Swatch explains that his men have evicted [[Top Chef]] from the [[Cafe]] and allows the [[party]] to check their [[recruit]]s in his place."/>
+    <property name="page" value="Swatch"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Tasque Manager" x="2313" y="2359">
+   <properties>
+    <property name="description" value="Requests [[Kris]] make the [[Cafe]] into an animal cafe, with them as one of the animals."/>
+    <property name="page" value="Tasque Manager"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Tasque" x="2447" y="2393">
+   <properties>
+    <property name="description" value="The narration states that it seems well-behaved."/>
+    <property name="page" value="Tasque"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Nubert" x="1267" y="1888">
+   <properties>
+    <property name="description" value="States that he will settle down and give his riches to the weak."/>
+    <property name="page" value="Nubert"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Little ball" x="1200" y="1884">
+   <properties>
+    <property name="description" value="Comments on [[Nubert]]'s one-of-a-kind nature."/>
+    <property name="page" value="Little ball"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="Trashy" x="1540" y="1690">
+   <properties>
+    <property name="description" value="Expresses hopefulness in making new friends."/>
+    <property name="page" value="Trashy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Royal Coat Rack" x="1658" y="1681">
+   <properties>
+    <property name="description" value="Exclaims that [[Trashy]] is scary."/>
+    <property name="page" value="Royal Coat Rack"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="C. Round" x="2105" y="1224">
+   <properties>
+    <property name="description" value="Is &quot;voilently&quot; protecting the jail."/>
+    <property name="page" value="C. Round"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="48" name="Goulden Sam" x="2120" y="1087">
+   <properties>
+    <property name="description" value="Introduces themselves as &quot;Goulden Sam&quot;."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Former Kings" x="2217" y="1081">
+   <properties>
+    <property name="description" value="Still behind bars and dressed as animals, but they have grown to enjoy their new home."/>
+    <property name="page" value="Former Kings"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="Goulden Sam" x="2399" y="1087">
+   <properties>
+    <property name="description" value="States that the prison is nice."/>
+    <property name="page" value="Goulden Sam"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Cage animals" x="2500" y="1080">
+   <properties>
+    <property name="description" value="The animals state that, as cultural exchange, they have decided to dress as kings."/>
+    <property name="page" value="Cage Animals"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="King" x="3280" y="1130">
+   <properties>
+    <property name="description" value="Warns the [[party]] about [[Queen]], despite the [[party]] having already met her. Queen arrives soon after and has a conversation with King. If the party is missing [[recruit]]s, King simply states that they have &quot;left them behind&quot; and refuses to talk further."/>
+    <property name="page" value="King"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Lancer" x="1893" y="717">
+   <properties>
+    <property name="description" value="Is seen relaxing next to [[Queen]]. Lancer explains that Queen acts like a &quot;girldad&quot; to him."/>
+    <property name="page" value="Lancer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Queen" x="2034" y="707">
+   <properties>
+    <property name="description" value="Is seen relaxing next to [[Lancer]]. She requests [[Kris]] to give her regards to [[Noelle]] and [[Berdly]]."/>
+    <property name="page" value="Queen"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Rudinn" x="2140" y="728">
+   <properties>
+    <property name="description" value="Laments their constant relegation as a fan."/>
+    <property name="page" value="Rudinn"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="items">
+  <object id="7" name="Dealmaker/Puppet Scarf" x="140" y="3662">
+   <properties>
+    <property name="description" value="Appears here if not obtained in [[Cyber World]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Lancer Cookie" x="2480" y="2959">
+   <properties>
+    <property name="description" value="Lancer offers a Lancer Cookie if the [[party]] does not already have one."/>
+    <property name="page" value="Lancer Cookie"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Spin Cake" x="2420" y="3042">
+   <properties>
+    <property name="description" value="Having relocated here, Top Chef offers to replenish the [[party]]'s Spin Cake if they do not already have one."/>
+    <property name="page" value="Spin Cake"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="2" name="connections">
+  <object id="1" name="Light World" x="1400" y="4360">
+   <properties>
+    <property name="description" value="Going into the light takes the [[party]] back to the School."/>
+    <property name="page" value="School"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
