@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="105" height="137" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="75">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="105" height="137" tilewidth="40" tileheight="40" infinite="0" nextlayerid="11" nextobjectid="77">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="name" value="Castle Town (Chapter 4 start)"/>
@@ -508,6 +508,20 @@ You are filled with the power of funky town.</property>
    <properties>
     <property name="description" value="Shows [[Ralsei]] the hats he has racked, but states that he has lost Ralsei's original hat."/>
     <property name="page" value="Royal Coat Rack"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Tasque" x="2785" y="1240">
+   <properties>
+    <property name="description" value="Makes meowing noises when interacted with."/>
+    <property name="page" value="Tasque"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Poppup" x="2806" y="1147">
+   <properties>
+    <property name="description" value="Makes electronic noises when interacted with."/>
+    <property name="page" value="Poppup"/>
    </properties>
    <point/>
   </object>
