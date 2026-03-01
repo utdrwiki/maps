@@ -1,15 +1,160 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="66" height="45" tilewidth="20" tileheight="20" infinite="0" nextlayerid="8" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="66" height="45" tilewidth="20" tileheight="20" infinite="0" nextlayerid="8" nextobjectid="47">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Noelle's House map">
-  <image source="images/Noelle's House.png" width="1320" height="894"/>
+  <image source="images/Noelle's House.png" width="1322" height="894"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="saves"/>
+ <objectgroup id="3" name="plot">
+  <object id="14" name="Angel doll" x="632.5" y="780">
+   <properties>
+    <property name="description" value="An Angel doll. When Susie and Noelle come in basement, to progress, the SOUL must move to Christmas tree, being covered by the Angel doll."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Dess's guitar" x="428.5" y="192">
+   <properties>
+    <property name="description" value="A red guitar. Upon interacting, narration will notices there's a code taped to the inside ,labeled &quot;SHELTER.&quot; . Checking the pass code will cause Kris removes their [[SOUL]] after [[player]] read the first 3 numbers, &quot;122&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Susie talking with Noelle (normal route)" x="283" y="234">
+   <properties>
+    <property name="description" value="Susie and Noelle notice the noise and enter Dess's room. Deciding waiting for the next noise, they sit down nearby Dess's bed."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Kris attacking SOUL (normal route)" x="420" y="111">
+   <properties>
+    <property name="description" value="While [[Noelle Holiday|Noelle]] and [[Susie]] talk and wait for any loud noise, [[Kris Dreemurr|Kris]] attacks the [[SOUL]] to keep it away from the guitar. They stops attacking SOUL and becomes tired after all dialogues are done."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Gift box" x="198.5" y="409">
+   <properties>
+    <property name="description" value="The [[SOUL]] is threw to here by [[Kris]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Piano" x="1275" y="424">
+   <properties>
+    <property name="description">In the [[route|normal route]], after catching the [[SOUL]] again, [[Kris]] will walk to piano and begin playing [[Hidden_music_tracks#Kris's_piano_songs|song]]s.
+In the [[wierd route]], without Kris's presence, the SOUL can play the piano itself, but only make noise.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Bathroom" x="704" y="199">
+   <properties>
+    <property name="description">In the normal [[route]], when passing bathroom, [[Asgore]] can be seen cleaning the toilet. After a while, he walked away.
+In the [[wired route]], with &lt;code&gt;tinnitus&lt;/code&gt;, Kris heavily throws the [[SOUL]] to the bin after re-equiping the [[Thorn Ring]] to [[Noelle]].</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="Carol and Rudy's room" x="560" y="40">
+   <properties>
+    <property name="description" value="After leaving the bathroom, [[Asgore]] appears in Carol's room to look at the corkboard. "/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="re-equiping the Thorn Ring (wierd route)" x="140" y="220">
+   <properties>
+    <property name="description" value="[[Noelle]] is talking to [[Kris]] what happened ''last night'', including they removing a thorn on her hand. However, during the conversation, the [[SOUL]] re-enters Kris's body, controls them again and force them re-equip the [[thorn|Thorn Ring]] to Noelle, as &lt;code&gt;[[Hidden_music_tracks#sinedrone_danger_high|sinedrone_danger_high]]&lt;/code&gt; plays."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Switch" x="474" y="799">
+   <properties>
+    <property name="description" value="Upon removing the gift box and reaching the switch, the power will be cut off, which causes [[Susie]] and [[Noelle]] deciding to go to the basement."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="saves">
+  <object id="1" name="Noelle's House" x="936.5" y="344">
+   <properties>
+    <property name="description">''(You could barely see it. A patch of sunlight that shouldn't be there.)''
+''(It felt different in your hand. And you knew what it was.)'' '''[first interactionwith any SAVE point in the Light World]'''</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="page" value="SAVE Point"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
  <objectgroup id="5" name="npcs"/>
- <objectgroup id="6" name="signs"/>
- <objectgroup id="7" name="items"/>
+ <objectgroup id="6" name="signs">
+  <object id="43" x="540" y="580">
+   <properties>
+    <property name="color" type="color" value="#ffcfa48b"/>
+   </properties>
+   <polyline points="0,0 0,-80 280,-80"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="items">
+  <object id="11" name="Holiday Pencil" x="229.5" y="291">
+   <properties>
+    <property name="page" value="Jingle Blade#Holiday Pencil"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="computer" x="22.5" y="293">
+   <properties>
+    <property name="description">Noelle's computer. When Noelle is not in party, Kris can check cycling wallpapers of it. The descriptions are respectively:
+*''Noelle's family in the snow.''
+*''Noelle's family looking festive.''
+*''Noelle's family edited to be elves.''
+*''a motion-blurred photo of you as a kid.''
+*''Dess holding a cracked baseball bat.''
+*''a picture of a far-off, snowy city.''
+*''Noelle and Dess at the pageant as kids.''
+*''some green dog puppet thing.''</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Santa" x="465.5" y="389">
+   <properties>
+    <property name="description" value="A Santa. Making noise upon interacting."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Santa" x="155.5" y="532">
+   <properties>
+    <property name="description">A Santa with dead batteries. Making lower and slower noise upon interacting.
+'''[Noelle]'''(There wouldn't be so many Santas with dead batteries...)
+'''[Noelle]'''(If Kris hadn't glued the cases shut trying to &quot;starve them&quot;...)</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Santa" x="710.5" y="532">
+   <properties>
+    <property name="description" value="A Santa. Making noise upon interacting."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Santa" x="859.5" y="863">
+   <properties>
+    <property name="description" value="A Santa with dead batteries. Making lower and slower noise upon touching."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Santa" x="404.5" y="89">
+   <properties>
+    <property name="description" value="A Santa with dead batteries. Making lower and slower noise upon touching."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Santa" x="374.5" y="71">
+   <properties>
+    <property name="description" value="A Santa. Making noise upon touching."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="holiday treat catcher" x="499" y="543">
+   <properties>
+    <property name="description" value="A holiday treat catcher,which can automatically catching the [[SOUL]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
