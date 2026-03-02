@@ -55,13 +55,13 @@ The light relieves you... (HP fully restored.)</property>
  <objectgroup id="4" name="plot">
   <object id="5" name="Lancer silhouette" x="1924.5" y="202">
    <properties>
-    <property name="description" value="[[Kris]] can cee [[Lancer]]'s silhouette retreating to an unreachable location."/>
+    <property name="description" value="[[Kris]] can see [[Lancer]]'s silhouette retreating to an unreachable location."/>
    </properties>
    <point/>
   </object>
   <object id="17" name="Lancer silhouette" x="2675" y="203">
    <properties>
-    <property name="description" value="[[Kris]] can cee [[Lancer]]'s silhouette retreating to an unreachable location."/>
+    <property name="description" value="[[Kris]] can see [[Lancer]]'s silhouette retreating to an unreachable location."/>
    </properties>
    <point/>
   </object>
@@ -158,7 +158,7 @@ The light relieves you... (HP fully restored.)</property>
   </object>
   <object id="9" name="Lancer bullets" x="6177.5" y="605">
    <properties>
-    <property name="description" value="Lancer appears, sending bullets to [[Kris]] and [[Susie]]."/>
+    <property name="description" value="Lancer appears, raining down spade bullets upon [[Kris]] and [[Susie]]."/>
     <property name="page" value="Lancer"/>
    </properties>
    <point/>
