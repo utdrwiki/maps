@@ -3,6 +3,7 @@
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="name" value="??????"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="3" name="?????? map">
   <image source="images/Cliffs.png" width="8608" height="1580"/>

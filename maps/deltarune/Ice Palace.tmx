@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="84" height="48" tilewidth="32" tileheight="32" infinite="0" nextlayerid="9" nextobjectid="42">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Ice Palace map">
   <image source="images/Ice Palace.png" width="2688" height="1536"/>

@@ -2,6 +2,7 @@
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="60" height="82" tilewidth="20" tileheight="20" infinite="0" nextlayerid="9" nextobjectid="13">
  <properties>
   <property name="include" value="Map:Common Data"/>
+  <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Ruins map">
   <image source="images/Ruins.png" width="1196" height="1624"/>
