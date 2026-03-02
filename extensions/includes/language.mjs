@@ -5,7 +5,7 @@ import { getStringProperty } from './util.mjs';
  * Gets all wiki language codes for the current Tiled project.
  * @returns {string[]} Available wiki language codes
  */
-function getLanguageCodes() {
+export function getLanguageCodes() {
     const languagesStr = getStringProperty(tiled.project, 'languages') || 'en';
     return languagesStr.split(',').map(lang => lang.trim());
 }

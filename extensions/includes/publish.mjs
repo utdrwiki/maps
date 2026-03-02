@@ -4,7 +4,7 @@ import {
     generateOAuthUrl,
     getAccessToken
 } from './auth.mjs';
-import { convertMap } from './format.mjs';
+import { convertTiledToDataMaps } from './format.mjs';
 import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
 import { getStoredToken, storeToken } from './session.mjs';
 
@@ -128,9 +128,9 @@ function getToken(language) {
  */
 function publishMap(accessToken, summary, map, language) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(map.fileName));
-    const datamap = convertMap(map, mapName, language);
+    const datamap = convertTiledToDataMaps(map, mapName, language);
     return edit(
-        `Map:${datamap.custom?.mapName}`,
+        `Map:${datamap.custom?.interwiki?.[language].mapName}`,
         JSON.stringify(datamap),
         summary,
         accessToken,

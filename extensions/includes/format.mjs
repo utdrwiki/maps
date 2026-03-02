@@ -1,3 +1,5 @@
+import { getLanguageCodes } from './language.mjs';
+import { InterwikiDataImpl, MetadataImpl } from './metadata.mjs';
 import {
     addPoints,
     getBoolProperty,
@@ -157,13 +159,34 @@ function convertLayer(layer, datamap, convertedLayers, language) {
 }
 
 /**
+ * Retrieves map metadata to store in DataMaps for two-way conversion.
+ * @param {TileMap} map Tiled map being converted to DataMaps
+ * @param {string} mapName Filename of the Tiled map
+ * @returns {MetadataImpl} Map metadata to store in DataMaps
+ */
+function getDataMapsMetadata(map, mapName) {
+    const metadata = new MetadataImpl();
+    for (const language of getLanguageCodes()) {
+        const localizedMapName = getStringProperty(map, 'name', language);
+        if (!localizedMapName && language !== 'en') {
+            continue;
+        }
+        metadata.interwiki[language] = new InterwikiDataImpl({
+            mapName: localizedMapName || mapName
+        });
+    }
+    metadata.fileName = mapName;
+    return metadata;
+}
+
+/**
  * Converts a Tiled map to DataMaps format.
  * @param {TileMap} map Tiled map to convert to DataMaps
  * @param {string} mapName Filename of the Tiled map
  * @param {string} language Language to use for localized properties
  * @returns {DataMap} Converted DataMap object
  */
-export function convertMap(map, mapName, language = 'en') {
+export function convertTiledToDataMaps(map, mapName, language = 'en') {
     const /** @type {DataMap} */ datamap = {
         $schema: '/extensions/DataMaps/schemas/v17.3.json',
         backgrounds: [{
@@ -179,9 +202,7 @@ export function convertMap(map, mapName, language = 'en') {
                 map.height * map.tileHeight
             ]
         },
-        custom: {
-            mapName: getStringProperty(map, 'name', language) || mapName
-        },
+        custom: getDataMapsMetadata(map, mapName),
         disclaimer: getStringProperty(map, 'disclaimer', language),
         include: getListProperty(map, 'include', language),
         markers: {},
@@ -208,14 +229,14 @@ export function convertMap(map, mapName, language = 'en') {
  */
 function write(map, filePath) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(filePath));
-    const convertedMap = convertMap(map, mapName);
+    const convertedMap = convertTiledToDataMaps(map, mapName);
     const file = new TextFile(filePath, TextFile.WriteOnly);
     file.write(`${JSON.stringify(convertedMap, null, 4)}\n`);
     file.commit();
 }
 
 export default /** @type {ScriptedMapFormat} */ {
-    extension: 'json',
+    extension: 'mw-datamaps',
     name: 'DataMaps',
     write
 };

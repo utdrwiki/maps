@@ -11,5 +11,5 @@ interface DataMap {
     categories?: Record<string, MarkerCategory>
     disclaimer?: string
     markers: Record<string, Marker[]>
-    custom?: Record<string, any>
+    custom?: Metadata
 }
