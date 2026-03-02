@@ -18,7 +18,7 @@
 * [[Amber Card]]
 
 Rouxls can also talk about himself, explain why he is selling to the [[party]], and about [[King]] and [[Lancer]].</property>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
@@ -289,8 +289,8 @@ Rouxls can also talk about himself, explain why he is selling to the [[party]], 
   </object>
   <object id="124" name="Quest for the Door Key" x="2788.5" y="5519.5">
    <properties>
-    <property name="description" value="[[Jevil]] explains that he was locked away, and asks the [[party]] to talk to [[Seam]] to obtain the [[Broken Keys]]."/>
-    <property name="page" value="Broken Keys"/>
+    <property name="description" value="[[Jevil]] explains that he was locked away, and asks the [[party]] to talk to [[Seam]] to obtain the [[Broken Key]]s."/>
+    <property name="page" value="Broken Key"/>
    </properties>
    <point/>
   </object>
@@ -442,10 +442,10 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
    </properties>
    <point/>
   </object>
-  <object id="21" name="Circus Animals" x="2834" y="4888">
+  <object id="21" name="Cage Animals" x="2834" y="4888">
    <properties>
     <property name="description" value="Want to be alone instead of with others."/>
-    <property name="page" value="Circus Animals"/>
+    <property name="page" value="Cage Animals"/>
    </properties>
    <point/>
   </object>
@@ -540,38 +540,38 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
    </properties>
    <point/>
   </object>
-  <object id="100" name="B Block" x="2182" y="582.5">
+  <object id="100" name="B Blockler" x="2182" y="582.5">
    <properties>
     <property name="description" value="Claims the [[party]] is the best."/>
-    <property name="page" value="Blue Block"/>
+    <property name="page" value="Blockler"/>
    </properties>
    <point/>
   </object>
-  <object id="101" name="O Block" x="2142.5" y="582.5">
+  <object id="101" name="O Blockler" x="2142.5" y="582.5">
    <properties>
     <property name="description" value="States that they owe the [[party]]."/>
-    <property name="page" value="Blue Block"/>
+    <property name="page" value="Blockler"/>
    </properties>
    <point/>
   </object>
-  <object id="102" name="O Block" x="2082" y="582.5">
+  <object id="102" name="O Blockler" x="2082" y="582.5">
    <properties>
     <property name="description" value="Praises the [[party]]."/>
-    <property name="page" value="Blue Block"/>
+    <property name="page" value="Blockler"/>
    </properties>
    <point/>
   </object>
-  <object id="103" name="B Block" x="2042.5" y="582.5">
+  <object id="103" name="B Blockler" x="2042.5" y="582.5">
    <properties>
     <property name="description" value="Praises the [[party]]'s efforts."/>
-    <property name="page" value="Blue Block"/>
+    <property name="page" value="Blockler"/>
    </properties>
    <point/>
   </object>
-  <object id="104" name="Little Ball" x="2137.5" y="676">
+  <object id="104" name="Little ball" x="2137.5" y="676">
    <properties>
     <property name="description" value="Expresses thank you to the [[party]]."/>
-    <property name="page" value="Little Ball"/>
+    <property name="page" value="Little ball"/>
    </properties>
    <point/>
   </object>
@@ -598,7 +598,7 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
   </object>
   <object id="108" name="Rouxls Kaard" x="1800.5" y="582.5">
    <properties>
-    <property name="description" value="Rouxls praises the [[party]] for defeating [[King]], and also considers himself apart of their tale. [[Susie]] points out that he tried to kill them, though Rouxls offers a plate of worms in exchange for not letting others know."/>
+    <property name="description" value="Rouxls praises the [[party]] for defeating [[King]], and also considers himself a part of their tale. [[Susie]] points out that he tried to kill them, though Rouxls offers a plate of worms in exchange for not letting others know."/>
     <property name="page" value="Rouxls Kaard"/>
    </properties>
    <point/>
@@ -652,10 +652,10 @@ This occurs if enemies were not defeated via violence, and after Kris and Susie 
    </properties>
    <point/>
   </object>
-  <object id="113" name="Circus Animals" x="1324" y="844">
+  <object id="113" name="Cage Animals" x="1324" y="844">
    <properties>
     <property name="description" value="The animals state they are fine with the [[Former Kings]] in cages, but claim they must wear animal ears and noses."/>
-    <property name="page" value="Circus Animals"/>
+    <property name="page" value="Cage Animals"/>
    </properties>
    <point/>
   </object>
