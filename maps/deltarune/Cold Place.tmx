@@ -53,7 +53,7 @@ A strange calm washes over you.</property>
   </object>
   <object id="6" name="Parental Lock Puzzle 3" x="2651.62" y="1604.28">
    <properties>
-    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr Residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000&quot;. If the [[Sword Route]] is completed, the TV does not turn on, and the door is automatically unlocked."/>
+    <property name="description" value="When entering the [[Cold Place]] for the second time, the Parental Lock Puzzles are condensed into a single room containing a third puzzle. [[Kris]] is placed inside a replica of [[Dreemurr residence|their house]] and must make their way to the TV in their living room. From there, they must solve two puzzles involving [[Susie]]'s character and retrieve the [[camera]], which reveals the passcode when a picture is taken. Here, the passcode is &quot;000000&quot;. If the [[Sword Route]] is completed, the TV does not turn on, and the door is automatically unlocked."/>
     <property name="page" value="TV World/Puzzles#The third parental lock puzzle"/>
    </properties>
    <point/>
