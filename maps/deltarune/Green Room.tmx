@@ -372,7 +372,7 @@ You feel a sense of emptiness.</property>
   </object>
   <object id="5" name="Pippins" x="2347" y="3466">
    <properties>
-    <property name="description" value="Is friends with the [[Zapper]] next to him. After traversing the greater TV World, it laments that the Zapper turned to stone and urges the [[party]] to seal the [[Dark Fountain]]."/>
+    <property name="description" value="Is friends with the [[Zapper]] next to him. After traversing the greater TV World, he laments that the Zapper turned to stone and urges the [[party]] to seal the [[Dark Fountain]]."/>
     <property name="zh_description" value="和身旁的[[Zapper]]成了朋友,自信自己能够适应这个暗世界.在章末返回后,它非常痛惜[[Zapper]]的石化,并催促[[小队]]去封印[[黑暗喷泉]]."/>
     <property name="zh_name" value="Pippins"/>
    </properties>
@@ -561,7 +561,7 @@ You feel a sense of emptiness.</property>
   </object>
   <object id="49" name="TV World" x="2500" y="4160">
    <properties>
-    <property name="description" value="Pathway to the greater TV World area, blocked off in between Round 1 and Round 2 of ''''[[TV Time]]''''."/>
+    <property name="description" value="Pathway to the greater TV World area, blocked off in between Round 1 and Round 2 of ''[[TV Time]]''."/>
     <property name="page" value="TV World"/>
     <property name="zh_description" value="去往更广阔的TV 世界,在[[TV 时间]]第一轮和第二轮期间被栏杆挡住."/>
     <property name="zh_name" value="TV 世界"/>
