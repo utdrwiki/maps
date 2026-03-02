@@ -39,7 +39,7 @@
   <object id="53" name="Therapy Room" x="18254" y="1706">
    <properties>
     <property name="description" value="A room hidden in between the egg window entryway and the &quot;ROOTS&quot; room. This room is where [[Kris]] receives an [[Egg]]."/>
-    <property name="page" value="2nd Sanctuary#Therapy Room"/>
+    <property name="page" value="2nd Sanctuary#Therapy room"/>
    </properties>
    <point/>
   </object>
@@ -52,7 +52,7 @@
   </object>
   <object id="100" name="Study" x="6518" y="2413">
    <properties>
-    <property name="description" value="A messy room that used to be [[Gerson Boom]]'s Study in the original [[Dark Sanctuary]]."/>
+    <property name="description" value="A messy room that used to be the [[old man]]'s Study in the original [[Dark Sanctuary]]."/>
     <property name="page" value="Study"/>
    </properties>
    <point/>
@@ -82,31 +82,31 @@
   </object>
   <object id="16" name="The Three Heroes" x="9024" y="7778.67">
    <properties>
-    <property name="description" value="[[Susie]] notices the prophecy window depicting the three heroes and expresses disbelief that she is a part of the prophecy."/>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry depicting the three heroes and expresses disbelief that she is a part of the prophecy."/>
    </properties>
    <point/>
   </object>
   <object id="17" name="The Prince" x="12461" y="8496">
    <properties>
-    <property name="description" value="[[Susie]] notices the prophecy window depicting the third hero and concludes that it is depicting [[Ralsei]]. She suggests that there are separate prophecies for her, Ralsei, and [[Kris]]."/>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry depicting the third hero and concludes that it is depicting [[Ralsei]]. She suggests that there are separate prophecies for her, Ralsei, and [[Kris]]."/>
    </properties>
    <point/>
   </object>
   <object id="21" name="The Cage" x="13333.3" y="5846">
    <properties>
-    <property name="description" value="[[Susie]] notices the prophecy window depicting the first hero and concludes that it is depicting [[Kris]]. She then suggests alternate depictions of Kris that better represent their character."/>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry depicting the first hero and concludes that it is depicting [[Kris]]. She then suggests alternate depictions of Kris that better represent their character."/>
    </properties>
    <point/>
   </object>
   <object id="26" name="And last, at last" x="14238" y="5024">
    <properties>
-    <property name="description" value="[[Susie]] notices the prophecy window and concludes that her prophecy is next to be listed."/>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry and concludes that her prophecy is next to be listed."/>
    </properties>
    <point/>
   </object>
   <object id="33" name="The Girl" x="15732" y="4863.33">
    <properties>
-    <property name="description" value="[[Susie]] notices the prophecy window depicting the second hero and concludes that it is depicting her. She then wonders if there are any other prophecies depicting the [[party]]."/>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry depicting the second hero and concludes that it is depicting her. She then wonders if there are any other prophecies depicting the [[party]]."/>
    </properties>
    <point/>
   </object>
@@ -118,7 +118,7 @@
   </object>
   <object id="42" name="Love finds its way" x="15715.3" y="1866">
    <properties>
-    <property name="description" value="[[Susie]] notices another prophecy window depicting the second hero and runs off, looking for more."/>
+    <property name="description" value="[[Susie]] notices another prophecy tapestry depicting the second hero and runs off, looking for more."/>
    </properties>
    <point/>
   </object>
@@ -130,13 +130,13 @@
   </object>
   <object id="79" name="First Sound of Justice encounter" x="9678" y="1370">
    <properties>
-    <property name="description" value="The [[Sound of Justice]] appears and destroys the prophecy windows before [[Susie]] can finish reading. Susie and [[Kris]] chase after the Sound of Justice and fall through a cracked floor."/>
+    <property name="description" value="The [[Sound of Justice]] appears and destroys the prophecy tapestries before [[Susie]] can finish reading. Susie and [[Kris]] chase after the Sound of Justice and fall through a cracked floor."/>
    </properties>
    <point/>
   </object>
   <object id="82" name="The Dark Climb" x="10262" y="5823">
    <properties>
-    <property name="description" value="The floor suddenly collapses, and a horde of dark eyeballs appears. [[Kris]] and [[Susie]] begin climbing up the wall to avoid the dark eyeball horde."/>
+    <property name="description" value="The floor suddenly collapses, and a horde of chase enemiess appears. [[Kris]] and [[Susie]] begin climbing up the wall to avoid the chase enemy horde."/>
    </properties>
    <point/>
   </object>
@@ -148,7 +148,7 @@
   </object>
   <object id="102" name="Susie and the Old Man" x="6520" y="1958">
    <properties>
-    <property name="description" value="[[Susie]] asks [[Kris]] if the [[Gerson Boom|Old Man]] would want to come to their [[Castle Town]]."/>
+    <property name="description" value="[[Susie]] asks [[Kris]] if the [[old man]] would want to come to their [[Castle Town]]."/>
    </properties>
    <point/>
   </object>
@@ -240,7 +240,7 @@
   </object>
  </objectgroup>
  <objectgroup id="6" name="signs">
-  <object id="4" name="Prophecy window" x="9022.67" y="7628">
+  <object id="4" name="Prophecy tapestry" x="9022.67" y="7628">
    <properties>
     <property name="description">BUT LO, ON HOPES AND DREAMS THEY SEND.
 THREE HEROES AT THE WORLD'S END.</property>
@@ -248,7 +248,7 @@ THREE HEROES AT THE WORLD'S END.</property>
    </properties>
    <point/>
   </object>
-  <object id="5" name="Prophecy window" x="9857" y="7934">
+  <object id="5" name="Prophecy tapestry" x="9857" y="7934">
    <properties>
     <property name="description">THE LIGHT AND DARK, BOTH BURNING DIRE.
 A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
@@ -256,7 +256,7 @@ A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
    </properties>
    <point/>
   </object>
-  <object id="7" name="Prophecy window" x="11453.3" y="8549.33">
+  <object id="7" name="Prophecy tapestry" x="11453.3" y="8549.33">
    <properties>
     <property name="description">IF FOUNTAINS FREED, THE ROARING CRIES.
 AND TITANS SHAPE FROM DARKENED EYES.</property>
@@ -272,7 +272,7 @@ THE PRINCE, ALONE IN DEEPEST DARK</property>
    </properties>
    <point/>
   </object>
-  <object id="12" name="Prophecy window" x="13980" y="7258">
+  <object id="12" name="Prophecy tapestry" x="13980" y="7258">
    <properties>
     <property name="description">THE LORD OF SCREENS
 CLEAVED RED BY BLADE.</property>
@@ -280,7 +280,7 @@ CLEAVED RED BY BLADE.</property>
    </properties>
    <point/>
   </object>
-  <object id="20" name="Prophecy window" x="13330.7" y="5695.33">
+  <object id="20" name="Prophecy tapestry" x="13330.7" y="5695.33">
    <properties>
     <property name="description">THE FIRST HERO.
 THE CAGE, WITH HUMAN SOUL AND PARTS!</property>
@@ -288,7 +288,7 @@ THE CAGE, WITH HUMAN SOUL AND PARTS!</property>
    </properties>
    <point/>
   </object>
-  <object id="25" name="Prophecy window" x="14245.5" y="4853">
+  <object id="25" name="Prophecy tapestry" x="14245.5" y="4853">
    <properties>
     <property name="description">AND LAST, WAS THE GIRL.
 AT LAST, WAS THE GIRL.</property>
@@ -302,7 +302,7 @@ AT LAST, WAS THE GIRL.</property>
    </properties>
    <point/>
   </object>
-  <object id="32" name="Prophecy window" x="15723.3" y="4690">
+  <object id="32" name="Prophecy tapestry" x="15723.3" y="4690">
    <properties>
     <property name="description">THE SECOND HERO.
 THE GIRL, WITH HOPE CROSSED ON HER HEART.</property>
@@ -310,13 +310,13 @@ THE GIRL, WITH HOPE CROSSED ON HER HEART.</property>
    </properties>
    <point/>
   </object>
-  <object id="41" name="Prophecy window" x="15701.3" y="1688.67">
+  <object id="41" name="Prophecy tapestry" x="15701.3" y="1688.67">
    <properties>
     <property name="description" value="''LOVE FINDS ITS WAY TO THE GIRL.''"/>
    </properties>
    <point/>
   </object>
-  <object id="50" name="Prophecy window" x="18300" y="114">
+  <object id="50" name="Prophecy tapestry" x="18300" y="114">
    <properties>
     <property name="description" value="''ROOTS''"/>
    </properties>
@@ -331,13 +331,13 @@ It looked like glass.</property>
    </properties>
    <point/>
   </object>
-  <object id="60" name="Prophecy window" x="14963" y="1650">
+  <object id="60" name="Prophecy tapestry" x="14963" y="1650">
    <properties>
     <property name="description" value="''THE GIRL''"/>
    </properties>
    <point/>
   </object>
-  <object id="61" name="Prophecy window" x="14405" y="1580">
+  <object id="61" name="Prophecy tapestry" x="14405" y="1580">
    <properties>
     <property name="description" value="''THE GIRL''"/>
    </properties>
@@ -349,13 +349,13 @@ It looked like glass.</property>
    </properties>
    <point/>
   </object>
-  <object id="65" name="Prophecy window" x="12040" y="1456">
+  <object id="65" name="Prophecy tapestry" x="12040" y="1456">
    <properties>
     <property name="description" value="''GALLERY''"/>
    </properties>
    <point/>
   </object>
-  <object id="78" name="Prophecy windows" x="10479" y="1270.5">
+  <object id="78" name="Prophecy tapestrys" x="10479" y="1270.5">
    <properties>
     <property name="description">THE LAST PROPHECY.
 THE STORY'S END.
@@ -398,89 +398,90 @@ THERE IS ONLY ONE WAY.</property>
    </properties>
    <point/>
   </object>
-  <object id="84" name="Dark Eyeball" x="9980" y="5375">
+  <object id="84" name="Chase enemy" x="9980" y="5375">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="86" name="Dark Eyeball" x="10060" y="5293.5">
+  <object id="86" name="Chase enemy" x="10060" y="5293.5">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="87" name="Dark Eyeball" x="9821" y="5295.5">
+  <object id="87" name="Chase enemy" x="9821" y="5295.5">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="88" name="Dark Eyeball" x="9778.5" y="5170">
+  <object id="88" name="Chase enemy" x="9778.5" y="5170">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="89" name="Dark Eyeball" x="9861.5" y="5170">
+  <object id="89" name="Chase enemy" x="9861.5" y="5170">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="90" name="Dark Eyeball spawner" x="9981" y="4860">
+  <object id="90" name="Chase enemy spawner" x="9981" y="4860">
    <properties>
-    <property name="description" value="Opening that continuously spawns Dark Eyeballs."/>
+    <property name="description" value="Opening that continuously spawns chase enemies."/>
    </properties>
    <point/>
   </object>
-  <object id="91" name="Dark Eyeball spawner" x="10180.5" y="4860">
+  <object id="91" name="Chase enemy spawner" x="10180.5" y="4860">
    <properties>
-    <property name="description" value="Opening that continuously spawns Dark Eyeballs."/>
+    <property name="description" value="Opening that continuously spawns chase enemies."/>
    </properties>
    <point/>
   </object>
-  <object id="92" name="Dark Eyeball spawner" x="10100" y="4578">
+  <object id="92" name="Chase enemy spawner" x="10100" y="4578">
    <properties>
-    <property name="description" value="Opening that continuously spawns Dark Eyeballs from all directions."/>
+    <property name="description" value="Opening that continuously spawns chase enemies from all directions."/>
    </properties>
    <point/>
   </object>
-  <object id="93" name="Dark Eyeball" x="9979.33" y="4733.33">
+  <object id="93" name="Chase enemy" x="9979.33" y="4733.33">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="94" name="Dark Eyeball" x="10219" y="3945">
+  <object id="94" name="Chase enemy" x="10219" y="3945">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="95" name="Dark Eyeball" x="10300" y="3895">
+  <object id="95" name="Chase enemy" x="10300" y="3895">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="96" name="Dark Eyeball" x="9900" y="3533.33">
+  <object id="96" name="Chase enemy" x="9900" y="3533.33">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
-  <object id="97" name="Dark Eyeball" x="9900" y="3410.67">
+  <object id="97" name="Chase enemy" x="9900" y="3410.67">
    <properties>
-    <property name="description" value="A Dark Eyeball that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
+    <property name="description" value="A chase enemy that damages [[Kris]] if touched. Can be destroyed by jumping into it while climbing."/>
    </properties>
    <point/>
   </object>
  </objectgroup>
  <objectgroup id="8" name="puzzles">
-  <object id="13" name="Moving Piano Puzzle" x="13358.7" y="8226.67">
+  <object id="13" name="Moving piano puzzle" x="13358.7" y="8226.67">
    <properties>
     <property name="description" value="A puzzle initially presented as another piano puzzle akin to those in the original [[Dark Sanctuary]]. However, upon playing a note, the piano itself starts moving with the directional inputs instead. The piano can be used to destroy the bookshelves and reveal the way forward."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The first piano pushing puzzle"/>
    </properties>
    <point/>
   </object>
