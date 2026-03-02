@@ -28,6 +28,7 @@ You are filled with the power of not sneezing.</property>
   <object id="10" name="Clock puzzle" x="8099" y="4484">
    <properties>
     <property name="description" value="The [[party]] must simultaneously step on the highlighted pressure plates to unlock the way forward. Here, the order of appearance is ''right'', ''bottom and left'', ''bottom and right''."/>
+    <property name="page" value="TV World/Puzzles#The clock puzzle"/>
    </properties>
    <point/>
   </object>
@@ -35,7 +36,7 @@ You are filled with the power of not sneezing.</property>
  <objectgroup id="3" name="plot">
   <object id="2" name="Waking up" x="1040" y="298.5">
    <properties>
-    <property name="description" value="After [[Kris]] creates a [[Dark Fountain]] in the [[Dreemurr Residence]] living room, they and [[Susie]] wake up in the Couch Cliffs. Susie declares this to be another adventure, and the two continue forward."/>
+    <property name="description" value="After [[Kris]] creates a [[Dark Fountain]] in the [[Dreemurr residence]] living room, they and [[Susie]] wake up in the Couch Cliffs. Susie declares this to be another adventure, and the two continue forward."/>
    </properties>
    <point/>
   </object>
@@ -95,7 +96,7 @@ You are filled with the power of not sneezing.</property>
   </object>
   <object id="14" name="Talk with Ralsei, part 7" x="12818" y="10538">
    <properties>
-    <property name="description" value="[[Ralsei]] explains that, due to the nature of being a [[Darkner]], he cannot enter the [[Light World]] with [[Kris]] and [[Susie]]. He explains that Darkners are simply inanimate objects given form by the [[Dark Fountains]], and the [[Dark Worlds]] are illusions brought about by removing light. Susie objects to Ralsei's claim that Darkners are not real, reaffirming their friendship."/>
+    <property name="description" value="[[Ralsei]] explains that, due to the nature of being a [[Darkner]], he cannot enter the [[Light World]] with [[Kris]] and [[Susie]]. He explains that Darkners are simply inanimate objects given form by the [[Dark Fountain]]s, and the [[Dark World]]s are illusions brought about by removing light. Susie objects to Ralsei's claim that Darkners are not real, reaffirming their friendship."/>
    </properties>
    <point/>
   </object>
