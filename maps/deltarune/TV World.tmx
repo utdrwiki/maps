@@ -13,7 +13,7 @@
     <property name="description">Shortcut door in the TV World Entrance. Unlocks after reaching the [[Green Room]]. It can be used to travel to the following locations:
 * Goulden Sam
 * Green Room</property>
-    <property name="page" value="Shurtcut door"/>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
@@ -22,7 +22,7 @@
     <property name="description">Shortcut door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]. It can be used to travel to the following locations:
 * TV World entrance
 * Green Room</property>
-    <property name="page" value="Warp door"/>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
