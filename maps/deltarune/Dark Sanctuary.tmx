@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1000" height="600" tilewidth="20" tileheight="20" infinite="0" nextlayerid="12" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="500" height="300" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="168">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -7,13 +7,1110 @@
  <imagelayer id="2" name="Dark Sanctuary map">
   <image source="images/Dark Sanctuary.png" width="20000" height="12000"/>
  </imagelayer>
- <objectgroup id="3" name="plot"/>
- <objectgroup id="4" name="vendors"/>
- <objectgroup id="5" name="puzzles"/>
- <objectgroup id="6" name="saves"/>
- <objectgroup id="7" name="hazards"/>
- <objectgroup id="8" name="npcs"/>
- <objectgroup id="9" name="signs"/>
- <objectgroup id="10" name="items"/>
- <objectgroup id="11" name="enemies"/>
+ <objectgroup id="4" name="vendors">
+  <object id="63" name="Vendor table" x="13250" y="7360">
+   <properties>
+    <property name="description">A table which allows the [[party]] to buy [[item]]s:
+* [[Rhapsotea]] - 250 [[Dark Dollar]]s
+* [[Scarlixir]] - 450 Dark Dollars
+* [[Waferguard]] - 900 Dark Dollars
+* [[Scarf Mark]] - 900 Dark Dollars</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="64" name="Pool of water" x="13535" y="6577">
+   <properties>
+    <property name="description" value="Allows the [[party]] to sell their [[item]]s"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="70" name="Money fountain" x="11843" y="4725">
+   <properties>
+    <property name="description" value="[[Kris]] can donate money to the fountain, which causes the waterfall to the north to briefly part, revealing a hidden entryway."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="sublocations">
+  <object id="57" name="Study" x="13240" y="7240">
+   <properties>
+    <property name="description" value="The old man's study."/>
+    <property name="page" value="Study"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="9" name="signs">
+  <object id="8" name="Prophecy tapestry" x="1410" y="11320">
+   <properties>
+    <property name="description">THE PROPHECY, WHICH WHISPERS
+AMONG THE SHADOWS.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="9" name="Prophecy tapestry" x="2700" y="10920">
+   <properties>
+    <property name="description">THE LEGEND OF THIS WORLD.
+&lt;DELTARUNE.&gt;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="11" name="Prophecy tapestry" x="4660" y="10743">
+   <properties>
+    <property name="description">A WORLD BASKED IN PUREST LIGHT.
+BENEATH IT, GREW ETERNAL NIGHT.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="Prophecy tapestry" x="7130" y="9983">
+   <properties>
+    <property name="description">IF FOUNTAINS FREED, THE ROARING CRIES.
+AND TITANS SHAPE FROM DARKENED EYES.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="23" name="Prophecy tapestry" x="10591" y="9372">
+   <properties>
+    <property name="description" value="''JOCKINGTON GROWS THE BEARD''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="29" name="Prophecy tapestry" x="11375" y="8738">
+   <properties>
+    <property name="description">THE LIGHT AND DARK, BOTH BURNING DIRE.
+A COUNTDOWN TO THE EARTH'S EXPIRE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="30" name="Prophecy tapestry" x="12055" y="8550.96">
+   <properties>
+    <property name="description">THE POINTY-HEADED WILL SAY
+&quot;TOOTHPASTE,&quot; AND THEN &quot;BOY.&quot;</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="33" name="Prophecy tapestry" x="15900" y="10859">
+   <properties>
+    <property name="description">BUT LO, ON HOPES AND DREAMS THEY SEND.
+THREE HEROES AT THE WORLD'S END.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Prophecy tapestry" x="11890" y="7707">
+   <properties>
+    <property name="description">BUT LO, ON HOPES AND DREAMS THEY SEND.
+THREE HEROES AT THE WORLD'S END.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="65" name="Legend of the Magic Axe" x="13248" y="6960">
+   <properties>
+    <property name="description">The Axe which nests beyond the pyre
+Awakes from rest by golden choir
+3 tunes bekiss'd in dulcet wire
+Which whispers in the darkest mire.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="83" name="Prophecy tapestry" x="11144" y="1027">
+   <properties>
+    <property name="description" value="''A CONUNDRUM'S FIRST FOUR TONES.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="89" name="Prophecy tapestry" x="14880" y="2160">
+   <properties>
+    <property name="description" value="''A CONUNDRUM'S LAST FOUR TONES.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="Sign" x="13107" y="2636">
+   <properties>
+    <property name="description" value="''Melodies three, there be. Two in the southern towers. One where gold strikes water.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="Prophecy tapestry" x="17265" y="6802">
+   <properties>
+    <property name="description">THE QUEEN'S CHARIOT
+CANNOT BE STOPPED.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="156" name="Prophecy tapestry" x="19050" y="2092">
+   <properties>
+    <property name="description" value="''A CONUMDRUM'S MULTITUDE TONES.''"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="159" name="Prophecy tapestry" x="5785" y="8294">
+   <properties>
+    <property name="description">THE KNIGHT WHICH MAKES
+WITH BLACKENED KNIFE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="160" name="Prophecy tapestry" x="5443" y="7668">
+   <properties>
+    <property name="description">THE KNIGHT WHICH MAKES
+WITH BLACKENED KNIFE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="161" name="Prophecy tapestry" x="4970" y="7668">
+   <properties>
+    <property name="description">SHALL DUEL WITH HEROES
+STRIFE BY STRIFE.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="saves">
+  <object id="1" name="Dark Sanctuary - Atrium" x="1586" y="7778">
+   <properties>
+    <property name="description">The scent of glass and incense.
+A certain power steels within you.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="Dark Sanctuary - Lower Left" x="3513" y="10911">
+   <properties>
+    <property name="description">A glass tapestry rings above you. Strangely, no matter how turn to look...
+... its perspective never changes.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Dark Sanctuary - Lower Right" x="15640" y="8653">
+   <properties>
+    <property name="description">The old man's existence made you imagine Ralsei with a beard.
+You are filled with the power of conceptual bearded Ralsei.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="58" name="Dark Sanctuary - Study" x="13142" y="7170">
+   <properties>
+    <property name="description">The hearth grows brightly, pressing the night's chill away.
+You are filled with a certain power.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="66" name="Dark Sanctuary - Library" x="13101" y="6132">
+   <properties>
+    <property name="description">Stacks of books, with characters that cannot be read...
+You are filled with the power of not actually reading the text.</property>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="Dark Sanctuary - Small Piano" x="12980" y="164">
+   <properties>
+    <property name="description">Down the corridor, darkness lies in wait...
+Shining only in your own eyes, the light defies it.</property>
+    <property name="multiline" type="bool" value="true"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="puzzles">
+  <object id="3" name="Piano playing puzzle 1" x="2985" y="7796">
+   <properties>
+    <property name="description" value="Kris must play the piano with the indicated directions to light up the room and unlock the way forward."/>
+    <property name="page" value="Dark Danctuaries/Puzzles#The first piano playing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="Solution to piano playing puzzle 1" x="2990" y="8080">
+   <properties>
+    <property name="description" value="By pressing the pressure plates, [[Kris]] reveals the solution to the puzzle: ''left'', ''down'', ''left'', ''down'', ''left'', ''right''."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="19" name="Dark maze pressure plate" x="8563" y="10225">
+   <properties>
+    <property name="description" value="Pressing any of the pressure plates in the dark maze temprarily lights up the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="36" name="Ripple maze pressure plate" x="17026" y="10609">
+   <properties>
+    <property name="description" value="Pressing the yellow pressure plates produces yellow ripples that temporarily highlight the path."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="51" name="Piano playing puzzle 2" x="12394.6" y="7228.4">
+   <properties>
+    <property name="description" value="The old man guides the party through the dark room. Pressing the pressure plates reveals one part of the solution to the puzzle: ''up'', ''up'', ''down'', ''down'', ''left'', ''left'', ''right'', ''up''. Solving the puzzle lights up the room and unlocks the way forward."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The second piano playing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="71" name="Bookshelf pushing puzzle 1" x="12440" y="3800">
+   <properties>
+    <property name="description" value="[[Kris]] must locate the colored pianos and navigate the respectively colored bookshelves to their proper locations. This allows them to walk across and progress to the next areas."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The first bookshelf pushing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="77" name="Dark maze pressure plate" x="11342" y="3327">
+   <properties>
+    <property name="description" value="Pressing any of the pressure plates in the dark maze temprarily lights up the room."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="84" name="Piano playing puzzle 3, solution 1" x="10942" y="1307">
+   <properties>
+    <property name="description" value="Pressing this pressure plate reveals the first set of notes that must be played to solve the piano puzzle to the north."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The third piano playing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="87" name="Bookshelf pushing puzzle 2" x="14178" y="2878">
+   <properties>
+    <property name="description" value="By switching octaves, [[Kris]] must navigate the colored bookshelf to their proper places."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The second bookshelf pushing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="90" name="Piano playing puzzle 3, solution 2" x="14880" y="2200">
+   <properties>
+    <property name="description" value="Entering this room reveals the second set of notes that must be played to solve the piano puzzle to the north."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The third piano playing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="91" name="Golden piano puzzle" x="13200" y="2600">
+   <properties>
+    <property name="description" value="A golden piano that must be played to open the hearth in the [[Study]]. The solution is as follows: ''up'', ''neutral'', ''up'', ''left'', ''down'', ''neutral'', ''right'', ''neutral'', ''right'', ''down'', ''left'', ''neutral''."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The golden piano puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="Piano playing puzzle 3" x="12560" y="176">
+   <properties>
+    <property name="description" value="[[Kris]] must find the two solutions to the puzzle and play them in order: ''left'', ''down'', ''left'', ''right'', ''down'', ''down'', ''right'', ''right''"/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The third piano playing puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="108" name="Golden piano puzzle, solution 1" x="8720" y="6200">
+   <properties>
+    <property name="description" value="Defeating [[Miss Mizzle]] reveals the first portion of the golden piano puzzle solution."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The golden piano puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="113" name="Golden piano puzzle, solution 2" x="16416" y="7293">
+   <properties>
+    <property name="description" value="Pressing this pressure plate reveals the second portion of the golden piano puzzle solution."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The golden piano puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="Where gold strikes water" x="9445" y="5559">
+   <properties>
+    <property name="description" value="Interacting with the golden ripple while having the [[Claimb Claws]] exposes more of the ripple maze."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="120" name="Ripple maze pressure plate" x="8803" y="5019">
+   <properties>
+    <property name="description" value="Pressing the yellow pressure plates produces yellow ripples that temporarily highlight the path."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="121" name="Golden piano puzzle, solution 3" x="10644" y="3699">
+   <properties>
+    <property name="description" value="Pressing this pressure plate reveals the final portion of the golden piano piano puzzle solution."/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The golden piano puzzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="141" name="Trophy" x="17008" y="5453">
+   <properties>
+    <property name="description" value="Awarded for completing the two preceding climbing sections fast enough."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="151" name="Organ" x="15948" y="2755">
+   <properties>
+    <property name="description" value="Requires the [[Sheet Music]] play properly. Once played, the center door in the [[Study]] opens. [[Kris]] can then play various songs, which elicit reactions from [[Susie]] and [[Ralsei]]."/>
+    <property name="page" value="Dark Sanctuary#Organ"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="6" name="First Knight encounter" x="4030" y="7820">
+   <properties>
+    <property name="description" value="After discovering the [[Dark Fountain]] at the end of the hallway, [[Susie]] encounters the [[Knight]] blocking the way. [[Kris]] attempts to ascend the hallway while avoiding sword projectiles. Regardless of Kris's progress, they and Susie are eventually knocked down into the lower levels of the Dark Sanctuary."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="7" name="A rough landing" x="160" y="11680">
+   <properties>
+    <property name="description" value="[[Kris]] is injured after falling into the lower levels of the Dark Sanctuary. [[Susie]] attempts to heal them, but [[Ralsei]] arrives and heals Kris in her place. Ralsei then rejoins the party."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="12" name="Talk with Ralsei" x="4640" y="11000">
+   <properties>
+    <property name="description" value="In a dynamic conversation, [[Susie]] asks about the glass tapestries, to which [[Ralsei]] explains that they depict the [[prophecy]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="25" name="Talk with Ralsei, part 2" x="7040" y="10240">
+   <properties>
+    <property name="description" value="[[Ralsei]] explains that the prophecy he told was a summary of the prophecy depicted in the tapestries."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Toothpaste boy" x="12040" y="8800">
+   <properties>
+    <property name="description" value="[[Susie]] regards the prophecy predicting the future as a big deal. Shortly after, a shrouded figure darts past, startling the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="The three heroes" x="15902" y="11049">
+   <properties>
+    <property name="description" value="[[Susie]] notices the prophecy tapestry depicting the three heroes. Shortly after, a hammer destroys the tapestry and plunges the room in complete darkness."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="38" name="Titan Spawn chase" x="18440" y="8640">
+   <properties>
+    <property name="description" value="When reaching the end of the maze, a [[Titan Spawn]] appears and begins chasing the [[party]] back."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="41" name="Meeting the old man" x="16120" y="8720">
+   <properties>
+    <property name="description" value="The party meets an old man who turns on the lights. He requests the [[party]] take them back to his study and follows behind at a slow pace."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="43" name="The book room" x="12907" y="8800">
+   <properties>
+    <property name="description" value="The old man requests that they retrieve a green book for him. Susie refuses and attempts to open the door on her own, while Ralsei transforms into his &quot;Stool Forme&quot; to help the old man. When Susie reluctantly agrees to retrieve the book, the door opens, which allows the [[party]] to progress."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Talk with Ralsei, part 3" x="12585" y="8285">
+   <properties>
+    <property name="description" value="[[Susie]] notices that the tapestry depicting the heroes has returned. [[Ralsei]] explains that any prophecy tapestry can reappear anywhere else since the prophecy itself is unchanging."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="50" name="The old man reveals the way" x="11880" y="8000">
+   <properties>
+    <property name="description" value="The old man shatters the prophecy tapestry, revealing the way out of the room. [[Susie]] and [[Ralsei]] run ahead while the old man stays behind and can be talked to."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="55" name="Magical glass" x="10925" y="6886">
+   <properties>
+    <property name="description" value="Appears if &quot;Further left&quot; is chosen when the old man prompts an answer from [[Kris]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="Falling again" x="14040" y="240">
+   <properties>
+    <property name="description" value="[[Susie]] questions [[Ralsei]] on his knowledge of the [[prophecy]]. Ralsei avoids her questioning and notices a light switch nearby. When the lights come on, the [[party]] finds themselves past a dropoff, and they fall into the Dark Zone."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="97" name="Jackenstein's warnings" x="14680" y="720">
+   <properties>
+    <property name="description" value="As the lights progressively dim, [[Jackenstein]] repeatedly warns the [[party]] not to come any closer."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="99" name="Jackenstein's predicament" x="15920" y="2019">
+   <properties>
+    <property name="description" value="After defeating [[Jackenstein]], he slams into a chandelier. [[Ralsei]] attempts to heal him, to no avail, while [[Susie]] talks with the old man. The old man challenges Susie to heal his finger, leading her to inadvertently heal Jackenstein. Grateful, Jackenstein gives the party the [[Claimb Claws]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="102" name="Susie's healing" x="16080" y="1120">
+   <properties>
+    <property name="description" value="[[Susie]] offers to heal [[Kris]] should they need it. This upgrades her healing magic to [[OKHeal]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="123" name="Titan Spawn chase" x="10600" y="3800">
+   <properties>
+    <property name="description" value="When reaching the end of the maze, a [[Titan Spawn]] appears and begins chasing the [[party]] back."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="125" name="The old man appears again" x="10560" y="4960">
+   <properties>
+    <property name="description" value="The old man lights up the way and invites the [[party]] over for a tea party."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="126" name="Tea party" x="11236" y="4863">
+   <properties>
+    <property name="description" value="The old man invites the [[party]] over for tea, during which [[Susie]] tells him about their adventures so far. After Susie leaves, the old man asks [[Ralsei]] what will happen next and notices [[Kris]] has yet to drink any tea."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="155" name="Close your eyes" x="19480" y="3040">
+   <properties>
+    <property name="description" value="When [[Susie]] unlocks the nearby door, [[Ralsei]] pulls [[Kris]] aside and asks them to close their eyes and think about Susie. Kris can either comply or refuse."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="157" name="Susie and the old man" x="18764" y="2241">
+   <properties>
+    <property name="description" value="[[Susie]] talks to the old man, who is busy writing a letter. He reveals a prophecy tapestry depicting the solution to the organ puzzle. Susie transcribes the notes on the tapestry and returns to [[Kris]] and [[Ralsei]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="162" name="Second Knight encounter" x="2743" y="7079">
+   <properties>
+    <property name="description" value="The [[party]] encounters the [[Knight]] again as they head to the [[Dark Fountain]]. The Knight sends sword projectiles at Kris as they attempt to reach the top."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="163" name="The Knight escapes" x="2560" y="1480">
+   <properties>
+    <property name="description" value="[[Susie]] chases the [[Knight]] up the stairs and to the [[Grand Door]]. The Knight escapes through the door before Susie can catch up with it, and the party decides to seal the [[Dark Fountain]] and regroup later."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="164" name="Restoring the Dark Sanctuary" x="520" y="640">
+   <properties>
+    <property name="description" value="After unlocking the door to the [[3rd Sanctuary]], the Dark Sanctuary is restored, allowing the party to traverse it again."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="166" name="Sealing the Dark Fountain" x="4040" y="1040">
+   <properties>
+    <property name="description" value="[[Susie]] wonders out loud why the [[Knight]] is not stopping her and [[Kris]] from sealing the [[Dark Fountain]]. Kris seals the Fountain and ends up back in the lobby of the [[church]]."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="npcs">
+  <object id="16" name="Cuptain" x="7920" y="10233">
+   <properties>
+    <property name="description" value="Appears after defeating [[Jackenstein]]. Seeks advice from the [[Bibliox]] on becoming a &quot;righteous hero&quot;."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="17" name="Bibliox" x="7840" y="10179">
+   <properties>
+    <property name="description" value="Appears after defeating [[Jackenstein]]. Relates a long tale which only consists of the letters of the alphabet, including &quot;ñ&quot;."/>
+    <property name="page" value="Bibliox"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Wafer" x="10065" y="9937">
+   <properties>
+    <property name="description" value="Warns the [[party]] of the hostile [[Darkner]]s in the area, but requests not to harm them."/>
+    <property name="page" value="Wafer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="24" name="Wafer" x="10381" y="9379">
+   <properties>
+    <property name="description" value="States that come five o'clock, &quot;the shadow will grow&quot;."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="47" name="Wafer" x="10784" y="7547">
+   <properties>
+    <property name="description" value="Explains the state of the [[Wicabel]] statue next to it."/>
+    <property name="page" value="Wafer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Wicabel" x="10706" y="7551">
+   <properties>
+    <property name="description" value="A Wicabel statue. Comes to life after restoring the Dark Sanctuary."/>
+    <property name="page" value="Wicabel"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="52" name="Cuptain" x="11171" y="7301">
+   <properties>
+    <property name="description" value="Appears after defeating [[Jackenstein]]. Is seen attacking a [[Guei]]."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="53" name="Guei" x="11119" y="7213">
+   <properties>
+    <property name="description" value="Makes wispy noises when interacted with."/>
+    <property name="page" value="Guei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="59" name="Guei" x="13100" y="6967">
+   <properties>
+    <property name="description" value="Appears if Guei was recruited by the old man. Is currently studying."/>
+    <property name="page" value="Guei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="60" name="Guei" x="13413" y="6543">
+   <properties>
+    <property name="description" value="Appears if Guei was recruited by the old man. Makes wispy noises when interacted with."/>
+    <property name="page" value="Guei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="61" name="Jackenstein" x="13462" y="7100">
+   <properties>
+    <property name="description" value="Appears after being defeated. Is sweeping the floor of the study and gives advice on where to go next."/>
+    <property name="page" value="Jackenstein"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="62" name="Old man" x="13243" y="7125">
+   <properties>
+    <property name="description" value="Gives advice on where to go next."/>
+    <property name="page" value="Gerson Boom"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="69" name="Cuptain" x="12335" y="4698">
+   <properties>
+    <property name="description" value="Appears after donating money to the fountain. Asks whether the [[party]] had any change to throw in instead."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="73" name="Wafers" x="11230" y="3700">
+   <properties>
+    <property name="description" value="Are staring at the [[Organikk]] stature in worship."/>
+    <property name="page" value="Wafer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="76" name="Cuptain" x="13140" y="3264">
+   <properties>
+    <property name="description" value="Appears after restoring the Dark Sanctuary. Warns the [[party]] that the golden piano above has been destroyed by a [[Wicabel]]."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="82" name="Tao" x="9514" y="1905">
+   <properties>
+    <property name="description" value="Inaccessible to the party. Is seen dancing in place."/>
+    <property name="page" value="Tao"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="104" name="Cuptain" x="9008" y="8503">
+   <properties>
+    <property name="description" value="Comments on how their attempts to reach their Holy Princess at the top fail due to slippery legs."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="105" name="Cuptain" x="9160" y="8503">
+   <properties>
+    <property name="description" value="Promises to never spill or modify a drop of their Holy Princess's love."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="106" name="Cuptain" x="8960" y="7355">
+   <properties>
+    <property name="description" value="Requests that the [[party]] tell the Holy Princess of their exploits to earn her favor."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="111" name="Wafer" x="17203" y="7915">
+   <properties>
+    <property name="description" value="Directs the party to the light up north."/>
+    <property name="page" value="Wafer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="115" name="Unknown" x="9786" y="6003">
+   <properties>
+    <property name="description" value="An unknown creature, hidden in the darkness. Is exposed by directing the ripples toward it when walking."/>
+    <property name="page" value="Unknown"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="116" name="Unknown" x="9386" y="5985">
+   <properties>
+    <property name="description" value="An unknown creature, hidden in the darkness. Is exposed by directing the ripples toward it when walking."/>
+    <property name="page" value="Unknown"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="117" name="Unknown" x="9412" y="5805">
+   <properties>
+    <property name="description" value="An unknown creature, hidden in the darkness. Is exposed by directing the ripples toward it when walking."/>
+    <property name="page" value="Unknown"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="118" name="Unknown" x="9608" y="5627">
+   <properties>
+    <property name="description" value="An unknown creature, hidden in the darkness. Is exposed by directing the ripples toward it when walking."/>
+    <property name="page" value="Unknown"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="128" name="Cuptain" x="14421" y="7177">
+   <properties>
+    <property name="description" value="Has climbed to the top of the pillar and found no Princess. Considers the possibility of the pillar itself being the Princess."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="129" name="Cuptain" x="14440" y="6973">
+   <properties>
+    <property name="description" value="Asks if the [[party]] wishes to join the ranks of the Cuptains and encourages the party to climb to the top."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="130" name="Cuptain" x="14778" y="6979">
+   <properties>
+    <property name="description" value="Notes the organ at the top of the tower but lacks the grip strength to reach it."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="131" name="Cuptain" x="15417" y="7266">
+   <properties>
+    <property name="description" value="Notes the [[Mizzle]] at the ground level but refuses to climb to her."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="132" name="Cuptain" x="15319" y="6819">
+   <properties>
+    <property name="description" value="Explains the nature of the Dark Sanctuary and its inhabitants."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="Fire extinguisher" x="16560.9" y="6931">
+   <properties>
+    <property name="description" value="Proclaims that they are the most important since the [[Lightner]]s' church service has never gone on without them."/>
+    <property name="page" value="Fire Extinguisher"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="Wafer" x="16831" y="6897">
+   <properties>
+    <property name="description" value="Explains that the [[Darkner]] next to them is the fire extinguisher."/>
+    <property name="page" value="Wafer"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="142" name="Cuptain" x="17331" y="5461">
+   <properties>
+    <property name="description" value="Notes that they must charge their jump to temporarily boost their speed."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="143" name="Cuptain" x="17503" y="4735">
+   <properties>
+    <property name="description" value="Tracks the time taken to complete the preceding climbing segment."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="144" name="Cuptain" x="18013" y="3893">
+   <properties>
+    <property name="description" value="Tracks the time taken to complete the preceding climbing segment."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="145" name="Cuptain" x="18643" y="3921">
+   <properties>
+    <property name="description" value="Notices the [[party]] approaching the [[Mizzle]] and rushes to defend her."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="146" name="Cuptain" x="18371" y="3725">
+   <properties>
+    <property name="description" value="An endless horde of Cuptains charges at the [[party]] in defense of the [[Mizzle]]. The Mizzle wakes up and leaves when the party reaches her."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="148" name="Mizzle" x="18173" y="3677">
+   <properties>
+    <property name="description" value="When the party approaches the Mizzle, she admonishes the [[Cuptains]] and leaves."/>
+    <property name="page" value="Mizzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="150" name="Cuptain stack" x="15199" y="3009">
+   <properties>
+    <property name="description" value="Offers to take the [[party]] back down to the base of the tower."/>
+    <property name="page" value="Cuptain"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="lines">
+  <object id="5" x="3427.97" y="7612.52">
+   <properties>
+    <property name="color" type="color" value="#ff4d4b8f"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.133142,-106.449 -694.674,-105.389 -694.52,-212.572"/>
+  </object>
+  <object id="28" x="8882.82" y="9124.97">
+   <properties>
+    <property name="color" type="color" value="#ff152c81"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.00785565,-270.244"/>
+  </object>
+  <object id="35" x="14621.4" y="8778.53">
+   <properties>
+    <property name="color" type="color" value="#ff1a2d1a"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.109468,2153.44 557.217,2153.31"/>
+  </object>
+  <object id="39" x="19108.8" y="8655.08">
+   <properties>
+    <property name="color" type="color" value="#ff28140b"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 601.576,0.171742 601.673,1129.34 601.636,389.862 -12.87,389.318"/>
+  </object>
+  <object id="40" x="15888.5" y="11383.7">
+   <properties>
+    <property name="color" type="color" value="#ff853979"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -473.059,0.0893478 -472.993,-2366.83 668.59,-2372.73 668.576,-2660.48"/>
+  </object>
+  <object id="85" x="11744.7" y="1663.83">
+   <properties>
+    <property name="color" type="color" value="#ff7e566d"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0.0071927,1242.47 -119.149,1242.55 -119.149,1676.6"/>
+  </object>
+  <object id="86" x="13202.7" y="3441.09">
+   <properties>
+    <property name="color" type="color" value="#ff8e6da0"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0.00302871,1830.91 60.8815,1830.73 60.8815,1964.5"/>
+  </object>
+  <object id="93" x="12561.2" y="3098.13">
+   <properties>
+    <property name="color" type="color" value="#ff3d2934"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-2633.86"/>
+  </object>
+  <object id="103" x="16280.2" y="1136.81">
+   <properties>
+    <property name="color" type="color" value="#ff32245a"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 1135.5,0.0515858 1135.52,1049.09 195.166,1052.26 195.789,2622.13 -2868.56,2622.13 -2865.18,4268.52 -3733.59,4268.64 -3733.51,4649.64 -3582.17,4649.43"/>
+  </object>
+  <object id="110" x="11682.6" y="3647.14">
+   <properties>
+    <property name="color" type="color" value="#ff364ecf"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.081398,456.565 -461.052,456.661"/>
+  </object>
+  <object id="112" x="15379.4" y="8323.96">
+   <properties>
+    <property name="color" type="color" value="#ffb2b2b2"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 1038.29,0.139856"/>
+  </object>
+  <object id="114" x="11839.2" y="4515.42">
+   <properties>
+    <property name="color" type="color" value="#ff660000"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0.279809,1381.94 -1007.21,1380.58 -1006.51,1629.57 -1680.19,1629.75"/>
+  </object>
+  <object id="124" x="8921.88" y="5282.98">
+   <properties>
+    <property name="color" type="color" value="#ff586a82"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0.112079,-336.788 1472.7,-336.788"/>
+  </object>
+  <object id="127" x="13248" y="7023.6">
+   <properties>
+    <property name="color" type="color" value="#ff2b3029"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0.240403,-317.534 -1451.85,-315.8 -1451.87,-582.993"/>
+  </object>
+  <object id="149" x="15267.2" y="4507.18">
+   <properties>
+    <property name="color" type="color" value="#ff1d787d"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 0,-1350.07"/>
+  </object>
+  <object id="158" x="13248" y="6533.04">
+   <properties>
+    <property name="color" type="color" value="#ffee7b3e"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0.127,3.30201 -6723.27,3.20549 -6722.53,2409.14 -7469.79,2408.1"/>
+  </object>
+ </objectgroup>
+ <objectgroup id="10" name="items">
+  <object id="26" name="Rhapsotea" x="10783" y="9479">
+   <properties>
+    <property name="description" value="Treasure chest containing a Rhapsotea."/>
+    <property name="page" value="Rhapsotea"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="27" name="Gloves" x="8745" y="9443">
+   <properties>
+    <property name="description" value="Hidden treasure chest containing slippery gloves that are not obtained."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="37" name="Scarlixir" x="16167" y="9403">
+   <properties>
+    <property name="description" value="Treasure chest containing a Scarlixir."/>
+    <property name="page" value="Scarlixir"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="54" name="Darker Candy" x="12625" y="6831">
+   <properties>
+    <property name="description" value="A pedestal containing Darker Candy. Only one can be taken before the bowl tips over."/>
+    <property name="page" value="Darker Candy"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="56" name="Max HP +1" x="10645" y="6803">
+   <properties>
+    <property name="description" value="Empty treasure chest. When opening it, [[Kris]]'s maximum [[HP]] increases by 1."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="72" name="Absorb Ax" x="12082" y="3604">
+   <properties>
+    <property name="description" value="Treasure chest containing an Absorb Ax."/>
+    <property name="page" value="Absorb Ax"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="74" name="Mystic Band" x="11036" y="3917">
+   <properties>
+    <property name="description" value="Treasure chest containing the Mystic Band."/>
+    <property name="page" value="Mystic Band"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="81" name="Scarlixir" x="9882" y="2489">
+   <properties>
+    <property name="description" value="Treasure chest containing a Scarlixir."/>
+    <property name="page" value="Scarlixir"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="88" name="Revive Mint" x="14502" y="3346">
+   <properties>
+    <property name="description" value="Treasure chest containing a Revive Mint"/>
+    <property name="page" value="Revive Mint"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="101" name="Dark Dollars" x="16721" y="1758">
+   <properties>
+    <property name="description" value="Treasure chest containing 500 Dark Dollars]]."/>
+    <property name="page" value="Dark Dollar"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="133" name="Winglade" x="14805" y="7207">
+   <properties>
+    <property name="description" value="Treasure chest containing a Winglade."/>
+    <property name="page" value="Winglade (item)"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="Silver coins" x="14927" y="5180">
+   <properties>
+    <property name="description" value="Silver coins scattered throughout the room. They award 5 [[Dark Dollar]]s when collected."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="Gold coin" x="15367" y="4976">
+   <properties>
+    <property name="description" value="A gold coin. It awards 20 [[Dark Dollar]]s when collected."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="140" name="Tension Gem" x="16679" y="5777">
+   <properties>
+    <property name="description" value="Treasure chest containing a Tension Gem."/>
+    <property name="page" value="Tension Gem"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="147" name="Power Band" x="18147" y="3723">
+   <properties>
+    <property name="description" value="Treasure chest containing a Power Band."/>
+    <property name="page" value="Power Band"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="152" name="Sheet Music" x="16120" y="3040">
+   <properties>
+    <property name="description" value="[[Susie]] gives the Sheet Music to [[Kris]] after she transcribes the music in the curtain room."/>
+    <property name="page" value="Sheet Music"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="hazards">
+  <object id="20" name="Chase enemies" x="9125" y="9919">
+   <properties>
+    <property name="description" value="Chase enemies circle around the area, harming the party if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="21" name="Chase enemies" x="9560" y="9360">
+   <properties>
+    <property name="description" value="Chase enemies circle around the area, harming the party if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="78" name="Chase enemies" x="11120" y="3221">
+   <properties>
+    <property name="description" value="Chase enemies circle around the area, harming the party if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="79" name="Chase enemies" x="10462" y="3136">
+   <properties>
+    <property name="description" value="Chase enemies roam the area, harming the party if touched."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="80" name="Chase enemies" x="10502" y="1970">
+   <properties>
+    <property name="description" value="Chase enemies circle around the area, harming the party if touched."/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="11" name="enemies">
+  <object id="13" name="Guei" x="6040" y="10160">
+   <properties>
+    <property name="description" value="Enemy encounter against two Gueis"/>
+    <property name="page" value="Guei"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="32" name="Balthizard" x="13780" y="8713">
+   <properties>
+    <property name="description" value="Enemy encounter against two Balthizards."/>
+    <property name="page" value="Balthizard"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="67" name="Bibliox" x="12846" y="4626">
+   <properties>
+    <property name="description" value="Enemy encounter against two Biblioxes"/>
+    <property name="page" value="Bibliox"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="68" name="Hammer of Justice" x="12310" y="6191">
+   <properties>
+    <property name="description" value="Boss battle against the Hammer of Justice. Gives a [[Shadow Crystal]] and the [[Justice Axe]] upon defeat."/>
+    <property name="page" value="Hammer of Justice"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="75" name="Guei" x="12243" y="3281">
+   <properties>
+    <property name="description" value="Enemy encounter against a [[Guei]] and [[Balthizard]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="98" name="Jackenstein" x="16013" y="1835">
+   <properties>
+    <property name="description" value="Boss battle against Jackenstein. Gives the [[Claimb Claws]] upon defeat."/>
+    <property name="page" value="Jackenstein#In battle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="107" name="Miss Mizzle" x="8464" y="6235">
+   <properties>
+    <property name="description" value="Interacting with this water bucket triggers a battle against Miss Mizzle."/>
+    <property name="page" value="Miss Mizzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="134" name="Mizzle" x="15605" y="6929">
+   <properties>
+    <property name="description" value="Enemy encounter against two Mizzles."/>
+    <property name="page" value="Mizzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="153" name="Mizzle" x="17846" y="2881">
+   <properties>
+    <property name="description" value="Enemy encounter against two Mizzles."/>
+    <property name="page" value="Mizzle"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="154" name="Mizzle bell" x="18128" y="2915">
+   <properties>
+    <property name="description" value="Ringing this bell calls all the [[Mizzle]]s in the room to the [[party]]."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="167" name="Wicabel" x="13200" y="2800">
+   <properties>
+    <property name="description" value="Enemy encounter against two Wicabels. Appears after restoring the Dark Sanctuary."/>
+    <property name="page" value="Wicabel"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="13" name="connections">
+  <object id="165" name="3rd Sanctuary" x="515.658" y="360">
+   <properties>
+    <property name="description" value="A [[Grand Door]] opened after the events of the [[2nd Sanctuary]], leading to the 3rd Sanctuary."/>
+    <property name="page" value="3rd Sanctuary"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
 </map>
