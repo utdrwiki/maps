@@ -8,13 +8,13 @@
   <image source="images/Field.png" width="6565" height="1602"/>
  </imagelayer>
  <objectgroup id="4" name="warpdoor">
-  <object id="63" name="Field Warp Door" x="5235" y="1118">
+  <object id="63" name="Field shortcut door" x="5235" y="1118">
    <properties>
-    <property name="description">Reaching the Forest Warp Door will activate this Warp Door. It can be used to travel to the following locations:
-* Forest
+    <property name="description">Reaching the Forest shortcut door will activate this shortcut door. It can be used to travel to the following locations:
+* [[Forest]]
 * Bake Sale
-* Castle</property>
-    <property name="page" value="Warp Door"/>
+* [[Card Castle|Castle]]</property>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
@@ -29,7 +29,7 @@
 * [[Spookysword]]
 
 Seam can also be talked to about the [[Jevil|Strange Prisoner]] in the basement of [[Card Castle]], and will give [[Broken Key A]] to start the process of unlocking his cell, as well as giving a hint for [[Broken Key B]].</property>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
@@ -301,7 +301,7 @@ The power of mean girls does not shine within you.</property>
   </object>
   <object id="55" name="Jigsaw Joe" x="4636.5" y="1109.5">
    <properties>
-    <property name="description" value="Jigsaw Joe explains that the Jigsaw pieces usually make puzzle, but when [[King]] took hold, he replaced them with [[Rouxls Kaard]]. The Jigsaws are now forced to make tutorials to make money."/>
+    <property name="description" value="Jigsaw Joe explains that the Jigsaw pieces usually make puzzles, but when [[King]] took hold, he replaced them with [[Rouxls Kaard]]. The Jigsaws are now forced to make tutorials to make money."/>
     <property name="page" value="Jigsaw Joe"/>
    </properties>
    <point/>
