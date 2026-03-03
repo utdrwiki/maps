@@ -8,33 +8,33 @@
   <image source="images/Forest.png" width="13949" height="6593"/>
  </imagelayer>
  <objectgroup id="4" name="warpdoor">
-  <object id="125" name="Forest Warp Door" x="159.5" y="5919.5">
+  <object id="125" name="Forest shortcut door" x="159.5" y="5919.5">
    <properties>
-    <property name="description">This Warp Door is activated when it is reached. It can be used to travel to the:
+    <property name="description">This shortcut door is activated when it is reached. It can be used to travel to the:
 * [[Field]]
 * Bake Sale
 * [[Card Castle|Castle]]</property>
-    <property name="page" value="Warp Door"/>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
-  <object id="126" name="Bake Sale Warp Door" x="3304.5" y="5716">
+  <object id="126" name="Bake Sale shortcut door" x="3304.5" y="5716">
    <properties>
-    <property name="description">This Warp Door is activated when it is reached. It can be used to travel to the:
+    <property name="description">This shortcut door is activated when it is reached. It can be used to travel to the:
 * [[Field]]
 * Forest
 * [[Card Castle|Castle]]</property>
-    <property name="page" value="Warp Door"/>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
-  <object id="127" name="Castle Warp Door" x="8712.5" y="1909.5">
+  <object id="127" name="Castle shortcut door" x="8712.5" y="1909.5">
    <properties>
-    <property name="description">This Warp Door is activated after reaching [[Card Castle]]. It can be used to travel to the:
+    <property name="description">This shortcut door is activated after reaching [[Card Castle]]. It can be used to travel to the:
 * [[Field]]
 * Forest
 * Bake Sale</property>
-    <property name="page" value="Warp Door"/>
+    <property name="page" value="Shortcut door"/>
    </properties>
    <point/>
   </object>
@@ -43,21 +43,21 @@
   <object id="122" name="Rudinn" x="3606" y="5667">
    <properties>
     <property name="description" value="[[Choco Diamond]] sold by [[Rudinn]] for [[D$]]40."/>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
   <object id="123" name="Hathy" x="3676.5" y="5667">
    <properties>
     <property name="description" value="[[Hearts Donut]] sold by [[Hathy]] for [[D$]]40."/>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
   <object id="124" name="Susie and Lancer" x="3775" y="5667">
    <properties>
     <property name="description" value="[[Lancer Cookie]] sold by [[Susie]] and [[Lancer]] for [[D$]]40."/>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
@@ -289,7 +289,7 @@ The power of reoccurring bake sales shines within you.</property>
   </object>
   <object id="95" name="Lancer flees" x="11941.5" y="2001">
    <properties>
-    <property name="description" value="[[Lancer]] questions if there is another way for [[Susie]] and [[Kris]] to return home, as the [[Dark Fountain]] is being guarded and he doe not want anyone to get hurt. He then says he needs to go. Susie asks when he will be back, and he replies that he will not be back. Afterwards, Lancer runs to the right. Susie follows him, and [[Ralsei]] follows her."/>
+    <property name="description" value="[[Lancer]] questions if there is another way for [[Susie]] and [[Kris]] to return home, as the [[Dark Fountain]] is being guarded and he does not want anyone to get hurt. He then says he needs to go. Susie asks when he will be back, and he replies that he will not be back. Afterwards, Lancer runs to the right. Susie follows him, and [[Ralsei]] follows her."/>
    </properties>
    <point/>
   </object>
@@ -303,14 +303,14 @@ The power of reoccurring bake sales shines within you.</property>
  <objectgroup id="7" name="npcs">
   <object id="42" name="Jigsaw Joe" x="97" y="5929.5">
    <properties>
-    <property name="description" value="Only appears if the [[party]] talked to him earlier. Tells the party that he, along with [[Mr. Elegance]] and [[Mr. Society]], managed to fix the [[Warp Door]], and that it should be able to take them to and from here and the [[Field]] but that they will keep working on fixing it. Interacting again will have him question where the door may have come from."/>
+    <property name="description" value="Only appears if the [[party]] talked to him earlier. Tells the party that he, along with [[Mr. Elegance]] and [[Mr. Society]], managed to fix the [[shortcut door]], and that it should be able to take them to and from here and the [[Field]] but that they will keep working on fixing it. Interacting again will have him question where the door may have come from."/>
     <property name="page" value="Jigsaw Joe"/>
    </properties>
    <point/>
   </object>
   <object id="43" name="Mr. Elegance" x="214" y="5933">
    <properties>
-    <property name="description" value="If the [[party]] did not talk to [[Jigsaw Joe]], Mr. Elegance informs them that he and [[Mr. Society]] fixed the [[Warp Door]]; however, it might break because it was just the two of them. If the party talked to Jigsaw Joe, then he informs them that it should work fine because the three of them worked on it. Regardless, upon repeat interactions, he tells the party to not tell anyone that Mr. Society helped because he does not want the attention."/>
+    <property name="description" value="If the [[party]] did not talk to [[Jigsaw Joe]], Mr. Elegance informs them that he and [[Mr. Society]] fixed the [[shortcut door]]; however, it might break because it was just the two of them. If the party talked to Jigsaw Joe, then he informs them that it should work fine because the three of them worked on it. Regardless, upon repeat interactions, he tells the party to not tell anyone that Mr. Society helped because he does not want the attention."/>
     <property name="page" value="Mr. Elegance"/>
    </properties>
    <point/>
@@ -351,10 +351,10 @@ All further interactions result in Lancer asking if everyone has had enough and 
    </properties>
    <point/>
   </object>
-  <object id="47" name="Little Ball" x="1543" y="5763.5">
+  <object id="47" name="Little ball" x="1543" y="5763.5">
    <properties>
     <property name="description" value="They state they are just a little ball and do not want to discuss anything."/>
-    <property name="page" value="Little Ball"/>
+    <property name="page" value="Little ball"/>
    </properties>
    <point/>
   </object>
@@ -379,10 +379,10 @@ All further interactions result in Lancer asking if everyone has had enough and 
    </properties>
    <point/>
   </object>
-  <object id="51" name="O Block" x="2720" y="5736">
+  <object id="51" name="O Blockler" x="2720" y="5736">
    <properties>
     <property name="description" value="Informs the [[party]] that [[King]] wants to eliminate [[Lightner]]s, but they and the other blocks disagreed, so all of them except the two here were arrested. Upon further interaction, states that [[Bow-Bow]] talks a lot."/>
-    <property name="page" value="Blue Block"/>
+    <property name="page" value="Blockler"/>
    </properties>
    <point/>
   </object>
@@ -471,7 +471,7 @@ All further interactions result in Lancer asking if everyone has had enough and 
   </object>
   <object id="65" name="Susie" x="8131.5" y="5901">
    <properties>
-    <property name="description" value="[[Ralsei]] asks if Susie is ready to be good guy, but she says that being evil is more fun and that [[Lancer]] appreciates what she does. He then recounts how Susie ate a pinecone earlier and admires her for it. Upon further interactions, she asks Ralsei to stop blocking her &quot;''reverse-tan''.&quot;"/>
+    <property name="description" value="[[Ralsei]] asks if Susie is ready to be a good guy, but she says that being evil is more fun and that [[Lancer]] appreciates what she does. He then recounts how Susie ate a pinecone earlier and admires her for it. Upon further interactions, she asks Ralsei to stop blocking her &quot;''reverse-tan''.&quot;"/>
     <property name="page" value="Susie"/>
    </properties>
    <point/>
