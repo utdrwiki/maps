@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1114" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="172">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="1114" height="144" tilewidth="40" tileheight="40" infinite="0" nextlayerid="15" nextobjectid="175">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -8,16 +8,20 @@
   <image source="images/TV World.png" width="44560" height="5760"/>
  </imagelayer>
  <objectgroup id="11" name="warpdoor">
-  <object id="4" name="Warp door" x="6649.06" y="876.245">
+  <object id="4" name="TV World Entrance shortcut door" x="6649.06" y="876.245">
    <properties>
-    <property name="description" value="Warp door in the TV World Entrance. Unlocks after reaching the [[Green Room]]."/>
-    <property name="page" value="Warp door"/>
+    <property name="description">Shortcut door in the TV World Entrance. Unlocks after reaching the [[Green Room]]. It can be used to travel to the following locations:
+* Goulden Sam
+* Green Room</property>
+    <property name="page" value="Shurtcut door"/>
    </properties>
    <point/>
   </object>
-  <object id="23" name="Warp door" x="13067" y="2990.76">
+  <object id="23" name="Goulden Sam shortcut door" x="13067" y="2990.76">
    <properties>
-    <property name="description" value="Warp door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]."/>
+    <property name="description">Shortcut door in the Goulden Sam area. Unlocks after reaching the [[Green Room]]. It can be used to travel to the following locations:
+* TV World entrance
+* Green Room</property>
     <property name="page" value="Warp door"/>
    </properties>
    <point/>
@@ -524,6 +528,18 @@ You are filled with the power of undeserved fame.</property>
    </properties>
    <point/>
   </object>
+  <object id="172" name="Cheering crowd" x="25423" y="3683">
+   <properties>
+    <property name="description" value="Opening this treasure chest triggers a cheering crowd."/>
+   </properties>
+   <point/>
+  </object>
+  <object id="173" name="Treasure chest Pippins" x="29360" y="4960">
+   <properties>
+    <property name="description" value="A lone [[Pippins]] is revealed when opening this treasure chest."/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="14" name="lines">
   <object id="60" x="29881.5" y="4380.51">
@@ -661,6 +677,12 @@ You are filled with the power of undeserved fame.</property>
    </properties>
    <point/>
   </object>
+  <object id="174" name="Houses" x="11820" y="3090">
+   <properties>
+    <property name="description" value="Destroying every house in this room awards 1 [[POINT]]"/>
+   </properties>
+   <point/>
+  </object>
  </objectgroup>
  <objectgroup id="6" name="enemies">
   <object id="6" name="Roaming Shadowguys" x="9140.82" y="1185.4">
@@ -678,7 +700,7 @@ You are filled with the power of undeserved fame.</property>
   </object>
   <object id="29" name="Ribbick" x="14188.7" y="2684.93">
    <properties>
-    <property name="description" value="Enemy encounter against two Ribbicks. In subsequent encounters, the party battles against three Ribbicks."/>
+    <property name="description" value="Enemy encounter against Ribbick. In subsequent encounters, the party battles against three Ribbicks."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
@@ -692,7 +714,7 @@ You are filled with the power of undeserved fame.</property>
   </object>
   <object id="36" name="Ribbick" x="18132.7" y="2689.43">
    <properties>
-    <property name="description" value="Enemy encounter against three Ribbicks."/>
+    <property name="description" value="Enemy encounter against two Ribbicks."/>
     <property name="page" value="Ribbick"/>
    </properties>
    <point/>
