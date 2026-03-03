@@ -228,7 +228,7 @@ Shining only in your own eyes, the light defies it.</property>
   <object id="3" name="Piano playing puzzle 1" x="2985" y="7796">
    <properties>
     <property name="description" value="Kris must play the piano with the indicated directions to light up the room and unlock the way forward."/>
-    <property name="page" value="Dark Danctuaries/Puzzles#The first piano playing puzzle"/>
+    <property name="page" value="Dark Sanctuaries/Puzzles#The first piano playing puzzle"/>
    </properties>
    <point/>
   </object>
