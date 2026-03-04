@@ -10,7 +10,7 @@
  <objectgroup id="3" name="plot">
   <object id="2" name="HERO_SWORD's party" x="960" y="128">
    <properties>
-    <property name="description" value="Unlike the previous boards on the [[Sword Route]], [[HERO_SWORD]] begins the game with [[HERO_AXE]] and [[HERO_SCARF]] following them. Once they get the [[Sword (Original Game)|sword]], however, they must be killed in order for HERO_SWORD to become strong enough to continue into the [[Manhole Dungeon]]."/>
+    <property name="description" value="Unlike the previous boards on the [[Sword Route]], [[HERO_SWORD]] begins the game with [[HERO_AXE]] and [[HERO_SCARF]] following them. Once they get the [[Sword (Original Game)|sword]], however, they must be killed in order for HERO_SWORD to become strong enough to continue into the [[manhole dungeon]]."/>
    </properties>
    <point/>
   </object>
@@ -18,7 +18,7 @@
  <objectgroup id="5" name="items">
   <object id="1" name="Sword" x="2111" y="597">
    <properties>
-    <property name="description" value="A sword in an underground chamber. Allows [[HERO_SWORD]] to kill their party members and enemies in the [[Manhole Dungeon]]."/>
+    <property name="description" value="A sword in an underground chamber. Allows [[HERO_SWORD]] to kill their party members and enemies in the [[manhole dungeon]]."/>
     <property name="page" value="Sword (Original Game)"/>
    </properties>
    <point/>
@@ -33,10 +33,10 @@
   </object>
  </objectgroup>
  <objectgroup id="7" name="connections">
-  <object id="3" name="Manhole Dungeon" x="2960" y="400">
+  <object id="3" name="Manhole dungeon" x="2960" y="400">
    <properties>
     <property name="description" value="Manhole providing a one-way connection to an underground dungeon."/>
-    <property name="page" value="Manhole Dungeon"/>
+    <property name="page" value="Manhole dungeon"/>
    </properties>
    <point/>
   </object>
