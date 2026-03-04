@@ -881,7 +881,7 @@ It fills you with determination.</property>
   </object>
   <object id="11" name="Fishing Rod" x="3446.08" y="202.764">
    <properties>
-    <property name="description" value="The [[Snowdin/NPCs#Ugly Fish|Ugly Fish]]'s fishing rod. Reeling it in reveals a note that says ''Call me! Here's my number!''"/>
+    <property name="description" value="The [[Ugly Fish]]'s fishing rod. Reeling it in reveals a note that says ''Call me! Here's my number!''"/>
     <property name="zh_description">[[雪町/NPC#Ugly Fish|Ugly Fish]] 的釣魚竿。將釣線拉起會看到一張字條，上面寫著&quot;打給我！這是我的電話號碼！&quot;
 </property>
     <property name="zh_name" value="釣竿"/>
@@ -1066,7 +1066,7 @@ It fills you with determination.</property>
   </object>
   <object id="95" name="Rabbit Kid" x="12849.7" y="1271.95">
    <properties>
-    <property name="description" value="A rabbit NPC who is disturbed by the [[Snowdin/NPCs#Rabbit Girl and Cinnamon|Rabbit Girl]]'s mannerisms."/>
+    <property name="description" value="A rabbit NPC who is disturbed by the [[Rabbit Lady]]'s mannerisms."/>
     <property name="page" value="Rabbit Kid"/>
     <property name="zh_description">一位對[[雪町/NPC#Rabbit Girl and Cinnamon|Rabbit Girl]]的舉止感到困擾的兔子。
 </property>
@@ -1375,16 +1375,16 @@ It fills you with determination.</property>
   <object id="72" name="Faun" x="9367.51" y="1267.4">
    <properties>
     <property name="description" value="Provides commentary on [[Lesser Dog]]'s attempts to build a snowdog."/>
-    <property name="page" value="Snowdin/NPCs#Faun"/>
+    <property name="page" value="Faun"/>
     <property name="zh_description" value="對 [[Lesser Dog]] 的創作發表評論。"/>
     <property name="zh_page" value="雪町/NPC#Faun"/>
    </properties>
    <point/>
   </object>
-  <object id="159" name="Snoring Guests" x="12720" y="820">
+  <object id="159" name="Snoring guests" x="12720" y="820">
    <properties>
     <property name="description" value="Are seen snoring in the inn to the tune of ''[[Determination (Soundtrack)|Determination]]''."/>
-    <property name="page" value="Snoring Guests"/>
+    <property name="page" value="Snoring guests"/>
    </properties>
    <point/>
   </object>
