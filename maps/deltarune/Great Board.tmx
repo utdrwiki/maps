@@ -67,7 +67,7 @@
   </object>
   <object id="15" name="Susie defects" x="5999" y="150">
    <properties>
-    <property name="description" value="[[Ralsei]] chastises [[Susie]] for her aggressive behavior towards [[K. Round]] and the other [[Darkners]] the group previously encountered, telling her to start acting more like a hero. Susie decides to team up with [[Lancer]] instead, no longer being in the [[party]] until the protagonists complete the [[Forest]] area."/>
+    <property name="description" value="[[Ralsei]] chastises [[Susie]] for her aggressive behavior towards [[K. Round]] and the other [[Darkner]]s the group previously encountered, telling her to start acting more like a hero. Susie decides to team up with [[Lancer]] instead, no longer being in the [[party]] until the protagonists complete the [[Forest]] area."/>
    </properties>
    <point/>
   </object>
@@ -80,7 +80,7 @@
    </properties>
    <point/>
   </object>
-  <object id="11" name="Mr Society" x="5380" y="95.5">
+  <object id="11" name="Mr. Society" x="5380" y="95.5">
    <properties>
     <property name="description" value="Clarifies that he and Mr. Elegance have higher faculty than the [[Ponman|Ponmen]], and that he would not bow down to [[King]]'s whims unless asked. If interacted with again, he will assure that everyone will express their support over the [[party]]'s desire to take on King, as long as he does not need to participate."/>
     <property name="page" value="Mr. Society"/>
