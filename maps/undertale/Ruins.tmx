@@ -703,8 +703,8 @@ It fills you with determination.</property>
  <objectgroup id="14" name="connections">
   <object id="80" name="Ruins Exit" x="10119.6" y="46.0814">
    <properties>
-    <property name="description" value="Exit to [[Snowdin Forest|Snowdin]]. The protagonist cannot go back to the Ruins after exiting."/>
-    <property name="page" value="Snowdin Forest"/>
+    <property name="description" value="Exit to [[Snowdin]]. The protagonist cannot go back to the Ruins after exiting."/>
+    <property name="page" value="Snowdin"/>
     <property name="zh_description" value="出口大門通往[[雪町]]。主角離開後將無法返回廢墟。"/>
     <property name="zh_name" value="廢墟出口"/>
    </properties>

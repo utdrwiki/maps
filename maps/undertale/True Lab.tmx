@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="108" height="66" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="53">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="108" height="66" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="53">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -8,7 +8,7 @@
  <imagelayer id="2" name="True Lab map">
   <image source="images/True Lab.png" width="3440" height="2100"/>
  </imagelayer>
- <objectgroup id="3" name="plot">
+ <objectgroup id="12" name="lines">
   <object id="17" x="1398.86" y="1277.13">
    <properties>
     <property name="color" type="color" value="#ff183030"/>
@@ -16,117 +16,15 @@
    </properties>
    <polyline points="0,0 0.622684,-303.87"/>
   </object>
-  <object id="38" name="VHS tapes" x="1240.61" y="107.241">
-   <properties>
-    <property name="description" value="The protagonist can watch six tapes from the VHS player. These tapes detail snippets of the Dreemurr family's lives, but they also detail [[Chara|the first human]]'s plan to break the [[Barrier]] with [[Asriel Dreemurr|Asriel]], as well as their subsequent death."/>
-    <property name="zh_description" value="主角可以從錄影帶播放器中觀看六捲錄影帶。這些錄影帶詳細記錄了 Dreemurr 家族生活的片段，也詳細記錄了[[Chara|第一個人類]]與 [[Asriel Dreemurr|Asriel]] 一起打破[[結界]]的計劃，以及第一個人類的死亡。"/>
-    <property name="zh_name" value="錄影帶"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="49" name="Power Room" x="618.97" y="650.041">
-   <properties>
-    <property name="description" value="The protagonist activates the Power Room generator to restore power to the elevator. After doing so, a group of [[Amalgamates]] approach the protagonist, but [[Alphys]] stops them. She explains that she injected [[Determination]] extracted from the human [[SOUL]]s into fallen down monsters so that their SOULs would persist after death. However, since monsters' bodies cannot handle the amount of Determination Alphys was injecting, their bodies began to melt together. Alphys resolves to reveal the truth and bring the Amalgamates back to their families."/>
-    <property name="zh_description" value="主角啟動了動力室的發電機，恢復了電梯的電力。之後，一群[[合成怪物]]接近主角，但 [[Alphys]] 阻止它們。她表示她將從人類[[靈魂]]中提取的[[決心]]注入倒下的怪物體內，以便它們的靈魂在死後得以保留。然而由於怪物的身體無法承受 Alphys 注入的大量決心，它們的身體開始融化在一起。 Alphys 最後決定揭露真相，並將合成怪物帶回它們的家人身邊。"/>
-    <property name="zh_name" value="動力室"/>
-   </properties>
-   <point/>
-  </object>
  </objectgroup>
- <objectgroup id="4" name="saves">
-  <object id="5" name="True Laboratory" x="1169.91" y="1528.7">
+ <objectgroup id="9" name="vendors">
+  <object id="8" name="Vending machine" x="1194.36" y="1407.44">
    <properties>
-    <property name="description" value="SAVE Point in the lobby."/>
-    <property name="zh_description" value="位於動力室門外面的存檔點。"/>
-    <property name="zh_name" value="真正的實驗室"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="20" name="True Lab - Bedroom" x="2244.73" y="594.236">
-   <properties>
-    <property name="description" value="SAVE Point in the Bedroom"/>
-    <property name="zh_description" value="位於臥室的存檔點。"/>
-    <property name="zh_name" value="真正的實驗室 - 臥室"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="5" name="items">
-  <object id="13" name="Red Key" x="137.123" y="1329.73">
-   <properties>
-    <property name="description" value="The Red Key, dropped by [[Memoryhead]]. It is used to unlock the Power Room door."/>
-    <property name="zh_description" value="擊倒 [[Memoryhead]] 後掉落，可開啟動力室的門。"/>
-    <property name="zh_name" value="紅色鑰匙"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="22" name="Yellow Key" x="2178.13" y="755.472">
-   <properties>
-    <property name="description" value="The Yellow Key, uncovered after inspecting the bed. It is used to unlock the Power Room door."/>
-    <property name="zh_description" value="在床的被子下，可開啟動力室的門。"/>
-    <property name="zh_name" value="黃色鑰匙"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="34" name="Green Key" x="1578.51" y="64.3508">
-   <properties>
-    <property name="description" value="The Green Key, uncovered by opening the shower curtain."/>
-    <property name="zh_description" value="在浴簾後面，可開啟動力室的門。"/>
-    <property name="zh_name" value="綠色鑰匙"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="46" name="Blue Key" x="356.411" y="381.724">
-   <properties>
-    <property name="description" value="The Blue Key, dropped by [[Snowdrake's Mother]]. It is used to unlock the Power Room door."/>
-    <property name="zh_description" value="擊倒 [[Snowdrake's Mother]] 後掉落，可開啟動力室的門。"/>
-    <property name="zh_name" value="藍色鑰匙"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="6" name="enemies">
-  <properties>
-   <property name="include" value="Map:Common Data"/>
-   <property name="zh_name" value="真正的實驗室"/>
-  </properties>
-  <object id="12" name="Memoryhead" x="73.5526" y="1316.59">
-   <properties>
-    <property name="description" value="Battle against Memoryhead, triggered by turning on the sinks."/>
-    <property name="page" value="Memoryhead"/>
-    <property name="zh_description" value="與 Memoryhead 戰鬥，打開第三個水槽後。"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="28" name="Endogeny" x="2854.94" y="355.084">
-   <properties>
-    <property name="description" value="Battle against Endogeny, triggered after turning on the fans."/>
-    <property name="page" value="Endogeny"/>
-    <property name="zh_description" value="與 Endogeny 戰鬥，打開風扇後。"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="31" name="Reaper Bird" x="3123.89" y="581.223">
-   <properties>
-    <property name="description" value="Battle against Reaper Bird, initially disguised as a random [[encounter]] indicator."/>
-    <property name="page" value="Reaper Bird"/>
-    <property name="zh_description" value="與 Reaper Bird 戰鬥，通過鏡子後觸發[[遭遇戰|遭遇提示]]。"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="39" name="Lemon Bread" x="1129.73" y="423.554">
-   <properties>
-    <property name="description" value="Battle against Lemon Bread, initially disguised as a [[SAVE Point]]."/>
-    <property name="page" value="Lemon Bread"/>
-    <property name="zh_description" value="與 Lemon Bread 戰鬥，偽裝成[[存檔|存檔點]]。"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="45" name="Snowdrake's Mother" x="356.157" y="340.969">
-   <properties>
-    <property name="description" value="Battle against Snowdrake's Mother, initially disguised as a refrigerator."/>
-    <property name="page" value="Snowdrake's Mother"/>
-    <property name="zh_description" value="與 Snowdrake's Mother 戰鬥，偽裝成冰箱。"/>
+    <property name="description" value="The protagonist can buy Popato Chisps from this vending machine for 25G."/>
+    <property name="page" value="Popato Chisps"/>
+    <property name="zh_description" value="主角可以從這台自動販賣機以25G的價格購買[[薯片]]。"/>
+    <property name="zh_name" value="販賣機"/>
+    <property name="zh_page" value="薯片"/>
    </properties>
    <point/>
   </object>
@@ -537,25 +435,20 @@ What happens when something without a [[SOUL]] gains the will to live?</property
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="8" name="npcs">
-  <object id="21" name="Watching Man" x="2053.58" y="812.865">
+ <objectgroup id="4" name="saves">
+  <object id="5" name="True Laboratory" x="1169.91" y="1528.7">
    <properties>
-    <property name="description" value="Appears after sleeping in the bed for long enough. It raises the bedsheets and tucks the protagonist in."/>
-    <property name="page" value="True Lab/NPCs#Watching Man"/>
-    <property name="zh_description" value="在床上睡一段時間後它會出現。它會幫主角蓋棉被。"/>
-    <property name="zh_page" value="真正的實驗室/NPC#Watching Man"/>
+    <property name="description" value="SAVE Point in the lobby."/>
+    <property name="zh_description" value="位於動力室門外面的存檔點。"/>
+    <property name="zh_name" value="真正的實驗室"/>
    </properties>
    <point/>
   </object>
- </objectgroup>
- <objectgroup id="9" name="vendors">
-  <object id="8" name="Vending machine" x="1194.36" y="1407.44">
+  <object id="20" name="True Lab - Bedroom" x="2244.73" y="594.236">
    <properties>
-    <property name="description" value="The protagonist can buy Popato Chisps from this vending machine for 25G."/>
-    <property name="page" value="Popato Chisps"/>
-    <property name="zh_description" value="主角可以從這台自動販賣機以25G的價格購買[[薯片]]。"/>
-    <property name="zh_name" value="販賣機"/>
-    <property name="zh_page" value="薯片"/>
+    <property name="description" value="SAVE Point in the Bedroom"/>
+    <property name="zh_description" value="位於臥室的存檔點。"/>
+    <property name="zh_name" value="真正的實驗室 - 臥室"/>
    </properties>
    <point/>
   </object>
@@ -622,6 +515,115 @@ What happens when something without a [[SOUL]] gains the will to live?</property
     <property name="description" value="The protagonist must insert the Green Key in this slot to unlock the Power Room door."/>
     <property name="zh_description" value="主角必須將綠色鑰匙插入此插槽才能打開動力室的門。"/>
     <property name="zh_name" value="綠色鑰匙插槽"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="3" name="plot">
+  <object id="38" name="VHS tapes" x="1240.61" y="107.241">
+   <properties>
+    <property name="description" value="The protagonist can watch six tapes from the VHS player. These tapes detail snippets of the Dreemurr family's lives, but they also detail [[Chara|the first human]]'s plan to break the [[Barrier]] with [[Asriel Dreemurr|Asriel]], as well as their subsequent death."/>
+    <property name="zh_description" value="主角可以從錄影帶播放器中觀看六捲錄影帶。這些錄影帶詳細記錄了 Dreemurr 家族生活的片段，也詳細記錄了[[Chara|第一個人類]]與 [[Asriel Dreemurr|Asriel]] 一起打破[[結界]]的計劃，以及第一個人類的死亡。"/>
+    <property name="zh_name" value="錄影帶"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="49" name="Power Room" x="618.97" y="650.041">
+   <properties>
+    <property name="description" value="The protagonist activates the Power Room generator to restore power to the elevator. After doing so, a group of [[Amalgamates]] approach the protagonist, but [[Alphys]] stops them. She explains that she injected [[Determination]] extracted from the human [[SOUL]]s into fallen down monsters so that their SOULs would persist after death. However, since monsters' bodies cannot handle the amount of Determination Alphys was injecting, their bodies began to melt together. Alphys resolves to reveal the truth and bring the Amalgamates back to their families."/>
+    <property name="zh_description" value="主角啟動了動力室的發電機，恢復了電梯的電力。之後，一群[[合成怪物]]接近主角，但 [[Alphys]] 阻止它們。她表示她將從人類[[靈魂]]中提取的[[決心]]注入倒下的怪物體內，以便它們的靈魂在死後得以保留。然而由於怪物的身體無法承受 Alphys 注入的大量決心，它們的身體開始融化在一起。 Alphys 最後決定揭露真相，並將合成怪物帶回它們的家人身邊。"/>
+    <property name="zh_name" value="動力室"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="8" name="npcs">
+  <object id="21" name="Watching Man" x="2053.58" y="812.865">
+   <properties>
+    <property name="description" value="Appears after sleeping in the bed for long enough. It raises the bedsheets and tucks the protagonist in."/>
+    <property name="page" value="True Lab/NPCs#Watching Man"/>
+    <property name="zh_description" value="在床上睡一段時間後它會出現。它會幫主角蓋棉被。"/>
+    <property name="zh_page" value="真正的實驗室/NPC#Watching Man"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="5" name="items">
+  <object id="13" name="Red Key" x="137.123" y="1329.73">
+   <properties>
+    <property name="description" value="The Red Key, dropped by [[Memoryhead]]. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="擊倒 [[Memoryhead]] 後掉落，可開啟動力室的門。"/>
+    <property name="zh_name" value="紅色鑰匙"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="22" name="Yellow Key" x="2178.13" y="755.472">
+   <properties>
+    <property name="description" value="The Yellow Key, uncovered after inspecting the bed. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="在床的被子下，可開啟動力室的門。"/>
+    <property name="zh_name" value="黃色鑰匙"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Green Key" x="1578.51" y="64.3508">
+   <properties>
+    <property name="description" value="The Green Key, uncovered by opening the shower curtain."/>
+    <property name="zh_description" value="在浴簾後面，可開啟動力室的門。"/>
+    <property name="zh_name" value="綠色鑰匙"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="46" name="Blue Key" x="356.411" y="381.724">
+   <properties>
+    <property name="description" value="The Blue Key, dropped by [[Snowdrake's Mother]]. It is used to unlock the Power Room door."/>
+    <property name="zh_description" value="擊倒 [[Snowdrake's Mother]] 後掉落，可開啟動力室的門。"/>
+    <property name="zh_name" value="藍色鑰匙"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="enemies">
+  <properties>
+   <property name="include" value="Map:Common Data"/>
+   <property name="zh_name" value="真正的實驗室"/>
+  </properties>
+  <object id="12" name="Memoryhead" x="73.5526" y="1316.59">
+   <properties>
+    <property name="description" value="Battle against Memoryhead, triggered by turning on the sinks."/>
+    <property name="page" value="Memoryhead"/>
+    <property name="zh_description" value="與 Memoryhead 戰鬥，打開第三個水槽後。"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="28" name="Endogeny" x="2854.94" y="355.084">
+   <properties>
+    <property name="description" value="Battle against Endogeny, triggered after turning on the fans."/>
+    <property name="page" value="Endogeny"/>
+    <property name="zh_description" value="與 Endogeny 戰鬥，打開風扇後。"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="31" name="Reaper Bird" x="3123.89" y="581.223">
+   <properties>
+    <property name="description" value="Battle against Reaper Bird, initially disguised as a random [[encounter]] indicator."/>
+    <property name="page" value="Reaper Bird"/>
+    <property name="zh_description" value="與 Reaper Bird 戰鬥，通過鏡子後觸發[[遭遇戰|遭遇提示]]。"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Lemon Bread" x="1129.73" y="423.554">
+   <properties>
+    <property name="description" value="Battle against Lemon Bread, initially disguised as a [[SAVE Point]]."/>
+    <property name="page" value="Lemon Bread"/>
+    <property name="zh_description" value="與 Lemon Bread 戰鬥，偽裝成[[存檔|存檔點]]。"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="45" name="Snowdrake's Mother" x="356.157" y="340.969">
+   <properties>
+    <property name="description" value="Battle against Snowdrake's Mother, initially disguised as a refrigerator."/>
+    <property name="page" value="Snowdrake's Mother"/>
+    <property name="zh_description" value="與 Snowdrake's Mother 戰鬥，偽裝成冰箱。"/>
    </properties>
    <point/>
   </object>

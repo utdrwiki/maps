@@ -110,7 +110,7 @@
   </object>
   <object id="79" name="Snowdin Town" x="13616.5" y="1318.49">
    <properties>
-    <property name="description" value="Town situated at the end of [[Snowdin Forest]]. On the [[Genocide Route]], the town is abandoned after all of the inhabitants had evacuated."/>
+    <property name="description" value="Town situated at the end of Snowdin. On the [[Genocide Route]], the town is abandoned after all of the inhabitants had evacuated."/>
     <property name="page" value="Snowdin"/>
     <property name="zh_description">位於[[雪町森林]]盡頭的城鎮。
 在[[屠殺路線]]中不會出現 NPC。

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="54">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="211" height="145" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="54">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -8,6 +8,27 @@
  <imagelayer id="2" name="New Home map">
   <image source="images/New Home.png" width="6750" height="4630"/>
  </imagelayer>
+ <objectgroup id="11" name="lines">
+  <object id="5" x="301.044" y="4321.36">
+   <properties>
+    <property name="color" type="color" value="#ff8f8f8f"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -0.0582713,-2512.06 4540.27,-2512.06 4540.25,-2162.61"/>
+  </object>
+  <object id="15" x="1199.38" y="2452.16" width="1444.09" height="480.376">
+   <properties>
+    <property name="border" type="color" value="#fff9f000"/>
+   </properties>
+  </object>
+  <object id="53" x="1722.71" y="2810.96">
+   <properties>
+    <property name="color" type="color" value="#ffed1c24"/>
+    <property name="thickness" type="float" value="3"/>
+   </properties>
+   <polyline points="0,0 -199.545,-0.116738 -199.498,-462.002 -61.0623,-462.15"/>
+  </object>
+ </objectgroup>
  <objectgroup id="5" name="sublocations">
   <object id="8" name="Asgore's Home" x="1679.3" y="2872">
    <properties>
@@ -18,11 +39,6 @@
     <property name="zh_page" value="Asgore 的家"/>
    </properties>
    <point/>
-  </object>
-  <object id="15" x="1199.38" y="2452.16" width="1444.09" height="480.376">
-   <properties>
-    <property name="border" type="color" value="#fff9f000"/>
-   </properties>
   </object>
   <object id="36" name="Last Corridor" x="5314.44" y="2266.59">
    <properties>
@@ -54,23 +70,92 @@
    </properties>
    <point/>
   </object>
-  <object id="53" x="1722.71" y="2810.96">
-   <properties>
-    <property name="color" type="color" value="#ffed1c24"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -199.545,-0.116738 -199.498,-462.002 -61.0623,-462.15"/>
-  </object>
  </objectgroup>
- <objectgroup id="3" name="plot">
-  <object id="2" name="Elevator to CORE" x="99.9227" y="4506.49">
+ <objectgroup id="8" name="signs">
+  <object id="9" name="Note on padlock chain" x="1774.45" y="2803.1">
    <properties>
-    <property name="description" value="Elevator leading back down to the [[CORE]]. On the [[True Pacifist Route]], this elevator is blocked off by [[Flowey]]'s vines."/>
-    <property name="zh_description" value="通往[[核心]]的電梯。在[[完美路線]]中被 [[Flowey]] 的藤蔓纏住而無法使用。"/>
-    <property name="zh_name" value="通往核心的電梯"/>
+    <property name="description">Howdy! I'm in the garden.
+If you have anything you need to get off your chest, please don't hesitate to come.
+The keys are in the kitchen and the hallway.</property>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">你好呀！我在花園裡
+如果你有任何話想說，請儘管來找我
+你可以廚房和走廊找到鑰匙。</property>
+    <property name="zh_name" value="在鐵鍊上的紙條"/>
    </properties>
    <point/>
   </object>
+  <object id="14" name="Note" x="1298.46" y="2583.12">
+   <properties>
+    <property name="description" value="''Howdy! Help yourself to anything you want!''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="你好呀！請自取！"/>
+    <property name="zh_name" value="紙條"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="39" name="Sign" x="5918.63" y="1760.95">
+   <properties>
+    <property name="description" value="''Throne Room''"/>
+    <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description" value="王座室"/>
+    <property name="zh_name" value="告示牌"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="6" name="saves">
+  <object id="1" name="Castle Elevator" x="429.81" y="4548.01">
+   <properties>
+    <property name="description" value="SAVE Point near the elevator."/>
+    <property name="zh_description" value="位於電梯旁邊的存檔點。"/>
+    <property name="zh_name" value="王宮電梯"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="6" name="New Home" x="1680.02" y="3177.91">
+   <properties>
+    <property name="description" value="SAVE Point outside [[Asgore's Home]]."/>
+    <property name="zh_description" value="新居"/>
+    <property name="zh_name" value="位於[[Asgore 的家]]外面的存檔點。"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="35" name="Last Corridor" x="4689.25" y="2380.54">
+   <properties>
+    <property name="description" value="SAVE Point in the [[Last Corridor]]."/>
+    <property name="zh_description" value="位於[[最後迴廊]]的存檔點。"/>
+    <property name="zh_name" value="最後迴廊"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="40" name="Throne Entrance" x="6109.74" y="1790.41">
+   <properties>
+    <property name="description" value="SAVE Point outside the Throne Room."/>
+    <property name="zh_description" value="位於王座之間外面的存檔點。"/>
+    <property name="zh_name" value="王座之間入口"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="42" name="Throne Room" x="6039.66" y="1191.19">
+   <properties>
+    <property name="description" value="SAVE Point in the Throne Room."/>
+    <property name="zh_description" value="位於王座之間的存檔點。"/>
+    <property name="zh_name" value="王座之間"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="44" name="The End" x="6359.79" y="963.217">
+   <properties>
+    <property name="description" value="SAVE Point outside the [[Barrier]]."/>
+    <property name="zh_description" value="位於[[結界]]前的存檔點。"/>
+    <property name="zh_name" value="盡頭"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="puzzles"/>
+ <objectgroup id="3" name="plot">
   <object id="3" name="Elevator to Last Corridor" x="299.543" y="4290.39">
    <properties>
     <property name="description" value="Elevator leading to the entrance to the [[Last Corridor]]. It only becomes usable after reaching the other side."/>
@@ -86,13 +171,6 @@
     <property name="zh_name" value="通往入口的電梯"/>
    </properties>
    <point/>
-  </object>
-  <object id="5" x="301.044" y="4321.36">
-   <properties>
-    <property name="color" type="color" value="#ff8f8f8f"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 -0.0582713,-2512.06 4540.27,-2512.06 4540.25,-2162.61"/>
   </object>
   <object id="16" name="The story of Asriel and the First Human, part 1" x="1293.26" y="2798.94">
    <properties>
@@ -358,7 +436,7 @@ Aren't you happy?</property>
   </object>
   <object id="48" name="Flowey's corpse" x="6439.78" y="444.3">
    <properties>
-    <property name="description" value="After defeating [[Photoshop Flowey]], the protagonist is given the option to finish him off. If they kill him, his corpse is left behind, having turned back into a regular flower."/>
+    <property name="description" value="After defeating [[Omega Flowey]], the protagonist is given the option to finish him off. If they kill him, his corpse is left behind, having turned back into a regular flower."/>
     <property name="zh_description" value="擊敗 [[Photoshop Flowey]] 後，主角可以選擇殺死他，他會變回一朵普通的花。"/>
     <property name="zh_name" value="Flowey 的屍體"/>
    </properties>
@@ -391,112 +469,6 @@ Aren't you happy?</property>
     <property name="zh_description" value="主角和朋友們欣賞日落。 [[Asgore Dreemurr|Asgore]] 請主角擔任人類的大使，主角可以接受或拒絕。當主角的朋友們離開後，[[Toriel]] 詢問主角是否願意留下來陪伴她，這將改變結局的劇情。"/>
     <property name="zh_name" value="完美路線結局"/>
     <property name="zh_page" value="完美路線"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="4" name="boxes">
-  <object id="7" name="Dimensional Box" x="1749.96" y="3140.93">
-   <properties>
-    <property name="description" value="A Dimensional Box outside [[Asgore's Home]], only available on the [[Genocide Route]]."/>
-    <property name="page" value="Dimensional Box"/>
-    <property name="zh_description" value="在 [[Asgore 的家]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
-    <property name="zh_name" value="次元箱"/>
-    <property name="zh_page" value="次元箱"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="34" name="Dimensional Box" x="4739.8" y="2381.28">
-   <properties>
-    <property name="description" value="A Dimensional Box in the [[Last Corridor]], only available on the [[Genocide Route]]."/>
-    <property name="page" value="Dimensional Box"/>
-    <property name="zh_description" value="在[[最後迴廊]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
-    <property name="zh_name" value="次元箱"/>
-    <property name="zh_page" value="次元箱"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="6" name="saves">
-  <object id="1" name="Castle Elevator" x="429.81" y="4548.01">
-   <properties>
-    <property name="description" value="SAVE Point near the elevator."/>
-    <property name="zh_description" value="位於電梯旁邊的存檔點。"/>
-    <property name="zh_name" value="王宮電梯"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="6" name="New Home" x="1680.02" y="3177.91">
-   <properties>
-    <property name="description" value="SAVE Point outside [[Asgore's Home]]."/>
-    <property name="zh_description" value="新居"/>
-    <property name="zh_name" value="位於[[Asgore 的家]]外面的存檔點。"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="35" name="Last Corridor" x="4689.25" y="2380.54">
-   <properties>
-    <property name="description" value="SAVE Point in the [[Last Corridor]]."/>
-    <property name="zh_description" value="位於[[最後迴廊]]的存檔點。"/>
-    <property name="zh_name" value="最後迴廊"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="40" name="Throne Entrance" x="6109.74" y="1790.41">
-   <properties>
-    <property name="description" value="SAVE Point outside the Throne Room."/>
-    <property name="zh_description" value="位於王座之間外面的存檔點。"/>
-    <property name="zh_name" value="王座之間入口"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="42" name="Throne Room" x="6039.66" y="1191.19">
-   <properties>
-    <property name="description" value="SAVE Point in the Throne Room."/>
-    <property name="zh_description" value="位於王座之間的存檔點。"/>
-    <property name="zh_name" value="王座之間"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="44" name="The End" x="6359.79" y="963.217">
-   <properties>
-    <property name="description" value="SAVE Point outside the [[Barrier]]."/>
-    <property name="zh_description" value="位於[[結界]]前的存檔點。"/>
-    <property name="zh_name" value="盡頭"/>
-   </properties>
-   <point/>
-  </object>
- </objectgroup>
- <objectgroup id="7" name="puzzles"/>
- <objectgroup id="8" name="signs">
-  <object id="9" name="Note on padlock chain" x="1774.45" y="2803.1">
-   <properties>
-    <property name="description">Howdy! I'm in the garden.
-If you have anything you need to get off your chest, please don't hesitate to come.
-The keys are in the kitchen and the hallway.</property>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="zh_description">你好呀！我在花園裡
-如果你有任何話想說，請儘管來找我
-你可以廚房和走廊找到鑰匙。</property>
-    <property name="zh_name" value="在鐵鍊上的紙條"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="14" name="Note" x="1298.46" y="2583.12">
-   <properties>
-    <property name="description" value="''Howdy! Help yourself to anything you want!''"/>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="zh_description" value="你好呀！請自取！"/>
-    <property name="zh_name" value="紙條"/>
-   </properties>
-   <point/>
-  </object>
-  <object id="39" name="Sign" x="5918.63" y="1760.95">
-   <properties>
-    <property name="description" value="''Throne Room''"/>
-    <property name="multiline" type="bool" value="true"/>
-    <property name="zh_description" value="王座室"/>
-    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -548,10 +520,42 @@ The keys are in the kitchen and the hallway.</property>
   </object>
   <object id="46" name="Asgore Dreemurr" x="6441.38" y="719.503">
    <properties>
-    <property name="description" value="Boss battle against [[Asgore Dreemurr]]. On the [[Neutral Route]], [[Flowey]] finishes him off and absorbs the six human [[SOUL]]s, transforming into [[Photoshop Flowey]]. On the [[True Pacifist Route]], the protagonist's friends interrupt the battle, but Flowey absorbs the human SOULs as well as the SOULs of every monster in the [[Underground]], transforming into [[Asriel Dreemurr]]."/>
+    <property name="description" value="Boss battle against [[Asgore Dreemurr]]. On the [[Neutral Route]], [[Flowey]] finishes him off and absorbs the six human [[SOUL]]s, transforming into [[Omega Flowey]]. On the [[True Pacifist Route]], the protagonist's friends interrupt the battle, but Flowey absorbs the human SOULs as well as the SOULs of every monster in the [[Underground]], transforming into [[Asriel Dreemurr]]."/>
     <property name="page" value="Asgore Dreemurr/In Battle"/>
     <property name="zh_description" value="在[[中立路線]]和 [[Asgore Dreemurr]] 戰鬥，[[Flowey]] 殺死了他並吸收了六個人類[[靈魂]]，變身為 [[Photoshop Flowey]]。在[[完美路線]]中，主角的朋友打斷了戰鬥，但 Flowey 吸收了人類的靈魂以及[[地下世界]]所有怪物的靈魂，變身為 [[Asriel Dreemurr]]。"/>
     <property name="zh_page" value="Asgore Dreemurr/戰鬥中"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="12" name="connections">
+  <object id="2" name="Elevator to CORE" x="99.9227" y="4506.49">
+   <properties>
+    <property name="description" value="Elevator leading back down to the [[CORE]]. On the [[True Pacifist Route]], this elevator is blocked off by [[Flowey]]'s vines."/>
+    <property name="zh_description" value="通往[[核心]]的電梯。在[[完美路線]]中被 [[Flowey]] 的藤蔓纏住而無法使用。"/>
+    <property name="zh_name" value="通往核心的電梯"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup id="4" name="boxes">
+  <object id="7" name="Dimensional Box" x="1749.96" y="3140.93">
+   <properties>
+    <property name="description" value="A Dimensional Box outside [[Asgore's Home]], only available on the [[Genocide Route]]."/>
+    <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在 [[Asgore 的家]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="34" name="Dimensional Box" x="4739.8" y="2381.28">
+   <properties>
+    <property name="description" value="A Dimensional Box in the [[Last Corridor]], only available on the [[Genocide Route]]."/>
+    <property name="page" value="Dimensional Box"/>
+    <property name="zh_description" value="在[[最後迴廊]]外面的次元箱，僅出現在[[屠殺路線]]。"/>
+    <property name="zh_name" value="次元箱"/>
+    <property name="zh_page" value="次元箱"/>
    </properties>
    <point/>
   </object>
