@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="29">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="132" height="128" tilewidth="32" tileheight="32" infinite="0" nextlayerid="10" nextobjectid="32">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
@@ -15,26 +15,12 @@
    </properties>
    <point/>
   </object>
-  <object id="18" x="2253.98" y="3146.17">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 64.08,0.0659938 63.4209,415.799 240.938,415.82"/>
-  </object>
   <object id="19" x="1630.93" y="3147.07">
    <properties>
     <property name="color" type="color" value="#ff5023d3"/>
     <property name="thickness" type="float" value="3"/>
    </properties>
    <polyline points="0,0 -0.282181,417.873 1245.4,418.02"/>
-  </object>
-  <object id="21" x="1422.91" y="3760.14">
-   <properties>
-    <property name="color" type="color" value="#ff632323"/>
-    <property name="thickness" type="float" value="3"/>
-   </properties>
-   <polyline points="0,0 1071.92,-0.118002 1072.04,-198.157 1072.02,-125.019 193.967,-124.973"/>
   </object>
   <object id="25" x="1071.04" y="2925.54">
    <properties>
@@ -64,17 +50,31 @@
    </properties>
    <polyline points="0,0 0.0760056,-699.115 1970.15,-699.197"/>
   </object>
+  <object id="30" x="1421.05" y="3758.22">
+   <properties>
+    <property name="color" type="color" value="#ff5023d3"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 1454.83,-0.122417 1455.03,-193.251 1454.95,-126.129 195.738,-125.968"/>
+  </object>
+  <object id="31" x="2258.02" y="3147.21">
+   <properties>
+    <property name="color" type="color" value="#ff5023d3"/>
+    <property name="thickness" type="int" value="3"/>
+   </properties>
+   <polyline points="0,0 32.8202,-0.0266764 32.3084,418.004 616.67,418.214"/>
+  </object>
  </objectgroup>
  <objectgroup id="3" name="plot">
   <object id="12" name="GO TO NORTHERN LIGHT" x="2495.18" y="3459.49">
    <properties>
-    <property name="description" value="[[HERO_SWORD]] enters this room from any of the former cave entrances once they have killed all the enemies on the board. A message that displays upon entering this room directs HERO_SWORD to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
+    <property name="description" value="[[HERO_SWORD]] enters this room from any of the cave entrances off the mainland once they have killed all the enemies on the board. A message that displays upon entering this room directs HERO_SWORD to the northern part of the board, which holds an entrance to the [[Ice Palace]]."/>
    </properties>
    <point/>
   </object>
   <object id="13" name="THE KEY WAS FORGOTTEN" x="2496.07" y="3202.71">
    <properties>
-    <property name="description" value="[[HERO_SWORD]] enters this room from any of the former cave entrances if they failed to retrieve the [[Ice Key]] on the [[Desert Board (Original Game)|Desert Board]]. A message displays telling them that they have forgotten it."/>
+    <property name="description" value="[[HERO_SWORD]] enters this room from any of the cave entrances off the mainland if they failed to retrieve the [[Ice Key]] on the [[Desert Board (Original Game)|Desert Board]]. A message displays telling them that they have forgotten it."/>
    </properties>
    <point/>
   </object>

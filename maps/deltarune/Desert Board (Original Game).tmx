@@ -10,7 +10,7 @@
  <objectgroup id="7" name="sublocations">
   <object id="51" name="Secret Stairs" x="174.873" y="1668.2">
    <properties>
-    <property name="description" value="A room with many stairwells, all of which lead to the room with the [[Shadow Mantle Holder]]. They disappear upon leaving the secret room, preventing re-entry."/>
+    <property name="description" value="A room with many stairwells, all of which lead to the room with the [[Shadow Mantle holder]]. They disappear upon leaving the secret room, preventing re-entry."/>
     <property name="page" value="Desert Board (Original Game)#Secret Stairs"/>
    </properties>
    <point/>
@@ -63,10 +63,10 @@
    </properties>
    <point/>
   </object>
-  <object id="50" name="Shadow Mantle Holder" x="191.692" y="1397.23">
+  <object id="50" name="Shadow Mantle holder" x="191.692" y="1397.23">
    <properties>
     <property name="description" value="Sits in the center of the room. Flies away when approached, leaving behind black text that reads &quot;See you soon.&quot;"/>
-    <property name="page" value="Shadow Mantle Holder"/>
+    <property name="page" value="Shadow Mantle holder"/>
    </properties>
    <point/>
   </object>

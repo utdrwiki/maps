@@ -117,7 +117,7 @@
  <objectgroup id="6" name="npcs">
   <object id="9" name="Pippins" x="814.879" y="1733.06">
    <properties>
-    <property name="description" value="Explains that there are four [[Key (The Legend of Tenna)|keys]] on the board, but only three are required to unlock the pyramid."/>
+    <property name="description" value="Explains that there are four [[Key (The Legend of Tenna)|keys]] on the board (five if the player has a completed [[Chapter 3]] SAVE file), but only three are required to unlock the pyramid."/>
    </properties>
    <point/>
   </object>
@@ -167,7 +167,7 @@
  <objectgroup id="8" name="items">
   <object id="4" name="Key" x="1071.9" y="1741.93">
    <properties>
-    <property name="description" value="A Key used to unlock the pyramid. obtaining this key removes the trees to the left."/>
+    <property name="description" value="A Key used to unlock the pyramid. Obtaining this key removes the trees to the left."/>
     <property name="page" value="Key (The Legend of Tenna)"/>
    </properties>
    <point/>
@@ -195,7 +195,7 @@
   </object>
   <object id="18" name="Power Croissant" x="1427.72" y="2127.79">
    <properties>
-    <property name="description" value="Allows [[Susie]] to pick up objects and pull up grass for [[POINT]]s"/>
+    <property name="description" value="Allows [[Susie]] to pick up objects and pull up grass for [[POINT]]s."/>
     <property name="page" value="Power Croissant"/>
    </properties>
    <point/>
@@ -230,7 +230,7 @@
   </object>
   <object id="34" name="TV Dinner" x="1423.68" y="1166">
    <properties>
-    <property name="description" value="An item available in [[Tenna]]'s shop. Initially costs 10 [[POINT]]s, but the price increases the further along the [[party]] is on the board progression."/>
+    <property name="description" value="An item available in [[Tenna]]'s shop. Costs 10 [[POINT]]s if the [[party]] only has 10 or fewer POINTs. Otherwise, it costs 20, 50, 100, or 200 depending on how many TV Dinners are owned."/>
     <property name="page" value="TV Dinner"/>
    </properties>
    <point/>
@@ -251,7 +251,7 @@
   </object>
  </objectgroup>
  <objectgroup id="9" name="enemies">
-  <object id="1" name="Shadowguy" x="560.093" y="1897.05">
+  <object id="1" name="Shadowguy" x="593" y="1922">
    <properties>
     <property name="description" value="Enemy encounter consisting of two Shadowguys."/>
     <property name="page" value="Shadowguy"/>

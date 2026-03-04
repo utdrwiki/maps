@@ -16,7 +16,7 @@
   </object>
   <object id="15" name="Key" x="879.854" y="3980">
    <properties>
-    <property name="description" value="An item available in the [[Pippins]]'s shop for 250 [[POINT]]s. Since keys have no function on the Island Board, it is immediately discarded on purchase, after which the Pippins flees."/>
+    <property name="description" value="An item available in the [[Pippins]]'s shop for 100 [[POINT]]s. Since keys have no function on the Island Board, it is immediately discarded on purchase, after which the Pippins flees."/>
     <property name="page" value="Key (The Legend of Tenna)"/>
    </properties>
    <point/>
@@ -304,7 +304,7 @@
   </object>
   <object id="8" name="Grand Photo" x="2511.3" y="1966.2">
    <properties>
-    <property name="description" value="Upon bringing [[Lancer]] to this location, he can dig out the green geyser and unlock a pathway to the west. Lancer serves as one of the four Grand Photos."/>
+    <property name="description" value="Upon bringing [[Lancer]] to this location, he digs out the green geyser and unlocks a pathway to the west. Lancer serves as one of the four Grand Photos."/>
     <property name="page" value="Grand Photo"/>
    </properties>
    <point/>

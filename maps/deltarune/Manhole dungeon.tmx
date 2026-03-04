@@ -4,14 +4,14 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Manhole Dungeon map">
+ <imagelayer id="2" name="Manhole dungeon map">
   <image source="images/Manhole Dungeon.png" width="4992" height="1792"/>
  </imagelayer>
  <objectgroup id="4" name="sublocations">
   <object id="46" name="Shelter" x="4032.65" y="1427.57">
    <properties>
-    <property name="description" value="A replica of the [[Shelter]] from [[Hometown]]. Contains the [[Shadow Mantle Holder]]."/>
-    <property name="page" value="Manhole Dungeon#Shelter"/>
+    <property name="description" value="A replica of the [[Shelter]] from [[Hometown]]. Contains the [[Shadow Mantle holder]]."/>
+    <property name="page" value="Manhole dungeon#Shelter"/>
    </properties>
    <point/>
   </object>
@@ -310,10 +310,10 @@
    </properties>
    <point/>
   </object>
-  <object id="47" name="Shadow Mantle Holder" x="4799.47" y="1405.76">
+  <object id="47" name="Shadow Mantle holder" x="4799.47" y="1405.76">
    <properties>
-    <property name="description" value="Boss battle against the Shadow Mantle Holder."/>
-    <property name="page" value="Shadow Mantle Holder"/>
+    <property name="description" value="Boss battle against the Shadow Mantle holder."/>
+    <property name="page" value="Shadow Mantle holder"/>
    </properties>
    <point/>
   </object>
