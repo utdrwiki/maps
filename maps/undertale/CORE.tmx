@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="138" height="87" tilewidth="32" tileheight="32" infinite="0" nextlayerid="17" nextobjectid="53">
  <properties>
+  <property name="fr_name" value="NOYAU"/>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="核心"/>
@@ -36,6 +37,8 @@
   <object id="25" name="Sign" x="2018.89" y="1068">
    <properties>
     <property name="description" value="''North, the warrior's path. West, the sage's path. Any path leads to The End.''"/>
+    <property name="fr_description" value="''Au nord, la voie du guerrier. À l'ouest, la voie du sage. Toutes deux mènent à la Fin.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description">北方，勇者的道路
 西方，智者的道路
@@ -47,6 +50,8 @@
   <object id="26" name="Sign" x="2159.46" y="1068">
    <properties>
     <property name="description" value="''East... The End.''"/>
+    <property name="fr_description" value="''L'est... La Fin.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="東方...終點。"/>
     <property name="zh_name" value="告示牌"/>
@@ -56,6 +61,8 @@
   <object id="28" name="Sign" x="1678.06" y="828">
    <properties>
     <property name="description" value="''Solve this puzzle, and The End will open.''"/>
+    <property name="fr_description" value="''Résous cette énigme, et la Fin te sera ouverte.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="解決謎題，終點將會開啟。"/>
     <property name="zh_name" value="告示牌"/>
@@ -65,6 +72,8 @@
   <object id="30" name="Sign" x="1777.69" y="327.597">
    <properties>
     <property name="description" value="''Why not relax and have a nice snack?''"/>
+    <property name="fr_description" value="''Pourquoi ne pas prendre une pause et grignoter quelque chose ?''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="何不放鬆一下，吃點美味的小點心？"/>
     <property name="zh_name" value="告示牌"/>
@@ -74,6 +83,8 @@
   <object id="32" name="Sign" x="2179.05" y="828">
    <properties>
     <property name="description" value="''Get lost... And stay that way.''"/>
+    <property name="fr_description" value="''Disparais... Et ne reviens pas.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="迷失吧...直到永恆。"/>
     <property name="zh_name" value="告示牌"/>
@@ -83,6 +94,8 @@
   <object id="34" name="Sign" x="2018.1" y="586.079">
    <properties>
     <property name="description" value="''Traverse the northern room, and The End will open.''"/>
+    <property name="fr_description" value="''Traverse la salle au nord, et la Fin te sera ouverte.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="行經北方的房間，終點將會開啟。"/>
     <property name="zh_name" value="告示牌"/>
@@ -92,6 +105,8 @@
   <object id="41" name="Sign" x="2338.76" y="828">
    <properties>
     <property name="description" value="''To the East! This is The End.''"/>
+    <property name="fr_description" value="''À l'est ! C'est la Fin.''"/>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description" value="往東走！就是終點。"/>
     <property name="zh_name" value="告示牌"/>
@@ -102,6 +117,9 @@
    <properties>
     <property name="description">I cannot fight. I cannot think.
 But, with patience, I will make my way through.</property>
+    <property name="fr_description">Je ne peux pas combattre. Je n'arrive pas à penser.
+Mais, avec de la patience, je finirai par franchir cet obstacle.</property>
+    <property name="fr_name" value="Panneau"/>
     <property name="multiline" type="bool" value="true"/>
     <property name="zh_description">無法戰鬥。
 無法思考。
@@ -198,6 +216,8 @@ You're filled with determination.</property>
   <object id="8" name="Black sausage NPC" x="479.762" y="1768.25">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Says that they used to make a game out of locating the flaming pit since the CORE is always rearranging."/>
+    <property name="fr_description" value="Apparaît après avoir reçu la [[Lettre d'Undyne]]. Il dit qu'il avait l'habitude de jouer à localiser le précipice enflammé, car le NOYAU est en constante réorganisation."/>
+    <property name="fr_name" value="PNJ Saucisse Noire"/>
     <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示因為核心總是重新排列，因此曾經製作過一個關於找尋火坑遊戲。"/>
     <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
@@ -206,6 +226,8 @@ You're filled with determination.</property>
   <object id="11" name="Black sausage NPC" x="131.097" y="1663.5">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains that they were hired by [[Mettaton]] to kill the protagonist but quit since they were never paid."/>
+    <property name="fr_description" value="Apparaît après avoir reçu la [[Lettre d'Undyne]]. Explique qu'il a été engagé par [[Mettaton]] pour tuer le·a protagoniste mais démisionne car il ne fut jamais payé."/>
+    <property name="fr_name" value="PNJ Saucisse Noire"/>
     <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示受雇於 [[Mettaton]] 去殺主角，但是因為 Mettaton 沒有付薪水而放棄。"/>
     <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
@@ -214,6 +236,8 @@ You're filled with determination.</property>
   <object id="17" name="Black sausage NPC" x="830.918" y="1101.55">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. They appear to be asleep."/>
+    <property name="fr_description" value="Apparaît après avoir reçu la [[Lettre d'Undyne]]. Il a l'air d'être endormi."/>
+    <property name="fr_name" value="PNJ Saucisse Noire"/>
     <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他看起來要睡著了。"/>
     <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
@@ -222,6 +246,8 @@ You're filled with determination.</property>
   <object id="33" name="Black sausage NPC" x="2111.26" y="842.779">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Reveals that the CORE was rearranged in anticipation of the protagonist specifically."/>
+    <property name="fr_description" value="Apparaît après avoir reçu la [[Lettre d'Undyne]]. Révèle que le NOYAU a été réorganisé en prévision de l'arrivée du protagoniste."/>
+    <property name="fr_name" value="PNJ Saucisse Noire"/>
     <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他表示核心是為了主角而專門重新排列的。"/>
     <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
@@ -230,6 +256,8 @@ You're filled with determination.</property>
   <object id="39" name="Black sausage NPC" x="2661.18" y="175.96">
    <properties>
     <property name="description" value="Appears after receiving [[Undyne's Letter]]. Explains why they look like a &quot;black sausage&quot; instead of any discernible shape."/>
+    <property name="fr_description" value="Apparaît après avoir reçu la [[Lettre d'Undyne]]. Explique pourquoi il ressemble à une &quot;saucisse noire&quot; au lieu d'une forme discernable."/>
+    <property name="fr_name" value="PNJ Saucisse Noire "/>
     <property name="zh_description" value="在獲得 [[Undyne 的信]]後出現。他解釋為何自身會長得像&quot;黑色香腸&quot;。"/>
     <property name="zh_name" value="黑色香腸 NPC"/>
    </properties>
@@ -240,6 +268,8 @@ You're filled with determination.</property>
   <object id="31" name="Glamburger" x="1768.65" y="385">
    <properties>
     <property name="description" value="The protagonist can pick up a Glamburger from inside this trash can."/>
+    <property name="fr_description" value="Le·a protagoniste peut ramasser un Glamburger dans cette poubelle."/>
+    <property name="fr_name" value="Glamburger"/>
     <property name="page" value="Glamburger"/>
     <property name="zh_description" value="在垃圾桶內找到。"/>
     <property name="zh_name" value="魅力漢堡"/>
@@ -250,6 +280,8 @@ You're filled with determination.</property>
   <object id="43" name="Trash can GOLD" x="2408.83" y="384.999">
    <properties>
     <property name="description" value="The protagonist can pick up 100 [[GOLD]] from inside this trash can."/>
+    <property name="fr_description" value="Le·a protagoniste peut ramasser 100 [[PIÈCE D'OR]] dans cette poubelle."/>
+    <property name="fr_name" value="OR de la poubelle"/>
     <property name="zh_description" value="在垃圾桶內找到100G。"/>
     <property name="zh_name" value="金錢"/>
    </properties>
@@ -260,6 +292,9 @@ You're filled with determination.</property>
   <object id="9" name="Madjick" x="159.261" y="1770.47">
    <properties>
     <property name="description" value="Scripted encounter against a Madjick on the [[Neutral Route]]."/>
+    <property name="fr_description" value="Rencontre scriptée contre un Malicien en [[Route Neutre]]."/>
+    <property name="fr_name" value="Malicien"/>
+    <property name="fr_page" value="Malicien"/>
     <property name="page" value="Madjick"/>
     <property name="zh_description" value="與 Madjick 戰鬥([[中立路線]])。"/>
    </properties>
@@ -268,6 +303,9 @@ You're filled with determination.</property>
   <object id="18" name="Knight Knight" x="830.918" y="1148.63">
    <properties>
     <property name="description" value="Scripted encounter against a Knight Knight."/>
+    <property name="fr_description" value="Rencontre scriptée contre un Paladodo."/>
+    <property name="fr_name" value="Paladodo"/>
+    <property name="fr_page" value="Paladodo"/>
     <property name="page" value="Knight Knight"/>
     <property name="zh_description" value="與 Knight Knight 戰鬥([[中立路線]])。"/>
    </properties>
@@ -276,6 +314,8 @@ You're filled with determination.</property>
   <object id="36" name="Warrior's Path 1" x="2209.72" y="179">
    <properties>
     <property name="description" value="Part 1 of the Warrior's Path, consisting of an encounter against [[Whimsalot]] and [[Final Froggit]]."/>
+    <property name="fr_description" value="Partie 1 du Chemin des Mercenaires, onsistant en une rencontre avec [[Héroplasme]] et [[Croâpaud Ultime]]."/>
+    <property name="fr_name" value="Chemin des Mercenaires 1"/>
     <property name="zh_description" value="與 [[Whimsalot]] 和 [[Final Froggit]] 戰鬥。"/>
     <property name="zh_name" value="勇者的道路 #1"/>
    </properties>
@@ -284,6 +324,8 @@ You're filled with determination.</property>
   <object id="37" name="Warrior's Path 2" x="2350" y="179">
    <properties>
     <property name="description" value="Part 2 of the Warrior's Path, consisting of an encounter against [[Knight Knight]] and [[Madjick]]."/>
+    <property name="fr_description" value="Partie 2 du Chemin des Mercenaires, consistant en une rencontre avec [[Paladodo]] et [[Malicien]]."/>
+    <property name="fr_name" value="Chemin des Mercenaires 2"/>
     <property name="zh_description" value="與 [[Knight Knight]] 和 [[Madjick]] 戰鬥。"/>
     <property name="zh_name" value="勇者的道路 #2"/>
    </properties>
@@ -292,6 +334,8 @@ You're filled with determination.</property>
   <object id="38" name="Warrior's Path 3" x="2470.78" y="179">
    <properties>
     <property name="description" value="Part 3 of the Warrior's Path, consisting of an encounter against [[Final Froggit]], [[Astigmatism]], and [[Whimsalot]]."/>
+    <property name="fr_description" value="Partie 3 du Chemin des Mercenaires, consistant en une rencontre avec [[Croâpaud Ultime]], [[Astigmate]], et [[Héroplasme]]."/>
+    <property name="fr_name" value="Chemin des Mercenaires 3"/>
     <property name="zh_description" value="與 [[Final Froggit]]、[[Astigmatism]] 和 [[Whimsalot]] 戰鬥。"/>
     <property name="zh_name" value="勇者的道路 #3"/>
    </properties>
@@ -300,6 +344,8 @@ You're filled with determination.</property>
   <object id="46" name="Final Mettaton encounter" x="3359.66" y="467.82">
    <properties>
     <property name="description" value="[[Mettaton]] reveals his true intentions to the protagonist and attacks. On the [[Neutral Route]], the protagonist can trick him into turning around and exposing the switch on his backside, transforming him into [[Mettaton EX]]. On the [[Genocide Route]], Mettaton transforms into [[Mettaton NEO]], who is killed in a single strike."/>
+    <property name="fr_description" value="[[Mettaton]] révèle ses véritables intentions et passe à l'attaque. En [[Route Neutre]], le·a protagoniste peut le manipuler pour qu'il se retourne et qu'il expose l'interrupteur dans son dos, le transformant en [[Mettaton EX]]. En [[Route Génocide]], Mettaton se transforme en [[Mettaton NEO]], qui est tué en un seul coup."/>
+    <property name="fr_name" value="Rencontre finale avec Mettaton"/>
     <property name="zh_description" value="[[Mettaton]] 向主角透露了他的真實意圖並發動攻擊。在[[中立路線]]中，主角可以誘騙他轉身，露出他背後的開關。他會變成 [[Mettaton EX]]。在[[屠殺路線]]中，他會變成 [[Mettaton NEO]]。"/>
     <property name="zh_name" value="Mettaton 最終戰"/>
    </properties>
