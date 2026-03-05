@@ -4,7 +4,7 @@ import {
     generateOAuthUrl,
     getAccessToken
 } from './auth.mjs';
-import { convertTiledToDataMaps } from './format.mjs';
+import { convertTiledToDataMaps, mapIsDataMaps } from './format.mjs';
 import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
 import { getStoredToken, storeToken } from './session.mjs';
 import { addToPromise, getWikiUrl, openUrl } from './util.mjs';
@@ -12,15 +12,22 @@ import { addToPromise, getWikiUrl, openUrl } from './util.mjs';
 /**
  * Displays a dialog for picking the language of the wiki to publish to, and the
  * edit summary to use.
+ * @param {boolean} languageVisible Whether the language selection should be
+ * shown in the dialog
  * @returns {Promise<[string, string]>} Selected language code
  */
-function getEditInfo() {
+function getEditInfo(languageVisible) {
     const dialog = new Dialog('Publishing map to the wiki');
     dialog.minimumWidth = 600;
     const languageNames = getLanguageNames();
-    const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
+    const languageSelectText = languageNames.length > 1 ?
+        languageVisible ?
+            'Wiki language:' :
+            'This map will be published to all language wikis that it has been translated to.' :
+        '';
+    const languageSelect = dialog.addComboBox(languageSelectText, languageNames);
     languageSelect.currentIndex = getDefaultLanguageIndex();
-    languageSelect.visible = languageNames.length > 1;
+    languageSelect.visible = languageVisible && languageNames.length > 1;
     dialog.addNewRow();
     const summary = dialog.addTextInput('Edit summary:', 'Published with Tiled DataMaps extension');
     dialog.addNewRow();
@@ -66,7 +73,7 @@ function performLogin(language) {
  * @param {string} language Wiki language
  * @returns {Promise<string>} Access token for the user
  */
-function getToken(language) {
+function getToken(language = 'en') {
     const accessToken = getStoredToken();
     if (accessToken) {
         return getLoggedInUser(accessToken, language).then(currentUser => {
@@ -123,6 +130,25 @@ function handlePublishSuccess(response, language) {
 }
 
 /**
+ * Handles successful publishing of the map to all language wikis.
+ * @param {[any, string][]} responses API responses from editing the wikis
+ */
+function handlePublishSuccessMultiple(responses) {
+    const nochange = responses.every(([response]) => response.nochange);
+    if (nochange) {
+        tiled.alert('All maps are already up to date, no changes made!');
+    } else {
+        const changedWikis = responses
+            .filter(([response]) => !response.nochange);
+        if (tiled.confirm(`Maps have been updated on the following wikis: ${changedWikis.map(r => r[1]).join(', ')}! Do you want to view all the changes?`)) {
+            for (const [response, language] of changedWikis) {
+                openUrl(`${getWikiUrl(language)}/?diff=${response.newrevid}`);
+            }
+        }
+    }
+}
+
+/**
  * Handles errors that occur during publishing of the map to the wiki.
  * @param {any} error Error returned during publishing
  */
@@ -164,13 +190,27 @@ const publishAction = tiled.registerAction('PublishToWiki', () => {
         return;
     }
     const map = /** @type {TileMap} */ (tiled.activeAsset);
-    getEditInfo()
-        .then(([language, summary]) =>
-            addToPromise(getToken(language), language, summary))
-        .then(([token, language, summary]) =>
-            addToPromise(publishMap(token, summary, map, language), language))
-        .then(([response, language]) => handlePublishSuccess(response, language))
-        .catch(handlePublishError);
+    if (!map.save()) {
+        tiled.alert('Failed to save the current map! Please save it before publishing.');
+        return;
+    }
+    if (mapIsDataMaps(map)) {
+        const languages = Object.keys(convertTiledToDataMaps(map).custom?.interwiki || {});
+        getEditInfo(false)
+            .then(([_, summary]) => addToPromise(getToken(), summary))
+            .then(([token, summary]) =>
+                Promise.all(languages.map(lang => addToPromise(publishMap(token, summary, map, lang), lang))))
+            .then(handlePublishSuccessMultiple)
+            .catch(handlePublishError);
+    } else {
+        getEditInfo(true)
+            .then(([language, summary]) =>
+                addToPromise(getToken(language), language, summary))
+            .then(([token, language, summary]) =>
+                addToPromise(publishMap(token, summary, map, language), language))
+            .then(([response, language]) => handlePublishSuccess(response, language))
+            .catch(handlePublishError);
+    }
 });
 publishAction.text = 'Publish to wiki';
 publishAction.icon = 'wiki.svg';
