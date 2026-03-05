@@ -7,7 +7,14 @@ import {
     getColorProperty,
     getListProperty,
     getNumberProperty,
-    getStringProperty
+    getStringProperty,
+    getTiledColor,
+    isBoxOverlay,
+    isImageBackground,
+    isPolylineOverlay,
+    setProperty,
+    validateTiledPoint,
+    validateTiledRectangle
 } from './util.mjs';
 
 const ANNOTATIONS_LAYER = 'annotations';
@@ -305,6 +312,231 @@ export function convertTiledToMultipleDataMaps(map, mapFilePath = null) {
 }
 
 /**
+ * Checks if a marker description contains a <poem> tag, strips is and returns
+ * whether it was multiline.
+ * @param {Marker} marker Marker from DataMaps
+ * @returns {[string|undefined, boolean]} Marker description without <poem> tags and
+ * whether the description is multiline
+ */
+function splitDescriptionAndMultiline(marker) {
+    if (typeof marker.description !== 'string') {
+        return [undefined, false];
+    }
+    // Regex s flag is not available in this environment.
+    const match = marker.description.match(/^<poem>([\s\S]*)<\/poem>$/u);
+    if (match) {
+        return [match[1], true];
+    }
+    return [marker.description, false];
+}
+
+/**
+ * Converts a DataMaps map to the Tiled map format.
+ * @param {DataMaps} datamaps DataMaps from all wikis to convert
+ * @returns {TileMap} Converted Tiled map object
+ */
+export function convertDataMapsToTiled(datamaps) {
+    const datamap = datamaps.en;
+    if (!datamap) {
+        throw new Error('English map data is required for conversion');
+    }
+    const metadata = new MetadataImpl(datamap.custom);
+    const crsBR = validateTiledPoint(datamap.crs.bottomRight);
+    const mapWidth = Math.ceil(crsBR[0] / metadata.tileWidth);
+    const mapHeight = Math.ceil(crsBR[1] / metadata.tileHeight);
+    const map = new TileMap();
+    map.tileWidth = metadata.tileWidth;
+    map.tileHeight = metadata.tileHeight;
+    map.width = mapWidth;
+    map.height = mapHeight;
+    const backgrounds = datamap.backgrounds.filter(isImageBackground);
+    const /** @type {ImageLayer[]} */ backgroundLayers = [];
+    for (const bg of backgrounds) {
+        const layer = new ImageLayer(bg.name || bg.image);
+        const fileName = metadata.getBackgroundFileName(bg.image);
+        const filePath = FileInfo.joinPaths(
+            tiled.project.folders[0],
+            'images',
+            fileName
+        );
+        layer.imageFileName = filePath;
+        layer.setProperty('image', bg.image);
+        backgroundLayers.push(layer);
+        map.addLayer(layer);
+    }
+    let annotationLayer = new ObjectGroup(ANNOTATIONS_LAYER);
+    map.addLayer(annotationLayer);
+    const overlays = datamap.backgrounds.find(isImageBackground)?.overlays || [];
+    const boxOverlays = overlays.filter(isBoxOverlay);
+    const /** @type {MapObject[]} */ rectangles = [];
+    for (const overlay of boxOverlays) {
+        const obj = new MapObject(overlay.name);
+        obj.shape = MapObject.Rectangle;
+        const [[x, y], [x2, y2]] = validateTiledRectangle(overlay.at);
+        obj.pos = { x, y };
+        obj.width = x2 - x;
+        obj.height = y2 - y;
+        if (overlay.color) {
+            obj.setProperty('fill', getTiledColor(overlay.color));
+        }
+        if (overlay.borderColor) {
+            obj.setProperty('border', getTiledColor(overlay.borderColor));
+        }
+        rectangles.push(obj);
+        annotationLayer.addObject(obj);
+    }
+    const polylineOverlays = overlays.filter(isPolylineOverlay);
+    const /** @type {MapObject[]} */ polylines = [];
+    for (const overlay of polylineOverlays) {
+        const obj = new MapObject(overlay.name);
+        obj.polygon = overlay.path
+            .map(p => validateTiledPoint(p))
+            .map(p => ({ x: p[1], y: p[0] }));
+        obj.pos = { x: 0, y: 0 };
+        obj.shape = MapObject.Polyline;
+        if (overlay.color) {
+            obj.setProperty('color', getTiledColor(overlay.color));
+        }
+        if (overlay.thickness) {
+            obj.setProperty('thickness', overlay.thickness);
+        }
+        polylines.push(obj);
+        annotationLayer.addObject(obj);
+    }
+    // TODO: Support nested layers
+    const /** @type {Record<string, MapObject>} */ points = {};
+    for (const [layerName, markers] of Object.entries(datamap.markers).reverse()) {
+        const layer = new ObjectGroup(layerName);
+        for (const m of markers) {
+            if (!m.id) {
+                continue;
+            }
+            const obj = new MapObject(m.name);
+            obj.pos = {
+                x: m.x,
+                y: m.y
+            };
+            obj.shape = MapObject.Point;
+            const [description, multiline] = splitDescriptionAndMultiline(m);
+            obj.setProperties({
+                page: m.article,
+                description,
+                image: m.image,
+                multiline,
+                plain: m.isWikitext === undefined ? undefined : !m.isWikitext
+            });
+            points[m.id] = obj;
+            layer.addObject(obj);
+        }
+        map.addLayer(layer);
+    }
+    for (const [language, interwiki] of Object.entries(metadata.interwiki)) {
+        setProperty(map, 'name', interwiki.mapName, language);
+        setProperty(map, 'revision', interwiki.revision, language);
+        const languageMap = datamaps[language];
+        if (!languageMap) {
+            // Error was already logged during map collection. This is a case of
+            // metadata desync.
+            continue;
+        }
+        if (languageMap.disclaimer) {
+            setProperty(map, 'disclaimer', languageMap.disclaimer, language);
+        }
+        if (languageMap.settings && languageMap.settings.leaflet) {
+            setProperty(map, 'popzoom', languageMap.settings.leaflet.uriPopupZoom, language);
+        }
+        if (languageMap.include) {
+            setProperty(map, 'include', languageMap.include.join('\n'), language);
+        }
+        if (language === 'en') {
+            // The rest of the properties are only relevant for non-English
+            // maps.
+            continue;
+        }
+        const languageBackgrounds = languageMap.backgrounds.filter(isImageBackground);
+        if (languageBackgrounds.length === datamap.backgrounds.length) {
+            for (const [index, bg] of languageBackgrounds.entries()) {
+                const enBg = backgrounds[index];
+                if (bg.name !== enBg.name) {
+                    setProperty(backgroundLayers[index], 'name', bg.name, language);
+                }
+                if (bg.image !== enBg.image) {
+                    setProperty(backgroundLayers[index], 'image', bg.image, language);
+                }
+            }
+        } else {
+            tiled.alert(`Map "${interwiki.mapName}" on the ${language} wiki has a different number of backgrounds than the English map! Please synchronize the backgrounds on the wiki before editing this map.`);
+        }
+        const languageOverlays = languageBackgrounds[0]?.overlays || [];
+        const languageBoxOverlays = languageOverlays.filter(isBoxOverlay);
+        if (languageBoxOverlays.length === boxOverlays.length) {
+            for (const [index, overlay] of languageBoxOverlays.entries()) {
+                const obj = rectangles[index];
+                if (overlay.name !== obj.name) {
+                    setProperty(obj, 'name', overlay.name, language);
+                }
+            }
+        } else {
+            tiled.alert(`Map "${interwiki.mapName}" on the ${language} wiki has a different number of box overlays than the English map! Please synchronize the box overlays on the wiki before editing this map.`);
+        }
+        const languagePolylineOverlays = languageOverlays.filter(isPolylineOverlay);
+        if (languagePolylineOverlays.length === polylineOverlays.length) {
+            for (const [index, overlay] of languagePolylineOverlays.entries()) {
+                const obj = polylines[index];
+                if (overlay.name !== obj.name) {
+                    setProperty(obj, 'name', overlay.name, language);
+                }
+            }
+        } else {
+            tiled.alert(`Map "${interwiki.mapName}" on the ${language} wiki has a different number of polyline overlays than the English map! Please synchronize the polyline overlays on the wiki before editing this map.`);
+        }
+        for (const [_, markers] of Object.entries(languageMap.markers).reverse()) {
+            for (const m of markers) {
+                if (!m.id) {
+                    continue;
+                }
+                const obj = points[m.id];
+                if (!obj) {
+                    tiled.alert(`Map "${interwiki.mapName}" on the ${language} wiki has a marker with ID "${m.id}" that does not exist in the English map! Please synchronize the markers on the wiki before editing this map.`);
+                    continue;
+                }
+                if (m.name !== obj.name) {
+                    setProperty(obj, 'name', m.name, language);
+                }
+                const [languageDescription, languageMultiline] = splitDescriptionAndMultiline(m);
+                if (languageDescription !== getStringProperty(obj, 'description')) {
+                    setProperty(obj, 'description', languageDescription, language);
+                }
+                if (languageMultiline !== getBoolProperty(obj, 'multiline')) {
+                    setProperty(obj, 'multiline', languageMultiline, language);
+                }
+                if (m.article !== getStringProperty(obj, 'page')) {
+                    setProperty(obj, 'page', m.article, language);
+                }
+                if (m.image !== getStringProperty(obj, 'image')) {
+                    setProperty(obj, 'image', m.image, language);
+                }
+                const enPlain = getBoolProperty(obj, 'plain');
+                const languagePlain = !m.isWikitext;
+                if (enPlain !== languagePlain) {
+                    setProperty(obj, 'plain', languagePlain, language);
+                }
+            }
+        }
+    }
+    return map;
+}
+
+/**
+ * Checks whether the map is in the DataMaps format.
+ * @param {TileMap} map Map to check
+ * @returns {boolean} Whether the map is in the DataMaps format
+ */
+export function mapIsDataMaps(map) {
+    return FileInfo.suffix(map.fileName) === 'mw-datamaps';
+}
+
+/**
  * Writes map data in DataMaps format to a file.
  * @param {DataMap|DataMaps} map Map data to write
  * @param {string} filePath File to write map data to
@@ -332,14 +564,30 @@ function generateWrite(multiple) {
     };
 }
 
+/**
+ * Converts a DataMaps map to the Tiled map format.
+ * @param {string} filePath Path to the file with the DataMaps map
+ * @returns {TileMap} Tiled map
+ */
+function read(filePath) {
+    const file = new TextFile(filePath, TextFile.ReadOnly);
+    const content = file.readAll();
+    file.close();
+    const datamap = JSON.parse(content);
+    const isMultiple = typeof datamap.en === 'object';
+    return convertDataMapsToTiled(isMultiple ? datamap : { en: datamap });
+}
+
 tiled.registerMapFormat('dataMaps', {
     extension: 'mw-datamaps',
     name: 'DataMaps (all wikis)',
+    read,
     write: generateWrite(true)
 });
 
 tiled.registerMapFormat('dataMap', {
     extension: 'mw-datamaps',
     name: 'DataMaps (single wiki)',
+    read,
     write: generateWrite(false)
 });

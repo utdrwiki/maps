@@ -1,3 +1,4 @@
+*.mw-datamaps
 *.png
 *.tiled-session
 node_modules
