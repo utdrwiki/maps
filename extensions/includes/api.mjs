@@ -1,3 +1,4 @@
+import { InterwikiDataImpl, MetadataImpl } from './metadata.mjs';
 import { getStringProperty, getWikiUrl } from './util.mjs';
 
 const USER_AGENT = `tiled-datamaps/1.0 (https://github.com/utdrwiki/maps; admin@undertale.wiki) tiled/${tiled.version}`;
@@ -28,13 +29,18 @@ export function getRestUrl(language = 'en') {
  * @param {(value: any|PromiseLike<any>) => void} resolve Promise
  * resolution function
  * @param {(reason: any?) => void} reject Promise rejection function
+ * @param {boolean} isArrayBuffer Whether the request expects a binary response
  * @returns {() => void} Ready state change handler
  */
-const readyStateChange = (xhr, resolve, reject) => () => {
+const readyStateChange = (xhr, resolve, reject, isArrayBuffer = false) => () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
         if (xhr.status === 200) {
             try {
-                resolve(JSON.parse(xhr.responseText));
+                if (isArrayBuffer) {
+                    resolve(xhr.response);
+                } else {
+                    resolve(JSON.parse(xhr.responseText));
+                }
             } catch (error) {
                 reject(new Error(`Failed to parse response: ${xhr.responseText}`));
             }
@@ -158,4 +164,78 @@ export function edit(title, text, summary, accessToken, language = 'en') {
             return response;
         })
     );
+}
+
+/**
+ * Retrieves all maps from the wiki.
+ * @param {string} language Wiki language
+ * @returns {Promise<DataMap[]>} List of maps on the wiki
+ */
+export function getAllMaps(language = 'en') {
+    return httpGet(getApiUrl(language), {
+        action: 'query',
+        generator: 'allpages',
+        gapnamespace: '2900',
+        gapfilterredir: 'nonredirects',
+        gaplimit: 'max',
+        prop: 'revisions',
+        rvprop: 'ids|content',
+        rvslots: 'main',
+        format: 'json',
+        formatversion: '2',
+    }).then(data => data.query.pages
+        .filter((/** @type {any} */ page) =>
+            page.revisions &&
+            page.revisions.length > 0 &&
+            page.revisions[0].slots &&
+            page.revisions[0].slots.main &&
+            page.revisions[0].slots.main.contentmodel === 'datamap'
+        )
+        .map((/** @type {any} */ page) => {
+            const {slots, revid} = page.revisions[0];
+            const /** @type {DataMap} */ datamap = JSON.parse(slots.main.content);
+            datamap.custom = datamap.custom || new MetadataImpl();
+            datamap.custom.interwiki = datamap.custom.interwiki || {};
+            datamap.custom.interwiki[language] = new InterwikiDataImpl({
+                mapName: page.title.split(':').slice(1).join(':'),
+            });
+            datamap.custom.interwiki[language].revision = revid;
+            return datamap;
+        })
+        .filter((/** @type {DataMap} */ datamap) => !datamap.$fragment)
+    );
+}
+
+/**
+ * Returns the URLs of the given map files on the wiki.
+ * @param {string[]} filenames Map file names
+ * @param {string} language Wiki language
+ * @returns {Promise<string[]>} URLs of the given map files on the wiki
+ */
+export function getFileUrls(filenames, language = 'en') {
+    return httpGet(getApiUrl(language), {
+        action: 'query',
+        titles: filenames.map(name => `File:${name}`).join('|'),
+        prop: 'imageinfo',
+        iiprop: 'url',
+        format: 'json',
+        formatversion: '2'
+    }).then(data => data.query.pages
+        .map((/** @type {any} **/ page) => page.imageinfo[0].url));
+}
+
+/**
+ * Downloads a file from a URL and returns it as an ArrayBuffer.
+ * @param {string} url URL to download the file from
+ * @returns {Promise<ArrayBuffer>} Downloaded file data
+ */
+export function downloadFile(url) {
+    return new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.responseType = 'arraybuffer';
+        xhr.onreadystatechange = readyStateChange(xhr, resolve, reject, true);
+        xhr.setRequestHeader('User-Agent', USER_AGENT);
+        xhr.send();
+    });
 }

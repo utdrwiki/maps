@@ -1,5 +1,6 @@
 interface DataMap {
-    $schema: string
+    $schema: string;
+    $fragment?: boolean;
     /**
      * List of fragments that must be imported.
      */

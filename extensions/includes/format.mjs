@@ -6,7 +6,13 @@ import {
     getColorProperty,
     getListProperty,
     getNumberProperty,
-    getStringProperty
+    getStringProperty,
+    getTiledColor,
+    isBoxOverlay,
+    isImageBackground,
+    isPolylineOverlay,
+    validateTiledPoint,
+    validateTiledRectangle
 } from './util.mjs';
 
 /**
@@ -221,6 +227,97 @@ export function convertTiledToDataMaps(map, mapName, language = 'en') {
     return datamap;
 }
 
+const TILE_SIZE = 32;
+
+/**
+ * Converts a DataMaps map to the Tiled map format.
+ * @param {DataMap} datamap DataMap to convert
+ * @returns {TileMap} Converted Tiled map object
+ */
+export function convertDataMapsToTiled(datamap) {
+    const primaryBg = datamap.backgrounds.find(isImageBackground);
+    if (!primaryBg) {
+        throw new Error('At least one background with an image is required to convert to Tiled format');
+    }
+    const crsBR = validateTiledPoint(datamap.crs.bottomRight);
+    const mapWidth = Math.ceil(crsBR[0] / TILE_SIZE);
+    const mapHeight = Math.ceil(crsBR[1] / TILE_SIZE);
+    const map = new TileMap();
+    map.tileWidth = TILE_SIZE;
+    map.tileHeight = TILE_SIZE;
+    map.width = mapWidth;
+    map.height = mapHeight;
+    if (datamap.disclaimer) {
+        map.setProperty('disclaimer', datamap.disclaimer);
+    }
+    if (datamap.settings && datamap.settings.leaflet) {
+        map.setProperty('popzoom', datamap.settings.leaflet.uriPopupZoom);
+    }
+    if (datamap.include) {
+        map.setProperty('include', datamap.include.join('\n'));
+    }
+    const /** @type {[string, ImageLayer][]} */ imageFiles = [];
+    for (const bg of datamap.backgrounds.filter(isImageBackground)) {
+        const layer = new ImageLayer();
+        // TODO: Support custom image property
+        layer.name = bg.image.replace(/\.png$/, '');
+        imageFiles.push([bg.image, layer]);
+        map.addLayer(layer);
+    }
+    let annotationLayer = new ObjectGroup('annotations');
+    map.addLayer(annotationLayer);
+    for (const overlay of (primaryBg.overlays || [])) {
+        const obj = new MapObject(overlay.name);
+        if (isBoxOverlay(overlay)) {
+            obj.shape = MapObject.Rectangle;
+            const [[x1, y1], [x2, y2]] = validateTiledRectangle(overlay.at);
+            obj.pos = { x: x1, y: y1 };
+            obj.width = x2 - x1;
+            obj.height = y2 - y1;
+            if (overlay.color) {
+                obj.setProperty('fill', getTiledColor(overlay.color));
+            }
+            if (overlay.borderColor) {
+                obj.setProperty('border', getTiledColor(overlay.borderColor));
+            }
+        } else if (isPolylineOverlay(overlay)) {
+            obj.polygon = overlay.path
+                .map(p => validateTiledPoint(p))
+                .map(p => ({ x: p[1], y: p[0] }));
+            obj.pos = { x: 0, y: 0 };
+            obj.shape = MapObject.Polyline;
+            if (overlay.color) {
+                obj.setProperty('color', getTiledColor(overlay.color));
+            }
+            if (overlay.thickness) {
+                obj.setProperty('thickness', overlay.thickness);
+            }
+        }
+        annotationLayer.addObject(obj);
+    }
+    // TODO: Support nested layers
+    for (const [layerName, markers] of Object.entries(datamap.markers).reverse()) {
+        const layer = new ObjectGroup(layerName);
+        for (const m of markers) {
+            const obj = new MapObject(m.name);
+            obj.pos = {
+                x: m.x,
+                y: m.y
+            };
+            obj.shape = MapObject.Point;
+            obj.setProperties({
+                page: m.article,
+                description: m.description,
+                image: m.image,
+                plain: m.isWikitext === undefined ? undefined : !m.isWikitext
+            });
+            layer.addObject(obj);
+        }
+        map.addLayer(layer);
+    }
+    return map;
+}
+
 /**
  * Converts a Tiled map to DataMaps format.
  * @param {TileMap} map Tiled map to convert to DataMaps
@@ -235,8 +332,22 @@ function write(map, filePath) {
     file.commit();
 }
 
+/**
+ * Converts a DataMaps map to the Tiled map format.
+ * @param {string} filePath Path to the file with the DataMaps map
+ * @returns {TileMap} Tiled map
+ */
+function read(filePath) {
+    const file = new TextFile(filePath, TextFile.ReadOnly);
+    const content = file.readAll();
+    file.close();
+    const datamap = JSON.parse(content);
+    return convertDataMapsToTiled(datamap.en);
+}
+
 export default /** @type {ScriptedMapFormat} */ {
     extension: 'mw-datamaps',
     name: 'DataMaps',
+    read,
     write
 };
