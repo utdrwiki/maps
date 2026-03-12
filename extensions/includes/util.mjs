@@ -125,3 +125,16 @@ export function getWikiUrl(language = 'en') {
     }
     return `https://${enWikiUrl}`;
 }
+
+/**
+ * Adds data to the resolved value of a promise.
+ * @template T
+ * @template {unknown[]} D
+ * @param {Promise<T>} promise Promise to add data to
+ * @param  {D} data Data to add to the resolved value
+ * @returns {Promise<[T, ...D]>} Promise resolving to an array of the original
+ * resolved value and the added data
+ */
+export function addToPromise(promise, ...data) {
+    return promise.then(result => [result, ...data]);
+}

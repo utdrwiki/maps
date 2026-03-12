@@ -140,7 +140,7 @@ export class APIError extends Error {
  * @param {string} summary Summary to use when editing the page
  * @param {string} accessToken Access token for the wiki
  * @param {string} language Wiki language
- * @returns {Promise<void>} Resolves on edit completion
+ * @returns {Promise<any>} Resolves on edit completion
  */
 export function edit(title, text, summary, accessToken, language = 'en') {
     return getCsrfToken(accessToken, language).then(token =>
@@ -150,12 +150,13 @@ export function edit(title, text, summary, accessToken, language = 'en') {
             text,
             summary,
             format: 'json',
+            formatversion: '2',
             token
-        }, accessToken).then(response => {
-            if (response.error) {
-                throw new APIError(response.error);
-            }
-            return response;
-        })
-    );
+        }, accessToken)
+    ).then(response => {
+        if (response.error) {
+            throw new APIError(response.error);
+        }
+        return response.edit;
+    });
 }

@@ -7,6 +7,7 @@ import {
 import { convertTiledToDataMaps } from './format.mjs';
 import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
 import { getStoredToken, storeToken } from './session.mjs';
+import { addToPromise, getWikiUrl } from './util.mjs';
 
 /**
  * Opens a URL in the user's default web browser.
@@ -124,7 +125,7 @@ function getToken(language) {
  * @param {string} summary Edit summary
  * @param {TileMap} map Current map being published
  * @param {string} language Wiki language
- * @returns {Promise<void>} Response after publishing the map
+ * @returns {Promise<any>} Response after publishing the map
  */
 function publishMap(accessToken, summary, map, language) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(map.fileName));
@@ -136,6 +137,22 @@ function publishMap(accessToken, summary, map, language) {
         accessToken,
         language
     );
+}
+
+/**
+ * Handles successful publishing of the map to the wiki.
+ * @param {any} response API response from editing
+ * @param {string} language Current wiki language
+ */
+function handlePublishSuccess(response, language) {
+    if (response.nochange) {
+        tiled.alert('Map is already up to date, no changes made!');
+    } else {
+        const userConfirmed = tiled.confirm('Map published successfully! Do you want to view the changes?');
+        if (userConfirmed) {
+            openUrl(`${getWikiUrl(language)}/?diff=${response.newrevid}`);
+        }
+    }
 }
 
 /**
@@ -183,9 +200,9 @@ export default function run() {
     const map = /** @type {TileMap} */ (tiled.activeAsset);
     getEditInfo()
         .then(([language, summary]) =>
-            getToken(language).then(token => [language, summary, token]))
-        .then(([language, summary, token]) =>
-            publishMap(token, summary, map, language))
-        .then(() => tiled.alert(`Map published successfully!`))
+            addToPromise(getToken(language), language, summary))
+        .then(([token, language, summary]) =>
+            addToPromise(publishMap(token, summary, map, language), language))
+        .then(([response, language]) => handlePublishSuccess(response, language))
         .catch(handlePublishError);
 }
