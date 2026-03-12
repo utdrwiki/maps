@@ -1,5 +1,6 @@
 import { getLanguageCodes } from './language.mjs';
 import { InterwikiDataImpl, MetadataImpl } from './metadata.mjs';
+import { getLastLanguage } from './session.mjs';
 import {
     addPoints,
     getBoolProperty,
@@ -222,21 +223,54 @@ export function convertTiledToDataMaps(map, mapName, language = 'en') {
 }
 
 /**
- * Converts a Tiled map to DataMaps format.
+ * Converts a Tiled map to multiple DataMaps format for each language.
  * @param {TileMap} map Tiled map to convert to DataMaps
- * @param {string} filePath Path of the Tiled map
- * @returns {undefined}
+ * @param {string} mapName Filename of the Tiled map
+ * @returns {DataMaps} Converted DataMaps object
  */
-function write(map, filePath) {
-    const mapName = FileInfo.completeBaseName(FileInfo.fileName(filePath));
-    const convertedMap = convertTiledToDataMaps(map, mapName);
+export function convertTiledToMultipleDataMaps(map, mapName) {
+    const datamaps = /** @type {DataMaps} */ ({});
+    for (const language of getLanguageCodes()) {
+        datamaps[language] = convertTiledToDataMaps(map, mapName, language);
+    }
+    return datamaps;
+}
+
+/**
+ * Writes map data in DataMaps format to a file.
+ * @param {DataMap|DataMaps} map Map data to write
+ * @param {string} filePath File to write map data to
+ */
+export function writeMap(map, filePath) {
     const file = new TextFile(filePath, TextFile.WriteOnly);
-    file.write(`${JSON.stringify(convertedMap, null, 4)}\n`);
+    file.write(`${JSON.stringify(map, null, 4)}\n`);
     file.commit();
 }
 
-export default /** @type {ScriptedMapFormat} */ {
+/**
+ * Converts a Tiled map to DataMaps format.
+ * @param {boolean} multiple Whether to generate a single or multiple maps
+ * @returns {(map: TileMap, filePath: string) => undefined} Function that writes the
+ * converted map to a file
+ */
+function generateWrite(multiple) {
+    return (map, filePath) => {
+        const mapName = FileInfo.completeBaseName(FileInfo.fileName(filePath));
+        const convertedMap = multiple ?
+            convertTiledToMultipleDataMaps(map, mapName) :
+            convertTiledToDataMaps(map, mapName, getLastLanguage() || 'en');
+        writeMap(convertedMap, filePath);
+    };
+}
+
+export const DATAMAPS_SINGLE /** @type {ScriptedMapFormat} */ = {
     extension: 'mw-datamaps',
-    name: 'DataMaps',
-    write
+    name: 'DataMaps (single wiki)',
+    write: generateWrite(false)
+};
+
+export const DATAMAPS_MULTIPLE /** @type {ScriptedMapFormat} */ = {
+    extension: 'mw-datamaps',
+    name: 'DataMaps (all wikis)',
+    write: generateWrite(true)
 };

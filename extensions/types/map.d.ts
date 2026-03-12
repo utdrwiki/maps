@@ -13,3 +13,5 @@ interface DataMap {
     markers: Record<string, Marker[]>
     custom?: Metadata
 }
+
+type DataMaps = Record<string, DataMap>;

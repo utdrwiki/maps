@@ -1,8 +1,9 @@
-import dataMapsFormat from './includes/format.mjs';
+import { DATAMAPS_SINGLE, DATAMAPS_MULTIPLE } from './includes/format.mjs';
 import selectedObjectsChanged from './includes/popup.mjs';
 import publishToWiki from './includes/publish.mjs';
 
-tiled.registerMapFormat('dataMaps', dataMapsFormat);
+tiled.registerMapFormat('dataMaps', DATAMAPS_MULTIPLE);
+tiled.registerMapFormat('dataMap', DATAMAPS_SINGLE);
 const publishAction = tiled.registerAction('PublishToWiki', publishToWiki);
 publishAction.text = 'Publish to wiki';
 publishAction.icon = 'wiki.svg';
