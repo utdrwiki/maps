@@ -5,7 +5,7 @@
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Map">
-  <image source="images/TV World.png" width="44560" height="5760"/>
+  <image source="images/TV World map.png" width="44560" height="5760"/>
   <properties>
    <property name="image" value="TV World map.png"/>
   </properties>

@@ -5,7 +5,7 @@
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="2" name="Map">
-  <image source="images/Manhole Dungeon.png" width="4992" height="1792"/>
+  <image source="images/Manhole dungeon map.png" width="4992" height="1792"/>
   <properties>
    <property name="image" value="Manhole dungeon map.png"/>
   </properties>
