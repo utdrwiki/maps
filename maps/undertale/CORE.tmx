@@ -6,8 +6,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="核心"/>
  </properties>
- <imagelayer id="3" name="CORE map">
-  <image source="images/CORE.png" width="4410" height="2760"/>
+ <imagelayer id="3" name="Map">
+  <image source="images/CORE map.png" width="4410" height="2760"/>
+  <properties>
+   <property name="image" value="CORE map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="15" name="lines">
   <object id="49" x="1294.25" y="36.007" width="1468.07" height="1204.95">

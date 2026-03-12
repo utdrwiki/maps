@@ -6,8 +6,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="廢墟"/>
  </properties>
- <imagelayer id="2" name="Ruins map">
-  <image source="images/Ruins.png" width="10278" height="6142"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Ruins map.png" width="10278" height="6142"/>
+  <properties>
+   <property name="image" value="Ruins map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="13" name="lines">
   <object id="73" x="8635.42" y="2434.85" width="1446.38" height="479.361">

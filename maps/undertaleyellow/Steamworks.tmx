@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Steamworks map" locked="1">
-  <image source="images/Steamworks.png" width="27924" height="5186"/>
+ <imagelayer id="2" name="Map" locked="1">
+  <image source="images/Steamworks map.png" width="27924" height="5186"/>
+  <properties>
+   <property name="image" value="Steamworks map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="57" name="Locker" x="26844.2" y="2957.16">

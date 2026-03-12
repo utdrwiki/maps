@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Manhole dungeon map">
+ <imagelayer id="2" name="Map">
   <image source="images/Manhole Dungeon.png" width="4992" height="1792"/>
+  <properties>
+   <property name="image" value="Manhole dungeon map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="4" name="sublocations">
   <object id="46" name="Shelter" x="4032.65" y="1427.57">

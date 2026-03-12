@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="3" name="3rd Sanctuary map">
-  <image source="images/3rd Sanctuary.png" width="18540" height="24960"/>
+ <imagelayer id="3" name="Map">
+  <image source="images/3rd Sanctuary map.png" width="18540" height="24960"/>
+  <properties>
+   <property name="image" value="3rd Sanctuary map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="14" name="lines">
   <object id="19" x="5240.81" y="19826.6">

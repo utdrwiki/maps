@@ -5,8 +5,11 @@
   <property name="name" value="Castle Town (Chapter 2 transformed)"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Castle Town map Chapter 2 transformed">
-  <image source="images/Castle Town 2 transformed.png" width="4200" height="4520"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Castle Town map Chapter 2 transformed.png" width="4200" height="4520"/>
+  <properties>
+   <property name="image" value="Castle Town map Chapter 2 transformed.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="8" name="vendors">
   <object id="13" name="Seam" x="1214" y="2968">

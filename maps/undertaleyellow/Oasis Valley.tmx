@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Oasis Valley map">
-  <image source="images/Oasis Valley.png" width="1840" height="1180"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Oasis Valley map.png" width="1840" height="1180"/>
+  <properties>
+   <property name="image" value="Oasis Valley map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="25" name="Path to Ketsukane Estate" x="948.5" y="246.5">

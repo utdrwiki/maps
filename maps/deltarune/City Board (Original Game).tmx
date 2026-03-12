@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="City Board (Original Game) map">
-  <image source="images/City Board (Original Game).png" width="3072" height="1024"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/City Board (Original Game) map.png" width="3072" height="1024"/>
+  <properties>
+   <property name="image" value="City Board (Original Game) map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="2" name="HERO_SWORD's party" x="960" y="128">

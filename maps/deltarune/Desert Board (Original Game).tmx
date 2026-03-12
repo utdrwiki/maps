@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Desert Board (Original Game) map">
-  <image source="images/Desert Board (Original Game).png" width="3072" height="2304"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Desert Board (Original Game) map.png" width="3072" height="2304"/>
+  <properties>
+   <property name="image" value="Desert Board (Original Game) map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="7" name="sublocations">
   <object id="51" name="Secret Stairs" x="174.873" y="1668.2">

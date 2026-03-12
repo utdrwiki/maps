@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Card Castle map">
-  <image source="images/Card Castle.png" width="3223" height="5683"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Card Castle map.png" width="3223" height="5683"/>
+  <properties>
+   <property name="image" value="Card Castle map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="5" name="vendors">
   <object id="57" name="Rouxls Kaard's shop" x="835" y="1716.5">

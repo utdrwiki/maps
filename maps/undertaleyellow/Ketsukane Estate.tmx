@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Ketsukane Estate map">
-  <image source="images/Ketsukane Estate.png" width="2176" height="2541"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Ketsukane Estate map.png" width="2176" height="2541"/>
+  <properties>
+   <property name="image" value="Ketsukane Estate map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="1" name="Gate" x="579" y="2118.18">

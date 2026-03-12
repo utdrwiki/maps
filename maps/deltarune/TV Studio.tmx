@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="TV Studio map">
+ <imagelayer id="2" name="Map">
   <image source="images/TV Studio.png" width="6308" height="2440"/>
+  <properties>
+   <property name="image" value="TV Studio map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="9" name="sublocations">
   <object id="5" name="Rhythm minigame room" x="1105" y="1772">

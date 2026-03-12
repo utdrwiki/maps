@@ -5,8 +5,11 @@
   <property name="name" value="??????"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="3" name="?????? map">
-  <image source="images/Cliffs.png" width="8608" height="1580"/>
+ <imagelayer id="3" name="Map">
+  <image source="images/Cliffs map.png" width="8608" height="1580"/>
+  <properties>
+   <property name="image" value="?????? map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="7" name="signs">
   <object id="27" name="Sign" x="4075" y="424">

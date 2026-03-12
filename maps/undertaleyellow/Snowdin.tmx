@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Snowdin map">
-  <image source="images/Snowdin.png" width="7560" height="8360"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Snowdin map.png" width="7560" height="8360"/>
+  <properties>
+   <property name="image" value="Snowdin map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="10" name="boxes">
   <object id="6" name="Dimensional Box 1" x="1829.89" y="7062.89">
@@ -91,7 +94,7 @@
   </object>
   <object id="88" name="Genocide battle cutscene" x="7084.82" y="106.373">
    <properties>
-    <property name="description" value="During [[Martlet]]'s [[Genocide Route]] [[Martlet/In Battle|battle]], a cutscene plays between her two phases where [[Chujin]] and her talk about her new job at the Royal Guard."/>
+    <property name="description" value="During [[Zenith Martlet]]'s battle, a cutscene plays between her two phases where [[Chujin]] and her talk about her new job at the Royal Guard."/>
    </properties>
    <point/>
   </object>

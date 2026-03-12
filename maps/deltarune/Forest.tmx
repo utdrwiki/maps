@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Forest map">
-  <image source="images/Forest.png" width="13949" height="6593"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Forest map.png" width="13949" height="6593"/>
+  <properties>
+   <property name="image" value="Forest map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="4" name="warpdoor">
   <object id="125" name="Forest shortcut door" x="159.5" y="5919.5">

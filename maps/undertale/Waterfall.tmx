@@ -5,8 +5,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="瀑布"/>
  </properties>
- <imagelayer id="2" name="Waterfall map">
+ <imagelayer id="2" name="Map">
   <image source="images/Waterfall.png" width="24230" height="3400"/>
+  <properties>
+   <property name="image" value="Waterfall map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="15" name="lines">
   <object id="64" x="18358.8" y="2354.59">

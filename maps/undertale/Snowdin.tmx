@@ -6,8 +6,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="雪町"/>
  </properties>
- <imagelayer id="2" name="Snowdin map">
-  <image source="images/Snowdin.png" width="15620" height="2500"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Snowdin map.png" width="15620" height="2500"/>
+  <properties>
+   <property name="image" value="Snowdin map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="14" name="lines">
   <object id="146" x="12032.1" y="0" width="3062.95" height="1685.68">

@@ -5,31 +5,31 @@
   <property name="popzoom" type="float" value="5"/>
  </properties>
  <imagelayer id="17" name="Chapter 4 night" offsetx="600" offsety="0">
-  <image source="images/Hometown 4 night.png" width="2760" height="4267"/>
+  <image source="images/Hometown map Chapter 4 night.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4 night.png"/>
   </properties>
  </imagelayer>
  <imagelayer id="16" name="Chapter 4 evening" offsetx="600" offsety="0">
-  <image source="images/Hometown 4 evening.png" width="2760" height="4267"/>
+  <image source="images/Hometown map Chapter 4 evening.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4 evening.png"/>
   </properties>
  </imagelayer>
  <imagelayer id="15" name="Chapter 4">
-  <image source="images/Hometown 4.png" width="3360" height="4267"/>
+  <image source="images/Hometown map Chapter 4.png" width="3360" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4.png"/>
   </properties>
  </imagelayer>
  <imagelayer id="12" name="Chapter 2" offsetx="600" offsety="0">
-  <image source="images/Hometown 2.png" width="2760" height="4267"/>
+  <image source="images/Hometown map (Chapter 2).png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map (Chapter 2).png"/>
   </properties>
  </imagelayer>
  <imagelayer id="2" name="Chapter 1" offsetx="600" offsety="0">
-  <image source="images/Hometown.png" width="2760" height="4267"/>
+  <image source="images/Hometown map.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map.png"/>
   </properties>

@@ -5,8 +5,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="熱地"/>
  </properties>
- <imagelayer id="2" name="Hotland map">
-  <image source="images/Hotland.png" width="8690" height="7320"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Hotland map.png" width="8690" height="7320"/>
+  <properties>
+   <property name="image" value="Hotland map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="15" name="lines">
   <object id="149" x="1439.89" y="6598.99" width="1101.1" height="481.278">

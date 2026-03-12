@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Dark Sanctuary map">
-  <image source="images/Dark Sanctuary.png" width="20000" height="12000"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Dark Sanctuary map.png" width="20000" height="12000"/>
+  <properties>
+   <property name="image" value="Dark Sanctuary map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="4" name="vendors">
   <object id="63" name="Vendor table" x="13250" y="7360">

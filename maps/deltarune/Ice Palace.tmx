@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Ice Palace map">
-  <image source="images/Ice Palace.png" width="2688" height="1536"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Ice Palace map.png" width="2688" height="1536"/>
+  <properties>
+   <property name="image" value="Ice Palace map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="8" name="puzzles">
   <object id="37" name="Ice Block Puzzles" x="1154.1" y="129.82">

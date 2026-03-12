@@ -5,8 +5,11 @@
   <property name="popzoom" type="float" value="5"/>
   <property name="zh_name" value="真正的實驗室"/>
  </properties>
- <imagelayer id="2" name="True Lab map">
-  <image source="images/True Lab.png" width="3440" height="2100"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/True Lab map.png" width="3440" height="2100"/>
+  <properties>
+   <property name="image" value="True Lab map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="12" name="lines">
   <object id="17" x="1398.86" y="1277.13">

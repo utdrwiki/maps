@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="138" height="83" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="45">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="138" height="83" tilewidth="20" tileheight="20" infinite="0" nextlayerid="13" nextobjectid="45">
  <properties>
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Hotland map">
-  <image source="images/Hotland.png" width="2746" height="1641"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Hotland map.png" width="2746" height="1641"/>
+  <properties>
+   <property name="image" value="Hotland map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="3" name="plot">
   <object id="36" name="Elevator from Steamworks" x="2582.91" y="1258.55">

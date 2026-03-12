@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Desert Board map">
-  <image source="images/Desert Board.png" width="1920" height="3328"/>
+ <imagelayer id="2" name="Map">
+  <image source="images/Desert Board map.png" width="1920" height="3328"/>
+  <properties>
+   <property name="image" value="Desert Board map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="4" name="vendors">
   <object id="35" name="Tenna" x="1343.55" y="1050.85">

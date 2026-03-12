@@ -4,8 +4,11 @@
   <property name="include" value="Map:Common Data"/>
   <property name="popzoom" type="float" value="5"/>
  </properties>
- <imagelayer id="2" name="Noelle's House map">
+ <imagelayer id="2" name="Map">
   <image source="images/Noelle's House.png" width="1322" height="894"/>
+  <properties>
+   <property name="image" value="Noelle's House map.png"/>
+  </properties>
  </imagelayer>
  <objectgroup id="4" name="saves">
   <object id="1" name="Noelle's House" x="936.5" y="344">
