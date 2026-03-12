@@ -61,6 +61,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
     const /** @type {Overlay[]} */ overlays = [];
     if (layer.isImageLayer) {
         const imageLayer = /** @type {ImageLayer} */ (layer);
+        const image = getStringProperty(layer, 'image', language) || `${layer.name}.png`;
         const /** @type {ImageBackground} */ bg = {
             at: [
                 [
@@ -72,7 +73,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
                     layer.offset.y + offset.y + imageLayer.image.height
                 ]
             ],
-            image: getStringProperty(layer, 'image', language) || `${layer.name}.png`,
+            image,
             name: layer.name
         };
         if (datamap.backgrounds[0].name === '<default>') {
@@ -94,6 +95,13 @@ function convertLayer(layer, datamap, convertedLayers, language) {
             if (imageLayer.image.height > mapSize[1]) {
                 mapSize[1] = imageLayer.image.height;
             }
+        }
+        const fileName = FileInfo.fileName(imageLayer.imageFileName);
+        if (fileName !== image && datamap.custom) {
+            if (!datamap.custom.backgroundFileNameMap) {
+                datamap.custom.backgroundFileNameMap = {};
+            }
+            datamap.custom.backgroundFileNameMap[image] = fileName;
         }
     } else if (layer.isObjectLayer) {
         const /** @type {Marker[]} */ markers = [];
@@ -163,7 +171,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
  * Retrieves map metadata to store in DataMaps for two-way conversion.
  * @param {TileMap} map Tiled map being converted to DataMaps
  * @param {string} mapName Filename of the Tiled map
- * @returns {MetadataImpl} Map metadata to store in DataMaps
+ * @returns {Metadata} Map metadata to store in DataMaps
  */
 function getDataMapsMetadata(map, mapName) {
     const metadata = new MetadataImpl();
@@ -177,6 +185,8 @@ function getDataMapsMetadata(map, mapName) {
         });
     }
     metadata.fileName = mapName;
+    metadata.tileHeight = map.tileHeight;
+    metadata.tileWidth = map.tileWidth;
     return metadata;
 }
 

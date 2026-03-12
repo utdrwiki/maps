@@ -1,4 +1,5 @@
 const CURRENT_VERSION = 0;
+const DEFAULT_TILE_SIZE = 32;
 
 /**
  * @implements {Metadata}
@@ -9,8 +10,14 @@ export class MetadataImpl {
      * @param {Metadata|undefined} metadata Metadata
      */
     constructor(metadata = undefined) {
+        /** @type {Record<string, string>|undefined} */
+        this.backgroundFileNameMap = metadata?.backgroundFileNameMap;
         /** @type {Record<string, InterwikiDataImpl>} */
         this.interwiki = {};
+        /** @type {number} */
+        this.tileHeight = metadata?.tileHeight || DEFAULT_TILE_SIZE;
+        /** @type {number} */
+        this.tileWidth = metadata?.tileWidth || DEFAULT_TILE_SIZE;
         /** @type {number} */
         this.version = metadata?.version || CURRENT_VERSION;
         /** @type {string|undefined} */
@@ -27,10 +34,21 @@ export class MetadataImpl {
      */
     toJSON() {
         return {
+            backgroundFileNameMap: this.backgroundFileNameMap,
             fileName: this.fileName,
             interwiki: this.interwiki,
+            tileHeight: this.tileHeight,
+            tileWidth: this.tileWidth,
             version: this.version,
         };
+    }
+    /**
+     * Gets the local image file name for a given wiki image file name.
+     * @param {string} wikiFileName Image file name as stored on the wiki
+     * @returns {string} Local image file name
+     */
+    getBackgroundFileName(wikiFileName) {
+        return this.backgroundFileNameMap?.[wikiFileName] || wikiFileName;
     }
 }
 
