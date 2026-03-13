@@ -273,14 +273,14 @@ function generateWrite(multiple) {
     };
 }
 
-export const DATAMAPS_SINGLE /** @type {ScriptedMapFormat} */ = {
-    extension: 'mw-datamaps',
-    name: 'DataMaps (single wiki)',
-    write: generateWrite(false)
-};
-
-export const DATAMAPS_MULTIPLE /** @type {ScriptedMapFormat} */ = {
+tiled.registerMapFormat('dataMaps', {
     extension: 'mw-datamaps',
     name: 'DataMaps (all wikis)',
     write: generateWrite(true)
-};
+});
+
+tiled.registerMapFormat('dataMap', {
+    extension: 'mw-datamaps',
+    name: 'DataMaps (single wiki)',
+    write: generateWrite(false)
+});

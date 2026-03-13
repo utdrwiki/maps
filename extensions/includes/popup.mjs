@@ -179,38 +179,53 @@ const /** @type {Record<MapObjectShape, MarkerPopupHandler|undefined>} */ handle
     [MapObject.Text]: undefined,
 };
 
-/**
- * Called when the currently selected objects on the map change.
- * @param {MapObject[]} objects Currently selected map objects
- */
-export default function selectedObjectsChanged(objects) {
-    if (objects.length !== 1) {
+const enablePopup = tiled.registerAction('WikiMarkerPopup', () => {});
+enablePopup.checkable = true;
+enablePopup.checked = true;
+enablePopup.iconVisibleInMenu = false;
+enablePopup.text = 'Enable marker popup';
+enablePopup.shortcut = 'Ctrl+Shift+M';
+
+tiled.extendMenu('Edit', [
+    {
+        action: 'WikiMarkerPopup'
+    }
+]);
+
+tiled.assetOpened.connect(asset => {
+    if (!asset.isTileMap) {
         return;
     }
-    const object = objects[0];
-    const handlerFunc = handlers[object.shape];
-    tiled.log(JSON.stringify(handlerFunc));
-    if (typeof handlerFunc !== 'function') {
-        tiled.alert('This object cannot be converted to DataMaps on the wiki!');
-        return;
-    }
-    const dialog = new Dialog('Editing map marker');
-    dialog.minimumWidth = 600;
-    const languageNames = getLanguageNames();
-    const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
-    languageSelect.visible = languageNames.length > 1;
-    dialog.addNewRow();
-    const handler = handlerFunc(object, dialog);
-    languageSelect.currentIndexChanged.connect(index => {
-        handler.updateLanguage(selectLanguage(index));
+    const tileMap = /** @type {TileMap} */ (asset);
+    tileMap.selectedObjectsChanged.connect(() => {
+        if (!enablePopup.checked || tileMap.selectedObjects.length !== 1) {
+            return;
+        }
+        const object = tileMap.selectedObjects[0];
+        const handlerFunc = handlers[object.shape];
+        tiled.log(JSON.stringify(handlerFunc));
+        if (typeof handlerFunc !== 'function') {
+            tiled.alert('This object cannot be converted to DataMaps on the wiki!');
+            return;
+        }
+        const dialog = new Dialog('Editing map marker');
+        dialog.minimumWidth = 600;
+        const languageNames = getLanguageNames();
+        const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
+        languageSelect.visible = languageNames.length > 1;
+        dialog.addNewRow();
+        const handler = handlerFunc(object, dialog);
+        languageSelect.currentIndexChanged.connect(index => {
+            handler.updateLanguage(selectLanguage(index));
+        });
+        dialog.addButton('OK').clicked.connect(() => {
+            handler.performChanges(selectLanguage(languageSelect.currentIndex));
+            dialog.done(Dialog.Accepted);
+        });
+        dialog.addButton('Cancel').clicked.connect(() => {
+            dialog.done(Dialog.Rejected);
+        });
+        handler.updateLanguage(selectLanguage(languageSelect.currentIndex));
+        dialog.show();
     });
-    dialog.addButton('OK').clicked.connect(() => {
-        handler.performChanges(selectLanguage(languageSelect.currentIndex));
-        dialog.done(Dialog.Accepted);
-    });
-    dialog.addButton('Cancel').clicked.connect(() => {
-        dialog.done(Dialog.Rejected);
-    });
-    handler.updateLanguage(selectLanguage(languageSelect.currentIndex));
-    dialog.show();
-}
+});

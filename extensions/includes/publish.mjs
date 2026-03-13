@@ -189,10 +189,7 @@ function handlePublishError(error) {
     tiled.log(`Error details: ${error.message || error}`);
 }
 
-/**
- * Publishes the current map to the wiki.
- */
-export default function run() {
+const publishAction = tiled.registerAction('PublishToWiki', () => {
     if (!tiled.activeAsset || !tiled.activeAsset.isTileMap) {
         tiled.alert('Please open the map you want to publish first.');
         return;
@@ -205,4 +202,13 @@ export default function run() {
             addToPromise(publishMap(token, summary, map, language), language))
         .then(([response, language]) => handlePublishSuccess(response, language))
         .catch(handlePublishError);
-}
+});
+publishAction.text = 'Publish to wiki';
+publishAction.icon = 'wiki.svg';
+publishAction.shortcut = 'Ctrl+Shift+U';
+
+tiled.extendMenu('File', [
+    {
+        action: 'PublishToWiki'
+    }
+]);
