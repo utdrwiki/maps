@@ -1,31 +1,5 @@
 import { getLanguageNames, selectLanguage } from './language.mjs';
-import { getBoolProperty, getStringProperty } from './util.mjs';
-
-/**
- * 
- * @param {MapObject} object Map object whose property to change
- * @param {string} name Property name
- * @param {TiledObjectPropertyValue} value Property value
- * @param {string} language Current language
- */
-function setProperty(object, name, value, language) {
-    if (!value) {
-        // If a text field is empty or a checkbox is unchecked, no need to set
-        // the property.
-        return;
-    }
-    if (name === 'name' && language === 'en') {
-        object.name = String(value);
-        return;
-    }
-    const propertyName = language === 'en' ? name : `${language}_${name}`;
-    if (language !== 'en' && object.property(name) === value) {
-        // If the English value is the same as the localized value, no need to
-        // set it because it will be inherited.
-        return;
-    }
-    object.setProperty(propertyName, value);
-}
+import { getBoolProperty, getStringProperty, setProperty } from './util.mjs';
 
 /**
  * Creates a popup for point editing.
@@ -203,7 +177,6 @@ tiled.assetOpened.connect(asset => {
         }
         const object = tileMap.selectedObjects[0];
         const handlerFunc = handlers[object.shape];
-        tiled.log(JSON.stringify(handlerFunc));
         if (typeof handlerFunc !== 'function') {
             tiled.alert('This object cannot be converted to DataMaps on the wiki!');
             return;

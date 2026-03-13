@@ -98,6 +98,32 @@ export function getListProperty(object, property, language = 'en') {
 }
 
 /**
+ * Sets a property of a Tiled object.
+ * @param {TiledObject} object Map object whose property to change
+ * @param {string} name Property name
+ * @param {TiledObjectPropertyValue} value Property value
+ * @param {string} language Current language
+ */
+export function setProperty(object, name, value, language) {
+    if (!value) {
+        // If a text field is empty or a checkbox is unchecked, no need to set
+        // the property.
+        return;
+    }
+    if (name === 'name' && language === 'en' && !('isTileMap' in object)) {
+        (/** @type {MapObject} */ (object)).name = String(value);
+        return;
+    }
+    const propertyName = language === 'en' ? name : `${language}_${name}`;
+    if (language !== 'en' && object.property(name) === value) {
+        // If the English value is the same as the localized value, no need to
+        // set it because it will be inherited.
+        return;
+    }
+    object.setProperty(propertyName, value);
+}
+
+/**
  * Adds two Tiled points.
  * @param {point} a First point
  * @param {point} b Second point
