@@ -183,6 +183,7 @@ function getDataMapsMetadata(map, mapName) {
         metadata.interwiki[language] = new InterwikiDataImpl({
             mapName: localizedMapName || mapName
         });
+        metadata.interwiki[language].revision = getNumberProperty(map, 'revision', language) || 0;
     }
     metadata.fileName = mapName;
     metadata.tileHeight = map.tileHeight;
@@ -253,7 +254,9 @@ export function convertTiledToMultipleDataMaps(map, mapName) {
  */
 export function writeMap(map, filePath) {
     const file = new TextFile(filePath, TextFile.WriteOnly);
+    MetadataImpl.unhideSpecialMetadata();
     file.write(`${JSON.stringify(map, null, 4)}\n`);
+    MetadataImpl.hideSpecialMetadata();
     file.commit();
 }
 

@@ -1,6 +1,8 @@
 const CURRENT_VERSION = 0;
 const DEFAULT_TILE_SIZE = 32;
 
+let specialMetadataHidden = true;
+
 /**
  * @implements {Metadata}
  */
@@ -50,6 +52,20 @@ export class MetadataImpl {
     getBackgroundFileName(wikiFileName) {
         return this.backgroundFileNameMap?.[wikiFileName] || wikiFileName;
     }
+    /**
+     * Unhides special metadata which should not be published to the wiki during
+     * serialization.
+     */
+    static unhideSpecialMetadata() {
+        specialMetadataHidden = false;
+    }
+    /**
+     * Hides special metadata which should not be published to the wiki during
+     * serialization.
+     */
+    static hideSpecialMetadata() {
+        specialMetadataHidden = true;
+    }
 }
 
 /**
@@ -64,7 +80,7 @@ export class InterwikiDataImpl {
         /** @type {string} */
         this.mapName = data.mapName;
         /** @type {number} */
-        this.revision = 0;
+        this.revision = data.revision || 0;
     }
     /**
      * Serializes the interwiki data to JSON.
@@ -73,6 +89,7 @@ export class InterwikiDataImpl {
     toJSON() {
         return {
             mapName: this.mapName,
+            revision: specialMetadataHidden ? undefined : this.revision,
         };
     }
 }
