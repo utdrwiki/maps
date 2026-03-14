@@ -17,6 +17,10 @@
 You are filled with the power of not sneezing.</property>
     <property name="multiline" type="bool" value="true"/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description">一阵污浊的风吹过...你强忍住了喷嚏。
+你充满了强忍喷嚏的力量。</property>
+    <property name="zh_name" value="暗世界"/>
+    <property name="zh_page" value="存檔點#存檔點列表|存档点"/>
    </properties>
    <point/>
   </object>
@@ -25,6 +29,8 @@ You are filled with the power of not sneezing.</property>
   <object id="7" name="Eye puzzle" x="6280" y="3647.5">
    <properties>
     <property name="description" value="[[Susie]] and [[Ralsei]] occupy the left and right switches respectively. [[Kris]] must press the middle switch to unlock the way forward."/>
+    <property name="zh_description" value="[[Susie]] 和 [[Ralsei]] 分别占据了左右两个开关。[[Kris]]必须按下中间的开关来解锁前进的路。"/>
+    <property name="zh_name" value="眼睛谜题"/>
    </properties>
    <point/>
   </object>
@@ -32,6 +38,8 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="The [[party]] must simultaneously step on the highlighted pressure plates to unlock the way forward. Here, the order of appearance is ''right'', ''bottom and left'', ''bottom and right''."/>
     <property name="page" value="TV World/Puzzles#The clock puzzle"/>
+    <property name="zh_description" value="[[小队]]必须同时踩下发光眼睛的按钮以解锁前进的路。这里,按钮的排序为右,左下,右下."/>
+    <property name="zh_name" value="钟表谜题"/>
    </properties>
    <point/>
   </object>
@@ -40,72 +48,96 @@ You are filled with the power of not sneezing.</property>
   <object id="2" name="Waking up" x="1040" y="298.5">
    <properties>
     <property name="description" value="After [[Kris]] creates a [[Dark Fountain]] in the [[Dreemurr residence]] living room, they and [[Susie]] wake up in the Couch Cliffs. Susie declares this to be another adventure, and the two continue forward."/>
+    <property name="zh_description" value="在 [[Kris]] 在[[Dreemurr 家]]客厅内创建了一个[[黑暗喷泉]]后,他和[[Susie]]在沙发悬崖上醒来,Susie宣称说这将是另外一场冒险,并且两人继续向前."/>
+    <property name="zh_name" value="醒来"/>
    </properties>
    <point/>
   </object>
   <object id="19" name="Sneeze" x="148.5" y="283">
    <properties>
     <property name="description" value="Wait for about 10 seconds to see and hear &lt;code&gt;[[zapper]]_outline&lt;/code&gt; sneeze once."/>
+    <property name="zh_description" value="等待10秒钟可以看到且听到&lt;code&gt;[[zapper]]_outline&lt;/code&gt;打了一个喷嚏."/>
+    <property name="zh_name" value="打喷嚏"/>
    </properties>
    <point/>
   </object>
   <object id="4" name="Ralsei rejoins the party" x="3961" y="1175.5">
    <properties>
     <property name="description" value="[[Ralsei]] reunites with [[Kris]] and [[Susie]] after sensing the [[Dark World]]'s creation. The three pose together and continue forward."/>
+    <property name="zh_description" value="在感知到[[暗世界]]的创建后,[[Ralsei]] 与 [[Kris]] 和 [[Susie]] 重聚,三人摆了一个姿势然后继续向前."/>
+    <property name="zh_name" value="Ralsei 重新加入小队"/>
    </properties>
    <point/>
   </object>
   <object id="5" name="Talk with Ralsei, part 1" x="6342.5" y="1457.5">
    <properties>
     <property name="description" value="[[Susie]] tells [[Ralsei]] about some of the movies she watched on TV. Ralsei admits that he has never watched a movie before."/>
+    <property name="zh_description" value="[[Susie]] 告诉 [[Ralsei]] 一些有关她在TV上看到的影片.Ralsei承认说他之前从未看过一部影片."/>
+    <property name="zh_name" value="与 Ralsei交谈, part 1"/>
    </properties>
    <point/>
   </object>
   <object id="6" name="Talk with Ralsei, part 2" x="6738" y="3016">
    <properties>
     <property name="description" value="[[Susie]] asks [[Ralsei]] if he would want to watch movies with her and [[Kris]]. Ralsei hesitantly agrees that it would be nice."/>
+    <property name="zh_description" value="[[Susie]] 询问 [[Ralsei]] 他是否想要与她和[[kris]]一起看电影,Ralsei迟疑地认可了,说那会很美好的."/>
+    <property name="zh_name" value="与 Ralsei交谈, part 2"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Talk with Ralsei, part 3" x="7739.5" y="3910">
    <properties>
     <property name="description" value="[[Susie]] suggests that [[Ralsei]] come to [[school]] with her and [[Kris]] so that he could do their homework. Ralsei appreciates the offer."/>
+    <property name="zh_description" value="[[Susie]] 提议让 [[Ralsei]] 和她和[[Kris]]一起来学校，这样他就可以帮他们做作业了。Ralsei 赞赏了这个建议。."/>
+    <property name="zh_name" value="与 Ralsei交谈, part 3"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Talk with Ralsei, part 4" x="9579" y="5000">
    <properties>
     <property name="description" value="[[Susie]] suggests that [[Ralsei]] should go to the Festival with her and [[Kris]]."/>
+    <property name="zh_description" value="[[Susie]] 提议 [[Ralsei]] 应该与她和[[Kris]]一起去过节."/>
+    <property name="zh_name" value="与 Ralsei交谈, part 4"/>
    </properties>
    <point/>
   </object>
   <object id="12" name="Say cheese" x="9879" y="7973.5">
    <properties>
     <property name="description" value="A [[Shuttah]] hand plays a camera sound effect when the [[party]] slides past."/>
+    <property name="zh_description" value="当[[小队]]滑过时，一只[[Shuttah]]的手发出了一声照相机音效。"/>
+    <property name="zh_name" value="说 茄子"/>
    </properties>
    <point/>
   </object>
   <object id="18" name="Talk with Ralsei, part 5" x="10577.5" y="9529">
    <properties>
     <property name="description" value="[[Ralsei]] says that he would love to go to the Festival."/>
+    <property name="zh_description" value="[[Ralsei]] 说他会喜欢去节日的。"/>
+    <property name="zh_name" value="与 Ralsei交谈, part 5"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Talk with Ralsei, part 6" x="11699" y="10000">
    <properties>
     <property name="description" value="[[Ralsei]] explains that he is appreciative of [[Susie]]'s offer. He starts saying something else, but is hesitant to continue."/>
+    <property name="zh_description" value="[[Ralsei]] 解释说他赞赏[[Susie]]的邀请。他开始转移话题，但是犹豫不决地继续。"/>
+    <property name="zh_name" value="与 Ralsei交谈, part 6"/>
    </properties>
    <point/>
   </object>
   <object id="14" name="Talk with Ralsei, part 7" x="12818" y="10538">
    <properties>
     <property name="description" value="[[Ralsei]] explains that, due to the nature of being a [[Darkner]], he cannot enter the [[Light World]] with [[Kris]] and [[Susie]]. He explains that Darkners are simply inanimate objects given form by the [[Dark Fountain]]s, and the [[Dark World]]s are illusions brought about by removing light. Susie objects to Ralsei's claim that Darkners are not real, reaffirming their friendship."/>
+    <property name="zh_description" value="[[Ralsei]] 解释道，由于他是一个[[暗之民]]，他不能跟着[[kris]]和[[Susie]]一起进入光世界。他还解释说，暗之民仅仅是由[[黑暗喷泉]]赋予了形体的无生命物品，而暗世界是将光移除后的幻想。Susie反对Ralsei关于暗之民不是真实的的断言，并重申了他们的友谊。"/>
+    <property name="zh_name" value="与 Ralsei交谈, part 7"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Tenna's introduction" x="14553" y="10319.5">
    <properties>
     <property name="description" value="[[Tenna]] interrupts [[Susie]] and [[Ralsei]]'s conversation and introduces himself as a game show host. He declares his desire to subject the [[party]] to his games."/>
+    <property name="zh_description" value="[[Tenna]] 打断了 [[Susie]] 和 [[Ralsei]]的交谈并且开始说明自己是一位游戏节目主持人。他表现出对于让[[小队]]加入他的游戏的渴望。"/>
+    <property name="zh_name" value="Tenna的介绍"/>
    </properties>
    <point/>
   </object>
@@ -115,6 +147,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A sleeping couch. If [[Kris]] and [[Susie]] walk past the couch and come back, the couch wakes up and walks to the left. If the [[player]] has a completed [[Chapter 3]] SAVE file, Kris can sleep on the couch; this progresses the plot directly to the first round of ''[[The Legend of Tenna]]''."/>
     <property name="page" value="Couch"/>
+    <property name="zh_description" value="一个用来睡觉的沙发.如果[[kris]]和[[Susie]]离开沙发(让沙发处于屏幕外)然后再回来,沙发会醒来并且慢慢的往左边挪.如果玩家有一份[[第三章]]的已完成存档,kris可以在沙发上睡觉,这会将剧情直接推进到''[[Tenna 传说]]''第一轮之前."/>
+    <property name="zh_name" value="沙发"/>
+    <property name="zh_page" value="沙发"/>
    </properties>
    <point/>
   </object>
@@ -122,6 +157,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -129,6 +167,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -136,6 +177,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -143,6 +187,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -150,6 +197,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -157,6 +207,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -164,6 +217,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="A Dust Pile. Can be destroyed when interacted with."/>
     <property name="page" value="Dust Pile"/>
+    <property name="zh_description" value="一个 灰尘堆.可以通过与其交互来摧毁."/>
+    <property name="zh_name" value="灰尘堆"/>
+    <property name="zh_page" value="灰尘堆"/>
    </properties>
    <point/>
   </object>
@@ -171,6 +227,7 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="Susie puts forth the idea that [[Ralsei]] could do any puzzles that she and [[Kris]] may find in the [[Light World]]."/>
     <property name="page" value="Susie"/>
+    <property name="zh_description" value="Susie 提出[[Ralsei]]可以解决她和[[Kris]]在[[光世界]]可能找到的任何问题."/>
    </properties>
    <point/>
   </object>
@@ -178,6 +235,7 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="Ralsei directs [[Kris]] to the switch in the middle and advises them to press it."/>
     <property name="page" value="Ralsei"/>
+    <property name="zh_description" value="Ralsei 指导 [[Kris]] 打开中间的开关,并建议他按下它."/>
    </properties>
    <point/>
   </object>
@@ -187,6 +245,9 @@ You are filled with the power of not sneezing.</property>
    <properties>
     <property name="description" value="Treasure chest containing 10 POINTs."/>
     <property name="page" value="POINT"/>
+    <property name="zh_description" value="一个包含10点数的宝箱."/>
+    <property name="zh_name" value="10 点数"/>
+    <property name="zh_page" value="点数"/>
    </properties>
    <point/>
   </object>

@@ -21,19 +21,19 @@
  <objectgroup id="5" name="vendors">
   <object id="235" name="Cap'n" x="5628" y="6894">
    <properties>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
   <object id="236" name="K_K" x="5709" y="6883">
    <properties>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
   <object id="295" name="Junk Shop" x="5625" y="4632">
    <properties>
-    <property name="page" value="Vendors"/>
+    <property name="page" value="Vendor"/>
    </properties>
    <point/>
   </object>
@@ -929,13 +929,13 @@ Spin counterclockwise (hold right) while collecting 5 teacup bullets to go upwar
   </object>
   <object id="31" name="Blue checkmark" x="6547" y="5104.5">
    <properties>
-    <property name="page" value="Blue Checkmark"/>
+    <property name="page" value="Blue checkmark"/>
    </properties>
    <point/>
   </object>
   <object id="24" name="Blue checkmark" x="6701" y="5396">
    <properties>
-    <property name="page" value="Blue Checkmark"/>
+    <property name="page" value="Blue checkmark"/>
    </properties>
    <point/>
   </object>

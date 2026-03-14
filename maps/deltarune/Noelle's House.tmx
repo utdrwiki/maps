@@ -43,6 +43,8 @@
   <object id="24" name="Kris attacking SOUL" x="420" y="111">
    <properties>
     <property name="description" value="While [[Noelle]] and [[Susie]] talk and wait for any loud noise, [[Kris]] attacks the [[SOUL]] to keep it away from the guitar. They stop attacking the SOUL after Noelle and Susie stop talking."/>
+    <property name="zh_description" value="当 [[Holiday 宅邸|Noelle]] 和 [[Susie]] 在交谈并且等待一些响声的时候,[[kris]]为了让灵魂远离吉他而拿棒球棒攻击灵魂."/>
+    <property name="zh_name" value="Kris 攻击灵魂."/>
    </properties>
    <point/>
   </object>

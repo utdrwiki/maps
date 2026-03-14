@@ -17,6 +17,10 @@
 * Goulden Sam
 * Green Room</property>
     <property name="page" value="Shortcut door"/>
+    <property name="zh_description">Shortcut door in the TV World Entrance. Unlocks after reaching the [[休息室]]. It can be used to travel to the following locations:
+* Goulden Sam
+* Green Room</property>
+    <property name="zh_name" value="TV World Entrance shortcut door"/>
    </properties>
    <point/>
   </object>
@@ -26,6 +30,10 @@
 * TV World entrance
 * Green Room</property>
     <property name="page" value="Shortcut door"/>
+    <property name="zh_description">Shortcut door in the Goulden Sam area. Unlocks after reaching the [[休息室]]. It can be used to travel to the following locations:
+* TV World entrance
+* Green Room</property>
+    <property name="zh_name" value="Goulden Sam shortcut door"/>
    </properties>
    <point/>
   </object>
@@ -59,6 +67,8 @@ And... remember [[Susie]] and [[Ralsei]]'s S-Action and R-Action, too!</property
   <object id="3" name="TV World - Entrance" x="6484.07" y="975.425">
    <properties>
     <property name="description" value="SAVE Point in the TV World Entrance."/>
+    <property name="zh_description" value="在TV世界入口的存档点."/>
+    <property name="zh_name" value="TV 世界 - 入口"/>
    </properties>
    <point/>
   </object>
@@ -67,6 +77,9 @@ And... remember [[Susie]] and [[Ralsei]]'s S-Action and R-Action, too!</property
     <property name="description">You are greeted by yet another prisonlike location.
 You question why your adventures feature so many of these.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(你来到了又一个类似监狱的地方。)
+(你不禁疑惑为何总会在冒险中遇到这类场景。)</property>
+    <property name="zh_name" value="TV 世界 - [[Goulden Sam]]"/>
    </properties>
    <point/>
   </object>
@@ -81,6 +94,19 @@ You are filled with the power of a crowd cheering for noone.
 '''Shadowguy LOST:''' It's a concert, but no one has shown up.
 You question if a concert can be a concert if no one is there.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">'''[如果 Shadowguy 已被全招募]'''
+(这是一场仅由萨克斯管组成的爵士音乐会。)
+(你充满了所有人同时独奏的力量。)
+'''[如果 Shadowguy 未被全招募]'''
+(这是一场没有人奏乐的音乐会。)
+(你充满了为没有人的舞台喝彩的力量。)
+'''[未使用]'''
+(这是一场所有人都在上班的音乐会。)
+(你'间接'充满了上班没空来音乐会的力量。)
+'''[如果 Shadowguy 未被全招募，且在本章的超过5场遭遇战中使用了暴力]'''
+(这是一场无人出席的音乐会。)
+(你不禁疑惑，没人的音乐会也算得上是音乐会吗？)</property>
+    <property name="zh_name" value="TV 世界 - 演唱会"/>
    </properties>
    <point/>
   </object>
@@ -89,6 +115,9 @@ You question if a concert can be a concert if no one is there.</property>
     <property name="description">The incense of hot snacks and spicy flavors assaults you.
 You are filled with the power of the primal invention of fire.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(热腾腾食物与火辣辣香料的芬芳扑鼻而来。)
+(你充满了发明原始之火的力量。)</property>
+    <property name="zh_name" value="TV 世界 - 厨艺秀"/>
    </properties>
    <point/>
   </object>
@@ -97,6 +126,9 @@ You are filled with the power of the primal invention of fire.</property>
     <property name="description">You hear the audience whispering in awe at your presence.
 You are filled with the power of undeserved fame.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">(因为你的出现，观众们敬畏地窃窃私语。)
+(你充满了名不副实的力量。)</property>
+    <property name="zh_name" value="TV World - Before the Show"/>
    </properties>
    <point/>
   </object>
@@ -108,6 +140,10 @@ You are filled with the power of undeserved fame.</property>
 * WHAT'S THE REWARD FOR C-RANK? (Answer: [[Watercooler|COOLER]])
 * WHO RUNS THE [[Green Room|GREEN ROOM]] CONCESSIONS? (Answer: RAMB)</property>
     <property name="page" value="TV World/Puzzles#The first spontaneous quiz"/>
+    <property name="zh_description">The [[party]] is met with a pop quiz and must answer two questions to continue forward. Here, the questions are as follows:
+* WHAT'S THE REWARD FOR C-RANK? (Answer: [[冷水机|COOLER]])
+* WHO RUNS THE [[休息室|GREEN ROOM]] CONCESSIONS? (Answer: RAMB)</property>
+    <property name="zh_name" value="Spontaneous quiz 1"/>
    </properties>
    <point/>
   </object>
@@ -232,6 +268,8 @@ You are filled with the power of undeserved fame.</property>
   <object id="2" name="Escaping capture" x="4251.25" y="993.246">
    <properties>
     <property name="description" value="The [[party]] ends up here after escaping [[Tenna]]'s capture. From there, they make their way back to the [[Green Room]] while evading Tenna and his employees."/>
+    <property name="zh_description" value="The [[party]] ends up here after escaping [[Tenna]]'s capture. From there, they make their way back to the [[休息室]] while evading Tenna and his employees."/>
+    <property name="zh_name" value="Escaping capture"/>
    </properties>
    <point/>
   </object>
@@ -246,6 +284,8 @@ You are filled with the power of undeserved fame.</property>
    <properties>
     <property name="description" value="The set for the Monster Movie minigame. The [[party]] can play this minigame in the [[Green Room]] after round 1 and round 2 of ''[[TV Time]]''."/>
     <property name="page" value="Monster Movie"/>
+    <property name="zh_description" value="The set for the Monster Movie minigame. The [[party]] can play this minigame in the [[休息室]] after round 1 and round 2 of ''[[TV Time]]''."/>
+    <property name="zh_name" value="Monster Movie set"/>
    </properties>
    <point/>
   </object>
@@ -324,6 +364,8 @@ You are filled with the power of undeserved fame.</property>
   <object id="10" name="Lancer" x="9027.24" y="287">
    <properties>
     <property name="description" value="[[Lancer]] occupies a console. He explains his job to the [[party]], and he can take back any [[Lancer Controller]]s in their [[inventory]]. He turns to stone after reaching the [[Green Room]]."/>
+    <property name="zh_description" value="[[Lancer]] occupies a console. He explains his job to the [[party]], and he can take back any [[Lancer Controller]]s in their [[inventory]]. He turns to stone after reaching the [[休息室]]."/>
+    <property name="zh_name" value="Lancer"/>
    </properties>
    <point/>
   </object>
@@ -462,6 +504,8 @@ You are filled with the power of undeserved fame.</property>
   <object id="162" name="Zapper" x="2604.87" y="878.178">
    <properties>
     <property name="description" value="Explains the ranking system based on the [[party]]'s performance in [[Tenna]]'s games. He also mentions a [[Green Room#S-Rank Changing Room|secret room]] that can be accessed by achieving S-Rank."/>
+    <property name="zh_description" value="Explains the ranking system based on the [[party]]'s performance in [[Tenna]]'s games. He also mentions a [[休息室#S-Rank Changing Room|secret room]] that can be accessed by achieving S-Rank."/>
+    <property name="zh_name" value="Zapper"/>
    </properties>
    <point/>
   </object>
@@ -474,6 +518,8 @@ You are filled with the power of undeserved fame.</property>
   <object id="164" name="Ramb" x="2952.21" y="967.182">
    <properties>
     <property name="description" value="Asks [[Kris]] to talk to him in the [[Green Room]]."/>
+    <property name="zh_description" value="Asks [[Kris]] to talk to him in the [[休息室]]."/>
+    <property name="zh_name" value="Ramb"/>
    </properties>
    <point/>
   </object>
@@ -485,7 +531,7 @@ You are filled with the power of undeserved fame.</property>
   </object>
   <object id="166" name="Tenna" x="3222.41" y="839.006">
    <properties>
-    <property name="description" value="Asks the [[party]] if they are prepared. If they answer yes, he transports them to the game room, where they play the first round of [''[TV Time]]''."/>
+    <property name="description" value="Asks the [[party]] if they are prepared. If they answer yes, he transports them to the game room, where they play the first round of ''[[TV Time]]''."/>
    </properties>
    <point/>
   </object>
@@ -521,6 +567,8 @@ You are filled with the power of undeserved fame.</property>
    <properties>
     <property name="description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[Watercooler]]."/>
     <property name="page" value="Curtain NPC"/>
+    <property name="zh_description" value="An unseen NPC behind the shower curtain. They react to how the [[party]] defeated the [[冷水机]]."/>
+    <property name="zh_name" value="Curtain NPC"/>
    </properties>
    <point/>
   </object>
@@ -635,6 +683,8 @@ You are filled with the power of undeserved fame.</property>
    <properties>
     <property name="description" value="Treasure chest containing a [[Watercooler]] as well as 500 POINTs. If the static Watercooler was not fought, the Watercooler in the chest attacks instead."/>
     <property name="page" value="POINT"/>
+    <property name="zh_description" value="Treasure chest containing a [[冷水机]] as well as 500 POINTs. If the static Watercooler was not fought, the Watercooler in the chest attacks instead."/>
+    <property name="zh_name" value="POINTs"/>
    </properties>
    <point/>
   </object>
@@ -712,6 +762,9 @@ You are filled with the power of undeserved fame.</property>
    <properties>
     <property name="description" value="Static encounter against the Watercooler. If the party attempts to leave this room, they are blocked off by more Watercoolers that gradually converge on them as they leave and re-enter."/>
     <property name="page" value="Watercooler"/>
+    <property name="zh_description" value="Static encounter against the 冷水机. If the party attempts to leave this room, they are blocked off by more 冷水机s that gradually converge on them as they leave and re-enter."/>
+    <property name="zh_name" value="冷水机"/>
+    <property name="zh_page" value="冷水机"/>
    </properties>
    <point/>
   </object>
@@ -741,6 +794,8 @@ You are filled with the power of undeserved fame.</property>
    <properties>
     <property name="description" value="The main hub area of TV World. The [[party]] is transported here after each round of ''[[TV Time]]''."/>
     <property name="page" value="Green Room"/>
+    <property name="zh_name" value="休息室"/>
+    <property name="zh_page" value="休息室"/>
    </properties>
    <point/>
   </object>

@@ -1771,6 +1771,9 @@ Cela vous emplit de détermination.</property>
   <object id="159" name="Snoring guests" x="12720" y="820">
    <properties>
     <property name="description" value="Are seen snoring in the inn to the tune of ''[[Determination (Soundtrack)|Determination]]''."/>
+    <property name="fr_description" value="Vus ronflants le thème ''[[Determination (Bande Originale)|Determination]]'' dans le gîte."/>
+    <property name="fr_name" value="Invités Ronflants"/>
+    <property name="fr_page" value="Invités ronflants"/>
     <property name="page" value="Snoring guests"/>
    </properties>
    <point/>

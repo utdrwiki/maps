@@ -14,6 +14,8 @@
   <object id="1" name="Sign" x="90" y="83">
    <properties>
     <property name="description" value="''(When you step into the light, you'll return to where you were before.)''"/>
+    <property name="zh_description" value="“（当你踏入光芒时，你将回到原来的位置。）”"/>
+    <property name="zh_name" value="告示牌"/>
    </properties>
    <point/>
   </object>
@@ -23,6 +25,9 @@
    <properties>
     <property name="description" value="''The power of [The $!$? Squad/The Lancer Fan Club/The Fun Gang] shines within you.''"/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description" value="&quot;$!?$小分队/Lancer粉丝俱乐部/快乐帮 的力量在你的内心闪耀。&quot;"/>
+    <property name="zh_name" value="平原 - 巨大棋盘"/>
+    <property name="zh_page" value="存檔點"/>
    </properties>
    <point/>
   </object>
@@ -30,6 +35,9 @@
    <properties>
     <property name="description" value="SAVE Point just before the [[K. Round]] fight."/>
     <property name="page" value="SAVE Point"/>
+    <property name="zh_description" value="[[K. Round]]战前的存档点。"/>
+    <property name="zh_name" value="平原 - 巨大棋盘2"/>
+    <property name="zh_page" value="存檔點"/>
    </properties>
    <point/>
   </object>
@@ -38,18 +46,24 @@
   <object id="7" name="Light path puzzle 1" x="224" y="130.5">
    <properties>
     <property name="description" value="A light path moves down the board one row at a time before cycling back to the top. Touching the light path at any time will send the [[party]] back to the beginning of the room."/>
+    <property name="zh_description" value="一横排发光的方块从上到下循环移动。任何时候碰到发光的方块都会将[[小隊]]送回到房间起点。"/>
+    <property name="zh_name" value="发光谜题1"/>
    </properties>
    <point/>
   </object>
   <object id="8" name="Light path puzzle 2" x="2128.5" y="130">
    <properties>
     <property name="description" value="A harder light path with only two rows to move on, forcing the protagonists to alternate between them while the path is inactive in order to make it through."/>
+    <property name="zh_description" value="一条更难的路，两横排在交替闪烁，玩家只能趁其中一横排未发光时通过。"/>
+    <property name="zh_name" value="发光谜题2"/>
    </properties>
    <point/>
   </object>
   <object id="9" name="Diagonal light path puzzle" x="3474" y="149.5">
    <properties>
     <property name="description" value="The final light path puzzle featuring diagonal columns which move from right to left."/>
+    <property name="zh_description" value="最后一个发光谜题，为一列对角线从右往左闪烁。"/>
+    <property name="zh_name" value="对角发光谜题"/>
    </properties>
    <point/>
   </object>
@@ -59,18 +73,25 @@
    <properties>
     <property name="description" value="[[Lancer]] confronts the heroes, threatening them and brandishing a bucket to put their blood in. He asks [[Susie]] for her thoughts on his attempts at being scary before admitting that in the excitement he forgot to bring any enemies to attack them with. After everyone realizes that the group does not actually have a title, they hold a vote to determine their official name before Lancer departs."/>
     <property name="page" value="Party#Naming"/>
+    <property name="zh_description" value="[[Lancer]]面对英雄们，威胁他们要把他们揍得血肉模糊，并且用桶盛他们的血。他向[[Susie]]寻求Susie对他变得“可怕”的看法，随后承认他太兴奋以至于忘了带手下攻击他们。然后所有人都意识到小队还没有一个正式名称，于是他们投票给小队取名。随后Lancer离开。"/>
+    <property name="zh_name" value="给小队取名"/>
+    <property name="zh_page" value="小隊#命名"/>
    </properties>
    <point/>
   </object>
   <object id="13" name="Lancer's warning" x="5775.5" y="115.5">
    <properties>
     <property name="description" value="[[Lancer]] warns that something extremely dangerous is blocking the way out for both him and the [[party]], which is later revealed to be [[C. Round]] before it turns into its powered-up form."/>
+    <property name="zh_description" value="[[Lancer]]警告小队前方有令人毛骨悚然的东西，连他自己的吓得不敢回家了。&quot;那个东西&quot;指的是强化前的[[C. Round]]。"/>
+    <property name="zh_name" value="Lancer的警告"/>
    </properties>
    <point/>
   </object>
   <object id="15" name="Susie defects" x="5999" y="150">
    <properties>
     <property name="description" value="[[Ralsei]] chastises [[Susie]] for her aggressive behavior towards [[K. Round]] and the other [[Darkner]]s the group previously encountered, telling her to start acting more like a hero. Susie decides to team up with [[Lancer]] instead, no longer being in the [[party]] until the protagonists complete the [[Forest]] area."/>
+    <property name="zh_description" value="[[Ralsei]]批评了[[Susie]]对[[K. Round]]以及其他遇到的[[暗之民]]的攻击行为，并让她表现得像一个英雄一样。Susie反而决定与[[Lancer]]一队，并且直到主角们完成了[[森林]]区域才重新加入[[小隊]]。"/>
+    <property name="zh_name" value="Susie defects"/>
    </properties>
    <point/>
   </object>
@@ -80,6 +101,8 @@
    <properties>
     <property name="description" value="Tells the [[party]] that despite their appearance, the [[Ponmen]] are simply following [[King]]'s orders, and that the Board used to have its own boss before they were forced to serve King. Interacting again will have him properly introduce himself, and clarify that his &quot;eyes&quot; are actually nostrils (which he can still see out of)."/>
     <property name="page" value="Mr. Elegance"/>
+    <property name="zh_description" value="告诉[[小隊]]，[[Ponman]]虽然可怕，但它们只是在遵照[[国王]]的命令行事。再次与他互动会使他自我介绍，并且说他的“眼睛”其实是鼻孔（虽说他是用鼻孔看东西的）"/>
+    <property name="zh_name" value="Mr. Elegance"/>
    </properties>
    <point/>
   </object>
@@ -87,6 +110,8 @@
    <properties>
     <property name="description" value="Clarifies that he and Mr. Elegance have higher faculty than the [[Ponman|Ponmen]], and that he would not bow down to [[King]]'s whims unless asked. If interacted with again, he will assure that everyone will express their support over the [[party]]'s desire to take on King, as long as he does not need to participate."/>
     <property name="page" value="Mr. Society"/>
+    <property name="zh_description" value="说他与Mr. Elegance不像那些单纯的[[Ponman]]，他们的行动完全由自己做主，并且绝不会向[[国王]]奴颜婢膝，除非被逼。如果再次与他互动，他会说，他相信所有人都会支持[[小隊]]推翻国王的愿望，只要别把他卷进去。"/>
+    <property name="zh_name" value="Mr. Society"/>
    </properties>
    <point/>
   </object>
@@ -96,6 +121,8 @@
    <properties>
     <property name="description" value="Enemy [[encounter]] against two Ponmen."/>
     <property name="page" value="Ponman"/>
+    <property name="zh_description" value="与两个Ponman的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Ponman"/>
    </properties>
    <point/>
   </object>
@@ -103,6 +130,8 @@
    <properties>
     <property name="description" value="Enemy [[encounter]] against three Ponmen."/>
     <property name="page" value="Ponman"/>
+    <property name="zh_description" value="与三个Ponman的[[遭遇戰]]。"/>
+    <property name="zh_name" value="Ponman"/>
    </properties>
    <point/>
   </object>
@@ -110,6 +139,8 @@
    <properties>
     <property name="description" value="Miniboss battle against K. Round."/>
     <property name="page" value="K. Round"/>
+    <property name="zh_description" value="与K. Round的小头目战"/>
+    <property name="zh_name" value="K. Round"/>
    </properties>
    <point/>
   </object>
@@ -119,6 +150,9 @@
    <properties>
     <property name="description" value="Walking to the left will let the [[party]] backtrack into the Field."/>
     <property name="page" value="Field"/>
+    <property name="zh_description" value="向左走会使[[小隊]]回到平原"/>
+    <property name="zh_name" value="平原"/>
+    <property name="zh_page" value="平原"/>
    </properties>
    <point/>
   </object>
@@ -126,6 +160,9 @@
    <properties>
     <property name="description" value="Walking to the right progresses the story into the Forest."/>
     <property name="page" value="Forest"/>
+    <property name="zh_description" value="向右走会将故事推进到森林"/>
+    <property name="zh_name" value="森林"/>
+    <property name="zh_page" value="森林"/>
    </properties>
    <point/>
   </object>

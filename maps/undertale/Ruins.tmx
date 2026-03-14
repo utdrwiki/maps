@@ -459,6 +459,7 @@ Cela vous emplit de détermination.</property>
     <property name="fr_name" value="Puzzle du Rocher 1"/>
     <property name="fr_page" value="Ruines/Puzzles#Puzzle du Rocher"/>
     <property name="page" value="Ruins/Puzzles#The Rock Puzzle"/>
+    <property name="zh_description" value="主角必須推動這塊石頭到壓力板上才能解鎖前方的道路。"/>
     <property name="zh_name" value="石頭謎題 #1"/>
     <property name="zh_page" value="廢墟/謎題#石頭謎題"/>
    </properties>
@@ -706,7 +707,8 @@ Cela vous emplit de détermination.</property>
     <property name="fr_description" value="Ce [[Croâpaud]] apprend au protagoniste comment mettre le jeu en plein écran."/>
     <property name="fr_name" value="Croâpaud"/>
     <property name="zh_description">這隻 [[Froggit]] 會教主角如何將遊戲視窗切換為全螢幕模式。
-在[[版本差異|遊戲機版本]]的 ''[[Undertale]]'' 中改教主角邊界。</property>
+在[[版本差異|遊戲機版本]]的 ''[[Undertale]]'' 中改提及[[設定目錄#邊框|邊框]]。</property>
+    <property name="zh_name" value="Froggit"/>
     <property name="zh_page" value="Froggit#主要故事"/>
    </properties>
    <point/>

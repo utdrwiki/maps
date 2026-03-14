@@ -23,6 +23,17 @@ The final act draws near.
 The light, which only you can see...
 A strange calm washes over you.</property>
     <property name="multiline" type="bool" value="true"/>
+    <property name="zh_description">'''[开始]'''
+(一阵穿堂风吹过，你感受到寒夜的降临。)
+ (但事实上…这从未困扰过你。)
+ '''[在与 [[Tenna]] 战斗前]'''
+ (寒風呼啸，仿佛连其本身都在畏惧黑夜。)
+(终幕将至。)
+ '''[在与 Tenna战斗后]'''
+ (光芒沐浴著你的手…)
+ (這是只有你能看见的光芒。)
+(你感到一股不可思议的安宁感。)</property>
+    <property name="zh_name" value="寒冷之地"/>
    </properties>
    <point/>
   </object>

@@ -8,30 +8,35 @@
   <image source="images/Hometown map Chapter 4 night.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4 night.png"/>
+   <property name="zh_name" value="第四章深夜"/>
   </properties>
  </imagelayer>
  <imagelayer id="16" name="Chapter 4 evening" offsetx="600" offsety="0">
   <image source="images/Hometown map Chapter 4 evening.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4 evening.png"/>
+   <property name="zh_name" value="第四章傍晚"/>
   </properties>
  </imagelayer>
  <imagelayer id="15" name="Chapter 4">
   <image source="images/Hometown map Chapter 4.png" width="3360" height="4267"/>
   <properties>
    <property name="image" value="Hometown map Chapter 4.png"/>
+   <property name="zh_name" value="第四章"/>
   </properties>
  </imagelayer>
  <imagelayer id="12" name="Chapter 2" offsetx="600" offsety="0">
   <image source="images/Hometown map (Chapter 2).png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map (Chapter 2).png"/>
+   <property name="zh_name" value="第二章"/>
   </properties>
  </imagelayer>
  <imagelayer id="2" name="Chapter 1" offsetx="600" offsety="0">
   <image source="images/Hometown map.png" width="2760" height="4267"/>
   <properties>
    <property name="image" value="Hometown map.png"/>
+   <property name="zh_name" value="第一章"/>
   </properties>
  </imagelayer>
  <objectgroup id="8" name="annotations">
@@ -188,6 +193,8 @@
    <properties>
     <property name="description" value="Monster Kid is glad to see [[Kris]] has survived [[Susie]]. He recalls playing handball with [[Snowy]] and [[Jockington]], and Susie had watched them play, and also caused [[Undyne]] to trounce them in handball. Interacting again causes Monster Kid to notice Kris looks annoyed."/>
     <property name="page" value="Monster Kid"/>
+    <property name="zh_name" value="怪物小孩"/>
+    <property name="zh_page" value="怪物小孩"/>
    </properties>
    <point/>
   </object>
@@ -403,6 +410,8 @@
    <properties>
     <property name="description" value="Suggests that [[Kris]] should come to [[School]] sooner next time, and they state they would rather be partnerless than be with [[Snowy]]"/>
     <property name="page" value="Monster Kid"/>
+    <property name="zh_name" value="怪物小孩"/>
+    <property name="zh_page" value="怪物小孩"/>
    </properties>
    <point/>
   </object>

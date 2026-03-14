@@ -392,12 +392,16 @@
   <object id="10" name="Shadowguy" x="1648.33" y="3467.76">
    <properties>
     <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs. After five pictures are taken, the Shadowguy is replaced with a bunny-eared Shadowguy that awards 25 POINTs if a picture is taken of it."/>
+    <property name="zh_description" value="一个[[Shadowguy]]随机从树的后方出现并向小队射击子弹.拍到一个子弹奖励1[[点数]],拍到一个Shadowguy奖励10点数,若已获得了5张特级相片,Shadowguy会被换为带着戴着兔耳的Shadowguy,拍到一个奖励25点."/>
+    <property name="zh_name" value="Shadowguy"/>
    </properties>
    <point/>
   </object>
   <object id="11" name="Shadowguy" x="1648.72" y="2987.75">
    <properties>
     <property name="description" value="A [[Shadowguy]] pops out from a random tree and shoots at the [[party]]. Taking a picture of the bullet awards 1 [[POINT]], and taking a picture of the Shadowguy awards 10 POINTs."/>
+    <property name="zh_description" value="一个[[Shadowguy]]随机从树的后方出现并向小队射击子弹.拍到一个子弹奖励1[[点数]]."/>
+    <property name="zh_name" value="Shadowguy"/>
    </properties>
    <point/>
   </object>
@@ -406,6 +410,8 @@
   <object id="12" name="Pippins" x="1408.02" y="3193.62">
    <properties>
     <property name="description" value="Enemy encounter consisting of two [[Pippins]]."/>
+    <property name="zh_description" value="两只[[Pippins]]的遭遇战."/>
+    <property name="zh_name" value="Pippins"/>
    </properties>
    <point/>
   </object>
@@ -413,12 +419,16 @@
    <properties>
     <property name="description" value="Attacks the party after obtaining [[Elnina (The Legend of Tenna)|Elnina]]/[[Lanino (The Legend of Tenna)|Lanino]]."/>
     <property name="page" value="Shuttah"/>
+    <property name="zh_description" value="在小队获得Elnina/Lanino后攻击小队."/>
+    <property name="zh_name" value="Shuttah"/>
    </properties>
    <point/>
   </object>
   <object id="37" name="Pippins" x="2927.9" y="3495.28">
    <properties>
     <property name="description" value="Enemy encounter consisting of three [[Pippins]]."/>
+    <property name="zh_description" value="三只[[Pippins]]的遭遇战."/>
+    <property name="zh_name" value="Pippins"/>
    </properties>
    <point/>
   </object>
