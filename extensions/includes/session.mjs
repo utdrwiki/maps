@@ -1,5 +1,6 @@
 const ACCESS_TOKEN_PROPERTY = 'wikiAccessToken';
 const LAST_LANGUAGE_PROPERTY = 'wikiLastLanguage';
+const DISABLE_UPDATE_CHECKS = 'wikiDisableUpdateChecks';
 
 /**
  * Retrieves the path to the Tiled session file.
@@ -75,3 +76,18 @@ export function storeLastLanguage(language) {
     setSessionProperty(LAST_LANGUAGE_PROPERTY, language);
 }
 
+/**
+ * Checks if automatic update checks are disabled.
+ * @returns {boolean} True if automatic update checks are disabled
+ */
+export function areAutoUpdateChecksDisabled() {
+    return getSessionProperty(DISABLE_UPDATE_CHECKS) === true;
+}
+
+/**
+ * Sets whether automatic update checks are disabled.
+ * @param {boolean} disabled True to disable automatic update checks
+ */
+export function storeAutoUpdateChecksDisabled(disabled) {
+    setSessionProperty(DISABLE_UPDATE_CHECKS, disabled);
+}

@@ -1,3 +1,4 @@
 *.png
 *.tiled-session
+bundle.json
 node_modules
