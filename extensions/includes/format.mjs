@@ -38,13 +38,30 @@ function findMarkerId(layer, parentNames, name, markers) {
 }
 
 /**
+ * Marks languages as used based on the properties of a map object.
+ * @param {TiledObject} object Object whose properties to check
+ * @param {string[]} properties Property names to check
+ * @param {Set<string>} usedLanguages Used languages so far
+ */
+function markUsedLanguages(object, properties, usedLanguages) {
+    for (const language of getLanguageCodes()) {
+        for (const property of properties) {
+            if (object.property(`${language}_${property}`)) {
+                usedLanguages.add(language);
+            }
+        }
+    }
+}
+
+/**
  * Converts a single layer from a Tiled map to DataMaps format.
  * @param {Layer} layer Layer to convert
  * @param {DataMap} datamap DataMap that the layer belongs to
  * @param {Set<number>} convertedLayers Already converted layers
+ * @param {Set<string>} usedLanguages Languages used in the map so far
  * @param {string} language Language to use for localized properties
  */
-function convertLayer(layer, datamap, convertedLayers, language) {
+function convertLayer(layer, datamap, convertedLayers, usedLanguages, language) {
     let offset = { x: 0, y: 0 };
     let parent = layer.parentLayer;
     const /** @type {string[]} */ parentNames = [];
@@ -103,12 +120,14 @@ function convertLayer(layer, datamap, convertedLayers, language) {
             }
             datamap.custom.backgroundFileNameMap[image] = fileName;
         }
+        markUsedLanguages(layer, ['name', 'image'], usedLanguages);
     } else if (layer.isObjectLayer) {
         const /** @type {Marker[]} */ markers = [];
         const objectLayer = /** @type {ObjectGroup} */ (layer);
         for (const obj of objectLayer.objects) {
             const {x, y} = addPoints(obj.pos, offset);
             const name = getStringProperty(obj, 'name', language) || obj.name;
+            markUsedLanguages(obj, ['name'], usedLanguages);
             if (obj.shape === MapObject.Point) {
                 const id = findMarkerId(layer, parentNames, obj.name, markers);
                 let description = getStringProperty(obj, 'description', language);
@@ -124,7 +143,14 @@ function convertLayer(layer, datamap, convertedLayers, language) {
                     isWikitext: !getBoolProperty(obj, 'plain', language),
                     x,
                     y
-                })
+                });
+                markUsedLanguages(obj, [
+                    'description',
+                    'page',
+                    'image',
+                    'plain',
+                    'multiline'
+                ], usedLanguages);
             } else if (obj.shape === MapObject.Rectangle) {
                 overlays.push({
                     at: [[x, y], [x + obj.width, y + obj.height]],
@@ -156,7 +182,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
     } else if (layer.isGroupLayer) {
         const groupLayer = /** @type {GroupLayer} */ (layer);
         for (const childLayer of groupLayer.layers || []) {
-            convertLayer(childLayer, datamap, convertedLayers, language);
+            convertLayer(childLayer, datamap, convertedLayers, usedLanguages, language);
         }
     }
     if (datamap.backgrounds[0].overlays) {
@@ -177,13 +203,10 @@ function getDataMapsMetadata(map, mapName) {
     const metadata = new MetadataImpl();
     for (const language of getLanguageCodes()) {
         const localizedMapName = getStringProperty(map, 'name', language);
-        if (!localizedMapName && language !== 'en') {
-            continue;
-        }
         metadata.interwiki[language] = new InterwikiDataImpl({
-            mapName: localizedMapName || mapName
+            mapName: localizedMapName || mapName,
+            revision: getNumberProperty(map, 'revision', language) || 0,
         });
-        metadata.interwiki[language].revision = getNumberProperty(map, 'revision', language) || 0;
     }
     metadata.fileName = mapName;
     metadata.tileHeight = map.tileHeight;
@@ -227,8 +250,34 @@ export function convertTiledToDataMaps(map, mapName, language = 'en') {
         }
     };
     const convertedLayers = new Set();
+    const usedLanguages = new Set(['en']);
+    markUsedLanguages(map, [
+        'name',
+        'revision',
+        'disclaimer',
+        'include',
+        'popzoom'
+    ], usedLanguages);
     for (const layer of map.layers.slice().reverse()) {
-        convertLayer(layer, datamap, convertedLayers, language);
+        convertLayer(layer, datamap, convertedLayers, usedLanguages, language);
+    }
+    // As we switch to a new system where the wiki is the source of truth
+    // rather than the repository, we need to publish the map to all wikis that
+    // the map is translated to, rather than just a single wiki a user
+    // specifies.
+    // This raises the question of which wikis to publish to - so instead of
+    // requiring users to check a box "map should be published to wiki X", we
+    // determine wikis to publish to based on which languages are actually used
+    // in the map.
+    // As a side effect, this does not allow publishing entirely untranslated
+    // maps. The flow for publishing from DataMaps files will just ignore those
+    // wikis completely, and the flow for publishing from TMX files will error.
+    if (datamap.custom?.interwiki) {
+        for (const language of Object.entries(datamap.custom.interwiki)) {
+            if (!usedLanguages.has(language[0])) {
+                delete datamap.custom.interwiki[language[0]];
+            }
+        }
     }
     return datamap;
 }

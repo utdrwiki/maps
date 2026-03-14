@@ -130,8 +130,12 @@ function getToken(language) {
 function publishMap(accessToken, summary, map, language) {
     const mapName = FileInfo.completeBaseName(FileInfo.fileName(map.fileName));
     const datamap = convertTiledToDataMaps(map, mapName, language);
+    const interwiki = datamap.custom?.interwiki?.[language];
+    if (!interwiki) {
+        throw new Error('Map does not appear to be translated to the language of the wiki you selected!');
+    }
     return edit(
-        `Map:${datamap.custom?.interwiki?.[language].mapName}`,
+        `Map:${interwiki.mapName}`,
         JSON.stringify(datamap),
         summary,
         accessToken,
