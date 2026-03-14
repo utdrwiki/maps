@@ -189,8 +189,10 @@ function handlePublishError(error) {
         tiled.alert(`Failed to publish! API returned error: ${error.info} (code: ${error.code})`);
         return;
     }
-    tiled.alert('Failed to publish! Please check the console for details.');
-    tiled.log(`Error details: ${error.message || error}`);
+    tiled.alert(`Failed to publish! ${error.message || error}`);
+    if (error.stack) {
+        tiled.log(`Error details: ${error.stack}`);
+    }
 }
 
 const publishAction = tiled.registerAction('PublishToWiki', () => {
