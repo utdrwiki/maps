@@ -74,7 +74,7 @@ function convertLayer(layer, datamap, convertedLayers, language) {
                 ]
             ],
             image,
-            name: layer.name
+            name: getStringProperty(layer, 'name', language) || layer.name
         };
         if (datamap.backgrounds[0].name === '<default>') {
             bg.overlays = datamap.backgrounds[0].overlays;
