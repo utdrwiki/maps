@@ -2,4 +2,5 @@
 *.png
 *.tiled-session
 *.tmx
+bundle.json
 node_modules

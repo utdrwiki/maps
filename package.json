@@ -27,5 +27,6 @@
         "typescript": "5.9.3"
     },
     "packageManager": "npm@11.6.2",
-    "private": true
+    "private": true,
+    "type": "module"
 }
