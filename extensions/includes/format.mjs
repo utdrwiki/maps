@@ -10,6 +10,8 @@ import {
     getStringProperty
 } from './util.mjs';
 
+const ANNOTATIONS_LAYER = 'annotations';
+
 /**
  * Determines a unique marker ID for the current marker.
  * @param {Layer} layer Current map layer
@@ -176,7 +178,7 @@ function convertLayer(layer, datamap, convertedLayers, usedLanguages, language) 
             }
         }
         const layerAssociationId = [layer.name, ...parentNames].join(' ');
-        if (markers.length > 0) {
+        if (markers.length > 0 || layer.name !== ANNOTATIONS_LAYER) {
             datamap.markers[layerAssociationId] = markers;
         }
     } else if (layer.isGroupLayer) {
