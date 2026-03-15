@@ -111,17 +111,19 @@ export function setProperty(object, name, value, language) {
         return;
     }
     const hasNameProperty = name === 'name' && !('isTileMap' in object);
-    if (hasNameProperty && language === 'en') {
-        (/** @type {MapObject} */ (object)).name = String(value);
-        return;
-    }
     const enValue = hasNameProperty ?
         (/** @type {MapObject} */ (object)).name :
         object.property(name);
+    if (hasNameProperty && language === 'en') {
+        if (enValue !== value) {
+            (/** @type {MapObject} */ (object)).name = String(value);
+        }
+        return;
+    }
     const propertyName = language === 'en' ? name : `${language}_${name}`;
-    if (language !== 'en' && enValue === value) {
-        // If the English value is the same as the localized value, no need to
-        // set it because it will be inherited.
+    if (enValue === value) {
+        // If the value is unchanged, or the English value is the same as the
+        // localized value, no need to set it because it will be inherited.
         return;
     }
     object.setProperty(propertyName, value);
