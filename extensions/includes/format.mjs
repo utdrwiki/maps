@@ -292,8 +292,13 @@ export function convertTiledToDataMaps(map, language = 'en', mapFilePath = null)
  * @returns {DataMaps} Converted DataMaps object
  */
 export function convertTiledToMultipleDataMaps(map, mapFilePath = null) {
-    const datamaps = /** @type {DataMaps} */ ({});
-    for (const language of getLanguageCodes()) {
+    const datamaps = /** @type {DataMaps} */ ({
+        en: convertTiledToDataMaps(map, 'en', mapFilePath),
+    });
+    for (const language of Object.keys(datamaps.en.custom?.interwiki || {})) {
+        if (language === 'en') {
+            continue;
+        }
         datamaps[language] = convertTiledToDataMaps(map, language, mapFilePath);
     }
     return datamaps;
