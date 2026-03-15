@@ -2,9 +2,9 @@
     "automappingRulesFile": "",
     "commands": [],
     "compatibilityVersion": 1100,
-    "extensionsPath": "../../extensions",
+    "extensionsPath": "../extensions",
     "folders": [
-        "."
+        "undertale"
     ],
     "properties": [
         {
@@ -17,19 +17,25 @@
             "name": "wiki",
             "propertytype": "",
             "type": "string",
-            "value": "undertaleyellow.wiki.gg"
+            "value": "undertale.wiki"
         },
         {
             "name": "languageWiki",
             "propertytype": "",
             "type": "string",
-            "value": "undertaleyellow.wiki.gg/$1"
+            "value": "$1.undertale.wiki"
         },
         {
             "name": "oauthClientId",
             "propertytype": "",
             "type": "string",
-            "value": "820f1dd04301efe4f4458a389549bd05"
+            "value": "68e40ad6df0d30b5b60b097d83f2d3af"
+        },
+        {
+            "name": "languages",
+            "propertytype": "",
+            "type": "string",
+            "value": "en,fr,zh"
         }
     ],
     "propertyTypes": [
