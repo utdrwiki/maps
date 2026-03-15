@@ -7,43 +7,7 @@ import {
 import { convertTiledToDataMaps } from './format.mjs';
 import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
 import { getStoredToken, storeToken } from './session.mjs';
-import { addToPromise, getWikiUrl } from './util.mjs';
-
-/**
- * Opens a URL in the user's default web browser.
- * @param {string} url URL to open
- */
-function openUrl(url) {
-    const process = new Process();
-    let successful = false;
-    switch (tiled.platform) {
-        case 'windows':
-            successful = process.start('cmd.exe', [
-                '/c',
-                'start',
-                '',
-                url.replace(/&/g, '^&')
-            ]);
-            break;
-        case 'macos':
-            successful = process.start('open', [url]);
-            break;
-        case 'linux':
-            successful = process.start('xdg-open', [url]);
-            break;
-        default:
-            successful = false;
-            return;
-    }
-    if (!successful) {
-        tiled.alert(`Failed to open URL in browser. Please copy and paste this URL directly into your browser:
-
-${url}.
-
-If that does not work for you, you can also copy the URL from the console instead.`);
-        tiled.log(url);
-    }
-}
+import { addToPromise, getWikiUrl, openUrl } from './util.mjs';
 
 /**
  * Displays a dialog for picking the language of the wiki to publish to, and the
