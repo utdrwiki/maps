@@ -1,31 +1,12 @@
 {
     "automappingRulesFile": "",
-    "commands": [
-    ],
+    "commands": [],
     "compatibilityVersion": 1100,
-    "extensionsPath": "../../extensions",
+    "extensionsPath": "../extensions",
     "folders": [
-        "."
+        "deltarune"
     ],
     "properties": [
-        {
-            "name": "languageWiki",
-            "propertytype": "",
-            "type": "string",
-            "value": "$1.undertale.wiki"
-        },
-        {
-            "name": "languages",
-            "propertytype": "",
-            "type": "string",
-            "value": "en,fr,zh"
-        },
-        {
-            "name": "oauthClientId",
-            "propertytype": "",
-            "type": "string",
-            "value": "68e40ad6df0d30b5b60b097d83f2d3af"
-        },
         {
             "name": "scriptPath",
             "propertytype": "",
@@ -36,7 +17,25 @@
             "name": "wiki",
             "propertytype": "",
             "type": "string",
-            "value": "undertale.wiki"
+            "value": "deltarune.wiki"
+        },
+        {
+            "name": "languageWiki",
+            "propertytype": "",
+            "type": "string",
+            "value": "$1.deltarune.wiki"
+        },
+        {
+            "name": "oauthClientId",
+            "propertytype": "",
+            "type": "string",
+            "value": "68e40ad6df0d30b5b60b097d83f2d3af"
+        },
+        {
+            "name": "languages",
+            "propertytype": "",
+            "type": "string",
+            "value": "en,zh"
         }
     ],
     "propertyTypes": [
