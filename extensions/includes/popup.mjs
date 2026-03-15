@@ -1,4 +1,4 @@
-import { getLanguageNames, selectLanguage } from './language.mjs';
+import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
 import { getBoolProperty, getStringProperty, setProperty } from './util.mjs';
 
 /**
@@ -72,9 +72,11 @@ function rectanglePopupHandler(object, dialog) {
     const nameInput = dialog.addTextInput('Name:');
     const nameEn = dialog.addLabel(object.name);
     dialog.addNewRow();
-    const fillInput = dialog.addColorButton('Fill color:');
+    const fillLabel = dialog.addLabel('Fill color:');
+    const fillInput = dialog.addColorButton();
     dialog.addNewRow();
-    const borderInput = dialog.addColorButton('Border color:');
+    const borderLabel = dialog.addLabel('Border color:');
+    const borderInput = dialog.addColorButton();
     dialog.addNewRow();
     return {
         updateLanguage: language => {
@@ -91,8 +93,10 @@ function rectanglePopupHandler(object, dialog) {
                 borderInput.color = border;
             }
             const isEn = language === 'en';
-            nameEn.visible = language !== 'en';
+            nameEn.visible = !isEn;
+            fillLabel.visible = isEn;
             fillInput.visible = isEn;
+            borderLabel.visible = isEn;
             borderInput.visible = isEn;
         },
         performChanges: language => {
@@ -113,9 +117,11 @@ function polygonPopupHandler(object, dialog) {
     const nameInput = dialog.addTextInput('Name:');
     const nameEn = dialog.addLabel(object.name);
     dialog.addNewRow();
-    const colorInput = dialog.addColorButton('Color:');
+    const colorLabel = dialog.addLabel('Color:');
+    const colorInput = dialog.addColorButton();
     dialog.addNewRow();
-    const thicknessInput = dialog.addNumberInput('Thickness:');
+    const thicknessLabel = dialog.addLabel('Thickness:');
+    const thicknessInput = dialog.addNumberInput('');
     dialog.addNewRow();
     return {
         updateLanguage: language => {
@@ -132,8 +138,10 @@ function polygonPopupHandler(object, dialog) {
                 thicknessInput.value = thickness;
             }
             const isEn = language === 'en';
-            nameEn.visible = language !== 'en';
+            nameEn.visible = !isEn;
+            colorLabel.visible = isEn;
             colorInput.visible = isEn;
+            thicknessLabel.visible = isEn;
             thicknessInput.visible = isEn;
         },
         performChanges: language => {
@@ -160,13 +168,11 @@ enablePopup.iconVisibleInMenu = false;
 enablePopup.text = 'Enable marker popup';
 enablePopup.shortcut = 'Ctrl+Shift+M';
 
-tiled.extendMenu('Edit', [
-    {
-        action: 'WikiMarkerPopup'
-    }
-]);
-
-tiled.assetOpened.connect(asset => {
+/**
+ * Activates the popup markers on the currently open assets.
+ * @param {Asset} asset Currently open asset
+ */
+function activatePopupMarkers(asset) {
     if (!asset.isTileMap) {
         return;
     }
@@ -184,8 +190,13 @@ tiled.assetOpened.connect(asset => {
         const dialog = new Dialog('Editing map marker');
         dialog.minimumWidth = 600;
         const languageNames = getLanguageNames();
-        const languageSelect = dialog.addComboBox('Wiki language:', languageNames);
-        languageSelect.visible = languageNames.length > 1;
+        const hasLanguages = languageNames.length > 1;
+        const languageSelect = dialog.addComboBox(
+            hasLanguages ? 'Wiki language:' : '',
+            languageNames
+        );
+        languageSelect.currentIndex = getDefaultLanguageIndex();
+        languageSelect.visible = hasLanguages;
         dialog.addNewRow();
         const handler = handlerFunc(object, dialog);
         languageSelect.currentIndexChanged.connect(index => {
@@ -201,4 +212,13 @@ tiled.assetOpened.connect(asset => {
         handler.updateLanguage(selectLanguage(languageSelect.currentIndex));
         dialog.show();
     });
-});
+}
+
+tiled.extendMenu('Edit', [
+    {
+        action: 'WikiMarkerPopup'
+    }
+]);
+
+tiled.openAssets.forEach(activatePopupMarkers);
+tiled.assetOpened.connect(activatePopupMarkers);
