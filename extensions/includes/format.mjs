@@ -198,19 +198,20 @@ function convertLayer(layer, datamap, convertedLayers, usedLanguages, language) 
 /**
  * Retrieves map metadata to store in DataMaps for two-way conversion.
  * @param {TileMap} map Tiled map being converted to DataMaps
- * @param {string} mapName Filename of the Tiled map
+ * @param {string?} mapFilePath Path to the Tiled map
  * @returns {Metadata} Map metadata to store in DataMaps
  */
-function getDataMapsMetadata(map, mapName) {
+function getDataMapsMetadata(map, mapFilePath = null) {
     const metadata = new MetadataImpl();
+    const mapFileName = FileInfo.completeBaseName(FileInfo.fileName(mapFilePath || map.fileName));
     for (const language of getLanguageCodes()) {
         const localizedMapName = getStringProperty(map, 'name', language);
         metadata.interwiki[language] = new InterwikiDataImpl({
-            mapName: localizedMapName || mapName,
+            mapName: localizedMapName || mapFileName,
             revision: getNumberProperty(map, 'revision', language) || 0,
         });
     }
-    metadata.fileName = mapName;
+    metadata.fileName = mapFileName;
     metadata.tileHeight = map.tileHeight;
     metadata.tileWidth = map.tileWidth;
     return metadata;
@@ -219,11 +220,11 @@ function getDataMapsMetadata(map, mapName) {
 /**
  * Converts a Tiled map to DataMaps format.
  * @param {TileMap} map Tiled map to convert to DataMaps
- * @param {string} mapName Filename of the Tiled map
  * @param {string} language Language to use for localized properties
+ * @param {string?} mapFilePath Path to the Tiled map
  * @returns {DataMap} Converted DataMap object
  */
-export function convertTiledToDataMaps(map, mapName, language = 'en') {
+export function convertTiledToDataMaps(map, language = 'en', mapFilePath = null) {
     const /** @type {DataMap} */ datamap = {
         $schema: '/extensions/DataMaps/schemas/v17.3.json',
         backgrounds: [{
@@ -239,7 +240,7 @@ export function convertTiledToDataMaps(map, mapName, language = 'en') {
                 map.height * map.tileHeight
             ]
         },
-        custom: getDataMapsMetadata(map, mapName),
+        custom: getDataMapsMetadata(map, mapFilePath),
         disclaimer: getStringProperty(map, 'disclaimer', language),
         include: getListProperty(map, 'include', language),
         markers: {},
@@ -287,13 +288,13 @@ export function convertTiledToDataMaps(map, mapName, language = 'en') {
 /**
  * Converts a Tiled map to multiple DataMaps format for each language.
  * @param {TileMap} map Tiled map to convert to DataMaps
- * @param {string} mapName Filename of the Tiled map
+ * @param {string?} mapFilePath Path to the Tiled map
  * @returns {DataMaps} Converted DataMaps object
  */
-export function convertTiledToMultipleDataMaps(map, mapName) {
+export function convertTiledToMultipleDataMaps(map, mapFilePath = null) {
     const datamaps = /** @type {DataMaps} */ ({});
     for (const language of getLanguageCodes()) {
-        datamaps[language] = convertTiledToDataMaps(map, mapName, language);
+        datamaps[language] = convertTiledToDataMaps(map, language, mapFilePath);
     }
     return datamaps;
 }
@@ -314,16 +315,15 @@ export function writeMap(map, filePath) {
 /**
  * Converts a Tiled map to DataMaps format.
  * @param {boolean} multiple Whether to generate a single or multiple maps
- * @returns {(map: TileMap, filePath: string) => undefined} Function that writes the
- * converted map to a file
+ * @returns {(map: TileMap, mapFilePath: string) => undefined} Function that
+ * writes the converted map to a file
  */
 function generateWrite(multiple) {
-    return (map, filePath) => {
-        const mapName = FileInfo.completeBaseName(FileInfo.fileName(filePath));
+    return (map, mapFilePath) => {
         const convertedMap = multiple ?
-            convertTiledToMultipleDataMaps(map, mapName) :
-            convertTiledToDataMaps(map, mapName, getLastLanguage() || 'en');
-        writeMap(convertedMap, filePath);
+            convertTiledToMultipleDataMaps(map, mapFilePath) :
+            convertTiledToDataMaps(map, getLastLanguage() || 'en', mapFilePath);
+        writeMap(convertedMap, mapFilePath);
     };
 }
 
