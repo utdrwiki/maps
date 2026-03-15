@@ -164,8 +164,9 @@ const /** @type {Record<MapObjectShape, MarkerPopupHandler|undefined>} */ handle
 const enablePopup = tiled.registerAction('WikiMarkerPopup', () => {});
 enablePopup.checkable = true;
 enablePopup.checked = true;
+enablePopup.icon = 'wiki.svg';
 enablePopup.iconVisibleInMenu = false;
-enablePopup.text = 'Enable marker popup';
+enablePopup.text = 'Enable wiki marker popup';
 enablePopup.shortcut = 'Ctrl+Shift+M';
 
 /**

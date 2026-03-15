@@ -178,6 +178,7 @@ publishAction.shortcut = 'Ctrl+Shift+U';
 
 tiled.extendMenu('File', [
     {
-        action: 'PublishToWiki'
+        action: 'PublishToWiki',
+        before: 'Close'
     }
 ]);
