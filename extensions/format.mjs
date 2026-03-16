@@ -1,6 +1,6 @@
-import { getLanguageCodes } from './language.mjs';
-import { InterwikiDataImpl, MetadataImpl } from './metadata.mjs';
-import { getLastLanguage } from './session.mjs';
+import { getLanguageCodes } from './include/language.mjs';
+import { InterwikiDataImpl, MetadataImpl } from './include/metadata.mjs';
+import { getLastLanguage } from './include/session.mjs';
 import {
     addPoints,
     getBoolProperty,
@@ -14,8 +14,8 @@ import {
     isPolylineOverlay,
     setProperty,
     validateTiledPoint,
-    validateTiledRectangle
-} from './util.mjs';
+    validateTiledRectangle,
+} from './include/util.mjs';
 
 const ANNOTATIONS_LAYER = 'annotations';
 

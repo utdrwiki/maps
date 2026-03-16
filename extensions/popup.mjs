@@ -1,5 +1,13 @@
-import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
-import { getBoolProperty, getStringProperty, setProperty } from './util.mjs';
+import {
+    getDefaultLanguageIndex,
+    getLanguageNames,
+    selectLanguage,
+} from './include/language.mjs';
+import {
+    getBoolProperty,
+    getStringProperty,
+    setProperty,
+} from './include/util.mjs';
 
 /**
  * Creates a popup for point editing.
@@ -164,7 +172,7 @@ const /** @type {Record<MapObjectShape, MarkerPopupHandler|undefined>} */ handle
 const enablePopup = tiled.registerAction('WikiMarkerPopup', () => {});
 enablePopup.checkable = true;
 enablePopup.checked = true;
-enablePopup.icon = 'wiki.svg';
+enablePopup.icon = 'images/wiki.svg';
 enablePopup.iconVisibleInMenu = false;
 enablePopup.text = 'Enable wiki marker popup';
 enablePopup.shortcut = 'Ctrl+Shift+M';

@@ -15,8 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/utdrwiki.maps",
-        "directory": "extensions"
+        "url": "https://github.com/utdrwiki/maps"
     },
     "scripts": {
         "typecheck": "tsc -p ."

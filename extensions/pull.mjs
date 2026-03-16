@@ -1,8 +1,13 @@
-import { downloadFile, getAllMaps, getFileUrls, getMap } from './api.mjs';
+import {
+    downloadFile,
+    getAllMaps,
+    getFileUrls,
+    getMap,
+} from './include/api.mjs';
 import { convertTiledToDataMaps, mapIsDataMaps, writeMap } from './format.mjs';
-import { getLanguageCodes } from './language.mjs';
-import { MetadataImpl } from './metadata.mjs';
-import { addToPromise, isImageBackground } from './util.mjs';
+import { getLanguageCodes } from './include/language.mjs';
+import { MetadataImpl } from './include/metadata.mjs';
+import { addToPromise, isImageBackground } from './include/util.mjs';
 
 // Conflict with the DOM File type.
 const TiledFile = /** @type {any} */ (File);
@@ -324,7 +329,7 @@ const pullAction = tiled.registerAction('PullFromWiki', () => {
         });
 });
 pullAction.text = 'Pull from wiki';
-pullAction.icon = 'wiki.svg';
+pullAction.icon = 'images/wiki.svg';
 
 tiled.extendMenu('File', [
     {

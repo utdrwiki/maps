@@ -1,13 +1,17 @@
-import { APIError, edit, getLoggedInUser } from './api.mjs';
+import { APIError, edit, getLoggedInUser } from './include/api.mjs';
 import {
     generateCodeChallenge,
     generateOAuthUrl,
-    getAccessToken
-} from './auth.mjs';
+    getAccessToken,
+} from './include/auth.mjs';
 import { convertTiledToDataMaps, mapIsDataMaps } from './format.mjs';
-import { getDefaultLanguageIndex, getLanguageNames, selectLanguage } from './language.mjs';
-import { getStoredToken, storeToken } from './session.mjs';
-import { addToPromise, getWikiUrl, openUrl } from './util.mjs';
+import {
+    getDefaultLanguageIndex,
+    getLanguageNames,
+    selectLanguage,
+} from './include/language.mjs';
+import { getStoredToken, storeToken } from './include/session.mjs';
+import { addToPromise, getWikiUrl, openUrl } from './include/util.mjs';
 
 /**
  * Displays a dialog for picking the language of the wiki to publish to, and the
@@ -213,7 +217,7 @@ const publishAction = tiled.registerAction('PublishToWiki', () => {
     }
 });
 publishAction.text = 'Publish to wiki';
-publishAction.icon = 'wiki.svg';
+publishAction.icon = 'images/wiki.svg';
 publishAction.shortcut = 'Ctrl+Shift+U';
 
 tiled.extendMenu('File', [
