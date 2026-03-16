@@ -200,7 +200,7 @@ export function openUrl(url) {
     if (!successful) {
         tiled.alert(`Failed to open URL in browser. Please copy and paste this URL directly into your browser:
 
-${url}.
+${url}
 
 If that does not work for you, you can also copy the URL from the console instead.`);
         tiled.log(url);
