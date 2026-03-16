@@ -2,7 +2,7 @@
     "include": [
         "*.mjs",
 		"**/*.mjs",
-        "extensions/types/*.d.ts",
+        "types/*.d.ts",
 		"node_modules/@mapeditor/tiled-api/*.d.ts"
 	],
 	"compilerOptions": {
@@ -16,7 +16,7 @@
         ],
 		"baseUrl": "extensions",
 		"typeRoots": [
-			"./extensions/types",
+			"types",
 			"./node_modules/@mapeditor/tiled-api"
 		],
 		"allowJs": true,
